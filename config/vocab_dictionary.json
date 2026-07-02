@@ -1,0 +1,38 @@
+[
+  {
+    "standard_name": "钛白粉",
+    "entity_type": "Product",
+    "aliases": ["二氧化钛", "TiO2", "金红石型钛白粉", "锐钛型钛白粉"]
+  },
+  {
+    "standard_name": "光模块",
+    "entity_type": "Product",
+    "aliases": ["光收发模块", "transceiver", "400G光模块", "800G光模块", "1.6T光模块"]
+  },
+  {
+    "standard_name": "AI芯片",
+    "entity_type": "Product",
+    "aliases": ["MLU芯片", "AI加速芯片", "推理芯片", "训练芯片", "NPU"]
+  },
+  {
+    "standard_name": "安纳达",
+    "entity_type": "Company",
+    "ticker": "002136.SZ",
+    "product": "钛白粉",
+    "aliases": ["安纳达钛业", "安纳达（002136）"]
+  },
+  {
+    "standard_name": "中际旭创",
+    "entity_type": "Company",
+    "ticker": "300308.SZ",
+    "product": "光模块",
+    "aliases": ["旭创科技", "中际旭创（300308）"]
+  },
+  {
+    "standard_name": "寒武纪",
+    "entity_type": "Company",
+    "ticker": "688256.SH",
+    "product": "AI芯片",
+    "aliases": ["寒武纪科技", "Cambricon", "寒武纪（688256）"]
+  }
+]

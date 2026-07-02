@@ -1,0 +1,32 @@
+[
+  {
+    "var_name": "gross_margin",
+    "data_type": "Float",
+    "source_field_mapping": ["销售毛利率", "毛利率", "Gross Profit Margin"],
+    "rounding_precision": 4
+  },
+  {
+    "var_name": "net_profit",
+    "data_type": "Float",
+    "source_field_mapping": ["归母净利润", "净利润", "Net Profit"],
+    "rounding_precision": 4
+  },
+  {
+    "var_name": "roe",
+    "data_type": "Float",
+    "source_field_mapping": ["净资产收益率", "ROE", "Return on Equity"],
+    "rounding_precision": 4
+  },
+  {
+    "var_name": "revenue",
+    "data_type": "Float",
+    "source_field_mapping": ["营业收入", "营收", "Revenue", "Total Revenue"],
+    "rounding_precision": 4
+  },
+  {
+    "var_name": "operating_cash_flow",
+    "data_type": "Float",
+    "source_field_mapping": ["经营活动现金流量净额", "经营现金流", "Operating Cash Flow"],
+    "rounding_precision": 4
+  }
+]

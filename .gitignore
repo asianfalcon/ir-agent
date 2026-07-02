@@ -1,0 +1,29 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Secrets and machine-local config
+.env
+.env.*
+src/ingestion/acecamp/config.json
+claude_desktop_config.json
+
+# Runtime data and generated artifacts
+databases/
+data/raw/
+data/tmp/
+data/storage/
+data/*.html
+
+# Logs
+*.log
