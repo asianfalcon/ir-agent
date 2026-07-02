@@ -77,7 +77,27 @@ def _extract_pdf(path: Path) -> str:
     m = _DISCLAIMER_RE.search(full)
     if m:
         full = full[: m.start()]
+
+    # fallback OCR for image-only PDFs
+    if len(full.strip()) < 100:
+        full = _ocr_pdf(path)
     return full
+
+
+def _ocr_pdf(path: Path) -> str:
+    """OCR fallback for image-based PDFs using tesseract."""
+    try:
+        import pytesseract
+        from pdf2image import convert_from_path
+        pages = convert_from_path(str(path), dpi=200)
+        texts = []
+        for img in pages:
+            text = pytesseract.image_to_string(img, lang="chi_sim+eng")
+            texts.append(text)
+        return "\n".join(texts)
+    except Exception as e:
+        print(f"[processor] OCR failed for {path.name}: {e}")
+        return ""
 
 
 def _extract_html(path: Path) -> str:
