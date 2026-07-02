@@ -72,4 +72,11 @@ def run(natural_query: str, llm_caller) -> dict:
     finally:
         conn.close()
 
+    if not rows:
+        return {
+            "sql": sql,
+            "rows": [],
+            "ticker": ticker,
+            "__status": "NO_LOCAL_DATA — 本地SQLite无此查询结果，严禁补充推断，请如实告知用户",
+        }
     return {"sql": sql, "rows": rows, "ticker": ticker}

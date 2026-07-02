@@ -93,16 +93,26 @@ def _extract_html(path: Path) -> str:
 
 def _infer_metadata(path: Path, text: str) -> dict[str, Any]:
     ticker = _normalize_ticker(text) or _normalize_ticker(path.stem)
-    source_map = {
-        "reports": "broker_report",
-        "announcements": "announcement",
-    }
-    data_source = source_map.get(path.parent.name, "web_news")
+
+    # walk up to find the inputs category dir (reports / announcements)
+    source_map = {"reports": "broker_report", "announcements": "announcement"}
+    data_source = "web_news"
+    for parent in path.parents:
+        if parent.name in source_map:
+            data_source = source_map[parent.name]
+            break
+
+    # extract pub_date from filename prefix like 20260701-
+    import re as _re
+    m = _re.match(r"(\d{8})", path.stem)
+    pub_date = m.group(1) if m else str(int(path.stat().st_mtime))
+
     return {
         "ticker": ticker or "UNKNOWN",
-        "pub_date": path.stat().st_mtime,  # filled properly when available in filename
-        "period": "",  # enriched downstream if detectable
+        "pub_date": pub_date,
+        "period": "",
         "data_source": data_source,
+        "source_file": path.name,
     }
 
 
@@ -133,10 +143,28 @@ def process_file(path: Path) -> list[dict]:
     metadata = _infer_metadata(path, text)
     chunks = chunk_text(text, metadata)
 
-    # Persist chunks to processed/
+    # flatten metadata into top-level fields for LanceDB (no nested dicts)
+    flat_chunks = []
+    for c in chunks:
+        flat = {
+            "chunk_id":    c["chunk_id"],
+            "text":        c["text"],
+            "ticker":      c["metadata"]["ticker"],
+            "pub_date":    c["metadata"]["pub_date"],
+            "period":      c["metadata"]["period"],
+            "data_source": c["metadata"]["data_source"],
+            "source_file": c["metadata"].get("source_file", path.name),
+        }
+        flat_chunks.append(flat)
+
+    # write to LanceDB
+    from src.db.vector_store import upsert_chunks
+    upsert_chunks(flat_chunks)
+
+    # also save JSON for debugging
     out_dir = ROOT / "data" / "processed"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{path.stem}_chunks.json"
-    out_path.write_text(json.dumps(chunks, ensure_ascii=False, indent=2))
-    print(f"[processor] {len(chunks)} chunks → {out_path.name}")
-    return chunks
+    out_path.write_text(json.dumps(flat_chunks, ensure_ascii=False, indent=2))
+    print(f"[processor] {path.name}: {len(flat_chunks)} chunks → LanceDB + {out_path.name}")
+    return flat_chunks
