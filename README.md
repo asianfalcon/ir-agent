@@ -32,6 +32,7 @@ Claude Desktop / Codex
 | 3 | `skill3_graph_propagator.py` | Kùzu 图谱：上游商品 → 受影响公司 |
 | 4 | `skill4_verifier.py` | 多源对抗审查报告 |
 | 5 | `skill5_focused.py` | 5 个快捷分析（业绩/股价/边际/图谱/风险）|
+| 6 | `skill6_event_catalyst.py` | 事件驱动催化分析（YFinance 宏观 + Tushare 新闻）|
 
 ### Agents（多 Agent 层）
 
@@ -63,6 +64,7 @@ Claude Desktop / Codex
 | `relationship_graph` | Skill 5 | 关系图谱 |
 | `opportunity_risk` | Skill 5 | 机会与风险 |
 | `full_analysis` | Agents | 完整多 Agent 投研决策报告 |
+| `event_catalyst` | Skill 6 | 热门事件驱动分析（宏观+新闻+传导路径）|
 
 ## 系统原则
 
@@ -97,10 +99,10 @@ ir-agent/
 │   ├── ingestion/            ← AceCamp 爬取 + AkShare 定时拉取
 │   ├── processing/           ← PDF 解析、OCR、分块
 │   ├── utils/prompts.py      ← prompt 文件 loader
-│   └── mcp_server.py         ← MCP 入口，注册 10 个工具
+│   └── mcp_server.py         ← MCP 入口，注册 11 个工具
 ├── databases/ira.db          ← SQLite 主库
 ├── data/
-│   ├── raw/                  ← AceCamp / AkShare 原始 JSON
+│   ├── raw/                  ← AceCamp / AkShare / Tushare / YFinance 原始 JSON
 │   └── storage/              ← LanceDB + Kùzu
 └── docs/                     ← 设计文档（PRD、架构图）
 ```
@@ -158,10 +160,26 @@ python -m src.ingestion.api_scheduler
 
 | 来源 | 内容 | 方式 |
 |---|---|---|
-| AkShare | 历史股价、财务摘要 | API，定时拉取 |
+| AkShare | 历史股价、财务摘要 | API，定时拉取（15:35 收盘后）|
+| Tushare | 日线行情、财务报表、新闻公告 | API（需 token，填入 `config/api_keys.json`）|
+| YFinance | 宏观指标、商品价格、海外可比公司、汇率 | API，免费无需 key（有限速，每日缓存）|
 | AceCamp | 研报、深度问答 | API（需账号）|
 | 手动下载 | 券商研报 PDF | 放入指定目录后批量处理 |
 | 公司公告 | 财报、公告 | AkShare + 手动 |
+
+### YFinance 宏观标的
+
+`^GSPC`（标普500）· `^IXIC`（纳斯达克）· `GC=F`（黄金）· `CL=F`（WTI原油）· `USDCNY=X`（美元/人民币）· `^SOX`（费城半导体）· `SMH`（半导体ETF）
+
+### Tushare 配置
+
+在 `config/api_keys.json` 填入 token（[申请地址](https://tushare.pro/register)）：
+
+```json
+{
+  "tushare_token": "your_token_here"
+}
+```
 
 ## 关注标的
 
