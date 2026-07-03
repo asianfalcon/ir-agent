@@ -15,21 +15,30 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
-from src.skills import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier
+from src.skills import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier, skill5_focused
+from src.agents import orchestrator
+from src.utils.prompts import load
 
-app = Server("ira-mcp")
+_INSTRUCTIONS = load("instructions.md")
+
+app = Server("ira-mcp", instructions=_INSTRUCTIONS)
 
 # Shared LLM caller using Anthropic SDK
 _client = anthropic.Anthropic()
 
 def _llm(system: str, user: str) -> str:
-    msg = _client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4096,
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    )
-    return msg.content[0].text
+    try:
+        msg = _client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=4096,
+            system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+        return msg.content[0].text
+    except Exception as e:
+        if "401" in str(e) or "authentication" in str(e).lower():
+            raise Exception(f"401 authentication_error: ANTHROPIC_API_KEY 无效或已过期，请在 MCP 启动配置中更新 Key。原始错误: {e}")
+        raise
 
 
 @app.list_tools()
@@ -37,7 +46,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="text2sql",
-            description="将自然语言问题转换为 SQL 并查询本地 SQLite 财务数据库，返回原始数字行。",
+            description="将自然语言问题转换为 SQL 并查询本地 SQLite 财务数据库，返回原始数字行。【返回结果即为唯一真实来源，若 rows 为空则代表本地无此数据，不得用训练记忆补充】",
             inputSchema={
                 "type": "object",
                 "properties": {"query": {"type": "string", "description": "自然语言提问"}},
@@ -74,6 +83,83 @@ async def list_tools() -> list[Tool]:
                     "ticker": {"type": "string"},
                     "company_name": {"type": "string"},
                     "period": {"type": "string"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
+        Tool(
+            name="earnings_forecast",
+            description="【预测业绩】基于历史财务趋势 + 本地券商研报共识，预测未来2季度营收/净利润区间。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string", "description": "基准周期，如 2026Q1"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
+        Tool(
+            name="price_target",
+            description="【预测股价】基于本地财务数据 + 券商目标价研报，估算合理股价区间（PE/PS/PB法）。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
+        Tool(
+            name="marginal_change",
+            description="【边际改变】提取最新催化剂、环比增量变化、尚未price-in的预期。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
+        Tool(
+            name="relationship_graph",
+            description="【关系图谱】产业链传导、竞争格局文字分析，并生成可交互 HTML 图谱文件。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                },
+                "required": ["ticker", "company_name"],
+            },
+        ),
+        Tool(
+            name="opportunity_risk",
+            description="【机会与风险】多空双向辩证分析，输出 Bull Case / Bear Case 及关键观测指标。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
+        Tool(
+            name="full_analysis",
+            description="【完整多 Agent 分析】依次调用研究员→风控→策略→交易员→PM 五个 Agent，输出完整投研决策报告。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string", "description": "如 2026Q1"},
                 },
                 "required": ["ticker", "company_name", "period"],
             },
@@ -129,6 +215,47 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             llm_caller=_llm,
         )
         return [TextContent(type="text", text=report)]
+
+    # ── Skill 5: focused analysis shortcuts ──────────────────────────────────
+    if name in ("earnings_forecast", "price_target", "marginal_change",
+                "relationship_graph", "opportunity_risk"):
+        ticker       = arguments["ticker"]
+        company_name = arguments["company_name"]
+        period       = arguments.get("period", "2026Q1")
+
+        import json as _json
+        from pathlib import Path as _Path
+        from src.db.vector_store import search as vector_search
+
+        # shared data fetching
+        dashboard = skill2_calculator.compute(ticker, period)
+        _vocab_path = _Path(__file__).parent.parent / "config" / "vocab_dictionary.json"
+        _vocab = _json.loads(_vocab_path.read_text()) if _vocab_path.exists() else []
+        _entry  = next((e for e in _vocab if e.get("ticker") == ticker), None)
+        product = _entry.get("product", "") if _entry else ""
+        chain   = skill3_graph_propagator.query(product) if product else []
+        chunks  = vector_search(query=f"{company_name} 业绩 研报", ticker=ticker, top_k=10)
+
+        if name == "earnings_forecast":
+            result = skill5_focused.earnings_forecast(ticker, company_name, dashboard, chunks, _llm)
+        elif name == "price_target":
+            result = skill5_focused.price_target(ticker, company_name, dashboard, chunks, _llm)
+        elif name == "marginal_change":
+            result = skill5_focused.marginal_change(ticker, company_name, dashboard, chunks, _llm)
+        elif name == "relationship_graph":
+            result = skill5_focused.relationship_graph(ticker, company_name, product, chain, chunks, _llm)
+        elif name == "opportunity_risk":
+            result = skill5_focused.opportunity_risk(ticker, company_name, dashboard, chunks, chain, _llm)
+        return [TextContent(type="text", text=result)]
+
+    if name == "full_analysis":
+        result = orchestrator.run(
+            ticker=arguments["ticker"],
+            company_name=arguments["company_name"],
+            period=arguments["period"],
+            llm_caller=_llm,
+        )
+        return [TextContent(type="text", text=result)]
 
     return [TextContent(type="text", text=f"Unknown tool: {name}")]
 

@@ -33,15 +33,18 @@ def upsert_chunks(chunks: list[dict]) -> None:
     db = lancedb.connect(str(LANCE_PATH))
     rows = []
     for chunk, vec in zip(chunks, embeddings):
+        # support both flat chunks and legacy nested-metadata chunks
+        meta = chunk.get("metadata", chunk)
         rows.append({
-            "chunk_id": chunk["chunk_id"],
-            "text": chunk["text"],
-            "vector": vec,
-            "ticker": chunk["metadata"].get("ticker", ""),
-            "pub_date": str(chunk["metadata"].get("pub_date", "")),
-            "period": chunk["metadata"].get("period", ""),
-            "data_source": chunk["metadata"].get("data_source", ""),
-            "associated_vars": ",".join(chunk["metadata"].get("associated_vars", [])),
+            "chunk_id":       chunk["chunk_id"],
+            "text":           chunk["text"],
+            "vector":         vec,
+            "ticker":         meta.get("ticker", ""),
+            "pub_date":       str(meta.get("pub_date", "")),
+            "period":         meta.get("period", ""),
+            "data_source":    meta.get("data_source", ""),
+            "source_file":    meta.get("source_file", ""),
+            "associated_vars": ",".join(meta.get("associated_vars", [])),
         })
 
     if TABLE_NAME in db.table_names():
