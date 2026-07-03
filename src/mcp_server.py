@@ -17,7 +17,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
-from src.skills import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier, skill5_focused
+from src.skills import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier, skill5_focused, skill6_event_catalyst
 from src.agents import orchestrator
 from src.utils.prompts import load
 
@@ -185,6 +185,17 @@ async def list_tools() -> list[Tool]:
                 "required": ["ticker", "company_name", "period"],
             },
         ),
+        Tool(
+            name="event_catalyst",
+            description="【事件驱动分析】输入热门事件描述，结合宏观指标（YFinance）和新闻（Tushare），分析对 watchlist 各公司的催化/压制影响及传导路径。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "event": {"type": "string", "description": "事件描述，如"英伟达 Blackwell 供应链砍单""},
+                },
+                "required": ["event"],
+            },
+        ),
     ]
 
 
@@ -276,6 +287,10 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             period=arguments["period"],
             llm_caller=_llm,
         )
+        return [TextContent(type="text", text=result)]
+
+    if name == "event_catalyst":
+        result = skill6_event_catalyst.run(arguments["event"], _llm)
         return [TextContent(type="text", text=result)]
 
     return [TextContent(type="text", text=f"Unknown tool: {name}")]
