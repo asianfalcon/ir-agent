@@ -5,8 +5,10 @@ Run with: python src/mcp_server.py
 
 import anthropic
 import json
+import os
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
@@ -23,12 +25,27 @@ _INSTRUCTIONS = load("instructions.md")
 
 app = Server("ira-mcp", instructions=_INSTRUCTIONS)
 
-# Shared LLM caller using Anthropic SDK
-_client = anthropic.Anthropic()
+# Shared LLM caller using Anthropic SDK. Keep this lazy so startup diagnostics
+# reflect the environment used by the actual MCP process.
+_client: anthropic.Anthropic | None = None
+
+
+def _client_context() -> str:
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    base = os.environ.get("ANTHROPIC_BASE_URL", "")
+    host = urlparse(base).netloc if base else "api.anthropic.com(default)"
+    return f"ANTHROPIC_API_KEY set={bool(key)} len={len(key)}; ANTHROPIC_BASE_URL host={host}"
+
+
+def _get_client() -> anthropic.Anthropic:
+    global _client
+    if _client is None:
+        _client = anthropic.Anthropic()
+    return _client
 
 def _llm(system: str, user: str) -> str:
     try:
-        msg = _client.messages.create(
+        msg = _get_client().messages.create(
             model="claude-sonnet-4-6",
             max_tokens=4096,
             system=system,
@@ -37,7 +54,11 @@ def _llm(system: str, user: str) -> str:
         return msg.content[0].text
     except Exception as e:
         if "401" in str(e) or "authentication" in str(e).lower():
-            raise Exception(f"401 authentication_error: ANTHROPIC_API_KEY 无效或已过期，请在 MCP 启动配置中更新 Key。原始错误: {e}")
+            raise Exception(
+                "401 authentication_error: Anthropic 鉴权失败，请检查 MCP 启动配置中的 "
+                f"ANTHROPIC_API_KEY 与 ANTHROPIC_BASE_URL 是否匹配。当前进程环境: {_client_context()}。"
+                f"原始错误: {e}"
+            )
         raise
 
 
