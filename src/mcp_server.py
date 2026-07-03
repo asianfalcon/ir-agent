@@ -49,13 +49,18 @@ app = Server("ira-mcp", instructions=_INSTRUCTIONS)
 _client = anthropic.Anthropic()
 
 def _llm(system: str, user: str) -> str:
-    msg = _client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4096,
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    )
-    return msg.content[0].text
+    try:
+        msg = _client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=4096,
+            system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+        return msg.content[0].text
+    except Exception as e:
+        if "401" in str(e) or "authentication" in str(e).lower():
+            raise Exception(f"401 authentication_error: ANTHROPIC_API_KEY 无效或已过期，请在 MCP 启动配置中更新 Key。原始错误: {e}")
+        raise
 
 
 @app.list_tools()
