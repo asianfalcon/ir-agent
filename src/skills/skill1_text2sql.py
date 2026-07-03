@@ -88,13 +88,9 @@ def run(natural_query: str, llm_caller) -> dict:
     try:
         schema_ctx = _schema_context()
         system = (
-            "You are a SQL generator for a financial database. "
-            "Output ONLY a single valid SQLite SELECT statement — no explanation, no markdown fences.\n\n"
-            f"{schema_ctx}\n\n"
-            "Rules:\n"
-            "- Only use column names listed above.\n"
-            "- Never modify or fabricate numbers.\n"
-            "- If ticker is provided, filter by it.\n"
+            __import__("src.utils.prompts", fromlist=["load"])
+            .load("skill1_sql_system.md")
+            .format(schema_ctx=schema_ctx)
         )
         user = natural_query + (f"\n\n(Resolved ticker: {ticker})" if ticker else "")
         sql_raw = llm_caller(system, user).strip()

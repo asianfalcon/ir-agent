@@ -4,15 +4,9 @@ Each function returns a Markdown string grounded in local data.
 """
 
 from typing import Any
+from src.utils.prompts import load
 
-
-# ── shared prompt helper ──────────────────────────────────────────────────────
-
-_GROUNDING_RULE = """
-【数据来源标注规则 · 强制执行】
-- 每个数字/结论后必须标注 [来源: 工具名/数据表]
-- 无本地数据支撑的内容只能写"暂无本地数据"，严禁用训练记忆补充
-"""
+_GROUNDING_RULE = load("skill5_grounding_rule.md")
 
 
 def earnings_forecast(

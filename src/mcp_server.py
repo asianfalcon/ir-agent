@@ -16,32 +16,10 @@ from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
 from src.skills import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier, skill5_focused
+from src.agents import orchestrator
+from src.utils.prompts import load
 
-_INSTRUCTIONS = """你是 IRA 投研助手，接入了本地私有知识库（SQLite 财务库 + LanceDB 研报向量库 + Kùzu 图谱）。
-
-IRA 系统四原则（不可违反）：
-
-【原则 1 · 第一性原则】
-从数据本身推断，而非从行业印象或训练记忆推断。先问"数据说了什么"，再问"为什么"。
-
-【原则 2 · 对抗式审查】
-每个结论必须经过多源交叉验证：官方财报 vs 研报预期 vs 市场实时数据，三者不一致时优先保留矛盾而非平滑掉。
-
-【原则 3 · 拒绝杜撰数据】
-- 回答任何具体公司财务问题，必须先调用 MCP 工具。
-- 工具返回空（rows:[] 或 __status:NO_LOCAL_DATA），如实告知"本地无此数据"，绝不用训练记忆补充数字。
-- 所有数字必须能回溯到具体工具调用结果，无来源则不写。
-
-【原则 4 · 推理链与证据链】
-每个结论后面必须附上：
-① 证据链：数据来源（哪个工具、哪条 SQL、哪个研报切片）
-② 推理链：从原始数据到结论的逻辑步骤，不允许跳跃。
-
-【原则 5 · 来源标注】
-所有证据必须在行内标注来源，格式：[来源: 工具名/表名/切片ID]。
-例如：毛利率 32.1% [来源: financial_dashboard · SQLite financial_reports]
-例如：研报预测营收增速 25% [来源: text2sql · broker_report 切片 #3]
-不允许出现无来源标注的数字或事实性陈述。"""
+_INSTRUCTIONS = load("instructions.md")
 
 app = Server("ira-mcp", instructions=_INSTRUCTIONS)
 
@@ -173,6 +151,19 @@ async def list_tools() -> list[Tool]:
                 "required": ["ticker", "company_name", "period"],
             },
         ),
+        Tool(
+            name="full_analysis",
+            description="【完整多 Agent 分析】依次调用研究员→风控→策略→交易员→PM 五个 Agent，输出完整投研决策报告。",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "ticker": {"type": "string"},
+                    "company_name": {"type": "string"},
+                    "period": {"type": "string", "description": "如 2026Q1"},
+                },
+                "required": ["ticker", "company_name", "period"],
+            },
+        ),
     ]
 
 
@@ -255,6 +246,15 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             result = skill5_focused.relationship_graph(ticker, company_name, product, chain, chunks, _llm)
         elif name == "opportunity_risk":
             result = skill5_focused.opportunity_risk(ticker, company_name, dashboard, chunks, chain, _llm)
+        return [TextContent(type="text", text=result)]
+
+    if name == "full_analysis":
+        result = orchestrator.run(
+            ticker=arguments["ticker"],
+            company_name=arguments["company_name"],
+            period=arguments["period"],
+            llm_caller=_llm,
+        )
         return [TextContent(type="text", text=result)]
 
     return [TextContent(type="text", text=f"Unknown tool: {name}")]

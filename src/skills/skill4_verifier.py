@@ -4,67 +4,10 @@ and forces the LLM to find contradictions across official, sell-side, and market
 """
 
 from typing import Any
+from src.utils.prompts import load
 
-SYSTEM_PROMPT = """你是一个严苛的投研风控专家。请将以下三组数据放在天平两端进行比对：
-1. 官方表述 (SQLite财务数据与公告文本)
-2. 卖方预期 (券商研报向量切片)
-3. 客观现实 (垂直行业网站抓取的实时商品价格与供需舆情)
-
-请执行以下辩证对齐动作：
-- 检查【官方自述】的毛利率趋势是否与【客观现实】的原材料涨价周期相冲突？
-- 检查【卖方预期】给出的盈利预测，是否显著脱离了【官方自述】的历史时序连续性？
-- 必须找出至少一个潜在的矛盾点。若无显著冲突，需提示信息链的完整性风险。
-- 最终输出严格遵循以下 Markdown 报告骨架，不得省略任何章节。
-
-【严格禁止事项】：
-- 禁止引用任何未在 user_prompt 中明确出现的数字（营收、利润、增速等）
-- 禁止用训练记忆中的公司信息补充空缺字段
-- 若某项数据为空或 None，直接写"暂无数据"，不得推断
-- 所有数字和事实性陈述必须在行内标注来源，格式：[来源: 数据源名称]
-  例如：毛利率 32.1% [来源: SQLite financial_reports]
-  例如：券商预测增速 25% [来源: LanceDB broker_report 切片]
-  无法标注来源的数字一律不得出现在报告中"""
-
-REPORT_TEMPLATE = """# 📊 【IRA 辩证投研报告】{company_name} ({ticker}) 基本面深度穿透
-
----
-
-## 核心辩证结论
-> ⚡ **风险/机会评级：** {rating}
-> **一句话定调：** {summary}
-
----
-
-## ⚖️ 多源对抗互证天平
-
-| 维度 | 数据源 | 核心立场/关键数据 | 冲突与矛盾 (IRA 警告) |
-| :--- | :--- | :--- | :--- |
-| **官方自述** | 公司财报 & 公告 | {official_data} | {conflict} |
-| **卖方评价** | 券商研报切片 | {sellside_data} | |
-| **客观现实** | 垂直网站爬虫 | {market_data} | |
-
----
-
-## 🔢 确定性财务看板 (Python 硬编码计算)
-
-{financial_table}
-
-*(注：定量数字 100% 提取自 SQLite 本地关系库，未经 LLM 重组)*
-
----
-
-## 🌐 产业链传导因果链条
-
-{chain_text}
-
----
-
-## 🔗 推理链 & 证据链
-
-> 以下逐步展示从原始数据到核心结论的完整推导路径。
-
-{reasoning_chain}
-"""
+SYSTEM_PROMPT = load("skill4_system.md")
+REPORT_TEMPLATE = load("skill4_report_template.md")
 
 
 def run(
