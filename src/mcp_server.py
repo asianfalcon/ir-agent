@@ -191,7 +191,7 @@ async def list_tools() -> list[Tool]:
             inputSchema={
                 "type": "object",
                 "properties": {
-                    "event": {"type": "string", "description": "事件描述，如"英伟达 Blackwell 供应链砍单""},
+                    "event": {"type": "string", "description": '事件描述，如"英伟达 Blackwell 供应链砍单"'},
                 },
                 "required": ["event"],
             },
