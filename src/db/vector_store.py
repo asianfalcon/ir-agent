@@ -49,6 +49,10 @@ def upsert_chunks(chunks: list[dict]) -> None:
 
     if TABLE_NAME in db.table_names():
         tbl = db.open_table(TABLE_NAME)
+        chunk_ids = [r["chunk_id"] for r in rows]
+        if chunk_ids:
+            quoted = ",".join("'" + cid.replace("'", "''") + "'" for cid in chunk_ids)
+            tbl.delete(f"chunk_id IN ({quoted})")
         tbl.add(rows)
     else:
         tbl = db.create_table(TABLE_NAME, data=rows)

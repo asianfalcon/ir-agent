@@ -76,6 +76,12 @@ def link_upstream(upstream: str, downstream: str, coef: float = 1.0) -> None:
     )
 
 
+def get_connection() -> kuzu.Connection:
+    """Return a connection to the Kùzu database."""
+    db = _get_db()
+    return kuzu.Connection(db)
+
+
 def query_affected_companies(input_product: str) -> list[dict[str, Any]]:
     """Return companies that produce a product downstream of input_product."""
     db = _get_db()

@@ -23,6 +23,8 @@ Claude Desktop / Codex
 | LanceDB | 研报/公告向量切片 | `data/storage/lancedb_root/` |
 | Kùzu | 产业链图谱（公司↔产品↔上下游） | `data/storage/kuzu_root.db` |
 
+> 注意：`databases/ira.db` 是唯一 SQLite 主库。不要使用 `data/financial.db` 作为财务库；若该文件存在且为 0 字节，它只是误建的影子文件，不代表财务数据丢失。
+
 ### Skills（单工具层）
 
 | Skill | 文件 | 功能 |
@@ -76,6 +78,63 @@ Claude Desktop / Codex
 4. **完整的推理链** — 数据→推论→结论，每步可验证
 5. **完整的证据链** — 每个数字行内标注 `[来源: 工具名/表名/切片ID]`
 6. **观点鲜明** — 必须给出明确判断，不允许无结论表述
+7. **深挖隐含信息与合理线性外推** — 挖掘管理层措辞、财务结构、研报语气等边际变化，并标注外推假设和失效边界
+8. **财务预测前置三步校验** — 字段口径、全年数交叉验证、预测倍率 sanity check 通过后，才能做业绩外推
+
+### 财务预测三步校验
+
+任何营收、净利润、毛利率、现金流、估值或未来业绩预测，必须先完成：
+
+1. **字段口径校验**：确认 `financial_reports.period` 对应单季度、累计报告期还是全年口径；无法确认时，禁止把 `Q1-Q4` 相加为全年。
+2. **全年数交叉验证**：用 `Q4/年报口径`、券商研报历史值、公司公告摘要至少两类本地来源核对全年收入和利润；冲突时保留差异并说明采用口径。
+3. **预测倍率 sanity check**：预测中枢必须和历史全年收入、最近季度收入年化、卖方预测区间比较；若预测中枢相对历史基数跃升超过 2 倍，必须列出订单、产能、价格、客户四类证据中的至少两类，否则只能放入乐观情景，不得作为基准预测。
+
+输出研报时必须单列“口径校验”或“预测校验”，并区分“已验证事实”“外推假设”“情景预测”。
+
+## 数据口径与入库规则
+
+### SQLite 财务库
+
+- 主库路径：`databases/ira.db`
+- 表：`financial_reports`、`historical_prices`、`companies`、`spider_crawl_log`
+- 初始化只创建 schema，不会自动补财务数据：
+
+```bash
+python -m src.db.db_initializer
+```
+
+### LanceDB 研报/纪要库
+
+- 主路径：`data/storage/lancedb_root/`
+- 表：`chunks`
+- 入库规则：按 `chunk_id` 先删后写，避免重复运行导致重复 chunks。
+- 证据链字段：AceCamp 纪要会写入 `source_file = acecamp://article/{id}`，用于报告引用和追溯。
+
+手动下载的 AceCamp 纪要 JSON 放入：
+
+```text
+data/inputs/minutes/
+```
+
+然后运行：
+
+```bash
+python -m src.ingestion.acecamp.minutes_processor 688141.SH
+```
+
+### 研报 PDF 入库
+
+券商研报 PDF 放入对应目录，例如：
+
+```text
+data/inputs/reports/杰华特/
+```
+
+然后运行 PDF 解析与切片：
+
+```bash
+python -m src.processing.text_processor
+```
 
 ## 目录结构
 
@@ -142,15 +201,23 @@ pip install -r requirements.txt
 python -m src.db.db_initializer
 ```
 
-### 4. 摄入研报
+### 4. 摄入研报 PDF
 
-手动下载的 PDF 放入 `data/raw/reports/<ticker>/`，然后：
+手动下载的 PDF 放入 `data/inputs/reports/<公司或主题>/`，然后：
 
 ```bash
 python -m src.processing.text_processor
 ```
 
-### 5. 拉取行情和研报（定时）
+### 5. 摄入 AceCamp 纪要
+
+手动下载的纪要 JSON 放入 `data/inputs/minutes/`，然后：
+
+```bash
+python -m src.ingestion.acecamp.minutes_processor 688141.SH
+```
+
+### 6. 拉取行情和研报（定时）
 
 ```bash
 python -m src.ingestion.api_scheduler
