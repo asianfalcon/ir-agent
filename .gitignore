@@ -16,6 +16,7 @@ env/
 .env
 .env.*
 src/ingestion/acecamp/config.json
+config/api_keys.json
 claude_desktop_config.json
 
 # Runtime data and generated artifacts

@@ -1,0 +1,236 @@
+{
+  "data": {
+    "id": 70561962,
+    "liked": false,
+    "disliked": false,
+    "favorited": false,
+    "favorite_ids": [],
+    "current_price": 300,
+    "original_price": 300,
+    "free": false,
+    "event_ids": [],
+    "meeting_ids": [
+      70536621
+    ],
+    "expert_public_resume": "na",
+    "original_title": null,
+    "source_url": null,
+    "expert_role": "employee",
+    "events": [],
+    "title": "DRMOS大厂调研:海内外大厂交付周期及价格趋势,国产大厂竞争格局及产能情况等-聚焦英飞凌/瑞萨/晶丰明源/寒武纪等",
+    "transcribe": null,
+    "badges": [
+      "hot"
+    ],
+    "has_article_speech": null,
+    "is_deleted": false,
+    "type": "minute",
+    "card_permission_item_code": "Minute:a_expert_minute",
+    "access_level": "original",
+    "repost": false,
+    "shared": false,
+    "translation_type": "to_en_by_machine",
+    "dual_language": "dual",
+    "corporation_ids": [
+      26106
+    ],
+    "corporations": [
+      {
+        "id": 26106,
+        "ticker": "SH.688141",
+        "name": "杰华特",
+        "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+      }
+    ],
+    "is_anonymous": false,
+    "summary": "1.DRMOS海内外大厂交付周期及价格趋势；\n2.国产大厂竞争格局及产能情况；\n",
+    "content": "<p><strong style=\"color: rgb(0, 112, 192);\">以下为专家观点：</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">目前海外半导体原厂如MPS、瑞萨等的交付周期以及现货市场的价格波动情况如何？</strong></p><p>在多相电源领域，三个主要的海外竞争对手瑞萨、英飞凌和MPS的交付周期的确很长。主要原因是他们收到了例如英伟达等海外客户的大额订单，导致产能非常紧张。具体来看，瑞萨因中日关系紧张，接近零交付。英飞凌的交付周期据称为50周。MPS的交付周期在三十至四十周左右，但由于其部分产能在华虹，且国内业务占比较大，公司会为客户少量分配一些产能。在价格方面，与AI相关的产品价格均出现上涨。英飞凌已明确涨价。MPS和瑞萨则采取了分产品、分客户的选择性涨价策略，据称MPS部分客户的价格将于5月份后上调。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">考虑到海外厂商的供应紧张和价格上涨，国内厂商目前采取了怎样的价格策略？是否暂停了对新客户的报价？</strong></p><p>截至目前，公司尚未进行涨价。不过，针对早期为抢占市场份额而以零毛利甚至负毛利销售的产品，公司已停止批准新的此类价格申请。对于已经生效的负毛利价格，将酌情上调以实现毛利转正。目前公司仍在正常接触新客户并进行项目合作，并未暂停报价。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司目前未跟进涨价的主要原因是什么？</strong></p><p>公司暂未涨价主要基于两点考虑。第一，国内主要竞争对手如矽力杰和圣邦微目前也未涨价，贸然提价可能会导致市场份额流失。第二，从经营策略角度看，许多国内友商在观察公司的动向。若公司率先涨价，其他厂商可能会跟进。公司希望通过维持当前价格，在行业中坚持更长时间，以期进一步优化竞争格局。现在涨价虽然对自身有利，但客观上也会帮助其他竞争对手渡过难关。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">DRMOS产品的市场平均出货价格是多少？针对不同客户和规格，价格范围有多大？</strong></p><p>以中位数计，DRMOS产品的含税出货价格大约在9元人民币左右，约合1.4至1.5美元。针对不同封装和规格（如70安培或90安培）的产品，价格有所不同。对于一些小客户，价格可能会达到十几元，但这并不具备代表性。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司目前的产能主要分布在哪里？未来的增量产能规划是怎样的？</strong></p><p>公司目前的产能主要集中在中芯国际，涉及其上海厂和天津厂。为扩大DRMOS的产能，预计在今年7月份左右，将在合肥的晶合集成进行投片。通过与晶合集成的合作，预计到七、八月份，公司DRMOS的产能在现有基础上能够增加50%。此外，公司与中芯国际的深圳厂也有合作基础，若产能需求进一步提升，将产能从上海或天津转移至深圳是完全可行的。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">2027年的产能与2026年相比预计将有多少增长？</strong></p><p>目前可以确定的是，2026年下半年的DRMOS产能将比上半年增长50%。关于2027年的具体产能增长情况，目前尚无法预测。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司在台湾地区的业务布局和产能策略是怎样的？</strong></p><p>公司在台湾地区的业务表现良好，主要市场是消费类笔记本电脑。为应对部分海外及台湾客户的“去中化”要求，公司采取了双重代工策略，以确保能满足不同客户的供应链需求。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司与英特尔和英伟达等海外大客户的合作进展如何？</strong></p><p>公司与英特尔的合作非常密切，覆盖服务器和PC两大领域，并且英特尔也是公司的投资方之一。英特尔中国区内部有“China for China”的KPI导向，这促进了双方在PC和服务器业务上的良性合作。与英伟达的合作目前主要集中在消费类产品领域，例如用于PC的独立显卡，其相关产品正在评估中。而在车载或AI等更前沿领域的合作尚未取得实质性进展。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司是否在研发IVR（Integrated Voltage Regulator，集成式电压调节器）相关产品？</strong></p><p>是的，公司正在进行IVR产品的研发。垂直供电是未来功率增加后的一种技术趋势，并非仅限于英伟达的需求，许多行业和产品未来都将应用此技术。公司内部已有一个专门的团队负责这些产品的开发工作。</p><p><strong style=\"color: rgb(0, 112, 192);\">&nbsp;</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">请介绍一下垂直供电方案的具体情况，它是一种全新的产品还是基于现有芯片的解决方案？目前该方案的开发进度以及与主要客户的接洽情况如何？</strong></p><p>垂直供电是一种解决方案，而非一款全新的产品。该方案利用现有的芯片（例如之前提到的90安培芯片），通过重新设计模块及电感等组件，使其尺寸可以做得非常薄，从而能够垂直放置在PCB板上，例如直接置于CPU正下方。目前，该垂直供电方案尚处于开发阶段，因此还未向客户送测。行业内多数客户对此仍处在方案的预研状态。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">在海外市场，公司与英特尔、AMD、英伟达及谷歌的合作进展如何？</strong></p><p>公司与英特尔、AMD和英伟达这三家公司均有业务往来。其中，与AMD的合作已获得其授权，针对AMD CPU平台的产品也已陆续推出。关于谷歌，目前未听说有相关合作。</p><p><strong style=\"color: rgb(0, 112, 192);\">&nbsp;</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">公司多相电源产品在国内市场的客户结构和业务进展是怎样的，尤其是在通讯和服务器这两个领域？</strong></p><p>在国内市场，多相电源产品的客户可分为通讯和计算两大类。在通讯领域，业务进展良好，产品已在烽火、锐捷、新华三等国内头部客户以及中兴、华为的基站、交换机、路由器等设备上全面铺开。在计算领域的服务器市场，情况则有所不同。对于采用英特尔CPU的传统服务器，由于国内客户普遍较为保守，且无明确的国产化需求，同时担心英特尔平台的稳定性，因此倾向于优先使用欧美供应商的方案。目前仅在浪潮和超聚变的部分非核心小项目上取得了一些认证和验证的进展。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">针对海光CPU的国产化服务器市场，公司的产品布局和客户验证进展如何？</strong></p><p>使用海光CPU的客户通常具有明确的国产化需求。过去，公司针对海光CPU的产品线尚未准备就绪。近期，相关方案已陆续推出，并已开始在新华三等多个客户的海光CPU平台上进行测试验证工作，这标志着一个初步的进展。</p><p><strong style=\"color: rgb(0, 112, 192);\">&nbsp;</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">当前季度的订单情况如何？</strong></p><p>从订单情况来看，2026年第一季度接收到的订单金额已超过2025年上半年全年的总和，显示订单需求旺盛，目前的主要瓶颈在于产能。需要明确的是，这些是已签订的订单，部分交付会安排在第三、四季度。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">综合来看，公司在国内CPU和GPU市场的业务突破预计何时能体现为实质性收入？</strong></p><p>目前，在国内GPU市场，除了昇腾业务外，其他客户仍处于产品测试和验证阶段。在CPU市场，针对海光平台的产品也刚开始进行验证。预计这些新项目在2027年同期可能会有实质性的业务成果。2026年仍将以产品推广和客户导入为主，大规模的收入贡献预计将出现在2027年。</p><p><strong style=\"color: rgb(0, 112, 192);\">&nbsp;</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">GPU客户主要分为哪几类？其中，通信产品（如交换机、路由器）中DRMOS的使用量和市场规模与AI服务器相比如何？</strong></p><p>GPU客户主要分为通信产品和计算产品两类。通信产品主要指交换机、路由器等，而计算产品则指AI加速卡和服务器。交换机、路由器等通信产品虽然单板上的DRMOS用量不少，但其整体市场容量无法与AI服务器市场相比。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">在交换机芯片上，DRMOS的平均用量和价值量是怎样的？公司在2025年该业务的收入规模如何？</strong></p><p>交换机的种类繁多，DRMOS的用量也因此不同。以平均水平来看，一台交换机大约使用20至30颗DRMOS。2025年，公司在该领域的收入规模不大，华为的具体情况不详。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">2025年公司的主要收入来源是什么？ACDC、DCDC等产品的主要客户有哪些，单个客户的体量如何，销售模式是怎样的？</strong></p><p>2025年公司的主要收入来源是DCDC、ACDC等产品。主要客户涵盖了海康威视、大疆、小米等众多企业。单个客户的体量差异较大，销售额高的客户可达三千万元，低的则在三百万至五百万元之间，整体收入由大量客户构成。销售模式目前基本都通过分销商进行。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">公司业务增长的驱动力主要体现在哪些方面？</strong></p><p>业务增长主要源于两个方面。第一，产品线的极大丰富提升了单客户价值。例如，在同一客户的同一块板子上，几年前公司只能销售价值5到10元的产品，而到了2025年，随着高单价、大电流等新产品的推出，可销售的产品价值已提升至30到50元。第二，客户渗透率和料号数量显著增加。公司在许多客户，特别是关系友好的客户中，导入的料号已从几年前的几个增加到现在的几十个，这带来了生意额的巨大增长。同时，凭借在价格、交付、客户关系和品牌影响力方面的良好表现，原有老型号产品的市场份额也在持续提升。新料号的不断导入与老料号份额的增长共同促进了单个客户生意的持续增长。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">在国内DRMOS市场，公司的主要竞争对手是谁？在昇腾之外的其他国产GPU项目中，目前主要采用哪家供应商的方案？</strong></p><p>在国内市场，对公司构成一定影响的竞争对手主要是晶丰明源，其团队背景使其产品在一段时间内具有领先优势，并借此获得了一些市场份额。其他国内厂商目前尚未形成气候。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">国产GPU厂商（如寒武纪、壁仞、摩尔线程、沐曦等）对国产电源芯片的接受程度如何？其背后的原因是什么？</strong></p><p>国内的GPU厂商，从寒武纪到壁仞、摩尔线程、沐曦，虽然自身是国产品牌，但对国产电源芯片的采纳意愿非常低。这主要是因为这些厂商的首要任务是确保其GPU板卡能够稳定工作，因此在电源选型上倾向于使用性能最稳定、最好的产品，如MPS。他们认为更换国产电源芯片可能引入不确定性。如果更换后出现问题，将难以判断是电源芯片的问题还是其自身GPU的问题，所以他们不愿冒此风险。</p><p><strong style=\"color: rgb(0, 112, 192);\">&nbsp;</strong></p><p><strong style=\"color: rgb(0, 112, 192);\">公司的“线性电源”具体指什么类型的产品？</strong></p><p>“线性电源”并非指单一产品，而是一个大的产品品类集合。这类产品的共同特点是其内部的MOS管工作在线性状态，而非开关状态。在这个大品类下，包含了非常多细分的具体产品。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">2026年公司的毛利率趋势预计如何？是否有明确的扭亏目标？</strong></p><p>预计2026年的毛利率相比2025年将会有所提升。这主要得益于收入结构的改善，例如DRMOS这类高单价、高毛利产品的销售占比增加，同时一些负毛利的业务也已停止。目前公司没有设定明确的扭亏目标，考核的重点仍然是收入规模，毛利率的改善虽然是期望方向，但并非最优先的考量指标。</p><p>&nbsp;</p><p><strong style=\"color: rgb(0, 112, 192);\">鉴于现货市场DRMOS价格大幅上涨，公司是否会考虑通过现货市场销售产品以增加利润？</strong></p><p>目前公司尚未在现货市场销售DRMOS。公司当前仍处于产品导入阶段，首要任务是让客户开始使用产品。现货市场价格上涨的现象主要发生在那些已经被客户设计采用、且官方渠道缺货的成熟型号上，例如MPS或英飞凌的产品。由于公司的产品尚未被这些客户正式导入，因此不存在通过现货市场高价销售的前提。</p>",
+    "article_speech": {},
+    "hashtags": [
+      "DRMOS"
+    ],
+    "industry_ids": [
+      4530
+    ],
+    "custom_sector_ids": [
+      6
+    ],
+    "views": 11671,
+    "likes": 0,
+    "favorites": 1,
+    "word_stats": {
+      "word_count": 3817,
+      "read_time": 8
+    },
+    "masked_word_stats": {
+      "word_count": 0,
+      "read_time": 1
+    },
+    "need_to_pay": false,
+    "has_paid": true,
+    "paid_info": {
+      "state": "paid",
+      "sncode": "12607060607580580",
+      "paid_at": 1783317881,
+      "created_at": 1783317881,
+      "state_events": [
+        "refund",
+        "full_refund"
+      ],
+      "type": "Order",
+      "remark": "",
+      "goods_type": "Article",
+      "price": 300,
+      "actual_paid": 0,
+      "payment_info": null,
+      "payment_type": "UserCard",
+      "card_type": "vip",
+      "operator_info": {
+        "id": 1,
+        "name": "系统",
+        "avatar": null,
+        "is_analyst": false,
+        "is_expert": true
+      },
+      "operator_type": "Staff"
+    },
+    "author": {
+      "id": 20505907,
+      "type": "AceCamp",
+      "introduction": "机构投资人授权纪要",
+      "name": "共享调研纪要",
+      "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+    },
+    "organization": {
+      "id": 20505907,
+      "sc_name": "共享调研纪要",
+      "tc_name": "海外機構的專家調研會議紀要",
+      "en_name": "Shared Transcript",
+      "name": "共享调研纪要",
+      "sc_description": "机构投资人授权纪要",
+      "tc_description": null,
+      "en_description": "机构投资人授权纪要",
+      "description": "机构投资人授权纪要",
+      "share_display_name": "共享调研纪要",
+      "deleted_at": null,
+      "state": "passed",
+      "score": 0,
+      "organization_type_id": 2,
+      "sator_organization_id": 299,
+      "state_events": [],
+      "is_producer": true,
+      "self_employed": true,
+      "management_scale_id": 0,
+      "fund_type_ids": [],
+      "custom_sector_ids": [],
+      "ticker": null,
+      "tel": null,
+      "website": null,
+      "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+      "industry_id": null,
+      "institutional_type_ids": [],
+      "followed": false,
+      "public_contact": false,
+      "allow_public_contact": false,
+      "belongs_organization_id": null,
+      "belongs_organization_name": null,
+      "belongs_organization_contact": null,
+      "dms_vendor_contact": null,
+      "dms_vendor": false,
+      "irm": false,
+      "need_allocation": true,
+      "celebrity": false,
+      "lastest_updates": [
+        {
+          "id": 70564203,
+          "title": "阀门大厂调研:当前订单需求及分布,气体阀价格趋势,汽车/半导体业务发展情况-聚焦INNODIS/SEBA/KITZ/Fujikin/Swagelok等",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1783309192
+        },
+        {
+          "id": 70564202,
+          "title": "冷水机组大厂调研:客户订单情况,风冷/水冷占比及竞争格局,公司扩产规划及零部件瓶颈-聚焦万国/Integra/Digital Realty/约克/开利/Smardt/麦克维尔/克莱门特/丹佛斯等",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1783308526
+        },
+        {
+          "id": 70564201,
+          "title": "FILA老货库存压力大，李宁新品占比改善，户外和新兴赛道领跑（始祖鸟，迪桑特，昂跑，HOKA，勃肯）",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1783307547
+        }
+      ],
+      "article_count": 0,
+      "follower_count": 1944,
+      "event_count": 0,
+      "blocked_expert_roles": [],
+      "expert_organization": false,
+      "foreign": false,
+      "followed_corporations": [],
+      "expert": null,
+      "custom_sectors": [],
+      "liaison_id": null,
+      "liaison": null,
+      "producer_type": null,
+      "is_research_partner": false
+    },
+    "release_time": 1778225739,
+    "has_vip": true,
+    "can_download": false,
+    "can_copy": false,
+    "ppv_avaliabled_at": null,
+    "comment_count": 0,
+    "comments": [],
+    "related_topics": [],
+    "co_host_organizations": [
+      {
+        "id": 20506884,
+        "organization_type_id": 3,
+        "name": "Patrick",
+        "sc_name": "Patrick",
+        "en_name": "Patrick",
+        "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+        "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+        "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+        "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+        "state": "passed",
+        "followed": true,
+        "institutional_type_ids": [],
+        "management_scale_id": null,
+        "foreign": null,
+        "is_producer": true
+      }
+    ],
+    "shield_type": "expert",
+    "organization_shielded": false,
+    "suggested_questions": {
+      "zh": [
+        "寒武纪等国产GPU极度排斥国产电源芯片，若MPS断供风险加剧，晶丰明源等国内厂商能否在年内加速完成替代验证？",
+        "在英飞凌和MPS涨价背景下，晶丰明源等国内厂商坚持不涨价以抢占份额的策略，是否会严重透支其明年的毛利率修复预期？"
+      ],
+      "en": [
+        "With Cambricon rejecting local power chips, can Jingfeng Mingyuan accelerate validation this year if MPS supply chain risks intensify?",
+        "Given Infineon and MPS price hikes, will the zero-price-hike strategy of domestic players like Jingfeng Mingyuan severely undermine their margin recovery expectations next year?"
+      ]
+    },
+    "masked_state": "pending"
+  },
+  "meta": {
+    "ack": "1783317892840",
+    "ts": 1783317893
+  },
+  "code": 200,
+  "ret": true
+}

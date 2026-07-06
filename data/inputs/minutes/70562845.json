@@ -1,0 +1,261 @@
+{
+  "data": {
+    "id": 70562845,
+    "liked": false,
+    "disliked": false,
+    "favorited": false,
+    "favorite_ids": [],
+    "current_price": 300,
+    "original_price": 300,
+    "free": false,
+    "event_ids": [],
+    "meeting_ids": [
+      70537345
+    ],
+    "expert_public_resume": "na",
+    "original_title": null,
+    "source_url": null,
+    "expert_role": "employee",
+    "events": [],
+    "title": "国内DrMOS主要供应商进展跟踪",
+    "transcribe": null,
+    "badges": [
+      "hot"
+    ],
+    "has_article_speech": null,
+    "is_deleted": false,
+    "type": "minute",
+    "card_permission_item_code": "Minute:a_expert_minute",
+    "access_level": "original",
+    "repost": false,
+    "shared": false,
+    "translation_type": "to_en_by_machine",
+    "dual_language": "dual",
+    "corporation_ids": [
+      4219,
+      4238,
+      26106
+    ],
+    "corporations": [
+      {
+        "id": 4219,
+        "ticker": "SH.688368",
+        "name": "晶丰明源",
+        "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+      },
+      {
+        "id": 4238,
+        "ticker": "SH.688508",
+        "name": "芯朋微",
+        "logo": "https://image.acecamptech.com/logos/a867d89a-05c8-40a5-a1e3-63cf9aa6afc8.svg"
+      },
+      {
+        "id": 26106,
+        "ticker": "SH.688141",
+        "name": "杰华特",
+        "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+      }
+    ],
+    "is_anonymous": false,
+    "summary": "1、公司通过台达和直接和谷歌合作两条线进入谷歌链条；\n2、NV服务器方面也在积极通过台达进入。",
+    "content": "<p>以下为专家观点：</p><p>Q、公司产品在NV服务器供应进展？</p><p>A、目前DrMOS涨价缺货，NV主供 英飞凌、瑞萨、MPS，AOS这几家，产能优先供应NV，NV不会出现缺货的情况，服务器稳定性要求比较高，公司和NV谈了很久，开了一些口子，后面Rubbin和Ultra的新料号给了几个。</p><p>Q、公司和台达那边进展？</p><p>A、公司产品给台达主要客户是谷歌，12V-1V，晶丰 多项控制器和DrMOS，未来需求瓦数越来越大，功率器件封装成模块。谷歌项目量非常大，当然谷歌的主要Source是欧美为主，台达引入多个供应商，晶丰明源是其中重要一个供应商。</p><p>Q、谷歌订单金额？</p><p>A、谷歌给台达订单金额比较大，谷歌电源这块主力供应商是台达和伟创力，具体金额不太清楚。谷歌的TPU目前最新的TPU8、TPU9；一套板子会有4个TPU，TPU数量26年预测400万个TPU，2030年增长7倍2700万。</p><p>Q、台达占谷歌百分比？</p><p>A、谷歌这边供应有两种模式：一种是模块，台达第一份额，伟创力第二；另一种是分立器件方式，不需要台达，直接销售给谷歌。看项目的应用。如果有一些产品瓦数很大就基本是模块的供应方式，主要是台达和伟创力。</p><p>Q、公司单独给谷歌供应的？</p><p>A、谷歌已经在北美对接了，也把最新一代规格要求也发给晶丰了，也在开发新的产品。今年有一些量主要是通过台达供应。</p><p>新开发的产品：类似90A的Drmos，做一些谷歌自己想要的优化，功能，加一些新的future，定义自己的标准。这块会比较快一些，可能在原有基础上做一些优化改动。</p><p>Q、谷歌在DrMOS方面的客户？</p><p>A、直接供应商英飞凌、瑞萨、MPS。产品做出来没问题，很难超过英飞凌，后面核心要看商务关系。</p><p>Q、晶丰在台达的份额？</p><p>A、台达这边会好一些，台达和谷歌合作比较多，台达做出来不单是谷歌，也有其他的客户亚马逊、Meta，另外一方面，台达对各个供应商测试非常严格。毕竟直接供应台达供应，台达背书。台达模块：DrMOS用的比较多英飞凌和瑞萨，基本不用MPS，因为MPS台达有竞争关系。国产早起用长工微，合作比较久了，国产信创的合作比较多，产能优先。所以台达引入晶丰明源，其他的杰华特也在对接。目前来看晶丰明源快一些。台达这边在积极测试，批量要下半年的估计Q4。还在做一些高低位、稳定性测试。</p><p>Q、台达DrMOS主要供应商？</p><p>A、控制器他们的DSP（英飞凌和TI），晶丰也在送样测试。POL小电流，这块其实台达做的不多。重心在48V-12V，二次、三次电源，小电流也不是很多。</p><p>Q、晶丰在华为这块的进展？</p><p>A、华为这样的，从22年开始Drmos、多项电源都送样测试过了，一直没有用，没有太多的订单。可能是商务关系，最近老板也在通过其他公司合作。另外一方面，华为投资杰华特， 国产晶丰和杰华特的强力竞争关系。</p><p>Q、国产GPU客户寒武纪、沐熙是否有进入？</p><p>A、摩尔目前多数份额都是晶丰明源的，摩尔1个板卡48颗DrMOS，另一个GPU型号的卡是需要52颗Drmos。摩尔量还是不错的。天数智星、沐熙、励算、壁韧份额30-40%没有问题。寒武纪略少一些。寒武纪：用的比较多的英飞凌更多一些。国产少一些。信创：龙心、海光，晶丰明源50%的份额。</p><p>Q、字节这块是否有合作？</p><p>A、有合作；多项控制器，分为4块，协议授权，给CPU和GPU沟通协议，Intel、AMD、英伟达、开源就是其他的。字节国产：杰华特、奥拉半导体、晶丰。 </p><p>Q、晶丰和杰华特的差异？</p><p>A、技术方面，杰华特差不多的。 杰华特有一个单独BCD工艺技术华为的投资带来的比较大的量。晶丰目前NV消费显卡量比较大。</p><p>Q、NV给晶丰的25年收入？</p><p>A、消费显卡国内和台湾占全球各1半，台湾投入很多人，去年台湾2000万收入，今年台湾增速更快一些。NV这个GPU卖在中国大陆的量是向下走的，5090往下掉的，这个对晶丰明源来说收入不会有太大增长。</p><p>Q、BCD代工？</p><p>A、目前出货量比较多的中芯国际、粤芯。</p><p>Q、芯朋微在DrMOS方面进展？</p><p>A、服务器电源产品交流会，一次侧到三次测都有，控制器和DRMOS，自己摸索的。花了4-5年的时间摸索这块产品，华为的关系比较好，也在帮助华为做定制，如果他能够上量需要27年下半年。核心是自己研发的。</p><p>Q、晶丰在AMD方面进展？</p><p>A、AMD也在26年下半年陆续上量，Intel占有率比较高，AMD其实抢了很多Intel份额。笔记本台式消费显卡，AMD没有进入服务器。都拿到了授权。这块在国内会有一个很大的增长。</p><p>Q、杰华特Intel、AMD服务器都进入了？</p><p>A、是的，晶丰明源先拿到NV。AMD杰华特优势，Intel也给了投资，Intel授权国内唯一，消费和服务器都进入了。杰华特侧重点就是华为、Intel、杰华特他会更高一些。</p><p>AMD服务器、Intel服务器这两个客户也在观察。晶丰合作3-4年了，量产也有2-3年了。Drmos看稳定性和可靠性，很容易烧，很难找到原因，还是需要时间评估，需要3-4年消费端没有问题，可能才会导入服务器。</p><p>Q、CPU对应多项控制器和Drmos的量需求？</p><p>A、服务器来看，2个CPU基本1颗CP需要2颗控制器和15颗DRMOS，一般2U CPU服务器需要4颗控制器，30颗DrMOS。AI服务器基本在普通服务器*1.5或者2。瓦数越大需要的数量越多。</p><p>Q、NV的服务器？</p><p>A、1个OAM，1CPU和2GPU。 OAM这个卡上面Rubbin来算，160颗DRMOS，Computetray，4颗GPU2颗CPU，基本就是160*2. 一个机柜*18 。</p><p>Q、NV卖CPU？</p><p>A、NV单独CPU，类似消费显卡，GPU卖给七彩虹，GPU里面会有一个名单，MPS，晶丰明源。对于终端客户来说从名单里面选择。产品出问题。单独卖CPU对晶丰来说好一些。国产公司，客户关系是很大优势。国内的NV的关系比较好。</p><p>Q、光模块？</p><p>A、暂时没有，光模块很小，电流比较小。MPS、TI、矽力杰。</p><p>Q、DrMOS涨价？</p><p>A、海外的DRMOS价格涨了好几倍，外商缺货。只有10-20%供货中国，国内涨价很大，可能现在20-30美金。对国产来说是一个机会，浪潮和新华三测试国产品牌。台湾Redsemi，能达微， 奥拉。个别客户测试晶丰。</p><p>Q、国产涨价？</p><p>A、目前没有涨价。 </p><p>Q、LED控制器？</p><p>A、LED控制器这块涨价，涨价20-30%。成本方面推动的，中芯国际的涨价传导。</p><p>Q、SIC芯片进展？</p><p>A、AC-DC,第二大业务，内置电源，外置电源，这块基本主要是GaN，英诺赛科合作。这块暂时没有进入服务器，主要是还是家电、消费电子。</p><p>800-48V，48-12V 目前没有，芯朋微有的。</p><p>Q、PC和笔记本、台式机对DrMOS需求？</p><p>A、1年3亿台，普通电脑需要控制器1颗，DRMOS基本6-15颗，取一个平均按照10颗*0.5美金+控制器0.5美金=5.5美金 基本PC DrMOS市场也有15亿美金市场。</p><p>显卡：DRMOS+多项控制器 7-8美金。显卡4000万个显卡，NV80%，AMD 20%。显卡这块也有4-5亿美金。晶丰目标是这个领域拿到比较高的份额。</p>",
+    "article_speech": {},
+    "hashtags": [
+      "DrMOS"
+    ],
+    "industry_ids": [
+      4530
+    ],
+    "custom_sector_ids": [
+      6
+    ],
+    "views": 14960,
+    "likes": 0,
+    "favorites": 4,
+    "word_stats": {
+      "word_count": 2524,
+      "read_time": 6
+    },
+    "masked_word_stats": {
+      "word_count": 690,
+      "read_time": 2
+    },
+    "need_to_pay": false,
+    "has_paid": true,
+    "paid_info": {
+      "state": "paid",
+      "sncode": "12607041700960968",
+      "paid_at": 1783185074,
+      "created_at": 1783185074,
+      "state_events": [
+        "refund",
+        "full_refund"
+      ],
+      "type": "Order",
+      "remark": "",
+      "goods_type": "Article",
+      "price": 300,
+      "actual_paid": 0,
+      "payment_info": null,
+      "payment_type": "UserCard",
+      "card_type": "vip",
+      "operator_info": {
+        "id": 1,
+        "name": "系统",
+        "avatar": null,
+        "is_analyst": false,
+        "is_expert": true
+      },
+      "operator_type": "Staff"
+    },
+    "author": {
+      "id": 20509618,
+      "type": "AceCamp",
+      "introduction": "具备超过10年的TMT行业研究经验，曾就职于私募、券商等买方机构，对TMT行业具备完整的产业视角。",
+      "name": "Ethan Wang",
+      "avatar": "https://image.acecamptech.com/avatar/50522732/0.011203533432029955.png?x-oss-process=style/avatar"
+    },
+    "organization": {
+      "id": 20509618,
+      "sc_name": "Ethan Wang",
+      "tc_name": "Ethan Wang",
+      "en_name": "Ethan Wang",
+      "name": "Ethan Wang",
+      "sc_description": "具备超过10年的TMT行业研究经验，曾就职于私募、券商等买方机构，对TMT行业具备完整的产业视角。",
+      "tc_description": null,
+      "en_description": "具备超过10年的TMT行业研究经验，曾就职于私募、券商等买方机构，对TMT行业具备完整的产业视角。",
+      "description": "具备超过10年的TMT行业研究经验，曾就职于私募、券商等买方机构，对TMT行业具备完整的产业视角。",
+      "share_display_name": "Ethan Wang",
+      "deleted_at": null,
+      "state": "passed",
+      "score": 0,
+      "organization_type_id": 3,
+      "sator_organization_id": null,
+      "state_events": [],
+      "is_producer": true,
+      "self_employed": true,
+      "management_scale_id": 0,
+      "fund_type_ids": [],
+      "custom_sector_ids": [
+        6
+      ],
+      "ticker": null,
+      "tel": null,
+      "website": null,
+      "logo": "https://image.acecamptech.com/avatar/50522732/0.011203533432029955.png?x-oss-process=style/avatar",
+      "industry_id": null,
+      "institutional_type_ids": [],
+      "followed": false,
+      "public_contact": false,
+      "allow_public_contact": true,
+      "belongs_organization_id": null,
+      "belongs_organization_name": null,
+      "belongs_organization_contact": null,
+      "dms_vendor_contact": null,
+      "dms_vendor": false,
+      "irm": false,
+      "need_allocation": true,
+      "celebrity": true,
+      "lastest_updates": [
+        {
+          "id": 70563310,
+          "title": "DRAM存储大厂测试设备招标情况最新调研",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 225,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1781442262
+        },
+        {
+          "id": 70562845,
+          "title": "国内DrMOS主要供应商进展跟踪",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1780393935
+        },
+        {
+          "id": 70561603,
+          "title": "GPU和光模块对陶瓷基板的需求展望",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1777475193
+        }
+      ],
+      "article_count": 3,
+      "follower_count": 112,
+      "event_count": 55,
+      "blocked_expert_roles": [],
+      "expert_organization": false,
+      "foreign": null,
+      "followed_corporations": [
+        {
+          "id": 15528,
+          "ticker": "US.TSM",
+          "name": "台积电",
+          "logo": "https://image.acecamptech.com/logos/d40f2c27-7348-46ba-b76b-4d5c767ad12f.svg",
+          "following": null,
+          "industry_id": 4530,
+          "delist": false
+        },
+        {
+          "id": 12766,
+          "ticker": "US.MU",
+          "name": "美光科技",
+          "logo": "https://image.acecamptech.com/logos/857c76a3-65a3-4ed7-aac1-e1509f1714d9.svg",
+          "following": null,
+          "industry_id": 1020,
+          "delist": false
+        }
+      ],
+      "expert": null,
+      "custom_sectors": [
+        {
+          "id": 6,
+          "sc_name": "半导体/芯片",
+          "tc_name": "半導體/芯片",
+          "en_name": "Semiconductors & Chips",
+          "name": "半导体/芯片"
+        }
+      ],
+      "liaison_id": null,
+      "liaison": null,
+      "producer_type": "certified_analyst",
+      "is_research_partner": false
+    },
+    "release_time": 1780393384,
+    "has_vip": true,
+    "can_download": false,
+    "can_copy": false,
+    "ppv_avaliabled_at": null,
+    "comment_count": 0,
+    "comments": [],
+    "related_topics": [],
+    "co_host_organizations": [],
+    "shield_type": "expert",
+    "organization_shielded": false,
+    "suggested_questions": {
+      "zh": [
+        "晶丰明源在台达的DrMOS测试若Q4顺利通过，预计2025年能为公司带来多少实质性收入转化？",
+        "面对杰华特在Intel和华为生态的深度绑定，晶丰明源在国产AI服务器市场的份额是否面临被挤压的风险？"
+      ],
+      "en": [
+        "If BPS passes Delta's DrMOS testing in Q4, what is the projected revenue conversion for 2025?",
+        "Given Joulwatt's deep ties with Intel and Huawei, is BPS facing market share erosion in the domestic AI server space?"
+      ]
+    },
+    "masked_state": "passed"
+  },
+  "meta": {
+    "ack": "1783317383913",
+    "ts": 1783317384
+  },
+  "code": 200,
+  "ret": true
+}

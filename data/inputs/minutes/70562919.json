@@ -1,0 +1,265 @@
+{
+  "data": {
+    "id": 70562919,
+    "liked": false,
+    "disliked": false,
+    "favorited": false,
+    "favorite_ids": [],
+    "current_price": 225,
+    "original_price": 300,
+    "free": false,
+    "event_ids": [],
+    "meeting_ids": [
+      70537964
+    ],
+    "expert_public_resume": "na",
+    "original_title": null,
+    "source_url": null,
+    "expert_role": "employee",
+    "events": [],
+    "title": "Drmos专家交流-服务器电源需求（一次、二次、三次电源），产品国产突破情况，模拟涨价持续性及节奏",
+    "transcribe": null,
+    "badges": [
+      "hot"
+    ],
+    "has_article_speech": null,
+    "is_deleted": false,
+    "type": "minute",
+    "card_permission_item_code": "Minute:a_expert_minute",
+    "access_level": "original",
+    "repost": false,
+    "shared": false,
+    "translation_type": "to_en_by_machine",
+    "dual_language": "dual",
+    "corporation_ids": [
+      4219,
+      4238,
+      26106,
+      44243
+    ],
+    "corporations": [
+      {
+        "id": 4219,
+        "ticker": "SH.688368",
+        "name": "晶丰明源",
+        "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+      },
+      {
+        "id": 4238,
+        "ticker": "SH.688508",
+        "name": "芯朋微",
+        "logo": "https://image.acecamptech.com/logos/a867d89a-05c8-40a5-a1e3-63cf9aa6afc8.svg"
+      },
+      {
+        "id": 26106,
+        "ticker": "SH.688141",
+        "name": "杰华特",
+        "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+      },
+      {
+        "id": 44243,
+        "ticker": "TW.6415",
+        "name": "矽力杰",
+        "logo": null
+      }
+    ],
+    "is_anonymous": false,
+    "summary": "AI服务器一次、二次、三次电源分析：各个芯片的功能、价值量、竞争格局等。\n国内服务器电源市场空间、国产替代进程预期。\n模拟涨价持续性及节奏。",
+    "content": "<p><strong style=\"color: rgb(0, 0, 0);\">以下内容为专家分享，仅供参考，不构成任何投资建议。</strong></p><p><br></p><h2><strong style=\"color: rgb(43, 51, 230);\">Q&amp;A</strong></h2><p><strong style=\"color: rgb(43, 51, 230);\">AI服务器一次电源中辅源芯片和隔离驱动芯片的作用、技术背景以及面向哪类客户？</strong></p><p>随着AI服务器功率增大，数据中心的供电系统正从传统的220V或380V向800V高压直流演进。在这种高压体系下，电源系统（包括辅源和主电源）必须能承受800V的输入电压，整流滤波后，实际电压可达1,100V至1,300V。为应对这一挑战推出了1,700V的碳化硅辅源芯片。同时，对于3kW、5kW乃至10kW的大功率电源，通常采用全桥电路，其中高端电路部分工作在1,000V以上的高压环境，这需要专用的隔离驱动芯片，将控制信号精确传递至高压侧，以驱动碳化硅或氮化镓等大功率器件。这些芯片协同工作，将1,000V以上的高压转换成机柜内二次电源所需的48V至53.5V标准电压。</p><p>目前上述产品面向的客户包括H客户、中兴通讯、浪潮和新华三等。</p><p><strong style=\"color: rgb(43, 51, 230);\">HVDC中，一次电源相关芯片的价值量构成是怎样的？目前这些产品的出货阶段以及市场进展如何？</strong></p><p>以一套5,000W的HVDC系统为例，一次电源相关芯片的价值量构成如下：首先，辅源芯片价值约10元。其次，主电源的驱动芯片加上碳化硅功率器件，价值接近100元。最后，在输出端，需要将变压器隔离降压后的交流电转换为直流电，这一过程需要同步整流，由于5,000W/50V系统电流高达100A，需要使用至少20颗同步整流芯片及相应的碳化硅功率器件，这部分价值约200多元。综上，完成从1,000V高压到48V直流转换的一次电源部分，芯片及相关器件的总价值量约为300多元。</p><p>目前，这些产品在华为、中兴、浪潮、新华三等客户处均已完成小批量验证，但以为国内HVDC市场尚未进入大规模部署阶段，产品尚未大规模放量。</p><p><strong style=\"color: rgb(43, 51, 230);\">二次电源领域的DC-DC开环控制器产品定位、竞争格局和市场进展是怎样的？</strong></p><p>二次电源中的DC-DC开环控制器主要负责将一次电源输出的48V电压转换为12V。这类芯片的应用方是麦格米特、欧陆通等电源产品或模块制造商。在此之前，该市场主要由TI、英飞凌以及特别是MPS（美国芯源系统）等公司主导。公司二次电源产品在国内市场进展迅速，处于领先地位，可以排在前两位。</p><p><strong style=\"color: rgb(43, 51, 230);\">二次电源芯片的单价水平如何？</strong></p><p>当前国内二次电源芯片的价格并不算高，基本在每颗10元人民币左右浮动。</p><p><strong style=\"color: rgb(43, 51, 230);\">对于一个5.5千瓦的PSU，单价10元的二次电源芯片使用量是多少？</strong></p><p>并非一个PSU只使用一颗芯片。用量与功率直接相关。以一个5千瓦的PSU为例，其在48V下的电流接近100安培。单颗DC-DC芯片无法承受如此大的电流，通常需要8到10颗芯片协同工作才能完成转换。</p><p><strong style=\"color: rgb(43, 51, 230);\">DC-DC控制器产品主要应用于HVDC架构还是传统服务器架构？</strong></p><p>DC-DC控制器产品通用性强，既可以应用于传统的220V或380V供电的服务器架构，也可以应用于新型的HVDC服务器架构。由于该产品的工作电压已降至48V级别，因此能够广泛兼容不同架构。这类产品过去由美国芯片公司主导，随着国产化替代的推进，国内大型企业正逐步转向采用国产芯片。</p><p><strong style=\"color: rgb(43, 51, 230);\">业界为何会考虑开发48V转6V的二次电源方案，而非普遍使用的48V转12V？</strong></p><p>48V转6V的方案目前尚未普遍使用，其开发主要是为了适配三次电源的接口需求。理论上，能够实现48V转12V的技术同样可以实现48V转6V。采用6V输入的考量在于，可以直接为三次电源供电，但在电路板设计上，需要使用更厚、更宽的覆铜来承载相应的电流，以确保功率能够有效传导。</p><p><strong style=\"color: rgb(43, 51, 230);\">三次电源领域，多相控制器和DrMOS产品的研发与市场进展如何？</strong></p><p>在多相控制器方面，公司的产品在国内处于领先地位，但在DrMOS方面，则稍逊于杰华特。三次电源是芯片用量和价值量最高的部分，H客户中杰华特份额最高。</p><p><strong style=\"color: rgb(43, 51, 230);\">在为GPU供电的三次电源方案中，芯片用量和价值量是如何计算的？</strong></p><p>三次电源部分的价值量非常可观。以一颗90A DrMOS芯片为例，单价约在25元人民币。对于一个5千瓦的GPU供电需求，若以20A的电流进行设计冗余计算，则需要大约250颗DrMOS芯片。之所以采用20A而非芯片标称的90A进行计算，是出于对安全性和可靠性的考量，需要为GPU运算时可能出现的倍频运行预留充足的电流余量。常规运行时电流为20A，一旦倍频，电流可能翻倍至40A，再翻倍则接近80A，这已占到90A标称值的近三分之二。因此，基于这种设计，5kw电源对应的三次电源芯片价值远高于二次电源部分数百元的价值。</p><p><strong style=\"color: rgb(43, 51, 230);\">在H客户的服务器电源项目中，国内供应商的冗余设计标准是否高于海外？H客户DrMOS供应商的份额格局是怎样的？</strong></p><p>设计标准遵循行业惯例，即为保证稳定可靠，通常会留出一倍的余量，这并非国内特有的更高标准。在H客户当前（2026年）的份额分配中，杰华特占据了主要份额，海外供应商MPS已经没有份额，国内芯朋微、矽力杰等有一定份额。</p><p><strong style=\"color: rgb(43, 51, 230);\">H客户下一代产品中二供、三供提升份额的可能性有多大？</strong></p><p>提升份额的难度很大。一旦第一供应商确立，后来者想要取代会非常困难。</p><p><strong style=\"color: rgb(43, 51, 230);\">未来几年国内服务器芯片市场的展望如何？国产化替代的进程会是怎样的？</strong></p><p>国内服务器芯片电源市场2026年的总规模大约在20亿至30亿元人民币。国产化替代是一个渐进的过程，通常需要3到5年才能全面完成。替代主要发生在新产品上，厂商不会冒险将正在使用的老产品全部替换。</p><p><strong style=\"color: rgb(43, 51, 230);\">当前模拟芯片行业面临上游原材料涨价，这对产品定价和毛利率有何影响？</strong></p><p>在当前宏观经济环境下，产品涨价非常困难。目前市场购买力下降，除非有国家层面的推动，否则涨价难以实施，即使晶圆厂涨价，公司产品也很难向上游客户提价，一方面，公司原有产品的毛利率较高，有一定的成本吸收能力，另一方面，面对国企等大客户，涨价函基本无效。</p>",
+    "article_speech": {},
+    "hashtags": [
+      "drmos"
+    ],
+    "industry_ids": [
+      4530
+    ],
+    "custom_sector_ids": [
+      6
+    ],
+    "views": 7977,
+    "likes": 0,
+    "favorites": 3,
+    "word_stats": {
+      "word_count": 2165,
+      "read_time": 5
+    },
+    "masked_word_stats": {
+      "word_count": 1954,
+      "read_time": 4
+    },
+    "need_to_pay": false,
+    "has_paid": true,
+    "paid_info": {
+      "state": "paid",
+      "sncode": "12607041700950951",
+      "paid_at": 1783184967,
+      "created_at": 1783184967,
+      "state_events": [
+        "refund",
+        "full_refund"
+      ],
+      "type": "Order",
+      "remark": "",
+      "goods_type": "Article",
+      "price": 225,
+      "actual_paid": 0,
+      "payment_info": null,
+      "payment_type": "UserCard",
+      "card_type": "vip",
+      "operator_info": {
+        "id": 1,
+        "name": "系统",
+        "avatar": null,
+        "is_analyst": false,
+        "is_expert": true
+      },
+      "operator_type": "Staff"
+    },
+    "author": {
+      "id": 20511154,
+      "type": "AceCamp",
+      "introduction": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+      "name": "Shirley",
+      "avatar": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar"
+    },
+    "organization": {
+      "id": 20511154,
+      "sc_name": "Shirley",
+      "tc_name": "Shirley",
+      "en_name": "Shirley",
+      "name": "Shirley",
+      "sc_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+      "tc_description": null,
+      "en_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+      "description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+      "share_display_name": "Shirley",
+      "deleted_at": null,
+      "state": "passed",
+      "score": 0,
+      "organization_type_id": 3,
+      "sator_organization_id": null,
+      "state_events": [],
+      "is_producer": true,
+      "self_employed": true,
+      "management_scale_id": 0,
+      "fund_type_ids": [],
+      "custom_sector_ids": [
+        5,
+        11,
+        6
+      ],
+      "ticker": null,
+      "tel": null,
+      "website": null,
+      "logo": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar",
+      "industry_id": null,
+      "institutional_type_ids": [],
+      "followed": false,
+      "public_contact": false,
+      "allow_public_contact": true,
+      "belongs_organization_id": null,
+      "belongs_organization_name": null,
+      "belongs_organization_contact": null,
+      "dms_vendor_contact": null,
+      "dms_vendor": false,
+      "irm": false,
+      "need_allocation": true,
+      "celebrity": true,
+      "lastest_updates": [
+        {
+          "id": 70563884,
+          "title": "SST固态断路器专家访谈-数据中心SST用产品技术要求，价值量测算，供应商分析及国产厂家机会",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1782640590
+        },
+        {
+          "id": 70563557,
+          "title": "数据中心电源调研-北美HVDC及SST进展，电源形式切换技术“甜蜜点”，sic需求及变化",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1782094787
+        },
+        {
+          "id": 70563478,
+          "title": "光纤调研-数据中心光纤需求测算，国内外厂家扩产及瓶颈梳理，运营商招标，价格趋势及节点判断",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1781697647
+        }
+      ],
+      "article_count": 12,
+      "follower_count": 243,
+      "event_count": 137,
+      "blocked_expert_roles": [],
+      "expert_organization": false,
+      "foreign": null,
+      "followed_corporations": [],
+      "expert": null,
+      "custom_sectors": [
+        {
+          "id": 5,
+          "sc_name": "TMT",
+          "tc_name": "TMT",
+          "en_name": "TMT",
+          "name": "TMT"
+        },
+        {
+          "id": 11,
+          "sc_name": "制造业",
+          "tc_name": "制造业",
+          "en_name": "Manufacturing",
+          "name": "制造业"
+        },
+        {
+          "id": 6,
+          "sc_name": "半导体/芯片",
+          "tc_name": "半導體/芯片",
+          "en_name": "Semiconductors & Chips",
+          "name": "半导体/芯片"
+        }
+      ],
+      "liaison_id": null,
+      "liaison": null,
+      "producer_type": "certified_analyst",
+      "is_research_partner": false
+    },
+    "release_time": 1780545367,
+    "has_vip": true,
+    "can_download": false,
+    "can_copy": false,
+    "ppv_avaliabled_at": null,
+    "comment_count": 0,
+    "comments": [],
+    "related_topics": [],
+    "co_host_organizations": [],
+    "shield_type": "expert",
+    "organization_shielded": false,
+    "suggested_questions": {
+      "zh": [
+        "若晶圆厂持续涨价，模拟芯片厂商在服务器电源领域的毛利率是否面临大幅压缩风险？",
+        "杰华特在H客户三次电源DrMOS的绝对份额优势，是否已完全Price-in其当前估值？"
+      ],
+      "en": [
+        "Will analog chipmakers face severe gross margin compression in server power if foundry costs keep rising?",
+        "Is Joulwatt's dominant DrMOS share at Client H already fully priced into its current valuation?"
+      ]
+    },
+    "masked_state": "passed"
+  },
+  "meta": {
+    "ack": "1783317613505",
+    "ts": 1783317614
+  },
+  "code": 200,
+  "ret": true
+}

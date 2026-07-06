@@ -1,0 +1,288 @@
+{
+  "data": {
+    "id": 70562805,
+    "liked": true,
+    "disliked": false,
+    "favorited": false,
+    "favorite_ids": [],
+    "current_price": 300,
+    "original_price": 300,
+    "free": false,
+    "event_ids": [],
+    "meeting_ids": [
+      70537848
+    ],
+    "expert_public_resume": "na",
+    "original_title": null,
+    "source_url": null,
+    "expert_role": "employee",
+    "events": [],
+    "title": "国产DrMOS龙头深度调研：AI算力驱动需求爆发，国产芯片迎缺货替代窗口期——英飞凌/瑞萨/英特尔/AMD/华为/摩尔",
+    "transcribe": null,
+    "badges": [
+      "hot"
+    ],
+    "has_article_speech": null,
+    "is_deleted": false,
+    "type": "minute",
+    "card_permission_item_code": "Minute:a_expert_minute",
+    "access_level": "original",
+    "repost": false,
+    "shared": false,
+    "translation_type": "by_human",
+    "dual_language": "dual",
+    "corporation_ids": [
+      4219,
+      7617,
+      26106,
+      44174
+    ],
+    "corporations": [
+      {
+        "id": 4219,
+        "ticker": "SH.688368",
+        "name": "晶丰明源",
+        "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+      },
+      {
+        "id": 7617,
+        "ticker": "US.AMD",
+        "name": "AMD",
+        "logo": "https://image.acecamptech.com/logos/c223b76b-dfd0-4369-9147-ca859ac15c41.svg"
+      },
+      {
+        "id": 26106,
+        "ticker": "SH.688141",
+        "name": "杰华特",
+        "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+      },
+      {
+        "id": 44174,
+        "ticker": "SH.688795",
+        "name": "摩尔线程-U",
+        "logo": "https://image.acecamptech.com/logos/71c9f468-117f-405d-ab16-c3b31edb3631.png"
+      }
+    ],
+    "is_anonymous": false,
+    "summary": "- 英飞凌、瑞萨因优先保障北美大客户导致国内严重缺货，并提价10%-20%，为国产品牌切入浪潮、联想等供应链提供窗口期。\n- 国产替代格局分化：杰华特绑定华为及英特尔平台；另一龙头公司深耕国产GPU并获AMD授权。\n- 技术壁垒聚焦智能DrMOS的电流/温度反馈精度及自研BCD工艺，国产与一线外商效率差距约0.2%-0.5%，可靠性仍待规模验证。\n- 垂直供电趋势下，芯片厂商倾向与台达等模块厂合作而非直接竞争，通过供应Die或成品切入谷歌TPU等高阶供应链。",
+    "content": "<p><strong style=\"color: rgb(43, 51, 230);\">以下内容来自资深行业专家：</strong></p><p><strong style=\"color: rgb(43, 51, 230);\">Q&amp;A</strong></p><p><strong style=\"color: rgb(43, 51, 230);\">请问DrMOS在AI服务器电源供应链中扮演何种角色，其重要性体现在哪些方面？</strong></p><p>DrMOS主要应用于为CPU和GPU等大电流芯片供电的场合，不仅限于服务器，也包括消费级PC及显卡。与用于小电流场景的LDO或POL不同，DrMOS具有高集成度。当CPU或GPU的功耗较大时，需要采用分离式供电方案，即由多相控制器与多个DrMOS共同工作。以一个16相供电系统为例，控制器负责协调16个DrMOS的开关，如同16个水管协同为CPU或GPU（好比一个池塘）提供能源。在服务器电源的三级架构中，DrMOS处于第三级电源（Tertiary Power Supply）环节，也称为点负载电源，负责将12V电压转换为1V左右直接供给CPU或GPU，前两级分别是一次侧电源（AC转DC，如交流转400V）和二次侧电源（如400V转48V或48V转12V）。</p><p><strong style=\"color: rgb(43, 51, 230);\">随着垂直供电技术的引入，控制器与DrMOS之间的分工是否会发生变化？</strong></p><p>目前主流的供电方式是平行供电，即控制器、DrMOS、电感和电容等元器件平铺在主板上为CPU或GPU供电。这种布局方式下，电流路径存在一定阻抗，随着功耗提升，损耗会显著增加。此外，平铺布局会占用较大的主板空间，而CPU和GPU的尺寸也在不断增大。垂直供电技术应运而生，其核心是将供电单元直接置于CPU或GPU的底面，通过垂直方向直接供电，从而大幅降低供电路径的阻抗和损耗。</p><p><strong style=\"color: rgb(43, 51, 230);\">从需求角度看，GPU功耗的提升如何影响DrMOS的用量？可否以英伟达H系列至GB200/GB300为例进行定量说明？</strong></p><p>DrMOS的使用数量与GPU的功耗基本成正比，功耗越高，所需数量越多。在服务器应用中，通常选用90A规格的DrMOS，而消费电子产品则多采用70A规格。尽管90A是理想工作条件下的额定电流，但考虑到服务器严苛的运行环境（如空间受限、高温、24小时不间断运行），设计时会保留极大的余量，通常将一颗90A的DrMOS按20A至30A的实际工作电流进行设计。因此，若一颗GPU需要2,500A的总电流，可能需要配置100颗DrMOS。具体到产品，单颗H100 GPU使用了65颗DrMOS。对于GB200（包含两个GPU和一个CPU），其单板上配置了约170颗DrMOS；整个Compute Tray包含两块这样的板卡（四个GPU、两个CPU），DrMOS总数即为170乘以2；而一个完整的机柜则包含18个Compute Tray。GB300的功耗更高，其DrMOS用量也相应增加至约200颗。预计下一代Rubin Ultra架构的功耗将有大幅提升，届时DrMOS的数量可能会是当前GB系列的1.5到2倍。</p><p><strong style=\"color: rgb(43, 51, 230);\">如何测算2026至2027年中国国内AI芯片市场的DrMOS增量空间？</strong></p><p>国内AI芯片（如昇腾、摩尔线程、寒武纪等）的DrMOS用量同样与功耗正相关。以摩尔线程为例，其GPU产品几乎90%以上的DrMOS由公司供应，其全年GPU出货量预计在百万级别。其最新一代产品的单卡DrMOS用量为52颗，已量产项目则有48颗和46颗的配置，平均用量在40至43颗之间。对于昇腾而言，其2026年对DrMOS的需求量预计为5亿颗，到2028年预计将增长至20亿颗。整个华为体系在2026年对DrMOS的总需求量预计约为5亿颗。</p><p><strong style=\"color: rgb(43, 51, 230);\">当前DrMOS的市场单价如何，近期价格上涨的原因是什么？</strong></p><p>目前服务器用DrMOS的单价在1至1.5美元之间，消费级70A规格的产品单价则较低，约为0.4至0.5美元。近期价格出现小幅上涨，主要驱动因素是AI服务器需求的急剧增长，同时原材料成本也在上升。</p><p><strong style=\"color: rgb(43, 51, 230);\">英飞凌和瑞萨等主流供应商目前的缺货与调价情况如何？</strong></p><p>自2025年底以来，英飞凌和瑞萨在国内市场出现了严重的缺货。其主要原因是将产能优先保障北美的大客户（如谷歌、微软、英伟达），导致分配给中国市场的份额大幅缩减，从以往的20%-30%下降到2026年可能不足10%。这种情况引起了国内客户的普遍不满，也为国产品牌提供了市场切入的机会。价格方面，英飞凌已通知客户价格上涨10%-20%，并表示供应紧张状况可能在8月份有所缓解。瑞萨方面，供应缓解的时间点可能更晚，虽然其一直有涨价意向，但由于交付困难，目前尚未实施涨价。</p><p><strong style=\"color: rgb(43, 51, 230);\">北美市场的需求状况对DrMOS市场有何影响？</strong></p><p>北美市场的需求极为旺盛，是当前市场供不应求的主要原因。以谷歌的TPU为例，其2026年的出货量预计为400万颗，而到2030年的需求量预计将增长7倍，达到2,800万颗。考虑到单颗TPU需要配置约40至50颗DrMOS，可以预见其对DrMOS的巨大需求量。</p><p><strong style=\"color: rgb(43, 51, 230);\">谷歌TPU项目存在通过台达和直接供货两种路径，这两种供货模式的具体区别是什么，以及目前哪种模式进展更快？</strong></p><p>为CPU、GPU供电的方案通常被称为分离方案，即多相控制器配合DrMOS、电感和电容。随着功率需求的增加，例如英伟达H100可能需要65颗DrMOS和65颗电感，甚至更多，服务器主板有限的空间使得高集成度的模块方案更受青睐。台达在此扮演的角色就是将DrMOS和电感封装成一个模块。这就形成了两种合作模式：第一种是直接向谷歌销售多相控制器和DrMOS，由谷歌自行完成硬件主板设计；第二种是向台达销售DrMOS，台达再将其与电感封装成模块后供应给谷歌。目前来看，通过台达的模式进展可能更快。由于双方此前没有合作历史，谷歌对产品的稳定可靠性尚在考察阶段，而台达作为长期合作伙伴，其认证测试过的产品可靠性已获得谷歌的高度认可。</p><p><strong style=\"color: rgb(43, 51, 230);\">通过台达的供货路径是否会对产品价格产生影响？</strong></p><p>是的，通过台达的路径价格会略低一些。这主要是因为销售给台达的产品可能是DrMOS成品，也可能直接是未封装的Die，由台达自行完成封装。</p><p><strong style=\"color: rgb(43, 51, 230);\">智能DrMOS与普通DrMOS的核心区别是什么，其关键的生产壁垒体现在哪些方面？</strong></p><p>普通DrMOS内部包含一个驱动芯片和两个MOS管，多数具备MOS生产能力的公司都能制造。智能DrMOS的核心区别在于增加了两个关键功能：实时报告温度和实时报告电流。它能时刻侦测通过自身的电流大小和运行温度，并将这些数据反馈给控制器。控制器根据这些高精度的反馈信息，可以进行动态调整，例如在温度过高时降低电流，或在电流不足时增加电流，从而确保并联的多个DrMOS能够均衡、稳定地工作。其技术难点在于将温度和电流的反馈精度做得非常高，以保证控制器能够及时、准确地做出响应。</p><p><strong style=\"color: rgb(43, 51, 230);\">BCD工艺在DrMOS制造中扮演了怎样的核心角色？目前行业内主流的工艺开发模式是怎样的？</strong></p><p>BCD工艺是DrMOS制造的核心技术之一。DrMOS的实现方式有两种，一种是将一个Driver和两个MOS管分立封装（如5x6封装），另一种是将三者集成在单一芯片上（Module Single Die）。后一种方式对BCD工艺的要求极高，其优势在于可以显著缩小Die的面积、提升性能并降低成本。因此，规模较大的公司通常会投入资源开发自己独有的BCD工艺技术。例如，晶丰明源建立其自有的BCD工艺团队；杰华特也拥有自己的工艺团队。这些公司会在中芯国际等代工厂的标准BCD工艺基础上进行二次开发，形成独特技术，以进一步优化成本和性能。而规模较小的公司，如奥拉或长工微，则通常直接采用中芯国际等厂商的标准BCD工艺进行生产。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源为华为定制的DrMOS是否也采用了自研工艺？</strong></p><p>晶丰明源的晶圆代工厂主要是中芯国际和粤芯半导体。目前为华为定制的DrMOS产品，采用的正是其自研的BCD工艺。</p><p><strong style=\"color: rgb(43, 51, 230);\">在DrMOS封装方面，4x6和5x6两种规格在研发难度、制造成本和应用场景上有何差异？消费级产品的封装规格又是怎样的？</strong></p><p>目前服务器领域主流的90安培DrMOS主要采用5x6和4x6两种封装。5x6封装出现较早，后来为满足客户在有限主板空间内集成更多数量的需求，发展出了尺寸更小的4x6封装。从成本来看，两者目前相差不大。5x6的Die面积较大，而4x6虽然Die面积较小，但研发难度更高，两者综合成本相当。在应用上，客户如果主板空间紧张，希望并联更多DrMOS，会更倾向于选择条状的4x6封装。此外，行业内各厂商也在开发电流更大的4x9封装，可支持100至120安培。消费级DrMOS的封装规格则不同，主要是5x5封装，电流规格也较小，通常为70安培，价格约为0.4至0.5美金，远低于服务器用工规级产品1至1.5美金的价格。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源的4x6封装DrMOS是否已经量产？其产品与英飞凌、MPS等国际厂商相比，在效率和可靠性方面存在多大差距？</strong></p><p>晶丰明源的4x6封装产品已有部分客户开始量产。在性能方面，其效率与英飞凌、MPS等一线厂商的产品相比，实测下来有大约0.2%到0.3%的差距，国内其他厂商的差距基本在0.5%以内。对于功耗敏感的服务器应用而言，0.5%的效率差距已相当显著。可靠性是影响客户选择的更主要因素。服务器要求24小时不间断运行，对DrMOS的稳定可靠性要求极高，一旦发生烧毁，可能导致整个PCB板损坏，且由于Die已完全损毁，事后分析原因也极为困难。即便是市场领先的MPS，其4x6 DrMOS在2025年也曾出现过烧毁事件。目前市场上可靠性最高的是英飞凌，其功率器件基础扎实，产品几乎不发生烧毁。</p><p><strong style=\"color: rgb(43, 51, 230);\">从PPM（百万分之不良率）失效率的角度，如何衡量主流DrMOS厂商的可靠性水平？</strong></p><p>以失效率衡量，英飞凌无疑是行业标杆，其次是瑞萨和MPS。国内厂商中，杰华特出货量稍大，其次是晶丰明源。但由于国产DrMOS真正在服务器市场实现量产仅两三年时间，整体出货量与国际大厂相比仍有很大差距，因此在当前阶段，用失效率指标来衡量可能不够公允，需要待出货量达到一定规模后进行评估会更为合理。DrMOS的失效主要是指芯片直接烧毁、碳化。</p><p><strong style=\"color: rgb(43, 51, 230);\">DrMOS的可靠性差距对客户的采购意愿影响有多大？</strong></p><p>可靠性的影响非常大，因为失效代价极高。以英伟达的服务器产品为例，其DrMOS供应商目前仅限于英飞凌、瑞萨和MPS这三家国际厂商，出于对稳定可靠性的担忧，暂时不会考虑采用台系厂商的产品，更不用说国内厂商。目前与英伟达的合作仅限于消费类显卡产品。</p><p><strong style=\"color: rgb(43, 51, 230);\">当前DrMOS市场的竞争格局如何，头部厂商在服务器和消费市场的定位及份额分别是怎样的？</strong></p><p>DrMOS市场可以分为服务器和消费两大块。在服务器市场，英飞凌占据领先地位，市场份额约30%至40%；瑞萨其次，份额约20%至30%；MPS约占10%至20%。其余市场由AOS、安森美、威世、PI等厂商瓜分。在消费PC市场，格局则完全不同。随着英飞凌、瑞萨等国际大厂逐渐退出，MPS成为市场领导者，其余份额主要由瑞昱、立锜等台湾厂商占据。</p><p><strong style=\"color: rgb(43, 51, 230);\">国产DrMOS在不同市场推进替代的主要障碍是什么？</strong></p><p>国产替代的进展需要分市场来看。在信创市场，目前已基本实现国产化，包括华为等厂商的产品也主要采用国产品牌。</p><p><strong style=\"color: rgb(43, 51, 230);\">在服务器领域，国产DrMOS厂商面临怎样的市场机遇与竞争格局？</strong></p><p>服务器市场对产品的稳定性和可靠性要求极高，因此传统上浪潮、联想、新华三等厂商优先选择英飞凌、瑞萨等外商品牌，价格并非首要考量因素。然而，2026年由于外商在中国市场出现缺货，为国产品牌创造了良好的切入机会。目前，浪潮、联想、新华三等客户主要在测试三家供应商。其中，晶丰明源因获得英伟达和AMD的授权，在AMD平台客户中获得测试机会；杰华特则凭借英特尔的授权，吸引了英特尔平台客户的测试；另一家是未上市的台湾公司Reed Semiconductor（国内称能达微），该公司同时拥有英特尔和AMD的授权。这三家公司在当前市场格局中占据了显著优势。</p><p><strong style=\"color: rgb(43, 51, 230);\">AOS和安森美在服务器DrMOS市场的业务进展和市场定位是怎样的？</strong></p><p>AOS在行业内被视为价格竞争者，其产品以低价著称。该公司从MOS业务起家，后拓展至DrMOS和控制器领域，首先进入的是消费级PC市场，在台湾市场除MPS外，AOS的出货量也相当可观，覆盖PC和消费级显卡。近两年，AOS开始进入服务器市场，并已成为英伟达的第四家供应商。作为一家美国公司，AOS在获取英特尔、AMD及英伟达的授权方面具备优势。</p><p>安森美在前几年PC市场的占有率较高，但后来公司战略转向汽车和工业领域，服务器业务虽有涉及但市场份额不高。2025年，安森美与国内的时钟模拟芯片公司奥拉达成合作。奥拉在印度拥有一个来自TI背景的团队，负责多相控制器和DrMOS的研发。由于奥拉去年上市未成功，便与安森美达成授权协议，其多相控制器和DrMOS产品在非中国海外市场将以安森美的名义销售，国内市场则保留奥拉品牌。因此，安森美可以看作是2026年才开始全面进入服务器市场。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源在消费级和服务器级市场的核心客户体系是怎样的？</strong></p><p>在消费级市场，晶丰明源2025年的营业额主要来自英伟达，在其约1亿元的总营收中占比达到70%，主要应用于消费级显卡。其余收入来自国产GPU厂商（如寒武纪、摩尔）和国产信创平台（如龙芯、飞腾）。预计2026年，其在英伟达显卡市场的份额将从2025年的20%-30%提升至30%-40%。此外，公司已成功进入微星、华硕、技嘉等台湾市场客户，预计2026年将开始放量。在AMD平台方面，2025年已切入PC市场，2026年出货量预计将有显著增长。</p><p><strong style=\"color: rgb(43, 51, 230);\">消费级与服务器级客户在产品验证周期和业务合作上有何差异？</strong></p><p>两者存在显著差异。消费类产品对稳定可靠性的要求相对较低，验证流程更简便。相比之下，服务器市场对稳定性和可靠性的要求极为严苛。服务器客户的典型验证流程包括：首先提供测试版进行功能性测试；随后，在客户的实际板卡上进行功能及高低温可靠性测试；测试通过后，会选择一个项目进行小批量试产（try run），例如几千至几万台，以观察产品的长期稳定性和可靠性。整个流程跑完确认无误后，客户才会逐步在更多项目中推广使用。从最初的测试到最终实现大规模量产，服务器产品的验证周期通常需要两到三年。而消费类产品的验证周期，包括各项测试，时间大约会缩短一半，约为1.5到2年。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源在国产GPU厂商中的供应地位和客户粘性如何？</strong></p><p>目前来看，与国产GPU厂商的合作关系稳固。以摩尔线程为例，晶丰明源占据了其多数的份额，并且摩尔线程下一代产品所需的高功率DrMOS（单日需求52颗）也已确定采用晶丰明源的方案。在其他国产GPU厂商中，晶丰明源也占据了重要份额。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源与杰华特在技术、市场定位及客户体系方面有何差异？</strong></p><p>在技术层面，两家公司实力相当。杰华特的技术团队主要来自MPS和TI，而晶丰明源的团队则来自MPS和ADI，双方在多相控制器和DrMOS产品性能及工艺上差异不大。</p><p>市场和客户层面则存在明显差异。杰华特的一大优势是获得了华为的投资。另一大优势是通过了英特尔认证，这使其在PC和服务器市场占据有利地位。杰华特最初的产品定位即是围绕华为和英特尔，近期也已获得AMD授权，并可能拓展至英伟达平台。</p><p>晶丰明源的研发团队来自MPS，且该团队此前有服务英伟达平台的经验，因此公司初期便定位为英伟达平台供应商。随后，公司也获得了AMD的授权，但目前尚未获得英特尔的授权。不过，晶丰明源自2025年起已开始与谷歌进行对接。在国产信创领域，晶丰明源的主要客户包括摩尔线程、海光、龙芯、飞腾等，与杰华特以华为为核心的客户群形成差异。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源未来是否有机会进入华为的供应链体系？</strong></p><p>华为2026年存在DrMOS供应缺口。目前华为正在测试南芯、纳芯微、矽力杰等作为第二梯队的供应商。晶丰明源在2022至2023年间，其16相控制器和DrMOS产品推出后便已与华为进行过对接和测试，但订单一直未能落地，可能与高层商务关系有关。鉴于当前市场缺货的状况，预计近期双方可能会有新的接洽机会。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源在国产GPU厂商中的整体导入进展如何？</strong></p><p>在国产GPU厂商的导入方面，晶丰明源处于行业领先地位。在天数智芯、壁仞、燧原以及包括龙芯、飞腾在内的信创计算平台中，晶丰明源在国内市场份额排名第一，在许多公司的供应份额中占据了一半。</p><p><br></p><p><strong style=\"color: rgb(43, 51, 230);\">在代工产能方面，晶丰明源目前的布局是怎样的？未来是否有扩产计划？</strong></p><p>目前在晶圆代工环节，主要与中芯国际和粤芯合作。封装环节则与通富微电、长电科技等主流厂商均有合作。未来，针对多相电源控制器及DrMOS等产品线均有扩产计划。当前库存水平充足，主要得益于管理层在2025年进行了充分备货，并且计划在2026年继续增加库存。此举也是为了应对2027年可能来自谷歌的业务需求，目前台达电子已在进行相关产品测试，预计最快在2026年底开始产生小批量订单，因此需要提前储备产能。</p><p><strong style=\"color: rgb(43, 51, 230);\">晶丰明源当前的产品定价策略是怎样的？DrMOS产品未跟随市场涨价的原因是什么？</strong></p><p>目前，公司的多相电源控制器产品线没有涨价计划，但LED驱动芯片业务前段时间已经提价。DrMOS产品暂未涨价，主要原因在于当前市场涨价潮主要由服务器市场驱动，而晶丰明源在服务器领域的业务占比较低，2025年服务器业务收入占比不足10%，且主要集中在飞腾、龙芯、海光等国产信创领域。虽然目前因外商缺货，浪潮、新华三等服务器客户已开始测试公司产品，但尚未形成规模化订单，因此不具备涨价的基础。公司的首要策略是抢占市场份额，即便短期内不盈利甚至亏损，也要优先确保市场地位。</p><p><strong style=\"color: rgb(43, 51, 230);\">公司未来对DrMOS产品是否有涨价计划？需要看到哪些市场信号才会考虑提价？</strong></p><p>未来存在涨价的可能性，但这取决于市场动态。例如，英飞凌等外商虽目前缺货，但其向客户反馈预计9月份供应会得到缓解。如果外商供货情况确实好转，那么国内厂商的导入窗口期可能会被延长，涨价将更加困难。目前来看，外商供应完全缓解的可能性不大，但可能会有所改善。此外，PC市场整体处于降价趋势，也给相关元器件的涨价带来了较大阻力。</p><p><br></p><p><strong style=\"color: rgb(43, 51, 230);\">对于垂直供电（Vertical Power Delivery）这一技术趋势，晶丰明源有何布局和进展？</strong></p><p>垂直供电技术目前主要以电源模块的形式实现，直接贴装在PCB板背面。公司管理层已明确表示，短期内不会涉足电源模块业务。主要原因有两点：首先，进入模块市场意味着将与台达电子这类现有客户形成直接竞争关系，可能导致客户流失；其次，模块产品的研发和生产需要专门的团队，公司目前尚不具备相关能力。因此，在未来两到三年内，公司不会直接开发模块产品，这与MPS等公司的发展路径相似，即先做大控制器和DrMOS业务，待规模壮大后再考虑进入模块领域。现阶段，公司的策略是通过向台达及类似企业销售芯片，由他们来完成垂直供电模块的制造。</p>",
+    "article_speech": {},
+    "hashtags": [
+      "DrMOS",
+      "VPD",
+      "控制器",
+      "GPU"
+    ],
+    "industry_ids": [
+      4520,
+      4530
+    ],
+    "custom_sector_ids": [
+      5,
+      6,
+      11,
+      13
+    ],
+    "views": 8700,
+    "likes": 1,
+    "favorites": 3,
+    "word_stats": {
+      "word_count": 6721,
+      "read_time": 14
+    },
+    "masked_word_stats": {
+      "word_count": 3712,
+      "read_time": 8
+    },
+    "need_to_pay": false,
+    "has_paid": true,
+    "paid_info": {
+      "state": "paid",
+      "sncode": "12607041701000007",
+      "paid_at": 1783185287,
+      "created_at": 1783185287,
+      "state_events": [
+        "refund",
+        "full_refund"
+      ],
+      "type": "Order",
+      "remark": "",
+      "goods_type": "Article",
+      "price": 300,
+      "actual_paid": 0,
+      "payment_info": null,
+      "payment_type": "UserCard",
+      "card_type": "vip",
+      "operator_info": {
+        "id": 1,
+        "name": "系统",
+        "avatar": null,
+        "is_analyst": false,
+        "is_expert": true
+      },
+      "operator_type": "Staff"
+    },
+    "author": {
+      "id": 20510969,
+      "type": "AceCamp",
+      "introduction": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+      "name": "Leo Gao",
+      "avatar": "https://image.acecamptech.com/avatar/50527105/0.7847722892825351.jpg?x-oss-process=style/avatar"
+    },
+    "organization": {
+      "id": 20510969,
+      "sc_name": "Leo Gao",
+      "tc_name": "Leo Gao",
+      "en_name": "Leo Gao",
+      "name": "Leo Gao",
+      "sc_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+      "tc_description": null,
+      "en_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+      "description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+      "share_display_name": "Leo Gao",
+      "deleted_at": null,
+      "state": "passed",
+      "score": 0,
+      "organization_type_id": 3,
+      "sator_organization_id": null,
+      "state_events": [],
+      "is_producer": true,
+      "self_employed": true,
+      "management_scale_id": 0,
+      "fund_type_ids": [],
+      "custom_sector_ids": [
+        1,
+        5,
+        8,
+        10,
+        11
+      ],
+      "ticker": null,
+      "tel": null,
+      "website": null,
+      "logo": "https://image.acecamptech.com/avatar/50527105/0.7847722892825351.jpg?x-oss-process=style/avatar",
+      "industry_id": null,
+      "institutional_type_ids": [],
+      "followed": false,
+      "public_contact": false,
+      "allow_public_contact": true,
+      "belongs_organization_id": null,
+      "belongs_organization_name": null,
+      "belongs_organization_contact": null,
+      "dms_vendor_contact": null,
+      "dms_vendor": false,
+      "irm": false,
+      "need_allocation": true,
+      "celebrity": true,
+      "lastest_updates": [
+        {
+          "id": 70564117,
+          "title": "PCB铜箔龙头深度调研：高端HVLP铜箔供需缺口扩大，国产替代进入3/4代攻坚期",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1783046614
+        },
+        {
+          "id": 70564051,
+          "title": "国内稀缺SOCAMM及先进封装设备厂商调研——SOCAMM贴装设备/芯片植散热片机等关键业务，受益Rubin架构订单爆发",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1782923429
+        },
+        {
+          "id": 70563953,
+          "title": "MicroTEC 深度调研：技术壁垒筑城，国产龙头份额提升，加速国产替代",
+          "type": "minute",
+          "state": "passed",
+          "current_price": 300,
+          "original_price": 300,
+          "free": false,
+          "release_time": 1782781777
+        }
+      ],
+      "article_count": 50,
+      "follower_count": 196,
+      "event_count": 93,
+      "blocked_expert_roles": [],
+      "expert_organization": false,
+      "foreign": null,
+      "followed_corporations": [],
+      "expert": null,
+      "custom_sectors": [
+        {
+          "id": 1,
+          "sc_name": "宏观、政策",
+          "tc_name": "宏观、政策",
+          "en_name": "Macro & Policy",
+          "name": "宏观、政策"
+        },
+        {
+          "id": 5,
+          "sc_name": "TMT",
+          "tc_name": "TMT",
+          "en_name": "TMT",
+          "name": "TMT"
+        },
+        {
+          "id": 8,
+          "sc_name": "电力、新能源",
+          "tc_name": "电力、新能源",
+          "en_name": "Power & Renewable Energy",
+          "name": "电力、新能源"
+        },
+        {
+          "id": 10,
+          "sc_name": "周期、大宗、有色",
+          "tc_name": "周期、大宗、有色",
+          "en_name": "Cycle & Commodity & Non-ferrous Metals",
+          "name": "周期、大宗、有色"
+        },
+        {
+          "id": 11,
+          "sc_name": "制造业",
+          "tc_name": "制造业",
+          "en_name": "Manufacturing",
+          "name": "制造业"
+        }
+      ],
+      "liaison_id": null,
+      "liaison": null,
+      "producer_type": "certified_analyst",
+      "is_research_partner": false
+    },
+    "release_time": 1780362295,
+    "has_vip": true,
+    "can_download": false,
+    "can_copy": false,
+    "ppv_avaliabled_at": null,
+    "comment_count": 0,
+    "comments": [],
+    "related_topics": [],
+    "co_host_organizations": [],
+    "shield_type": "expert",
+    "organization_shielded": false,
+    "suggested_questions": {
+      "zh": [
+        "晶丰明源在服务器DrMOS市场份额不足10%，若英飞凌9月供应缓解，其抢占份额的窗口期是否会提前关闭？",
+        "晶丰明源明确短期不涉足垂直供电模块，这是否会导致其在英伟达GB300等下一代高功耗GPU供应链中被边缘化？"
+      ],
+      "en": [
+        "With BPS's server DrMOS share under 10%, will its market-share-grab window close prematurely if Infineon's supply eases in September?",
+        "Given BPS's decision to avoid vertical power modules, will it be marginalized in the supply chain for next-gen high-power GPUs like Nvidia's GB300?"
+      ]
+    },
+    "masked_state": "passed"
+  },
+  "meta": {
+    "ack": "1783317546626",
+    "ts": 1783317547
+  },
+  "code": 200,
+  "ret": true
+}
