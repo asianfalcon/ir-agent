@@ -1,0 +1,265 @@
+{
+    "data": {
+        "id": 70558538,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 225,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70533561
+        ],
+        "expert_public_resume": "na",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "多相电源国产龙头专家交流-“DrMOS+多相控制器”在国内、海外大客户突破，车规产品进展",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            2223,
+            4219,
+            4248,
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 2223,
+                "ticker": "SZ.300661",
+                "name": "圣邦股份",
+                "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg"
+            },
+            {
+                "id": 4219,
+                "ticker": "SH.688368",
+                "name": "晶丰明源",
+                "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+            },
+            {
+                "id": 4248,
+                "ticker": "SH.688536",
+                "name": "思瑞浦",
+                "logo": "https://image.acecamptech.com/logos/f7943a3b-6e7e-41bc-8755-f5ee415ef5e3.svg"
+            },
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "英伟达多相控制器及drmos技术规格、价值量，其他电源管理芯片产品使用情况。\nAMD、海光、英特尔、H客户多相控制器及drmos产品合作情况。\n新能源车、机器人领域电源管理芯片产品应用前景及进度。",
+        "content": "\u003cp\u003e\u003cstrong style=\"color: rgb(0, 0, 0);\"\u003e以下内容为专家分享，仅供参考，不构成任何投资建议。\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eQ\u0026amp;A\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e英伟达合作进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eNV多相控制器的开发起步较晚，实际接入始于2025年。不同GPU、CPU对应不同的协议，支持NV协议的多相控制器目前在开发的后期阶段，今年有望做出来，随后送样。NV的drmos和多相控制器是成套开发送样，不能分开送测。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e英伟达除多相电源外电源芯片需求？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e英伟达除了对多相电源有需求外，还存在其他类型电源管理芯片需求，例如DCDC转换器等，这些产品目前也在验证过程中。多相电源是显卡上最重要且占比最大的品类，而其他类别如DCDC芯片（包括Buck、LDO等）则属于较小规模市场。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e英伟达多相控制器及drmos，技术规格及价值量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eNV的GPU上使用drmos模块（标准封装设计），单个GPU使用16个模块，每个模块两个drmos，因此单颗GPU对应32颗drmos。90安培drmos市场平均价格在8-10元人民币，一个模块包含两颗drmos、电感等，大概3-4美金。\u003c/p\u003e\u003cp\u003eRubin单颗芯片2000w左右功率，输入1.2v，输出0.9v。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e除了多相控制器和drmos外，GPU中还有哪些电源管理需求？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e除了用于GPU核心供电的drmos外，显卡还需要一些额外的小型供电芯片，例如1.8伏或3.3伏接口用芯片，电流小。这些芯片通常用于外围接口或辅助功能，每块显卡大约需要2至3颗此类芯片，每颗价格约10元人民币，总价值量较小，与核心drmos相比差距明显。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e芯片迭代过程中，drmos是否同步迭代？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e显卡迭代过程中，由于新一代产品通常伴随性能提升，对功率及效率要求也会提高。目前单相90安培是目前业内量产的产品里最大的了（一年来看是上限），但是相数会扩大（如从8相到12相，甚至16、20相）。\u003c/p\u003e\u003cp\u003e60安培到90安培产品，价格高1-2元人民币，主要是扩相数。下一代产品20相，一个端口可以控制两颗drmos，理论上讲最新产品可以支持40相。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eAMD、海光的研发进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在AMD、海光中进展和NVIDIA接近。\u003c/p\u003e\u003cp\u003e由于公司前几年将资源集中投入英特尔相关项目，导致在AMD、NV、海光等客户上的进展相对滞后。自2025年起，公司通过引入专家团队，大幅提升了多相电源在非英特尔头部客户的研发速度。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司与英特尔合作情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e英特尔一直是公司的重点合作对象，公司也为其开发了多款产品。然而，由于采用英特尔CPU的客户通常使用商业化服务器，因此国产化需求较低，这使得公司在与MPS和英飞凌等国际厂商竞争时面临较大挑战，份额不高。公司已成功进入部分重要客户如浪潮、超聚变等项目，实现了从0到1的突破，但要进一步扩大市场份额仍需时间。\u003c/p\u003e\u003cp\u003e同时，客户改用海光产品很多原因是国产化需求，同时就需要配套国产化drmos，因此这部分有需求。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e2025年公司收入增长超过60%，增量主要来自哪些方面？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e增长主要来源于两方面：一是新客户拓展；二是老客户订单份额增加。例如，在服务器主板业务中，通过引入高价值的新产品，如电子保险丝（efuse）和大电流LDO，公司实现了单块PCB板销售金额提升（过去初级LDO、buck电路，可能整个服务器生意10元，现在efuse价值量仅次于多相电源，10元一颗，一个板子上若干颗，可能整个服务器生意提升到80元）。如果未来多相电源进一步导入并批量生产，该金额可能进一步增加。例如，海康威视也引入了很多新的、高价值量料号，2025年开始供给如poe等高价值量、需求量也很大的产品。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e哪些行业增长更多？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e通讯行业是公司表现最好的领域之一，包括基站、交换机、光传输、防火墙和路由器等细分市场。全国范围内相关客户的订单均呈现翻倍增长趋势，该行业已成为公司重要的收入来源。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e工业类和消费类业务在2025年的表现如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e工业类业务整体表现平稳，未出现显著变化。尤其是储能和微逆变器等细分市场，由于前两年产能过剩，整个行业在2025年处于低迷状态。\u003c/p\u003e\u003cp\u003e消费类业务则保持增长态势，例如笔记本电脑领域，公司逐步提升了产品性能参数，使得原本未进入市场的一些高性能产品开始获得更多订单。此外，在网络通信设备（如光猫、CPE、WiFi设备）方面，公司凭借长期积累的优势，达到了阶段性新高。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eH客户电源芯片国产化厂家情况？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在电源芯片领域，H客户选择了杰华特、矽力杰及圣邦微三家供应商，其中杰华特占据主导地位，与H客户合作规模（合作生意规模，料号数量）明显超过其他两家。\u003c/p\u003e\u003cp\u003e为支持H公司项目，公司优先安排其相关料号生产，并投入销售及FAE团队专门负责服务H客户。研发资源并未专门划拨，而是由全公司的研发团队统一支持。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e目前公司在汽车领域的业务表现如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当前公司在汽车领域的表现较弱。以现阶段能量产的产品来看，单车价值较低。这主要是因为目前量产的大多是低单价、通用型料号。未来随着高单价、高性能产品逐步实现量产（例如，多相电源在车上有需求，但公司还没量产），单车价值可能进一步提升数百元。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在新能源汽车中，公司未来潜在市场空间如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在新能源车辆中，由于智驾技术的发展以及对电子化需求的提升，一辆新能源车上使用的公司产品总价值未来可能达到千元人民币级别。\u003c/p\u003e\u003cp\u003eH客户帮助公司车规级料号导入，H客户是最快的。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在机器人领域的发展现状如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在人形机器人方面，公司主要提供DCDC转换器等初级电源管理解决方案，这些组件主要应用于机器人的马达、电机以及充电模块等部分。公司还计划拓展马达驱动、BMS充电模块等更高附加值的市场机会。但整体来看，普通电源产品即可。\u003c/p\u003e\u003cp\u003e在机器人GPU相关硬件方面，大多数机器人客户倾向于直接采购成品板卡，例如NVIDIA等品牌，而不会自行设计硬件。该领域更多关注点集中在软件和算法层面，而非硬件本身。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司是否参与了特斯拉机器人项目合作？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司与特斯拉的合作主要是充电桩设备中。目前尚未听说公司参与特斯拉机器人项目。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "drmos多相控制器"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 13150,
+        "likes": 2,
+        "favorites": 3,
+        "word_stats": {
+            "word_count": 2182,
+            "read_time": 5
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070809940945",
+            "paid_at": 1783413216,
+            "created_at": 1783413216,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 225,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20511154,
+            "type": "AceCamp",
+            "introduction": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "name": "Shirley",
+            "avatar": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar"
+        },
+        "organization": {
+            "id": 20511154,
+            "sc_name": "Shirley",
+            "tc_name": "Shirley",
+            "en_name": "Shirley",
+            "name": "Shirley",
+            "sc_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "tc_description": null,
+            "en_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "share_display_name": "Shirley",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 3,
+            "sator_organization_id": null,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [
+                5,
+                11,
+                6
+            ],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": true,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": true,
+            "lastest_updates": [
+                {
+                    "id": 70564278,
+                    "title": "CPO光学器件专家访谈-从光模块到CPO光学器件升级，C-lens、硅透镜、V型槽、Z-block等技术升级及价值量提升，供应商分析",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783389314
+                },
+                {
+                    "id": 70564210,
+                    "title": "PCB龙头调研-光模块pcb更新，msap工艺进展及设备、材料需求，近期pcb涨价情况",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783315683
+                },
+                {
+                    "id": 70563884,
+                    "title": "SST固态断路器专家访谈-数据中心SST用产品技术要求，价值量测算，供应商分析及国产厂家机会",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1782640590
+                }
+            ],
+            "article_count": 12,
+            "follower_count": 244,
+            "event_count": 137,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": null,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [
+                {
+                    "id": 5,
+                    "sc_name": "TMT",
+                    "tc_name": "TMT",
+                    "en_name": "TMT",
+                    "name": "TMT"
+                },
+                {
+                    "id": 11,
+                    "sc_name": "制造业",
+                    "tc_name": "制造业",
+                    "en_name": "​Manufacturing",
+                    "name": "制造业"
+                },
+                {
+                    "id": 6,
+                    "sc_name": "半导体/芯片",
+                    "tc_name": "半導體/芯片",
+                    "en_name": "Semiconductors \u0026 Chips",
+                    "name": "半导体/芯片"
+                }
+            ],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": "certified_analyst",
+            "is_research_partner": false
+        },
+        "release_time": 1769757172,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "针对英伟达Rubin架构2000W的功耗需求，公司多相控制器在动态响应等核心指标上能否真正对标MPS，还是仅作为二供备份？",
+                "2025年60%的增长指引主要依赖H客户和通讯复苏，若英伟达DrMOS验证周期延长，公司目前的估值是否面临业绩兑现的下修风险？"
+            ],
+            "en": [
+                "Regarding Nvidia's Rubin 2000W power requirement, can the multi-phase controller truly match MPS in dynamic response, or is it merely a secondary source backup?",
+                "With the 60% growth guidance relying on H Customer and Telecom, does the current valuation face downside risk if the Nvidia DrMOS validation cycle is prolonged?"
+            ]
+        },
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783413220592",
+        "ts": 1783413221
+    },
+    "code": 200,
+    "ret": true
+}

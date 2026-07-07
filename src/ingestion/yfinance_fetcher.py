@@ -7,8 +7,10 @@ from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.parent
-RAW_DIR = ROOT / "data" / "raw" / "yfinance"
+RAW_DIR = ROOT / "data" / "raw" / "yfinance"  # 宏观/可比公司，非四大形态之一，维持平台目录
+NEWS_DIR = ROOT / "data" / "raw" / "news" / "yfinance"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
+NEWS_DIR.mkdir(parents=True, exist_ok=True)
 
 # 常用宏观/商品标的
 MACRO_SYMBOLS = {
@@ -81,7 +83,7 @@ def fetch_news(ticker_symbol: str, limit: int = 10) -> list[dict]:
     """拉取 Yahoo 财经新闻（英文），用于海外市场事件感知。"""
     import yfinance as yf
     today = date.today().isoformat()
-    out = RAW_DIR / f"news_{ticker_symbol}_{today}.json"
+    out = NEWS_DIR / f"news_{ticker_symbol}_{today}.json"
     if out.exists():
         return json.loads(out.read_text())
     try:

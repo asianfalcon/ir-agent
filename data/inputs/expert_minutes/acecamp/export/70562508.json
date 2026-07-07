@@ -1,0 +1,259 @@
+{
+    "data": {
+        "id": 70562508,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70537253
+        ],
+        "expert_public_resume": "na",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "DrMOS国产龙头调研：替代加速，谷歌TPU项目突破与服务器供应链机遇",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            4219,
+            10853,
+            11425,
+            28699
+        ],
+        "corporations": [
+            {
+                "id": 4219,
+                "ticker": "SH.688368",
+                "name": "晶丰明源",
+                "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+            },
+            {
+                "id": 10853,
+                "ticker": "US.GOOGL",
+                "name": "谷歌-A",
+                "logo": "https://image.acecamptech.com/logos/74e17bf0-4884-4955-ae1d-d4af81348022.svg"
+            },
+            {
+                "id": 11425,
+                "ticker": "US.IFNNY",
+                "name": "英飞凌科技(ADR)",
+                "logo": "https://image.acecamptech.com/logos/11425/eeba3d80-b64b-497a-aaee-10bfa83c49d1.png"
+            },
+            {
+                "id": 28699,
+                "ticker": "Huawei",
+                "name": "华为",
+                "logo": null
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "服务器领域竞争格局：杰华特获英特尔授权及华为投资，占据国内领先地位。\n技术壁垒与风险：服务器级DrMOS对稳定性要求极高，烧毁（炸机）风险可能导致昂贵CPU/主板报废，客户导入极其审慎。\n供应链与产能：DrMOS主要由中芯国际BCD工艺代工，目前现货充足，无缺货风险。\n市场催化剂：英飞凌、瑞萨等外商优先保障顶级客户导致国内服务器市场缺货，加速新华三等厂商国产替代验证。",
+        "content": "\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e以下内容来自资深行业专家：\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eQ\u0026amp;A\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e请问公司在AI芯片领域的客户拓展情况如何，尤其是在英伟达和谷歌等头部客户方面取得了哪些进展？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司在消费级显卡领域与英伟达有深入合作，主要涉及4090、5090等消费类产品，预计2026年市场占有率可达到50%。然而，在英伟达的AI服务器领域，由于其对元器件有工业级的严苛要求，包括24小时不间断运行下的高稳定性和可靠性，目前主要由英飞凌、瑞萨、MPS以及AOS这四家国际供应商主导，国内及台湾地区厂商尚未进入其供应链。\u003c/p\u003e\u003cp\u003e相较之下，公司与谷歌的合作取得了实质性进展。北美团队已与谷歌方面展开接洽，并获取了其下一代TPU产品的一些规格与协议规范，例如针对控制器的开源FSBbus协议以及DRMOS的功能、封装等自定义要求。目前，公司正在基于这些规格为谷歌开发下一代产品。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e谷歌下一代TPU产品的具体型号以及相关规格是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e关于具体的数字型号暂不明确，但该产品是针对其新一代服务器应用的。从规格上看，控制器部分的改动不大，沿用了开源的FSBbus协议，公司已有相应技术储备。主要的定制化体现在DRMOS层面，谷歌根据其产品需求，如板卡尺寸等因素，定义了特定的封装形式，并在电流sense、电流规格等参数上提出了与常规产品不同的要求。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司向谷歌提供的产品是单颗DRMOS还是模组化方案？这两种方案有何区别？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e两种方案均有涉及。公司目前通过模组厂台达向谷歌间接供应DRMOS产品，这部分业务已接近出货阶段。在该模式下，公司将单颗DRMOS销售给台达，由台达将其与电感等元件集成，制成电源模组后最终销售给谷歌。同时，公司也在与谷歌直接对接，为其下一代产品开发单颗DRMOS。通常，模组化方案适用于高瓦数、空间有限且需要更高集成度的场景，而单颗方案则用于其他应用。可以理解为，谷歌会根据其高中低阶不同系列产品的需求，同时采用这两种方案。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e目前通过台达供应给谷歌的DRMOS产品具体规格是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e这款产品是一款90安培的DRMOS，封装尺寸为4mm x 6mm。在台达制作的电源模组中，每个模组包含两颗这样的DRMOS。此外，新一代的模组方案正在开发中，计划将集成四颗DRMOS。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e谷歌对于采用公司产品持何种态度？除了英飞凌、瑞萨、MPS等国际厂商外，谷歌还将规格开放给了哪些国内厂商？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e谷歌并未承诺一定会采用公司的产品，但向公司提供了其下一代产品的需求和规格，以便公司进行配合开发。谷歌同样也将这些规格提供给了英飞凌、瑞萨、MPS等供应商。至于其他获得规格的国内厂商，具体情况尚不清楚，但推测在同行业中，与公司处于同等水平的杰华特和矽力杰有可能参与，其中杰华特因其在海外有团队，可能性或稍大一些。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e与消费类产品相比，开发服务器或工控类产品面临哪些主要的技术挑战？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e从技术储备和信心角度看，公司认为开发服务器类产品问题不大。公司在消费类市场已有深厚积累，2025年约1亿元的营业额中大部分来源于此。同时，公司也已开始向海光、申威、飞腾等服务器平台供货，但出货量相较于消费类产品仍非常有限。真正的挑战在于产品的稳定性和可靠性。由于服务器应用对产品可靠性要求极高，在出货量未达到一定规模前，无法百分之百保证产品完全没有问题。以DRMOS为例，业界标杆是英飞凌，其产品凭借近20年的量产经验和强大的功率器件技术，实现了极高的可靠性。相比之下，其他厂商的产品，即便是已有十余年经验的瑞萨、MPS，也偶有烧毁（即“炸机”）的情况发生。DRMOS一旦在主板上烧毁，不仅其自身会被烧糊导致难以分析失效原因（无法判断是设计、工艺还是封装问题），更可能损坏CPU、内存等价值远高于DRMOS本身的昂贵元器件，导致整块主板报废。因此，客户在选择供应商时极为审慎，这对所有供应商的研发设计都构成了巨大挑战。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在摩尔线程的业务中扮演了什么角色？其产品主要是消费级还是服务器级？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司在摩尔线程的供应链中占据主导地位。摩尔线程的产品绝大部分是面向消费级市场的显卡。尽管其也声称拥有可用于服务器的AI产品，类似于寒武纪，但这部分业务的出货量非常小。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在服务器领域，公司与华为的合作进展如何？为何杰华特能获得华为的大量订单？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司在服务器领域的客户确实不多。与华为的合作方面，尽管公司在2022年和2023年都进行了产品测试，但至今未获得订单。杰华特能够获得华为订单的核心优势在于其获得了华为的投资。华为投资杰华特时，明确提出当前最紧缺的是DRMOS，因此杰华特的发展路径是先做DRMOS再做控制器，这与公司先做控制器再做DRMOS的路径相反。杰华特的产品完全按照华为的规格和标准进行开发，并获得了华为在技术指导、可靠性测试以及实际项目验证等方面的深度支持。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司并购易冲的主要目的是什么？此次并购是否有助于拓展服务器业务？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司已经完成了对易冲的并购。易冲主要从事无线充电和消费类快充业务，在消费电子领域拥有良好客户关系，并与华为有合作。最初并购的考量之一是希望借助易冲的渠道切入华为供应链，但后来发现合作主要局限于手机、电脑充电器等消费类产品，易冲与华为的服务器相关部门接触不多。因此，此次并购目前与服务器业务没有直接关联。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e除了谷歌，公司目前还在与哪些重要的海外客户进行接洽？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e除谷歌外，公司还在与英伟达和AMD进行接触。在英伟达的消费级显卡领域，公司的产品已基本实现全面覆盖。目前公司正努力争取其服务器业务，并就未来产品的需求和规格进行技术交流。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司目前与AMD的合作主要集中在哪些产品领域？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前与AMD的合作主要集中在消费级产品领域。自2025年获得其授权后，双方已在一系列产品上展开配合，具体涵盖笔记本电脑、台式机以及独立显卡这三大产品线。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司针对谷歌服务器项目的产品开发进展如何？预计何时可能被导入？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前针对谷歌服务器项目的产品规格正在开发中，尚未完成。与谷歌的正式对接始于2025年，具体合作大约从2026年1月开始。导入机会主要取决于头部供应商（如英飞凌、瑞萨、MPS）的产能情况。由于谷歌的需求量巨大，在当前缺货严重的情况下，如果现有供应商无法满足其全部需求，谷歌可能会引入新的供应商，这将成为公司的机会。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司DrMOS产品主要的代工合作伙伴是哪几家？以及在BCD工艺方面有哪些考量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDrMOS产品目前主要由中芯国际代工，其出货量较大。此外，也与一家名为“粤芯”的晶圆厂合作。芯联集成似乎没有涉足此业务，但联电有。DrMOS属于功率器件，对集成度和大电流支持要求高，需要采用BCD工艺。目前国内BCD工艺较为成熟的是中芯国际，而台湾地区则有联电、世界先进、台积电等多家厂商具备此技术能力，普通的晶圆厂通常不具备BCD工艺技术。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e目前服务器用DrMOS产品的主流规格、售价以及价格变动情况是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e服务器用DrMOS属于工规级产品，要求较高，电流规格通常为90安培。市场上主要有两种主流封装规格：第一种是4mm x 6mm的小封装，售价约为1美元；第二种是5mm x 6mm的封装，同样为90安培，售价在0.8至1美元之间。5x6封装尺寸较大，制造成本相对较高，但工艺实现较为容易；而4x6封装尺寸小、成本低，但研发设计难度更高。价格方面，目前国产厂商如杰华特等并未涨价，而外商因缺货问题存在涨价情况。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司DrMOS业务（包含显卡和消费级产品）在2025年的收入是多少？2026年的收入主要增长来源是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2025年DrMOS业务收入为1亿元人民币。主要的增长动力来自以下几个方面：\u003c/p\u003e\u003cp\u003e第一，在英伟达消费级显卡市场的份额提升。2025年市场份额已达到50%，预计2026年有机会提升，尽管份额增加，但由于英伟达对国内GPU芯片的销售数量有所减少，这部分增长可能有限，但仍是主要收入来源。\u003c/p\u003e\u003cp\u003e第二，来自AMD业务的增长。这包括在消费级显卡市场份额的提升（此前AMD与英伟达的市场份额比约为20%对80%），以及在台式机和笔记本电脑市场的增长。目前AMD在PC市场的份额已提升至约40%，与英特尔的60%形成竞争，其笔记本电脑市场体量巨大。自2025年起，公司已进入联想及众多深圳白牌PC厂商的供应链，预计2026年将实现大规模放量。\u003c/p\u003e\u003cp\u003e第三，来自国产GPU厂商的业务。目前在摩尔线程的供应中已占据主要地位，同时也在为其他厂商如燧原科技、天数智芯、壁仞科技、沐曦等送样测试。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在国产服务器GPU厂商中的导入进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司已向包括寒武纪在内的多家国产GPU厂商送样测试，这些厂商对国产化有较强需求。目前，在已实现出货的厂商中，预计能占到一半的份额。相较于合作较少的寒武纪，与其他新兴厂商如天数智芯、壁仞科技、燧原科技、沐曦的合作更为深入。不过，目前尚未在任何一家形成类似在摩尔线程那样的主要供应商地位。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e针对谷歌的服务器项目，除了直接合作，是否存在其他供应渠道？预计直接供应何时能放量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e除了直接为谷歌开发产品外，还存在间接供应渠道。公司已于2025年开始向台达电子供货，由台达将芯片封装成模块后销售给谷歌。这种通过台达的供应模式，相较于作为一家在国内知名度不高的芯片厂商直接与谷歌合作，可能更具优势。直接供应方面，由于产品尚在开发初期，预计要到2027年才能实现放量。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e关于通过台达向谷歌送样的DrMOS产品，目前的进展和反馈如何？预计何时开始出货？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e送样已经结束。通过台达方面了解到的信息是，后续应该会开始逐步出货。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e针对谷歌项目，公司在产能方面做了哪些准备？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司从2025年开始就已经为相关项目预定了晶圆产能，目前DrMOS等产品均有现货库存，只要订单确认即可立刻出货，不存在缺货情况。整个高性能事业部，包括多相控制器、DrMOS、POL和电子保险丝四大产品线。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司如何看待与台达合作进入谷歌供应链这一机会？谷歌是否知晓其供应商体系的变化？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e这被视为一个重大的发展机会。至于谷歌是否知晓台达更换了供应商，这一点尚不清楚，因为业务对接主要由台达负责。台达在评估供应商时，除了本公司，也在评估其他外商及国产厂商的产品。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e台达寻求英飞凌之外的备选供应商的动力是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e台达寻求更多供应商，一方面是出于商业考量，有生意都会争取。另一方面，更主要的原因可能来自谷歌的需求。谷歌自身的需求量非常巨大，英飞凌等现有供应商可能无法完全满足。像英飞凌、瑞萨这类厂商，通常会优先保障英伟达、英特尔、AMD等第一梯队客户的供应。因此，谷歌可能需要引入备选供应商以确保供应链的稳定与安全。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e与台达合作的项目何时能有明确的结论和订单量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前具体的订单量尚不清楚，公司正处于等待阶段。已经有部分产品在出货，但具体数量不详，相关信息可能销售部门会更清楚。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司供应给台达的DrMOS产品是在哪家晶圆厂生产的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在中芯国际生产。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司认为谷歌接受通过台达采用国产DrMOS产品的可能性有多大？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e可能性较大。公司从2025年开始就与谷歌方面进行对接，谷歌方面应该不会反对。如果国产方案能提供更优的成本，并且由台达完成了可靠性测试，确保了产品品质，那么对于谷歌而言，这会是一个有吸引力的选择。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e针对供应给台达的谷歌项目，一个芯片具体需要多少颗DrMOS？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e具体数量不清楚。台达是将DrMOS做成模组后进行交付的。之前了解过谷歌的一款TPU，但具体型号和用量记不清了。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司销售给台达的DrMOS产品单价如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e销售给台达的单价会比销售给海光等客户的价格略低一些，因为台达的采购体量大，且对供应商的价格压得比较低。作为参考，台达制成的模组售价约为6美金。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在高性能计算领域的团队背景和技术积累是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司的高性能计算业务（DC-DC）是第四个主要产品线，其团队组建于2021年。当时，公司从MPS挖来一个团队，该团队在MPS时就有多相控制器的研发经验。因此，他们加入后很快就开发出了公司的多相控制器产品。随后，公司又从ADI挖来了核心研发人员，他们之前在ADI也有DrMOS的研发经验，虽然当时产品未能量产，但具备了相关的技术基础。正是通过引进这些有外商背景的核心人才，公司才能在短时间内（约三年）快速推出多相控制器和DrMOS等技术难度较高的产品。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在海外市场，特别是台湾市场的业务拓展情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司在海外市场取得了显著突破，尤其是在与谷歌、AMD等客户建立联系方面。这主要得益于2025年新加入的一位具备外商背景的负责人，他极大地改善了公司与这些海外大客户的关系。在台湾市场，2025年的出货量表现良好，主要集中在消费级显卡领域，客户包括华硕、微星等，这部分业务的增长主要依靠台湾当地代理商大联大的支持。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e当前服务器市场DrMOS的供应情况如何？这对国产厂商意味着什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e近期，英飞凌、瑞萨等外商在服务器DrMOS领域出现严重的缺货情况。其原因是他们虽然有产能，但优先供应给英特尔、AMD、谷歌、英伟达等顶级客户，能够流向中国市场的产能不足10%。这种情况促使国内的服务器厂商，如新华三，开始积极测试和验证其他品牌的DrMOS产品，为国产厂商创造了市场机会。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在当前的国产替代趋势下，哪些厂商在服务器DrMOS领域占据了竞争优势？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前来看，杰华特和台湾的立锜具有较大优势。主要原因是他们获得了英特尔或AMD的官方授权。在服务器领域，产品需要获得平台方的授权才能配套使用。杰华特是国内唯一获得英特尔授权的厂商，而立锜则获得了AMD的授权，这使他们在各自的生态平台中占据了有利的竞争地位。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "DrMOS",
+            "TPU",
+            "国产替代"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 13227,
+        "likes": 0,
+        "favorites": 2,
+        "word_stats": {
+            "word_count": 5061,
+            "read_time": 11
+        },
+        "masked_word_stats": {
+            "word_count": 396,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070705470476",
+            "paid_at": 1783409153,
+            "created_at": 1783409153,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564309,
+                    "title": "MT插芯和FAU需求增量，CW激光器送样进展。扩产对北美大厂影响，国产磷化铟衬底供应和出口更新。三环/亨通光电/汇川/索尔思/Lumentum/Coherent",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783405655
+                },
+                {
+                    "id": 70564298,
+                    "title": "引线框架行业调研：AI对行业需求影响，近期提价背景，核心参与玩家及竞争格局预期 – 三井/新光/顺德/新恒汇",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783399972
+                },
+                {
+                    "id": 70564294,
+                    "title": "磷化铟深度调研：衬底供需错配驱动高毛利，3.2T光模块开启材料演进新周期",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783396183
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1779676374,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20510969,
+                "organization_type_id": 3,
+                "name": "Leo Gao",
+                "sc_name": "Leo Gao",
+                "en_name": "Leo Gao",
+                "logo": "https://image.acecamptech.com/avatar/50527105/0.7847722892825351.jpg?x-oss-process=style/avatar",
+                "description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "sc_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "en_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "state": "passed",
+                "followed": false,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "考虑到台达压价，公司供应谷歌TPU的90A DrMOS毛利率能否支撑当前的估值溢价？",
+                "缺乏英特尔授权，公司如何与杰华特争夺国内通用服务器DrMOS的实质性市场份额？"
+            ],
+            "en": [
+                "Given Delta's pricing pressure, can the gross margin of the 90A DrMOS for Google's TPU sustain the valuation premium?",
+                "Without Intel's authorization, how can the company effectively compete with Joulwatt for domestic general server DrMOS market share?"
+            ]
+        },
+        "masked_state": "passed"
+    },
+    "meta": {
+        "ack": "1783409162572",
+        "ts": 1783409163
+    },
+    "code": 200,
+    "ret": true
+}

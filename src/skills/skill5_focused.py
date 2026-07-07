@@ -7,6 +7,116 @@ from typing import Any
 from src.utils.prompts import load
 
 _GROUNDING_RULE = load("skill5_grounding_rule.md")
+RESEARCH_DATA_SOURCES = {"broker_report", "acecamp_expert_column"}
+FORECAST_KEYWORDS = (
+    "盈利预测",
+    "业绩预测",
+    "财务预测",
+    "2026E",
+    "2027E",
+    "2028E",
+    "营业收入",
+    "归母净利润",
+    "归属于母公司净利润",
+    "每股收益",
+    "EPS",
+    "PE",
+    "PS",
+)
+
+
+def _research_chunks(vector_chunks: list[dict]) -> list[dict]:
+    return [c for c in vector_chunks if c.get("data_source") in RESEARCH_DATA_SOURCES]
+
+
+def _dedupe_chunks(chunks: list[dict]) -> list[dict]:
+    seen = set()
+    result = []
+    for chunk in chunks:
+        key = chunk.get("chunk_id") or (chunk.get("source_file"), chunk.get("text", "")[:120])
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(chunk)
+    return result
+
+
+def _forecast_score(chunk: dict, company_name: str) -> int:
+    text = chunk.get("text", "")
+    source_file = chunk.get("source_file", "")
+    file_name = source_file.rsplit("/", 1)[-1]
+    ticker = chunk.get("ticker", "")
+    score = 0
+    for keyword in FORECAST_KEYWORDS:
+        if keyword in text:
+            score += 3
+    if "E" in text and any(year in text for year in ("2026", "2027", "2028")):
+        score += 4
+    if any(metric in text for metric in ("营业收入", "归母净利润", "归属于母公司净利润")):
+        score += 4
+    directly_related = (
+        (company_name and (company_name in text or company_name in file_name))
+        or (ticker and (ticker in text or ticker in file_name))
+    )
+    if directly_related:
+        score += 5
+    if company_name and company_name in file_name:
+        score += 4
+    if any(broker in file_name for broker in ("国信证券", "东吴证券", "中信证券", "国金证券", "招商证券", "申万宏源")):
+        score += 2
+    if chunk.get("data_source") == "broker_report":
+        score += 3
+    if not directly_related:
+        score -= 8
+    if "行业" in file_name and not directly_related:
+        score -= 5
+    return score
+
+
+def _forecast_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) -> list[dict]:
+    """Return broker/expert chunks most likely to contain sell-side forecasts."""
+    chunks = list(vector_chunks)
+    try:
+        from src.db.vector_store import search as vector_search
+
+        queries = [
+            f"{company_name} 盈利预测 2026E 2027E 2028E 营业收入 归母净利润 EPS",
+            f"{company_name} 财务预测与估值 营业收入 归属于母公司净利润 2026E 2027E 2028E",
+            f"{company_name} 投资建议 盈利预测 每股收益 PE PS",
+            f"{company_name} 2026E 2027E 2028E PE PS",
+            f"东吴证券 {company_name} 2026E 2027E 2028E",
+            f"国信证券 {company_name} 2026E 2027E 2028E",
+        ]
+        for query in queries:
+            chunks.extend(vector_search(query=query, ticker=ticker, top_k=20))
+    except Exception as exc:
+        print(f"[skill5] forecast vector enrichment skipped: {exc}")
+
+    scored = [
+        (chunk, _forecast_score(chunk, company_name))
+        for chunk in _dedupe_chunks(_research_chunks(chunks))
+    ]
+    scored = [item for item in scored if item[1] > 0]
+    scored.sort(key=lambda item: item[1], reverse=True)
+    return [chunk for chunk, _ in scored]
+
+
+def _source_label(chunk: dict) -> str:
+    source = chunk.get("data_source", "")
+    if source == "acecamp_expert_column":
+        return "AceCamp专家专栏"
+    if source == "broker_report":
+        return "券商研报"
+    return source or "未知来源"
+
+
+def _source_meta(chunk: dict) -> str:
+    parts = [_source_label(chunk)]
+    if chunk.get("is_hot"):
+        parts.append("hot")
+    if "source_weight" in chunk:
+        parts.append(f"weight={chunk.get('source_weight')}")
+    return "/".join(parts)
 
 
 def earnings_forecast(
@@ -27,16 +137,21 @@ def earnings_forecast(
         f"净利润: {np_.get('value')} YoY {np_.get('yoy_pct')}% QoQ {np_.get('qoq_pct')}%"
     )
 
-    sell_snips = [c["text"][:150] for c in vector_chunks
-                  if c.get("data_source") == "broker_report"][:5]
-    sell_text = "\n".join(f"- {s}" for s in sell_snips) or "暂无本地研报数据"
+    sell_snips = [
+        (
+            f"[{_source_meta(c)} · {c.get('pub_date', '?')} · {c.get('source_file', '')}] "
+            f"{c['text'][:700]}"
+        )
+        for c in _forecast_chunks(ticker, company_name, vector_chunks)
+    ][:8]
+    sell_text = "\n".join(f"- {s}" for s in sell_snips) or "暂无本地研报预测数据"
 
     prompt = f"""你是卖方分析师。请基于以下本地数据预测 {company_name}({ticker}) 未来2个季度业绩区间。
 
 【历史财务数据 · 周期: {period}】(来源: SQLite financial_reports)
 {fin_text}
 
-【券商研报预测摘要】(来源: LanceDB broker_report)
+【券商研报/专家专栏预测摘要】(来源: LanceDB broker_report + acecamp_expert_column)
 {sell_text}
 
 {_GROUNDING_RULE}
@@ -76,8 +191,11 @@ def price_target(
     fin_text = "\n".join(fin_lines) or "暂无财务数据"
 
     # 找含目标价的切片
-    target_snips = [c["text"][:200] for c in vector_chunks
-                    if any(kw in c["text"] for kw in ["目标价", "目标市值", "PE", "PS", "估值", "合理价值"])][:4]
+    target_snips = [
+        f"[{_source_meta(c)}] {c['text'][:200]}"
+        for c in _research_chunks(vector_chunks)
+        if any(kw in c["text"] for kw in ["目标价", "目标市值", "PE", "PS", "估值", "合理价值"])
+    ][:4]
     target_text = "\n".join(f"- {s}" for s in target_snips) or "暂无本地目标价数据"
 
     prompt = f"""你是量化分析师。请基于以下本地数据估算 {company_name}({ticker}) 合理股价区间。
@@ -85,7 +203,7 @@ def price_target(
 【财务指标 · 周期: {period}】(来源: SQLite financial_reports)
 {fin_text}
 
-【券商目标价/估值参考】(来源: LanceDB broker_report)
+【券商目标价/估值参考】(来源: LanceDB broker_report + acecamp_expert_column)
 {target_text}
 
 {_GROUNDING_RULE}
@@ -128,9 +246,13 @@ def marginal_change(
     delta_text = "\n".join(deltas) or "暂无环比数据"
 
     # 按 pub_date 排序取最新研报
-    recent = sorted(vector_chunks, key=lambda c: c.get("pub_date", ""), reverse=True)
+    recent = sorted(
+        _research_chunks(vector_chunks),
+        key=lambda c: (c.get("release_time") or 0, c.get("pub_date", "")),
+        reverse=True,
+    )
     recent_snips = [c["text"][:150] for c in recent[:5]]
-    recent_text = "\n".join(f"- [{c.get('pub_date','?')}] {c['text'][:120]}"
+    recent_text = "\n".join(f"- [{c.get('pub_date','?')}] [{_source_meta(c)}] {c['text'][:120]}"
                             for c in recent[:5]) or "暂无近期研报"
 
     prompt = f"""你是行业跟踪分析师。请聚焦于 {company_name}({ticker}) 的边际变化，输出增量信息。
@@ -138,7 +260,7 @@ def marginal_change(
 【环比/同比变化 · 周期: {period}】(来源: SQLite financial_reports)
 {delta_text}
 
-【最新研报摘要（按时间排序）】(来源: LanceDB broker_report)
+【最新研报/专家专栏摘要（按时间排序）】(来源: LanceDB broker_report + acecamp_expert_column)
 {recent_text}
 
 {_GROUNDING_RULE}
@@ -174,8 +296,11 @@ def relationship_graph(
         for r in chain_companies
     ) or "图谱暂无传导路径"
 
-    compete_snips = [c["text"][:150] for c in vector_chunks
-                     if any(kw in c["text"] for kw in ["竞争", "市占率", "份额", "对手", "替代"])][:3]
+    compete_snips = [
+        f"[{_source_meta(c)}] {c['text'][:150]}"
+        for c in _research_chunks(vector_chunks)
+        if any(kw in c["text"] for kw in ["竞争", "市占率", "份额", "对手", "替代"])
+    ][:3]
     compete_text = "\n".join(f"- {s}" for s in compete_snips) or "暂无本地竞争数据"
 
     # trigger pyvis rendering
@@ -192,7 +317,7 @@ def relationship_graph(
 {chain_text}
 核心产品：{product}
 
-【竞争格局研报摘要】(来源: LanceDB broker_report)
+【竞争格局研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
 {compete_text}
 
 {_GROUNDING_RULE}
@@ -231,10 +356,16 @@ def opportunity_risk(
 
     fin_text = f"毛利率: {gm.get('value')} YoY {gm.get('yoy_pct')}%"
 
-    bull_snips = [c["text"][:150] for c in vector_chunks
-                  if any(kw in c["text"] for kw in ["买入", "增持", "催化", "机会", "上行", "超预期"])][:3]
-    bear_snips = [c["text"][:150] for c in vector_chunks
-                  if any(kw in c["text"] for kw in ["风险", "减持", "不确定", "下行", "低于预期", "竞争加剧"])][:3]
+    bull_snips = [
+        f"[{_source_meta(c)}] {c['text'][:150]}"
+        for c in _research_chunks(vector_chunks)
+        if any(kw in c["text"] for kw in ["买入", "增持", "催化", "机会", "上行", "超预期"])
+    ][:3]
+    bear_snips = [
+        f"[{_source_meta(c)}] {c['text'][:150]}"
+        for c in _research_chunks(vector_chunks)
+        if any(kw in c["text"] for kw in ["风险", "减持", "不确定", "下行", "低于预期", "竞争加剧"])
+    ][:3]
 
     bull_text = "\n".join(f"- {s}" for s in bull_snips) or "暂无看多研报"
     bear_text = "\n".join(f"- {s}" for s in bear_snips) or "暂无看空研报"
@@ -246,10 +377,10 @@ def opportunity_risk(
 【财务数据 · {period}】(来源: SQLite)
 {fin_text}
 
-【看多研报摘要】(来源: LanceDB broker_report)
+【看多研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
 {bull_text}
 
-【看空/风险研报摘要】(来源: LanceDB broker_report)
+【看空/风险研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
 {bear_text}
 
 【产业链相关公司】(来源: Kùzu)

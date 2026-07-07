@@ -25,10 +25,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.parent.parent
 _KEYS_PATH = ROOT / "config" / "api_keys.json"
-RAW_DIR = ROOT / "data" / "raw" / "acecamp"
+RAW_DIR = ROOT / "data" / "raw" / "expert_minutes" / "acecamp"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 
 API_BASE = "https://api.acecamptech.com/api/v1"
+DATA_SOURCE = "acecamp_expert_column"
+HOT_BADGES = {"hot"}
+HOT_WEIGHT_BONUS = 0.2
 
 
 def _creds() -> dict:
@@ -159,19 +162,34 @@ def list_all_feeds(corp_id: int, page_size: int = 20) -> list[dict]:
 
 # ── 存储 ──────────────────────────────────────────────────────────────────────
 
-def _store_text(text: str, title: str, pub_date: str, article_id, ticker: str) -> int:
+def _store_text(
+    text: str,
+    title: str,
+    pub_date: str,
+    article_id,
+    ticker: str,
+    release_time: int = 0,
+    badges: list[str] | None = None,
+) -> int:
     from src.processing.text_processor import chunk_text
     from src.db.vector_store import upsert_chunks
     import hashlib
+    badges = [str(b) for b in (badges or []) if b]
+    is_hot = bool(HOT_BADGES.intersection(set(badges)))
     source_id = hashlib.md5(f"acecamp_{article_id}".encode()).hexdigest()
     chunks = chunk_text(text, metadata={
         "ticker": ticker,
         "pub_date": pub_date,
         "period": "",
         "associated_vars": [],
-        "data_source": "broker_report",
+        "data_source": DATA_SOURCE,
         "source_id": source_id,
         "source_uri": f"acecamp://article/{article_id}",
+        "source_file": f"acecamp://article/{article_id}",
+        "release_time": int(release_time or 0),
+        "badges": badges,
+        "is_hot": is_hot,
+        "source_weight": 1.0 + (HOT_WEIGHT_BONUS if is_hot else 0.0),
         "title": title,
     })
     if chunks:
@@ -194,7 +212,15 @@ def store_summary(feed_item: dict, ticker: str = "") -> int:
     ts      = src.get("release_time", 0)
     pub_date = datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d") if ts else ""
     article_id = src.get("id") or feed_item.get("source_id")
-    n = _store_text(summary, title, pub_date, article_id, ticker)
+    n = _store_text(
+        summary,
+        title,
+        pub_date,
+        article_id,
+        ticker,
+        release_time=ts,
+        badges=src.get("badges", []),
+    )
     print(f"[acecamp] summary {article_id} '{title[:30]}': {n} chunks", flush=True)
     return n
 
@@ -227,7 +253,15 @@ def fetch_and_store(article_id: int | str, ticker: str = "") -> int:
         print(f"[acecamp] {article_id}: 正文为空", flush=True)
         return 0
 
-    n = _store_text(text, title, pub_date, article_id, ticker)
+    n = _store_text(
+        text,
+        title,
+        pub_date,
+        article_id,
+        ticker,
+        release_time=ts,
+        badges=article.get("badges", []),
+    )
     print(f"[acecamp] full {article_id} '{title[:30]}': {n} chunks (transcribe={bool(transcribe)})", flush=True)
     return n
 

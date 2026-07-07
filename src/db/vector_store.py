@@ -45,6 +45,10 @@ def upsert_chunks(chunks: list[dict]) -> None:
             "data_source":    meta.get("data_source", ""),
             "source_file":    meta.get("source_file", ""),
             "associated_vars": ",".join(meta.get("associated_vars", [])),
+            "release_time":   int(meta.get("release_time") or 0),
+            "badges":         ",".join(meta.get("badges", [])),
+            "is_hot":         bool(meta.get("is_hot", False)),
+            "source_weight":  float(meta.get("source_weight", 1.0)),
         })
 
     if TABLE_NAME in db.table_names():
@@ -72,6 +76,20 @@ def _maybe_build_index(tbl) -> None:
         print("[vector_store] IVF-PQ index built")
     except Exception as e:
         print(f"[vector_store] index build skipped: {e}")
+
+
+def delete_by_source_file(source_file: str) -> None:
+    """
+    删除某个 source_file 下的全部旧 chunk。
+    重新处理同一份文件（内容被编辑过）前必须先调用，否则旧文本切出的
+    chunk 仍留在库里（chunk_id 是内容 md5，内容一变 id 就变，不会被
+    upsert_chunks 的按 chunk_id 覆盖逻辑清掉）。
+    """
+    tbl = _get_table()
+    if tbl is None:
+        return
+    escaped = source_file.replace("'", "''")
+    tbl.delete(f"source_file = '{escaped}'")
 
 
 def search(

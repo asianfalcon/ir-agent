@@ -1,0 +1,436 @@
+{
+    "data": {
+        "id": 70558556,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70533450
+        ],
+        "expert_public_resume": null,
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "模拟芯片调研:涨价/反倾销/车规新政等各类因素对国产化和格局的影响展望, 新玩家对现有车规格局的冲击与影响 - 聚焦矽力杰/豪威/南芯/纳芯微/思瑞浦/TXN/ADI",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "by_human",
+        "dual_language": "dual",
+        "corporation_ids": [
+            3763,
+            15601,
+            24827,
+            28169
+        ],
+        "corporations": [
+            {
+                "id": 3763,
+                "ticker": "SH.603501",
+                "name": "韦尔股份",
+                "logo": "https://image.acecamptech.com/logos/bb125f5c-1c50-41c8-9fdd-9d5be32923c0.svg"
+            },
+            {
+                "id": 15601,
+                "ticker": "US.TXN",
+                "name": "德州仪器",
+                "logo": "https://image.acecamptech.com/logos/3849b820-fbd6-4006-a10e-455f45acf671.svg"
+            },
+            {
+                "id": 24827,
+                "ticker": "SH.688052",
+                "name": "纳芯微",
+                "logo": "https://image.acecamptech.com/logos/562446eb-64ed-4971-8459-c53ffa7a3136.svg"
+            },
+            {
+                "id": 28169,
+                "ticker": "SH.688484",
+                "name": "南芯科技",
+                "logo": "https://image.acecamptech.com/logos/f4577d56-35cd-4a58-bd87-19f21bd03a9f.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "- 展望2025年出台的反倾销和关税政策对模拟行业有何影响？您接触到的客户是否因这些政策加速了国产产品的导入？\n- 说到通用性，尤其是公司的一站式解决方案，国内厂商很难做到完全等同的替代。但不是可以用pin to pin引脚替代一部分吗？\n- 总结下，从去年到现在的几轮涨价，叠加关税、反倾销等，展望有哪些客户对哪些国产厂商开始加速的导入，展望哪些厂商实际在这个产业中实质的能获得了一些份额或受益？\n- 今年（2026年）内地将实施新的车辆安全法规，与国际安全标准接轨。是否意味着国内部分模拟芯片厂商因规格或安全性不达标，会受到负面影响，展望公司或ADI等公司会因此受益？能否详细谈谈新法规对行业的影响？\n- 如何看待矽力杰这家公司？\n- 他在车规或工控领域的模拟芯片，之前是按照国际法规接轨，还是和大陆其他fabless类似的体系？\n- 所以如果法规严格执行，矽力杰属于大陆公司，在工业和车规体系上也采用了严格的车规体系，展望是否对他有益？\n- 如果细化来看，怎么评价几家主要大陆模拟芯片厂商？展望有哪些大客户在积极导入他们的产品？\n- 怎么展望南芯这家公司？他们也在发力汽车电子领域。\n- 你觉得南芯这种公司的竞争力如何？如果未来成长起来，展望对圣邦、纳芯微、思瑞浦等大陆头部厂商会有多大冲击？\n- 怎么展望豪威集团在模拟芯片领域的布局？展望他们的策略会对哪些核心模拟芯片公司产生冲击？ ",
+        "content": "\u003cp\u003e以下是专家观点：\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：展望2025年出台的反倾销和关税政策对模拟行业有何影响？您接触到的客户是否因这些政策加速了国产产品的导入？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：关税问题，很多客户和行业上下游普遍认为短期内不会造成影响。去年（2025年）出现了突发的政策变化，大家都以较为悲观的预期做了准备，国内也出台了对等政策，曾一度引发恐慌，甚至有“去美化”以及供应链“去美化”的讨论。但后来大家发现，整体产品对美系企业如公司、ADI、MPS等的依赖度依然很高。这些企业的方案在行业中的占比仍然非常大。大家普遍认为，中美在半导体等核心敏感产业上，政策层面会达成一定程度的默契，不会再出现大幅度的政策变化，从而避免供应链的剧烈波动。因此，短期内关税不会成为影响价格或供应链变化的主要因素。\u003c/p\u003e\u003cp\u003eBryce：反倾销呢？\u003c/p\u003e\u003cp\u003e专家：关于中国出台的反倾销政策，尤其针对公司等，行业内普遍认为实际影响有限。即使严格执行反倾销措施，比如将公司今年美国生产的产品排除在外，虽然国内有部分替代产品，但这些替代方案整体还不够成熟，难以达到公司整体方案的成熟度和通用配套性。目前终端客户仍在广泛导入通用方案，尤其是公司的一站式解决方案，国内厂商很难做到完全等同的替代。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：说到通用性，尤其是公司的一站式解决方案，国内厂商很难做到完全等同的替代。但不是可以用pin to pin引脚替代一部分吗？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：理论上，国内厂商可以通过引脚兼容等方式实现部分替代，尤其是一些单价不高、通用性强的电源器件、逻辑器件等，国内可以找到多家企业提供兼容方案。但由于通用芯片用量大、供货量需求高，很难有一家或几家国内企业能够像公司一样，持续稳定地大规模供货，并保证良率。目前国产化水平在终端实际应用中的比例远低于理论水平。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：总结下，从去年到现在的几轮涨价，叠加关税、反倾销等，有哪些客户对哪些国产厂商开始加速的导入，展望哪些厂商实际在这个产业中实质的能获得了一些份额或受益？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：以汽车行业为例，主机厂和部分国资、地方国企背景的车厂有明显的国产化趋势，通过车厂端推动国产芯片导入。国内对标公司和ADI的几家主要芯片企业，如矽力杰、纳芯微、思瑞浦，以及杰华特和南芯，前三家在汽车领域份额提升较为明显，受益于政策和大环境的变化。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：今年（2026年）内地将实施新的车辆安全法规，与国际安全标准接轨。是否意味着国内部分模拟芯片厂商因规格或安全性不达标，会受到负面影响，而公司或ADI等公司会因此受益？能否详细谈谈新法规对行业的影响？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：如果是智能网联汽车领域的三项国标，比如GB44495-2024等，从2026年1月1日起在中国大陆对新车新车型强制实施，这类信息安全要求更多体现在MCU或中央处理器上，需要HSM模块。公司做数字产品较少，模拟芯片更多遵循国际通行的AEC Q100汽车芯片验证和可靠性标准，以及IATF 16949整车生产供应链资质要求，目前没有太大变化。对于模拟芯片，功能安全要求在ASIL B级以下的产品，国内厂商基本都能满足。总体来看，这些安全标准的加严主要影响MCU或SOC等数字嵌入式产品，模拟芯片领域影响有限。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：如何看待矽力杰这家公司？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：矽力杰的特殊性在于其较早在国内开展业务，2008年成立，2013年在台湾上市。当时国内还没有芯片设计原厂上市，资本环境也有一定局限，所以选择在台湾上市。当前矽力杰在台湾的资本运作并不理想，未能通过上市获得持续稳定的现金流，更多依靠自身运营。抛开这些因素，矽力杰的很多研发和设计主体及核心团队仍在国内。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e他目前不是走自建工厂的IDM模式。他的工厂其实也是在国内建的，国家在实际运营层面上还是把它当做重点扶持的国内企业。他的特殊性在于台湾上市有一些特殊的历史原因。还有一个问题是，按照目前非常严格的国产化标准来看，他的创始人或者当时的法人不是中国国籍，但他通过成立上海公司等方式，注册地、资本比例、法人国籍、研发主体都满足工信部3C或国产化的要求。这样来看，这些特殊性存在，但不会影响大家把它作为国产公司来评估。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：他在车规或工控领域的模拟芯片，展望之前是按照国际法规接轨，还是和大陆其他fabless类似的体系？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：矽力杰确实是较早进入工业和车规领域的公司。整体来看，他在车规领域的做法相对合规，是按照车规体系进行研发的。从芯片开发阶段开始，就采用了专门的车规开发流程，比如AP to p开发流程。相比之下，像国内一些公司，很多产品是从工规转为车规，而矽力杰的大部分车规产品都是严格按照车规标准研发的。因此，他的车规产品推出速度相对较慢。虽然是国内最早做车规的企业之一，但产品迭代和更新速度在2024、2025年时相对较慢，反而被杰华特、思瑞浦、纳芯等在产品丰富度上超越。主要是因为车规开发体系本身导致设计周期较长。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：所以如果法规严格执行，矽力杰属于大陆公司，展望在工业和车规体系上也采用了严格的车规体系，是否对他有益？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：是的。如果未来对车规芯片的要求变得更加明确和严格，像矽力杰这样体系健全的公司会因此受益。因为他是国内几家大公司中唯一坚持IDM模式、自有工厂的企业，而不是fabless模式。他一直向客户强调自有工厂和车规产品生产体系的优势，客户也会用公司、ST等国际大厂的标准来要求和审核他。既然选择了这条路，他会把控好相关标准。这也会加速国产化水平的提升。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：如果细化来看，怎么展望几家主要大陆模拟芯片厂商？展望有哪些大客户在积极导入他们的产品？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：在车规市场上，目前规模较大的公司主要有矽力杰、纳芯微和思瑞浦等，这三家可以算作第一梯队。虽然他们的产品方向各有侧重，纳芯微近两年重点做隔离类产品，在国内属于领先地位。思瑞浦和矽力杰则在不同通用产品领域有各自的优势，比如矽力杰专注于通用电源产品，这也是其基本盘。此前他们更多做一些相对简单的信号链产品，如运放、比较器芯片等。从2024年下半年开始，这三家都在拓展产品线，目标是覆盖所有模拟芯片领域。从执行情况来看，矽力杰和纳芯微做得相对更好。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e第二梯队主要是上市公司中的南芯、杰华特、帝奥微等。他们目前还没有大规模扩充产品线，更多是在各自的优势领域深耕。杰华特专注于电源，南芯则以充电类产品为主，并逐步延展到泛电源领域。非上市公司中，规模较大的有类比、芯洲等，这些公司产品更聚焦，体量也相对较小。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e至于头部客户，纳芯微的优势产品主要集中在新能源汽车驱动领域，比如比亚迪、领跑、汇川等，基本都集中在新能源三电领域。其他电源类产品也在逐步铺开，进入更多主机厂体系。矽力杰做的是通用电源，理论上所有产品品类都会涉及，因此市场广阔，国内头部主机厂及其下属企业基本都有导入矽力杰的产品，但单颗物料价值相对没有纳芯微高。思瑞浦与矽力杰类似，客户覆盖面广，国内前十大主机厂基本都是他们的重要客户。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：怎么展望南芯这家公司？他们也在发力汽车电子领域。\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：南芯在汽车电子领域的策略较为明晰。他们利用在车载充电领域已经证明的产品优势，先通过无线充、快充、PD插针等产品切入汽车市场，迅速进入比亚迪、新势力车企、国际大厂如安波福、博世等头部客户体系。这些产品本质上还是电源拓扑，只是增加了充电相关的协议。南芯进一步向通用电源领域拓展，重点发力集成式电源管理芯片（PMIC），如摄像头PMIC、雷达PMIC等，为特定传感器配套电源管理芯片。这些产品依托已有头部客户基础进行导入，策略明确且聚焦。虽然汽车电子业务增长较快，但如果要从目前每年约1亿元人民币营业额提升到10亿元量级，在竞争激烈的电源领域还需要推出更多有竞争力的产品，并在市场上铺开，这还需要一定时间。不过整体策略较为清晰。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：你觉得南芯这种公司的竞争力如何？如果未来成长起来，展望对圣邦、纳芯微、思瑞浦等大陆头部厂商会有多大冲击？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：南芯目前重点做的产品领域与思瑞浦、矽力杰存在较多同质化竞争，因为大家都在做电源类产品。如果南芯发展顺利，未来的上限可能也难以超过纳芯微。主要原因在于南芯的起点比纳芯微低，尤其是在缺货那两年，南芯的车规产品还未推出或数量很少，错过了快速扩张市场份额的历史机遇，这方面存在一定天然劣势。\u003c/p\u003e\u003cp\u003eBryce：是不是南芯和大陆头部fab的产业链关系还不错？\u003c/p\u003e\u003cp\u003e专家：是的。他在传统消费类产品上与中芯国际、H公司等企业有较紧密的合作，主要体现在保供和供应优势方面。但这种合作并延续到其新产品领域，比如车规产品。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：怎么展望豪威集团在模拟芯片领域的布局？展望他们的策略会对哪些核心模拟芯片公司产生冲击？ \u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：豪威集团目前在模拟芯片领域的布局非常明确，他们并不选择通用的分立单体低价值产品，而是专注于如CMOS摄像头模块等领域。豪威通过将摄像头PMIC电源管理芯片与CMOS模块配套销售，提升了市场吸引力。现在市场上一个CMOS模块售价约8美元，而PMIC已降至0.2美元，几乎可以忽略不计，相当于客户购买模块时附赠电源芯片。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e豪威通过这种方式为客户提供超出传统模拟芯片范畴的整体解决方案，形成了较强的竞争力。此外，豪威还在雷达、SBC等集成化芯片领域发力，推出集成CAN、LIN和电源的片上系统，适用于中型控制器的配电和通信。这些产品集成度高，能够整合体系内的信号链IP资源，包括高速以太网的PHY和Switch等，提升了产品附加值并加深了与客户的绑定。豪威的策略是做有差异化、相对复杂的集成芯片，并与其优势产品形态一同销售，目前增长较快。\u003c/p\u003e\u003cp\u003eBryce：可能豪威采用“捆绑赠送”策略，可能有保CIS份额等战略目的。如果这种策略持续，最受冲击的是谁？\u003c/p\u003e\u003cp\u003e专家：以电源类为主的中型模拟芯片企业，比如芯洲等，尽管体量不同，但在产品层面会面临较大竞争压力。对矽力杰、思瑞浦、南芯等以电源为主的企业也会带来一定压力。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "调研纪要CH"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 14492,
+        "likes": 0,
+        "favorites": 3,
+        "word_stats": {
+            "word_count": 3790,
+            "read_time": 8
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070809810813",
+            "paid_at": 1783413158,
+            "created_at": 1783413158,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20506884,
+            "type": "AceCamp",
+            "introduction": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "name": "Patrick",
+            "avatar": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar"
+        },
+        "organization": {
+            "id": 20506884,
+            "sc_name": "Patrick",
+            "tc_name": "Patrick",
+            "en_name": "Patrick",
+            "name": "Patrick",
+            "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "tc_description": null,
+            "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "share_display_name": "Patrick",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 3,
+            "sator_organization_id": null,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [
+                2,
+                5,
+                11,
+                6
+            ],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": true,
+            "public_contact": false,
+            "allow_public_contact": true,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": true,
+            "lastest_updates": [
+                {
+                    "id": 70564277,
+                    "title": "玻璃基板调研: Rubin Ultra或导入玻璃Interposer, Intel/台积电CoPoS产线进展, TGV良率仍卡在钻孔/填孔",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783388858
+                },
+                {
+                    "id": 70564268,
+                    "title": "INP衬底与高功率光源调研:1.6T DSP及InP衬底供给, 多芯片封装一致性对物料需求, DCI/卫星激光器需求差异 - 聚焦博通/Marvell/住友/JX/AXT/Coherent/MaxLinear/Credo/SpaceX/亚马逊/谷歌",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783350173
+                },
+                {
+                    "id": 70564267,
+                    "title": "光芯片与OCS调研:100G/200G供需和价格上行, CPO产能扩张及产品平台切换, OCS出货上修与供应链瓶颈 - 聚焦博通/三菱/住友/英伟达/Coherent/康宁/旭创/镭芯/谷歌/索尔思",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783349922
+                }
+            ],
+            "article_count": 365,
+            "follower_count": 2606,
+            "event_count": 1225,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": null,
+            "followed_corporations": [
+                {
+                    "id": 13176,
+                    "ticker": "US.NVDA",
+                    "name": "英伟达",
+                    "logo": "https://image.acecamptech.com/logos/d756da3c-36d2-45ea-91a8-b15f142d675b.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 7617,
+                    "ticker": "US.AMD",
+                    "name": "AMD",
+                    "logo": "https://image.acecamptech.com/logos/c223b76b-dfd0-4369-9147-ca859ac15c41.svg",
+                    "following": null,
+                    "industry_id": 1020,
+                    "delist": false
+                },
+                {
+                    "id": 15528,
+                    "ticker": "US.TSM",
+                    "name": "台积电",
+                    "logo": "https://image.acecamptech.com/logos/d40f2c27-7348-46ba-b76b-4d5c767ad12f.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 14004,
+                    "ticker": "US.QCOM",
+                    "name": "高通",
+                    "logo": "https://image.acecamptech.com/logos/82a7af04-84f1-4ffd-9b20-f23797398c04.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 7973,
+                    "ticker": "US.AVGO",
+                    "name": "博通",
+                    "logo": "https://image.acecamptech.com/logos/f9ddad8b-29ff-4596-945b-4ca2195d718d.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 12693,
+                    "ticker": "US.MRVL",
+                    "name": "迈威尔科技",
+                    "logo": "https://image.acecamptech.com/logos/b5b87317-3434-4e5f-97ae-4c5601614cfb.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 833,
+                    "ticker": "SZ.002371",
+                    "name": "北方华创",
+                    "logo": "https://image.acecamptech.com/logos/62710c03-5c51-457e-9ce0-9940935b8927.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": null
+                },
+                {
+                    "id": 2337,
+                    "ticker": "SZ.300782",
+                    "name": "卓胜微",
+                    "logo": "https://image.acecamptech.com/logos/25c284aa-1721-46be-b0a2-8ac18c250e63.svg",
+                    "following": null,
+                    "industry_id": 4520,
+                    "delist": null
+                },
+                {
+                    "id": 3763,
+                    "ticker": "SH.603501",
+                    "name": "韦尔股份",
+                    "logo": "https://image.acecamptech.com/logos/bb125f5c-1c50-41c8-9fdd-9d5be32923c0.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 2223,
+                    "ticker": "SZ.300661",
+                    "name": "圣邦股份",
+                    "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": null
+                },
+                {
+                    "id": 3679,
+                    "ticker": "SH.603290",
+                    "name": "斯达半导",
+                    "logo": "https://image.acecamptech.com/logos/17aa6d32-9b45-4f40-947f-e3807d46e137.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 2866,
+                    "ticker": "SH.600460",
+                    "name": "士兰微",
+                    "logo": "https://image.acecamptech.com/logos/3eed5b32-da09-4ce8-a0d5-3ac204adbe27.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 25818,
+                    "ticker": "TT.2454",
+                    "name": "联发科",
+                    "logo": null,
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 25819,
+                    "ticker": "TT.3034",
+                    "name": "联咏科技",
+                    "logo": null,
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 15675,
+                    "ticker": "US.UMC",
+                    "name": "联电",
+                    "logo": "https://image.acecamptech.com/logos/cbd197d4-3300-4b2c-be22-a7c1ca28c194.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 14735,
+                    "ticker": "US.SMICY",
+                    "name": "中芯国际",
+                    "logo": "https://image.acecamptech.com/logos/14735/90a36b80-cec2-4666-a89a-0d11d71f3b43.png",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 5474,
+                    "ticker": "HK.01347",
+                    "name": "华虹半导体",
+                    "logo": "https://image.acecamptech.com/logos/244e0207-2b36-4b1b-80aa-3c19fd11920e.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 12766,
+                    "ticker": "US.MU",
+                    "name": "美光科技",
+                    "logo": "https://image.acecamptech.com/logos/857c76a3-65a3-4ed7-aac1-e1509f1714d9.svg",
+                    "following": null,
+                    "industry_id": 1020,
+                    "delist": false
+                }
+            ],
+            "expert": null,
+            "custom_sectors": [
+                {
+                    "id": 2,
+                    "sc_name": "汽车",
+                    "tc_name": "汽车",
+                    "en_name": "Automobile",
+                    "name": "汽车"
+                },
+                {
+                    "id": 5,
+                    "sc_name": "TMT",
+                    "tc_name": "TMT",
+                    "en_name": "TMT",
+                    "name": "TMT"
+                },
+                {
+                    "id": 11,
+                    "sc_name": "制造业",
+                    "tc_name": "制造业",
+                    "en_name": "​Manufacturing",
+                    "name": "制造业"
+                },
+                {
+                    "id": 6,
+                    "sc_name": "半导体/芯片",
+                    "tc_name": "半導體/芯片",
+                    "en_name": "Semiconductors \u0026 Chips",
+                    "name": "半导体/芯片"
+                }
+            ],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": "certified_analyst",
+            "is_research_partner": false
+        },
+        "release_time": 1769801333,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "豪威采取CIS捆绑PMIC的激进策略，是否会倒逼矽力杰和南芯在电源管理领域面临毛利率重估风险？",
+                "矽力杰严守IDM车规流程，在2026新规下，其份额增速能否反超迭代更快的纳芯微？"
+            ],
+            "en": [
+                "Will OmniVision's strategy of bundling PMICs with CIS force a gross margin de-rating for Silergy and Southchip?",
+                "Given stricter 2026 regulations, can Silergy's rigid IDM model allow it to outpace faster-iterating rivals like Naxinwei?"
+            ]
+        },
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783413162109",
+        "ts": 1783413163
+    },
+    "code": 200,
+    "ret": true
+}

@@ -17,9 +17,12 @@ def run(ticker: str, company_name: str, shared_data: dict, llm_caller) -> str:
     ) or "  暂无财务数据"
 
     chunk_lines = "\n".join(
-        f"  [{c.get('pub_date','?')}] {c.get('text','')[:120]} [来源: LanceDB {c.get('source_file','')}]"
+        f"  [{c.get('pub_date','?')}] [{c.get('data_source','?')}]"
+        f"{' [hot]' if c.get('is_hot') else ''}"
+        f" [weight={c.get('source_weight', 1.0)}] {c.get('text','')[:120]}"
+        f" [来源: LanceDB {c.get('source_file','')}]"
         for c in chunks[:6]
-    ) or "  暂无研报数据"
+    ) or "  暂无研报/专家专栏数据"
 
     chain_lines = "\n".join(
         f"  {r['company_name']}({r['ticker']}) 生产 {r['product']} [来源: Kùzu]"
@@ -32,7 +35,7 @@ def run(ticker: str, company_name: str, shared_data: dict, llm_caller) -> str:
 【财务数据】来源: SQLite financial_reports
 {fin_lines}
 
-【研报摘要】来源: LanceDB broker_report
+【研报/专家专栏摘要】来源: LanceDB broker_report + acecamp_expert_column
 {chunk_lines}
 
 【产业链】来源: Kùzu 图谱

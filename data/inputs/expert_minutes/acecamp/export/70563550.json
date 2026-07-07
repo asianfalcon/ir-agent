@@ -1,0 +1,258 @@
+{
+    "data": {
+        "id": 70563550,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70538563
+        ],
+        "expert_public_resume": "传感器专家",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "磁传感器调研：行业格局，汽车及机器人领域增长，AI服务器的DrMOS技术壁垒",
+        "transcribe": null,
+        "badges": [],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            2223,
+            15525,
+            24827,
+            26218
+        ],
+        "corporations": [
+            {
+                "id": 2223,
+                "ticker": "SZ.300661",
+                "name": "圣邦股份",
+                "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg"
+            },
+            {
+                "id": 15525,
+                "ticker": "US.TSLA",
+                "name": "特斯拉",
+                "logo": "https://image.acecamptech.com/logos/d1391a97-a058-435e-9b14-b644c8204d16.svg"
+            },
+            {
+                "id": 24827,
+                "ticker": "SH.688052",
+                "name": "纳芯微",
+                "logo": "https://image.acecamptech.com/logos/562446eb-64ed-4971-8459-c53ffa7a3136.svg"
+            },
+            {
+                "id": 26218,
+                "ticker": "SH.688061",
+                "name": "灿瑞科技",
+                "logo": null
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "主要看点：\n1.磁传感器厂商：主要业务构成，磁传感器业务的增长情况和在不同应用领域的收入占比\n2.磁传感器的主要技术分类、市场格局，国内主要参与者的定位\n3.汽车及机器人领域，磁传感器的应用增长情况，国内厂商的份额和国产替代进展\n4.用于AI服务器的DrMOS产品的核心技术壁垒，进入主流供应链的挑战\n\n访谈专家关于磁传感器在汽车与机器人应用领域具有多年经验",
+        "content": "\u003cp\u003e相关标的：灿瑞科技（688061.SH），纳芯微（688052.SH），特斯拉（TSLA.US），圣邦股份（300661.SZ），南芯科技（688484.SH），杰华特（688141.SH）\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e以下为访谈专家根据市场公开信息的个人观点及推断\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e1. 灿瑞科技目前的主要业务构成，磁传感器业务的增长情况和在不同应用领域的收入占比？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前公司的主营业务是磁性传感器及相关产品，这部分业务约占公司总业务的60%以上。与手机相关的模拟芯片业务，受2026年内存涨价及手机市场整体影响，基本处于维持或略微收缩的状态。相比之下，磁性传感器业务，尤其是在汽车和工业等应用领域，正处于快速增长阶段，因此其在公司总业务中的占比差距预计将持续扩大。 公司上市初期，磁传感器业务以消费电子为主，工业应用占比较小。经过发展，目前产品在汽车领域的料号种类和出货量均有显著增加，已持续供货数年。在磁传感器业务内部，按应用领域划分，消费电子仍是主要部分，占比超过50%；工业应用占比接近30%；汽车应用占比约为20%。汽车业务的推动速度相对较慢，主要原因是其产品验证周期较长。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e2. 与竞争对手相比，灿瑞科技在汽车传感器市场的进展似乎较慢，主要原因是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e是的，与部分友商相比，公司在汽车市场的进展确实相对较慢，例如与赛卓电子相比，差距较为明显。主要原因在于，在2021年至2022年的市场缺货期间，一些竞争对手抓住了机遇，成功导入了大量汽车客户，抢占了市场先机。这导致客户在当前阶段导入新品牌供应商的速度有所放缓，从而直接影响了公司汽车业务的占比提升。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e3. 磁传感器的主要技术分类、市场格局以及国内主要参与者的定位？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e磁传感器主要可分为霍尔传感器、磁阻传感器等几大类。磁阻传感器内部又可细分为TMR（隧道磁阻）、GMR（巨磁阻）和AMR（各向异性磁阻）。从市场份额来看，霍尔传感器是主流，约占整个磁传感器市场的三分之二。TMR、GMR和AMR合计约占三分之一，其中TMR在磁阻类中占据主要份额。 国内磁传感器市场参与者众多，覆盖消费、工业和汽车等领域，各家定位有所不同：\u003c/p\u003e\u003cp\u003e赛卓电子：在2020至2022年的市场缺货期抓住了发展机遇，重点突破汽车客户，抢占了大量市场先机。\u003c/p\u003e\u003cp\u003e纳芯微：该公司本身就有霍尔传感器业务，并在2025年收购了麦歌恩后，市场份额显著扩大。麦歌恩的核心市场是汽车和工业，尤其在工业领域占比很高。\u003c/p\u003e\u003cp\u003e多维科技：主要产品为TMR传感器，与主流的霍尔传感器技术路径不同。其产品虽有一定局限性，但也具备独特优势，因此专注于相对更细分的消费和工业市场。\u003c/p\u003e\u003cp\u003e美新半导体：专注于地磁传感器（指南针应用），在智能手机市场的份额位居国内第一。\u003c/p\u003e\u003cp\u003e其他厂商：例如昆腾微、绍兴光大芯业（SG Micro）等公司也涉足磁传感器市场，主要集中在消费和工业领域。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e4. 磁传感器市场的全球市场规模有多大，除了纳芯微和麦歌恩等国内厂商外，主要的国际厂商有哪些？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e磁传感器全球市场的规模大约在100多亿人民币。除了国内厂商，市场上主要的国际厂商包括旭化成、TDK、Melexis、Allegro以及Infineon等，这些公司在霍尔传感器领域均有广泛布局。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e5. 磁传感器市场100多亿的规模中，其主要应用领域是哪些？汽车领域的增长情况和具体应用场景是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e100多亿的市场规模中，主要的应用领域是工业和消费电子，而非汽车。不过，近年来汽车领域的应用增速非常显著。在汽车中，磁传感器的应用场景广泛：首先，与电机相关的应用，例如座椅调节、车窗、天窗、尾门以及车内通风风扇等，都会使用霍尔传感器。其次，作为磁编码器的应用也日益增多，例如刹车踏板、油门踏板、怀档等档位控制以及中控面板上的旋钮和按键。此外，在车窗控制、后视镜折叠、遮阳板化妆镜等场景中，霍尔传感器也被用作开关，实现位置检测等功能。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e6. 在众多传感器类型中，磁传感器主要适用于哪些特定场景，其核心优势是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e磁传感器的核心优势在于替代传统的机械式开关和电阻式传感器。具体来看，其优势体现在以下几点：第一，无机械磨损，使用寿命长，解决了机械开关的寿命问题。第二，由于通过磁场传递信号，而非机械结构，因此在防水设计上非常简便。第三，产品可以实现小体积和高精度。这些特性使其在需要高可靠性、长寿命和紧凑设计的应用场景中具备较高的性价比。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e7. 磁传感器市场未来的增长逻辑是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e市场增长的主要逻辑有两点：一是对传统机械传感器的替代，二是新能源汽车中新增功能的驱动。例如，车载冰箱的门检测功能，为保证前装产品的可靠性和寿命，并解决防水问题，越来越多地采用磁传感器替代传统机械开关。从成本角度看，车规级霍尔开关的单价约为0.4至0.5元人民币，甚至可能比机械开关更具成本优势。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e8. 磁传感器市场的主要增长驱动力来自哪些领域？不同技术路线（如霍尔、TMR、AMR等）的应用场景和优劣势是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e市场增长的主要驱动力来自汽车和工业领域，尤其是在工业机器人和人形机器人中，对磁传感器的需求量和增速都非常可观。 在技术路线上，霍尔传感器因其成本优势而占据较高市场份额。TMR（隧道磁阻）传感器的优势在于底噪低、抗干扰能力强，适用于高精度检测场景，但其缺点是测量行程较短，限制了其应用范围。相比之下，霍尔传感器的测量行程可以做得更长。AMR等技术则更为小众，技术门槛更高，商业化应用相对较少。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e9. 在机器人领域，主要会采用哪种类型的磁传感器，其优势是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前在机器人领域，主要应用的是TMR和霍尔这两种磁传感器。从成本角度看，霍尔传感器具备非常显著的优势，因此在机器人应用中可能更具竞争力。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e10. 机器人领域对磁传感器的具体应用场景和需求量是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在机器人领域，传感器的应用非常广泛。以关节中的减速电机为例，其内部的磁编码器通常需要使用两到三颗霍尔传感器。考虑到机器人拥有众多的肘关节、腿关节以及手指关节，霍尔传感器的使用量相当可观。此外，在机器人的灵巧手应用中，例如有客户开发的电子皮肤，其内部集成了压力传感器和霍尔传感器。具体来说，在一个手指指头的位置，根据设计可能需要用到四颗或九颗霍尔传感器。一个机器人拥有十个手指，再加上手指关节和手掌部分，通常会布置一个霍尔传感器阵列，因此整体需求量会非常巨大。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e11. 霍尔传感器主要使用哪种半导体材料，不同材料的技术特点和应用场景有何差异？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前市场上主流的霍尔传感器是基于硅基材料制造的。同时，也存在基于砷化镓材料的产品，但这类产品仍属于小众市场。砷化镓霍尔传感器主要应用于特定的细分场景，其应用通常需要搭配外部放大电路等其他元件，因此使用范围受限。不过，在一些特殊应用中，砷化镓传感器在精度、线性度或抗噪声能力方面表现更优。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e12. 在工业和汽车等高端应用领域，国内磁传感器厂商的市场份额和国产替代的进展如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在消费电子领域，磁传感器的国产化比例已经较高。然而，在利润更丰厚的工业和汽车应用市场，目前仍以进口品牌为主，国产品牌的整体市场占有率还很小。以赛卓电子为例，其年营业收入约为六至七亿元人民币，即便全部计为汽车业务，其市场份额也仅为个位数百分比，远未达到10%。因此，当前的市场格局仍由进口品牌主导，国内厂商正致力于瞄准这一市场，开发高附加值的高端产品以实现进口替代。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e13. 灿瑞科技磁传感器业务近两年的增速如何，以及对未来一两年的增长有何预期？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在过去两年，即便在许多新产品尚未完全开发完成的情况下，公司业务的年均增速也达到了20%。今年（2026年），随着多款新产品的推出，预计明年（2027年）的业务增速将超过20%。除非机器人行业出现爆发式增长，否则业务很难实现爆发式增长。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e14. 当前磁传感器产品的价格水平如何，今年以来是否存在价格上涨的趋势？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e由于业务聚焦于高端替代市场，产品定价普遍较高。例如，在汽车应用中，最基础的产品价格约为0.4至0.5元人民币，而磁编码器和电流传感器的价格则能达到2元至3元人民币。今年（2026年）以来，市场确实存在涨价趋势，例如纳芯微此前就发布了涨价函。虽然原材料成本确有上涨，但公司目前主要通过内部消化，尚未将成本压力传导至客户端。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e15. 面对原材料成本上涨，公司采取了哪些应对策略，未来的价格调整节奏会是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前，公司主要通过调整产品结构来抵消原材料涨价的影响，即减少低毛利产品的订单，优先承接高毛利产品。虽然尚未对客户直接涨价，但这种结构性调整实际上提升了整体盈利水平。未来，价格上涨将是必然趋势，公司会跟随市场主流品牌的调价节奏进行调整。除磁传感器外，公司部分毛利较低的电源类产品已经进行了价格上调。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e16. 当前半导体供应链中，原材料成本上涨主要体现在哪些环节，其背后的原因是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e成本上涨主要源于晶圆价格的变动。2025年年底，成本压力主要来自封测环节的涨价，而目前封测价格涨幅已趋缓，晶圆价格的波动则更为显著。据晶圆供应商反馈，AI相关的高毛利订单挤占了大量产能，导致他们不愿意承接利润较低的产品订单。这不仅造成了公司部分低毛利产品产能获取困难，也推高了晶圆的采购价格。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e17. 灿瑞科技未来的发展战略，包括业务布局的调整和新业务的拓展方向？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司未来的发展主要聚焦于两大方向。首先，原有的手机业务板块将逐渐收缩，相关新产品的开发节奏已显著放缓。其次，公司将重点发展磁性传感器和电机驱动两大业务。在磁性传感器领域，公司正大力投入高级磁编码器及电感式编码器等产品的研发，面向工业和汽车客户的新品已在2026年推出，未来还将持续拓展此类产品线。在电机驱动领域，公司将在原有单向风扇驱动（应用于笔记本电脑、台式机、新能源散热及冰箱散热等）的基础上，投入新团队开发三相FOC等高阶产品，以应对水泵、车规级风扇等对电流要求更高的应用场景，并与国内主要竞争对手展开竞争。总体战略上，公司正从低毛利的消费电子（如手机）业务转向高毛利产品，旨在与国际厂商在高阶市场竞争，预计这将对公司整体毛利率产生积极影响。根据2025年财报数据，公司毛利率较2024年已实现了一个百分点的提升。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e18. 公司目前的人员稳定性如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当前公司人员已基本稳定。2024年曾出现过一段不稳定时期，主要原因是公司在2022年市场向好时进行了急速扩张，招聘了大量人员；然而，随着2023年市场环境转差并进入下行周期，公司不得不在2024年进行较多的人员优化与调整，导致了当时的人员流动。目前，相关调整已经完成，团队恢复了稳定状态。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e19. 在机器人业务领域，公司的主要客户是哪些？业务模式是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在机器人领域，公司的直接客户主要是配件厂商，例如生产机器人皮肤、灵巧手、关节电机以及行星减速器的企业。同时，公司也与部分终端整机厂进行前期技术交流与配合，例如智元机器人和荣耀。与荣耀的合作模式是，先与终端厂商进行技术沟通，但最终的业务落地仍会通过其指定的供应商来完成。目前，机器人业务的客户主要集中在国内市场。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e20. 公司是否已经进入特斯拉的供应链？在机器人业务方面是否有合作？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司目前尚未与特斯拉在机器人业务上展开合作，但特斯拉的汽车产品中有使用公司的霍尔传感器。公司的机器人应用相关产品于2025年下半年才正式推出，目前尚处于市场推广阶段。由于机器人领域的研发周期较长，许多团队成员也来自汽车行业，因此项目从接触到最终量产需要较长时间。公司已与一些客户达成了战略合作，但项目落地速度不会很快。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e21. 在机器人行业没有爆发式增长的前提下，公司高端磁传感器业务的增长预期是怎样的？是否存在个别客户带来爆发性增长的可能性？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在当前市场环境下，公司高端磁传感器业务的增长预计将与市场平均增速基本持平，难以出现由单一客户驱动的爆发性增长。尽管公司与国内一家知名企业在磁传感器应用上建立了战略合作伙伴关系，可能会在某些细分品类上实现爆发式增长，但从公司整体层面来看，单个客户的增长贡献很难达到提升公司总营收5%或10%的水平。实现整体业务爆发式增长的前提是整个行业，例如机器人领域，出现井喷式发展，并且公司能抓住机遇，同时相关客户的订单量也随之剧增。就目前的技术和应用场景来看，人形机器人尚未展现出能让普通大众清晰感知的核心价值，短期内不太可能出现类似AI领域的爆发式增长，可能还需要数年时间等待新应用场景的出现。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e22. 如何评价国内主流模拟芯片上市公司的竞争力，例如进行排序并说明理由？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在国内模拟芯片公司中，纳芯微表现突出，其成功得益于在工业和汽车应用领域的布局，抓住了时代红利，实现了快速增长，其战略眼光和布局具有前瞻性。其次，圣邦股份的业务覆盖面广，经营较为稳健，但实现爆发式增长的可能性不大。南芯半导体近年来也取得了显著的进步，发展迅速。其他公司如杰华特、金风等也各有其细分领域的优势，但这些优势尚未能带动公司整体实现跨越式提升。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e23. 国内模拟芯片公司是否有可能通过扩充品类或团队等方式，实现突破并拉开与其他公司的差距？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e除非通过强强联合或并购整合，否则国内模拟芯片公司很难有一家能够脱颖而出，实现大幅领先。当前市场竞争非常激烈，各家公司都拥有各自特色的细分赛道和护城河，但没有一家公司能在其所涉足的所有领域都表现得非常突出，因此整体格局趋于同质化，难以出现一家独大的局面。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e24. 用于AI服务器的DrMOS产品，其核心技术壁垒是什么？国内哪些公司在该领域布局并具备发展潜力？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDrMOS产品的核心技术在于功率器件本身的工艺。理想情况下，厂商需要拥有自研的功率器件工艺，如果单纯外购，则难以体现产品优势。目前行业内一种常见的模式是与功率器件厂商合作，进行定制化、定向的共同开发。 在DrMOS领域，杰华特和矽力杰均有布局。由于DrMOS需要与多相控制器搭配使用，因此具备控制器研发能力的公司更具优势。杰华特和矽力杰在这方面前景较好。金风在控制器方面似乎也有一定进展。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e25. DrMOS与多相控制器是如何协同工作的？为什么说两者必须配合才能销售？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDrMOS本身是驱动芯片与MOSFET的合封产品，但它无法独立完成功率转换，必须与一个外部的多相控制器配合。多相控制器与DrMOS之间存在特定的通讯协议。因此，厂商如果只生产DrMOS而没有配套的控制器，产品将很难销售，因为两者必须协同工作才能构成一个完整的功率转换解决方案。例如，要进入英特尔的平台，产品就必须遵循英特尔的通讯协议，开发出的控制器需要能与DrMOS进行有效通讯。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e26. DrMOS产品进入主流服务器厂商供应链的主要障碍是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDrMOS产品的导入难度非常高，关键在于需要获得CPU等主芯片厂商的授权和认证。以惠普服务器为例，如果其采用英特尔的主芯片，那么配套的DrMOS和多相控制器解决方案就必须遵循英特尔的协议。厂商需要获得英特尔的授权，并被纳入其参考设计中，才能向惠普等服务器厂商推广。如果未经英特尔认证，服务器厂商出于系统稳定性和风险考虑，通常不会采用。同样，在国内市场，要进入浪潮等客户，也需要与中科曙光等国产主芯片进行协议适配和协同开发。因此，仅仅开发出DrMOS产品，而没有打通整个生态链，是极难进入大客户供应链的。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e27. 国内DrMOS厂商在海外市场，例如戴尔、惠普等，取得显著市场份额的可能性如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前来看，国内厂商要切入海外主流服务器品牌市场非常困难。一方面是技术层面的壁垒，如前述的英特尔协议授权问题；另一方面，地缘政治因素也对国内公司进入海外品牌供应链造成了极大的阻碍。一些国外品牌有明确规定，不允许采用国产芯片。因此，现阶段国内厂商的机会主要集中在国内市场，例如服务于华为、浪潮等客户。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "汽车",
+            "芯片"
+        ],
+        "industry_ids": [
+            2510,
+            4530
+        ],
+        "custom_sector_ids": [
+            2,
+            6
+        ],
+        "views": 4477,
+        "likes": 0,
+        "favorites": 0,
+        "word_stats": {
+            "word_count": 6021,
+            "read_time": 13
+        },
+        "masked_word_stats": {
+            "word_count": 2949,
+            "read_time": 6
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607041406870877",
+            "paid_at": 1783173903,
+            "created_at": 1783173903,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564309,
+                    "title": "MT插芯和FAU需求增量，CW激光器送样进展。扩产对北美大厂影响，国产磷化铟衬底供应和出口更新。三环/亨通光电/汇川/索尔思/Lumentum/Coherent",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783405655
+                },
+                {
+                    "id": 70564298,
+                    "title": "引线框架行业调研：AI对行业需求影响，近期提价背景，核心参与玩家及竞争格局预期 – 三井/新光/顺德/新恒汇",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783399972
+                },
+                {
+                    "id": 70564294,
+                    "title": "磷化铟深度调研：衬底供需错配驱动高毛利，3.2T光模块开启材料演进新周期",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783396183
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1782094237,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 10501590,
+                "organization_type_id": 3,
+                "name": "Michael Lu",
+                "sc_name": "Michael Lu",
+                "en_name": "Michael Lu",
+                "logo": "https://image.acecamptech.com/avatar/10501592/0.10604018197345355.jpg?x-oss-process=style/avatar",
+                "description": "十余年产业+行业研究经验，善于从产业视角分析行业发展趋势与企业竞争格局",
+                "sc_description": "十余年产业+行业研究经验，善于从产业视角分析行业发展趋势与企业竞争格局",
+                "en_description": "10+ years in industrial \u0026 sector research. Specializes in industry trends and competitive landscape analysis from an industrial perspective.",
+                "state": "passed",
+                "followed": false,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "灿瑞科技向高毛利工业/汽车产品转型中，晶圆产能被AI挤占是否会拖累其2027年20%的增速预期？",
+                "杰华特在DrMOS领域虽有布局，但面对英特尔等主芯片厂商的认证壁垒，其在国内服务器市场的真实渗透率如何？"
+            ],
+            "en": [
+                "Will wafer capacity constraints driven by AI disrupt Canrui's 20% growth target as it shifts to high-margin auto/industrial products?",
+                "Despite its DrMOS capabilities, what is Joulwatt's actual penetration in domestic servers given the certification barriers from main chipmakers like Intel?"
+            ]
+        },
+        "masked_state": "passed"
+    },
+    "meta": {
+        "ack": "1783408547282",
+        "ts": 1783408548
+    },
+    "code": 200,
+    "ret": true
+}

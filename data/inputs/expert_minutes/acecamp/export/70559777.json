@@ -1,0 +1,436 @@
+{
+    "data": {
+        "id": 70559777,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70534329
+        ],
+        "expert_public_resume": "光模块专家",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "光模块模拟调研: 光模块模拟芯片价值量（800G/1.6T）与TI/MPS格局展望, 国产Fabless产能约束与二供切入路径展望 - 聚焦纳芯微/富芯/圣邦/思瑞浦/TI/ADI/MPS",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "by_human",
+        "dual_language": "dual",
+        "corporation_ids": [
+            2223,
+            7292,
+            15601,
+            44243
+        ],
+        "corporations": [
+            {
+                "id": 2223,
+                "ticker": "SZ.300661",
+                "name": "圣邦股份",
+                "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg"
+            },
+            {
+                "id": 7292,
+                "ticker": "US.ADI",
+                "name": "亚德诺",
+                "logo": "https://image.acecamptech.com/logos/afde9837-2173-401a-aca7-d5680abf96fc.svg"
+            },
+            {
+                "id": 15601,
+                "ticker": "US.TXN",
+                "name": "德州仪器",
+                "logo": "https://image.acecamptech.com/logos/3849b820-fbd6-4006-a10e-455f45acf671.svg"
+            },
+            {
+                "id": 44243,
+                "ticker": "TW.6415",
+                "name": "矽力杰",
+                "logo": null
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "- 方向：围绕光模块场景的国产模拟替代机会展望；\n- 结构：围绕“高速前端—电源管理”两套价值量展望；\n- 节奏：围绕客户迭代窗口期、主供保供能力变化、二供切入与份额再分配的推进节奏展望。",
+        "content": "\u003cp\u003e\u003cstrong\u003e以下是调研纪要总结：\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e- \u003cstrong\u003e光模块价值量/份额口径（800G→1.6T）：\u003c/strong\u003e800G单颗相关模拟芯片价值量约150元（~$20），主要是金手指二级驱动链路（Protector/Charge Pump/升降压/电源模块+TIA+Driver）；1.6T预计+30%。份额上，TI~40%/MPS~30%/其余~30%，公司可覆盖约100元。\u003c/p\u003e\u003cp\u003e- \u003cstrong\u003e产能/二供切入机制：\u003c/strong\u003e“窗口期通常半年到一年”；已在客户供应链则有优先权，否则作为二供排队等待一供出问题补位；缺口分配上，“若主供能满足90%，剩余10%才会分给其他厂”，并强调“关键在能否保证产能而非价格”。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong\u003e以下是专家观点：\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：从行业角度分析，光模块配套的前端模拟和电源管理芯片（比如PMIC、DCDC、LDO）在行业中的价值量，以及整体芯片毛利率的行业区间如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：光模块是非常好的生意，终端溢价高，需求持续增长。去年（2025年）增长约100%，今年（2026年）预计延续增长趋势。只要供应商有方案，2026、2027年都将保持增长。MPS、TI、ADI各有专长，MPS专注电源，ADI和TI在高速领域有优势。光模块中的高速激光驱动等领域，国内基本无可替代产品。英飞凌等也有稳定占比。电源管理方面，公司只占一小部分，MPS份额更大。国内如圣邦、思瑞浦等会在二供中分到部分份额，尤其在主供产能受限时，其他厂商会分得蛋糕。整体来看，光模块领域需求旺盛，这两年主要依赖该领域增长。储能领域在国产中占比较小。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：光模块价值量方面，能否从行业角度说明一个800G光模块中高速前端和电源管理芯片的市场空间有多大？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：单颗800G光模块相关芯片价值量约150元人民币，约20美元。\u003c/p\u003e\u003cp\u003eBryce：这是前端部分吗？Driver加TIA这两个？\u003c/p\u003e\u003cp\u003e专家：主要是金手指（Golden Finger）二级驱动，包括Protector、Charge Pump、升压、降压、电源模块加TIA、Driver等。\u003c/p\u003e\u003cp\u003eBryce：1.6T光模块中所有模拟芯片价值量会是800G的多少？\u003c/p\u003e\u003cp\u003e专家：不会达到两倍，预计提升约30%。由于集成度更高，对电源和精度、响应速度要求提升，下一代产品成本会更高，单价也会相应提升。功率密度越高，单价越高，BOM成本整体提升，至少增加30%。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：光模块电源管理芯片整体价值量是多少？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：如果只计算公司能覆盖的模拟芯片部分，大约100元人民币。大部分模块电源由MPS供应，MPS在power module领域占比较高。TI在DSP等国产基本没有布局的领域份额难以撼动，AFE等主要还是TI为主。加上单片机等，TI大约能覆盖两三百元人民币，300元是保守估计。格局上，TI整体约40%，MPS约30%，剩下的是其他厂商和部分国产。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：剩下的30%左右是国产厂商吗？国产厂商格局如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：国产厂商中矽力杰占大头，早期没有其他厂商，主要看布局时间。\u003c/p\u003e\u003cp\u003eBryce：如何评价圣邦？\u003c/p\u003e\u003cp\u003e专家：圣邦去年（2025年）捡到公司丢掉的一些份额。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：圣邦的工艺能力如何？是否存在供应链问题？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：圣邦也可能在产能紧张时出现供应链问题。其工艺为Fabless纯wafer，完全依赖供应链绑定和稳定性。转厂速度不如公司快。\u003c/p\u003e\u003cp\u003eBryce：为什么要转厂？\u003c/p\u003e\u003cp\u003e专家：例如一直在中芯国际做180nm工艺平台产品，如果中芯国际缩减产能，优先供应GPU或H公司等大客户的数字芯片，圣邦可能会面临供货不足，只能通过更高价格与供应链协商稳定供货。当前大家都在催存储，优先供应大客户，模拟芯片厂商会被挤压。即使拿到份额，利润也未必理想，8寸成熟制程成本上涨是现实。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：圣邦、纳芯微、思瑞浦等国产头部厂商，通常会采取哪些策略保障产能？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：Fab厂通常要求签订合约，确保采购量后给予相应价格。也可能存在不公开的竞价，同批货物在多家厂商间议价。还有战略合作，如股份出让等利益交换，深度合作绑定，从高层到执行层都有操作空间。\u003c/p\u003e\u003cp\u003eBryce：有没有可能从TI那边去合作？之前听说过类似说法，但不确定是否属实。因为TI新建的工厂可能产能并未完全利用，如果TI将部分空余产能与其他厂商合作，有这种可能吗？\u003c/p\u003e\u003cp\u003e专家：不太可能。国内一些厂商的产品基本上都是从TI的产线延伸出来的。对于公司自己能够生产的产品，TI更倾向于自己消化产能，而不是与其他厂商合作。即使产能有剩余，TI也可以通过涨价来调节，不会轻易让出产能。此外，这其中还涉及工艺和技术的保密问题，TI不会冒险让技术外泄，这种合作的可能性非常小。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：仅从行业层面，光模块配套的前端模拟和电源管理芯片所对应的PCB平台或模拟供应平台，除了台积电、联电这些，其他二三线Fab有能力胜任吗？他们产能能否满足需求？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：模拟芯片肯定可以做，主要是良率的问题。良率高低不同，但通过筛选总能挑出合格产品。只要有意愿销售，就能筛选出合格品。二三线厂商如华虹等，只要具备工艺平台，接单后主要就是看良率表现。基本上不存在太多工艺节点的限制，剩下的就是各家在各自的价格区间和平台上测试产品效果。目前国产厂商采取较为战略性的方式，先进入市场占据份额。即使良率不高，也会先占坑，哪怕只筛出50%的合格品，只要能持续供货，就可以不断迭代和优化，逐步提升产品和工艺。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：今年（2026年）大陆及海外成熟制程产能释放后，能否满足AI相关配套模拟芯片（如光模块等）的需求？产能开出来后，模拟这部分，供给过剩还是依然紧缺？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：可能供给过剩。现在市场上有大量囤货现象，热度非常高，市场都在炒作相关产品。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：之前聊过汽车领域，国内产能释放后实际有效产能并不多。对应到光模块配套的模拟芯片，二三线平台产能释放后，您觉得良率如何？定性来看表现怎么样？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：消耗端的情况会比汽车领域乐观。AI相关产品属于全民热潮，传统产品需求也很大，价格全链路上涨。整体来看，这比汽车是更好的生意，目前供需非常旺盛，光模块领域尤为如此。目前国内云计算和大模型相关需求持续旺盛，终端需求强劲，大家都在消耗算力、存储和器件，实际需求非常大。这也引发了焦虑和囤货现象，包括消费类存储等产品价格持续上涨，产能紧缺的状况可能会持续到下一阶段。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：如果国产Fabless模拟设计厂商，想要争取光模块电源管理芯片的市场份额，应该采取哪些策略才能从客户手中获得竞争对手的份额？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：首先要抓住每一波窗口期，通常每次产品迭代或开发时，窗口期大约半年到一年。要确保性能指标在前期洽谈时就能满足客户需求。如果已经进入客户供应链，会有优先权。否则就要作为二供排队，等待一供出现问题时补位。很多终端客户原本使用ADI、MPS或TI等大厂产品，供应稳定时不会轻易更换。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e当前最关键的问题是能否保证产能，而不是价格。价格压力最终由终端承担，只要有需求，价格就会上涨。谁能保证最大产能，谁就有优势。国内厂商很难百分百保证供应，因此在供应链不确定性高、需求紧张时，具备稳定供应能力的厂商更有竞争力。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e当产能不再是问题时，长期稳定的供应能力就是最大的谈判筹码。目前国内厂商在产能竞争中存在不确定性，很多厂商会选择暂时用其他产品弥补缺口，但长期还是希望获得稳定的供应保障，价格已不是主要考量。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：这样看对国产Fabless对AI这一块的布局是一个劣势，Fabless没有太多的产能？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：是的，一旦有一代东西出问题之后，他想要去做灵活的变动就很难。\u003c/p\u003e\u003cp\u003eBryce：是不是也会有一些不一样的情况？\u003c/p\u003e\u003cp\u003e专家：也有虚拟的IDM，比如杰华特，如果你拥有像TI这种或ADI基本上这种比较稳固的大厂，它都是有自己的价值、竞争优势，它其实提供的是稳定的保障。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：作为国产Fabless厂商，面对有限资源，是否会主动放弃部分市场比如消费领域，将产能集中在更有机会的领域？模拟芯片的产能调整是否灵活？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：在资源有限的情况下，确实会放弃部分市场，将产能集中在更有机会的领域。但模拟芯片产品较为细分，产能调整并不灵活。前期开发时已经有固定平台和产品，很难随意切换产能，只能在短缺时做有限调整，并需要一定的调整周期。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eBryce：如果像纳芯微、思瑞浦、杰华特等公司导入某个光模块厂商的份额，通常会侵蚀谁的市场份额？比如是TI还是其他厂商？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e专家：在信号链领域，主要会拿到TI中低端产品的份额。电源管理芯片方面，可能会侵蚀公司或MPS的份额，TI的低端电源产品也会受到影响。整体来看，大家都在排队争取份额。\u003c/p\u003e\u003cp\u003eBryce：新导入厂商时，客户一般会给多少份额？比如5%到10%还是更高？\u003c/p\u003e\u003cp\u003e专家：具体份额取决于缺口大小。如果主力供应商能满足全部需求，其他厂商只能排队。如果主力供应商只能满足90%，剩下10%会分配给其他竞争对手。比如MPS某个方案能百分百保供，其他厂商就很难获得份额。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "调研纪要CH"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 18490,
+        "likes": 1,
+        "favorites": 6,
+        "word_stats": {
+            "word_count": 3247,
+            "read_time": 7
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070808590596",
+            "paid_at": 1783411868,
+            "created_at": 1783411868,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20506884,
+            "type": "AceCamp",
+            "introduction": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "name": "Patrick",
+            "avatar": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar"
+        },
+        "organization": {
+            "id": 20506884,
+            "sc_name": "Patrick",
+            "tc_name": "Patrick",
+            "en_name": "Patrick",
+            "name": "Patrick",
+            "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "tc_description": null,
+            "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+            "share_display_name": "Patrick",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 3,
+            "sator_organization_id": null,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [
+                2,
+                5,
+                11,
+                6
+            ],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": true,
+            "public_contact": false,
+            "allow_public_contact": true,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": true,
+            "lastest_updates": [
+                {
+                    "id": 70564277,
+                    "title": "玻璃基板调研: Rubin Ultra或导入玻璃Interposer, Intel/台积电CoPoS产线进展, TGV良率仍卡在钻孔/填孔",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783388858
+                },
+                {
+                    "id": 70564268,
+                    "title": "INP衬底与高功率光源调研:1.6T DSP及InP衬底供给, 多芯片封装一致性对物料需求, DCI/卫星激光器需求差异 - 聚焦博通/Marvell/住友/JX/AXT/Coherent/MaxLinear/Credo/SpaceX/亚马逊/谷歌",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783350173
+                },
+                {
+                    "id": 70564267,
+                    "title": "光芯片与OCS调研:100G/200G供需和价格上行, CPO产能扩张及产品平台切换, OCS出货上修与供应链瓶颈 - 聚焦博通/三菱/住友/英伟达/Coherent/康宁/旭创/镭芯/谷歌/索尔思",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783349922
+                }
+            ],
+            "article_count": 365,
+            "follower_count": 2606,
+            "event_count": 1225,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": null,
+            "followed_corporations": [
+                {
+                    "id": 13176,
+                    "ticker": "US.NVDA",
+                    "name": "英伟达",
+                    "logo": "https://image.acecamptech.com/logos/d756da3c-36d2-45ea-91a8-b15f142d675b.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 7617,
+                    "ticker": "US.AMD",
+                    "name": "AMD",
+                    "logo": "https://image.acecamptech.com/logos/c223b76b-dfd0-4369-9147-ca859ac15c41.svg",
+                    "following": null,
+                    "industry_id": 1020,
+                    "delist": false
+                },
+                {
+                    "id": 15528,
+                    "ticker": "US.TSM",
+                    "name": "台积电",
+                    "logo": "https://image.acecamptech.com/logos/d40f2c27-7348-46ba-b76b-4d5c767ad12f.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 14004,
+                    "ticker": "US.QCOM",
+                    "name": "高通",
+                    "logo": "https://image.acecamptech.com/logos/82a7af04-84f1-4ffd-9b20-f23797398c04.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 7973,
+                    "ticker": "US.AVGO",
+                    "name": "博通",
+                    "logo": "https://image.acecamptech.com/logos/f9ddad8b-29ff-4596-945b-4ca2195d718d.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 12693,
+                    "ticker": "US.MRVL",
+                    "name": "迈威尔科技",
+                    "logo": "https://image.acecamptech.com/logos/b5b87317-3434-4e5f-97ae-4c5601614cfb.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 833,
+                    "ticker": "SZ.002371",
+                    "name": "北方华创",
+                    "logo": "https://image.acecamptech.com/logos/62710c03-5c51-457e-9ce0-9940935b8927.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": null
+                },
+                {
+                    "id": 2337,
+                    "ticker": "SZ.300782",
+                    "name": "卓胜微",
+                    "logo": "https://image.acecamptech.com/logos/25c284aa-1721-46be-b0a2-8ac18c250e63.svg",
+                    "following": null,
+                    "industry_id": 4520,
+                    "delist": null
+                },
+                {
+                    "id": 3763,
+                    "ticker": "SH.603501",
+                    "name": "韦尔股份",
+                    "logo": "https://image.acecamptech.com/logos/bb125f5c-1c50-41c8-9fdd-9d5be32923c0.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 2223,
+                    "ticker": "SZ.300661",
+                    "name": "圣邦股份",
+                    "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": null
+                },
+                {
+                    "id": 3679,
+                    "ticker": "SH.603290",
+                    "name": "斯达半导",
+                    "logo": "https://image.acecamptech.com/logos/17aa6d32-9b45-4f40-947f-e3807d46e137.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 2866,
+                    "ticker": "SH.600460",
+                    "name": "士兰微",
+                    "logo": "https://image.acecamptech.com/logos/3eed5b32-da09-4ce8-a0d5-3ac204adbe27.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 25818,
+                    "ticker": "TT.2454",
+                    "name": "联发科",
+                    "logo": null,
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 25819,
+                    "ticker": "TT.3034",
+                    "name": "联咏科技",
+                    "logo": null,
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 15675,
+                    "ticker": "US.UMC",
+                    "name": "联电",
+                    "logo": "https://image.acecamptech.com/logos/cbd197d4-3300-4b2c-be22-a7c1ca28c194.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 14735,
+                    "ticker": "US.SMICY",
+                    "name": "中芯国际",
+                    "logo": "https://image.acecamptech.com/logos/14735/90a36b80-cec2-4666-a89a-0d11d71f3b43.png",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 5474,
+                    "ticker": "HK.01347",
+                    "name": "华虹半导体",
+                    "logo": "https://image.acecamptech.com/logos/244e0207-2b36-4b1b-80aa-3c19fd11920e.svg",
+                    "following": null,
+                    "industry_id": 4530,
+                    "delist": false
+                },
+                {
+                    "id": 12766,
+                    "ticker": "US.MU",
+                    "name": "美光科技",
+                    "logo": "https://image.acecamptech.com/logos/857c76a3-65a3-4ed7-aac1-e1509f1714d9.svg",
+                    "following": null,
+                    "industry_id": 1020,
+                    "delist": false
+                }
+            ],
+            "expert": null,
+            "custom_sectors": [
+                {
+                    "id": 2,
+                    "sc_name": "汽车",
+                    "tc_name": "汽车",
+                    "en_name": "Automobile",
+                    "name": "汽车"
+                },
+                {
+                    "id": 5,
+                    "sc_name": "TMT",
+                    "tc_name": "TMT",
+                    "en_name": "TMT",
+                    "name": "TMT"
+                },
+                {
+                    "id": 11,
+                    "sc_name": "制造业",
+                    "tc_name": "制造业",
+                    "en_name": "​Manufacturing",
+                    "name": "制造业"
+                },
+                {
+                    "id": 6,
+                    "sc_name": "半导体/芯片",
+                    "tc_name": "半導體/芯片",
+                    "en_name": "Semiconductors \u0026 Chips",
+                    "name": "半导体/芯片"
+                }
+            ],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": "certified_analyst",
+            "is_research_partner": false
+        },
+        "release_time": 1773385741,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "考虑到中芯国际产能倾斜风险，圣邦股份作为纯Fabless能否在1.6T光模块放量期真正兑现二供份额，其当前估值是否已透支该预期？",
+                "1.6T光模块对功率密度要求提升，MPS在电源模块的绝对优势是否会进一步挤压纳芯微等国产厂商的替代空间，导致其毛利率承压？"
+            ],
+            "en": [
+                "Given SMIC's capacity constraints, can fabless SGMICRO truly capture the 1.6T optical module secondary-supplier share, or is this growth already priced into its valuation?",
+                "As 1.6T optical modules demand higher power density, will MPS's dominance in power modules further squeeze the import substitution runway for domestic players like NOVOSENSE?"
+            ]
+        },
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783411873960",
+        "ts": 1783411874
+    },
+    "code": 200,
+    "ret": true
+}

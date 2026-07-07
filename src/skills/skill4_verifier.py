@@ -8,6 +8,7 @@ from src.utils.prompts import load
 
 SYSTEM_PROMPT = load("skill4_system.md")
 REPORT_TEMPLATE = load("skill4_report_template.md")
+RESEARCH_DATA_SOURCES = {"broker_report", "acecamp_expert_column"}
 
 
 def run(
@@ -32,8 +33,12 @@ def run(
     )
 
     # LanceDB returns flat rows; metadata fields are top-level
-    sellside_snippets = [c["text"][:120] for c in vector_chunks if c.get("data_source") == "broker_report"][:3]
-    sellside_data = " | ".join(sellside_snippets) or "无研报切片"
+    sellside_snippets = [
+        c["text"][:120]
+        for c in vector_chunks
+        if c.get("data_source") in RESEARCH_DATA_SOURCES
+    ][:3]
+    sellside_data = " | ".join(sellside_snippets) or "无研报/专家专栏切片"
 
     market_data = " | ".join(market_snippets[:3]) or "无爬虫数据"
 
@@ -54,7 +59,7 @@ def run(
 【官方财务数据】(来源: SQLite financial_reports 表)
 {official_data}
 
-【卖方研报摘要】(来源: LanceDB broker_report 向量切片)
+【卖方研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column 向量切片)
 {sellside_data}
 
 【市场实时数据】(来源: 爬虫)

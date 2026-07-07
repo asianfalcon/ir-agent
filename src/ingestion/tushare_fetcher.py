@@ -8,8 +8,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.parent
 _KEYS_PATH = ROOT / "config" / "api_keys.json"
-RAW_DIR = ROOT / "data" / "raw" / "tushare"
-RAW_DIR.mkdir(parents=True, exist_ok=True)
+MARKET_DIR = ROOT / "data" / "raw" / "market" / "tushare"
+FIN_DIR = ROOT / "data" / "raw" / "financials" / "tushare"
+NEWS_DIR = ROOT / "data" / "raw" / "news" / "tushare"
+for _d in (MARKET_DIR, FIN_DIR, NEWS_DIR):
+    _d.mkdir(parents=True, exist_ok=True)
 
 
 def _pro():
@@ -25,7 +28,7 @@ def fetch_daily(ts_code: str) -> int:
     """拉取近 90 天日线行情，存 JSON，返回行数。ts_code 格式：688141.SH"""
     today = date.today().isoformat().replace("-", "")
     start = (date.today() - timedelta(days=90)).isoformat().replace("-", "")
-    out = RAW_DIR / f"{ts_code}_daily_{today}.json"
+    out = MARKET_DIR / f"{ts_code}_daily_{today}.json"
     if out.exists():
         return 0
     try:
@@ -42,7 +45,7 @@ def fetch_daily(ts_code: str) -> int:
 def fetch_financials(ts_code: str) -> int:
     """拉取最新财务摘要（income + balancesheet），存 JSON。"""
     today = date.today().isoformat().replace("-", "")
-    out = RAW_DIR / f"{ts_code}_fin_{today}.json"
+    out = FIN_DIR / f"{ts_code}_fin_{today}.json"
     if out.exists():
         return 0
     try:
@@ -62,7 +65,7 @@ def fetch_financials(ts_code: str) -> int:
 def fetch_news(keywords: list[str], limit: int = 20) -> list[dict]:
     """拉取涉及关键词的最新新闻，返回列表并存 JSON。"""
     today = date.today().isoformat()
-    out = RAW_DIR / f"news_{today}.json"
+    out = NEWS_DIR / f"news_{today}.json"
     if out.exists():
         return json.loads(out.read_text())
     try:

@@ -1,0 +1,248 @@
+{
+    "data": {
+        "id": 70564239,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70539102
+        ],
+        "expert_public_resume": "na",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "DrMOS调研：营收高增，产能紧张，盈利能力改善",
+        "transcribe": null,
+        "badges": [],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            11425,
+            12668,
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 11425,
+                "ticker": "US.IFNNY",
+                "name": "英飞凌科技(ADR)",
+                "logo": "https://image.acecamptech.com/logos/11425/eeba3d80-b64b-497a-aaee-10bfa83c49d1.png"
+            },
+            {
+                "id": 12668,
+                "ticker": "US.MPWR",
+                "name": "Monolithic Power Systems",
+                "logo": "https://image.acecamptech.com/logos/4460f46e-a779-49be-9cfd-b32797966fe9.svg"
+            },
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "DrMOS业务为核心增量，2026、2027高增长。\n产能极度紧张，订单已排至2026年底，交付周期延长。\n毛利改善路径明确：低毛利产品已提价，新客户报价趋向区间上限。\n非华为算力客户处于评估期，海外市场受“去中化”及供应优先权影响，拓展仍面临困难。\n产品性能对标MPS，核心短板为长期可靠性验证不足。",
+        "content": "\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e以下内容来自资深行业专家：\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eQ\u0026amp;A\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e除华为外，其他客户的DrMOS业务进展如何？预计何时能够实现规模化放量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前，除华为以外的其他客户，主要涵盖各类算力卡和服务器领域，其DrMOS业务进展顺利，但上量速度不及华为。绝大多数此类客户仍处于产品评估阶段，预计将在2026年第四季度开始规模化放量。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e从客户结构来看，2026年华为预计将占公司总收入的多大比例？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e历史上，华为的收入贡献通常占公司总收入的四分之一左右。但考虑到今年DrMOS业务的显著增长，预计2026年华为的收入占比将提升至三分之一左右。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在公司总收入中，除了DrMOS业务，其他主要的产品或业务板块的收入贡献是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司内部通常不按产品类别进行收入统计，而是按区域或客户划分。在非华为业务中，汽车业务、通讯行业（包含华为）的收入规模约为2至3亿元。其他业务还涉及PC和安防等领域。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e请问华东和华北区域在全国业务中占比如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e华东和华北地区，这两个区域合计约占全国业务的六分之一。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司对于未来整体营收及DrMOS产品线中增量的主要驱动力是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDrMOS业务的增长预期主要由华为贡献，其增量部分占据了相当大的比重。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e关于DrMOS产品的定价策略和毛利率情况如何？特别是针对华为和非华为客户是否存在差异？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前公司并未对DrMOS产品进行提价。针对华为的定价策略有其特殊性。公司所有销售给华为的型号均为专用料号，其价格显著低于规格和性能相同的通用型号。这种巨大的价格差异主要是因为采购体量完全不同，华为的采购量远大于其他客户。因此，无法确切知晓公司对华为的定价策略及具体毛利率水平。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e行业内其他主要厂商如英飞凌和MPS在DrMOS产品上是否有涨价行为？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e英飞凌已经进行了两轮全线产品涨价，每次涨幅约为10%，累计涨幅已达20%。MPS则没有进行普涨，而是针对部分客户进行了提价。就公司目前接触到的涉及多相电源DrMOS的客户而言，尚未收到MPS的涨价通知。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e请问自2026年以来，公司的产品价格策略有何调整？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e截至目前，公司并未向所有客户发布统一的涨价通知。不过，针对部分因历史原因（如早期为抢占市场）导致负毛利出货的产品，公司已在最近一个月内陆续进行了价格上调。这部分产品大约占整体业务的20%以内。调价的目的是为了扭转亏损状态，使毛利率由负转正。以其中一款产品为例，其售价从0.08元上调至0.125元，此举也存在一定风险，即部分客户可能会因此停止使用相关产品。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e对于剩余80%的产品，其价格策略是怎样的？新旧客户的定价是否存在差异？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e对于剩余80%的产品，已生效的、正在出货的客户价格保持不变。然而，对于新客户或新的报价申请，公司审批的价格普遍趋向于此前价格区间的上限。例如，某款产品过去对20个客户的售价区间为1.0元至1.2元，这些老客户的价格将维持不变；但现在新客户申请的价格基本都会被批准在1.2元，很难再获得1.0元的低价。这可以视为一种变相的价格提升策略，旨在优化产品结构和提升整体毛利水平。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e考虑到价格策略调整和业务结构变化，预计2026年全年的毛利率将达到何种水平？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2026年毛利率的一大不确定性因素在于与华为的业务合作，多相电源这类产品通常能提升毛利率，但华为作为客户具有其特殊性，其具体影响尚不明朗。若不考虑华为业务的影响，仅从现有业务来看，基于2025年的毛利率基础，预计2026年毛利率有潜力实现10%以上的提升。这一预期的驱动力主要来自两个方面：第一，如前所述，对原有低毛利产品进行了价格调整；第二，今年新增的业务中有相当一部分来自于高单价、高毛利的工业产品及高压DC-DC等，这些新产品的贡献将有效改善整体的生意结构和盈利能力。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e目前的订单可见度如何？产能情况和物料交付周期是怎样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e订单量非常充裕，已基本排至2026年年底。目前即使停止接新订单，仅完成现有未交付订单也足以支撑全年的业务量。受此影响，物料的平均交付周期已从2025年的10至12周延长至目前的20周。这一周期是逐步拉长的，例如2026年春节时约为14周，之后延长至18周，现在平均为20周。由于产能问题尚未缓解，交付周期目前看仍有继续拉长的趋势。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e当前新增订单主要来自哪些行业和客户类型？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e各个行业的订单量均在增加，这得益于公司奉行“大而全”的产品路线，研发速度快，产品线不断丰富，从而提升了在各行业的市场覆盖度和份额。其中，通讯行业，特别是与AI和计算机相关的领域，其新增订单的增长速度和绝对值相对更为可观。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e为什么增量业务主要来源于高单价、高毛利的产品？这是源于市场需求的变化还是公司自身能力的变化？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e这主要是公司自身产品能力提升的结果。以同一个客户的同一块板子为例，过去因为产品线的限制，可能只能销售价值10元的产品。到2025年，随着更高毛利、更复杂产品的推出，在同一块板子上可以实现50元的销售额。而到了2026年，随着更多新产品的导入和应用，销售额可能进一步提升至200元。从需求端来看，真正有显著增长的领域是AI和服务器行业，其他行业与2025年相比并未出现特别火爆的市场行情。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在除AI业务外的其他领域，市场需求本身并未显著变化，公司份额的增长是否受益于海外厂商产能分配的调整？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e是的，除AI业务外，其他领域的客户需求本身没有发生变化。公司市场份额的增长，主要得益于海外厂商优先服务于其他业务，其产能溢出效应使得公司的份额得以提升。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司是否有在2026年内进行产品提价的计划？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司计划在2026年第四季度对LIGHTING（照明）和ACDC产品线进行涨价。这两个产品线由一个独立的事业部负责，目前合计占公司总业务量的30%。其他产品线目前尚无明确的提价计划。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e鉴于当前AI相关产品对产能的消耗较大，公司在2026年下半年是否有新增产能的规划以缓解供应紧张的局面？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当前由于AI相关的DrMOS产品极大地消耗了产能，导致整体产能非常紧张。例如，一张八寸晶圆仅能切割出约3,000颗DrMOS产品。为缓解此状况，公司预计在2026年第四季度获得两笔重要的产能增量：首先，合肥的晶合将额外增加每月5,000片的12寸晶圆产能；其次，中芯国际深圳厂区将额外增加每月20,000片的产能，这部分产能将用于多种产品，不限于DrMOS。这两项新增产能若能落实，将极大缓解公司当前的产能瓶颈。届时，晶合也将成为除中芯国际外的主要产能供应商之一。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e请详细说明公司现有及新增晶圆产能的尺寸构成情况？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在新增产能方面，晶合的5,000片晶圆均为12英寸。中芯国际的2万片产能中，同时包含8英寸和12英寸晶圆，但具体比例尚不明确。关于原有的3万片产能，北京的3,000片是12英寸，而上海和深圳的产能则全部为8英寸。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司前几年持续亏损的主要原因是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e导致前几年亏损的原因主要有三点。第一，公司在研发方面投入巨大，约有三分之一的研发人员从事的是前瞻性布局和未来规划，这些项目在三年内不会产生直接的业务贡献，属于高投入的烧钱阶段。第二，公司前几年与晶圆厂签订了保供协议，但随后市场连续三年表现低迷，导致了大量的晶圆和成品库存积压。根据会计准则，对存放满一年的晶圆和满两年的成品进行了一次性计提。第三，激烈的市场价格战也对盈利能力造成了负面影响。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司2026年的盈利目标是什么？预计在哪个季度可能实现？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司希望在2026年实现单季度毛利率转正。虽然全年盈利状况尚不确定，但力争在年内某个季度达成此目标。从可能性来看，第四季度（Q4）作为传统旺季，实现转正的概率最大。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在字节跳动、阿里巴巴等非华为客户方面取得了哪些进展？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e此前，字节跳动、阿里巴巴等客户基本拒绝使用公司的产品。然而，由于当前市场供应的极端情况，这些客户为保障供应链安全，不得不寻求国产替代方案，而公司成为了他们的首选。近期，公司在这些大客户处取得了显著进展，涉及大量项目的导入、验证、评估和测试。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e公司在海外客户拓展方面的进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e海外客户的拓展依然面临较大困难。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在当前市场缺货的背景下，公司在拓展海外客户方面取得了哪些进展？海外客户的需求和供应情况与国内市场有何不同？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e尽管今年（2026年）国内市场存在缺货情况，但拓展海外客户依然非常困难，并未取得实质性进展。通过拜访海外客户在中国的研发中心后发现，海外市场与国内市场存在显著差异。首先，海外客户并未感受到明显的缺货压力，他们所经历的仅仅是交货周期略有延长和价格微涨，这与国内市场的普遍缺货状况形成鲜明对比。其根本原因在于，欧美半导体公司（如英飞凌、MPS）优先保障了其海外客户的供应，导致货源集中在海外，而国内市场供应紧张。其次，海外客户，特别是服务器和AI行业的美国终端客户，存在“去中化”的倾向，对采用中国大陆品牌的半导体产品持有保留甚至排斥的态度。综合这两个因素，即便在当前市场环境下，切入海外客户供应链的机会并未增加。因此，至少在短期至中期内，公司的业务重心仍将以国内客户为主。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e与行业领先者如英飞凌和芯源系统相比，公司产品的竞争力处于何种水平？主要优势和短板分别是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e从产品本身的性能指标来看，公司的竞争力已达到相当高的水平。如果以英飞凌为100分的基准，MPS可以达到98分，那么公司的产品大约能达到97分，与MPS基本不相上下。在向客户展示的常规电气性能、耐压等指标的测试数据和波形数据中，公司的产品表现完全不输给MPS，甚至在某些细节上更具优势。公司产品竞争力在过去几年中通过持续的研发投入，实现了从六七十分到如今九十七分的显著提升。目前唯一的短板在于长期可靠性，由于公司产品的市场应用时间相对较短，出货量尚未达到英飞凌那样的海量规模，因此难以像竞争对手那样提供长时间、大规模应用下的可靠性证明，而这一点恰恰是客户最为关注的核心要素之一。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e从内部视角来看，杰华特这家公司最鲜明的特点和核心竞争力是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公司最显著的特点和核心竞争力主要体现在三个方面。第一，创始人强大的资源整合能力。公司成功地整合了上下游产业链资源，例如中芯国际和华为都成为了公司的投资方，这种产业协同能力非常突出。第二，创始人具备企业家情怀和人格魅力，致力于长期发展而非赚快钱，专注于国产化事业，这在客户群体中建立了良好的声誉，并吸引了大量来自TI、MPS等欧美顶尖公司的专家级人才加入，为产品研发提供了坚实基础。第三，公司奉行“大而全”的经营理念，效仿TI的模式，致力于构建完整的产品线。为此，公司在研发上进行了巨大投入，并通过收购来迅速补齐产品短板，例如近年来收购了多家公司以扩充产品组合。这种战略虽然在短期内导致研发投入巨大，形成了“阵痛期”，但一旦产品线构建完成，将能极大地增强客户粘性，形成类似TI那样因产品线齐全而让客户无法绕开的竞争优势。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在公司目前超过40亿元的年收入中，通过收购整合的业务贡献了多少份额？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前超过40亿元的年收入全部来自公司自身的业务，收购来的业务部分当前规模尚小，其营业额大约在几千万至1亿元人民币的区间。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "DrMOS"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 4971,
+        "likes": 0,
+        "favorites": 0,
+        "word_stats": {
+            "word_count": 4222,
+            "read_time": 9
+        },
+        "masked_word_stats": {
+            "word_count": 799,
+            "read_time": 2
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070704120122",
+            "paid_at": 1783408334,
+            "created_at": 1783408334,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564298,
+                    "title": "引线框架行业调研：AI对行业需求影响，近期提价背景，核心参与玩家及竞争格局预期 – 三井/新光/顺德/新恒汇",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783399972
+                },
+                {
+                    "id": 70564294,
+                    "title": "磷化铟深度调研：衬底供需错配驱动高毛利，3.2T光模块开启材料演进新周期",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783396183
+                },
+                {
+                    "id": 70564292,
+                    "title": "连接器大厂调研:MPO/MMC客户指引,DCI产能规划,MT插芯供应商格局-聚焦US Conec/藤仓/SENKO/凯航/福可喜玛/康宁/Coherent等",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783394967
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1783323493,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20510969,
+                "organization_type_id": 3,
+                "name": "Leo Gao",
+                "sc_name": "Leo Gao",
+                "en_name": "Leo Gao",
+                "logo": "https://image.acecamptech.com/avatar/50527105/0.7847722892825351.jpg?x-oss-process=style/avatar",
+                "description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "sc_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "en_description": "14年投资研究经验，先后在头部保险资管、公募基金、私募基金供职，覆盖大周期制造板块，擅长大宗商品、新能源、公用事业、资本品、先进制造业等方面。",
+                "state": "passed",
+                "followed": false,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "杰华特极度依赖低价华为订单，是否会严重拖累其2026年Q4毛利率转正的财务目标？",
+                "杰华特Q4中芯国际新增产能若延期，其在字节等大厂的DrMOS份额是否会被MPS夺回？"
+            ],
+            "en": [
+                "Will Joulwatt's heavy reliance on discounted Huawei orders severely drag down its target of achieving positive gross margin by Q4 2026?",
+                "If Joulwatt's new SMIC capacity is delayed in Q4, will its newly gained DrMOS share at ByteDance be recaptured by MPS?"
+            ]
+        },
+        "masked_state": "passed"
+    },
+    "meta": {
+        "ack": "1783408358880",
+        "ts": 1783408359
+    },
+    "code": 200,
+    "ret": true
+}

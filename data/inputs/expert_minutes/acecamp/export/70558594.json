@@ -1,0 +1,265 @@
+{
+    "data": {
+        "id": 70558594,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70533574
+        ],
+        "expert_public_resume": "某电源芯片专家\n主要负责带领技术团队并负责所有产品在国内几个主要的大客户",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "AI服务器多相电源专家交流-NV多相电源方案，国产龙头突破情况，芯片电感及上游材料",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            602,
+            1887,
+            2363,
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 602,
+                "ticker": "SZ.002138",
+                "name": "顺络电子",
+                "logo": "https://image.acecamptech.com/logos/eea72c8c-0074-41d8-bc47-659304cf8c11.svg"
+            },
+            {
+                "id": 1887,
+                "ticker": "SZ.300319",
+                "name": "麦捷科技",
+                "logo": "https://image.acecamptech.com/logos/a1b328ea-4663-4e2a-b786-a1a7126d3d8e.svg"
+            },
+            {
+                "id": 2363,
+                "ticker": "SZ.300811",
+                "name": "铂科新材",
+                "logo": "https://image.acecamptech.com/logos/f9bf497c-e25d-49c5-b40d-d3e0a81b2705.svg"
+            },
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "英伟达芯片升级过程中，多相控制器、drmos配置情况，供应商，AMD、谷歌方案。\n国产算力芯片大厂多相控制器、drmos供应商，国产厂商突破情况。\n在GPU、CPU、DDR上，合金电感替代传统铁氧电感的进度，未来方案选择，国产合金电感供应商及材料企业突破情况。",
+        "content": "\u003cp\u003e\u003cstrong style=\"color: rgb(0, 0, 0);\"\u003e以下内容为专家分享，仅供参考，不构成任何投资建议。\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eQ\u0026amp;A\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e英伟达H系列、B系列、Rubin系列芯片中，多项控制器和drmos的配置情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eH100芯片采用了小卡形态，整张板卡功耗为500瓦。板卡上约有60颗Doctor MOS，4颗多项控制器。每颗多项控制器和每颗drmos的价值量均在1~2美元之间。\u003c/p\u003e\u003cp\u003eB200与B300系列GPU的功耗分别为1.2千瓦和1.4千瓦，其计算托盘内组件数量基本相当。以B200为例，一个计算托盘包含4个GPU和2个CPU，总计约300颗Doctor MOS，其中20颗用于CPU，其余280颗用于GPU，每个GPU配备约70颗Doctor MOS。此外，每个GPU通常配备5至6颗多项控制器。整体而言，多项控制器与Doctor MOS的单价仍维持在1~2美元范围内，价值量变化较小。\u003c/p\u003e\u003cp\u003eRubin系列芯片在2025年10月华盛顿大会上展示了完整方案，并于2026年CS展再次亮相，方案保持一致。一个计算托盘包含360颗左右的Doctor MOS，其中20余颗用于CPU，其余约340颗分布于4个GPU上，每个GPU平均配备80余颗Doctor MOS。同时，每个GPU通常搭载5至6颗多项控制器。尽管Rubin芯片更紧凑且封装有所优化，但其单价仍遵循摩尔定律规律，与上一代产品相比差异不大，依然维持在1~2美元范围内。\u003c/p\u003e\u003cp\u003eRubin Ultra系列预计将采用竖直放置机架设计，而非传统横向放置方式，但计算托盘内部组件与现有Rubin系列差异不大。在功耗方面，Rubin Ultra预计从当前Rubin 2.3千瓦基础上略微增加0.2千瓦。此外，由于drmos等模拟元件更新换代速度较慢，因此部分组件可能会继续复用。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e当前行业内drmos单通道电流数量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当前单通道90安培规格的Doctor MOS技术已存在两三年以上，并非最新进展。目前行业内已有超过百安培电流能力的新型产品，这些高电流规格主要通过封装技术优化实现。因此，未来的发展方向将更多集中于封装工艺改进，以支持更高电流需求并提升整体性能表现。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在升级到Rubin或Rubin Ultra时，是否需要更大的单通道？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e原则上需要更大的单通道。例如，从1.4千瓦升级到2.3千瓦的Rubin时，所需的drmos数量从70多颗增加到80多颗。计算板上的空间有限，这限制了电源芯片的扩展。此外，散热方式的改进也对电源芯片需求产生重要影响，改进后的散热系统可以减少所需电源芯片数量。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e如果未来升级至100安或130安，这对供应商选择是否会产生影响？技术上有哪些考量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e服务器领域通常采取谨慎态度，每一代产品革新时都会重新评估供应商，但优先考虑上一代产品中表现良好的供应商。例如，在B200和B300系列中，主要供应商为英飞凌、瑞萨和MPS。由于服务器电源技术门槛较高，并非所有公司都能跟上行业领先者的步伐。此外，从Intel定义Driver MOS概念至今已有20多年，多次迭代过程中，一些公司因技术问题被淘汰。因此，新一代产品通常会优先选择已有合作经验并具备稳定表现的供应商，再根据需求评估其他候选者。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eAMD与谷歌在GPU板卡设计及其相关供应链方面，与英伟达相比有哪些不同之处？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eAMD与谷歌采用与英伟达不同的方案。英伟达从H卡到B卡，再到Rubin，其GPU旁边布置了大量紧密排列的电源芯片。而AMD，例如MI300系列，其GPU周围预留空间较少，因为其板卡形态以及GPU间通信架构不同。此外，AMD采用OAM标准，而非英伟达SXM标准，两者在板卡形态、功耗标准（如500瓦、1,000瓦、1,500瓦）等方面均不兼容。OAM标准由开放计算组织（OCP）联盟制定，该联盟由谷歌、Meta等企业联合成立，以推动开放式硬件标准化。\u003c/p\u003e\u003cp\u003eAMD通过模块化设计优化空间利用率，将模块放置于GPU正面，并利用散热器将模块产生的热量及时带走。例如，其MI325系列500瓦模块使用24个模块，而MI355系列1,400瓦模块则使用近30个模块。这种集成式3D模块包含Driver MOS、电感、电阻、电容及PCB等组件，因此成本显著高于传统方案，每个模块售价超过10美元。\u003c/p\u003e\u003cp\u003e谷歌则采用类似AMD方案。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e国产厂商如杰华特，在国产算力芯片市场中的应用情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在国产算力芯片市场，包括H公司、海光、寒武纪等企业，目前仍以海外公司的产品为主导。尽管两年前国内已经能够量产90安培级别元器件，但实际规模化应用预计要到2026年才可能有所突破。目前来看，国产替代比例仍然偏低。在质量方面，只要功耗相当，不同品牌之间价值量差异不大，因为OAM规格下板卡所需电源模块数量基本固定。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e从性能和规格的角度来看，国产多相控制器、drmos厂家产品与海外产品差距如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e从性能和规格上看，国产与海外的差距并不显著。在实际应用中，仅通过简单的性能测试无法全面评估其长期使用的可靠性，服务器通常需要运行5至10年，因此对芯片进行老化加速实验是必要的，但即便如此，这些实验也难以完全预测长期使用中的问题。与海外大厂相比，国产厂商在技术积累和质量控制方面仍存在一定差距。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e当前国产算力芯片所需多相控制器、drmos产品，海外供应商供货能力是否稳定？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前来看，供应相对稳定，并未出现明显短缺。这主要是因为国际市场上仍有大量可供选择的成熟产品，例如，英飞凌、瑞萨、MPS等主流供应商，以及TI、安森美等第二梯队厂商，都具备深厚的技术积累和丰富的市场经验。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在2026年，以H公司为代表的一些国产算力芯片企业，多相控制器、drmos产品国产化率预计会达到怎样的水平？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e到2026年，如果能够采用国产替代方案，这些企业通常会优先将其应用于较老款机型或非主力机型，而主力机型仍倾向于使用海外大厂提供的高质量产品。在这种情况下，其整体产品线中的国产化率预计可能达到10%至20%的水平。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在车规级领域，目前国内外主要供应商有哪些？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在车规级领域，目前主要供应商包括英飞凌、MPS以及杰华特。其中杰华特已经取得了一定进展，其部分产品已被一些主机公司用于车辆生产。车规级领域难度较高且认证要求严格，例如座舱主芯片及自动驾驶/辅助驾驶相关芯片，由于算力需求较高，这类应用通常需要多相电源支持。目前杰华特已成功切入H公司的相关项目，并开始实现一定量产。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e杰华特从事车规级业务已有多久？其突破过程经历了哪些阶段？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e杰华特自上市以来便陆续推出汽车级解决方案，截至目前已有近四年的研发积累。在此过程中，公司经历了多次改版，不断解决发现的问题，从而逐步实现技术突破并获得市场认可。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e合金电感作为传统铁氧体电感升级方向，在AI服务器及DDR等场景中的渗透情况如何？当前处于何种发展阶段？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e合金电感最早由NVIDIA在Hope显卡项目中引入，其板载drmos旁边需配备体积较大的电感，然而传统铁氧体材料因通流能力有限且易饱和，不适合应对GPU的大负载跳变需求。合金电感凭借更小体积、更高通流能力、更低导通损耗以及抗饱和能力强等优势逐渐成为首选材料。在Hope项目初期，仅有少数如乾坤等公司参与生产，每年产量仅数百万颗。但随着AI服务器、高端笔记本及显卡等场景需求增加，包括大陆铂科、麦捷、顺络等更多企业也开始加入该领域。目前合金电感已广泛应用于AI服务器X86平台、高端笔记本及台式机显卡中。\u003c/p\u003e\u003cp\u003eCPU板载空间充裕，对合金电感依赖程度相对较低。\u003c/p\u003e\u003cp\u003e在DDR5内存条上，由于新方案功耗降低、电流需求减少，可根据成本考量选择铁氧体或合金电感。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eDDR5内存条设计变化如何影响了对合金电感的需求？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDDR5内存条相较DDR4发生了重要设计变化，其供电方式由原先通过主板提供改为直接由内存条上的PMIC（集成式供电管理模块）提供。这一改变使得DDR5内存条所需供给的总功率显著降低，同时允许灵活选择铁氧体或合金材质作为电感材料。因此，与其他场景相比，DDR5对于合金电感并无强制性要求，而是更多取决于成本优化策略。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003eDDR5的电流需求相比DDR4有哪些变化？其电感选择是否有所不同？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDDR4的电流需求通常在几十安培到上百安培之间，而DDR5的单条DIMM内存条所需电流显著降低，仅需使用一颗四路六安培或四路八安培的小型芯片即可满足需求。DDR5的设计使得所需电感的饱和电流能力仅为10至十几安培，与AI应用中上百安培的大电流需求形成鲜明对比，因此并非必须使用合金材料。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e关于DDR6的发展现状及未来趋势如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eDDR6标准尚未正式出台，目前截至2025年底，DDR6的具体电源方案尚未明确，但存储颗粒已经研发完成。从行业预判来看，未来DDR系列的发展方向倾向于更小的电流设计，这意味着市场规模和单个产品价值量可能不会显著增长。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e合金与铁氧体材料在小电流应用中的选择是否存在价格差异？未来趋势如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在小电流应用中，合金材料具有效率更高等优势，但目前价格较铁氧体材料仍有一定差距。在消费级别领域，价差约为一至两成。如果未来价格进一步下降，则笔记本电脑等设备中许多铁氧体材质的电感可能会逐步替换为合金材质。\u003c/p\u003e\u003cp\u003e在服务器领域，同规格下合金材质与铁氧体材质之间不仅体积差异明显，价格也存在较大差距。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e国内厂商在英伟达供应链中的参与情况如何？份额分布及竞争格局是什么样的？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e国内厂商如铂科、顺络、麦捷等主要以间接供应方式参与英伟达供应链。例如铂科并非直接电感供应商，而是通过其他渠道提供粉芯产品。英伟达主要由乾坤等台湾地区厂商作为核心供应商。\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e英伟达芯片升级过程中，电感需求量？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e随着技术进步，板载电感尺寸逐渐缩小，从Hope时代远大于芯片尺寸，到如今基本与芯片大小相当。这种变化导致粉芯和铜材用量减少，使得单价呈下降趋势。尽管数量有所增加，整体价值量并未显著提升。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "多相控制器drmos芯片电感"
+        ],
+        "industry_ids": [
+            4520
+        ],
+        "custom_sector_ids": [
+            11
+        ],
+        "views": 9595,
+        "likes": 2,
+        "favorites": 3,
+        "word_stats": {
+            "word_count": 3555,
+            "read_time": 8
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070808840844",
+            "paid_at": 1783412178,
+            "created_at": 1783412178,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20511154,
+            "type": "AceCamp",
+            "introduction": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "name": "Shirley",
+            "avatar": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar"
+        },
+        "organization": {
+            "id": 20511154,
+            "sc_name": "Shirley",
+            "tc_name": "Shirley",
+            "en_name": "Shirley",
+            "name": "Shirley",
+            "sc_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "tc_description": null,
+            "en_description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "description": "多年二级市场投资研究经验，聚焦AI，研究内容涵盖AI硬件、AI软件、AI应用（机器人、自动驾驶、游戏）等。欢迎交流！微信号：Shirley2025H",
+            "share_display_name": "Shirley",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 3,
+            "sator_organization_id": null,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [
+                5,
+                11,
+                6
+            ],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/avatar/50506349/0.461045180007979.png?x-oss-process=style/avatar",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": true,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": true,
+            "lastest_updates": [
+                {
+                    "id": 70564278,
+                    "title": "CPO光学器件专家访谈-从光模块到CPO光学器件升级，C-lens、硅透镜、V型槽、Z-block等技术升级及价值量提升，供应商分析",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783389314
+                },
+                {
+                    "id": 70564210,
+                    "title": "PCB龙头调研-光模块pcb更新，msap工艺进展及设备、材料需求，近期pcb涨价情况",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783315683
+                },
+                {
+                    "id": 70563884,
+                    "title": "SST固态断路器专家访谈-数据中心SST用产品技术要求，价值量测算，供应商分析及国产厂家机会",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1782640590
+                }
+            ],
+            "article_count": 12,
+            "follower_count": 244,
+            "event_count": 137,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": null,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [
+                {
+                    "id": 5,
+                    "sc_name": "TMT",
+                    "tc_name": "TMT",
+                    "en_name": "TMT",
+                    "name": "TMT"
+                },
+                {
+                    "id": 11,
+                    "sc_name": "制造业",
+                    "tc_name": "制造业",
+                    "en_name": "​Manufacturing",
+                    "name": "制造业"
+                },
+                {
+                    "id": 6,
+                    "sc_name": "半导体/芯片",
+                    "tc_name": "半導體/芯片",
+                    "en_name": "Semiconductors \u0026 Chips",
+                    "name": "半导体/芯片"
+                }
+            ],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": "certified_analyst",
+            "is_research_partner": false
+        },
+        "release_time": 1770014501,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "既然专家预判2026年国产算力芯片电源国产化率仅10-20%，杰华特目前在服务器端的营收预期是否面临大幅下修风险？",
+                "鉴于英伟达方案中电感单价因尺寸缩小呈下降趋势，铂科新材等上游厂商是否正面临“量增价跌”的毛利侵蚀风险？"
+            ],
+            "en": [
+                "Given the forecasted 10-20% localization rate for domestic AI chips by 2026, is Joulwatt's server revenue projection facing significant downside risk?",
+                "With inductor unit prices falling in Nvidia's roadmap due to shrinking size, do upstream players like Platinum face a 'volume up, price down' margin erosion risk?"
+            ]
+        },
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783412182570",
+        "ts": 1783412183
+    },
+    "code": 200,
+    "ret": true
+}

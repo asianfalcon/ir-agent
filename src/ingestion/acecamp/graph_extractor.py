@@ -1,5 +1,5 @@
 """
-从 AceCamp 纪要 JSON 中提取实体关系并写入 Kùzu 图谱。
+从 AceCamp 专家专栏导出 JSON 中提取实体关系并写入 Kùzu 图谱。
 
 用法：
     python -m src.ingestion.acecamp.graph_extractor
@@ -9,7 +9,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.parent.parent
-MINUTES_DIR = ROOT / "data" / "inputs" / "minutes"
+EXPERT_EXPORT_DIR = ROOT / "data" / "inputs" / "expert_minutes" / "acecamp" / "export"
+LEGACY_MINUTES_DIR = ROOT / "data" / "inputs" / "minutes"
 
 
 def extract_entities(article: dict) -> dict:
@@ -112,18 +113,26 @@ def process_article(json_path: Path) -> int:
     return count
 
 
+def _input_dir() -> Path:
+    """Prefer the new AceCamp expert export directory, with old minutes path as fallback."""
+    if any(EXPERT_EXPORT_DIR.glob("*.json")):
+        return EXPERT_EXPORT_DIR
+    return LEGACY_MINUTES_DIR
+
+
 def batch_process() -> int:
-    """批量处理 data/inputs/minutes/ 下所有 JSON。"""
-    if not MINUTES_DIR.exists():
-        print(f"[graph] 目录不存在: {MINUTES_DIR}")
+    """批量处理 data/inputs/expert_minutes/acecamp/export/ 下所有 JSON。"""
+    input_dir = _input_dir()
+    if not input_dir.exists():
+        print(f"[graph] 目录不存在: {input_dir}")
         return 0
 
-    files = sorted(MINUTES_DIR.glob("*.json"))
+    files = sorted(input_dir.glob("*.json"))
     if not files:
         print(f"[graph] 无 JSON 文件")
         return 0
 
-    print(f"[graph] 找到 {len(files)} 个 JSON")
+    print(f"[graph] 从 {input_dir} 找到 {len(files)} 个 JSON")
     total = 0
     for f in files:
         try:

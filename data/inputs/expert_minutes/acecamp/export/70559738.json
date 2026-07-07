@@ -1,0 +1,257 @@
+{
+    "data": {
+        "id": 70559738,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70534512
+        ],
+        "expert_public_resume": "某电源芯片专家\n主要负责带领技术团队并负责所有产品在国内几个主要的大客户",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "电源管理调研:离散式/模块化应用趋势,芯片/PCB/电感分工及供应链竞争格局,高变比技术优势及发展节奏-聚焦英伟达/特斯拉/谷歌/亚马逊/MPS/台达/英飞凌/铂科/VICOR等",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            4107,
+            10853,
+            13176,
+            15525
+        ],
+        "corporations": [
+            {
+                "id": 4107,
+                "ticker": "SH.688037",
+                "name": "芯源微",
+                "logo": "https://image.acecamptech.com/logos/0ec3c18d-02f9-4dc1-84e1-a9b2cfa58ecd.svg"
+            },
+            {
+                "id": 10853,
+                "ticker": "US.GOOGL",
+                "name": "谷歌-A",
+                "logo": "https://image.acecamptech.com/logos/74e17bf0-4884-4955-ae1d-d4af81348022.svg"
+            },
+            {
+                "id": 13176,
+                "ticker": "US.NVDA",
+                "name": "英伟达",
+                "logo": "https://image.acecamptech.com/logos/d756da3c-36d2-45ea-91a8-b15f142d675b.svg"
+            },
+            {
+                "id": 15525,
+                "ticker": "US.TSLA",
+                "name": "特斯拉",
+                "logo": "https://image.acecamptech.com/logos/d1391a97-a058-435e-9b14-b644c8204d16.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "1、 离散式/模块化应用趋势;\n\n2、 芯片/PCB/电感分工及供应链竞争格局;\n\n3、 高变比技术优势及发展节奏。",
+        "content": "\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e以下为专家观点：\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e当前哪些项目采用垂直供电？在何种电源形态下才需要单独配置三次电源PCB？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e除英伟达采用离散式方案外，其他厂商主流均采用模块化。所谓“垂直供电”更多是指背面贴装的方式，但其实放在正面的也是用模块。以AMD为例，MI325及后续MI400等方向均属于模块化供电路径；若采用与AMD类似的OAM板卡路线，由于卡上空间有限，且GPU周边需预留高速信号线及Memory相关空间，通常缺乏足够的空间布置电源芯片与电感，因此更依赖“芯片+电感+电容集成”的3D模块形态。三次电源PCB与模块化电源强相关：模块化电源需要配套PCB，但并非从一开始就需要高端形态的三次电源PCB。第一代、第二代模块配套的PCB相对简单、成本较低；随着模块在2025年开发的形态演进，为实现电容预埋等更高集成度，才需要能够支持预埋电容的更高端PCB。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e模块电源从第一代到第三代的演进节奏如何？预埋电容带来的成本抬升来自哪些工艺环节？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e模块电源在2022年可能已有尝试，但真正开始上量是在2023年。第一代产品例如特斯拉dojo所用模块电源属于初代形态，整体较为粗糙，配套PCB以常规、简单形态为主，不涉及特殊材料或高层数结构。第一代、第二代模块通常不需要将电容预埋至PCB内部，因此PCB层结构与工序较简单，成本相对较低。第三代及未来形态将更多引入电容预埋，工艺复杂度显著提升：需要将电容预埋到PCB内部后再进行布线，并通过化学药剂等工艺处理，将铜层封装形成完整PCB，随后在PCB表面继续贴装电感与芯片等器件，整体步骤更复杂，带来成本上升。预埋电容相对更可行、更普遍；预埋电感由于电感高度较高、技术难度更大，推进相对靠后。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e目前哪些项目已明确走向预埋电容？从样品到量产的大致时间点如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e准确而言，类似Trainium 3以及其他厂商后续迭代方向，大概率将采用预埋电容方案。预埋电容相关产品节奏大致为：2025年底出现样品，2026年底具备量产条件，对应终端AI卡发布更可能集中在2026年下半年这一时间窗口。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e谷歌是否有明确采用预埋电容的方案？\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e谷歌相关信息相对较少，明确结论不充分。已知谷歌方案多数仍由台达提供模块；台达模块内部是否采用预埋电容并不确定。若谷歌采用的为较早期方案，则价值量相对有限；若采用较新方案，则存在采用预埋电容并带来更高价值量的可能性。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在不预埋的第一代、第二代模块中，MOS/电感/电容/PCB的大致价值量或成本结构如何？与离散方案相比差异在哪里？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003ePCB的具体成本无法给出精确拆分，但可从模块内部器件成本与售价角度刻画。模块内电源芯片成本与离散方案接近，约1–2美金/颗。模块使用的电感更集成化、等级更高且可能特制化，常见两相对应“三端电感”，亦存在个别四相电感。以两相、搭配两颗芯片为例，按芯片单价1.5美金计，两颗芯片约3美金；电感约1美金多一点。电容成本未能量化，且第一代、第二代电容用量较少，第三代电容用量更高。第一代、第二代模块整体售价目前大概在10美金左右；以此理解，模块厂商（例如台达）对上游采购形成的综合成本大致在5–6美金的量级，且其内部子公司能力（如乾坤体系）会使部分环节以“成本价”获得供给。离散方案对应的“两个芯片+一个电感”在器件价值量上：两颗芯片约3美金，电感不到1美金，合计约4美金不到；MOS侧差异不大。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e模块电源产业链的分工与集成路径如何？芯片、PCB、电感、电容分别由谁采购与组装，品牌归属如何界定？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e典型路径是：例如英飞凌采购芯片及配套PCB等材料；若为第三代形态，还会采购包含预埋电容能力的PCB（及相关电容），随后委托代工厂完成组装并进行测试，最终以英飞凌自有品牌对外销售模块。MPS的模式与此类似。台达则具备一定组装能力，电感也可由自身体系供应，但台达不具备“Driver MOS”能力，Driver MOS仍需向芯片厂商采购，因此台达前期主要与英飞凌合作，英飞凌存在向台达供货的可能；台达出货的模块通常以台达自身料号体系命名。模块品牌方可在一定程度上指定电感、电容与PCB等关键材料的供应选择。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eMPS在电感、PCB等环节的供应格局大致如何？埋电容由哪些类型企业完成？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003ePCB供应端信息不完整，电感供应相对透明，主要以国内大陆供应为主，例如铂科、顺络等公司；同时也会与乾坤及联正合作。由于模块类型较多，不同模块可能对应不同供应商组合，且原材料体系通常希望实现至少两家供应来源。埋电容环节通常由具备“将PCB与电容塞入PCB内部”能力的企业承接，可能是具备相关能力的封装公司或PCB公司。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e垂直供电是否是必然趋势？与水平供电相比在效率、结构高度与成本上如何权衡？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e不必过度聚焦“垂直或水平”的命名差异，本质仍是模块化供电。原理上，水平供电路径更长，端到端效率可能受影响；但将模块从正面挪到背面也需要结构性取舍。正面放置的模块允许更高的器件高度，电感选择空间更大、损耗更低，同时正面散热条件（风冷或液冷）对高度限制相对更小；背面放置通常对应OAM类、AMD形态的小卡通过连接器插入下方大板的结构，连接器与大板之间存在严格高度限制，背面模块通常需做到4毫米或5毫米高度，而正面模块通常可做到9毫米。为实现更薄的结构，往往需要通过预埋电容来降低PCB厚度；因此背面（垂直贴装）模块的成本往往更高。效率层面，尽量靠近负载、缩短路径有利于提升端到端效率，但模块放到背面后，为满足结构约束带来的器件与封装变化也可能使模块自身效率有所下降，从而在系统层面形成一定抵消。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e将电源模块完全布置在主芯片背面、实现真正的背面垂直供电时，核心约束与折中点是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e核心约束在于主芯片背面原本用于铺设大量MLCC的电容会被电源模块占用。以公开图片可验证的方案为例，英伟达H100背面可见大量MLCC密集分布，部分位置甚至出现钽电容配置；若将这些区域替换为电源模块，需要在模块内集成相应电容进行补偿。即便模块内埋入电容，若整体输出电能仍不足，仍需额外方案补足供电能力。因此实践中通常存在折中：一部分模块放在背面，另一部分仍保持水平分布，或在背面与正面之间进行混合布局。就电源模块/嵌埋电容PCB的价值量而言，是否全背面化或混合布局差异不显著，更多取决于主芯片厂商在端到端设计中的综合权衡（含散热等）。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e目前哪些主流平台已明确采用垂直供电方案？市场上是否存在份额变动的传闻？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e公开可验证的信息显示，谷歌与AWS属于明显采用垂直供电方案的代表。此外，面向更大型AI服务器的厂商也采用垂直供电方案。关于谷歌侧模块供应链的传闻，存在“原由台达供模块、英飞凌份额较高，后续MPS取得更多份额”的市场消息，但具体份额变化幅度未披露。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e主芯片厂商在电源模块供应链选择上，为何倾向于至少导入两家供应商？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当某一主芯片平台放量后，单一供应商模式在供应与质量两方面风险显著：其一，产能不足可能直接影响项目交付节奏；其二，若模块出现质量问题，可能造成整批报废级别的损失。在硬件团队资源允许的情况下，通常会尽量引入两家供应商以降低供应与质量集中风险。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eAMD是否会延续模块化水平供电方式？电源模块是否可能切换到背面？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e若仍以OAM板卡形态推进，按照OCP联盟相关定义与主芯片功耗持续提升的趋势，供电方式必然走向模块化。至于是否会将模块切换至背面，目前缺乏公开图片证据，无法确认。已能看到的MI455仍为正面方案。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e英伟达是否存在模块化供电导入迹象？供电器件布置与数量有何变化？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e截至公开信息层面，英伟达方案仍以离散型“电源芯片+电感”靠近GPU/CPU的布局为主。2025年10月在华盛顿特区的一场特别会议中公开了Rubin方案，并展示了计算托盘的一张卡；从该板卡可判断仍沿用离散供电思路，但相较B300板卡做了明显改进：内存采用内存条形态，电源芯片与电感的铺设数量进一步增加，电感尺寸更小。公开对比可见，其Drive MOS的数量从B300约300颗提升至约360颗。后续迭代中，是否走向更高比例模块化存在可能，但并非必然走到100%模块化；若仍坚持离散方案，也可通过将部分电感或部分芯片移至背面来扩展布置空间。该路径已有先例，例如Intel\u0026nbsp;GPU板卡存在“Drive MOS在正面、电感在背面”的实现方式。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eRubin与Rubin\u0026nbsp;Ultra功耗提升对供电形态选择意味着什么？样机与量产节奏如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eRubin与Rubin\u0026nbsp;Ultra的功耗由2.3千瓦提升至3.6千瓦，增量显著；而B200与B300相较仅增加约0.2千瓦，提升幅度不同。随着功耗提升、板上可用空间趋紧，在“已经很难再放下更多供电器件”的情况下，引入模块化的概率会上升，但模块化会带来成本上升，因此可能采取部分模块化而非全模块化。设计层面据公开新闻线索可判断已进入样机阶段并基本定型，真正发货时间预计在2026年下半年或年底。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e新的SRAM方案及LPU相关设计是否已启动？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eSRM新方案与LPU相关设计已在推进。由于相关资产在2025年底完成收购与整合，后续研发已在进行。关于对外披露，行业前瞻与能力分析层面的信息预计在3月份公布，但是否会展示硬件不确定，可能仅披露芯片架构及迭代方向。LPU本身功耗不大；参考Groq的样机形态，其为PCIE推理卡，采用离散型“芯片+电感”的供电形式。市场解读还包括：将其架构引入更大规模的形态，并叠加SRAM，同时采用台积电A16工艺。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e从A16开始，晶圆级的背面供电是否也要垂直供电？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e这跟外面垂直供电是没有关联的。芯片级背面供电的驱动因素在于A16等工艺继续提升晶体管密度后，原先同一面同时承载电源、I/O口与高速信号的布线空间不足，因此引入另一面专供电源以缓解瓶颈。其效果之一是降低供电网络损耗并改善压降问题，例如在约“1点几伏降至0点几伏”的电压转换链路中，芯片级背面供电可将相关压降压低，相比在原先技术路径下“电源不进一步增强时压降较大”的问题有所缓解。至于VRM模块是否需要垂直供电，取决于板上是否有足够空间放下“12伏转0.几伏”这一等级的供电能力；若放不下，则可能采用部分模块化，或采用部分背面布局与离散供电结合的方式实现。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e二次电源（如48伏转12伏）模块的关键用料与拓扑特征是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e二次电源在业内参与者较多，核心用料主要集中在MOS管与平面变压器。典型隔离拓扑下需要变压器：变压器原边使用约100伏MOS管，副边使用约40伏MOS管；相较之下，模块上模拟芯片的价值量并不高。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e二次电源是否仍需要PCB？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e早期做法是采用PCB形式：在B200系列中购买整块模块并回流焊贴装到大板上。后续出于成本考虑逐步“打散”和“再板化”：到Rubin这代，从公开图片可见已不再采用模块级再板方式采购，而是购买零件后在主板上直接贴装实现。板级结构上从Hopper到Blackwell一直同时存在二次与三次供电的配置形态。若仍采用非标准的模块并且功耗持续提升，则其配套PCB通常为十几层，但具体价值量未披露。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eVicor公司与MPS、英飞凌在两级电源方案上有何不同？Vicor方案的关键优势是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eVicor的两级电源路径与传统方案不同：第一级不是48伏转12伏，而是将40伏至60伏的跳变电压稳定为48伏，采用升降压的非隔离拓扑，不使用变压器；该级可通过“电感+4个管子”实现，并可做到约99%的高效率。稳定到48伏后，第二级再进行48伏转1伏，采用变压器拓扑。其领先点在于通过控制器与功率器件能力，能够在极低输出占空比（输出电压占输入电压比例很小）的条件下实现48伏转0点几伏。此外，该第二级模块高度可以做到约1.5毫米，而其他厂商普遍在4毫米或5毫米左右。传统厂商（如英飞凌等）更常见的路径是：48伏转12伏使用带变压器的隔离拓扑，采用4:1变比的变压器，再进行后续电压转换。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e高变比“第二级”电源拓扑的核心结构是什么，相比传统两级方案的优势体现在哪里？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e所谓“第二级”方案，核心是在48V侧采用高变比变压器进行降压，例如由0.8V/48V对应的变比需求出发，实质上是“十几比几”量级的高变比设计，并叠加控制器实现相应拓扑控制。器件层面不需要采用“Drive\u0026nbsp;MOS”，以MOS管实现即可，整体形态与传统二次电源更为接近，可理解为“高变比二次”。相较传统以英飞凌等两级架构为代表的方案，主要优势在于：第一，综合效率更高，两段效率叠加可做到约97%；而传统两级方案按“98点几%乘以94%”计算，综合仅约90、92、93的水平，效率存在约3–4个百分点差距。第二，第二级的结构高度可以做得更薄，有利于通过更优的散热路径将热量散出；传统VR通常只能做到4–5毫米高度，而该类方案可进一步压低高度，具备结构与热设计优势。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e该高变比“第二级”方案当前的落地情况如何，为什么行业采用不广？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e早期谷歌的部分方案曾采用过该类思路，但目前谷歌即使仍在使用也仅限于少部分，整体并未在各主流方案中普遍铺开。限制因素主要是成本与供应链替代性：其价格显著高于传统方案。以Drive MOS模块为参考，若Drive MOS模块售价约10美元，该方案至少高出很多；同时缺乏可实现同等方案的第二家供应来源，一旦生产制造出现问题难以快速替代，客户往往需要额外并行两个项目以对冲风险。相比之下，离散芯片或Drive MOS之所以被长期采用，一个重要原因在于参与开发的厂商多、可替代性更强。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eVicor体系当前是否存在值得期待的近期大项目，主要增量机会在哪里？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e存在“太空数据中心”方向的叙事空间，核心原因在于其模块化能力在EMI以及抗辐射方面具备领先性，模块级加工技术有利于实现更好的抗辐射表现；若太空数据中心方向能够落地，有望成为较早受益方。与此同时，在无人机及更高端、对成本敏感度不高的应用场景中，也有一定客户基础。即便在部分“星链”项目中，也能看到其产品的应用痕迹。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e800V转12V的项目进展与产业时间线如何，技术路径大致是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e800V转12V项目一直在推进。当前即便800V真正开始使用，产业通常仍会先走“800转48，再转12”的路径，即先由800V转48V，再由48V转12V；后续才可能跳过48V直接800V转12V。800V转12V在2025年OCP大会上已经展示过一些模型，各家厂商都给出了方案，但方案之间在功率等级、模块大小等方面差异较大，尚未完全一致。预计26年会逐步定型，27年有望进入量产阶段。器件与拓扑上，可理解为“放大版的48V转12V第二级”；同时，由于一级侧耐压要求更高，需要采用更高耐压的碳化硅甚至GaN等器件配置，例如在600–800V区间可能需要使用两个650V器件，或使用个别1.2千伏器件。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e杰华特在海外项目突破的可能性如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e海外突破难度较大。就现阶段而言，能够进入国内部分大客户体系已经属于较好的进展。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eFlex在一级/二级/三级电源环节的布局与项目情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e具体合作项目细节不便或无法确认，但其与海外大厂的关系较好，具备获取海外大厂项目的能力。Flex业务覆盖PSU，同时具备代工能力，也能做第二级，因此较容易参与海外项目。其在一级、二级的业务体量相对更大；在AI相关场景中，一级参与度并不高，但在传统非AI服务器电源领域（如x86\u0026nbsp;CPU服务器、交换机、路由器等）积累较多，例如传统CRPS形态的PSU出货较多。关于第三级，因其本身不具备“Drive MOS”，需要与瑞萨合作推进，且双方存在公开合作；在第三级模块方向上亦有推进。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e近期除电源方案外，市场还在关注哪些环节与方向？功率器件景气逻辑是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e近期另一个讨论度较高的方向是能够做得更好的PCB，确定性相对更强，市场讨论较多指向中富。功率器件方向也呈现升温趋势，逻辑相对明确：一方面，800V相关方案推进带来器件需求；另一方面，未来可能出现固态变压器等新方向，对功率器件需求也更为明确。海外功率器件厂商中，英飞凌、安森美，以及EPC等以功率器件为主导的厂商处于更有利的位置。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e供需与价格层面，二级/三级环节近期是否出现缺货与涨价信号？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e海外需求仍较强，除英伟达之外，其他ASIC厂商也在增强；国内对更多算力卡的需求同样迫切，海外与国内双重需求叠加，可能带来缺货。当前对二级、三级环节而言，尤其是三级，已经出现一定缺货现象，其中“Drive\u0026nbsp;MOS”存在紧缺。与此同时，模拟芯片也面临涨价压力，例如英飞凌已宣布对“Drive MOS”这类产品涨价。关于MPS的代工，除华虹外应还有其他合作方。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "电源管理"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 16272,
+        "likes": 0,
+        "favorites": 4,
+        "word_stats": {
+            "word_count": 6190,
+            "read_time": 13
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12603130509060061",
+            "paid_at": 1773381233,
+            "created_at": 1773381233,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564309,
+                    "title": "MT插芯和FAU需求增量，CW激光器送样进展。扩产对北美大厂影响，国产磷化铟衬底供应和出口更新。三环/亨通光电/汇川/索尔思/Lumentum/Coherent",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783405655
+                },
+                {
+                    "id": 70564298,
+                    "title": "引线框架行业调研：AI对行业需求影响，近期提价背景，核心参与玩家及竞争格局预期 – 三井/新光/顺德/新恒汇",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783399972
+                },
+                {
+                    "id": 70564294,
+                    "title": "磷化铟深度调研：衬底供需错配驱动高毛利，3.2T光模块开启材料演进新周期",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783396183
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1773303121,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20506884,
+                "organization_type_id": 3,
+                "name": "Patrick",
+                "sc_name": "Patrick",
+                "en_name": "Patrick",
+                "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+                "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "state": "passed",
+                "followed": true,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {
+            "zh": [
+                "英伟达Rubin功耗大增，若其被迫转向模块化供电，MPS与英飞凌的份额增量能否支撑当前估值溢价？",
+                "英飞凌Drive MOS提价且缺货，台达等模块厂的毛利率会否受压，还是能将成本转嫁给谷歌等云厂商？"
+            ],
+            "en": [
+                "If Nvidia's Rubin forces a shift to partial modular power, will market share gains for MPS and Infineon justify their current valuation premiums?",
+                "With Infineon raising Drive MOS prices amid shortages, will assemblers like Delta face margin compression, or can they fully pass costs to hyperscalers like Google?"
+            ]
+        },
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783411953405",
+        "ts": 1783411954
+    },
+    "code": 200,
+    "ret": true
+}

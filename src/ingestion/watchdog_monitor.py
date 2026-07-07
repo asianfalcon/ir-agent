@@ -18,6 +18,7 @@ ROOT = Path(__file__).parent.parent.parent
 WATCH_DIRS = [
     ROOT / "data/inputs/reports",
     ROOT / "data/inputs/announcements",
+    ROOT / "data/inputs/expert_minutes/acecamp/export",
 ]
 DB_PATH = ROOT / "databases/ira.db"
 STABILITY_DELAY = 2.0  # seconds to wait after last modify event
@@ -97,6 +98,7 @@ class _Handler(FileSystemEventHandler):
 def _process_worker(queue: Queue) -> None:
     """Consumes the queue; import processing here to keep ingestion decoupled."""
     from src.processing.text_processor import process_file  # lazy import
+    from src.ingestion.acecamp.expert_processor import process_article  # lazy import
 
     conn = sqlite3.connect(DB_PATH)
     while True:
@@ -108,7 +110,12 @@ def _process_worker(queue: Queue) -> None:
             continue
         print(f"[watchdog] processing: {path.name}")
         try:
-            process_file(path)
+            if "expert_minutes" in path.parts:
+                # Without an explicit batch ticker, process_article infers tickers
+                # from the AceCamp corporations payload and writes one copy per ticker.
+                process_article(path)
+            else:
+                process_file(path)
             _log_file(conn, path)
         except Exception as e:
             print(f"[watchdog] ERROR {path.name}: {e}")
@@ -124,7 +131,7 @@ def start() -> None:
     observer = Observer()
     for d in WATCH_DIRS:
         d.mkdir(parents=True, exist_ok=True)
-        observer.schedule(handler, str(d), recursive=False)
+        observer.schedule(handler, str(d), recursive=True)
 
     observer.start()
     Thread(target=_process_worker, args=(queue,), daemon=True).start()

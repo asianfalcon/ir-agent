@@ -1,0 +1,251 @@
+{
+    "data": {
+        "id": 70562365,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70536992
+        ],
+        "expert_public_resume": "mcu专家",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "龙头汽车半导体Tier 1厂商调研：主要业务板块，收入占比结构，AI电源竞争格局，AIDC电源主要客户",
+        "transcribe": null,
+        "badges": [],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            11425,
+            13219,
+            15002,
+            43139
+        ],
+        "corporations": [
+            {
+                "id": 11425,
+                "ticker": "US.IFNNY",
+                "name": "英飞凌科技(ADR)",
+                "logo": "https://image.acecamptech.com/logos/11425/eeba3d80-b64b-497a-aaee-10bfa83c49d1.png"
+            },
+            {
+                "id": 13219,
+                "ticker": "US.NXPI",
+                "name": "恩智浦",
+                "logo": "https://image.acecamptech.com/logos/88766c25-3fbd-4259-bdcb-dd43214598b4.svg"
+            },
+            {
+                "id": 15002,
+                "ticker": "US.STM",
+                "name": "意法半导体",
+                "logo": "https://image.acecamptech.com/logos/794b4fd4-e43a-4542-a090-8ffdc6d2901b.svg"
+            },
+            {
+                "id": 43139,
+                "ticker": "JP.6723",
+                "name": "瑞萨电子",
+                "logo": null
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "主要看点：\n1.龙头汽车半导体Tier 1厂商的主要业务板块内容及收入占比结构：汽车MCU、AI电源、工业MCU以及内存接口芯片\n2.AI、汽车和工业这三个领域的增长驱动因素，及其各自的可持续性\n3.AI电源市场的头部三家主要供应商的市场份额分布，产品市场策略的差异化\n4.AI数据中心电源领域的主要客户、业务规模及生产模式\n\n访谈专家在汽车半导体领域具有多年经验",
+        "content": "\u003cp\u003e相关标的：瑞萨电子（6723.JP），英飞凌科技ADR（IFNNY.US），意法半导体（STM.US），恩智浦（NXPI.US）\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e以下为访谈专家根据市场公开信息的个人观点及推断\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e1. 从产品线的角度来看，瑞萨电子近期业务增长主要由哪些部分驱动？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e从产品线的角度分析，瑞萨电子有几条增长较为迅猛的产品线。首先是与AI相关的业务，具体是用在800V数据中心的AI电源，这条产品线源于对Intersil的收购，后经整合发展而来。其次是用于内存接口的相关芯片。此外，应用于工业自动化领域的MCU，以及在汽车功能安全和高算力场景下采用28纳米工艺的MCU，也是高速增长的领域。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e2. 汽车MCU、AI电源、工业MCU以及内存接口芯片，分别归属于公司的哪个业务板块，以及在公司整体营收中的占比结构是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e瑞萨电子主要划分为四条产品线：汽车MCU、工业MCU、电源以及信号链。在营收结构方面，汽车MCU业务约占公司总营收的45%至50%，其中28纳米工艺的MCU预计在2026年将占到汽车MCU业务收入的25%至30%。电源产品线约占公司总营收的30%，其中AI电源业务占该产品线收入的35%至40%。工业MCU业务约占公司总营收的10%，其中应用于工业自动化领域的MCU占该业务收入的20%至30%。内存接口芯片则归属于信号链产品线，这是一个高度细分的市场，因此其在公司总营收中的占比较小。剩余部分则由信号链产品线中的其他各类产品构成，例如传感器、运放、ADC等。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e3. 就AI电源业务而言，其具体的营收规模、订单增长情况以及产能状况如何？另外，除了AI电源，过去半年到一年公司业务复苏还有哪些其他主要驱动因素？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eAI电源业务在2025年的营收规模约为8亿美元，而2026年至今已收到的订单金额从订单量看需求增长迅猛，接近翻倍。然而，该业务的增长受到产能限制，由于产品线基本依赖外部晶圆厂供应，而目前成熟制程的产能相对紧张，因此预计产能仅能支持30%至40%的年增长。 公司近期的业务复苏并不仅限于AI电源业务，更重要的驱动力来自占公司业务半数以上的汽车业务基本盘的复苏。2025年，汽车业务受益于几个积极因素：其一，比亚迪等厂商在智能驾驶和座舱领域的竞争加剧，导致相关MCU（主要是28纳米工艺产品）用量需求激增，贡献了显著增长。 此外，传统工业领域的需求复苏也是一个重要因素。在经历了过去两到三年的高库存水位后，欧美及国内市场的终端库存在2025年逐步见底，推动了工业市场的良性发展和需求恢复。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e4. 对于AI、汽车和工业这三个领域的增长驱动因素，从未来两到三年的维度看，各自的可持续性如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e从未来两到三年的可持续性来看，三个领域的情况有所不同。AI是全球公认的热点市场，根据目前的订单和终端客户反馈，预计未来两到三年仍将维持高增长态势。 相比之下，汽车领域在2026年已显现出增长瓶颈。受全球经济疲软影响，全球汽车销量及电动车渗透率均面临压力，因此预计2026年汽车MCU的增速将低于2025年。 工业MCU领域，若将时间跨度拉长至两到三年，其在全球范围内是一个增长相对平缓的市场，不会出现剧烈的波动。2026年该市场需求旺盛，主要原因在于国内如汇川等工业自动化龙头企业存在备货行为。这些企业受今年半导体缺货信号的影响，正在增加自身的库存及渠道供应链储备，从而推高了当年的需求。然而，这种由备货驱动的增长并非一种长期可持续的发展模式。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e5. 2025年AI电源业务的收入规模、在全球市场的占有率以及2026年的增长预期分别是多少？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2025年AI电源业务收入约为8亿美元，在全球近100亿美元的市场中，市占率未达到10%。2026年订单需求旺盛，但受限于产能，预计只能满足约11亿美元的订单，同比增长约30%，这一增速略高于集团整体十几个至二十个百分点的增长预期。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e6. AI电源业务的订单能见度如何？长期来看，该业务的可持续性及潜在风险是什么？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前已收到的订单可以覆盖到2028年第一季度，未来两年的业务确定性较高，整个行业仍处于上升周期。长期风险主要有两点：首先，全球AI龙头企业是否愿意持续进行高额且不计回报的算力投入存在不确定性，市场已出现一些泡沫迹象；其次，AI的应用场景能否持续拓展也是一个未知数。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e7. 面对旺盛的订单需求，公司在AI电源产能方面有何规划？目前产能扩张主要受限于哪些因素？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前没有特别好的解决方案。AI电源市场主要由英飞凌、MPS和瑞萨三家公司供应，产能都处于极度紧张的状态。晶圆厂不会给予非常长期的产能承诺，通常只会提供未来半年到三个季度的预期情况。因此，公司无法明确2027年的产能规划，产能扩张完全受限于外部晶圆厂的供给，公司自身无法把控。目前公司正通过高层运作，采用投资、提前支付定金、主动涨价支付加急费等方式，争取更多产能。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e8. 在AI电源市场中，英飞凌、瑞萨和MPS这三家主要供应商的市场份额分布是怎样的？它们的产品或市场策略是否存在差异化？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在市场份额方面，英飞凌位居第一，约占50%；瑞萨和MPS则平分剩余的50%。三家公司的市场策略差异显著。英飞凌非常看重中国市场，其高市场份额的获得在很大程度上得益于满足了中国AI公司的发展需求。相比之下，瑞萨在产能同样紧缺的情况下，将业务优先级完全放在美国市场。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e9. 英飞凌、瑞萨和MPS三家公司在中国市场的产能分配和业务优先级有何不同？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eMPS在中国的业务优先级是最高的。英飞凌约有35%的产能分配给中国市场。而瑞萨目前仅将约15%的产能分配给中国市场，尽管从AI服务器基础设施的建设量来看，中国的实际需求远超这一比例。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e10. 瑞萨将业务重心放在美国市场而非中国市场，是基于哪些战略考量？这种策略对客户结构和毛利率有何影响？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e该决策主要基于两点考量，毛利仅是其中一个因素。首先，公司高层认为，以Meta、OpenAI等为代表的美国公司描绘的AI前景极具吸引力，并判断美国在未来几年将继续主导全球AI市场，因此选择押注美国的AI龙头企业。其次，从客户忠诚度的角度看，日本公司倾向于建立长期、可靠的合作关系。将业务重心放在美国，与当地客户做生意通常能获得更好的利润率。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e11. 公司AI电源业务的毛利率水平如何？即将到来的价格调整预计将对毛利率产生多大影响？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e该业务的毛利率水平相当高。由于上游晶圆厂的报价也平均上涨了10%到20%，成本压力会传导至公司。因此，综合考虑后，最终产品毛利率不会有大幅变化，预计仅会略微提升两到四个百分点。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e12. 公司AI电源业务在中国市场的主要客户群体包括哪些企业？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e主要客户群体是从事AI服务器业务的公司以及大型模型开发公司。具体包括联想、浪潮、华三等服务器制造商，以及腾讯、阿里、字节、百度等拥有大模型的互联网企业。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e13. 客户结构是怎样的，特别是海外AI大厂的采购情况如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e直接下游客户是芯片采购方，例如腾讯是为自身的AI算力进行采购。海外客户主要包括英伟达、AMD、微软、OpenAI、Google、Meta以及亚马逊。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e14. 对于全球或海外AI电源市场的未来空间，是否有相应的规模估算？从需求角度看，市场规模的量级以及未来的增长预期是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e以瑞萨电子今年1.5个billion的订单量为基准，乘以4可以估算出当前全球市场份额约为60亿美金。预计未来三年，该市场的复合年均增长率可达到30%。不过，行业龙头如英伟达和Meta给出的预期更为激进，他们认为未来两到三年每年的需求基本都会翻倍。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e15. 从产能角度看，如果当前市场存在供给缺口，整个行业的上游晶圆厂能否在未来几年内扩充产能以满足快速增长的需求？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e产能确实是制约增长的因素，至少在今年（2026年）内不会有显著改善。半导体产能投入需要周期，公司也在认证新的晶圆厂。从逻辑上讲，拉长时间看，例如到三年后，整个行业的产能是可以跟上需求增长的。目前来看，到2028年或2029年，市场规模有望达到100亿美金，之后仍将保持约30%的增长，甚至可能更高。届时，谁能成功扩产，谁就能占据更多市场份额。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e16. 在当前三家主要供应商中，各家的扩产能力和策略有何不同？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前来看，英飞凌在扩产的激进程度和话语权上更具优势，其业务基本盘较大，在晶圆厂面前的议价能力也更强。日本公司（如瑞萨电子）的动作相对较慢，在与晶圆厂洽谈产能时也更为务实和保守，因此在这方面较为吃亏。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e17. 考虑到未来市场规模的扩大，除了现有三家供应商，是否有新的竞争者进入？这对市场格局将产生何种影响？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e随着市场规模从几十亿美金增长至百亿美金级别，吸引了更多参与者。目前，其他半导体公司已在布局该市场，例如国内的南芯、希利杰、杰华特，以及海外的TI和恩智普。预计在未来三年内，会有更多玩家进入，市场竞争将更加激烈。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e18. 新进入的竞争者是否具备足够的技术实力？他们预计能在多大程度上改变当前的市场份额格局？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eAI服务器电源属于高端电源领域，对功率、散热、设计能力和工艺都有较高要求，存在一定的技术门槛，这也是目前仅有三家主要供应商的原因。新玩家进入是必然趋势，但预计所有新进入者合计最多能占据20%的市场份额，这已是较为乐观的估计。主要原因在于，该行业客户高度集中，英伟达等巨头在选择供应商时，更看重产品的可靠性而非单纯的成本，因此不会轻易切换至未经充分验证的新供应商方案。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e19. 随着新竞争者的加入，预计到2028或2029年，现有供应商的市场份额将如何变化？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e市场份额的损失预计将由所有现有供应商共同承担，而非仅限于排名靠后的两家。以2028年为例，如果新进入者合计占据10%的市场份额，那么现有供应商的份额可能会相应减少。例如，原先拥有25%份额的公司，可能会下降至22%左右。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e20. 公司目前主要的代工合作伙伴是哪家？关于代工价格和产能，2026年和2027年的情况如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前的代工主要由Vanguard（世界先进）负责。关于价格，涨价事宜从2025年年底开始讨论，并于2026年第一季度正式实施。关于产能，公司也在与其他晶圆厂洽谈，包括GlobalFoundries和台积电，以实现未来供应链的多元化，避免绑定单一的代工厂。目前市场产能普遍紧张，瑞萨在2026年已不太接受新的订单，因为即便接受也无法在年内交付。对于2027年的产能预期，目前晶圆厂尚未给出明确的全年产能承诺，他们会要求公司提供预测，但不会反向承诺具体的交付数量。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e21. 关于AI电源产品的价格调整，公司是否有进一步的计划？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eAI电源产品在2026年预计会继续涨价。公司大概率会在2026年第三季度正式宣布涨价计划。此举主要是为了应对当前严重的供需失衡状况，通过价格调整来筛选客户，并争取在晶圆厂获得更多产能。从历史数据来看，瑞萨的涨价策略相对克制，主力产品的单次涨价幅度通常不会超过25%。涨价通知一般会提前一个季度发布，以便客户和渠道有时间准备。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e22. AI电源市场目前是否存在新的进入者？国内厂商的进展如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前除了现有市场参与者，还没有新的玩家进入AI电源市场。其他几家公司历史上也曾涉足此类产品，但因竞争力不足，市场应用较少。国内厂商方面，杰华特、矽力杰和南芯半导体等公司大约在一两年前已开始布局相关产品，但目前这些产品仍处于开发阶段，尚未推向市场。矽力杰虽然主营业务是模拟信号链，电源产品营收占比较低，但确实在AI电源领域有所投入。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e23. 对于国内厂商的AI电源产品，其进入市场并实现量产预计需要多长时间？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e乐观估计，如果国内厂商的第一代产品能在2026年内推向市场，考虑到终端客户通常需要半年到三个季度进行产品验证，那么最早可能在2027年下半年开始看到小批量产，并应用于部分数据中心。但这属于最乐观的预期情况。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e24. 在数据中心领域，公司主要提供哪些产品？各项产品的进展如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在数据中心市场，公司的主要产品包括800V的AI电源和时钟芯片。此外，功率器件也是一个重要方向，特别是40V和60V的中低压MOSFET，这部分市场目前主要由英飞凌等公司占据。公司的MOSFET产品在自有的嘉禾工厂生产，样品已送至主要客户进行验证，计划于2026年第三季度实现量产。另一个关键产品是氮化镓，鉴于AI数据中心对功率密度的高要求，公司正积极布局。通过收购Transphorm，并与低压氮化镓公司EPC合作（未来可能探讨收购），瑞萨在单向和双向氮化镓方案上都采取了积极的策略。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e25. 目前氮化镓市场的竞争格局是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e氮化镓市场的技术规范尚不统一，格局比较分散，尚未形成绝对的龙头。在双向氮化镓领域，英飞凌走得比较靠前。在应用更广泛的单向氮化镓（UDS GaN）领域，英诺赛科凭借其IDM模式和自有的晶圆厂，龙头效应已较为明显。另一家美国设计公司纳微在中国市场的客户认可度相对较低。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e26. 公司与主要竞争对手在晶圆代工策略上有何异同？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在功率器件领域，英飞凌拥有自有的晶圆厂。相比之下，公司采用委外代工模式，目前与Vanguard合作，并正在与GlobalFoundries等厂商洽谈。公司的主要竞争对手MPS同样采用委外代工模式，将其产品交由外部晶圆厂生产，但其具体的代工合作伙伴尚不清楚。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e27. ST Microelectronics在AI数据中心电源市场的份额和产品布局情况如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e目前在AI数据中心电源市场，没有意法半导体ST Microelectronics的产品和市场份额。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e28. 瑞萨在AI数据中心电源领域的主要客户有哪些，各自的业务规模是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在AI数据中心领域，国内最大的客户是联想，2025年的业务规模约为4,000万美元；其次是华三，规模在1,500万至2000万美元之间。其他相关客户还包括字节跳动、腾讯、阿里等企业。海外市场的最大客户是NVIDIA。此外，台达电子也是瑞萨的重要客户，由台湾地区团队负责，其业务规模印象中大约在每年7,000万至8,000万美元。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e29. 瑞萨当前的生产模式是怎样的，自有晶圆厂的产能和营收贡献占比情况如何？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e瑞萨采用“fab-light”（轻晶圆厂）模式。公司拥有六座自有晶圆厂，其营收贡献接近总营收的一半。自有产能主要覆盖到40纳米制程节点。由于最新的MCU产品，无论是应用于工业、汽车还是家电领域，均已转向28纳米及更先进的制程，因此所有28纳米及以内的新MCU品类都不会在自有工厂生产，未来外包生产的比例会越来越高。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e30. 瑞萨的MCU业务营收占比如何，2026年是否有涨价？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eMCU业务营收占公司总营收的将近一半。2026年以来，主力MCU产品并未涨价。价格上涨的仅限于极少数旧有产品，例如即将停产或已上市至少八年以上的老一代汽车SoC（如R-Car Gen2）。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e31. 行业内其他主要厂商（如恩智浦、英飞凌）的MCU产品在2026年的定价策略是怎样的？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e恩智浦和英飞凌均已官方宣布涨价。然而，英飞凌针对汽车市场的MCU和功率器件在此轮官宣涨价中实际上并未提价，汽车相关产品被全部豁免。涨价主要集中在与AI相关的功率器件领域，因为这类产品主要使用8英寸晶圆产能。例如，台达电子向英飞凌下了一笔近100个MOSFET的大订单，基本包揽了其大部分中低压MOSFET产能。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e32. 瑞萨的MCU产品交期有何变化，下半年是否存在涨价的可能性？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eMCU产品存在涨价趋势。从交期来看，2025年第四季度MCU的平均交期为14至16周，而截至2026年4月底，平均交期已延长至24周，显示出供应趋于紧张。特别是台积电的28纳米产能，这恰好是瑞萨当前主力MCU产品所使用的制程。基于当前订单和交付状况，下半年有可能出现一些涨价。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e33. 瑞萨电源类产品的涨价情况如何，是否覆盖了所有产品线？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e电源类产品已在2026年7月1日进行了全面涨价。涨价范围覆盖了所有电源产品，包括PMIC、传统的二三极管以及DC/DC转换器等，因为这些产品基本上共用产能。如果下半年再次涨价，预计仍将是全线调整。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e\u003cem\u003e34. 瑞萨2026年上半年的订单增长情况如何，中国区与全球市场相比表现怎样？\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2026年上半年，瑞萨的整体订单情况相比2025年同期有显著增长，订单已基本锁定。中国区的订单额预计同比增长将近20%，这是一个保守估计，且交付落实度较高，除AI电源外其他产品交付状况良好。从全球范围看，海外市场的订单增长情况略好于中国区，中国区上半年在瑞萨内部的同比增长排行中相对靠后。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "汽车电子",
+            "汽车半导体",
+            "AI电源",
+            "MCU"
+        ],
+        "industry_ids": [
+            2510,
+            4530
+        ],
+        "custom_sector_ids": [
+            2,
+            6
+        ],
+        "views": 6808,
+        "likes": 0,
+        "favorites": 2,
+        "word_stats": {
+            "word_count": 6066,
+            "read_time": 13
+        },
+        "masked_word_stats": {
+            "word_count": 1974,
+            "read_time": 4
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607070705630635",
+            "paid_at": 1783409235,
+            "created_at": 1783409235,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564309,
+                    "title": "MT插芯和FAU需求增量，CW激光器送样进展。扩产对北美大厂影响，国产磷化铟衬底供应和出口更新。三环/亨通光电/汇川/索尔思/Lumentum/Coherent",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783405655
+                },
+                {
+                    "id": 70564298,
+                    "title": "引线框架行业调研：AI对行业需求影响，近期提价背景，核心参与玩家及竞争格局预期 – 三井/新光/顺德/新恒汇",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783399972
+                },
+                {
+                    "id": 70564294,
+                    "title": "磷化铟深度调研：衬底供需错配驱动高毛利，3.2T光模块开启材料演进新周期",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783396183
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1779243418,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 10501590,
+                "organization_type_id": 3,
+                "name": "Michael Lu",
+                "sc_name": "Michael Lu",
+                "en_name": "Michael Lu",
+                "logo": "https://image.acecamptech.com/avatar/10501592/0.10604018197345355.jpg?x-oss-process=style/avatar",
+                "description": "十余年产业+行业研究经验，善于从产业视角分析行业发展趋势与企业竞争格局",
+                "sc_description": "十余年产业+行业研究经验，善于从产业视角分析行业发展趋势与企业竞争格局",
+                "en_description": "10+ years in industrial \u0026 sector research. Specializes in industry trends and competitive landscape analysis from an industrial perspective.",
+                "state": "passed",
+                "followed": false,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {},
+        "masked_state": "passed"
+    },
+    "meta": {
+        "ack": "1783409240279",
+        "ts": 1783409241
+    },
+    "code": 200,
+    "ret": true
+}

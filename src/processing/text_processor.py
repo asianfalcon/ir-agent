@@ -1,6 +1,6 @@
 """
 Text processing pipeline: PDF → clean Markdown, HTML → clean text, then chunk + embed metadata.
-Called by watchdog_monitor when a new file lands in data/inputs/.
+Called by watchdog_monitor for manual inputs and by refresh scripts for processed artifacts.
 """
 
 import hashlib
@@ -114,8 +114,8 @@ def _extract_html(path: Path) -> str:
 def _infer_metadata(path: Path, text: str) -> dict[str, Any]:
     ticker = _normalize_ticker(text) or _normalize_ticker(path.stem)
 
-    # walk up to find the inputs category dir (reports / announcements)
-    source_map = {"reports": "broker_report", "announcements": "announcement"}
+    # walk up to find the evidence category dir (reports / announcements / news)
+    source_map = {"reports": "broker_report", "announcements": "announcement", "news": "web_news"}
     data_source = "web_news"
     for parent in path.parents:
         if parent.name in source_map:
@@ -127,12 +127,17 @@ def _infer_metadata(path: Path, text: str) -> dict[str, Any]:
     m = _re.match(r"(\d{8})", path.stem)
     pub_date = m.group(1) if m else str(int(path.stat().st_mtime))
 
+    try:
+        source_file = str(path.relative_to(ROOT))
+    except ValueError:
+        source_file = str(path)
+
     return {
         "ticker": ticker or "UNKNOWN",
         "pub_date": pub_date,
         "period": "",
         "data_source": data_source,
-        "source_file": path.name,
+        "source_file": source_file,
     }
 
 
@@ -166,19 +171,22 @@ def process_file(path: Path) -> list[dict]:
     # flatten metadata into top-level fields for LanceDB (no nested dicts)
     flat_chunks = []
     for c in chunks:
+        source_file = c["metadata"].get("source_file", path.name)
         flat = {
-            "chunk_id":    c["chunk_id"],
+            "chunk_id":    hashlib.md5(f"{source_file}:{c['chunk_id']}".encode()).hexdigest(),
             "text":        c["text"],
             "ticker":      c["metadata"]["ticker"],
             "pub_date":    c["metadata"]["pub_date"],
             "period":      c["metadata"]["period"],
             "data_source": c["metadata"]["data_source"],
-            "source_file": c["metadata"].get("source_file", path.name),
+            "source_file": source_file,
         }
         flat_chunks.append(flat)
 
-    # write to LanceDB
-    from src.db.vector_store import upsert_chunks
+    # write to LanceDB — delete old chunks from this file first (content may have
+    # changed, so chunk_id/md5 won't match and stale chunks would linger otherwise)
+    from src.db.vector_store import upsert_chunks, delete_by_source_file
+    delete_by_source_file(metadata["source_file"])
     upsert_chunks(flat_chunks)
 
     # also save JSON for debugging

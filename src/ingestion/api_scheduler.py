@@ -33,7 +33,8 @@ def _company_names() -> list[str]:
 
 def _fetch_market(ticker: str) -> None:
     today = date.today().isoformat()
-    out = ROOT / "data/raw/market" / f"{today}_{ticker}.json"
+    out = ROOT / "data/raw/market/akshare" / f"{today}_{ticker}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
     if out.exists():
         return
     try:
@@ -50,7 +51,8 @@ def _fetch_financials(ticker: str) -> None:
     today = date.today()
     q = (today.month - 1) // 3 + 1
     period = f"{today.year}Q{q}"
-    out = ROOT / "data/raw/financials" / f"{ticker}_{period}.json"
+    out = ROOT / "data/raw/financials/akshare" / f"{ticker}_{period}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
     if out.exists():
         return
     try:
@@ -84,17 +86,11 @@ def _job_yfinance_macro() -> None:
     fetch_macro()
 
 
-# ── AceCamp spider ────────────────────────────────────────────────────────────
+# ── AceCamp official skill note ───────────────────────────────────────────────
 
 def _job_spider() -> None:
-    try:
-        from src.ingestion.acecamp.spider import fetch_and_store
-    except ImportError:
-        return
-    vocab = json.loads(VOCAB_PATH.read_text()) if VOCAB_PATH.exists() else []
-    for entry in vocab:
-        if entry.get("entity_type") == "Company":
-            fetch_and_store(entry["standard_name"], ticker=entry.get("ticker"), limit=5)
+    """Disabled: use the official AceCamp skill/manual export, not crawler-style sync."""
+    print("[scheduler] AceCamp spider disabled; use official skill/manual export only")
 
 
 # ── Scheduler ─────────────────────────────────────────────────────────────────
@@ -115,9 +111,8 @@ def start() -> BackgroundScheduler:
     scheduler.add_job(_job_market, "cron", day_of_week="mon-fri", hour=15, minute=35)
     # 15:40 每个交易日 — Tushare 日线
     scheduler.add_job(_job_tushare_daily, "cron", day_of_week="mon-fri", hour=15, minute=40)
-    # 16:05 每个交易日 — Tushare 新闻 + AceCamp 研报
+    # 16:05 每个交易日 — Tushare 新闻
     scheduler.add_job(_job_tushare_news, "cron", day_of_week="mon-fri", hour=16, minute=5)
-    scheduler.add_job(_job_spider, "cron", day_of_week="mon-fri", hour=16, minute=10)
     # 8:00 每天 — YFinance 宏观（前一日收盘）
     scheduler.add_job(_job_yfinance_macro, "cron", hour=8, minute=0)
     # 22:00 财报季 — AkShare 财务摘要
@@ -135,4 +130,3 @@ if __name__ == "__main__":
             time.sleep(60)
     except KeyboardInterrupt:
         s.shutdown()
-

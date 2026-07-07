@@ -266,7 +266,16 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         _entry  = next((e for e in _vocab if e.get("ticker") == ticker), None)
         product = _entry.get("product", "") if _entry else ""
         chain   = skill3_graph_propagator.query(product) if product else []
-        chunks  = vector_search(query=f"{company_name} 业绩 研报", ticker=ticker, top_k=10)
+        if name == "earnings_forecast":
+            chunk_query = f"{company_name} 盈利预测 2026E 2027E 2028E 营业收入 归母净利润 EPS PE PS 东吴证券 国信证券"
+            top_k = 30
+        elif name == "price_target":
+            chunk_query = f"{company_name} 目标价 估值 PE PS PB 合理价值 盈利预测"
+            top_k = 20
+        else:
+            chunk_query = f"{company_name} 业绩 研报 专家纪要 边际变化"
+            top_k = 15
+        chunks  = vector_search(query=chunk_query, ticker=ticker, top_k=top_k)
 
         if name == "earnings_forecast":
             result = skill5_focused.earnings_forecast(ticker, company_name, dashboard, chunks, _llm)

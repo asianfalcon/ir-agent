@@ -24,7 +24,36 @@ def run(
     product = entry.get("product", "") if entry else ""
 
     chain = skill3_graph_propagator.query(product) if product else []
-    chunks = vector_search(query=f"{company_name} 业绩 研报", ticker=ticker, top_k=10)
+    chunk_queries = [
+        f"{company_name} 业绩 研报 专家纪要 边际变化",
+        f"{company_name} 盈利预测 2026E 2027E 2028E 营业收入 归母净利润 EPS PE PS 东吴证券 国信证券",
+        f"{company_name} 目标价 估值 PE PS PB 合理价值",
+    ]
+    chunks = []
+    seen_chunk_ids = set()
+    for query in chunk_queries:
+        for chunk in vector_search(query=query, ticker=ticker, top_k=15):
+            key = chunk.get("chunk_id")
+            if key in seen_chunk_ids:
+                continue
+            seen_chunk_ids.add(key)
+            chunks.append(chunk)
+    forecast_keywords = ("盈利预测", "财务预测", "2026E", "2027E", "2028E", "营业收入", "归母净利润", "EPS", "PE", "PS")
+
+    def chunk_score(chunk: dict) -> int:
+        text = chunk.get("text", "")
+        file_name = chunk.get("source_file", "").rsplit("/", 1)[-1]
+        score = sum(3 for keyword in forecast_keywords if keyword in text)
+        directly_related = company_name in text or company_name in file_name or ticker in text or ticker in file_name
+        if directly_related:
+            score += 5
+        if chunk.get("data_source") == "broker_report":
+            score += 2
+        if not directly_related:
+            score -= 8
+        return score
+
+    chunks.sort(key=chunk_score, reverse=True)
 
     shared_data = {"dashboard": dashboard, "chunks": chunks, "chain": chain}
 

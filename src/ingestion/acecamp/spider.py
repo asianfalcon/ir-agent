@@ -1,6 +1,9 @@
 """
-AceCamp ingestion pipeline:
-  search articles → fetch full content → chunk → upsert LanceDB
+AceCamp official Personal API helper.
+
+This module uses the official API-key client, not browser cookies. Keep it out of
+automatic schedulers: AceCamp ask/search results are derived platform outputs,
+not raw broker reports or expert minutes.
 """
 
 import hashlib
@@ -12,8 +15,10 @@ from typing import Any
 
 ROOT = Path(__file__).parent.parent.parent.parent
 DB_PATH = ROOT / "databases" / "ira.db"
-RAW_DIR = ROOT / "data" / "raw" / "acecamp"
+RAW_DIR = ROOT / "data" / "raw" / "acecamp_official"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
+SEARCH_DATA_SOURCE = "acecamp_search_result"
+ASK_DATA_SOURCE = "acecamp_ai_answer"
 
 _CONFIG_PATH = Path(__file__).parent / "config.json"
 
@@ -68,8 +73,11 @@ def _mark_crawled(url_date_hash: str, url: str, title: str):
 
 def _chunk_and_store(text: str, metadata: dict[str, Any]):
     from src.processing.text_processor import chunk_text
-    from src.db.vector_store import upsert_chunks
+    from src.db.vector_store import upsert_chunks, delete_by_source_file
     chunks = chunk_text(text, metadata=metadata)
+    source_file = metadata.get("source_file")
+    if source_file:
+        delete_by_source_file(source_file)
     if chunks:
         upsert_chunks(chunks)
     return len(chunks)
@@ -84,10 +92,14 @@ def fetch_and_store(
     query: str,
     ticker: str | None = None,
     limit: int = 5,
-    data_source: str = "broker_report",
+    data_source: str = SEARCH_DATA_SOURCE,
 ) -> int:
     """
-    Search AceCamp, fetch content, chunk and store in LanceDB.
+    Search AceCamp through the official Personal API and store returned snippets.
+
+    This is not a broker report ingestion path. Results are marked as
+    acecamp_search_result so downstream research tools do not treat them as
+    sell-side reports or expert minutes.
     Returns count of new chunks stored.
     """
     _ensure_crawl_log_table()
@@ -121,6 +133,7 @@ def fetch_and_store(
             "data_source": data_source,
             "source_id": source_id,
             "source_uri": url,
+            "source_file": url,
             "title": item.get("title", ""),
         })
         total_chunks += n
@@ -138,9 +151,14 @@ def ask_and_store(
     question: str,
     ticker: str | None = None,
     mode: str = "deep",
+    store: bool = False,
 ) -> int:
     """
-    Ask AceCamp a question (deep mode), store the answer as chunks.
+    Ask AceCamp through the official Personal API.
+
+    By default this does NOT write into LanceDB, because ask answers are AI
+    generated outputs rather than primary evidence. Set store=True only for a
+    deliberate audit snapshot, and it will be tagged as acecamp_ai_answer.
     Returns chunk count.
     """
     _ensure_crawl_log_table()
@@ -156,26 +174,30 @@ def ask_and_store(
     if not answer:
         return 0
 
+    raw_path = RAW_DIR / f"{today}_ask_{url_date_hash[:8]}.json"
+    raw_path.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    source_uri = f"acecamp://ask/{url_date_hash[:8]}"
+    _mark_crawled(url_date_hash, source_uri, question)
+
+    if not store:
+        return 0
+
     source_id = url_date_hash
-    n = _chunk_and_store(answer, metadata={
+    return _chunk_and_store(answer, metadata={
         "ticker": ticker or "",
         "pub_date": today,
         "period": "",
         "associated_vars": [],
-        "data_source": "broker_report",
+        "data_source": ASK_DATA_SOURCE,
         "source_id": source_id,
-        "source_uri": f"acecamp://ask/{url_date_hash[:8]}",
+        "source_uri": source_uri,
+        "source_file": source_uri,
         "title": question,
     })
 
-    _mark_crawled(url_date_hash, f"acecamp://ask/{url_date_hash[:8]}", question)
-
-    raw_path = RAW_DIR / f"{today}_ask_{url_date_hash[:8]}.json"
-    raw_path.write_text(json.dumps(result, ensure_ascii=False, indent=2))
-
-    return n
-
 
 if __name__ == "__main__":
-    n = fetch_and_store("中际旭创 光模块", ticker="300308.SZ", limit=5)
-    print(f"stored {n} chunks from search")
+    print(
+        "AceCamp automatic ingestion is disabled by default. "
+        "Use data/tmp/acecamp-research official skill for manual ask/search."
+    )
