@@ -1,0 +1,242 @@
+{
+    "data": {
+        "id": 70553347,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70526399
+        ],
+        "expert_public_resume": null,
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "PMIC龙头业务近况和对市场前景判断。模拟芯片市场展望，外部因素和产能过剩对行业影响等。圣邦/杰华特/TI/MPS",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": "to_en_by_machine",
+        "dual_language": "dual",
+        "corporation_ids": [
+            2223,
+            15601,
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 2223,
+                "ticker": "SZ.300661",
+                "name": "圣邦股份",
+                "logo": "https://image.acecamptech.com/logos/a59bdb1a-b741-43c7-8193-772e2f867518.svg"
+            },
+            {
+                "id": 15601,
+                "ticker": "US.TXN",
+                "name": "德州仪器",
+                "logo": "https://image.acecamptech.com/logos/3849b820-fbd6-4006-a10e-455f45acf671.svg"
+            },
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "/ 消费电子和模拟芯片市场更新和展望。\n\n/ PMIC头部玩家的竞争身位和利润情况。\n\n/ 多重内部和外部风险因素对行业的影响。",
+        "content": "\u003cp\u003e专家观点:\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e2025年上半年消费类电子市场的表现如何？与2024年相比有哪些变化？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2025年上半年，受中国国家补贴政策推动，国内外消费类电子厂商出货量显著回升，同比增幅达到15%-20%。具体来看，一季度同比增长约15%-20%，全年预计同比增长10%以上。疫情期间（2020-2022年）提前透支的需求导致2023-2024年的全球出货量下滑，但自2024年下半年起，中国推出国家补贴政策刺激了换机需求，加之苹果首次对其Pro系列产品进行全线降价，这些因素共同推动了消费类电子市场的复苏。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e国家补贴政策对下半年消费类电子市场是否仍有持续影响？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e国家补贴政策对上半年的拉动作用较为明显，但由于每人每品类仅限购买一款享受补贴产品，上半年已消耗大部分额度，下半年的持续效应有限。此外，一些省市如江苏部分地区已用完相关预算，不再支持特定产品类别的补贴。因此，下半年同比增速可能放缓。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰公司在当前市场环境中的表现如何，其竞争格局面临哪些挑战？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e矽力杰主营业务包括DCDC和ACDC芯片，其中35%的收入来自消费类电子领域，其余35%来自工业领域。尽管整体营收稳定，但其在消费类电子领域未能充分受益于国家补贴红利。一方面，其竞争对手包括TI和MPS等国际巨头，以及国内如杰华特等低成本供应商，这些企业通过低毛利策略抢占市场份额；另一方面，国产替代趋势加剧，大陆新兴厂商如晶丰明源和希狄微等逐步扩大规模，对矽力杰形成压力。此外，由于矽力杰工业业务占比较高，而工业领域相对稳定，因此其整体增长受到一定限制。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e国产替代趋势如何影响矽力杰及其他国际厂商在中国市场的地位？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e国产替代趋势显著增强，大陆企业通过低毛利策略快速扩展。例如，晶丰明源通过并购重组扩大LED照明及ACDC业务规模，而希狄微尽管尚未盈利，但营收持续增长。这种模式使得国产厂商能够以更具价格竞争力的方式抢占中低端市场份额，从而挤压国际厂商及传统龙头企业如矽力杰的市占率。同时，这也反映出大陆半导体产业链逐步完善，对进口依赖度降低。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在客户分类和市场定位上有哪些特点？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e矽力杰的客户分类和市场定位具有一定的复杂性。从华为等客户的角度来看，供应商通常被分为三类：纯国产（中国FAB和OSAT）、香港台湾地区，以及美资企业。矽力杰虽然总部位于杭州，主要流片生产也集中在杭州，但其公司在台湾上市，财报以台湾为基准，其CEO也是美籍华人。因此，不同公司对矽力杰的归属认定存在差异，有些客户将其视为全国产企业，而另一些则认为其介于纯国产与港台企业之间。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在消费类产品领域的毛利率表现如何，与竞争对手相比有何特点？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在消费类产品领域，矽力杰主要专注于电源管理相关业务，包括DCDC转换器和LED驱动等。与竞争对手相比，MPS（毛利率55%-56%）依靠服务器电源及AI、云服务相关核心套片设计维持高毛利；TI则凭借强大的产能优势，在背光驱动等领域占据主导地位，其毛利率接近68%。相比之下，杰华特通过低价策略抢占市场份额，但其毛利率较低。因此，矽力杰处于一个较难突破瓶颈的位置，上行面临TI和MPS的技术壁垒，下行受到杰华特等低价竞争者的压力。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在DCDC转换器领域面临哪些具体挑战？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在DCDC转换器领域，高端应用如服务器电源及与英特尔协议绑定的核心电源模块，由于技术复杂性及协议限制，对矽力杰而言难以替代。而对于通用型DCDC转换器，如28伏8安、28伏10安以及5伏以下型号，则是矽力杰能够参与竞争的重要市场。此外，在平板电脑、AMOLED驱动等细分领域，由于TI强势地位及价格战能力，大陆厂商难以有效跟进，这也限制了矽力杰进一步扩展高端市场份额。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e2025年行业整体增长预期下，矽力杰营收增长可能达到什么水平？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e根据2025年的行业趋势预测，消费电子整体出货量预计增长10%左右。然而，由于价格持续下降（每季度平均降幅约5%），实际营收增速可能低于出货量增速。综合来看，预计矽力杰全年营收增速可能在5%-6%之间，其中消费类业务增速略高。这一增长主要得益于新产品开发、专利来推动市占率提升，以及ODM和品牌客户订单增加。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e消费电子价格下降趋势对矽力杰具体影响如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e消费电子行业具有ASP逐季下降的特点，这直接影响了包括矽力杰在内厂商的收入表现。尽管出货量显著增加，但由于价格每季度平均下降约5%，导致实际收入增幅受限。例如，在2025年行业整体消费电子收入预计增长10%的背景下，可以推算出实际出货量增幅应超过18%，而这部分需求扩张成为支撑企业发展的关键因素。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e在消费类电子领域，尤其是手机市场中，厂商在料号管理和产品迭代方面采取了哪些策略？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在消费类电子领域，特别是手机市场中，不同厂商会根据季度需求调整策略。例如，对于同一料号，每季度通常需要实现5%的成本下降（KPI要求）。然而，当老产品的成本优化空间有限时，厂商可能通过推出新料号并声称升级换代来实现降本。具体做法包括采用新的工艺或减少IC层数，从而降低BOM成本，但对客户维持原价销售，以此逐步淘汰高成本的旧产品。这种策略在笔记本电脑和PC领域也较为常见，但其换代周期相对较长，而手机市场由于竞争激烈，其迭代速度更快。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e手机电源IC的迭代周期及技术发展趋势如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e手机电源IC的迭代周期近年来显著加快。以往通常两年完成一次迭代，而目前部分应用场景已缩短至一年。例如，在OTG功能（type-c接口）相关的电源IC中，由于硅负极电池的大量应用（2024年开始普及），产生了新的低压工作需求。这种需求推动了新型低压Boost IC的发展，使得锂离子电池放电至2.5伏仍能正常工作。此外，为支持卫星通信等新功能，一些型号如7,603系列从第一代4安培逐步升级到第二代5安培，再到第三代计划支持5.5安培及更高频率（如5兆赫兹）。这种快速更新主要由头部品牌如小米、vivo、OPPO等主导，并通过定义下一代标准推动供应链协作。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在消费类电子中的业务分布情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e矽力杰在消费类电子中的业务主要集中于PC和笔记本电脑，占其整体营收约60%以上。一台PC通常需要4-6颗通用DC-DC Buck转换器，这使得该领域成为矽力杰的重要收入来源。平板设备次之，占比约20%，主要涉及LCD背光驱动、电源管理芯片以及接口防护等应用。而在智能手机领域，由于历史原因，矽力杰并未形成强势布局，其IP积累更多集中于工业供电和网通设备，因此智能手机相关业务占比较小。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在AI服务器市场中的竞争力如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eAI服务器市场对多相控制器（Multi-phase Controller）和集成式DrMOS模块有较高技术门槛。矽力杰近年来积极布局这一领域，通过开发特色化产品满足大功率、高效率需求。然而，与MPS、TI等国际领先厂商相比，其技术实力仍存在差距。在国内市场，由于国产AI服务器更多采用自主CPU芯片，如兆芯、海光、飞腾等，矽力杰具备一定机会。但对于高端GPU服务器，如NVIDIA主导的系统，大概率仍以MPS和TI为主导。此外，在国内竞争中，杰华特与晶丰明源虽采取低价抢占份额策略，但研发实力与矽力杰相比尚有明显差距。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在工业类产品线上的表现如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e工业类产品线相较消费电子更加稳定。在国内市场上，矽力杰主要面临来自三菱、圣邦微以及杰华特等公司的竞争。尽管新能源汽车行业近年来吸引了大量资源投入，但随着行业整合加剧，一些企业逐渐退出或被兼并，相比之下工业应用保持了一定韧性。总体来看，在工业供电解决方案方面，矽力杰依然具有一定优势，并持续拓展相关业务布局。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e最近模拟半导体市场的价格走势如何？尤其是消费类领域的情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e模拟半导体市场的价格在2023年和2024年经历了较大幅度的下降，主要受到国产厂商竞争加剧以及整体市场供需变化的影响。然而，进入2025年后，价格相对稳定。消费类领域由于此前国家补贴政策（国补）的推动，需求表现良好，因此整体价格仍然保持坚挺，没有出现明显下降。不过，即使需求较好，也未达到2021年和2022年的产能紧张状态，因此并未出现显著涨价。同时，大客户如手机厂商通常会要求每季度降价约5%，这已成为行业惯例。此外，为应对成本压力，部分原厂通过推出新料号替代老产品来实现进一步降本。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e代理渠道在当前市场中的表现如何？是否存在供货问题？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e当前代理渠道普遍面临供货压力。尽管需求良好，但代理商难以完全满足客户订单，这种情况在消费电子领域尤为明显。与此同时，由于代理商需要跟随客户需求变化调整策略，其定价灵活性有限。此外，大型客户通常会与供应商签订长期协议（LTA），进一步限制了代理渠道在短期内通过提价获利的空间。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在消费电子领域的表现如何？其主要产品及市场份额有何变化？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e矽力杰在消费电子领域主要专注于平板电脑、低端手机LCD/LED背光驱动以及接口保护芯片等细分市场。在手机领域，其占比相对较小，并非主力供应商；而在平板电脑和PC相关应用中，其表现更为强势。尤其是在PC电源管理芯片（如DC-DC转换器）方面，由于其作为国产龙头供应商，与美系厂商MPS形成互补竞争关系，因此份额保持稳定且略有增长。然而，在高端笔记本电脑设计中，由于历史上与MPS达成庭外和解协议，两者无法提供完全兼容的物料，这导致矽力杰无法全面覆盖所有ODM或OEM厂商。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e中美贸易摩擦加剧是否进一步推动了消费电子领域国产化进程？矽力杰能否因此显著扩大份额？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e消费电子领域的国产化进程一直持续推进，其中手机行业已取得显著成果，大部分关键元器件实现了国产替代。在PC及笔记本电脑方面，虽然矽力杰早已进入该赛道，但由于DC-DC电源管理芯片并非卡脖子技术节点，其技术壁垒相对较低。因此，即便中美贸易摩擦加剧，也未能显著提升其市占率。不过，在以台湾为主导设计生产体系下，矽力杰凭借灵活身份仍具备一定优势，可逐步扩大份额，但增速有限。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e矽力杰在汽车电子赛道中的布局及现状如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e在汽车电子赛道中，矽力杰虽拥有相关产品线，但目前该业务占公司总营收比例较低，相比之下国内其他企业如圣邦微、斯瑞普等，以及国际巨头如TI、英飞凌、安森美等更具竞争力。未来，公司可能希望加强这一业务的发展，但目前尚无明确迹象表明其能够快速提升市占率或实现重大突破。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e2025年模拟芯片板块的市场表现是否符合预期？行业整体情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e2025年模拟芯片板块的市场表现未达到此前预期。尽管2024年被认为是行业触底的一年，并预计2025年会出现明显复苏，但实际情况显示，消费类市场依然疲软。如果没有国家补贴政策对消费类需求进行大规模刺激，整体需求难以显著回升。这种疲软主要延续了疫情后的去库存周期。虽然从2023年底到2024年的去库存进展较为顺利，大部分库存已被消化，但不同赛道的情况差异较大。例如，一些厂商仍未完全消耗旧料。此外，国际政局的不稳定和中美贸易摩擦加剧也对半导体行业造成了负面影响，包括品牌客户和供应商在内的整个产业链都受到冲击。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e中美贸易摩擦对国内外客户及供应链有何具体影响？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e中美贸易摩擦导致企业在国内外市场间面临双重压力。一方面，国内龙头客户（如H、小米）要求供应链实现国产化；另一方面，海外客户（尤其是车规级和高端工业领域）则要求产品不能在中国流片或封测，有时甚至需要备份两套生产方案。这种双向需求显著增加了企业的投资成本。此外，由于重复投资和资源分散，不少企业难以兼顾两端需求，从而进一步削弱了竞争力。\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(43, 51, 230);\"\u003e国内半导体行业近年来过剩产能的问题如何形成？其后果是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e国内半导体行业近年来因风投过热导致资金投入过多，而实际需求并未同步增长。这种供需失衡引发了严重的产能过剩问题。所谓“国产替代”并未真正替代海外厂商，而是在国内形成内部竞争，加剧了价格战和资源浪费。例如，中低端模拟芯片领域由于技术门槛较低、差异化不足，竞争尤为激烈。一些企业因无法维持运营而退出市场，这进一步加剧了内部踩踏现象。\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "消费电子",
+            "模拟芯片"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 10703,
+        "likes": 0,
+        "favorites": 2,
+        "word_stats": {
+            "word_count": 4558,
+            "read_time": 10
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607071305680688",
+            "paid_at": 1783431474,
+            "created_at": 1783431474,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564311,
+                    "title": "津上精密机床2026H1更新—液冷、探针应用及市场份额等",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783406674
+                },
+                {
+                    "id": 70564306,
+                    "title": "国产大厂SOFC收入增速预期，设备单价和单GW需求测算。原材料工艺和成本优势，大客户验证进展和新客户接洽，排产和利润率预期等。",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404917
+                },
+                {
+                    "id": 70564305,
+                    "title": "光器件龙头大客户订单和交付更新。FAU供应渠道，CW光源扩产进度，MOCVD产能和需求。SENKO/Finisar/英特尔/康宁/天孚",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404466
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1750130546,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20509084,
+                "organization_type_id": 3,
+                "name": "Banks Zhang",
+                "sc_name": "Banks Zhang",
+                "en_name": "Banks Zhang",
+                "logo": "https://image.acecamptech.com/avatar/50520616/0.9129238771685159.jpg?x-oss-process=style/avatar",
+                "description": "Covering AI hardware/software and crypto. Hedge fund background with 8 years of experience and counting. Hope my ideas spark yours.",
+                "sc_description": "Covering AI hardware/software and crypto. Hedge fund background with 8 years of experience and counting. Hope my ideas spark yours.",
+                "en_description": "Covering AI hardware/software and crypto. Hedge fund background with 8 years of experience and counting. Hope my ideas spark yours.",
+                "state": "passed",
+                "followed": false,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {},
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783431489206",
+        "ts": 1783431490
+    },
+    "code": 200,
+    "ret": true
+}

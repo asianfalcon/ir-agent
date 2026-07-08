@@ -1,11 +1,11 @@
 [
   {
-    "chunk_id": "5d8e878dde8d009f43b78c2da051823a",
+    "chunk_id": "e9227249ea6e0cb5fbfe7c72ed42a7b0",
     "text": "# 杰华特:《股东会议事规则(草案)》(H股发行并上市后适用)\n\n公司：杰华特(688141.SH)\n公告日期：2026-03-31\n公告类型：议事规则/实施细则\n链接：https://data.eastmoney.com/notices/detail/688141/AN202603301820879953.html",
     "ticker": "688141.SH",
     "pub_date": "20260331",
     "period": "",
     "data_source": "announcement",
-    "source_file": "data/inputs/announcements/akshare/688141.SH/20260331_059_杰华特_《股东会议事规则(草案)》(H股发行并上市后适用).md"
+    "source_file": "data/processed/announcements/akshare/688141.SH/20260331_059_杰华特_《股东会议事规则(草案)》(H股发行并上市后适用).md"
   }
 ]

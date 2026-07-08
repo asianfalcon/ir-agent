@@ -1,0 +1,241 @@
+{
+    "data": {
+        "id": 70549519,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70513484
+        ],
+        "expert_public_resume": "na",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "多相控制器与DrMoS调研：应用场景,收入预期,在910C中的价值量变化,竞争格局与份额 - 聚焦TI/MPS/晶丰明源/矽力杰/芯朋微",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": null,
+        "dual_language": "chinese",
+        "corporation_ids": [
+            4219,
+            4238,
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 4219,
+                "ticker": "SH.688368",
+                "name": "晶丰明源",
+                "logo": "https://image.acecamptech.com/logos/8046948d-afb0-4062-bf82-0c62d31da346.svg"
+            },
+            {
+                "id": 4238,
+                "ticker": "SH.688508",
+                "name": "芯朋微",
+                "logo": "https://image.acecamptech.com/logos/a867d89a-05c8-40a5-a1e3-63cf9aa6afc8.svg"
+            },
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "1. 多相控制器与DrMoS应用场景，在昇腾产品中的价值量变化；\n\n2. 市场竞争格局与份额展望，招标结果，国产替代进展；\n\n3. 其他模拟下游如AI、自动化设备、光伏、消费电子领域景气度判断。",
+        "content": "\u003ch2\u003e\u003cbr\u003e\u003c/h2\u003e\u003cp class=\"ql-align-justify\"\u003e以下是专家观点：\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e预判下多相控制器和大电流DrMoS在市场上应用情况及其收入预期？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e2024年大电流DrMoS的营业额预计将达到1亿多元。90安培的产品在2024年七八月份开始小量产，年底进入爬坡阶段。虽然多相控制器还未正式量产，但DrMoS已经在去年（2023年）开始量产，最早是30安培和70安培的产品，主要应用于笔记本电脑。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e不同安培主要应用场景是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e30安培的产品主要用于普通办公用笔记本电脑，因为这些设备通常采用核显，对功率要求较低。50安培适用于高端笔记本电脑中的独立显卡以及一些小型服务器电源，因为这些设备对功率要求较高。70安培和90安培的产品则主要应用于AI领域，110安培已经进入研发和流片阶段，目前国内最大的单颗DrMoS就是110安培，而芯朋微、晶丰明源、矽力杰没有这么大的产品。而MPS连180安培都有。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eMPS官网上提到其130、150等安倍产品是如何实现的？是否通过拼接方式实现？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eMPS官网上提到的130、150等高功率产品并非通过拼接方式实现，而是通过不同封装形式来提高效率。例如传统5×6封装无法满足更大功能集成和散热需求，因此需要采用新的封装形式。封装形式的改变主要基于die size限制，以及控制逻辑上，需要这些器件需要检测每个DrMOS并上报电流与温度信号给多相控制器，再由控制器反馈给CPU或GPU，实现闭环控制。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eAI服务器中选择适配多相控制器时有哪些考虑因素？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eAI服务器选择适配多相控制器时，需要根据计算机算力来确定。例如单台服务器可能包含4个核，每个核对应一定算力，总体决定所需总功耗。因此，在设计时需要考虑单个CPU对应多少算力以及所需电流，然后根据整体需求确定合适的多相控制器配置。如未来发展中可能出现32项上下背靠背配置，以满足更大的计算需求。笔记本电脑通常使用6项或3+2+1项配置，其中3项针对核心用电（大核），2项针对其他运算需求（小核），1项可能供给接口芯片等。而服务器一般使用8项，未来可能根据计算机算力需求进行调整。针对单台服务器，可能包含多个CPU或GPU，每个CPU对应一定算力，从而决定所需总功耗。例如，一个服务器有4颗CPU，则需要4倍的功耗，而针对大型的算力集群，需要多个服务器叠加，所需要的功率也越大，而基于服务器的电压是稳定的，所以当功耗更大的时候，只能通过电流增大来实现。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e超频功能在CPU中的应用及其影响是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e超频功能是指通过提高供电电压来提升CPU性能。例如，单个CPU最大电流为80安培，在0.8伏下功耗为64瓦。当供电电压提高到1伏时，功耗将增至80瓦。然而，它能承受最大电流是固定的，如果给他100安会出问题。因为阻抗已经代表了自己本身器件里面耐受性。各大CPU厂家办法是将上调输入电压，这就是超频，而这样功耗也会随之增大。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e涨电压的方式可能随着芯片制程越来越小而空间有限？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的，和制程有关系，以前制程是90纳米、60纳，电压可以往上涨，未来如果要到5纳米、3纳米，功率高一点就会击穿。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e因此，对多相电源而言，电流越来越大是长期趋势？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的，未来对于多相控制器的控制电流精度，还有DrMOS电流最大峰值能承受多高的电流有关。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e多相控制器和DrMoS在昇腾中应用情况如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e以8项配置为主，即单颗GPU配备一个8项控制器，每项对应一颗DrMoS。昇腾服务器有配4个GPU的，也有配6个的，要看形态。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e比如8颗70安的，就是560安。如果是0.8伏，大概是300多瓦？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e不能这样计算，基于一个CPU里有几个核，里面每个核最大电流不一样，例如鲲鹏CPU，里边有多种形态，比如4、2、2或者4、3、2，单大核电流一般非常大，是4核并起来。剩下NPU小核是单颗或两颗并联起来的方式。所以里面区分大核和小核，大核共同用一颗如4项的DrMoS组成的相位控制，其他小核，因为电流不大，匹配的电流会小一点，他们会有区分，而不是单供电。他们有不同的控制环路，大核通常需要更大的用电脉冲，因此采用多个模块并联供电脉冲，而小核则使用单独或少量模块供电脉冲。这种分配方式不仅提高了效率，还避免了外部线路复杂化的问题。在实际应用中，根据客户需求选择合适的多相控制器配置，以确保系统稳定运行。他们通常根据服务器VR14协议标准做控制电流大小，并根据GPU形态搭配，而不是随意搭配，需要获得英特尔或AMD的认证，H公司有自己的协议，也需要按他的标准进行认证，否则系统无法正常运行。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e910B和910C现在用的是什么多相电源？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e8相。910C目前按匹配而言也是8项，现在尚未正式起量，目前还无法完全确定。另外，910C比910B的功耗并非翻倍，基于体积没有那么大，如果翻倍，温度很难解决。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e关于昇腾多相控制器是谁供应？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e最早是TI在做，它是鼻祖，后来MPS、英飞凌也在做，这几家在全球范围是较成熟的。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e单颗DrMoS价格如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e90安倍的、每套8颗DrMoS大约在100~200元人民币之间，近期可能是160~170元，单颗价格约为20元人民币。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e910C新产品，DrMoS价值量能提高多少？如果原来910B是160~170块钱，910C价值量多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e可能是230~240元一套，当前以8相为主，因为12相还未出炉。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e910C是否是2颗910B封装在一起？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e因为它的控制是两颗并行的，但为了做小，原来是一颗只缝一个DrMoS，两个5×6加在一起，比新的两个DrMoS封装在一起体积更大，所以把他们两个封装在一起，但他们是单独工作的。这样的形态基于，以前传统的是一个driver+2个MOS，是三个芯片封在一起，芯片与芯片之间需要连接。弊端是有小电感，且都走大电流的，损耗很大。而现在MPS把2颗MOS做成单die的形式。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e910c的GPU功耗是多少？如果一个GPU的功耗从300瓦增加到700瓦，会对多相电源带来什么样的影响？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前不清楚910C GPU的具体功耗数据，但如果一个GPU的功耗从300瓦增加到700瓦，将会对多相电源带来显著影响。两个GPU并联时，热积累会非常大，算力不会成倍增加。传统单独走80安培或90安培的8个通道的电流，电流无法满足需求，而需要更大的电流。例如，90安培可能不够用，需要110安培甚至更多。可以使用12项控制器实现更高电流。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e是否可以单卡里有2组多相控制器和对应多相电源？一颗GPU用1颗多相多相控制器，比如2组8相的多相控制器，然后16个DrMoS一起安装上去？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e这种并联方案是一种解决方案，还有一种方案是：例如未来如果有12相控制器，可以配备更大的多通MoS，也可以解决。另外并联方案会增加外围器件数量，占用更多空间，同时降低稳定性和直通率，因此需要权衡选择。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e其他模块对供电系统有何特殊要求？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eHBM、Vcore等供电逻辑是分开的。例如，Vcore需要独立且精确调控的稳压系统，其输入输出参数需严格匹配，对稳压、电流、电压波动敏感度要求极高，一旦输入参数不匹配可能导致温度过高、频率异常等问题。因此，各模块需根据指令处理特点进行差异化设计，以确保整体性能稳定运行。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e90安倍是否已经量产？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e24年7~8月份已经开始小批量量产。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e公司在H公司的DrMOS的份额大致是多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e新项目应该是50~60%。是910B而不是910C，因为910C还未大批量量产。基于后续如果它用12相，90安培是匹配不上的。H公司每年针对新老产品分别进行两种形式的招投标：新项目在开发前期，根据性能指标、参数和规格要求向多家供应商发出需求，各供应商提交方案后进行综合评估，包括价格、技术支持、供货保障周期等因素。最终选定三家供应商，其中“一标”通常占五到六成，“二标”占两到三成，“三标”约为一成左右。目前，公司已确认获得某新项目的一标资格。而老产品，对于已量产但需更换或新增供应商的老产品，会进行替代测试，包括可靠性验证及其他相关测试，周期通常为3个月以上。在完成所有验证后建立相应代码，以便未来替代使用。这类招投标一般集中在每年的3月至4月或年底，根据具体产品而定。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e针对910B型号，假设是50~60万颗，今年预计能贡献多少收入？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e假设是160~170元价格去算，单由于销售价格涉及保密协议，无法获取确切报价数据。另外笔记本也会贡献收入，而且电脑市场未来增长潜力较大，这与H公司笔记本电脑逐步从Windows系统切换至鸿蒙系统密切相关。据悉，由于美国限制政策影响，可能推动国内政府采购及国企订单增加，同时也符合信息安全需求。此外，小型机箱PC业务也被视作未来增量市场的重要组成部分。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e笔记本电脑所用的多相电源如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e一般是20~30瓦的那种4相占比更多，低电压供电的核心一般是4项更多。而正常瓦数的电脑，6相占比更多。另外，公司还有小机箱PC业务，不仅仅是笔电。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e公司英特尔相关业务目前进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e公司与英特尔合作的小电流DrMoS业务自2023年年中开始正式批量化生产，并经历了一年的验证周期。目前，公司已通过英特尔MVC认证及VR14等协议认证，为进一步拓展合作奠定了基础。然而，英特尔的主板业务现在已经很少能看到，基本是华硕、联想、戴尔等厂商，基于英特尔主要卖CPU，所以本公司主要是和主板厂商合作，如华硕等。基于DrMoS装在电脑的主板上。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e英特尔是否可以指定多相控制器厂商？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e不是指定，厂家只要满足intel的协议标准要求即可。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e对于H的份额，如果今年是50~60%份额，去年是多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e对于90安倍，去年应该不到10%，因为8月份刚开始小批量爬坡，9月开始慢慢爬坡过程。24年相对较少，DrMOS大约1亿左右。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e关于H公司自动驾驶车规级芯片认证及其应用进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e公司目前正在推进车规级芯片认证工作，但尚未正式获得编码，这一过程预计将在今年年底或明年年初完成。车规级芯片需要经过严格的设计验证和可靠性测试，因此实际实现量产可能要到2026年。目前已有部分小电流产品（几安培至十几安培）用于汽车领域，但仍处于验证阶段。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e车规级芯片为何对材料和工艺有更高要求？成本差异体现在哪些方面？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e主要是封装工艺和封装材料不同，晶圆基本是一致的。车规级芯片需满足极端环境条件，例如夏天温度可能达到七八十摄氏度，因此对材料稳定性和耐高温性能要求较高。例如，在绑定线焊接时，需要使用钯等贵金属以确保熔点更高、稳定性更强，而普通消费类或工业类芯片通常使用银线或铜线即可。这种材料差异导致成本显著增加，一般是普通消费类产品成本的三到四倍。此外，传统消费类芯片结温通常标注为150℃（壳体温度125℃），而车规级则需达到175℃以上。22年，公司花了大几千万，建了一个车规级实验室，想在拿到车规级之前，实验室先摸一遍。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e公司在国内市场中如何应对竞争者，如芯朋微、晶丰明源等企业？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e相较竞争者，公司具有以下优势：首先，在技术架构上，公司采用单晶圆设计，将两个MOS管与一个驱动器集成到一颗单晶圆内，和MPS相似，而他们仍沿用三个独立器件封装的方法，类似英飞凌的路线。这种单晶圆设计不仅降低了封装复杂性，还减少了控制环路，提高了效率，同时降低了信号采集误差；其次，在成本方面，由于单晶圆设计简化了封装工艺，相比传统多器件封装方式，其制造成本显著降低；最后，这种架构还提供了更大的迭代空间，有助于未来技术升级。公司采用“虚拟IDM”模式，尽管没有完整的垂直整合生产能力，但公司具备强大的研发、技术工艺和团队能力。公司拥有一支由全球顶尖专家组成的核心工艺团队，其中包括曾在台积电担任重要职务的资深专家。凭借这一团队，公司能够快速实现从90纳米到65纳米，再到35纳米甚至15纳米制程节点的技术迭代。这种迭代能力使得芯片尺寸（die size）显著缩小，从而提升性能并降低成本。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e8寸晶圆大概可以切多少颗DrMOS？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e对于DrMOS器件，由于封装限制（如5×6封装），每片8英寸晶圆最多可切割4,000颗左右，实际产量通常在3,000颗上下。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e贵司在中芯的产能是否足够？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e足够。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eMPS、矽力杰等是否会因政策因素受到销售限制？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e在中国市场尚未受到明显销售限制。然而，这取决于未来美国政策变化。以H公司为例，其策略是避免对单一供应商产生依赖，通过选择2-3家不同品牌作为备选方案来保障供货安全性。例如，在控制器或功率器件项目中，每个关键元件都会有两到三家供应商参与，以应对潜在禁售风险。这种“拼图式”采购策略确保即使某一家供应商无法供货，也有其他替代方案可以迅速补位。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e公司是否能对MPS进行平替？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前是平替的，也基于H公司不可能只选一家供应商。不可能到时候如果项目不做，H公司服务器就无法进行。今年的新项目，50~60%的份额基本拿的都是MPS，但老项目可能三月份还会有一次招标。但这个个人并不清楚。H公司正在推动其产品原材料实现国产化闭环，以规避国外技术或原材料断供带来的风险。这种闭环要求所有关键元件，包括芯片、结构器件以及外围材料，都由国内产业链提供。这种国产化闭环不仅提高了供应链稳定性，还成为客户选择国产品牌的重要加分项。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在传统领域，如消费类电子市场，公司如何与其他模拟IC厂商竞争？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e尽管近年来宏观经济环境不佳，但公司仍实现了营业额增长，其原因主要包括以下几点：第一，公司DC/DC控制器芯片出货量持续大幅增长；第二，即便市场价格竞争激烈，公司仍保持盈利能力。其核心竞争力来源于强大的工艺团队支持，使得设计迭代速度远超同行。例如，从早期65纳米工艺升级后，同样功能的DCDC控制器面积显著缩小，同时性能得到提升。在价格战背景下，这种技术优势帮助公司降低成本并增强市场竞争力。这是基于，单颗晶圆的器件产出增加直接提升了成本优势。由于单die的晶圆能够生产更多器件，单位成本显著降低，这使得企业在价格竞争中占据主动地位，即便面对极低价格的市场竞争，也能保持盈利能力。此外，产品性能也得到提升，为客户提供了更高性价比的选择。这种双重优势推动了出货量增长，同时带动营收相较以往实现一定程度增长。品牌价值方面，由于目前合作客户多为行业标杆型大厂，这进一步增强了市场认可度，并吸引中小型公司跟进采购。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e除了昇腾，H作为投资方和客户，对企业发展有哪些具体支持？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eH公司不仅是公司的投资方，也是重要客户之一，其在产品层面积极采用公司的芯片。同时，在通讯基站领域，公司芯片广泛应用于基站中的CPU模块，每个基站通常配备两颗CPU，用于处理用户信息、声音及视频数据等复杂计算任务。尤其是在室外基站环境下，由于温度要求较高，公司产品凭借其稳定性和适应性满足了这一需求。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e展望下模拟芯片下游，消费、家电、通讯、服务器、交换机、AI、汽车、计算机、工业等，您觉得今年可能增长会较好，哪些可能还会下滑？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e未来增长较快的领域包括AI、服务器以及5G通讯设备相关市场。其中，AI和自动化设备（如黑灯工厂）将成为主要增量来源。例如，小型微控电机及其集成控制器、IP模块与驱动电机功率器件等，将在自动化设备中获得广泛应用，这些细分市场每年的增速可能达到20%-50%。此外，偏远地区4G/5G网络覆盖建设也将带来新的需求增量。光伏产业近年来表现疲软，包括家用光伏系统在内的一些细分市场因政策支持力度减弱而逐渐失去吸引力。同时，传统消费电子（如家电、耳机、机顶盒等）预计难以持续增长。一方面，这类耐用品更新周期长；另一方面，此前政府补贴政策仅产生短期促进效应，而后续需求难以维持。此外，与房地产密切相关的大宗家电（如冰箱、空调）受制于房地产行业整体低迷，也不被看好。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e公司2025年的收入目标如何设定？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e根据管理层规划，公司2025年的收入目标初步设定为22亿至24亿元人民币。目前，该指标已分解至各部门，但尚未完全确定。这一目标体现了公司对未来业务发展的信心，同时也考虑到了实际可行性。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e今年在产品和销售方面的主要目标是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e今年产品目标包括以下几个方面：大电流DrMOS\u0026nbsp;90nm目前处于爬坡阶段。多项控制器必须实现技术突破并具备显著亮点，这是今年的重要任务之一。数字链信号芯片预计会有较大进展，该芯片去年已经完成验证并通过测试，今年将进一步推进相关工作。在ACDC领域也有显著增量，目前H项目引爆了笔记本电脑和手机快充口市场，这些设备基本上都采用了公司的ACDC芯片及协议，公司在这一领域具有独占性地位。例如66W、88W、120W等快充方案均由公司提供支持。此外，公司还在氮化镓（GaN）市场发力，通过与英诺塞科达成战略合作，将其氮化镓芯片与公司的控制器进行合封，共同推出高性能解决方案。今年该领域预计收入将达到一个多亿。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "多相控制器"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 9265,
+        "likes": 0,
+        "favorites": 4,
+        "word_stats": {
+            "word_count": 6258,
+            "read_time": 13
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607071306200203",
+            "paid_at": 1783432019,
+            "created_at": 1783432019,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564311,
+                    "title": "津上精密机床2026H1更新—液冷、探针应用及市场份额等",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783406674
+                },
+                {
+                    "id": 70564306,
+                    "title": "国产大厂SOFC收入增速预期，设备单价和单GW需求测算。原材料工艺和成本优势，大客户验证进展和新客户接洽，排产和利润率预期等。",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404917
+                },
+                {
+                    "id": 70564305,
+                    "title": "光器件龙头大客户订单和交付更新。FAU供应渠道，CW光源扩产进度，MOCVD产能和需求。SENKO/Finisar/英特尔/康宁/天孚",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404466
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1737531287,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20506884,
+                "organization_type_id": 3,
+                "name": "Patrick",
+                "sc_name": "Patrick",
+                "en_name": "Patrick",
+                "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+                "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "state": "passed",
+                "followed": true,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {},
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783432112842",
+        "ts": 1783432113
+    },
+    "code": 200,
+    "ret": true
+}

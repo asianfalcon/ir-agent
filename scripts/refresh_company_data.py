@@ -23,12 +23,14 @@ import json
 import re
 import sqlite3
 import sys
+import time
 from dataclasses import dataclass
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
 import akshare as ak
+from curl_cffi import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -198,11 +200,16 @@ def fetch_news(company: Company, limit: int) -> dict:
     try:
         df = ak.stock_news_em(symbol=company.code)
         records = df.astype(str).to_dict(orient="records")[:limit]
+        source_api = "akshare.stock_news_em"
     except Exception as exc:
-        return {"error": repr(exc), "raw": None, "files": []}
+        try:
+            records = _fetch_news_eastmoney_direct(company.code, limit)
+            source_api = f"eastmoney.search_api_fallback; akshare_error={repr(exc)}"
+        except Exception as fallback_exc:
+            return {"error": f"akshare={repr(exc)}; fallback={repr(fallback_exc)}", "raw": None, "files": []}
 
     raw_path = raw_dir / f"{company.ticker}_news_{today}.json"
-    raw_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
+    raw_path.write_text(json.dumps({"source_api": source_api, "records": records}, ensure_ascii=False, indent=2), encoding="utf-8")
     paths = []
     for index, row in enumerate(records, 1):
         title = row.get("新闻标题") or row.get("标题") or row.get("title") or f"{company.name}新闻"
@@ -230,6 +237,71 @@ def fetch_news(company: Company, limit: int) -> dict:
     return {"raw": raw_path, "files": paths}
 
 
+def _clean_news_text(value: Any) -> str:
+    text = str(value or "")
+    text = re.sub(r"</?em>", "", text)
+    text = text.replace("\\u3000", "").replace("\u3000", "")
+    text = text.replace("\r\n", " ").replace("\n", " ")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _fetch_news_eastmoney_direct(code: str, limit: int) -> list[dict]:
+    callback = f"jQuery351_{int(time.time() * 1000)}"
+    inner_param = {
+        "uid": "",
+        "keyword": code,
+        "type": ["cmsArticleWebOld"],
+        "client": "web",
+        "clientType": "web",
+        "clientVersion": "curr",
+        "param": {
+            "cmsArticleWebOld": {
+                "searchScope": "default",
+                "sort": "default",
+                "pageIndex": 1,
+                "pageSize": max(10, min(limit, 100)),
+                "preTag": "<em>",
+                "postTag": "</em>",
+            }
+        },
+    }
+    params = {
+        "cb": callback,
+        "param": json.dumps(inner_param, ensure_ascii=False),
+        "_": str(int(time.time() * 1000)),
+    }
+    response = requests.get(
+        "https://search-api-web.eastmoney.com/search/jsonp",
+        params=params,
+        headers={
+            "referer": f"https://so.eastmoney.com/news/s?keyword={code}",
+            "user-agent": "Mozilla/5.0",
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+    text = response.text.strip()
+    prefix = f"{callback}("
+    if text.startswith(prefix) and text.endswith(")"):
+        text = text[len(prefix) : -1]
+    payload = json.loads(text)
+    rows = payload.get("result", {}).get("cmsArticleWebOld", [])
+    records = []
+    for row in rows[:limit]:
+        article_code = row.get("code", "")
+        records.append(
+            {
+                "关键词": code,
+                "新闻标题": _clean_news_text(row.get("title")),
+                "新闻内容": _clean_news_text(row.get("content")),
+                "发布时间": str(row.get("date", "")),
+                "文章来源": str(row.get("mediaName", "")),
+                "新闻链接": f"http://finance.eastmoney.com/a/{article_code}.html" if article_code else "",
+            }
+        )
+    return records
+
+
 def report_files(company: Company) -> list[Path]:
     return sorted((ROOT / f"data/inputs/reports/{company.name}").glob("*.pdf"))
 
@@ -244,6 +316,18 @@ def process_local_files(paths: list[Path]) -> int:
         except Exception as exc:
             print(f"[refresh] process ERROR {path}: {exc}")
     return chunks
+
+
+def clear_lancedb_rows(ticker: str, data_source: str) -> None:
+    import lancedb
+
+    db = lancedb.connect(str(ROOT / "data/storage/lancedb_root"))
+    if "chunks" not in db.table_names():
+        return
+    tbl = db.open_table("chunks")
+    safe_ticker = ticker.replace("'", "''")
+    safe_source = data_source.replace("'", "''")
+    tbl.delete(f"ticker = '{safe_ticker}' AND data_source = '{safe_source}'")
 
 
 def process_expert_minutes(skip_graph: bool) -> dict:
@@ -302,6 +386,12 @@ def refresh_company(company: Company, args) -> dict:
         summary["report_files"] = len(reports)
     else:
         reports = []
+
+    if not args.skip_announcements and announcements["files"]:
+        # Announcements are fetched as a full date window. Rebuild the ticker's
+        # announcement slice to avoid duplicate legacy paths after directory
+        # migrations (for example inputs/... -> processed/...).
+        clear_lancedb_rows(company.ticker, "announcement")
 
     summary["document_chunks"] = process_local_files(reports + announcements["files"] + news["files"])
     summary["lancedb"] = count_lancedb_rows(company.ticker)

@@ -1,0 +1,227 @@
+{
+    "data": {
+        "id": 70549522,
+        "liked": false,
+        "disliked": false,
+        "favorited": false,
+        "favorite_ids": [],
+        "current_price": 300,
+        "original_price": 300,
+        "free": false,
+        "event_ids": [],
+        "meeting_ids": [
+            70513506
+        ],
+        "expert_public_resume": "na",
+        "original_title": null,
+        "source_url": null,
+        "expert_role": "employee",
+        "events": [],
+        "title": "GaN调研: 某头部厂商产品线情况及出货量, 市场竞争格局, D-Mode vs E-Mode成本/工艺/性能对比及未来发展趋势和应用场景 - 聚焦英飞凌/MPS/东科/南芯/茂睿芯/能华/矽力杰  ",
+        "transcribe": null,
+        "badges": [
+            "hot"
+        ],
+        "has_article_speech": null,
+        "is_deleted": false,
+        "type": "minute",
+        "card_permission_item_code": "Minute:a_expert_minute",
+        "access_level": "original",
+        "repost": false,
+        "shared": false,
+        "translation_type": null,
+        "dual_language": "chinese",
+        "corporation_ids": [
+            26106
+        ],
+        "corporations": [
+            {
+                "id": 26106,
+                "ticker": "SH.688141",
+                "name": "杰华特",
+                "logo": "https://image.acecamptech.com/logos/bb03fd9b-ac9b-42b8-9a8f-b347c75d42e0.svg"
+            }
+        ],
+        "is_anonymous": false,
+        "summary": "要点：\n\n1. 产品线情况。主要生产65W、45W、30W、20W等功率段的氮化镓快充产品，主要型号包括1565、15158K等系列。\n\n2. 市场竞争格局。在氮化镓合封市场占有约20-30%份额，主要竞争对手包括东科、南芯、茂睿芯等。主要采购英诺的晶圆。\n\n3. E-Mode与D-Mode技术对比。E-Mode优势：性能稳定、多管并联、适合中高端市场。D-Mode优势：成本低、热稳定性好。D-Mode主要挑战：驱动问题、EMI控制、可靠性等。\n\n4. 未来发展趋势。D-Mode在解决驱动问题后可能在中低端市场占据更大份额，E-Mode在中大功率工业级市场具有优势，低压氮化镓在服务器电源等领域具有发展潜力。",
+        "content": "\u003cp class=\"ql-align-justify\"\u003e专家观点:\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eQ\u0026amp;A\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e氮化镓快充产品的出货量和规格型号有哪些？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e公司目前主要有几种规格型号的氮化镓快充产品。首先是260毫欧导阻这一款，主要针对2个产品：一个是中端，第二个是低端，都是65W。还有一个半桥的。半桥的是一个driver和两颗260毫欧的氮化镓合封芯片。65W的目前主要是两个型号，一个是1565，一个是15158K。15158K主要面向电商等非标市场，可以做单面板，属于客户终端生产工艺的应用；而1565这一颗一般是双面板为主。还有一些其他规格如330毫欧（45W功率段）、1欧姆至1.2欧姆（针对30W左右的功率段）以及2欧姆左右（20W左右功率段）的产品。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e不同型号之间有什么区别？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e1565和15158K之间的主要区别在于封装形式不同。1565采用的是DFN 6×8封装形式，而15158K则采用另一种封装形式，封装大小不同。中高端客户要用1568K非对称式半桥的方案，主要面对笔电的一些客户，像联想、戴尔、LG等。华为用的是ACF有源钳位的氮化镓方案，用于笔电项目，一个是90W，另一个是140W，这两颗用的也是杰华特的1551芯片。华为的手机目前是没有用氮化镓。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e45W/30W/20W也是做充电头PD快充吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的，当前氮化镓的合封主要用于PD快充头。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e各个型号的大概出货量是多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e出货量较大的几个型号包括15158A、15158B以及15158C。这三款分别对应不同阻值和功率段，其中：\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e15158A：1.5~1.6欧姆，适用于20W非标市场；\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e15158B：最大1.2欧姆，标准值为1欧姆，适用于20W标规市场；\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e15158C：适用于30~33W以内的快充市场。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前这三款主要针对电商市场，需求量较大。去年2024年，这三款芯片的总出货量超过1亿只。其中，氮化镓合封产品收入一共是1.3亿，而非标产品约占三成至四成，其他的主要是安克、公牛、亚马逊、贝尔金、绿联等电商品牌。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e快充头整体市场大概多大规模？杰华特占比多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e在氮化镓合封市场中占大概两成多到三成的份额，是主要供应商之一。其他主要竞争对手包括东科、南芯、茂睿芯、OB、芯朋微和硅动力等。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e关于氮化镓器件采购方面，请详细说明一下目前采购情况及未来发展趋势。\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前主要从英诺采购wafer，单片wafer的价格取决于耐压值。早期使用650V耐压值，现在基本上都是700V（2.5代工艺）。未来第三代产品预计将在2025年开始批量导入，其优化后的颗粒数更多，良率更高。原来260毫欧，单张8寸的wafer可能切6-7千颗，第三代优化后可能会切到8000多颗。良率方面，目前2.5代工艺良率已达到93%，而早期仅为70%左右。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e目前2.5代工艺的一片8寸晶圆价格是多少？其成本变化趋势如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前一片8寸晶圆价格可能约为8000元左右，早期曾高达1万多元，但随着成本降低，价格有所下降。随着D-Mode进入市场，致能、能华、京东方、润芯微、华灿等厂商势头很猛，市场竞争加剧，也进一步压低了价格。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eD-Mode会比E-Mode便宜很多吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前看起来是的。致能和能华这两家目前在市场的报价好像比E-Mode便宜接近一半。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e从合封方案的角度，E-Mode和D-Mode相差大吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eD-Mode在价格上还是有一些优势。以前做65W合封，原来最早用E-Mode的单die价格成本比D-Mode的单die+低压MOS的成本要高一些。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e请解释一下D-Mode比E-Mode便宜的原因。\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eD-Mode衬底材料用蓝宝石，因为蓝宝石上可以直接生长氮化钾，不需要太多的晶格适配缓冲层。而E-Mode硅基衬底需要多层缓冲层以适配晶格，如果长得薄的话，晶格很容易错位，中间会残留游离电子，从而影响器件的可靠性，特别是对于大动态双脉冲测试，器件很容易失效，所以在生长衬底的时候，缓冲层长得时间相对较长也较厚，从而提高了成本。这是不同衬底带来的器件在成本上的差异。另外还有一个直观条件是器件的封装形态也不同。D-Mode属于耗尽型，需要串联低压MOS使用，有两个die；E-Mode是可以直驱的，不需要下面再加低压MOS。相对于封装工艺来讲，E-Mode的封装工艺相对简单，成本相对D-Mode会低一点。从可靠性来讲，不同的D-Mode器件特性不同，在低压MOS的参数配比上有一些局限性，所以一些对应用场景不太熟悉的D-Mode厂家吃了很多这样的亏，早期拿的低压MOS没有做好配比的话，在终端客户处很容易失效，所以目前暂时还没有看到D-Mode大批量的量产，目前还是以E-Mode形式为主。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e如何看待未来D-Mode和E-Mode的发展趋势？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e这两款各有优劣势。D-Mode主要使用6寸晶圆厂，这些生产线多为LED生产线，设备折旧成本已完全摊销，因此其产品价格具有竞争力。蓝宝石衬底在平面和垂直的耐压程度都比较高，具备高耐压特性，可以实现更高耐压（如1200V、1700V）。然而，D-Mode采用蓝宝石衬底，其热阻较高，散热性能不如硅基。蓝宝石衬底的控制模态复杂，上下端需要做Cascode，器件匹配性比较困难，封装形态较为麻烦。另外，蓝宝石的D-Mode没有太大的迭代空间，目前市场还没有直驱形式的D-Mode芯片。E-mode则使用8寸晶圆厂，每年需承担设备折旧成本，因此价格压力较大。目前英诺的产品基本上也是在亏本卖。E-Mode的硅衬底一般最高能做到900V，再往上就很难做上去。但其迭代空间相对较大，从一代到第三代，不仅性能有所提升，良率和单die的大小也有所改善。E-Mode可以实现多管并联，更适合中高端市场应用。从2025年和2026年的情况来看，如果D-Mode能够解决驱动问题，其性价比优势将使其在消费类市场占据更大的份额。然而，由于当前D-Mode无法实现多管并联，所以只能用在对价格非常敏感的中低端市场。如果未来D-Mode能实现负电压直驱，则可能会显著提升其市场竞争力。目前已有几家公司在积极研发新的驱动方案，一旦成功，将对整个行业产生重大影响。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e当前国产芯片在驱动问题上的进展如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e国产芯片在解决D-Mode驱动问题上已经取得了一定进展，有几家公司正在规划新的产能和产品版图，并积极研发负电压驱动方案。如果能够成功解决这一瓶颈，将极大提升国产芯片的竞争力，使得国内电源厂家更愿意接受这种新技术，从而推动整个行业的发展。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e如果D-Mode的driver问题可以解决，对英诺会产生什么影响？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eE-Mode在高压市场特别是1000V以上基本上是很难实现的，但其在中低电压（100V以内）的市场体量非常大。例如在汽车上的激光雷达、通讯设备等需要高开关频率特性的应用中，E-Mode的中低压器件表现优异。在高压应用中经常存在电子陷阱问题，而低压应用则不存在这些问题，因此表现更为稳定。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在激光雷达和通讯设备领域，氮化镓器件的应用前景如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e激光雷达要求更快的扫描速度和更高的频率，这使得具有良好开关频率特性的氮化镓器件非常适合。此外，汽车上的负电压驱动控制器相对复杂，而正电压驱动的氮化镓器件则简化了控制。在通讯设备如5G基站发射接收端，也需要使用氮化镓器件，因为传统技术无法满足其高频需求。例如华为在英诺的珠海工厂包下产能生产用于基站的中低压E-Mode氮化镓器件。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e英诺目前在消费级PD快充市场中的份额是多少？主要竞争者有哪些？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e英诺目前在消费级PD快充市场中的份额尚未达到90%，因为还有其他竞争者如纳微达斯也占有一定市场份额。纳微达斯采用台积电芯片，占据约20%-30%的市场份额，主要针对电视等中高端产品，安克、绿联等品牌也都有使用其产品。纳微达斯通过将driver控制器集成到芯片内，提高了转换效率并减少了功率损耗，这对于小体积、高功率密度需求的高端客户非常有吸引力。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e未来几年内，随着D-Mode的driver技术逐渐成熟，中低电压市场格局可能会发生怎样的变化？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e随着D-Mode技术逐渐成熟，其在价格敏感型市场中的占比可能会显著增加。目前致能、能华等公司积极推广D-Mode技术，并采取价格战策略以抢占订单。因此，在未来一两年内，中低电压市场格局可能会发生变化，D-Mode技术或将占据50%-60%的市场份额，而英诺和纳微达斯则分割剩余40%-50%的份额。在30W以下的大众消费类产品领域，这种趋势尤为明显。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e能华一片wafer的价格现在是多少？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e能华6寸wafer的价格在2000多块钱左右，致能的价格比能华贵3成到4成，应该是3000块。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e英诺的E-Mode价格高，除了工艺的问题，另外一个原因是它自己是IDM，重资产且人工成本较高，现在有些厂商转做E-Mode，如果有像芯联集成这种原来就做8寸的igbt功率电子线，拿出一部分loading去做氮化镓，在工艺爬到跟英诺同等情况下，一片wafer卖5000块钱，是不是反而与6寸的2000块钱的D-Mode相比更加有吸引力？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e不一定。一些原本生产8寸晶圆的厂商转做氮化镓会存在很多不确定的因素。第一，虽然wafer的硅基衬底相同，但是缓冲层长晶部分对于这些厂商来讲是空白的，外延长晶的材料和设备也具备一定的门槛。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e像青岛聚能这种做E-Mode的厂家，如果工艺能做到英诺的水平或者相差0.5代的水平，但是价格低很多的情况下，与致能、能华这种D-Mode厂家相比有竞争力吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e如果是做E-Mode，在价格上面很难打得过蓝宝石。首先是长晶的时间，例如，在蓝宝石上长晶可能只需2-3周，而在硅基上则需要4-8周。此外，高温条件下进行生长过程导致电力消耗增加，同时设备损耗也更大。因此，即便不考虑设备折旧，仅材料成本和能源消耗等就使得硅基氮化镓的成本难以降低。国内还有一家公司晶通半导体，以前就是做E-Mode的，但是价格与英诺的价格基本没有太大区别。这是唯一一家能替代英诺的，性能指标都相当不错。他们原来的Fab厂是比利时的BelGaN，但是后来BelGaN破产倒闭，如果BelGaN没有倒闭，估计晶通今年会有很大的量的提升，会替代英诺的一些市场。BelGaN的工厂以前是安森美的一个工厂，设备成本早在20年前就已经收回来了，没有太大成本上的压力，而英诺都是新进的设备。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e如何看待未来E-Mode与D-Mode市场份额变化的趋势？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e在应用灵活度方面，目前还是E-Mode表现更好，但是未来如果D-Mode的driver能突破，相当于应用的难点得到解决，D-Mode市场就可能会有非常大的增长。目前驱动的这个节点还没有成型，没有成型的情况下还是E-Mode比较好用一点，其性能稳定且适用于多管并联结构。另外，D-Mode还有一个问题点在于EMI（电磁干扰）很难处理，安规法规上对EMI有硬性指标规定，如果测试不通过就无法获得认证证书，从而无法做标规市场。还有一点在于D-Mode由于开关速度过快，会导致高dv/dt，造成驱动电压漂移，导致开关驱动的点不稳，开关的时序就会受到影响进而可能出现误开启的问题，对于市场应用来讲是非常大的隐患。未来如果E-Mode和D-Mode的driver都出现的话，E-Mode有可能在中大工业级市场有比较大的机会，因为其散热条件会更好，功率段可以做得很大。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e是否可以理解为D-Mode尽管有一些成本上的优势，但实际还是有一些技术问题需要解决，但是这些技术问题解决的时间是不确定的？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e即使D-Mode的driver做出来，是否其实也还是会有一些应用上的瓶颈？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e现在D-Mode的driver应用主要是负电压驱动的问题，电压驱动会造成一些驱动的环路采样，精度可能会有一些受限。控制器过来的供电电压一般是正电压，现在把正电压反向改成负电压，这个环路是可以实现的，但是难以控制负电压精度，并且负电压驱动环路是有一点难度的。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e可以总结为E-Mode的问题是cost down比较慢，D-Mode有一些应用上的瓶颈。最好的解决方案应该是E-Mode实现技术上的创新，能够把价格拉到跟D-Mode差不多的情况。\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的。现在E-Mode还有一个QST工艺，如果其工艺成本能降下来的话，未来可能会非常具有竞争优势。QST工艺是陶瓷衬底，陶瓷衬底上直接生长氮化镓，不需要中间的缓冲层。这是由于陶瓷衬底与氮化镓晶格密度适配性极高，几乎是一致的。并且陶瓷的热阻也非常小，与碳化硅相差无几。目前由于QST未大规模量产，前期价格较高，但一旦实现大批量生产，预计其成本将有所下降，从而对市场产生重大影响。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e杰华特目前在氮化镓领域有哪些布局及合作伙伴？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e现在E-Mode已经在量产，D-Mode也在测试，并且有一些测试指标显示出良好的结果，主要用于消费类市场。关于服务器电源方面， DrMoS已经在2023年的年中开始量产，最早是30安培和50安培的小电流产品，主要应用于笔记本/PC电脑市场，其中50安培主要是用于高端的游戏本上面单独的GPU，另外还有一些用在服务器上面。在24年有一个质的突破，90安培的DrMoS在7-8月份的时候拿到LP的计划，从8月份开始进入产能爬坡阶段。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e90安培的主要客户是谁？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e华为。DrMoS不是氮化镓，是一个driver加两颗硅MOS。这个市场目前还没有用氮化镓，但未来肯定会用，\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e未来低压氮化镓器件的发展前景如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e低压氮化镓器件具有广阔的发展前景，目前多家公司如晶丰明源、芯朋、矽力杰、茂睿芯等都在研究30V左右的低压氮化镓的E-Mode器件在CPU、GPU的DrMoS上的应用，只是现在还没有量产。30V的E-Mode器件成本相比低压MOS成本要高一些，如果未来英诺低压的成本能够降下来，在服务器电源市场的空间也是相当客观的。由于传统硅基器件频率已达到极限，高频需求只能通过采用如30兆赫甚至100兆赫以上频率的氮化镓来满足，因此未来发展潜力巨大。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e杰华特公司是否有意扶持一家氮化镓厂商？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e目前还是以英诺为主。与英诺的关系和合作深度都非常深，因为目前市场上还没有其他能匹配英诺的氮化镓的器件厂家。国内晶通半导体，他们在E-Mode方面还比较专业，可靠性测和效率方面表现都不错。D-Mode听说今年Q1会有样品出来，进展较快。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e晶通的Fab在哪？谁给他做代工？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e在年后2/3月份的时候工程样品发布时才会知道是哪家代工的。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eMode目前来看国内除了英诺还有哪些供应商？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e三安听说有自己做E-Mode，能华也有自己做，另一个就是台积电，台积电的E-Mode跟英诺性能相差不大。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在服务器DC/DC或高压PSU上面有没有用过英飞凌的管子？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e没有。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e2024年杰华特在AC/DC是整个系列做了1.3个亿吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的。大概相当于出货1亿颗。因为低电压相对价格较低，像20W的一套也就是一块钱左右，30W的价格在1块23左右。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在测试能华或致能等供应商提供的D-Mode样品时，有没有遇到炸机现象？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eCascode的低压管子匹配不好的话很容易炸机，这是比较常见的。致能和能华的业务分为两块：一块是提供D-Mode的晶圆，另外一块是出功率器件。如果是合封的话，也可以自己找低压MOS。如果后面要叠die的话，会直接把控制器和低压MOS做在一起，不需要在一个器件里面分成3个die，3个die的失效率会偏高。如果只需要一个控制器跟低压MOS，做成单die的话，外面就直接挂一个低压MOS的die就好了，这样器件的灵活性会高一些。目前测试是3个die封进去，一个控制器，一个氮化镓，一个低压MOS，但是这样封装成本会上升，die的数量越多，封装可靠性也随之降低。所以未来会希望能够把控制器和低压管放在一起做成一个单die。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e这样控制器的成本会不会上升？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e控制器的层数多，有二三十层，低压MOS只有十几层。二三十层的做成十几层这么大的话，成本上肯定是会有一些影响的。所以现在是想再看看控制器能不能也做成十几层，把低压MOS做进去。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e关于D-Mode的驱动，是做在AC/DC电源管理芯片里面还是单独的驱动？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e单独做一个driver，想要把它跟氮化镓放到一起，一个driver配一个氮化镓，类似于服务器电源上的DrMoS，就是把一个驱动和一个功率器件放在一起。这样做的好处是只需要输送一个驱动信号，控制环路和驱动基本是跟氮化镓绑在一起的，控制环路的响应速度和信号就会非常快，并且减少了外围杂散因素的影响，器件的安全性和可靠性会高一些。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e杰华特是否有意向把D-Mode的负压驱动也集成在AC/DC电源管理芯片里面？这样未来是不是就可以直接驱动D-Mode的芯片？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e公司一直有计划，但由于人力资源有限，还没有能力直接去做D-Mode driver的项目。对于公司来讲，能把driver做进去是最好，这样外围杂散就少，安全性会更高一点。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在合封英诺的E-Mode中，是否遇到过一些失效情况？这些失效主要由哪些原因导致？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e是的，确实遇到过一些失效情况。首先，在早期系统应用中，由于雷击的控制电压偏高，容易引起电压击穿。其次，在应用场景上，输出大动态变化时，会产生DS尖峰电压，就是开关管的尖峰电压太高，这种尖峰电压可能会击穿器件。对于这些应用场景采取了一些措施来规避这些问题，第一个是针对高温环境，ADSS产生的漏电流会影响器件效率和温度；还有在封装时会外加一个普通硅基二极管以吸收尖峰电压；以及通过让英诺调大器件内部的Rg来优化氮化镓的开关速率，因为过快的开启和关断会造成EMI的影响。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e您提到过D-Mode管子在测试时出现失效的问题，能否详细解释一下原因？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eD-Mode管子的失效主要与D-Mode的管子与下管低压管的匹配有关。下面的低压管会有一些参数上的区别。平台电压是稳定的，但是在驱动时，VGS电压会有一些相关的扰动。在开关管切换过程中，该比值可能导致VGS电压抖动。这种抖动是在VGS电压从0到最高电压切换时，由于CRSS电容的影响，会反抽电流，使VGS平台拉升，会进入微导通状态（本来应该是关断的），导致电压抖动，从而造成器件失效。因此，不同功率等级和阻值大小的器件，其器件参数和配比的低压管子都需要进行精确匹配，以避免这种问题。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在LED照明市场上，目前有哪些方案正在实施？东科好像一直在推AHB，如何看待这一方案？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e东科的AHB做得相当不错，集成度是比较高的，将控制器、driver驱动器和氮化镓合封在一起，设计上更为简便。其AHB产品路线与早期杰华特的路线类似，因为他们最早也有做ACF控制器的芯片，封装形式也是三个器件封在一起，所以是沿用了原来的老路线。东科具有自己的封测厂，能够快速适应市场需求变化，\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e据了解东科的AHB可以做到180W，如果功率往下用的话，它可以继续吃掉120-140W区间的市场吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e140W可能会有点机会。120W如果客户对价格不敏感还可以，如果对价格敏感的话，实际上JSC+QR就可以搞定，不需要AHB。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e据说华源解决了D-Mode的传导、辐射等问题，华源智信未来是否会成为杰华特在PD合封市场的主要竞争对手？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e华源对于EMI等的解决方案是可行的。但其问题在于芯片在低电压下进入CCM模式，D-Mode的有些器件在连续电流模式的情况下，其动态阻抗变大，从而影响器件效率。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e对于二供供应商选择标准及方向是什么？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e当前来讲，E-Mode是有规划，但因为目前国内E-Mode还没有看到比较成熟的第二家可选，和英诺还是保持比较紧密的合作。D-Mode是针对对价格非常敏感的客户，包括现在在lighting这块也在准备布局以D-Mode器件做合封推向市场，因为D-Mode价格相比同规格的硅开关管的价格便宜近一半，而且LED的lighting市场对价格本身就非常敏感，还有普通非标市场。D-Mode已经定了second source，但是现在还在测试，还没有正式量产。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eD-Mode测试有看到什么问题吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e主要是应用的问题，还有器件搭配的问题。其调试难度比E-Mode要复杂很多，因为控制D-Mode 的gate无法单独去做控制，其开启和关断的速度是不受控的。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e如何看待晶丰明源这家公司？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e晶丰如果未来能把D-Mode的应用问题解决，未来在lighting市场的体量应该也不小，晶丰在lighting市场经营了很多年，市占率很高。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e晶丰有跟英诺合作吗？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e晶丰与英诺有一些商务上的互动，但是目前看起来在lighting市场上E-Mode价格仍无法满足市场的需求，还是想做D-Mode去扩大性价比。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在lighting市场上，如果不考虑成本因素，只从技术上来讲，E-Mode与D-Mode哪个更具优势？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e从技术角度看，如果不考虑成本因素，可能还是会选择D-Mode。尽管D-Mode迭代空间有限，但热稳定性更好。在高温条件下，E-Mode内阻变化较大，而D-Mode内阻变化相对较小，这对于系统可靠性至关重要，而本身灯就是一个发热体。此外，E-Mode长期使用后内阻增加不可逆，这也是一个致命问题。因此，从长期可靠性角度看，D-Mode更具优势。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e在快充头市场的应用中，温度对E-Mode性能的影响如何？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e快充头市场的应用对温度并不敏感。近年来，手机快充技术已经非常成熟，通常在20分钟左右即可将手机完全充满。例如，目前市场上常见的100W、120W甚至140W的快充头，可以在十几分钟到二十分钟内完成充电。在如此短时间内，设备温度尚未显著上升，因此对性能影响不大。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003eDrMoS目前谁的出货量最大？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003eMPS。\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u003cstrong style=\"color: rgb(0, 112, 192);\"\u003e国内有没有哪家出DrMoS比较多？\u003c/strong\u003e\u003c/p\u003e\u003cp class=\"ql-align-justify\"\u003e杰华特目前看起来在国内属于第一梯队。国内芯朋微也有在做，但是目前在小电流上好像还有一些瓶颈，大电流好像还没有工程样品。矽力杰好像也有在做。现在大家做得方式有区别。早期封装都是三个die放在一起，1个驱动加两个不同的DrMoS。MPS是第一个把driver和两个MOS做成一个die的，这属于相对非常牛的技术工艺上的改进。杰华特也是跟MPS走的同样的路线。\u003c/p\u003e",
+        "article_speech": {},
+        "hashtags": [
+            "GaN"
+        ],
+        "industry_ids": [
+            4530
+        ],
+        "custom_sector_ids": [
+            6
+        ],
+        "views": 8271,
+        "likes": 0,
+        "favorites": 6,
+        "word_stats": {
+            "word_count": 7674,
+            "read_time": 16
+        },
+        "masked_word_stats": {
+            "word_count": 0,
+            "read_time": 1
+        },
+        "need_to_pay": false,
+        "has_paid": true,
+        "paid_info": {
+            "state": "paid",
+            "sncode": "12607071306180189",
+            "paid_at": 1783431970,
+            "created_at": 1783431970,
+            "state_events": [
+                "refund",
+                "full_refund"
+            ],
+            "type": "Order",
+            "remark": "",
+            "goods_type": "Article",
+            "price": 300,
+            "actual_paid": 0,
+            "payment_info": null,
+            "payment_type": "UserCard",
+            "card_type": "vip",
+            "operator_info": {
+                "id": 1,
+                "name": "系统",
+                "avatar": null,
+                "is_analyst": false,
+                "is_expert": true
+            },
+            "operator_type": "Staff"
+        },
+        "author": {
+            "id": 20505907,
+            "type": "AceCamp",
+            "introduction": "机构投资人授权纪要",
+            "name": "共享调研纪要",
+            "avatar": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256"
+        },
+        "organization": {
+            "id": 20505907,
+            "sc_name": "共享调研纪要",
+            "tc_name": "海外機構的專家調研會議紀要",
+            "en_name": "Shared Transcript",
+            "name": "共享调研纪要",
+            "sc_description": "机构投资人授权纪要",
+            "tc_description": null,
+            "en_description": "机构投资人授权纪要",
+            "description": "机构投资人授权纪要",
+            "share_display_name": "共享调研纪要",
+            "deleted_at": null,
+            "state": "passed",
+            "score": 0,
+            "organization_type_id": 2,
+            "sator_organization_id": 299,
+            "state_events": [],
+            "is_producer": true,
+            "self_employed": true,
+            "management_scale_id": 0,
+            "fund_type_ids": [],
+            "custom_sector_ids": [],
+            "ticker": null,
+            "tel": null,
+            "website": null,
+            "logo": "https://image.acecamptech.com/organization/4/0.41740372795280445.png?x-oss-process=style/avatar_w256",
+            "industry_id": null,
+            "institutional_type_ids": [],
+            "followed": false,
+            "public_contact": false,
+            "allow_public_contact": false,
+            "belongs_organization_id": null,
+            "belongs_organization_name": null,
+            "belongs_organization_contact": null,
+            "dms_vendor_contact": null,
+            "dms_vendor": false,
+            "irm": false,
+            "need_allocation": true,
+            "celebrity": false,
+            "lastest_updates": [
+                {
+                    "id": 70564311,
+                    "title": "津上精密机床2026H1更新—液冷、探针应用及市场份额等",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783406674
+                },
+                {
+                    "id": 70564306,
+                    "title": "国产大厂SOFC收入增速预期，设备单价和单GW需求测算。原材料工艺和成本优势，大客户验证进展和新客户接洽，排产和利润率预期等。",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404917
+                },
+                {
+                    "id": 70564305,
+                    "title": "光器件龙头大客户订单和交付更新。FAU供应渠道，CW光源扩产进度，MOCVD产能和需求。SENKO/Finisar/英特尔/康宁/天孚",
+                    "type": "minute",
+                    "state": "passed",
+                    "current_price": 300,
+                    "original_price": 300,
+                    "free": false,
+                    "release_time": 1783404466
+                }
+            ],
+            "article_count": 0,
+            "follower_count": 1944,
+            "event_count": 0,
+            "blocked_expert_roles": [],
+            "expert_organization": false,
+            "foreign": false,
+            "followed_corporations": [],
+            "expert": null,
+            "custom_sectors": [],
+            "liaison_id": null,
+            "liaison": null,
+            "producer_type": null,
+            "is_research_partner": false
+        },
+        "release_time": 1737531856,
+        "has_vip": true,
+        "can_download": false,
+        "can_copy": false,
+        "ppv_avaliabled_at": null,
+        "comment_count": 0,
+        "comments": [],
+        "related_topics": [],
+        "co_host_organizations": [
+            {
+                "id": 20506884,
+                "organization_type_id": 3,
+                "name": "Patrick",
+                "sc_name": "Patrick",
+                "en_name": "Patrick",
+                "logo": "https://image.acecamptech.com/avatar/50506965/0.16191206769314914.jpeg?x-oss-process=style/avatar",
+                "description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "sc_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "en_description": "覆盖Global Tech，高性能计算和大模型，通信设备，AI应用（游戏及其他），半导体设备，模拟芯片，汽车电子（IGBT，SiC和其他），晶圆代工厂，智能手机供应链，IoT供应链（MR/VR及其他）",
+                "state": "passed",
+                "followed": true,
+                "institutional_type_ids": [],
+                "management_scale_id": null,
+                "foreign": null,
+                "is_producer": true
+            }
+        ],
+        "shield_type": "expert",
+        "organization_shielded": false,
+        "suggested_questions": {},
+        "masked_state": "pending"
+    },
+    "meta": {
+        "ack": "1783431975079",
+        "ts": 1783431975
+    },
+    "code": 200,
+    "ret": true
+}

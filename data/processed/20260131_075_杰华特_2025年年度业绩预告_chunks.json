@@ -1,11 +1,11 @@
 [
   {
-    "chunk_id": "b6732730476854288b48b97cc3db4b34",
+    "chunk_id": "1674b4078dcd29cbdfa83cdf13f988fa",
     "text": "# 杰华特:2025年年度业绩预告\n\n公司：杰华特(688141.SH)\n公告日期：2026-01-31\n公告类型：业绩预告\n链接：https://data.eastmoney.com/notices/detail/688141/AN202601301818581940.html",
     "ticker": "688141.SH",
     "pub_date": "20260131",
     "period": "",
     "data_source": "announcement",
-    "source_file": "data/inputs/announcements/akshare/688141.SH/20260131_075_杰华特_2025年年度业绩预告.md"
+    "source_file": "data/processed/announcements/akshare/688141.SH/20260131_075_杰华特_2025年年度业绩预告.md"
   }
 ]
