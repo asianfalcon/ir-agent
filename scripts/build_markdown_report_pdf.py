@@ -143,14 +143,44 @@ def parse_table(lines: list[str]) -> list[list[str]]:
     return rows
 
 
-def col_widths(n: int) -> list[float]:
+def col_widths(rows: list[list[str]]) -> list[float]:
+    n = max(len(r) for r in rows)
+    header = tuple(rows[0]) if rows else ()
     total = 253 * mm
+    table_presets = {
+        ("校验项", "结论", "证据"): [28 * mm, 52 * mm, 173 * mm],
+        ("券商", "日期", "2026E营收", "2027E营收", "2028E营收", "2026E归母", "2027E归母", "2028E归母", "评级"): [
+            17 * mm,
+            19 * mm,
+            21 * mm,
+            21 * mm,
+            21 * mm,
+            21 * mm,
+            21 * mm,
+            21 * mm,
+            90 * mm,
+        ],
+        ("项目", "2025A", "2026Q1", "2026E", "2027E", "2028E"): [
+            34 * mm,
+            36 * mm,
+            36 * mm,
+            49 * mm,
+            49 * mm,
+            49 * mm,
+        ],
+        ("项目", "判断", "证据与结论"): [34 * mm, 55 * mm, 164 * mm],
+        ("情景", "概率", "触发条件", "业绩影响", "操作"): [28 * mm, 20 * mm, 83 * mm, 102 * mm, 20 * mm],
+        ("关键跟踪点", "时间", "判断标准"): [38 * mm, 27 * mm, 188 * mm],
+    }
+    if header in table_presets:
+        return table_presets[header]
     presets = {
         2: [62 * mm, 191 * mm],
         3: [34 * mm, 142 * mm, 77 * mm],
         4: [32 * mm, 74 * mm, 74 * mm, 73 * mm],
         5: [34 * mm, 25 * mm, 62 * mm, 70 * mm, 62 * mm],
         6: [25 * mm, 72 * mm, 22 * mm, 30 * mm, 24 * mm, 80 * mm],
+        8: [21 * mm, 52 * mm, 15 * mm, 21 * mm, 23 * mm, 18 * mm, 31 * mm, 72 * mm],
     }
     return presets.get(n, [total / n] * n)
 
@@ -165,7 +195,7 @@ def make_table(rows: list[list[str]], st: dict[str, ParagraphStyle]) -> Table:
             style = st["header"] if r_idx == 0 else (st["table_left"] if len(cell) > 22 or c_idx in (0, 1, n - 1) else st["table"])
             out.append(Paragraph(inline_markup(cell), style))
         wrapped.append(out)
-    table = Table(wrapped, colWidths=col_widths(n), repeatRows=1, hAlign="LEFT")
+    table = Table(wrapped, colWidths=col_widths(normalized), repeatRows=1, hAlign="LEFT")
     table.setStyle(
         TableStyle(
             [
