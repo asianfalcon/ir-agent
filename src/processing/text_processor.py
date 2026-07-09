@@ -111,8 +111,8 @@ def _extract_html(path: Path) -> str:
     return "\n".join(parts)
 
 
-def _infer_metadata(path: Path, text: str) -> dict[str, Any]:
-    ticker = _normalize_ticker(text) or _normalize_ticker(path.stem)
+def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -> dict[str, Any]:
+    ticker = ticker_override or _normalize_ticker(text) or _normalize_ticker(path.stem)
 
     # walk up to find the evidence category dir (reports / announcements / news)
     source_map = {"reports": "broker_report", "announcements": "announcement", "news": "web_news"}
@@ -156,7 +156,7 @@ def chunk_text(text: str, metadata: dict) -> list[dict]:
     return result
 
 
-def process_file(path: Path) -> list[dict]:
+def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
     suffix = path.suffix.lower()
     if suffix == ".pdf":
         text = _extract_pdf(path)
@@ -165,7 +165,7 @@ def process_file(path: Path) -> list[dict]:
     else:
         text = path.read_text(errors="ignore")
 
-    metadata = _infer_metadata(path, text)
+    metadata = _infer_metadata(path, text, ticker_override)
     chunks = chunk_text(text, metadata)
 
     # flatten metadata into top-level fields for LanceDB (no nested dicts)

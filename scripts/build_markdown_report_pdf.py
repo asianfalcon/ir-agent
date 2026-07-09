@@ -17,6 +17,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     BaseDocTemplate,
     Frame,
+    PageBreak,
     PageTemplate,
     Paragraph,
     Spacer,
@@ -271,6 +272,10 @@ def build(src: Path, out: Path) -> None:
             continue
         if line.startswith("### "):
             story.append(p(line[4:], st["h2"]))
+            i += 1
+            continue
+        if line == "<!-- pagebreak -->":
+            story.append(PageBreak())
             i += 1
             continue
         if line.startswith("|"):

@@ -35,6 +35,10 @@ from curl_cffi import requests
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from src.ingestion import yfinance_fetcher
+from src.ingestion.edgar_fetcher import fetch_announcements_us
+from src.ingestion.akshare_hk_fetcher import fetch_financials_hk
+
 
 @dataclass(frozen=True)
 class Company:
@@ -72,6 +76,28 @@ def _market_prefix(ticker: str) -> str:
     return "SH"
 
 
+def _market(ticker: str) -> str:
+    suffix = ticker.split(".", 1)[1].upper() if "." in ticker else ""
+    if suffix in ("SH", "SZ", "BJ"):
+        return "cn"
+    if suffix == "US":
+        return "us"
+    if suffix == "HK":
+        return "hk"
+    return "cn"  # 保持无后缀时默认落到现有 SH 行为
+
+
+def ensure_company_row(company: Company, sector: str = "") -> None:
+    conn = sqlite3.connect(ROOT / "databases/ira.db")
+    conn.execute(
+        "INSERT INTO companies (ticker, name, sector) VALUES (?,?,?) "
+        "ON CONFLICT(ticker) DO UPDATE SET name=excluded.name",
+        (company.ticker, company.name, sector),
+    )
+    conn.commit()
+    conn.close()
+
+
 def _company_from_vocab(ticker: str, fallback_name: str = "") -> Company:
     vocab = _load_json(ROOT / "config/vocab_dictionary.json", [])
     for entry in vocab:
@@ -86,6 +112,15 @@ def _watchlist_companies() -> list[Company]:
 
 
 def fetch_financials(company: Company) -> list[dict]:
+    market = _market(company.ticker)
+    if market == "us":
+        records = yfinance_fetcher.fetch_financials_us(company.ticker)
+        yfinance_fetcher.upsert_sqlite_financials_us(company.ticker, records)
+        return [{"name": "yfinance_quarterly", "rows": len(records)}]
+    if market == "hk":
+        records = fetch_financials_hk(company.ticker)
+        return [{"name": "akshare_hk_quarterly", "rows": len(records)}]
+
     out_dir = ROOT / "data/raw/financials/akshare"
     out_dir.mkdir(parents=True, exist_ok=True)
     today = date.today().isoformat().replace("-", "")
@@ -117,6 +152,8 @@ def update_sqlite_financial_supplements(company: Company) -> int:
     profit are not overwritten here to avoid mixing cumulative, single-quarter,
     net profit and parent-net-profit口径.
     """
+    if _market(company.ticker) != "cn":
+        return 0  # us 已在 fetch_financials_us 内部 upsert 完成；hk 暂无数据可补
     candidates = sorted((ROOT / "data/raw/financials/akshare").glob(f"{company.ticker}_financial_indicator_report_*.json"))
     if not candidates:
         return 0
@@ -153,6 +190,12 @@ def update_sqlite_financial_supplements(company: Company) -> int:
 
 
 def fetch_announcements(company: Company, start_date: str) -> dict:
+    market = _market(company.ticker)
+    if market == "us":
+        return fetch_announcements_us(company.ticker, company.name, limit=20)
+    if market == "hk":
+        return {"raw": None, "files": []}  # 港股公告源暂缺
+
     today = date.today().isoformat().replace("-", "")
     raw_dir = ROOT / "data/raw/announcements/akshare"
     processed_dir = ROOT / f"data/processed/announcements/akshare/{company.ticker}"
@@ -191,6 +234,12 @@ def fetch_announcements(company: Company, start_date: str) -> dict:
 
 
 def fetch_news(company: Company, limit: int) -> dict:
+    market = _market(company.ticker)
+    if market == "us":
+        return yfinance_fetcher.fetch_news_processed(company.ticker, company.name, limit)
+    if market == "hk":
+        return {"raw": None, "files": []}  # 港股新闻源暂缺
+
     today = date.today().isoformat().replace("-", "")
     raw_dir = ROOT / "data/raw/news/akshare"
     processed_dir = ROOT / f"data/processed/news/akshare/{company.ticker}"
@@ -306,13 +355,13 @@ def report_files(company: Company) -> list[Path]:
     return sorted((ROOT / f"data/inputs/reports/{company.name}").glob("*.pdf"))
 
 
-def process_local_files(paths: list[Path]) -> int:
+def process_local_files(paths: list[Path], ticker: str | None = None) -> int:
     from src.processing.text_processor import process_file
 
     chunks = 0
     for path in paths:
         try:
-            chunks += len(process_file(path))
+            chunks += len(process_file(path, ticker_override=ticker))
         except Exception as exc:
             print(f"[refresh] process ERROR {path}: {exc}")
     return chunks
@@ -361,6 +410,7 @@ def count_lancedb_rows(ticker: str) -> dict:
 
 def refresh_company(company: Company, args) -> dict:
     print(f"\n[refresh] {company.name}({company.ticker})")
+    ensure_company_row(company)
     summary: dict[str, Any] = {"ticker": company.ticker, "company": company.name}
 
     if not args.skip_financials:
@@ -393,7 +443,7 @@ def refresh_company(company: Company, args) -> dict:
         # migrations (for example inputs/... -> processed/...).
         clear_lancedb_rows(company.ticker, "announcement")
 
-    summary["document_chunks"] = process_local_files(reports + announcements["files"] + news["files"])
+    summary["document_chunks"] = process_local_files(reports + announcements["files"] + news["files"], ticker=company.ticker)
     summary["lancedb"] = count_lancedb_rows(company.ticker)
     print(f"[refresh] summary: {json.dumps(summary, ensure_ascii=False, default=_json_default)}")
     return summary

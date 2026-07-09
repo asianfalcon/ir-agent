@@ -1,0 +1,11 @@
+[
+  {
+    "chunk_id": "ab92c7b3bf7d84a3790bcaa9620bb1af",
+    "text": "# 8-K: 8-K\n\n公司：AMD(AMD.US)\n公告日期：2025-05-19\n公告类型：8-K\n链接：https://www.sec.gov/Archives/edgar/data/2488/000119312525122121/d831221d8k.htm",
+    "ticker": "AMD.US",
+    "pub_date": "20250519",
+    "period": "",
+    "data_source": "announcement",
+    "source_file": "data/processed/announcements/edgar/AMD.US/20250519_019_8_K.md"
+  }
+]

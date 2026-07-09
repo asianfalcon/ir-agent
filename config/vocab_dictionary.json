@@ -39,5 +39,24 @@
     "ticker": "688141.SH",
     "product": "模拟芯片",
     "aliases": ["杰华特微电子", "Joulwatt", "杰华特（688141）", "688141"]
+  },
+  {
+    "standard_name": "CPU",
+    "entity_type": "Product",
+    "aliases": ["处理器", "x86处理器", "服务器CPU"]
+  },
+  {
+    "standard_name": "英特尔",
+    "entity_type": "Company",
+    "ticker": "INTC.US",
+    "product": "CPU",
+    "aliases": ["Intel", "Intel Corporation", "英特尔公司", "INTC", "英特尔（INTC）"]
+  },
+  {
+    "standard_name": "AMD",
+    "entity_type": "Company",
+    "ticker": "AMD.US",
+    "product": "CPU",
+    "aliases": ["超威半导体", "Advanced Micro Devices", "AMD（AMD）", "美国超微"]
   }
 ]

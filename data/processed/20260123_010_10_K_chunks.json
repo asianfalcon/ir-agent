@@ -1,0 +1,11 @@
+[
+  {
+    "chunk_id": "5f2e0e15d0e5f73beebfb114fd09d66b",
+    "text": "# 10-K: 10-K\n\n公司：英特尔(INTC.US)\n公告日期：2026-01-23\n公告类型：10-K\n链接：https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm",
+    "ticker": "INTC.US",
+    "pub_date": "20260123",
+    "period": "",
+    "data_source": "announcement",
+    "source_file": "data/processed/announcements/edgar/INTC.US/20260123_010_10_K.md"
+  }
+]
