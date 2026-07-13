@@ -1,569 +1,569 @@
 [
   {
-    "chunk_id": "84b608bd35889fa917d78cc720b87e13",
+    "chunk_id": "44aac7bd7b15ce14167999dbfbaf6f16",
     "text": "Santa Clara, CA 95054-1549\n  \n                                                       \nNews Release\n  Intel Reports Third-Quarter 2025 Financial Results\nNews Summary\n▪\nThird-quarter revenue was $13.7 billion, up 3% year-over-year (YoY). \n▪\nThird-quarter earnings (loss) per share (EPS) attributable to Intel was $0.90; non-GAAP EPS attributable to Intel \nwas $0.23. \n▪\nForecasting fourth-quarter 2025 revenue of $12.8 billion to $13.8 billion; expecting fourth-quarter EPS \nattributable to Intel of $(0.14) and non-GAAP EPS attributable to Intel of $0.08. Intel's guidance excludes Altera, \nfollowing the sale of a majority ownership interest completed in the third quarter of 2025.",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "a1fa71f62070004cee041d1ec65f8788",
+    "chunk_id": "57de2a1e11988b4e6a152843bc6d1276",
     "text": "SANTA CLARA, Calif., October 23, 2025 – Intel Corporation today reported third-quarter 2025 financial results. \n“Our Q3 results reflect improved execution and steady progress against our strategic priorities,” said Lip-Bu Tan, \nIntel CEO. \"AI is accelerating demand for compute and creating attractive opportunities across our portfolio, \nincluding our core x86 platforms, new efforts in purpose-built ASICs and accelerators, and foundry services. Intel’s \nindustry-leading CPUs and ecosystem, along with our unique U.S.-based leading-edge logic manufacturing and \nR&D, position us well to capitalize on these trends over time.”",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "587b71d70213cadb8b2f5b9be4ed971c",
+    "chunk_id": "2447c132a528a7e9642d43da834deace",
     "text": "R&D, position us well to capitalize on these trends over time.”\n“We took meaningful steps this quarter to strengthen our balance sheet, including accelerated funding from the U.S. \nGovernment, and investments by NVIDIA and SoftBank Group that increase our operational flexibility and \ndemonstrate the critical role we play in the ecosystem,” said David Zinsner, Intel CFO. “Our stronger than expected \nQ3 results mark our fourth consecutive quarter of improved execution and reflect the underlying strength of our core \nmarkets. Current demand is outpacing supply, a trend we expect will persist into 2026.”\nQ3 2025 Financial Results\nGAAP\nNon-GAAP\n \nQ3 2025\nQ3 2024\nvs. Q3 2024\nQ3 2025\nQ3 2024",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "acbdf691a74bfcc589f3f1ecc3cfbeda",
+    "chunk_id": "223b6587e2497445a0a16cdc5cbc515b",
     "text": "GAAP\nNon-GAAP\n \nQ3 2025\nQ3 2024\nvs. Q3 2024\nQ3 2025\nQ3 2024\nvs. Q3 2024\nRevenue ($B)\n$13.7\n$13.3\nup 3%\nGross margin\n38.2%\n15.0%\nup 23.2 ppts\n40.0%\n18.0%\nup 22 ppts\nR&D and MG&A ($B)\n$4.4\n$5.4\ndown 20%\n$3.9\n$4.8\ndown 17%\nOperating margin (loss)\n5.0%\n(68.2)%\nup 73.2 ppts\n11.2%\n(17.8)%\nup 29 ppts\nTax rate\n6.6%\n(87.0)%\nup 93.6 ppts\n12.0%\n13.0%\ndown 1 ppt\nNet income (loss) \nattributable to Intel ($B)\n$4.1\n$(16.6)\nup 124%\n$1.0\n$(2.0)\n*n/m\nEarnings (loss) per share \nattributable to Intel—\ndiluted\n$0.90\n$(3.88)\nup 123%\n$0.23\n$(0.46)\n*n/m\nFull reconciliations between GAAP and non-GAAP measures are provided below.\n*Not meaningful",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "06b8ead0f149793d440a8535afd3578e",
+    "chunk_id": "85aecf992c4b3e547d99c23547fd5306",
     "text": "*Not meaningful \nIn the third quarter, the company generated $2.5 billion in cash from operations.\nThe financial results presented in this release are preliminary and unaudited, and may be revised based on \n(NEX) into CCG and DCAI and modified Intel's segment reporting to align to this and certain other business \nreorganizations. All prior-period segment data has been retrospectively adjusted to reflect the way Intel's chief \noperating decision maker internally receives information and manages and monitors the company's operating \nsegment performance. Effective September 12, 2025, Altera, previously a wholly owned subsidiary, was",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "fc22a2c58695435af4d71f2d2c345baa",
+    "chunk_id": "14a2d05efbc82d212f196540bd24e167",
     "text": "deconsolidated from Intel's consolidated financial statements following the closing of the sale of 51% of Altera's \nissued and outstanding common stock. Altera's financial results of operations were included in Intel's consolidated \nfinancial results and its \"all other\" business unit category for all periods presented through September 11, 2025. \nThere are no changes to Intel's consolidated financial statements for any prior periods.\nBusiness Unit Revenue and Trends\nQ3 20251\nvs. Q3 2024\nIntel Products:\nClient Computing Group (CCG)\n$8.5 billion\nup 5%\nData Center and AI (DCAI)\n$4.1 billion\ndown 1%\nTotal Intel Products revenue\n$12.7 billion\nup 3%\nIntel Foundry\n$4.2 billion\ndown 2%\nAll other",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "5da2944578fa3bd883b3038bdaec33af",
+    "chunk_id": "d69772f40abd7f6cfde913e05e9d7147",
     "text": "$12.7 billion\nup 3%\nIntel Foundry\n$4.2 billion\ndown 2%\nAll other\n$1.0 billion\nup 3%\nIntersegment eliminations\n$(4.2) billion\nTotal net revenue\n$13.7 billion\nup 3%\n1  Operating segment revenues include intersegment transactions and are presented as actual and rounded; as a result, totals may not sum.\nBusiness Highlights\n▪\nIntel and the Trump Administration announced an agreement to support the continued expansion of \nAmerican technology and manufacturing leadership through $8.9 billion in funding from the U.S. \nGovernment. During the quarter, Intel received $5.7 billion from the U.S. Government.\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "f6fbfa8a8a286ea414da53da6b2c8eb8",
+    "chunk_id": "c28e74261bd641e3dbb685ff97b979a3",
     "text": "▪\nIntel and NVIDIA announced a collaboration to jointly develop multiple generations of custom data center \nand PC products across hyperscale, enterprise and consumer markets. The collaboration will integrate the \nstrengths of Intel's leading CPU technologies and x86 ecosystem with NVIDIA’s AI and accelerated \ncomputing platforms using NVIDIA NVLink.  \n▪\nNVIDIA also agreed to invest $5.0 billion in Intel common stock.\n▪\nSoftBank Group made a $2.0 billion investment in Intel common stock, reflecting its belief that Intel will play \na critical role in expanding advanced semiconductor manufacturing and supply in the United States.\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "c4350eafc5b3f10e81d1b6bfe4e3e3e5",
+    "chunk_id": "6a464b6e9d3fd179b2da67bfc24aba0a",
     "text": "▪\nIntel unveiled the architecture of its Intel® Core™ Ultra series 3 processors (code-named Panther Lake), \nthe first client SoCs built on Intel 18A technology. Additionally, Intel advanced its relationship with Microsoft \nthrough a collaboration with Windows ML and the integration of Intel vPro® manageability with Microsoft \nIntune. \n▪\nThe company provided a first look at Intel® Xeon® 6+ (code-named Clearwater Forest), Intel’s next-gen \nserver product on Intel 18A, showing significant power and performance gains. It also announced details of \na new inference-optimized GPU code-named Crescent Island for token clouds and enterprise-level \ninference.\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "e7f16e7b1aad71cce33484638f551762",
+    "chunk_id": "d416461ac17729327a86c56968b991b7",
     "text": "inference.\n▪\nFab 52, Intel's fifth high-volume fab at its Ocotillo campus in Chandler, Arizona, became fully operational. \nThis facility manufactures Intel 18A wafers, the most advanced logic wafers developed and produced in the \nUnited States, and is part of the more than $100 billion Intel is investing to expand its domestic operations.\n▪\nQ4 2025\nGAAP\nNon-GAAP\nRevenue\n$12.8-13.8 billion\nGross margin\n34.5%\n36.5%\nTax Rate\n476%\n12%\nEarnings (Loss) Per Share Attributable to Intel—Diluted\n$(0.14)\n$0.08\nEffective September 12, 2025, Altera, previously a wholly owned subsidiary, was deconsolidated from Intel's",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "e0812423bf56d327dfebcc0285d5012b",
+    "chunk_id": "19cc9eb0e5b7284a1db426f222bfee41",
     "text": "consolidated financial statements following the closing of the sale of 51% of Altera's issued and outstanding \ncommon stock. As a result, fourth quarter guidance excludes the results of Altera. \nReconciliations between GAAP and non-GAAP financial measures are included below. Actual results may differ \nmaterially from Intel’s business outlook as a result of, among other things, the factors described under “Forward-\nLooking Statements” below. The gross margin and EPS outlooks are based on the midpoint of the revenue range.\nEarnings Webcast\nIntel will hold a public webcast at 2 p.m. PDT today to discuss the results for its third quarter of 2025. The live public",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "3b6dc12e57204b458880b9c9bf1aa91f",
+    "chunk_id": "032695ce4bd4c53774b0286128299777",
     "text": "webcast can be accessed on Intel's Investor Relations website at www.intc.com. The corresponding earnings \npresentation and webcast replay will also be available on the site.\nAccounting for U.S. Government Transactions\nIntel's transactions with the U.S. Government during the third quarter of 2025, including the equity issuances and \nthe amendment to the commercial CHIPS Act agreement, are complex. There is limited precedent for the \naccounting treatment of such transactions. While Intel believes it has selected the appropriate accounting approach \nfor these transactions in the third quarter 2025 financial results reported in this release, there are other potential",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "0dec7f006ba98cdd2b67a8d9adfe26df",
+    "chunk_id": "bcda9eba4d92768d10cfaeda392f393e",
     "text": "approaches that, if applied, would result in materially different financial results for the quarter. Given the complexity \nassociated with these transactions, Intel recently initiated a consultation with the staff of the SEC to seek \nconfirmation that they do not disagree with the accounting treatment. Due to the current U.S. Government \nshutdown, Intel has been unable to conclude its consultation with the staff of the SEC. If the staff of the SEC were to \nhave a different view of the appropriate accounting treatment of these transactions, Intel may revise its third quarter \n2025 financial results, including the recognition of additional costs or losses, and any such revisions could be",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "fbc860c89386dc5645b7eb4b805da868",
+    "chunk_id": "ebc5b7053cc93326509a51080e22d466",
     "text": "material.\nFor a description of the transactions with the U.S. Government entered into during the third quarter of 2025, see our \nCurrent Reports on Form 8-K filed with the SEC on August 25, 2025 and August 29, 2025.\nForward-Looking Statements\nThis release contains forward-looking statements that involve a number of risks and uncertainties. Words such as \n\"accelerate\", \"achieve\", \"aim\", \"ambitions\", \"anticipate\", \"believe\", \"committed\", \"continue\", \"could\", \"designed\", \n\"estimate\", \"expect\", \"forecast\", \"future\", \"goals\", \"grow\", \"guidance\", \"intend\", \"likely\", \"may\", \"might\", \"milestones\",",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "d6551e137d01a63731e399eff213e664",
+    "chunk_id": "149a284e2b9d4b30212fa9e8d68ff64a",
     "text": "\"next generation\", \"objective\", \"on track\", \"opportunity\", \"outlook\", \"pending\", \"plan\", \"position\", \"possible\", \"potential\", \n\"predict\", \"progress\", \"ramp\", \"roadmap\", \"seek\", \"should\", \"strive\", \"targets\", \"to be\", \"upcoming\", \"will\", \"would\", and \nvariations of such words and similar expressions are intended to identify such forward-looking statements, which \nmay include statements regarding:\n▪\nour business plans and strategy and anticipated benefits therefrom;\n▪\nprojections of our future financial performance, including future revenue, gross profits, capital expenditures, and \ncash flows;\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "a0563ae6e1cad8e23c7ce1c470daab25",
+    "chunk_id": "3368c107665b3180bd00237bd17d4f9c",
     "text": "cash flows;\n▪\nfunding, including for future capital and R&D investments and for returns to stockholders, such as stock \nrepurchases and dividends, and credit ratings expectations;\n▪\nfuture products, services, and technologies, and the expected goals, timeline, ramps, progress, availability, \nproduction, regulation, and benefits of such products, services, and technologies, including future process \nnodes and packaging technology, product roadmaps, schedules, future product architectures, expectations \nregarding process performance, per-watt parity, and metrics, and expectations regarding product and process \nleadership;\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "95a27fb7d2cf11edc87ee382a08dea76",
+    "chunk_id": "5953f62953fb49f1a38b177665242c63",
     "text": "leadership;\n▪\ninvestment plans and impacts of investment plans, including in the US and abroad; \n▪\ninternal and external manufacturing plans, including future internal manufacturing volumes, manufacturing \nexpansion plans and the financing therefor, and external foundry usage;\n▪\nfuture production capacity and product supply;\n▪\nsupply expectations, including regarding constraints, limitations, pricing, and industry shortages;\n▪\nplans and goals related to Intel's foundry business, including with respect to anticipated customers, future \nmanufacturing capacity and service, technology, and IP offerings; \n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "6d2e6d171f8297401529711b35a4d65f",
+    "chunk_id": "351c81e84bcfa17470bb7db417736e3e",
     "text": "manufacturing capacity and service, technology, and IP offerings; \n▪\nexpected timing and impact of acquisitions, divestitures, and other significant transactions;\n▪\nexpected completion and impacts of restructuring activities and cost-saving or efficiency initiatives;\n▪\nfuture social and environmental performance goals, measures, strategies, and results;\n▪\nour anticipated growth, future market share, customer demand, and trends in our businesses and operations;\n▪\nprojected growth and trends in markets relevant to our businesses;\n▪\nanticipated trends and impacts related to industry component, substrate, and foundry capacity utilization, \nshortages, and constraints; \n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "9e51cd0b243a86379773c844669c0c57",
+    "chunk_id": "6b00a8cff83fa8a5ad3d279b155556fe",
     "text": "shortages, and constraints; \n▪\nexpectations regarding government funding, incentives, policies, and priorities; \n▪\nfuture technology trends and developments, such as AI;\n▪\nfuture macro environmental and economic conditions;\n▪\ngeopolitical tensions and conflicts, including with respect to international trade policies in areas such as tariffs \nand export controls, and their potential impact on our business;\n▪\ntax- and accounting-related expectations;\n▪\nexpectations regarding our relationships with certain sanctioned parties; and\n▪\nother characterizations of future events or circumstances.",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "efebfcba369ae064db280270f0267fc6",
+    "chunk_id": "ca14942d7d8b65fa07164e4cddf30dac",
     "text": "▪\nother characterizations of future events or circumstances.\nSuch statements involve many risks and uncertainties that could cause our actual results to differ materially from \nthose expressed or implied, including those associated with:\n▪\nthe high level of competition and rapid technological change in our industry;\n▪\nthe significant long-term and inherently risky investments we are making in R&D and manufacturing facilities \nthat may not realize a favorable return; \n▪\nthe complexities and uncertainties in developing and implementing new semiconductor products and \nmanufacturing process technologies;\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "c01a08249449f0848709b0d645dca95e",
+    "chunk_id": "35dd15d657235d218ecdf5ecef531bf6",
     "text": "manufacturing process technologies;\n▪\nour ability to time and scale our capital investments appropriately and successfully secure favorable alternative \nfinancing arrangements and government grants;\n▪\nimplementing new business strategies and investing in new businesses and technologies;\n▪\nchanges in demand for our products;\n▪\nmacroeconomic conditions and geopolitical tensions and conflicts, including geopolitical and trade tensions \nbetween the US and China, the impacts of Russia's war on Ukraine, tensions and conflict affecting Israel and \nthe Middle East, and rising tensions between mainland China and Taiwan;\n▪\nthe evolving market for products with AI capabilities;\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "fa8cd9bcbc6f44c172f301d43a944ccb",
+    "chunk_id": "0e7be9c58d7291bf6a053ad38b9c0ce8",
     "text": "▪\nthe evolving market for products with AI capabilities;\n▪\nour complex global supply chain supporting our manufacturing facilities and incorporating external foundries, \nincluding from disruptions, delays, trade tensions and conflicts, or shortages;\n▪\nrecently elevated geopolitical tensions, volatility and uncertainty with respect to international trade policies, \nincluding tariffs and export controls, impacting our business, the markets in which we compete and the world \nimplement next-generation manufacturing process technologies;\n▪\npotential security vulnerabilities in our products;\n▪\nincreasing and evolving cybersecurity threats and privacy risks;\n▪",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "a00b2b58e11df1b12d75b22416e62eb1",
+    "chunk_id": "743d512160d641fe774f5b453dddcd90",
     "text": "▪\nincreasing and evolving cybersecurity threats and privacy risks;\n▪\nIP risks including related litigation and regulatory proceedings;\n▪\nthe need to attract, retain, and motivate key talent;\n▪\nstrategic transactions and investments;\n▪\nsales-related risks, including customer concentration and the use of distributors and other third parties;\n▪\nour significantly reduced return of capital in recent years;\n▪\nUS Government ownership of significant equity interests in the company;\n▪\nour debt obligations and our ability to access sources of capital;\n▪\ncomplex and evolving laws and regulations across many jurisdictions;\n▪\nfluctuations in currency exchange rates;\n▪\nchanges in our effective tax rate;",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "db50f9d49c5ccd6f38eb60c0ff6475d0",
+    "chunk_id": "9387808ba95d817a728fd8a989c88aaa",
     "text": "▪\nchanges in our effective tax rate;\n▪\ncatastrophic events;\n▪\nenvironmental, health, safety, and product regulations;\n▪\nour initiatives and new legal requirements with respect to corporate responsibility matters; and\n▪\nother risks and uncertainties described in this release, our 2024 Form 10-K, our Q1 2025 Form 10-Q, our Q2 \n2025 Form 10-Q, and our other filings with the SEC.\nGiven these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking \nstatements. Readers are urged to carefully review and consider the various disclosures made in this release and in",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "719075566942dceda17e6dd9a7b9aa01",
+    "chunk_id": "d7996873181adf7750f54c863ddca445",
     "text": "other documents we file from time to time with the SEC that disclose risks and uncertainties that may affect our \nbusiness. \nUnless specifically indicated otherwise, the forward-looking statements in this release do not reflect the potential \nimpact of any divestitures, mergers, acquisitions, or other business combinations that have not been completed as \nof the date of this filing. In addition, the forward-looking statements in this release are based on management's \nexpectations as of the date of this release, unless an earlier date is specified, including expectations based on third-",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "710c82212dfe11ed4625c7330b8f3bc0",
+    "chunk_id": "839510727a9e217b4efdc942940149ce",
     "text": "party information and projections that management believes to be reputable. We do not undertake, and expressly \ndisclaim any duty, to update such statements, whether as a result of new information, new developments, or \notherwise, except to the extent that disclosure may be required by law.\nAbout Intel\nIntel (Nasdaq: INTC) designs and manufactures advanced semiconductors that connect and power the modern \nworld. Every day, our engineers create new technologies that enhance and shape the future of computing to enable \nnew possibilities for every customer we serve. Learn more at intel.com.",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "7be613206ccedfce26b589294404b61f",
+    "chunk_id": "5e4e4169ba058bd191fae00199b44ab7",
     "text": "© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. \nThree Months Ended\n(In Millions, Except Per Share Amounts; Unaudited)\nSep 27, 2025\nSep 28, 2024\nNet revenue\n$ \n13,653 \n$ \n13,284 \nCost of sales\n \n8,435 \n \n11,287 \nGross profit\n \n5,218 \n \n1,997 \nResearch and development\n \n3,231 \n \n4,049 \nMarketing, general, and administrative\n \n1,129 \n \n1,383 \nRestructuring and other charges\n \n \n5,622 \nOperating expenses\n \n4,535 \n \n11,054 \nOperating income (loss)\n \n \n(9,057) \nGains (losses) on equity investments, net\n \n \n(159) \nInterest and other, net\n \n3,670 \n \nIncome (loss) before taxes\n \n4,574 \n \n(9,086)",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "9bf46cff46ebd1ce8c39c48829f148c9",
+    "chunk_id": "c51159c12b0a0e7035667236a37b4156",
     "text": "3,670 \n \nIncome (loss) before taxes\n \n4,574 \n \n(9,086) \nProvision for (benefit from) taxes\n \n \n7,903 \nNet income (loss)\n \n4,270 \n \n(16,989) \nLess: net income (loss) attributable to non-controlling interests\n \n \n(350) \nNet income (loss) attributable to Intel\n$ \n4,063 \n$ \n(16,639) \nEarnings (loss) per share attributable to Intel—basic\n$ \n0.90 \n$ \n(3.88) \nEarnings (loss) per share attributable to Intel—diluted\n$ \n0.90 \n$ \n(3.88) \nWeighted average shares of common stock outstanding:\nBasic\n \n4,514 \n \n4,292 \nDiluted\n \n4,531 \n \n4,292 \nOther information:\n(In Thousands; Unaudited)\nSep 27, 2025\nJun 28, 2025\nSep 28, 2024\nEmployees\nIntel1\n \n83.3 \n \n96.4 \n \n115.0 \nMobileye and other subsidiaries",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "63e6508aa383f8ccea0d98a631288e55",
+    "chunk_id": "41a84d432c8827ae4b666ab328a1c026",
     "text": "Intel1\n \n83.3 \n \n96.4 \n \n115.0 \nMobileye and other subsidiaries\n \n5.1 \n \n5.0 \n \n5.4 \nNAND2\n \n— \n \n— \n \n3.7 \nTotal Intel \n \n88.4 \n \n101.4 \n \n124.1 \n1 Altera, previously a wholly owned subsidiary, was deconsolidated following the sale of 51% of its common stock on September 12, 2025. As a \nresult, approximately 3.3 thousand Altera employees are excluded from Intel’s employee count as of September 27, 2025.\n2 Employees of the NAND memory business, which we divested to SK hynix upon the first closing on Dec. 29, 2021, and fully deconsolidated in \nQ1 2022. Employees are excluded from Intel's total employee count following the completion of the second closing of the divestiture on March",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "8c3471316ee37258580c305eea46b67e",
+    "chunk_id": "c3a7f9472b3491a7de48823781d0126a",
     "text": "(In Millions, Except Par Value; Unaudited)\nSep 27, 2025\nDec 28, 2024\nAssets\nCurrent assets:\nCash and cash equivalents\n$ \n11,141 \n$ \n8,249 \nShort-term investments\n \n19,794 \n \n13,813 \nAccounts receivable, net\n \n3,202 \n \n3,478 \nInventories\nRaw materials \n \n1,135 \n \n1,344 \nWork in process \n \n6,751 \n \n7,432 \nFinished goods \n \n3,603 \n \n3,422 \n \n11,489 \n \n12,198 \nOther current assets\n \n6,105 \n \n9,586 \nTotal current assets\n \n51,731 \n \n47,324 \nProperty, plant, and equipment, net\n \n105,047 \n \n107,919 \nEquity investments\n \n8,667 \n \n5,383 \nGoodwill\n \n23,912 \n \n24,693 \nIdentified intangible assets, net\n \n2,877 \n \n3,691 \nOther long-term assets\n \n12,280 \n \n7,475 \nTotal assets\n$ \n204,514 \n$ \n196,485",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "f0ba0f2781f247f7ffc310a9caa0dc8f",
+    "chunk_id": "e8aa7c7f3c4f75b366cbaafd3b2b1e35",
     "text": "12,280 \n \n7,475 \nTotal assets\n$ \n204,514 \n$ \n196,485 \nLiabilities and stockholders' equity\nCurrent liabilities:\nAccounts payable\n \n10,268 \n \n12,556 \nAccrued compensation and benefits\n \n3,756 \n \n3,343 \nShort-term debt\n \n2,496 \n \n3,729 \nIncome taxes payable\n \n \n1,756 \nOther accrued liabilities\n \n14,952 \n \n14,282 \nTotal current liabilities\n \n32,297 \n \n35,666 \nDebt\n \n44,057 \n \n46,282 \nOther long-term liabilities\n \n11,430 \n \n9,505 \nStockholders' equity:\nCommon stock and capital in excess of par value, 4,766 issued and outstanding (4,330 \nissued and outstanding as of December 28, 2024)\n \n56,755 \n \n50,949 \nAccumulated other comprehensive income (loss)\n \n \n(711) \nRetained earnings\n \n49,602",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "fbae75c71c66ee586fb4f7114ad720d3",
+    "chunk_id": "29ff5b8979c0091bd8bfa9ac7372ce22",
     "text": "(711) \nRetained earnings\n \n49,602 \n \n49,032 \nTotal Intel stockholders' equity\n \n106,376 \n \n99,270 \nNon-controlling interests\n \n10,354 \n \n5,762 \nTotal stockholders' equity\n \n116,730 \n \n105,032 \nTotal liabilities and stockholders' equity\n$ \n204,514 \n$ \nNine Months Ended\n(In Millions; Unaudited)\nSep 27, 2025\nSep 28, 2024\nCash and cash equivalents, beginning of period\n$ \n8,249 \n$ \n7,079 \nCash flows provided by (used for) operating activities:\nNet income (loss)\n \n \n(19,080) \nAdjustments to reconcile net income (loss) to net cash provided by operating activities:\nDepreciation\n \n7,971 \n \n7,651 \nShare-based compensation\n \n1,896 \n \n2,759 \nRestructuring and other charges\n \n \n3,626",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "410715a9b0f5f2cb259a11b6428e0cbb",
+    "chunk_id": "ed02038c2c30f36e220b338f27648feb",
     "text": "1,896 \n \n2,759 \nRestructuring and other charges\n \n \n3,626 \nAmortization of intangibles\n \n \n1,081 \n(Gains) losses on equity investments, net\n \n(611)  \nMark-to-market (gains) losses on obligation to issue Escrowed Shares1\n \n1,687 \n \n— \n(Gains) losses on divestitures\n \n(5,355)  \n— \nDeferred taxes\n \n \n6,368 \nImpairments and net (gain) loss on retirement of property, plant, and equipment\n \n \n2,290 \nChanges in assets and liabilities:\nAccounts receivable\n \n \nInventories\n \n(9)  \n(969) \nAccounts payable\n \n(281)  \nAccrued compensation and benefits\n \n \n1,384 \nIncome taxes\n \n(1,196)  \n(930) \nOther assets and liabilities\n \n(1,423)  \nTotal adjustments\n \n5,050 \n \n24,203",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "ee7f2a6926b0c58708171bb56c12ab7c",
+    "chunk_id": "351764e4065575d91f02e7c5f5e28e5c",
     "text": "(1,423)  \nTotal adjustments\n \n5,050 \n \n24,203 \nNet cash provided by (used for) operating activities\n \n5,409 \n \n5,123 \nCash flows provided by (used for) investing activities:\nAdditions to property, plant, and equipment\n \n(11,158)  \n(18,110) \nProceeds from capital-related government incentives\n \n1,018 \n \nPurchases of short-term investments\n \n(16,401)  \n(31,519) \nMaturities and sales of short-term investments\n \n10,964 \n \n34,268 \nSales of equity investments\n \n \nProceeds from divestitures\n \n6,186 \n \n— \nOther investing\n \n \n(359) \nNet cash provided by (used for) investing activities\n \n(8,255)  \n(14,492) \nCash flows provided by (used for) financing activities:",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "7daf1c2750b9f15047f7418fca43bfc4",
+    "chunk_id": "164b6c8e2ffd9dd1f25e2d99c00e4727",
     "text": "(14,492) \nCash flows provided by (used for) financing activities:\nIssuance of commercial paper, net of issuance costs\n \n3,493 \n \n7,349 \nRepayment of commercial paper\n \n(3,493)  \n(7,349) \nPartner contributions\n \n3,652 \n \n12,278 \nProceeds from sales of subsidiary shares\n \n \n— \nAdditions to property, plant, and equipment\n \n(2,493)  \n(741) \nIssuance of long-term debt, net of issuance costs\n \n— \n \n2,975 \nRepayment of debt\n \n(3,750)  \n(2,288) \nProceeds from sales of common stock through employee equity incentive plans\n \n \nNet proceeds from sale of common stock and warrants\n \n3,737 \n \n— \nProceeds for obligation to issue Escrowed Shares1\n \n3,945 \n \n— \nPayment of dividends to stockholders\n \n—",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "6420439dffc99c187f6af671077793be",
+    "chunk_id": "0108e82c0379fc637c7ac481cb0b0c6a",
     "text": "3,945 \n \n— \nPayment of dividends to stockholders\n \n— \n \n(1,599) \nOther financing\n \n(1,052)  \n(536) \nNet cash provided by (used for) financing activities\n \n5,738 \n \n11,075 \nNet increase (decrease) in cash and cash equivalents\n \n2,892 \n \n1,706 \nCash and cash equivalents, end of period\n$ \n11,141 \n$ \n8,785 \n1Escrowed Shares refer to shares of Intel common stock held in escrow to be released to the U.S. Department of Commerce (DOC) as we \nThree Months Ended\n(In Millions; Unaudited)\nSep 27, 2025\nIntel Products\nCCG\nDCAI\nTotal Intel \nProducts\nIntel Foundry\nAll Other1\nCorporate \nUnallocated\nIntersegment \nEliminations\nTotal \nConsolidated\nRevenue\n$ \n8,535 $ \n4,117 $ \n12,652 $ \n4,235 $ \n993 $ \n— $",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "3f7dba9ef59f9830a07bb26e0fabc511",
+    "chunk_id": "10b3bb4ef9dcb848d10c2ff26e38b86d",
     "text": "Revenue\n$ \n8,535 $ \n4,117 $ \n12,652 $ \n4,235 $ \n993 $ \n— $ \n(4,227) $ \n13,653 \nCost of sales and operating expenses\n \n5,841  \n3,153  \n8,994  \n6,556  \n(4,255)  \n12,970 \nOperating income (loss)\n$ \n2,694 $ \n964 $ \n3,658 $ \n(2,321) $ \n100 $ \n(782) $ \n28 $ \nThree Months Ended\n(In Millions; Unaudited)\nSep 28, 2024\nIntel Products\nCCG\nDCAI\nTotal Intel \nProducts\nIntel Foundry\nAll Other1\nCorporate \nUnallocated\nIntersegment \nEliminations\nTotal \nConsolidated\nRevenue\n$ \n8,161 $ \n4,141 $ \n12,302 $ \n4,339 $ \n964 $ \n— $ \n(4,321) $ \n13,284 \nCost of sales and operating expenses\n \n5,224  \n3,760  \n8,984  \n10,138  \n6,502  \n(4,242)  \n22,341 \nOperating income (loss)\n$ \n2,937 $ \n381 $ \n3,318 $ \n(5,799) $ \n5 $",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "41a60aa05d96c1ec60df9533918ee6d6",
+    "chunk_id": "2e125d4716c7a341ddb3a0a3bdbc1582",
     "text": "Operating income (loss)\n$ \n2,937 $ \n381 $ \n3,318 $ \n(5,799) $ \n5 $ \n(6,502) $ \n(79) $ \n(9,057) \n1The \"all other\" category includes the results of operations from other non-reportable segments, including our Mobileye businesses, our IMS business, startup businesses that support our \ninitiatives, and historical results of operations from divested businesses, including Altera, which we divested on September 12, 2025. Altera's results were included within \"all other\" for all periods \nIn addition to disclosing financial results in accordance with US GAAP, this document references non-GAAP \nfinancial measures below. We believe these non-GAAP financial measures provide investors with useful",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "9e6872888766a7337b35fc59e8e5684f",
+    "chunk_id": "491b14a1104f7a19337a377909764681",
     "text": "supplemental information about our operating performance, enable comparison of financial trends and results \nbetween periods where certain items may vary independent of business performance, and allow for greater \ntransparency with respect to key metrics used by management in operating our business and measuring our \nperformance. These non-GAAP financial measures are used in our performance-based RSUs and our cash bonus \nplans.\nOur non-GAAP financial measures reflect adjustments based on one or more of the following items, as well as the \nrelated effects to income taxes and net income (loss) attributable to non-controlling interests effects. Income tax",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "76a55ebc11c8a539e2d58b4719bb2b32",
+    "chunk_id": "c7831d9175759ec0b6e80754841152a0",
     "text": "effects are calculated using a fixed long-term projected tax rate. For 2025 and 2024, we determined the projected \nnon-GAAP tax rate to be 12% and 13%, respectively. We project this long-term non-GAAP tax rate on at least an \nannual basis using a five-year non-GAAP financial projection that excludes the income tax effects of each \nadjustment. The projected non-GAAP tax rate also considers factors such as our tax structure, our tax positions in \nvarious jurisdictions, and key legislation in significant jurisdictions where we operate. This long-term non-GAAP tax \nrate may be subject to change for a variety of reasons, including the rapidly evolving global tax environment,",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "bce7fb45e280512f7ce62c21018e0ca5",
+    "chunk_id": "02420fc100f4f6a81525a161937aa2f0",
     "text": "significant changes in our geographic earnings mix, or changes to our strategy or business operations. \nManagement uses this non-GAAP tax rate in managing internal short- and long-term operating plans and in \nevaluating our performance; we believe this approach facilitates comparison of our operating results and provides \nuseful evaluation of our current operating performance. Non-GAAP adjustments attributable to non-controlling \ninterests are calculated by adjusting for the minority stockholder portion of non-GAAP adjustments we make for \nrelevant acquisition-related costs, share-based compensation, restructuring and other charges, and income tax",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "d987f31ab37bf0221c67158dc4b4dcdb",
+    "chunk_id": "295f7b7023965574be14a1002ab7a536",
     "text": "effects, as applicable to each majority-owned subsidiary.\nOur non-GAAP financial measures should not be considered a substitute for, or superior to, financial measures \ncalculated in accordance with US GAAP, and the financial results calculated in accordance with US GAAP and \nreconciliations from these results should be carefully evaluated.\nAcquisition-related \nadjustments\nAmortization of acquisition-related intangible assets \nconsists of amortization of intangible assets such \nas developed technology, brands, and customer \nrelationships acquired in connection with business \ncombinations. Charges related to the amortization \nof these intangibles are recorded within both cost of",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "a25c1f35b86f873d5f5c296efaca8552",
+    "chunk_id": "5a5e0cd4928252dbe30f895395d43a1c",
     "text": "of these intangibles are recorded within both cost of \nsales and marketing, general and administrative \nexpenses in our US GAAP financial statements. \nAmortization charges are recorded over the \nestimated useful life of the related acquired \nintangible asset, and thus are generally recorded \nover multiple years.\nWe exclude amortization charges for our acquisition-\nrelated intangible assets for purposes of calculating \ncertain non-GAAP measures because these charges \nare inconsistent in size and are significantly impacted \nby the timing and valuation of our acquisitions. These \nadjustments facilitate a useful evaluation of our \ncurrent operating performance and comparison to our",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "13df4e9ee8b2e6c226e1cfc86739b8fa",
+    "chunk_id": "fd3eb47d9adacc0fc9427f5aeef4b39a",
     "text": "current operating performance and comparison to our \npast operating performance and provide investors with \nadditional means to evaluate cost and expense \ntrends.\nShare-based \ncompensation\nShare-based compensation consists of charges \nrelated to our employee equity incentive plans. \nCharges related to shared-based compensation are \nrecorded within cost of sales, research and \ndevelopment, and marketing, general and \nadministrative.\nWe exclude charges related to share-based \ncompensation for purposes of calculating certain non-\nGAAP measures because we believe these \nadjustments provide comparability to peer company \nresults and because these charges are not viewed by",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "f0b34d42bd94967c866deccd30801f04",
+    "chunk_id": "3c3320d16dda86a6d6fe773b02ccb560",
     "text": "results and because these charges are not viewed by \nmanagement as part of our core operating \nperformance. We believe these adjustments provide \ninvestors with a useful view, through the eyes of \nmanagement, of our core business model, how \nmanagement currently evaluates core operational \nperformance, and additional means to evaluate \nexpense trends, including in comparison to other peer \ncompanies.\nNon-GAAP \nadjustment or \nmeasure\nDefinition \nRestructuring charges are costs associated with \nrestructuring plans and are primarily related to \nemployee severance and benefit arrangements. Q3 \n2025 primarily includes charges associated with the \n2025 Restructuring Plan primarily comprised of",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "36404943cec47b1d07dcef11ac51e4b8",
+    "chunk_id": "56700c76d94b74f4a82fcc48eafa93bb",
     "text": "2025 Restructuring Plan primarily comprised of \ncash-based employee severance and benefit \narrangements. Q3 2024 primarily includes charges \nassociated with the 2024 Restructuring Plan \nprimarily comprised of cash-based employee \nseverance and benefit arrangements, and cash and \nnon-cash charges related to real estate exits and \nconsolidations, as well as non-cash construction in \nprogress asset impairments resulting from business \nexit activities. Other charges include periodic \ngoodwill and asset impairments, and other costs \nassociated with certain non-core activities. Q3 2024 \nincludes noncash charges resulting from the \nimpairment of goodwill and certain acquired \nintangible assets.",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "d7bf81cdfce0bb751142c37144c0dbda",
+    "chunk_id": "6fdcfd67fc753a0f329ed0c4f6536ef9",
     "text": "impairment of goodwill and certain acquired \nintangible assets.\nWe exclude restructuring and other charges, including \nany adjustments to charges recorded in prior periods, \nfor purposes of calculating certain non-GAAP \nmeasures because these costs do not reflect our core \noperating performance. These adjustments facilitate a \nuseful evaluation of our core operating performance \nand comparisons to past operating results and provide \ninvestors with additional means to evaluate expense \ntrends.\n(Gains) losses on \nequity \ninvestments, net\n(Gains) losses on equity investments, net consists \nof ongoing mark-to-market adjustments on \nmarketable equity securities, observable price",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "6289d090ac95397cb70df32e4ebc7901",
+    "chunk_id": "7a73436080cc2ee2a073ac1d09fb4400",
     "text": "marketable equity securities, observable price \nadjustments on non-marketable equity securities, \nrelated impairment charges, and the gains (losses) \nfrom the sale of equity investments and other.\nWe exclude these non-operating gains and losses for \npurposes of calculating certain non-GAAP measures \nto provide comparability between periods. The \nexclusion reflects how management evaluates the \ncore operations of the business.\n(Gains) losses \nfrom divestitures\n(Gains) losses are recognized at the close of a \ndivestiture, or over a specified deferral period when \ndeferred consideration is received at the time of \nclosing, as a component of interest and other, net.",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "1c913c07af37343e32bc183d2208093e",
+    "chunk_id": "05f3be8c9434f41c7c86ba09a63bf410",
     "text": "closing, as a component of interest and other, net. \nQ3 2025 includes a gain on the sale of our Altera \nbusiness. Q3 2024 includes a portion of the initial \nclosing consideration that was deferred and \nrecognized between the first and second closing of \nthe sale of our NAND memory business. \nWe exclude non-operating gains or losses resulting \nfrom divestitures for purposes of calculating certain \nnon-GAAP measures because they do not reflect our \ncurrent operating performance. These adjustments \nfacilitate a useful evaluation of our current operating \nperformance and comparisons to past operating \nresults.\n(Gains) losses \nfrom mark-to-\nmarket of \nEscrowed Shares",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "50d6bc0256a8c2ef062d16badfba90ce",
+    "chunk_id": "7344a1f9210442b32f7d030ecd752b04",
     "text": "results.\n(Gains) losses \nfrom mark-to-\nmarket of \nEscrowed Shares\n(Gains) losses on mark-to-market of Escrowed \nShares is a component of interest and other, net \nand relates to the changes in fair value of \nEscrowed Shares released during the period and \nheld as of Q3 2025 resulting from the Escrowed \nShares derivative liability recognized in connection \nwith the Warrant and Common Stock Agreement \nwith the US Government.\nWe exclude these non-operating gains and losses for \npurposes of calculating certain non-GAAP measures \nto provide comparability between periods. The \nexclusion reflect how management evaluates the core \noperations of the business. \nDeferred tax\nassets valuation\nallowances",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "b7031d8155df0cbb4c3c69be213a4588",
+    "chunk_id": "1dcce39f37d5c9dfd996eb9f401a5e1f",
     "text": "operations of the business. \nDeferred tax\nassets valuation\nallowances\nDeferred tax assets valuation allowances relate to \na discreet non-cash charge recognized in Q3 2024\nrelated to a valuation allowance established against\nour US deferred tax assets due to a historical\ncumulative loss for GAAP purposes.\nWe excluded the discreet valuation allowance when \ncalculating certain non-GAAP measures as there is no \nsuch historical cumulative loss on a non-GAAP basis; \nand because of the size of the charge, the adjustment \nfacilitates a useful evaluation of our core operating \nperformance and comparisons to our past operating \nresults.\nAdjusted free cash \nflow",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "e402dbd82ab296a9f341eac05c707f3d",
+    "chunk_id": "e6f65b1eceb6673b3718d1fc9bbef325",
     "text": "results.\nAdjusted free cash \nflow\nWe reference a non-GAAP financial measure of \nadjusted free cash flow, which is used by \nmanagement when assessing our sources of \nliquidity, capital resources, and quality of earnings. \nAdjusted free cash flow is operating cash flow \nadjusted for (1) additions to property, plant, and \nequipment, net of proceeds from capital-related \ngovernment incentives and net partner \ncontributions, and (2) payments on finance leases.\nThis non-GAAP financial measure is helpful in \nunderstanding our capital requirements and sources \nof liquidity by providing an additional means to \nevaluate the cash flow trends of our business.\nNon-GAAP \nadjustment or \nmeasure",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "238064f245da6efdf439ac750c1dbd97",
+    "chunk_id": "bab4f5917eb0849eaa741d7094220903",
     "text": "Non-GAAP \nadjustment or \nmeasure\nDefinition \nWe reference a non-GAAP financial measure of net \ncapital spending, which is additions to property, \nplant, and equipment, net of proceeds from capital-\nrelated government incentives and net partner \ncontributions.\nWe believe this measure provides investors with \nuseful supplemental information about our capital \ninvestment activities and capital offsets, and allows for \ngreater transparency with respect to a key metric used \nby management in operating our business and \nmeasuring our performance.\nNon-GAAP \nadjustment or \nmeasure\nDefinition",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "c3e3cdc5152df967d7cdd9ced719bcbd",
+    "chunk_id": "32efb8c8b02e91d643a2955e6e281c49",
     "text": "Non-GAAP \nadjustment or \nmeasure\nDefinition \nSet forth below are reconciliations of the non-GAAP financial measure to the most directly comparable US GAAP \nfinancial measure. These non-GAAP financial measures should not be considered a substitute for, or superior to, \nfinancial measures calculated in accordance with US GAAP, and the reconciliations from US GAAP to Non-GAAP \nactuals should be carefully evaluated. Please refer to \"Explanation of Non-GAAP Measures\" in this document for a \ndetailed explanation of the adjustments made to the comparable US GAAP measures, the ways management uses \nthe non-GAAP measures, and the reasons why management believes the non-GAAP measures provide useful",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "9b37d75c3a61279d4fff2c19eec8bc4e",
+    "chunk_id": "b00714e74e3d9831d1cad52711a7d2b5",
     "text": "information for investors.\nThree Months Ended\n(In Millions, Except Per Share Amounts; Unaudited)\nSep 27, 2025\nSep 28, 2024\nGAAP gross profit\n$ \n5,218 \n$ \n1,997 \nAcquisition-related adjustments\n \n \nShare-based compensation\n \n \nNon-GAAP gross profit\n$ \n5,456 \n$ \n2,393 \nGAAP gross margin percentage\n 38.2 %\n 15.0 %\nAcquisition-related adjustments\n 0.7 %\n 1.7 %\nShare-based compensation\n 1.0 %\n 1.3 %\nNon-GAAP gross margin percentage\n 40.0 %\n 18.0 %\nGAAP R&D and MG&A\n$ \n4,360 \n$ \n5,432 \nAcquisition-related adjustments\n \n(17) \n \n(42) \nShare-based compensation\n \n(411) \n \n(628) \nNon-GAAP R&D and MG&A\n$ \n3,932 \n$ \n4,762 \nGAAP operating income (loss)\n$ \n$ \n(9,057) \nAcquisition-related adjustments",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "57ac4a9998313d1a30b9a4e1eeef4c1f",
+    "chunk_id": "70ca85de15edc2c60736201062826891",
     "text": "$ \n$ \n(9,057) \nAcquisition-related adjustments\n \n \nShare-based compensation\n \n \nRestructuring and other charges\n \n \n5,622 \nNon-GAAP operating income (loss)\n$ \n1,524 \n$ \n(2,369) \nGAAP operating margin (loss)\n 5.0 %\n (68.2) %\nAcquisition-related adjustments\n 0.9 %\n 2.0 %\nShare-based compensation\n 4.0 %\n 6.0 %\nRestructuring and other charges\n 1.3 %\n 42.3 %\nNon-GAAP operating margin (loss)\n 11.2 %\n (17.8) %\nGAAP tax rate\n 6.6 %\n (87.0) %\nDeferred tax assets valuation allowance\n — %\n 121.0 %\nIncome tax effects\n 5.4 %\n (21.0) %\nNon-GAAP tax rate\n 12.0 %\n 13.0 %\nGAAP net income (loss) attributable to Intel\n$ \n4,063 \n$ \n(16,639) \nAcquisition-related adjustments\n \n \nShare-based compensation",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "932c3d8a1ec541109556c5b5d424bd69",
+    "chunk_id": "414fb1b40080b221b34a1d0dfb7b7b44",
     "text": "Acquisition-related adjustments\n \n \nShare-based compensation\n \n \nRestructuring and other charges\n \n \n5,622 \n(Gains) losses on equity investments, net\n \n(221) \n \n(Gains) losses from divestiture\n \n(5,452) \n \n(39) \n(Gains) losses from mark-to-market of Escrowed Shares\n \n1,687 \n \n— \nAdjustments attributable to non-controlling interest\n \n(27) \n \n(344) \nDeferred tax assets valuation allowances\n \n— \n \n9,925 \nIncome tax effects\n \n \n(1,726) \nNon-GAAP net income (loss) attributable to Intel\n$ \n1,023 \n$ \n0.90 \n$ \n(3.88) \nAcquisition-related adjustments\n \n0.03 \n \n0.06 \nShare-based compensation\n \n0.12 \n \n0.19 \nRestructuring and other charges\n \n0.04 \n \n1.31 \n(Gains) losses on equity investments, net",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "c4695f4d33dfb0c185e9921cdabccf8b",
+    "chunk_id": "683157dc7a7e2b09849143dc2437cf83",
     "text": "0.04 \n \n1.31 \n(Gains) losses on equity investments, net\n \n(0.05) \n \n0.04 \n(Gains) losses from divestiture\n \n(1.20) \n \n(0.01) \n(Gains) losses from mark-to-market of Escrowed Shares\n \n0.37 \n \n— \nAdjustments attributable to non-controlling interest\n \n(0.01) \n \n(0.08) \nDeferred tax assets valuation allowance\n \n— \n \n2.31 \nIncome tax effects\n \n0.03 \n \n(0.40) \nNon-GAAP earnings (loss) per share attributable to Intel—diluted\n$ \n0.23 \n$ \n(0.46) \nGAAP net cash provided by (used for) operating activities\n$ \n2,546 \n$ \n4,054 \nAdditions to property, plant, and equipment (gross capital expenditures)\n \n(2,956) \n \n(7,199) \nProceeds from capital-related government incentives\n \n \nPartner contributions, net",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "8bed495f11280f5adea9bbf96169274b",
+    "chunk_id": "7cc7a0638c033741ed2aabb1faa06ab2",
     "text": "Partner contributions, net\n \n1,346 \n \nNet purchase of property, plant, and equipment (net capital expenditures)\n \n(1,556) \n \n(6,756) \nPayments on finance leases\n \n(94) \n \n— \nAdjusted free cash flow\n$ \n$ \n(2,702) \nGAAP net cash provided by (used for) investing activities\n$ \n(6,250) \n$ \n(2,764) \nGAAP net cash provided by (used for) financing activities\n$ \n5,152 \n$ \nSet forth below are reconciliations of the non-GAAP financial measure to the most directly comparable US GAAP \nfinancial measure. These non-GAAP financial measures should not be considered a substitute for, or superior to,",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "4caad230f7467eb8d3dff0585f01e4eb",
+    "chunk_id": "91b727a128f1ef1e0c9f881440a1c651",
     "text": "financial measures calculated in accordance with US GAAP, and the financial outlook prepared in accordance with \nUS GAAP and the reconciliations from this Business Outlook should be carefully evaluated. Please refer to \n\"Explanation of Non-GAAP Measures\" in this document for a detailed explanation of the adjustments made to the \ncomparable US GAAP measures, the ways management uses the non-GAAP measures, and the reasons why \nmanagement believes the non-GAAP measures provide useful information for investors.\n(Unaudited)\nQ4 2025 Outlook1\nApproximately\nGAAP gross margin percentage\n 34.5 %\nAcquisition-related adjustments\n 0.8 %\nShare-based compensation\n 1.2 %\nNon-GAAP gross margin percentage",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "2ad09ecd30f9fad4a704f1373f7863f8",
+    "chunk_id": "b96c5fbda15fdcd5031a9c276f9dcbcc",
     "text": "Share-based compensation\n 1.2 %\nNon-GAAP gross margin percentage\n 36.5 %\nGAAP tax rate\n 476 %\nIncome tax effects\n (464) %\nNon-GAAP tax rate\n 12 %\nGAAP earnings (loss) per share attributable to Intel—diluted\n$ \n(0.14) \nAcquisition-related adjustments\n \n0.02 \nShare-based compensation\n \n0.11 \nRestructuring and other charges\n \n0.03 \nAdjustments attributable to non-controlling interest\n \n(0.01) \nIncome tax effects\n \n0.07 \nNon-GAAP earnings (loss) per share attributable to Intel—diluted\n$ \n0.08 \n \n \n \n1 Non-GAAP gross margin percentage and non-GAAP earnings (loss) per share attributable to Intel outlook based on the mid-point of the",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "5b78f63ba5b0c555b3a661a4ca4a486c",
+    "chunk_id": "10a426d95292b12fa39eee369febdfba",
     "text": "Set forth below are reconciliations of the non-GAAP financial measure to the most directly comparable US GAAP \nfinancial measure. These non-GAAP financial measures should not be considered a substitute for, or superior to, \nfinancial measures calculated in accordance with US GAAP, and the reconciliations should be carefully evaluated. \nPlease refer to \"Explanation of Non-GAAP Measures\" in this document for a detailed explanation of the adjustments \nmade to the comparable US GAAP measures, the ways management uses the non-GAAP measures, and the \nreasons why management believes the non-GAAP measures provide useful information for investors. \n(In Billions; Unaudited)\nFull-Year 2026",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   },
   {
-    "chunk_id": "cae6d84b28aef14ee409dfe539fa3ce3",
+    "chunk_id": "36821f9c632f3a8fbf81f27653e15b0f",
     "text": "(In Billions; Unaudited)\nFull-Year 2026\nApproximately\nGAAP operating expenses\n$ \n19.0 \nAcquisition-related adjustments\n \n(0.1) \nShare-based compensation\n \n(2.9) \nRestructuring and other charges\n \n— \nNon-GAAP operating expenses\n$ \n16.0 \nContacts:\nInvestor Relations \ninvestor.relations@intel.com\nSophie Metzger\nMedia Relations",
     "ticker": "INTC.US",
     "pub_date": "1783672966",
     "period": "",
     "data_source": "broker_report",
-    "source_file": "data/inputs/reports/英特尔/2025/Q3'25 EarningsRelease FINAL.pdf"
+    "source_file": "data/inputs/reports/英特尔/Q3'25 EarningsRelease FINAL.pdf"
   }
 ]
