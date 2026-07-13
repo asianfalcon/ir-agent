@@ -1,0 +1,299 @@
+[
+  {
+    "chunk_id": "8769101dc5bf3237f75baee49f18c543",
+    "text": "(Millions except per share amounts and percentages) (Unaudited) \nQuarter Group\nDecember 27, \n2025 \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nNet revenue \n10,270 \n$              \n9,246 \n$                \n7,658 \n$                \n34,639 \n$              \n25,785 \n$              \nCost of sales \n4,433 \n4,206 \n3,524 \n16,456 \n12,114 \nAmortization of acquisition-related intangibles \n1,031 \nTotal cost of sales \n4,693 \n4,466 \n3,776 \n17,487 \n13,060 \nGross profit \n5,577 \n4,780 \n3,882 \n17,152 \n12,725 \nGross margin \n54% \n52% \n51% \n50% \n49% \nResearch and development \n2,330 \n2,139 \n1,712 \n8,091 \n6,456 \nMarketing, general and administrative \n1,198 \n1,069 \n4,144 \n2,735",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "d333ffc2e7b7c7555207ab50a918cde2",
+    "text": "Marketing, general and administrative \n1,198 \n1,069 \n4,144 \n2,735 \nAmortization of acquisition-related intangibles \n1,223 \n1,448 \nRestructuring charges \n- \n- \n- \nTotal operating expenses \n3,825 \n3,510 \n3,011 \n13,458 \n10,825 \nOperating income \n1,752 \n1,270 \n3,694 \n1,900 \nInterest expense \n(36) \n(37) \n(19) \n(131) \n(92) \nOther income (expense), net \nIncome from continuing operations before income taxes and \nequity income \n2,074 \n1,315 \n4,140 \n1,989 \nIncome tax provision (benefit) \n(103) \nEquity income in investee \nIncome from continuing operations, net of tax \n1,620 \n1,172 \n4,269 \n1,641 \n(Loss) Income from discontinued operations, net of tax \n(109) \n- \n- \nNet income \n1,511 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "f47f196652cde5dd4e15a69eb7a817f9",
+    "text": "(109) \n- \n- \nNet income \n1,511 \n$                \n1,243 \n$                \n$                   \n4,335 \n$                \n1,641 \n$                \nEarnings per share: \nEarnings from continuing operations - basic \n1.00 \n$                  \n0.72 \n$                  \n0.30 \n$                  \n2.63 \n$                  \n1.01 \n$                  \nEarnings from discontinued operations - basic \n(0.07) \n$                 \n0.04 \n$                  \n-\n$                   \n0.04 \n$                  \n-\n$                   \nBasic earnings per share \n0.93 \n$                  \n0.76 \n$                  \n0.30 \n$                  \n2.67 \n$                  \n1.01 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "e0b9a7caf20fe72683db07bd0d27474e",
+    "text": "2.67 \n$                  \n1.01 \n$                  \nEarnings from continuing operations - diluted \n0.99 \n$                  \n0.71 \n$                  \n0.29 \n$                  \n2.61 \n$                  \n1.00 \n$                  \nEarnings from discontinued operations - diluted \n(0.07) \n$                 \n0.04 \n$                  \n-\n$                   \n0.04 \n$                  \n-\n$                   \nDiluted earnings per share \n0.92 \n$                  \n0.75 \n$                  \n0.29 \n$                  \n2.65 \n$                  \n1.00 \n$                  \nShares used in per share calculation \nBasic \n1,630 \n1,626 \n1,623 \n1,624 \n1,620 \nDiluted \n1,649 \n1,641 \n1,634 \n1,636 \n1,637 \n(Millions)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "61e3bcaf24c6c591a017bcb3bbc556c5",
+    "text": "1,624 \n1,620 \nDiluted \n1,649 \n1,641 \n1,634 \n1,636 \n1,637 \n(Millions) \nDecember 27, \n2025 \nDecember 28, \n2024 \n(Unaudited) \nASSETS \nCurrent assets: \nCash and cash equivalents \n5,539 \n$                      \n3,787 \n$                    \nShort-term investments \n5,013 \n1,345 \nAccounts receivable, net \n6,315 \n6,192 \nInventories \n7,920 \n5,734 \nPrepaid expenses and other current assets \n2,160 \n1,991 \nTotal current assets \n26,947 \n19,049 \nProperty and equipment, net \n2,312 \n1,802 \nGoodwill \n25,126 \n24,839 \nAcquisition-related intangibles, net \n16,705 \n18,930 \nDeferred tax assets \nOther non-current assets \n5,452 \n3,918 \nTotal Assets \n76,926 \n$                    \n69,226 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "16e7385bec48a316bfb1453f7bd60f89",
+    "text": "76,926 \n$                    \n69,226 \n$                  \nLIABILITIES AND STOCKHOLDERS' EQUITY \nCurrent liabilities: \nAccounts payable \n2,929 \n$                      \n2,466 \n$                    \nAccrued liabilities \n5,250 \n4,260 \nCurrent portion of long-term debt, net \n- \nOther current liabilities \nTotal current liabilities \n9,455 \n7,281 \nLong-term debt \n2,348 \n1,721 \nLong-term operating lease liabilities \nDeferred tax liabilities \nOther long-term liabilities \n1,186 \n1,816 \nStockholders' equity: \nCapital stock: \nCommon stock, par value $0.01 \nAdditional paid-in capital \n63,365 \n61,362 \nTreasury stock, at cost \n(7,079) \n(6,106) \nRetained earnings \n6,699 \n2,364",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "beebb0af395a2a5c4349012091b305b9",
+    "text": "(7,079) \n(6,106) \nRetained earnings \n6,699 \n2,364 \nAccumulated other comprehensive loss \n(3) \n(69) \nTotal stockholders' equity \n62,999 \n57,568 \nTotal Liabilities and Stockholders' Equity \n76,926 \n$                    \n(Millions) (Unaudited) \nQuarter Group\nDecember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nCash flows from operating activities: \nNet income \n1,511 \n$             \n$                \n4,335 \n$             \n1,641 \n$             \n(Income) loss from discontinued operations, net of tax \n- \n(66) \n- \nAdjustments to reconcile net income to net cash provided by operating activities: \nDepreciation and amortization",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "d8e263ce483fbdb716ce38fae84a2c1a",
+    "text": "Depreciation and amortization \nAmortization of acquisition-related intangibles \n2,254 \n2,393 \nStock-based compensation \n1,638 \n1,407 \n(Gains) losses on long-term investments, net \n(280) \n- \n(341) \n- \nDeferred income taxes \n(300) \n(1,163) \nInventory loss at (recovery from) contract manufacturer \n- \n- \n(67) \nOther \nChanges in operating assets and liabilities: \nAccounts receivable, net \n(114) \n(121) \n(1,865) \nInventories \n(610) \n(362) \n(2,189) \n(1,458) \nPrepaid expenses and other assets \n(11) \nAccounts payable \n(588) \n(571) \nAccrued and other liabilities \n(467) \nNet cash provided by operating activities of continuing operations \n2,304 \n1,299 \n6,493 \n3,041",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "89eb3d56923b1705fb028d677c15d375",
+    "text": "2,304 \n1,299 \n6,493 \n3,041 \nNet cash provided by operating activities of discontinued operations \n- \n1,216 \n- \nNet cash provided by operations \n2,600 \n1,299 \n7,709 \n3,041 \nCash flows from investing activities: \nPurchases of property and equipment \n(222) \n(208) \n(974) \n(636) \nPurchases of short-term investments \n(3,360) \n(786) \n(5,470) \n(1,493) \nProceeds from maturity of short-term investments \n1,765 \n1,416 \nProceeds from sale of short-term investments \nAcquisitions, net of cash acquired \n(44) \n- \n(1,760) \n(548) \nRelated party loan and equity method investment \n- \n(100) \n- \n(117) \nPurchases of long-term investments \n(70) \n(210) \n(502) \n(341) \nOther \n-",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "a77c5f7558934b3eda9549d1e9cf48ac",
+    "text": "(70) \n(210) \n(502) \n(341) \nOther \n- \nNet cash used in investing activities of continuing operations \n(2,889) \n(1,214) \n(6,851) \n(1,101) \nProceeds from divestiture, net of cash divested \n1,356 \n- \n1,356 \n- \nPurchases of property and equipment \n(8) \n- \n(38) \n- \nNet cash provided by investing activities of discontinued operations \n1,348 \n- \n1,318 \n- \nNet cash used in investing activities \n(1,541) \n(1,214) \n(5,533) \n(1,101) \nCash flows from financing activities: \nProceeds from debt and commercial paper issuance, net of issuance costs \n- \n- \n2,441 \n- \nRepayment of debt and commercial paper \n- \n- \n(950) \n(750) \nProceeds from sales of common stock through employee equity plans",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "be3be70d0b78e7a8976e138496e6f044",
+    "text": "Proceeds from sales of common stock through employee equity plans \nRepurchases of common stock \n- \n(256) \n(1,316) \n(862) \nStock repurchases for tax withholding on employee equity plans \n(160) \n(42) \n(607) \n(728) \nSettlement of contingent consideration liability \n(284) \n- \n(284) \n- \nOther \n- \n- \n- \n(1) \nNet cash used in financing activities \n(328) \n(171) \n(431) \n(2,062) \nNet increase (decrease) in cash, cash equivalents and restricted cash \n(86) \n1,745 \n(122) \nCash, cash equivalents and restricted cash at beginning of period \n4,825 \n3,897 \n3,811 \n3,933 \nCash, cash equivalents and restricted cash at end of period \n5,556 \n$             \n3,811 \n$             \n5,556 \n$             \n3,811",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "6787121df85554d68aa3dafa1b750b43",
+    "text": "$             \n3,811 \n$             \n5,556 \n$             \n3,811 \n$             \nReconciliation of cash, cash equivalents and restricted cash \nCash and cash equivalents \n5,539 \n$             \n3,787 \n$             \n5,539 \n$             \n3,787 \n$             \nRestricted cash included in Prepaid expenses and other current assets \nCash, cash equivalents and restricted cash at end of period \n5,556 \n$             \n3,811 \n$             \n5,556 \n$             \n3,811 \n$             \n(Millions) (Unaudited) \nQuarter Group\nDecember 27, \n2025 \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nSegment and Disaggregated Revenue Information (1) \nNet Revenue:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "df5d214089bf765b09314d44e92f6f38",
+    "text": "Segment and Disaggregated Revenue Information (1) \nNet Revenue: \nData Center Segment \n5,380 \n$             \n4,341 \n$             \n3,859 \n$             \n16,635 \n$           \n12,579 \n$           \nClient and Gaming Segment \nClient \n3,097 \n2,750 \n2,313 \n10,640 \n7,054 \nGaming \n1,298 \n3,910 \n2,595 \nTotal Client and Gaming \n3,940 \n4,048 \n2,876 \n14,550 \n9,649 \nEmbedded Segment \n3,454 \n3,557 \nTotal net revenue \n10,270 \n$           \n9,246 \n$             \n7,658 \n$             \n34,639 \n$           \n25,785 \n$           \nOperating Income (Loss): \nData Center Segment \n1,752 \n$             \n1,074 \n$             \n1,157 \n$             \n3,603 \n$             \n3,482 \n$             \nClient and Gaming Segment",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "6de4de7e6c8fecb85f11558c3f255682",
+    "text": "$             \n3,482 \n$             \nClient and Gaming Segment \n2,855 \n1,187 \nEmbedded Segment \n1,243 \n1,421 \nAll other \n(1,082) \n(954) \n(1,144) \n(4,007) \n(4,190) \nTotal operating income \n1,752 \n$             \n1,270 \n$             \n$                \n3,694 \n$             \n1,900 \n$             \nOther Data \nCapital expenditures \n$                \n$                \n$                \n$                \n$                \nAdjusted EBITDA (2) \n3,048 \n$             \n2,431 \n$             \n2,198 \n$             \n8,521 \n$             \n6,810 \n$             \nCash, cash equivalents and short-term investments \n10,552 \n$           \n7,243 \n$             \n5,132 \n$             \n10,552 \n$           \n5,132",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "97969293e28e1dbf5209b9fc3017290b",
+    "text": "$             \n5,132 \n$             \n10,552 \n$           \n5,132 \n$             \nFree cash flow (3) \n2,082 \n$             \n1,530 \n$             \n1,091 \n$             \n5,519 \n$             \n2,405 \n$             \nTotal assets \n76,926 \n$           \n76,891 \n$           \n69,226 \n$           \n76,926 \n$           \n69,226 \n$           \nTotal debt \n3,222 \n$             \n3,220 \n$             \n1,721 \n$             \n3,222 \n$             \n1,721 \n$             \nSee footnotes on the next page \nQuarter Group\n(Millions) (Unaudited) \nDecember 27, \n2025 \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nGAAP net income \n1,511 \n$                      \n1,243",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "2d28206f8e6b625d178afe86b08d3c54",
+    "text": "2024 \nGAAP net income \n1,511 \n$                      \n1,243 \n$                      \n$                         \n4,335 \n$               \n1,641 \n$               \nInterest expense \nOther (income) expense, net \n(358) \n(82) \n(37) \n(577) \n(181) \nIncome tax provision (benefit) \n(103) \nEquity income in investee \n(1) \n(10) \n(12) \n(26) \n(33) \nStock-based compensation \n1,638 \n1,407 \nDepreciation and amortization \nAmortization of acquisition-related intangibles \n2,254 \n2,394 \nAcquisition-related and other costs \nInventory loss at (recovery from) contract manufacturer \n- \n(67) \n- \n(67) \nLoss contingency on legal matter \n- \n- \nRestructuring charges \n- \n- \n-",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "b01d7132fc9742fbd6259b64e80a6cdd",
+    "text": "- \n- \nRestructuring charges \n- \n- \n- \nLoss (Income) from discontinued operations, net of tax \n(71) \n- \n(66) \n- \nAdjusted EBITDA \n3,048 \n$                      \n2,431 \n$                      \n2,198 \n$                      \n8,521 \n$               \n6,810 \n$               \n  (3) Reconciliation of GAAP Net Cash Provided by Operating Activities of Continuing Operations to Free Cash Flow \n(Millions except percentages) (Unaudited) \nDecember 27, \n2025 \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nGAAP net cash provided by operating activities of continuing operations \n2,304 \n$                      \n1,788 \n$                      \n1,299 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "5480d25b5c6b6278fc4ad3fe56c7e1d5",
+    "text": "1,788 \n$                      \n1,299 \n$                      \n6,493 \n$               \n3,041 \n$               \nOperating cash flow margin % from continuing operations \n22% \n19% \n17% \n19% \n12% \nPurchases of property and equipment \n(222) \n(258) \n(208) \n(974) \n(636) \nFree cash flow \n2,082 \n$                      \n1,530 \n$                      \n1,091 \n$                      \n5,519 \n$               \n2,405 \n$               \nFree cash flow margin % \n20% \n17% \n14% \n16% \n9% \nThe Company has provided reconciliations within the earnings press release of these Non-GAAP financial measures to the most directly comparable GAAP financial measures. \nYear Ended \nYear Ended",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "0da32d88a52d6d5ce33f16c9cbb9c6d8",
+    "text": "Year Ended \nYear Ended \nThe Company operates as three operating segments, Data Center, Client and Gaming, and Embedded segments. \nThe Data Center segment primarily includes Artificial Intelligence (AI) accelerators, microprocessors (CPUs) for servers, graphics processing units (GPUs), accelerated processing units \n(APUs), data processing units (DPUs), AI Network Interface Cards (AI NICs), Field Programmable Gate Arrays (FPGAs) and adaptive System-on-Chip (SoC) products for data centers. \nThe Client and Gaming segment primarily includes CPUs, APUs, chipsets for desktops and notebooks, discrete GPUs, and semi-custom SoC products and development services.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "59b475bf0d736de2ee8067225057e90c",
+    "text": "The Embedded segment primarily includes embedded CPUs, APUs, FPGAs, System on Modules (SOMs), and adaptive SoC products. \nFrom time to time, the Company may also sell or license portions of its IP portfolio.   \nAll Other category primarily includes certain expenses and credits that are not allocated to any of the operating segments, such as amortization of acquisition-related intangibles, employee \nstock-based compensation expense, acquisition-related and other costs, inventory loss at contract manufacturer and restructuring charges.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "7744333cdc5d0e8dd48273b627e3b904",
+    "text": "The Company presents “Adjusted EBITDA” as a supplemental measure of its performance. Adjusted EBITDA for the Company is determined by adjusting GAAP net income for interest \nexpense, other (income) expense, net, income tax provision (benefit), equity income in investee, stock-based compensation, depreciation and amortization expense, amortization of \nacquisition-related intangibles, inventory loss at (recovery from) contract manufacturer, loss contingency on legal matter, acquisition-related and other costs, restructuring charges, and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "ad80b470c43f4ee2f5aac3e838d78804",
+    "text": "income from discontinued operations, net of tax. The Company calculates and presents Adjusted EBITDA because management believes it is of importance to investors and lenders in \nrelation to its overall capital structure and its ability to borrow additional funds. In addition, the Company presents Adjusted EBITDA because it believes this measure assists investors in \ncomparing its performance across reporting periods on a consistent basis by excluding items that the Company does not believe are indicative of its core operating performance. The",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "54f75137285202079d3d1a6b4c5009ab",
+    "text": "Company’s calculation of Adjusted EBITDA may or may not be consistent with the calculation of this measure by other companies in the same industry. Investors should not view Adjusted \nEBITDA as an alternative to the GAAP operating measure of net income or GAAP liquidity measures of cash flows from operating, investing and financing activities. In addition, Adjusted \nEBITDA does not take into account changes in certain assets and liabilities that can affect cash flows. \nThe Company also presents free cash flow as a supplemental Non-GAAP measure of its performance. Free cash flow is determined by adjusting GAAP net cash provided by operating",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "4833cb22c5f064486c60126698d1a6ee",
+    "text": "activities of continuing operations for capital expenditures, and free cash flow margin % is free cash flow expressed as a percentage of the Company's net revenue. The Company \ncalculates and communicates free cash flow in the financial earnings press release because management believes it is of importance to investors to understand the nature of these cash \nflows. The Company’s calculation of free cash flow may or may not be consistent with the calculation of this measure by other companies in the same industry. Investors should not view \nfree cash flow as an alternative to GAAP liquidity measures of cash flows from operating activities. \nThree Months Ended \nQuarter Group\nDecember 27,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "9386fac1194118c632fb340937c5f519",
+    "text": "Three Months Ended \nQuarter Group\nDecember 27, \n2025 \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \n2025 \nDecember 28, \n2024 \nGAAP gross profit \n5,577 \n$             \n4,780 \n$             \n3,882 \n$             \n17,152 \n$           \n12,725 \n$           \nGAAP gross margin \n54% \n52% \n51% \n50% \n49% \nStock-based compensation \nAmortization of acquisition-related intangibles \n1,031 \nAcquisition-related and other costs (1) \n- \n- \nInventory loss at (recovery from) contract manufacturer (2) \n- \n(67) \n- \n(67) \nLoss contingency on legal matter \n- \n- \nNon-GAAP gross profit \n5,855 \n$             \n4,992 \n$             \n4,140 \n$             \n18,165 \n$           \n13,759 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "76128b43c17c8d8e28f58f948131ff8d",
+    "text": "4,140 \n$             \n18,165 \n$           \n13,759 \n$           \nNon-GAAP gross margin \n57% \n54% \n54% \n52% \n53% \nGAAP operating expenses (3) \n3,825 \n$             \n3,510 \n$             \n3,011 \n$             \n13,458 \n$           \n10,825 \n$           \nGAAP operating expenses/revenue % \n37% \n38% \n39% \n39% \n42% \nStock-based compensation \n1,612 \n1,385 \nAmortization of acquisition-related intangibles \n1,223 \n1,448 \nAcquisition-related and other costs (1) \nRestructuring charges (4) \n- \n- \n- \nNon-GAAP operating expenses (3) \n3,001 \n$             \n2,754 \n$             \n2,114 \n$             \n10,397 \n$           \n7,621 \n$             \nNon-GAAP operating expenses/revenue % \n29% \n30% \n28% \n30% \n30%",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "2823719c41178eff6f91817ab9758885",
+    "text": "Non-GAAP operating expenses/revenue % \n29% \n30% \n28% \n30% \n30% \nGAAP operating income \n1,752 \n$             \n1,270 \n$             \n$                \n3,694 \n$             \n1,900 \n$             \nGAAP operating margin \n17% \n14% \n11% \n11% \n7% \nStock-based compensation \n1,638 \n1,407 \nAmortization of acquisition-related intangibles \n2,254 \n2,394 \nAcquisition-related and other costs (1) \nInventory loss at (recovery from) contract manufacturer (2) \n- \n(67) \n- \n(67) \nLoss contingency on legal matter \n- \n- \nRestructuring charges (4) \n- \n- \n- \nNon-GAAP operating income \n2,854 \n$             \n2,238 \n$             \n2,026 \n$             \n7,768 \n$             \n6,138 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "aa584e2028a17cc4cc78352181ec5d92",
+    "text": "2,026 \n$             \n7,768 \n$             \n6,138 \n$             \nNon-GAAP operating margin \n28% \n24% \n26% \n22% \n24% \nQuarter Group\nGAAP net income / earnings per share \n1,511 \n$             \n0.92 \n$               \n1,243 \n$             \n0.75 \n$               \n$                \n0.29 \n$               \n4,335 \n$             \n2.65 \n$               \n1,641 \n$             \n1.00 \n$               \nStock-based compensation \n0.29 \n0.26 \n0.21 \n1,638 \n1.00 \n1,407 \n0.86 \nAmortization of acquisition-related intangibles \n0.34 \n0.34 \n0.36 \n2,254 \n1.38 \n2,394 \n1.46 \nAcquisition-related and other costs (1) \n0.03 \n0.03 \n0.03 \n0.14 \n0.11 \nInventory loss at (recovery from) contract manufacturer (2) \n- \n- \n(67)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "a0374c6acfae934dd863fc6431fc3b6b",
+    "text": "- \n- \n(67) \n(0.04) \n- \n- \n(67) \n(0.04) \n0.04 \nLoss contingency on legal matter \n0.01 \n0.01 \n- \n- \n0.01 \n- \n- \nGains on long-term investments, net \n(280) \n(0.17) \n(26) \n(0.02) \n- \n- \n(365) \n(0.22) \n- \nEquity income in investee \n(1) \n- \n(10) \n- \n(12) \n(0.01) \n(26) \n(0.02) \n(33) \n(0.02) \nRestructuring charges (4) \n- \n- \n- \n- \n0.11 \n- \n- \n0.11 \nRelease of reserves for uncertain tax positions (5) \n- \n- \n- \n- \n- \n- \n(853) \n(0.52) \n- \n- \nIncome tax provision \n0.04 \n(140) \n(0.09) \n0.10 \n(271) \n(0.17) \n(429) \n(0.25) \nLoss (Income) from discontinued operations, net of tax (6) \n0.07 \n(71) \n(0.04) \n- \n- \n(66) \n(0.04) \n- \n- \nNon-GAAP net income / earnings per share \n2,519 \n$             \n1.53",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "754e8c62a07f853b2c8c740f458d408e",
+    "text": "Non-GAAP net income / earnings per share \n2,519 \n$             \n1.53 \n$               \n1,965 \n$             \n1.20 \n$               \n1,777 \n$             \n1.09 \n$               \n6,831 \n$             \n4.17 \n$               \n5,420 \n$             \n3.31 \n$               \n   (1) \n   (2) Inventory loss at (recovery from) contract manufacturer is related to losses due to an incident at a third-party contract manufacturing facility and the corresponding recovery. \n   (3) Effective first quarter of 2025, licensing gain is reclassified against Marketing, general and administrative expenses as the amounts were immaterial.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "c5a025e3729913449326f3f779bca0b3",
+    "text": "(4) Restructuring charges are related to the 2024 Restructuring Plan which comprised of employee severance charges and non-cash asset impairments. \n   (5) Release of reserves for uncertain tax positions pertains to the reasonable cause relief related to dual consolidated losses approved by the IRS in the second quarter of 2025.\n   (6) Loss (Income) from discontinued operations relates to ZT Systems' manufacturing business which was divested in the fourth quarter of 2025. \nYear Ended \nDecember 27, \n2025 \nDecember 28, \n2024",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "59662a203d07b2cab6b2f3f958f2eb8a",
+    "text": "Year Ended \nDecember 27, \n2025 \nDecember 28, \n2024 \nAcquisition-related and other costs primarily include transaction costs, purchase price fair value adjustments for inventory, certain compensation charges, and workforce rebalancing charges. \nThree Months Ended \nThree Months Ended \nSeptember 27, \n2025 \nDecember 28, \n2024 \nDecember 27, \nThree Months \nEnded \nDecember 27, \n2025 \nGAAP gross profit \n5,577 \n$                  \nGAAP gross margin \n54% \nStock-based compensation, amortization of acquisition-related intangibles, acquisition-related and other \ncosts \nImpact from the release of inventory and related charges associated with U.S. export restrictions and AMD",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "a8be3c4468c229bedd5ed04f83eabd5a",
+    "text": "Instinct MI308 revenue to China \n(430) \nAdjusted Non-GAAP gross profit \n5,425 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911356",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+  }
+]

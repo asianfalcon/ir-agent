@@ -1,0 +1,344 @@
+[
+  {
+    "chunk_id": "f30bf4decfbd58442ab4350c7e9ec395",
+    "text": "AMD Financial Results \nFirst Quarter 2026 \nMay 5, 2026 \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nCautionary Statement \nThis presentation contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD), such as the features, functionality, performance, availability, timing and expected benefits of future AMD products; AMD's large growth \nopportunities across diverse set of markets; AMD's data center AI accelerator opportunity; the expected plans, benefits and timing of AMD’s strategic collaborations; the strategic partnership with Meta and the deployment of up to six gigawatts of \nAMD Instinct",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "12125ddad8964c2961834019c42fe2d1",
+    "text": "AMD Instinct \nGPUs; AMD's expected second quarter 2026 financial outlook, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; \nAMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "010e82c16a6dba688245ef61cb7c1f97",
+    "text": "provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. \nInvestors are cautioned that the forward-looking statements in this press release are based on current beliefs, assumptions and expectations, speak only as of the date of this press release and involve risks and uncertainties that could cause",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "2885e731ca9fb045f2a58e6861624f1a",
+    "text": "actual results to differ materially from current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and are generally beyond AMD’s control, that could cause \nactual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could cause actual results to differ materially from current",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "ebcdf15fd962a0f3857079b643e6baa1",
+    "text": "expectations include, without limitation, the following: impact of government actions and regulations such as export regulations, import tariffs, trade protection measures, and licensing requirements; competitive markets in which AMD’s products \nare sold; the cyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; AMD's ability to introduce products on a timely basis with expected features and performance levels; loss of a",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "108ad5c396419e401a84eb0e8d469799",
+    "text": "significant customer; economic and market uncertainty; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; unfavorable currency exchange rate fluctuations; ability of third party \nmanufacturers to manufacture AMD's products on a timely basis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, components (such as memory), substrates or manufacturing processes;",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "5f295cfe3fcfb3c725048f522525c3db",
+    "text": "ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to generate revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data \nbreaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "3aed1f13d3b909acebe2809e2247c922",
+    "text": "manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance \non third-party distributors and add-in-board partners; impact of modification or interruption of AMD’s internal business processes and information systems; compatibility of AMD’s products with some or all industry-standard software and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "ae51eb353523e0691a124e118bfe2cb1",
+    "text": "hardware; costs related to defective products; failure to maintain an efficient supply chain as customer demand changes; AMD's ability to rely on third party supply-chain logistics functions; AMD’s ability to effectively control sales of its products \non the gray market; impact of climate change on AMD’s business; AMD’s ability to realize its deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals related provisions",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "4b46df4572a2ad12cae3fc6132acd476",
+    "text": "and other laws or regulations; evolving expectations from governments, investors, customers and other stakeholders regarding corporate responsibility matters; issues related to the responsible use of AI; restrictions imposed by agreements \ngoverning AMD’s notes, the guarantees of Xilinx’s notes and the revolving credit agreement; AMD’s ability to satisfy financial obligations under guarantees, leases and other commercial commitments; impact of acquisitions, joint ventures and/or",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "bdaf251a4f52438c68d5b686cedba7f7",
+    "text": "investments on AMD’s business and AMD’s ability to integrate acquired businesses; impact of any impairment of the combined company’s assets; political, legal and economic risks and natural disasters; future impairments of technology license \npurchases; AMD’s ability to attract and retain key employees; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not limited to \nAMD’s most recent reports on Forms 10-K and 10-Q.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "4340b25203d38e02771fe12dd5a4c7f7",
+    "text": "AMD’s most recent reports on Forms 10-K and 10-Q. \nThis presentation also contains estimates and other statistical data made by independent parties and by us relating to market size and other data about our industry. This data involves a number of assumptions and limitations, and you are \ncautioned not to give undue weight to such estimates. \nNON-GAAP Financial Measures \nIn this presentation, in addition to GAAP financial results, AMD has provided non-GAAP financial measures including non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating expenses/revenue",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "83b3502186d5aa774ec4987afdbfb9ba",
+    "text": "percent, non-GAAP operating income, non-GAAP operating margin, non-GAAP net income and non-GAAP diluted earnings per share. AMD uses a normalized tax rate in its computation of the non-GAAP income tax provision to provide better \nconsistency across the reporting periods. For fiscal 2026, AMD uses a projected non-GAAP tax rate of 13%, which excludes the tax impact of pre-tax non-GAAP adjustments. AMD also provides adjusted free cash flow as supplemental non-",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "b59921cb1d4dbeed004386c02c3f76cd",
+    "text": "GAAP measures of its performance. AMD is providing these financial measures because it believes this non-GAAP presentation makes it easier for investors to compare its operating results for current and historical periods and also because \nAMD believes it assists investors in comparing AMD’s performance across reporting periods on a consistent basis by excluding items that it does not believe are indicative of its core operating performance. The non-GAAP financial measures",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "7b6d599d92265c7cfca4752ccc0779a1",
+    "text": "disclosed in this presentation should be viewed in addition to and not as a substitute for or superior to AMD’s reported results prepared in accordance with GAAP and should be read only in conjunction with AMD’s Consolidated Financial \nStatements prepared in accordance with GAAP. These non-GAAP financial measures referenced are reconciled to their most directly comparable GAAP financial measures in the Appendices at the end of this presentation. This presentation",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "2fdf996d947a83336b442a2ea1c9fc8c",
+    "text": "also contains forward-looking non-GAAP measures concerning AMD’s financial outlook such as gross margin, operating expenses, interest expense/other income (expense), net, tax rate and diluted share count. These forward-looking non-\n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nOur Journey \n \nLeadership Product Portfolio \nExpanding Customer & Partner Ecosystem \n| Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nPowering AI and High-Performance Compute Everywhere \nStrategic Pillars \n \nHigh-Performance, Adaptive \nand Custom AI Platforms \nPowering \nAI Everywhere \nCloud, Enterprise and \nRack-Scale Solutions \nExpand Data Center \nLeadership \nProduction-Grade \nAMD ROCm \nSoftware Stack",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "e4e3f392a774d82e7a2c430f47c3a693",
+    "text": "Leadership \nProduction-Grade \nAMD ROCm \nSoftware Stack \nOpen Software Platforms \n& Developer Enablement \nCPU, GPU, FPGA, \nNetworking, System-on-Chip, \nChiplets & Packaging \n| Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nLarge Growth Opportunities \nAcross a Diverse Set of Markets \nEmbedded \nIndustry’s broadest portfolio \nof adaptive and embedded \ncomputing platforms \nData Center \nLeadership performance \nand TCO across cloud, \nenterprise and AI workloads \nClient and Gaming \nPerformance, efficiency and \nAI capabilities for commercial \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Revenue \nRevenue of $10.3 billion \nincreased 38% y/y  \nDriven primarily by strong growth in",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "9fc5a90887efc9673f70bfeed34cf3a6",
+    "text": "increased 38% y/y  \nDriven primarily by strong growth in \nour Data Center and Client and \nGaming segments and a return to \ngrowth in the Embedded segment \n$7.4B \n$10.3B \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Gross Margin \n1. \nSee Appendices for GAAP to Non-GAAP reconciliation \nGAAP \nNon-GAAP \n54% \n55% \nQ1 2025 \nQ1 2026 \nNon-GAAP gross margin1 was up 170bps y/y driven by a favorable product mix, \nincluding a higher Data Center revenue contribution \n50% \n53% \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Operating Income \nGAAP \nNon-GAAP \nOperating income growth driven by higher revenue partially offset by higher operating expenses \nQ1 2025 \nQ1 2026 \n$0.8B \n$1.5B",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "924baa4f5ec14aea35da2f26cd14a2dc",
+    "text": "Q1 2025 \nQ1 2026 \n$0.8B \n$1.5B \n1. See Appendices for GAAP to Non-GAAP reconciliation \n$1.8B \n$2.5B \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nGAAP EPS up 91% y/y, primarily driven by higher revenue \nQ1 2026 Diluted Earnings Per Share \nGAAP \nNon-GAAP \n1. See Appendices for GAAP to Non-GAAP reconciliation \n$0.44 \n$0.84 \nQ1 2025 \nQ1 2026 \nNon-GAAP EPS up 43% y/y driven by strong revenue growth and      \nboth gross and operating margin expansion \n$0.96 \n$1.37 \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Summary P&L  |  GAAP \nQ/Q \nQ4’25 \nY/Y \nQ1’25 \nQ1’26 \n$ in millions, except per share data and % \nFlat \n$10,270 \nUp 38% \n$7,438 \n$10,253 \nRevenue \nDown 3% \n$5,577 \nUp 45% \n$3,736",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "ab1066b03772d78d6de6b82aafc26d28",
+    "text": "Up 38% \n$7,438 \n$10,253 \nRevenue \nDown 3% \n$5,577 \nUp 45% \n$3,736 \n$5,416 \nGross Profit \nDown 1 ppt \n54% \nUp 3 ppts \n50% \n53% \nGross Margin \nUp 3% \n$3,825 \nUp 34% \n$2,930 \n$3,940 \nOperating Expenses \nUp 1% \n37% \nDown 1% \n39% \n38% \nOperating Expense/Revenue % \nDown 16% \n$1,752 \nUp 83% \n$806 \n$1,476 \nOperating Income \nDown 3 ppts \n17% \nUp 3 ppts \n11% \n14% \nOperating Margin \nDown 8% \n$1,511 \nUp 95% \n$709 \n$1,383 \nNet Income \nDown 9% \n$0.92 \nUp 91% \n$0.44 \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Summary P&L  |  NON-GAAP1 \nQ/Q \nQ4’25 \nY/Y \nQ1’25 \nQ1’26 \n$ in millions, except per share data and % \nFlat \n$10,270 \nUp 38% \n$7,438 \n$10,253 \nRevenue \nDown 3% \n$5,855 \nUp 42% \n$3,992",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "dc99072651edb4d37b9de9536e857940",
+    "text": "Up 38% \n$7,438 \n$10,253 \nRevenue \nDown 3% \n$5,855 \nUp 42% \n$3,992 \n$5,685 \nGross Profit \nDown 2 ppts \n57% \nUp 1 ppt \n54% \n55% \nGross Margin \nUp 5% \n$3,001 \nUp 42% \n$2,213 \n$3,145 \nOperating Expenses \nUp 2% \n29% \nUp 1% \n30% \n31% \nOperating Expense/Revenue % \nDown 11% \n$2,854 \nUp 43% \n$1,779 \n$2,540 \nOperating Income \nDown 3 ppts \n28% \nUp 1 ppt \n24% \n25% \nOperating Margin \nDown 10% \n$2,519 \nUp 45% \n$1,566 \n$2,265 \nNet Income \nDown 10% \n$1.53 \nUp 43% \n$0.96 \n$1.37 \nDiluted Earnings Per Share \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Segment Results \nQ/Q \nQ4'25 \nY/Y \nQ1’25 \nQ1’26 \n$ in millions \nData Center \nUp 7% \n5,380 \nUp 57% \n3,674 \n5,775 \nNet Revenue \nDown 9% \n1,752 \nUp 72%",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "e00e95c1741422760c6614739aecf594",
+    "text": "5,380 \nUp 57% \n3,674 \n5,775 \nNet Revenue \nDown 9% \n1,752 \nUp 72% \n1,599 \nOperating Income \nClient & Gaming \nDown 9% \n3,940 \nUp 23% \n2,941 \n3,605 \nNet Revenue \nDown 21% \nUp 16% \nOperating Income \nEmbedded \nDown 8% \nUp 6% \nNet Revenue \nDown 5% \nUp 3% \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \n1. \nSee Appendices for GAAP to Non-GAAP reconciliation \nQ/Q \nQ4’25 \nQ1’26 \n$ in millions \nUp 17% \n$10,552 \n$12,347 \nCash, Cash Equivalents and \nShort-term Investments \nDown 4% \n$6,315 \n$6,035 \nAccounts Receivable, Net \nUp 2% \n$7,920 \n$8,045 \nInventories \nFlat \n$3,222 \n$3,224 \nTotal Debt \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nDriven by strong demand for AMD \nEPYCTM processors and AMD InstinctTM",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "9b8e8b49c157bb154ba44776a4f85ed2",
+    "text": "EPYCTM processors and AMD InstinctTM \nGPUs \nStrategic Highlights \nQ1 2026 Data Center Segment \nRevenue \n$3.7B \n$5.8B \nQ1 2025 \nQ1 2026 \nRevenue \n$5.8 Billion \nUp 57% y/y \nOperating Margin \nDriven by higher revenue partially offset \nby higher operating expenses \nOperating Income \n$1.6 Billion \nvs. $0.9 Billion a year ago \n• Meta plans to deploy up to 6 GW of AMD Instinct \nGPUs, \nwith the first 1-GW deployment powered by a custom AMD \nInstinct MI450-based GPU. Meta will also be a lead \ncustomer for 6th Gen AMD EPYC \nCPUs. \n• AWS, Google Cloud, Microsoft Azure and Tencent \nannounced new and expanded 5th Gen EPYC-powered \ncloud instances, including Google Cloud H4D VMs for HPC",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "853204609876baf50cf9758ee5d9e408",
+    "text": "cloud instances, including Google Cloud H4D VMs for HPC \nand Azure instances across general-purpose, memory- and \ncompute-optimized workloads. \n• In the latest MLPerf® results, AMD Instinct MI355X GPUs \ndelivered strong competitive performance across the full \nsuite, with leadership results in multiple categories. \n• Announced EPYC 8005 Server CPUs, delivering leadership \nperformance per-watt-per-dollar for telecommunications and \nedge environments. \n• AMD and Samsung announced a collaboration on HBM4 \nsupply for AMD Instinct MI455X GPUs and advanced \nDRAM solutions for 6th Gen AMD EPYC CPUs. \n \n25% \n28% \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Client and Gaming Segment \n17%",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "629f45ae1d844bd7ce535a053b4af5e1",
+    "text": "Q1 2026 Client and Gaming Segment \n17% \n16% \nQ1 2025 \nQ1 2026 \nRevenue \nOperating Margin \nDriven by higher revenue partially \noffset by higher operating expenses \nRevenue \n$3.6 Billion \nUp 23% y/y \nOperating Income \n$575 Million \nvs. $496 Million a year ago \nStrategic Highlights \n• \nLaunched AMD Ryzen AI PRO 400 Series \nprocessors, enabling next-generation enterprise \ndesktop PCs that deliver Copilot+ experiences. \n• \nIntroduced Ryzen 9950X3D2 Dual Edition \nprocessors, delivering enhanced performance for \ncreative and developer workloads with dual stacks of \n3D V-Cache . \n• \nEnabled day-zero support for the latest Gemma 4 \nmodels on AMD Ryzen AI processors and Radeon \nGPUs. \n•",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "ca1472ad40e9c1ebfa3250cf78adc15c",
+    "text": "models on AMD Ryzen AI processors and Radeon \nGPUs. \n• \nReleased FSR 4.1 and Ray Regeneration 1.1, \nimproving raytracing performance for high-quality \nvisuals \n \nClient \n$2.3B \nClient \n$2.9B \nGaming \n$0.6B \nGaming \n$0.7B \nQ1 2025 \nQ1 2026 \n$2.9B \n$3.6B \nDriven by strong sales of the latest \nAMD Ryzen \nprocessors and \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Embedded Segment \nRevenue \nDemand strengthened across several end \nmarkets \nOperating Margin \nRelatively flat due to end market mix \n$873M \nQ1 2025 \nQ1 2026 \n$823M \n40% \n39% \nQ1 2025 \nQ1 2026 \nRevenue \n$873 Million \nUp 6% y/y \nOperating Income \n$338 Million \nvs. $328 Million a year ago \nStrategic Highlights \n•",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "cd1ae57bea7f6f09f5b87efb1cd6a76d",
+    "text": "$338 Million \nvs. $328 Million a year ago \nStrategic Highlights \n• \nLaunched the Kintex \nUltraScale+ \nGen 2 family \nof mid-range FPGAs, delivering advanced memory \nbandwidth and I/O performance for industrial, \nimaging and broadcast applications. \n• \nCisco announced that AMD Ryzen Embedded \nV3000 processors will power new Cisco N9300 \nSeries switches and 8000 Series routers for AI \nworkloads. \n• \nAnnounced new Ryzen AI Embedded P100 Series \nprocessors, delivering scalable, power-efficient AI \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nFinancial Outlook – NON-GAAP1",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "9d72bf68744363896b55c47c2658ffd7",
+    "text": "Financial Outlook – NON-GAAP1 \n1. See Cautionary Statement on Slide 2. These forward-looking outlook statements and non-GAAP measures are based on current expectations as of May 5, 2026, and assumptions and beliefs that involve numerous risks and uncertainties. AMD undertakes no \nintent or obligation to publicly update or revise its outlook statements as a result of new information, future events or otherwise, except as may be required by law. All items, except revenue, are on a non-GAAP basis. Adjustments to arrive at the GAAP",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "1ff27d5ad0b0337f24b4669351d691cf",
+    "text": "financial outlook typically include stock-based compensation, amortization of acquired intangible assets, income tax provision, and other non-recurring items such as impairment charges and acquisition-related costs. A reconciliation to equivalent GAAP \nmeasures is not practicable at this time as the timing and impact of such adjustments are dependent on future events that are typically uncertain or outside of AMD's control. Such events may include unanticipated changes in AMD’s GAAP effective tax rate,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "7e9693df556a47f057e6021f93c621be",
+    "text": "unanticipated one-time charges related to asset impairments, unanticipated acquisition-related expenses, unanticipated gains, losses, and impairments, and other unanticipated non-recurring items not reflective of ongoing operations. \n2. Refer to Diluted Share Count overview in the Appendices. \nQ2’26 \n~$11.2 Billion \n+/- $300 Million \nRevenue \n~56% \nGross Margin \n~$3.3 Billion \nOperating Expenses \n$60 Million \nInterest Expense/Other Income (Expense), net \n13% of pre-tax income \nEffective Tax Rate \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nQ1 2026 Summary1 \n1. \nSee Appendices for GAAP to Non-GAAP reconciliation \nAccelerating revenue growth, earnings expansion and record quarterly",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "73db3229f4a71df22cca2d9462233735",
+    "text": "Accelerating revenue growth, earnings expansion and record quarterly \nfree cash flow \nRevenue \n$10.3B \nUp 38% Y/Y \nGross Margin 53% \nNon-GAAP \nGross Margin 55% \nData Center Segment \nRevenue $5.8B \nUp 57% Y/Y \nClient and Gaming \nSegment Revenue $3.6B \nUp 23% Y/Y \nDiluted EPS $0.84 \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nCorporate Responsibility at AMD \n \nEnvironmental \nAdvancing environmental \nsolutions across our \nproducts, supply chain and \noperations while accelerating \nenergy efficiency for IT users \nSocial \nFostering a workplace where \nall voices are welcome and \nvalued, partnering with \nsuppliers and positively \nimpacting our communities \nGovernance \nIntegrating corporate",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "af7b36bca1c3a1caa0b5519ecff83aba",
+    "text": "impacting our communities \nGovernance \nIntegrating corporate \nresponsibility and \ngovernance across product \ndesign, supply chain, \noperations and external \nengagement \n \n \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nOur Momentum \nDriving Long-term Shareholder Returns \nLarge and \nCompelling TAM \nExpanding Data \nCenter and AI \nLeadership \nWorld-Class \nExecution and \nFocus \nStrong Balance \nSheet \n \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nAppendices \nQ4’25 \nQ1’25 \nQ1’26 \n$ in millions, except % (Unaudited) \n$ 5,577 \n$ 3,736 \n$ 5,416 \nGAAP gross profit \n54% \n50% \n53% \nGAAP gross margin \nStock-based compensation \nAmortization of acquisition-related intangibles \n-\n-",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "23f8b59e5632b2111892ba7ed2ad4257",
+    "text": "Amortization of acquisition-related intangibles \n-\n-\nAcquisition-related and other costs (1) \n-\n-\nLoss contingency on legal matter \n$ 5,855 \n$ 3,992 \n$ 5,685 \nNon-GAAP gross profit \n57% \n54% \n55% \nNon-GAAP gross margin \n(1) Acquisition-related and other costs primarily include transaction costs, purchase price fair value adjustments for inventory, certain compensation charges, and workforce rebalancing charges. \nReconciliation of GAAP to Non-GAAP Gross Profit and Gross Margin \nQ4’25 \nQ1’25 \nQ1’26 \n$ in millions, except % (Unaudited) \n$ 3,825 \n$ 2,930 \n$ 3,940 \nGAAP operating expenses \n37% \n39% \n38% \nGAAP operating expenses/revenue % \nStock-based compensation",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "25f9da75e3d54c727fe313f2cf52c927",
+    "text": "38% \nGAAP operating expenses/revenue % \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \n$ 3,001 \n$ 2,213 \n$ 3,145 \nNon-GAAP operating expenses \n29% \n30% \n31% \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nAppendices \nQ4’25 \nQ1’25 \nQ1’26 \n$ in millions, except % (Unaudited) \n$ 1,752 \n$ 806 \n$ 1,476 \nGAAP operating income \n17% \n11% \n14% \nGAAP operating margin \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \n-\n-\nLoss contingency on legal matter \n$ 2,854 \n$ 1,779 \n$ 2,540 \nNon-GAAP operating income \n28% \n24% \n25% \nNon-GAAP operating margin",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "be0008f5cd87081877f37e2db497323f",
+    "text": "Non-GAAP operating income \n28% \n24% \n25% \nNon-GAAP operating margin \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nAppendices \nReconciliation of GAAP to Non-GAAP Net Income / Diluted Earnings Per Share \nQ4’25 \nQ1’25 \nQ1’26 \n$ in millions, except per share data (Unaudited) \n$ 0.92 \n$ 1,511 \n$ 0.44 \n$ 709 \n$ 0.84 \n$ 1,383 \nGAAP net income / earnings per share \n0.29 \n0.22 \n0.30 \nStock-based compensation \n0.34 \n0.35 \n0.33 \nAmortization of acquisition-related intangibles \n0.03 \n0.03 \n0.02 \nAcquisition-related and other costs (1) \n0.01 \n-\n-\n-\n-\nLoss contingency on legal matter \n(0.17) \n(280) \n-\n(0.04) \n(66) \n(Gains) losses on long-term investments, net \n-\n(1) \n-\n(7) \n-\n(6)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "3faf252f9c6d015e257a6c9bd15e907b",
+    "text": "(Gains) losses on long-term investments, net \n-\n(1) \n-\n(7) \n-\n(6) \nEquity income in investee \n0.04 \n(0.08) \n(111) \n(0.07) \n(100) \nIncome tax provision \n0.07 \n-\n-\n(0.01) \n(11) \n(Income) loss from discontinued operations, net of tax (2) \n$ 1.53 \n$ 2,519 \n$ 0.96 \n$ 1,566 \n$ 1.37 \n$ 2,265 \nNon-GAAP net income / earnings per share \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nAppendices \nReconciliation of GAAP Net Cash Provided by Operating Activities of Continuing Operations to Free Cash Flow \nQ1’26 \n$ in millions, except % (Unaudited) \n$ 2,955 \nGAAP net cash provided by operating activities of continuing operations \n29% \nOperating cash flow margin % from continuing operations \n(389)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "f1359cd24461f45a7ef185b86db067f6",
+    "text": "29% \nOperating cash flow margin % from continuing operations \n(389) \nPurchases of property and equipment \n$ 2,566 \nFree cash flow \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026 \nAppendices \nShare Count Overview \nThe table above provides actual share count for Q1’26 and an estimate of share count to use when calculating GAAP and non-GAAP diluted earnings per share for Q2’26. \n(1) Share counts are weighted average shares. \n(2) The dilutive impact of employee equity grants is based on the Treasury Stock method and is dependent on the average stock price during the period. The Q1’26 average stock price was $214. The estimated",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  },
+  {
+    "chunk_id": "07d3768bfb7b074d21ad628505b33554",
+    "text": "dilutive impact of employee equity grants in Q2’26 is based on the average stock price of $253 between March 29, 2026 and April 24, 2026. \nQ2’26 \nQ1’26 \nShares (millions) (Unaudited) \n(1) \nEstimate \nActual \n1,632 \n1,631 \nBasic shares \nDilutive impact from employee equity grants (2) \n1,655 \n| \n|   Q1 2026 FINANCIAL RESULTS – May 5, 2026",
+    "ticker": "AMD.US",
+    "pub_date": "1783911248",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'26 Earnings Slides Final.pdf"
+  }
+]

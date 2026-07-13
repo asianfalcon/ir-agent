@@ -352,7 +352,7 @@ def _fetch_news_eastmoney_direct(code: str, limit: int) -> list[dict]:
 
 
 def report_files(company: Company) -> list[Path]:
-    return sorted((ROOT / f"data/inputs/reports/{company.name}").glob("*.pdf"))
+    return sorted((ROOT / f"data/inputs/reports/{company.name}").rglob("*.pdf"))
 
 
 def process_local_files(paths: list[Path], ticker: str | None = None) -> int:

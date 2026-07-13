@@ -1,0 +1,470 @@
+[
+  {
+    "chunk_id": "5934ed52cdd49bb29fc363b2a86e9f37",
+    "text": "NEWS RELEASE \n \nMedia Contact: \nDrew Prairie \nAMD Communications \n512-602-4425 \ndrew.prairie@amd.com \nInvestor Contact: \nLiz Stine \nAMD Investor Relations \n720-652-3965 \nliz.stine@amd.com \nAMD Reports First Quarter 2025 Financial Results \nSANTA CLARA, Calif. ― May 6, 2025 ― AMD (NASDAQ:AMD) today announced financial",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "84e6f90609900ea399da0c1af1f85125",
+    "text": "results for the first quarter of 2025. First quarter revenue was $7.4 billion, gross margin was \n50%, operating income was $806 million, net income was $709 million and diluted earnings per \nshare was $0.44. On a non-GAAP(*) basis, gross margin was 54%, operating income was $1.8 \nbillion, net income was $1.6 billion and diluted earnings per share was $0.96. \n“We delivered an outstanding start to 2025 as year-over-year growth accelerated for the \nfourth consecutive quarter driven by strength in our core businesses and expanding data center \nand AI momentum,” said Dr. Lisa Su, AMD chair and CEO. “Despite the dynamic macro and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "926ce0f8566c743795bbcf7d87f8ad35",
+    "text": "regulatory environment, our first quarter results and second quarter outlook highlight the \nstrength of our differentiated product portfolio and consistent execution positioning us well for \nstrong growth in 2025.” \n“We grew first quarter revenue 36% year-over-year and delivered significant earnings \nleverage as our business gains scale,” said AMD EVP, CFO and Treasurer Jean Hu. “We \ncontinue to invest in R&D and go-to-market initiatives, positioning the company for long-term",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "cc156bb8d596699f90f0ad40c47d0320",
+    "text": "GAAP Quarterly Financial Results \nQ1 2025 \nQ1 2024 \nY/Y \nQ4 2024 \nQ/Q \nRevenue ($M) \n$7,438 \n$5,473 \nUp 36% \n$7,658 \nDown 3% \nGross profit ($M) \n$3,736 \n$2,560 \nUp 46% \n$3,882 \nDown 4% \nGross margin \n50% \n47% \nUp 3 ppts \n51% \nDown 1 ppt \nOperating expenses ($M) \n$2,930 \n$2,524 \nUp 16% \n$3,011",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "4a328e6ad439fa214f78aaa9b0b04eee",
+    "text": "Down 1 ppt \nOperating expenses ($M) \n$2,930 \n$2,524 \nUp 16% \n$3,011 \nDown 3% \nOperating income ($M) \n$806 \n$36 \nUp 2,139% \n$871 \nDown 7% \nOperating margin \n11% \n1% \nUp 10 ppts \n11% \nFlat \nNet income ($M) \n$709 \n$123 \nUp 476% \n$482 \nUp 47% \nDiluted earnings per share \n$0.44 \n$0.07 \nUp 529% \n$0.29 \nUp 52% \nNon-GAAP(*) Quarterly Financial Results \nQ1 2025 \nQ1 2024 \nY/Y \nQ4 2024 \nQ/Q \nRevenue ($M) \n$7,438 \n$5,473 \nUp 36% \n$7,658 \nDown 3% \nGross profit ($M) \n$3,992 \n$2,861 \nUp 40% \n$4,140 \nDown 4% \nGross margin \n54% \n52% \nUp 2 ppts \n54% \nFlat \nOperating expenses ($M) \n$2,213 \n$1,728 \nUp 28% \n$2,114 \nUp 5% \nOperating income ($M) \n$1,779 \n$1,133 \nUp 57% \n$2,026 \nDown 12% \nOperating margin \n24%",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "7e41dc309f6cfb778336bf3183dffc03",
+    "text": "$1,779 \n$1,133 \nUp 57% \n$2,026 \nDown 12% \nOperating margin \n24% \n21% \nUp 3 ppts \n26% \nDown 2 ppts \nNet income ($M) \n$1,566 \n$1,013 \nUp 55% \n$1,777 \nDown 12% \nDiluted earnings per share \n$0.96 \n$0.62 \nUp 55% \n$1.09 \nDown 12% \nSegment Summary \n• \nData Center segment revenue in the quarter was $3.7 billion, up 57% year-over-year \nprimarily driven by growth in AMD EPYC™ CPU and AMD Instinct™ GPU sales. \n• \nClient and Gaming segment revenue in the quarter was $2.9 billion, up 28% year-over­\nyear. Client revenue was $2.3 billion, up 68% year-over-year primarily driven by strong \ndemand for the latest “Zen 5” AMD Ryzen™ processors and a richer mix. Gaming",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "7518604495da52e2eeb766fe102d764f",
+    "text": "revenue was $647 million, down 30% year-over-year primarily due to a decrease in \nsemi-custom revenue. \n• \nEmbedded segment revenue in the quarter was $823 million, down 3% year-over-year \nas demand in end markets remained mixed. \nRecent PR Highlights \n• \nAMD closed the acquisition of ZT Systems, bringing together leadership systems and \nrack-level expertise with AMD GPU, CPU and networking silicon and open-source",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "c60d98ae0bcc60604c33a2293970204c",
+    "text": "• \nAMD expanded strategic partnerships aimed at delivering AMD AI solutions and \ncontinued to invest in enhancing developer tools and support: \no AMD continues to deepen support for frontier AI models on AMD Instinct GPUs \nwith AMD ROCm™ software, delivering day-zero support for the latest Meta AI \nLlama 4 models and Google Gemma 3 models. \no AMD delivers leadership inference performance on DeepSeek-R1, leveraging",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "0dbd1ef082fd328d6929191310fddc65",
+    "text": "continuous optimization of the ROCm software stack and the latest vLLM \nofferings. \no Core42, G42’s digital infrastructure company, announced it is broadly deploying \nAMD Instinct GPU technology to establish one of France's most powerful AI \ncompute facilities. \no Dell Technologies announced the expansion of its AI for Telecom offering \npowered by AMD. \no The Commissariat à l'énergie atomique et aux énergies alternatives (CEA) of \nFrance and AMD announced a collaboration to advance technologies, \ncomponent and system architectures to shape the future of AI computing. \no AMD, Jio Platforms Limited, Cisco and Nokia announced the formation of a new",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "7fef9f274ee6b6eeaf1e5519ac6c6891",
+    "text": "Open Telecom AI Platform that will offer AI-driven solutions to enhance \nefficiency, security and capabilities. \no AMD announced support of the latest UALink 1.0 specification, an open, \nindustry-standard, low-latency, high-bandwidth interconnect for scale-up AI. \n• \nLeading hyperscalers continue expanding their deployments of AMD EPYC CPUs to \npower their internal infrastructure and public cloud offerings: \no Oracle Cloud Infrastructure announced the OCI Compute E6 shapes, enabling \nimpressive cost to performance improvements over its previous generation. \no Google Cloud announced C4D and H4D virtual machines delivering leadership",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "fec018aa74d465ec61ba71a2d4160a89",
+    "text": "performance, scalability, and efficiency for demanding general purpose and HPC \ncloud workloads. \n• \nAMD is delivering incredible gaming and content creation experiences with the latest \nAMD Ryzen and Radeon™ products and software: \no New Radeon RX 9070 XT and RX 9070 graphics cards based on the AMD \nRDNA™ 4 graphics architecture offer gamers and creators a powerful blend of",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "e252b8b956fe29a7d6a08d61488b1b2a",
+    "text": "o AMD FidelityFX™ Super Resolution 4 is an AI-accelerated frame generation \ntechnology that delivers incredible performance and image quality for gamers on \nthe latest Radeon RX graphics cards. \no AMD Ryzen 9 9950X3D and Ryzen 9 9900X3D processors leverage 2nd Gen \nAMD 3D V-Cache™ technology to deliver leadership performance and power \nefficiency. \n• \nAMD expanded its portfolio for embedded markets: \no New AMD EPYC Embedded 9005 Series processors deliver server-grade \nperformance and energy efficiency combined with purpose-built features for",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "01881abeda079a427ddcd24e8f1eaee3",
+    "text": "networking, storage and industrial edge markets. \no AMD Versal™ AI Edge XQRVE2302 adaptive SoCs are now available, bringing \nAI inferencing to space in a small form factor. \no Napatech and Druid Software announced the availability of a high-performance, \nenergy-efficient 5G core powered by the AMD Virtex™ UltraScale+™ XCVU5P \nFPGA. \nCurrent Outlook \nAMD’s outlook statements are based on current expectations. The following statements are \nforward-looking and actual results could differ materially depending on market conditions and \nthe factors set forth under “Cautionary Statement” below. \nFor the second quarter of 2025, AMD expects revenue to be approximately $7.4 billion, plus",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "1e9376bb6f8a489d9f1c00057fcda88c",
+    "text": "or minus $300 million. Non-GAAP gross margin is estimated to be 43% inclusive of \napproximately $800 million in charges for inventory and related reserves due to the new export \ncontrols as previously disclosed in AMD’s Current Report on Form 8-K filed on April 16, 2025. \nExcluding this charge, non-GAAP gross margin would be approximately 54%. \nAMD Teleconference \nAMD will hold a conference call at 2:00 p.m. PT (5:00 p.m. ET) today to discuss its first \nquarter 2025 financial earnings results. AMD will provide a real-time audio broadcast of the",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "cd28668d9067d9efd5e519f068f3aac6",
+    "text": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES \n(in millions, except per share data) (Unaudited) \nMarch 29, \n2025 \nGAAP gross profit \n$ \n3,736 \nGAAP gross margin \n50 % \nStock-based compensation \nAmortization of acquisition-related intangibles \nInventory loss at contract manufacturer (2) \n— \nNon-GAAP gross profit \n$ \n3,992 \nNon-GAAP gross margin \n54 % \nThree Months Ended \nDecember 28, \n2024 \n$ \n3,882 \n51 % \n— \n$ \n4,140 \n54 % \n$ \n$ \nMarch 30, \n2024 \n2,560",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "98c387740ef242195ab887d7476df314",
+    "text": "$ \n3,882 \n51 % \n— \n$ \n4,140 \n54 % \n$ \n$ \nMarch 30, \n2024 \n2,560 \n47 % \n2,861 \n52 % \n(4) \nGAAP operating expenses \nGAAP operating expenses/revenue % \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \nRestructuring charges (3) \n(4) \nNon-GAAP operating expenses \nNon-GAAP operating expenses/revenue % \n$ \n2,930 \n39 % \n— \n$ \n2,213 \n30 % \n$ \n3,011 \n39 % \n$ \n2,114 \n28 % \n$ \n$ \n2,524 \n46 % \n— \n1,728 \n32 % \nGAAP operating income \nGAAP operating margin \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \nInventory loss at contract manufacturer (2)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "94a0e8a6082ea382b39c5652d4d0d6ea",
+    "text": "Inventory loss at contract manufacturer (2) \nRestructuring charges (3) \nNon-GAAP operating income \nNon-GAAP operating margin \n$ \n11 % \n— \n— \n$ \n1,779 \n24 % \n$ \n11 % \n— \n$ \n2,026 \n26 % \n$ \n$ \n1 % \n— \n1,133 \n21 % \nGAAP net income / earnings per share \n(Gains) losses on equity investments, net \nStock-based compensation \nEquity income in investee \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \nInventory loss at contract manufacturer (2) \nRestructuring charges (3) \nIncome tax provision \nNon-GAAP net income / earnings per share \nMarch 29, \n2025 \n$ \n$ \n0.44 \n— \n0.22 \n(7) \n— \n0.35 \n0.03 \n— \n— \n— \n— \n(111) \n(0.08) \n$ \n1,566 \n$ \n0.96 \nThree Months Ended",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "c3a8ce042658ea617057a605a19d94d8",
+    "text": "— \n— \n— \n— \n(111) \n(0.08) \n$ \n1,566 \n$ \n0.96 \nThree Months Ended \nDecember 28, \n2024 \n$ \n$ \n0.29 \n— \n— \n0.21 \n(12) \n(0.01) \n0.36 \n0.03 \n— \n— \n0.11 \n0.10 \n$ \n1,777 \n$ \n1.09 \n$ \n$ \nMarch 30, \n2024 \n$ \n0.07 \n— \n0.23 \n(7) \n— \n0.38 \n0.02 \n0.04 \n— \n— \n(203) \n(0.12) \n1,013 \n$",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "aade80151580cfd3169b03db0da86e83",
+    "text": "(1) Acquisition-related and other costs primarily include transaction costs, purchase price fair value adjustments, \ncertain compensation charges, contract termination costs and workforce rebalancing charges. \n(2) Inventory loss at contract manufacturer is related to an incident at a third-party contract manufacturing facility. \n(3) Restructuring charges are related to the 2024 Restructuring Plan which comprised of employee severance charges and non-cash asset \nimpairments.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "12b41ab6dd019c81e8bc4a9aee636e2a",
+    "text": "impairments. \n(4) Effective first quarter of 2025, licensing gain amounts were reclassified against Marketing, general and administrative expenses as the amounts \nwere immaterial. \nAbout AMD \nFor more than 55 years AMD has driven innovation in high-performance computing, graphics and \nvisualization technologies. AMD employees are focused on building leadership high-performance and \nadaptive products that push the boundaries of what is possible. Billions of people, leading Fortune 500 \nbusinesses and cutting-edge scientific research institutions around the world rely on AMD technology daily \nto improve how they live, work and play. For more information about how AMD is enabling today and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "caef8e242d477ce9452ee1ead6cb2e48",
+    "text": "inspiring tomorrow, visit the AMD (NASDAQ: AMD) website, blog, LinkedIn and X pages. \nCautionary Statement \nThis press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as, the features, \nfunctionality, performance, availability, timing and expected benefits of future AMD products; AMD’s ability to deliver strong growth \nin 2025 based on AMD’s differentiated product portfolio and consistent execution; AMD’s ability to position itself for long-term \ngrowth and value creation; potential benefits of the acquisition of ZT Systems, including the data center AI accelerator opportunity",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "38af96e83cc96793c99875ff6ed49408",
+    "text": "in 2028; AMD’s expected second quarter 2025 financial outlook, including revenue and non-GAAP gross margin; and the expected \nimpact of the new export licensing requirement on AMD, including on its revenues, which are made pursuant to the Safe Harbor \nprovisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words \nsuch as \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. Investors are \ncautioned that the forward-looking statements in this press release are based on current beliefs, assumptions and expectations,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "7a6c784b1730c90c957cdde07cea9d87",
+    "text": "speak only as of the date of this press release and involve risks and uncertainties that could cause actual results to differ materially \nfrom current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are \ndifficult to predict and generally beyond AMD’s control, that could cause actual results and other future events to differ materially \nfrom those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could \ncause actual results to differ materially from current expectations include, without limitation, the following: impact of government",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "0ea9c68b5b36f368416ab0bf7ed761a6",
+    "text": "actions and regulations such as export regulations, tariffs and trade protection measures, and licensing requirements; Intel \nCorporation’s dominance of the microprocessor market and its aggressive business practices; Nvidia’s dominance in the graphics \nprocessing unit market and its aggressive business practices; competitive markets in which AMD’s products are sold; the cyclical \nnature of the semiconductor industry; market conditions of the industries in which AMD products are sold; AMD's ability to introduce \nproducts on a timely basis with expected features and performance levels; loss of a significant customer; economic and market",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "0c1304b77e35a14deb3a681de1d5d008",
+    "text": "uncertainty; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; \nunfavorable currency exchange rate fluctuations; ability of third party manufacturers to manufacture AMD's products on a timely \nbasis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, substrates or \nmanufacturing processes; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to generate revenue \nfrom its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "44f212918624707df88ca2c16f216ba4",
+    "text": "data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-\nparty intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture \nand supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other \nsoftware vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and \nadd-in-board partners; impact of modification or interruption of AMD’s internal business processes and information systems;",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "07fea17ee02d83e9268cba28852063c0",
+    "text": "compatibility of AMD’s products with some or all industry-standard software and hardware; costs related to defective products; \nefficiency of AMD's supply chain; AMD's ability to rely on third party supply-chain logistics functions; AMD’s ability to effectively \ncontrol sales of its products on the gray market; long-term impact of climate change on AMD’s business; AMD’s ability to realize its \ndeferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "9d8e2fac3233b20b8ec5c6d94bfa5295",
+    "text": "stakeholders regarding corporate responsibility matters; issues related to the responsible use of AI; \nrestrictions imposed by agreements governing AMD’s notes, the guarantees of Xilinx’s notes, the \nrevolving credit agreement and the ZT Systems credit agreement; impact of acquisitions, joint ventures and/or strategic \ninvestments on AMD’s business and AMD’s ability to integrate acquired businesses, including ZT Systems; AMD’s ability to sell the \nZT Systems manufacturing business; impact of any impairment of the combined company’s assets; political, legal and economic",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "b4cb62f89ef14e090713c86e5748a4c1",
+    "text": "risks and natural disasters; future impairments of technology license purchases; AMD’s ability to attract and retain qualified \npersonnel; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities \nand Exchange Commission filings, including but not limited to AMD’s most recent reports on Forms 10-K and 10-Q. \n(*) \nIn this earnings press release, in addition to GAAP financial results, AMD has provided non-GAAP financial measures including non-\nGAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating expenses/revenue%, non-GAAP",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "57c8e22157c69a2513bcd161d3b506ff",
+    "text": "operating income, non-GAAP operating margin, non-GAAP net income and non-GAAP diluted earnings per share. AMD uses a \nnormalized tax rate in its computation of the non-GAAP income tax provision to provide better consistency across the reporting periods. \nFor fiscal 2025, AMD used a non-GAAP tax rate of 13%, which excludes the tax impact of pre-tax non-GAAP adjustments. AMD also \nprovided adjusted EBITDA, free cash flow and free cash flow margin as supplemental non-GAAP measures of its performance. These \nitems are defined in the footnotes to the selected corporate data tables provided at the end of this earnings press release. AMD is",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "64c027ddfe200b2031412049ab7a8c0c",
+    "text": "providing these financial measures because it believes this non-GAAP presentation makes it easier for investors to compare its \noperating results for current and historical periods and also because AMD believes it assists investors in comparing AMD’s \nperformance across reporting periods on a consistent basis by excluding items that it does not believe are indicative of its core \noperating performance and for the other reasons described in the footnotes to the selected data tables. The non-GAAP financial \nmeasures disclosed in this earnings press release should be viewed in addition to and not as a substitute for or superior to AMD’s",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "0ab694fd6c47704d8e3f0f13bfbe992f",
+    "text": "reported results prepared in accordance with GAAP and should be read only in conjunction with AMD’s Consolidated Financial \nStatements prepared in accordance with GAAP. These non-GAAP financial measures referenced are reconciled to their most directly \ncomparable GAAP financial measures in the data tables in this earnings press release. This earnings press release also contains \nforward-looking non-GAAP gross margin concerning AMD’s financial outlook, which is based on current expectations as of May 6, \n2025, and assumptions and beliefs that involve numerous risks and uncertainties. Adjustments to arrive at the GAAP gross margin",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "a898ab06220b9700adbefb5259d9e6ea",
+    "text": "outlook typically include stock-based compensation, amortization of acquired intangible assets and acquisition-related and other costs. \nThe timing and impact of such adjustments are dependent on future events that are typically uncertain or outside of AMD's control, \ntherefore, a reconciliation to equivalent GAAP measures is not practicable at this time. AMD undertakes no intent or obligation to \npublicly update or revise its outlook statements as a result of new information, future events or otherwise, except as may be required \nby law. \n-30-\n©2025 Advanced Micro Devices, Inc. All rights reserved. AMD, the AMD Arrow logo, 3D V-Cache, Alveo, AMD Instinct, EPYC, FidelityFX, Kria,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "1000783a6f64a728a5b358b5da1c2eec",
+    "text": "ADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS \n(Millions except per share amounts and percentages) (Unaudited) \nThree Months Ended \nMarch 29, \nDecember 28, \nMarch 30, \n2025",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "4eeb70145d5a7b332f25ac0e2f164546",
+    "text": "Three Months Ended \nMarch 29, \nDecember 28, \nMarch 30, \n2025 \n2024 \n2024 \nNet revenue \n$ \n7,438 \n$ \n7,658 \n$ \n5,473 \nCost of sales \n3,451 \n3,524 \n2,683 \nAmortization of acquisition-related intangibles \nTotal cost of sales \n3,702 \n3,776 \n2,913 \nGross profit \n3,736 \n3,882 \n2,560 \nGross margin \n50 % \n51 % \n47 % \nResearch and development \n1,728 \n1,712 \n1,525 \nMarketing, general and administrative \nAmortization of acquisition-related intangibles \nRestructuring charges \n— \n— \nTotal operating expenses \n2,930 \n3,011 \n2,524 \nOperating income \nInterest expense \n(20) \n(19) \n(25) \nOther income (expense), net \nIncome before income taxes and equity income \nIncome tax provision (benefit) \n(52)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "790db98e3e8409861c4194412f3ff9ca",
+    "text": "Income tax provision (benefit) \n(52) \nEquity income in investee \nNet income \n$ \n$ \n$ \nEarnings per share \nBasic \n$ \n0.44 \n$ \n0.30 \n$ \n0.08 \nDiluted \n$ \n0.44 \n$ \n0.29 \n$ \n0.07 \nShares used in per share calculation \nBasic \n1,620 \n1,623 \n1,617 \nDiluted \n1,626",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "c7ed0061db994b3ad0eae1c9c1eec6fc",
+    "text": "December 28, \n2024 \nADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED BALANCE SHEETS \n(Millions) \nMarch 29, \n2025 \n(Unaudited) \nASSETS \nCurrent assets: \nCash and cash equivalents \n$ \n6,049 \n$ \n3,787 \nShort-term investments \n1,261 \n1,345 \nAccounts receivable, net \n5,443 \n6,192 \nInventories \n6,416 \n5,734 \nPrepaid expenses and other current assets \n2,426 \n1,991 \nTotal current assets \n21,595 \n19,049 \nProperty and equipment, net \n1,921 \n1,802 \nGoodwill \n24,839 \n24,839 \nAcquisition-related intangibles, net \n18,363 \n18,930 \nDeferred tax assets \nOther non-current assets",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "1a2526e2bc509aee8ec23dbdeed35374",
+    "text": "18,363 \n18,930 \nDeferred tax assets \nOther non-current assets \n3,987 \n3,918 \nTotal Assets \n$ \n71,550 \n$ \n69,226 \nLIABILITIES AND STOCKHOLDERS' EQUITY \nCurrent liabilities: \nAccounts payable \n$ \n2,206 \n$ \n2,466 \nAccrued liabilities \n3,876 \n4,260 \nShort-term borrowings \n— \nOther current liabilities \nTotal current liabilities \n7,703 \n7,281 \nLong-term debt \n3,217 \n1,721 \nLong-term operating lease liabilities \nDeferred tax liabilities \nOther long-term liabilities \n1,839 \n1,816 \nStockholders' equity: \nCapital stock: \nCommon stock, par value $0.01 \nAdditional paid-in capital \n61,730 \n61,362 \nTreasury stock, at cost \n(6,899) \n(6,106) \nRetained earnings \n3,073 \n2,364",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "c84471c1873190f683123d42f98b9255",
+    "text": "(6,899) \n(6,106) \nRetained earnings \n3,073 \n2,364 \nAccumulated other comprehensive loss \n(40) \n(69) \nTotal stockholders' equity \n57,881 \n57,568 \nTotal Liabilities and Stockholders' Equity \n$ \n71,550",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "98c3b11f6bc9630e4e8f0a11f22047aa",
+    "text": "ADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS \n(Millions) (Unaudited) \nThree Months Ended \nMarch 29, \nMarch 30, \n2025 \n2024 \nCash flows from operating activities: \nNet income \n$ \n$ \nAdjustments to reconcile net income to net cash provided by operating activities: \nDepreciation and amortization \nAmortization of acquisition-related intangibles \nStock-based compensation \nDeferred income taxes \n(167) \n(66)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "1b8ad8b4f29a7fefad8ba36ab3ad2f1c",
+    "text": "Stock-based compensation \nDeferred income taxes \n(167) \n(66) \nInventory loss at contract manufacturer \n— \nOther \nChanges in operating assets and liabilities: \nAccounts receivable, net \nInventories \n(682) \n(368) \nPrepaid expenses and other assets \n(237) \n(919) \nAccounts payable \n(289) \n(561) \nAccrued and other liabilities \n(288) \nNet cash provided by operating activities \nCash flows from investing activities: \nPurchases of property and equipment \n(212) \n(142) \nPurchases of short-term investments \n(304) \n(433) \nProceeds from maturity of short-term investments \nProceeds from sale of short-term investments \nPurchases of strategic investments \n(239) \n(4) \nOther \n—",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "e97ea6e55d19d3eee538dd3940149819",
+    "text": "Purchases of strategic investments \n(239) \n(4) \nOther \n— \nNet cash used in investing activities \n(357) \n(135) \nCash flows from financing activities: \nProceeds from long-term debt issuance, net of issuance costs \n1,494 \n— \nProceeds from commercial paper issuance, net of discount \n— \nProceeds from sales of common stock through employee equity plans \nRepurchases of common stock \n(749) \n(4) \nStock repurchases for tax withholding on employee equity plans \n(30) \n(129) \nOther \n— \n(1) \nNet cash provided by (used in) financing activities \n1,666 \n(129) \nNet increase in cash, cash equivalents and restricted cash \n2,248 \nCash, cash equivalents and restricted cash at beginning of period \n3,811 \n3,933",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "28914e54057605ccbf7535f5bf40dd43",
+    "text": "3,811 \n3,933 \nCash, cash equivalents and restricted cash at end of period \n$ \n6,059 \n \n \n \n \n \n \n \n \n  \n \n \n \n  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n  \n \n  \n \n  \n \n \n \n \n \n \n \n \n \n   \n   \n  \n \n \n   \n   \n  \n \n \n \n \n \n   \n   \n  \n \n \n \n   \n   \n  \n \n \n \n \n  \n \n  \n \n  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n  \n \n  \n \n  \n \n \n \n \n \n   \n   \n  \n \n \n \n   \n   \n  \n \n \n \n  \n  \n \n \n \n  \n \n  \n \n  \n \n  \n \n \n \n \n \n \n \n \n \n  \n \n  \n \n  \n \n  \n \n  \n \n  \n \n  \n \n \n \n \n \n \n  \n \n  \n \n  \n \n \n  \n \n  \n \n  \n \n  \n \n \n \n  \n \n  \n \n  \n \n \n \n  \n \n  \n \n  \nADVANCED MICRO DEVICES, INC. \nSELECTED CORPORATE DATA \n(Millions) (Unaudited) \nThree Months Ended \nMarch 29, \nDecember 28, \nMarch 30, \n2025 \n2024 \n2024",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "14a500c4dc10e7ca40055a7522ae1f99",
+    "text": "March 29, \nDecember 28, \nMarch 30, \n2025 \n2024 \n2024 \nSegment and Disaggregated Revenue Information(1) \nNet Revenue: \nData Center Segment \n$ \n3,674 \n$ \n3,859 \n$ \n2,337 \nClient and Gaming Segment \nClient \n2,294 \n2,313 \n1,368 \nGaming \nTotal Client and Gaming \n2,941 \n2,876 \n2,290 \nEmbedded Segment \nTotal net revenue \n$ \n7,438 \n$ \n7,658 \n$ \n5,473 \nOperating Income (Loss): \nData Center Segment \n$ \n$ \n1,157 \n$ \nClient and Gaming Segment \nEmbedded Segment \nAll other \n(950) \n(1,144) \n(1,084) \nTotal operating income \n$ \n$ \n$ \nOther Data \nCapital expenditures \n$ \n$ \n$ \nAdjusted EBITDA (2) \n$ \n1,954 \n$ \n2,212 \n$ \n1,295 \nCash, cash equivalents and short-term investments \n$ \n7,310 \n$ \n5,132 \n$ \n6,035",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "9d49b001ad587f481edca8c93a115916",
+    "text": "$ \n7,310 \n$ \n5,132 \n$ \n6,035 \nFree cash flow (3) \n$ \n$ \n1,091 \n$ \nTotal assets \n$ \n71,550 \n$ \n69,226 \n$ \n67,895 \nTotal debt \n$ \n4,164 \n$ \n1,721",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "6ec93097196519be92b603aa74d81641",
+    "text": "(1) The Company operates as three operating segments, Data Center, Client and Gaming, and Embedded segments. \nThe Data Center segment primarily includes Artificial Intelligence (AI) accelerators, server microprocessors (CPUs), graphics processing units \n(GPUs), accelerated processing units (APUs), data processing units (DPUs), Field Programmable Gate Arrays (FPGAs), Smart Network Interface \nCards (SmartNICs) and Adaptive System-on-Chip (SoC) products for data centers.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "7feee16180451678d79adcbb0185971a",
+    "text": "The Client and Gaming segment primarily includes CPUs, APUs, and chipsets for desktops and notebooks, and discrete GPUs, semi-custom SoC \nproducts and development services. \nThe Embedded segment primarily includes embedded CPUs, GPUs, APUs, FPGAs, System on Modules (SOMs), and Adaptive SoC products. \nFrom time to time, the Company may also sell or license portions of its IP portfolio. \nAll Other category primarily includes certain expenses and credits that are not allocated to any of the operating segments, such as amortization of \nacquisition-related intangibles, employee stock-based compensation expense, acquisition-related and other costs, inventory loss at contract",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "c45055f1b87e6c0f0a8ecb67adfd7760",
+    "text": "manufacturer and restructuring charges. \n(2) \nReconciliation of GAAP Net Income to Adjusted EBITDA \nThree Months Ended \nMarch 29, \nDecember 28, \nMarch 30, \n(Millions) (Unaudited) \n2025 \n2024 \n2024 \nGAAP net income \n$ \n$ \n$ \nInterest expense \nOther (income) expense, net \n(39) \n(37) \n(53) \nIncome tax provision (benefit) \n(52) \nEquity income in investee \n(7) \n(12) \n(7) \nStock-based compensation \nDepreciation and amortization \nAmortization of acquisition-related intangibles \nInventory loss at contract manufacturer \n— \n— \nAcquisition-related and other costs \nRestructuring charges \n— \n— \nAdjusted EBITDA \n$ \n1,954 \n$ \n2,212 \n$ \n1,295",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "388f5fe5eb221f138d817d4da33f5d28",
+    "text": "— \n— \nAdjusted EBITDA \n$ \n1,954 \n$ \n2,212 \n$ \n1,295 \nThe Company presents “Adjusted EBITDA” as a supplemental measure of its performance. Adjusted EBITDA for the Company is determined by \nadjusting GAAP net income for interest expense, other (income) expense, net, income tax provision (benefit), equity income in investee, stock-\nbased compensation, depreciation and amortization expense, amortization of acquisition-related intangibles, inventory loss at contract \nmanufacturer, acquisition-related and other costs, and restructuring charges. The Company calculates and presents Adjusted EBITDA because",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "b82b4feb4b447389e25adee07759c9f9",
+    "text": "management believes it is of importance to investors and lenders in relation to its overall capital structure and its ability to borrow additional funds. \nIn addition, the Company presents Adjusted EBITDA because it believes this measure assists investors in comparing its performance across \nreporting periods on a consistent basis by excluding items that the Company does not believe are indicative of its core operating performance. The \nCompany’s calculation of Adjusted EBITDA may or may not be consistent with the calculation of this measure by other companies in the same",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "3981d1be7162aa1141a452a12cf00364",
+    "text": "industry. Investors should not view Adjusted EBITDA as an alternative to the GAAP operating measure of net income or GAAP liquidity measures of \ncash flows from operating, investing and financing activities. In addition, Adjusted EBITDA does not take into account changes in certain assets and \nliabilities that can affect cash flows. \n(3) \nReconciliation of GAAP Net Cash Provided by Operating Activities to Free Cash Flow \nThree Months Ended \nMarch 29, \nDecember 28, \nMarch 30, \n(Millions except percentages) (Unaudited) \n2025 \n2024 \n2024 \nGAAP net cash provided by operating activities \n$ \n$ \n1,299 \n$ \nOperating cash flow margin % \n13% \n17% \n10% \nPurchases of property and equipment \n(212)",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  },
+  {
+    "chunk_id": "08306523e6105ea76d9b53dccdf9bfc8",
+    "text": "13% \n17% \n10% \nPurchases of property and equipment \n(212) \n(208) \n(142) \nFree cash flow \n$ \n$ \n1,091 \n$ \nFree cash flow margin % \n10% \n14% \n7% \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n   \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nof the Company's net revenue. The Company calculates and communicates free cash flow in the financial earnings press release because \nmanagement believes it is of importance to investors to understand the nature of these cash flows. The Company’s calculation of free cash flow",
+    "ticker": "AMD.US",
+    "pub_date": "1783911508",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/2025-05-06_AMD_Reports_First_Quarter_2025_Financial_1247.pdf"
+  }
+]

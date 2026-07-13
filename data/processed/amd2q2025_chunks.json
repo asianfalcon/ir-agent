@@ -1,0 +1,704 @@
+[
+  {
+    "chunk_id": "1857631e26b919b773fe6263145e4c2c",
+    "text": "Greetings and welcome to the AMD's second quarter 2025 conference call. At this time, all participants are in a \nlisten-only mode. A question and answer session will follow the formal presentation. If anyone should require \noperator assistance, please press star 0 on your telephone keypad. \nAs a reminder, this conference is being recorded. And it is now my pleasure to introduce to you Matthew \nRamsay, VP of investor relations and financial strategy. Thank you, sir. Please go ahead. \nMATTHEW \nRAMSAY: \nThank you, and welcome to AMD's 2025 second quarter financial results conference call. By now, you should",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "3ff269507487a1028e39e0bd94a7e157",
+    "text": "have had the opportunity to review a copy of our earnings press release and the accompanying slides. If you \nhave not had the chance to review these materials, they can be found on the Investor Relations page of \namd.com. \nWe will refer primarily to non-GAAP financial measures during today's call. The full non-GAAP-to-GAAP \nreconciliations are available in today's press release and slides posted on our website. Participants in today's \nconference call are Dr. Lisa Su, our chair and chief executive officer, and Jean Hu, our executive vice president, \nchief financial officer, and treasurer. This is a live call and will be replayed via webcast on our website.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "6a3b56683c0398d1174033f5743aadf8",
+    "text": "Before we begin, I would like to note that Jean Hu, executive vice president, chief financial officer, and treasurer, \nwill present at Citi's 2025 Global TMT Conference on Wednesday, September 3. And Forrest Norrod, executive \nvice president and General manager of Data Center Solutions Business Unit, will present at the Goldman Sachs \nCommunicopia and Technology Conference on Monday, September 8. \nToday's discussion contains forward-looking statements based on our current beliefs, assumptions, and \nexpectations, speaks only as of today, and as such involves risks and uncertainties that could cause actual \nresults to differ materially from our current expectations.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "9556964e3ea2cc501aeb0b3075d25f90",
+    "text": "results to differ materially from our current expectations. \nPlease refer to the cautionary statement in our press release for more information on factors that could cause \nactual results to differ materially. With that, I will hand the call over to Lisa. \nLISA SU: \nThank you, Matt. And good afternoon to all those listening today. We delivered very strong second quarter \nresults, with revenue exceeding the midpoint of guidance as higher EPYC and Ryzen processor sales more than \noffset headwinds from export controls that impacted Instinct sales. \nWe set records for both EPYC and Ryzen CPU sales, reflecting the broad-based demand for our differentiated,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "778172cd0c6e22c2f49e5047229e2098",
+    "text": "high-performance data center, PC, and embedded processors. Second quarter revenue increased 32% year over \nyear to a record $7.7 billion, and we delivered over $1 billion in free cash flow. \nExcluding the $800 million inventory writedown, related to data center AI export controls, gross margin was 54%, \nmarking our sixth consecutive quarter of year-over-year margin expansion led by a richer product mix. Turning to \nthe segments, data center segment revenue increased 14% year-over-year to $3.2 billion. \nWe saw robust demand across our EPYC portfolio to power cloud and enterprise workloads and increasingly for",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "f1755ccebdf398a0e0a225124d0d34c0",
+    "text": "emerging AI use cases. In particular, adoption of agentic AI is creating additional demand for general-purpose \ndelivered our 33rd consecutive quarter of year-over-year share gains. \nIn cloud, adoption expanded with the largest hyperscalers as they deployed EPYC to power more of their mission-\ncritical infrastructure, services, and public cloud products. More than 100 new AMD-powered cloud instances \nlaunched in the quarter, including multiple Turin instances from Google and Oracle Cloud that deliver up to twice \nthe performance of our previous generation, which were already the industry's highest-performing offerings.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "a96015e7c2b8ddf4061fa3f585a4dd7a",
+    "text": "There are now nearly 1,200 EPYC cloud instances available globally, as providers continue expanding both the \nbreadth and regional availability of their AMD offerings. This continued expansion is accelerating enterprise \nadoption of EPYC in the cloud, with deployments growing significantly from the prior quarter as we closed large \nwins with dozens of large aerospace, streaming, financial services, retail, and energy companies. \nEPYC adoption also grew with telecom customers, as providers modernize their infrastructure for next-generation \nnetworks. For example, KDDI announced plans to deploy EPYC processors to power its 5G virtualized network,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "a361e3db3d8eee4e0b732800a25fffe7",
+    "text": "and Nokia selected EPYC for its cloud platform used by service providers to build, deploy, and manage core \nnetwork functions. \nTurning to enterprise on-prem adoption, HPE, Dell, Lenovo and Supermicro launched 28 new Turin platforms in \nthe quarter that delivered leadership performance, efficiency, and TCO across a wide range of enterprise \nworkloads. EPYC enterprise deployments grew significantly from the prior quarter, supported by new wins with \nlarge technology, automotive, manufacturing, financial services, and public sector customers. \nTo extend our momentum with SMB and hosted IT service customers, we launched the EPYC 4005 series that",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "f9e08bc8b149acb6287b5db9e3646043",
+    "text": "combine enterprise-grade performance and features in cost-optimized platforms, purpose-built for smaller-scale \ndeployments. \nTurning to HPC, AMD now powers more than 1/3 of the world's fastest supercomputers, including El Capitan and \nFrontier, which retained the number 1 and number 2 spots on the latest top 500 list. We also powered 12 of the \ntop 20 systems on the Green 500, highlighting the performance per watt advantages of EPYC and Instinct for \nlarge-scale deployments. \nLooking ahead, we remain bullish on our server CPU business, driven by durable tailwinds, including growing \ndemand for cloud and on-prem compute, sustained share gains, and the growing investments in general-purpose",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "c0779fb4d9cfed845c56202b9339198b",
+    "text": "infrastructure required to enable AI. \nTurning to our data center AI business, revenue declined year-over-year as US export restrictions effectively \neliminated MI308 sales to China, and we began transitioning to our next-generation MI350 series accelerators. \nWe made solid progress with MI300 and MI325 in the quarter, closing new wins and expanding adoption with tier-\n1 customers, next-generation AI cloud providers, and end users. \nToday, 7 of the top 10 model builders and AI companies use Instinct, underscoring the performance and TCO \nscale inferencing, MI355 delivers up to 40% more tokens per dollar, providing leadership performance and clear \nTCO advantages.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "430b7933a91503c81bb1bf46150f3b16",
+    "text": "TCO advantages. \nWith the MI350 series, we're also expanding our system-level capabilities to support deployments powered by \nAMD CPUs, GPUs, and NICs. As one example, Oracle is building a 27,000-plus node AI cluster combining MI355 \naccelerators, 5th-gen EPYC Turin CPUs, and Pollara 400 SmartNICs. \nWe began volume production of the MI350 series ahead of schedule in June, and expect a steep production ramp \nin the second half of the year to support large-scale production deployments with multiple customers. \nOur Sovereign AI engagements accelerated in the quarter, as governments around the world adopt AMD",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "27afdbd34d58cdce7e92e7c7e1be6697",
+    "text": "technology to build secure AI infrastructure and advance their economies. As one example, we announced a \nmulti-billion dollar collaboration with UMaine to build AI infrastructure powered entirely on AMD CPUs, GPUs, and \nsoftware. \nInitial deployments are underway in key regions, with quarterly expansions planned over the coming years. In \naddition, we have more than 40 active engagements globally and see significant opportunities to power an \nincreasingly larger portion of national computing centers and sovereign AI initiatives. \nOn the AI software front, we made significant progress this quarter increasing the performance, improving the",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "70bdacf1bda0e1c6d086e0b41b4dfdd1",
+    "text": "usability, and expanding the adoption of ROCm. We announced ROCm 7 with major upgrades across every layer \nof the stack, delivering more than 3x higher inferencing and training performance, compared to our prior \ngeneration, and adding support for large scale training, distributed inference, and lower precision data types. \nThe deepened developer engagement, we introduced nightly ROCm builds and expanded access to instant \ncompute infrastructure, including launching our first Developer Cloud that provides pre-configured containers for \ninstant access to AMD GPUs. We also expanded native support for ROCm across key frameworks including vLLM",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d73b24e23cc2a33ad69f3c1bc2672a22",
+    "text": "and SGLang, enabling frontier models like Llama 4, Gemma 3, and DeepSeek R1 to launch with Day 0 AMD \nsupport. \nTo accelerate enterprise adoption, we introduced ROCm Enterprise AI, a full-stack platform that integrates \nseamlessly with existing IT infrastructure and includes everything needed for an enterprise to deploy, manage, \nand scale AI across their business. \nLooking ahead, the development of our next-generation MI400 series is progressing rapidly. These are the most \nadvanced GPUs we have ever built, with up to 40 petaflops of FP4 AI performance and 50% more memory, \nmemory bandwidth, and scale out throughput than the competition.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "054bcf2242dadd734a30b4ccf22dab33",
+    "text": "memory bandwidth, and scale out throughput than the competition. \nWith the MI400 series, we're bringing together everything we've learned across silicon, software, and systems to \ndevelopment is progressing well towards our planned launch in 2026, with significant interest in large-scale \ndeployments from multiple high-profile customers. \nTo accelerate our development, we have invested significantly to expand our AI software and hardware \ncapabilities both organically and inorganically with a number of acquisitions and strategic investments. We \nstrengthened our software stack last quarter with the addition of the Brium and Lamini teams, building on our",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "9aefddd4ded50ddc93ce1618fcd95907",
+    "text": "acquisitions of NOD.AI, Mipsology, and Silo AI. \nOn the hardware side, we added a world-class rack and data center scale design team in the second quarter with \nour acquisition of ZT Systems. The ZT team has integrated seamlessly, and they are actively engaging with \nmultiple customers to accelerate deployments of our Helios solutions at scale. We also announced last quarter \nthat Sanmina intends to acquire ZT US-based manufacturing business, becoming our lead partner for AI rack \nmanufacturing. \nTurning to the AI regulatory environment, earlier this quarter, we were notified by the Department of Commerce",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "b259898be0fca7ea344e1841df7ff425",
+    "text": "that it is moving forward with the review of our license applications to export MI308 to China. We appreciate the \nfocus the Trump administration is placing on ensuring that the US technology remains central to global AI \ninfrastructure. And we expect to resume MI308 shipments as licenses are approved, subject to end customer \ndemand and supply chain readiness. \nAs our licenses are still under review, we are not including any MI308 revenue in our third-quarter guidance. \nDespite that, we expect revenue to grow year-over-year in the third quarter, driven by the ramp of MI350 at \nmultiple customers.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "0e2e7f6d80faf0a7d8a19dc55665e3c1",
+    "text": "multiple customers. \nIn client and gaming, segment revenue increased 69% year-over-year to $3.6 billion, driven by record client CPU \nsales and strong demand for our semi-custom game console SoCs and Radeon GPUs. Client revenue increased \n67% year-over-year to $2.5 billion, led by record desktop CPU sales. \nDemand for our latest generation Ryzen 9000 series was strong, especially for our differentiated X3D processors. \nWe delivered record desktop channel CPU sales, as Ryzen processors consistently topped the bestselling CPU \nlists at major global e-tailers throughout the quarter.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "14d3b4ae79125eb21ddbcbc735335a37",
+    "text": "lists at major global e-tailers throughout the quarter. \nWe also expanded our Zen 5 desktop portfolio with the launch of our latest Threadripper processors that feature \nup to 96 cores and deliver up to double the performance of the competition in many popular content creation and\ndesign workloads. \nIn mobile, demand for AMD-powered notebooks was strong, with sell-out growing by a large double-digit \npercentage year over year. We drove a richer mix of higher ASP mobile parts year-over-year as we expanded our \nshare in the premium notebook segment, where our Ryzen AI 300 CPUs deliver leadership, performance, and \nvalue for both general-purpose and AI workloads.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "2d160bd7b1c51ecc1f2e6264da92c0d6",
+    "text": "value for both general-purpose and AI workloads. \nIn commercial PCs, Ryzen adoption accelerated as OEM consumption increased more than 25% year-over-year. \nof our product portfolio and expanded breadth of OEM offerings. \nLooking more broadly, we remain confident we can continue growing client processor revenue ahead of the \nmarket over the coming quarters, driven by increased adoption of our desktop and notebook products, growing \ncommercial momentum, and a richer product mix. \nIn gaming, revenue increased 73% year-over-year to $1.1 billion. Semi-custom revenue increased by a large",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "5e88e3df50f9eee5a4b4abfa3f5f3d72",
+    "text": "double-digit percentage year-over-year, as console inventories inventory is normalized and our customers began \npreparing for the holiday season. \nWe announced a new, multiyear collaboration with Microsoft for custom chips that will power the next generation \nof Xbox devices, including consoles, PCs, and handhelds. We also deepened our collaboration with Sony through \nProject Amethyst, a co-engineering program that will use machine learning to power the next wave of immersive \ngaming experiences. \nIn PC gaming, demand for our latest generation Radeon 9000 series GPUs was very strong, with desktop GPUs",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "7852d8ac285d0b8dd4dd1ee3cc0ae2b9",
+    "text": "sell-through accelerating in the quarter, as demand outpaced supply. We launched the Radeon 9600 XT, \nextending the performance advantages of RDNA 4 to mainstream gamers and delivering a significant uplift in \ngaming performance, including more than double the ray tracing of our prior generation. \nAs part of our end-to-end AI strategy, we introduced the Radeon AI PRO R9700 GPU for local inferencing, model \nfine-tuning, and other data-intensive workloads. The R9700 features more memory, full ROCm support, and \nmulti-GPU scalability, enabling advanced AI development and deployment directly on the desktop.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "5b81a6ae09ad5268f170d0651ad6b341",
+    "text": "Turning to our embedded segment, revenue decreased 4% year-over-year to $824 million. Demand continues \nrecovering gradually with sell-through in the second quarter picking up, as strength in most markets was offset \nby a few pockets of softness in inventory reduction actions, largely with industrial customers. \nWe expanded our embedded portfolio with the first production shipments of Spartan UltraScale+ FPGAs that \ndeliver leadership performance and advanced security for cost-sensitive, low-power applications. \nAdoption of our Versal adaptive SoCs continues expanding in high-end applications, including next-generation",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "98a1e65735821dc3a13a9233a9883c17",
+    "text": "Robotaxi platforms developed by Bosch in Europe, where Versal serves as a high-performance controller enabling \nreal-time processing, security, and encryption in fully electric automated vehicles. \nLooking ahead, we expect improving demand in the test and measurement, communications, and aerospace \nmarkets will drive a return to sequential growth in the second half of 2025. Longer-term design win momentum \ncontinues to build tracking ahead of this point last year and putting us on pace to surpass the record $14 billion \nin design wins we achieved in 2024. \nIn summary, demand is very strong across our product portfolio, and we are well-positioned to deliver significant",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "34a4e8fcbf6f6e8b21839d9b70c869f6",
+    "text": "embedded-in-gaming businesses are returning to growth and are well-positioned for long-term success, \nsupported by strong design-win momentum. \nAnd in AI, we are seeing strong adoption of our MI350 series and ROCm 7, as we deliver leadership performance \nand TCO advantages across a broader range of workloads and ramp deployments with an expanded set of cloud \nand enterprise customers. \nLooking ahead, we see a clear path to scaling our AI business to 10's of billions of dollars in annual revenue. We \nare very excited about our next-generation MI400 series, which is another giant step forward on our roadmap",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "68f11fb6d977dc5c73e4bd016846ded4",
+    "text": "and has been designed to deliver leadership performance at the chip, server, and rack levels. Customer interest \nfor the MI400 series is very strong, and we are actively engaging with an expanding set of customers to support \nlarge-scale deployments in 2026. \nWe are in the early stages of an industry-wide AI transformation that will drive a step function increase in \ncompute demand across all of our markets, positioning us for significant revenue and earnings growth over the \ncoming years. Now, I'd like to turn the call over to Jean to provide some additional color on our second quarter \nresults. Jean. \nJEAN HU:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "15cc6545c45ed6634f8364e7abde70a0",
+    "text": "results. Jean. \nJEAN HU: \nThank you, Lisa. And good afternoon, everyone. I'll start with a review of our financial results and then provide \nour outlook for the third quarter of fiscal 2025. We are pleased with our strong second-quarter financial results. \nWe delivered record revenue of $7.7 billion, exceeding the midpoint of our guidance, up 32% year-over-year, \nreflecting strong momentum across our business. \nRecord sales of Ryzen and EPYC processors and higher semi-custom shipment more than offset the impact of the \nUS export controls, restricting MI308 sales to China. Revenue increased 3% sequentially due to strong growth in",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "ff1d6f0a6765bd227ccbdb8dc07b3b22",
+    "text": "the client and gaming segment, partially offset by the data center revenue decrease due to export controls. \nGross margin was 43%, down 10 points from 53% a year ago. The decrease was due to the $800 million \ninventory and related charges associated with the export restrictions. Excluding this charge, non-GAAP gross \nmargin would have been approximately 54%. \nOperating expenses were approximately $2.4 billion, and an increase of 32% year-over-year, as we continue to \ninvest aggressively in go-to market activities for revenue growth and in R&D to capitalize on significant future AI \nexpansion opportunities.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "ec049e751b5b2ea3ab4b2452f4ede333",
+    "text": "expansion opportunities. \nOperating income was $897 million, representing a 12% operating margin compared to $1.3 billion, or 22% a \nyear ago. The decline was primarily due to the inventory and related charges. Taxes, interest expense, and other \ntotaled $126 million. For the second quarter of 2025, diluted earnings per share were $0.48, compared to $0.69 a\nyear ago. The inventory and related charges reduced earnings per share by approximately $0.43. \nNow turning to our reportable segment, starting with the data center. Data center segment revenue was $3.2 \nbillion, up 14% year-over-year, driven by strong EPYC CPU revenue and the share gains across both cloud and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "f217dd29a7afd12886d4d7a2fe2add5d",
+    "text": "segment revenue was $3.6 billion, up 69% year-over-year and 20% sequentially, driven by record client CPU \nsales and strong demand for our PC and console gaming products. \nIn the client business, revenue was a record of $2.5 billion, up 67% year over year, driven by record sales of our \nRyzen desktop CPUs and richer product mix. Gaming revenue rose to $1.1 billion, up 73% year-over-year, \nreflecting strong demand for our newly launched gaming GPUs and higher semi-custom revenue as inventory has \nnow normalized and customers prepare for the holiday season. \nClient and gaming segment operating income was $767 million, or 21% of revenue, compared to $166 million, or",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "8a3542464205a1213d083cf97b2931c9",
+    "text": "8% a year ago, driven by richer client product mix and operating leverage on higher revenue. \nEmbedded segment revenue was $824 million, down 4% year-over-year and flat sequentially, as embedded and \nmarket demand remains mixed. Embedded segment operating income was $275 million, or 33% of revenue, \ncompared to $345 million, or 40% a year ago. The decline in operating income was primarily due to product mix. \nBefore I review the balance sheet and the cash flow, as a reminder, we closed the acquisition of ZT Systems early \nin the second quarter. As we had announced our intent to divest ZT manufacturing business, the financial results",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "7903f620453ced9014d1fd130a4c56fe",
+    "text": "of the ZT manufacturing business are reported separately in our financial statements as discontinued operations \nand are excluded from our non-GAAP financials. \nSubsequently, in May, we entered into an agreement with the Sanmina Corporation to sell the ZT manufacturing \nbusiness for $3 billion in cash and stock, inclusive of contingent payments. The transaction is expected to close \nnear the end of 2025, subject to regulatory approvals and customary closing conditions. \nTurning to the balance sheet and cash flow, during the quarter, we generated $1.5 billion in cash from operating",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "73bb0c487107bee68a8347a7bbdf4108",
+    "text": "activities of continuing operations, and free cash flow was a record of $1.2 billion. We returned $478 million to \nshareholders through share repurchases, resulting in $1.2 billion in share repurchases for the first half of 2025. \nIn May, our board of directors approved an additional $6 billion authorization. Exiting the quarter, we have $9.5 \nbillion remaining under our share repurchase program. At the end of the quarter, cash, cash equivalents and \nshort-term investments were $5.9 billion. Our long-term debt was $3.2 billion. During the quarter, we paid down \n$950 million of commercial paper used to finance the ZT system acquisition clause.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "92ba7d9da4db5f3cfeba978003ca35ea",
+    "text": "Now turning to our third quarter 2025 outlook, please note that our third quarter outlook does not include any \nrevenue from AMD Instinct MI308 shipment to China, as our license applications are currently under review by US \ngovernment. For the third quarter of 2025, we expect revenue to be approximately $8.7 billion, plus or minus \n$300 million. \nThe midpoint of our guidance represents approximately 28% year-over-year revenue growth, driven by strong \ndouble-digit growth in our client and gaming and data center segments. Sequentially, we expect revenue to grow \nmargin to be approximately 54%, and we expect non-GAAP operating expenses to be approximately $2.55 \nbillion.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "c7767c8b8e9d9c77a6778f300637c45c",
+    "text": "billion. \nWe expect net interest and other expenses to be, again, over approximately $10 million. We expect our non-\nGAAP effective tax rate to be 13% and diluted share count is expected to be approximately 1.63 billion shares. \nIn closing, we executed very well in the first half of the year, delivering record revenue and building strong \nmomentum for growth in the second half. The strategic investment we are making position us to capitalize on the \nexpanding AI opportunities across all our end markets, driving sustainable long-term revenue growth and \nearnings expansion for compelling value creation. With that, I'll turn it back to Matt for the Q&A session. \nMATTHEW \nRAMSAY:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d35a71ef02dce981fce816243306be63",
+    "text": "MATTHEW \nRAMSAY: \nOperator, will you please pull the audience for questions? Thank you. \nMODERATOR: \nYes, thank you, Matt. We will now be conducting a question and answer session. If you would like to ask a \nquestion, please press star 1 on your telephone keypad. A confirmation tone will indicate that your line is in the \nqueue. You may press star 2 to remove yourself from the queue. \nFor participants using speaker equipment, it may be necessary to pick up the handset before pressing the star \nkeys. We ask that you please limit yourself to one question and one follow-up. Thank you. One moment please,",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "57b525ad8db875cdb221110731cf061e",
+    "text": "while we poll for questions. And the first question comes from the line of Thomas O'Malley with Barclays. Please \nproceed with your question. \nTHOMAS \nO'MALLEY: \nHey, thank you for taking my questions. And I appreciate it. Lisa, I want to start on the client business. So you \nhad previously laid out a second-half outlook that was roughly flattish with the first half, as you were kind of \nprotecting against some pull-forward. \nSo first, do you think that your Q2 results included some pull-forwards and the second half should still be flattish? \nAnd longer-term, after the Intel commentary regarding 18A maybe what that means is a knee-jerk reaction just",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "59e80f70a697d2aa32f552967a5770ff",
+    "text": "right away for AMD longer-term in terms share and ASPs? \nLISA SU: \nSure, Tom, thanks for the question. So first of all, our client and gaming segment, and particularly our client \nbusiness, just performed very well in the first half of the year. I think if you look at the entire first half, it was up \n68% year-over-year. \nI think if you look underneath that, what we're seeing is strength in every part of our client business. So we saw \nvery strong sales in our desktop channel area. We have a leadership product there, best gaming GPUs with our \nX3D GPUs. We've had strong rise in AI adoption. As well in the first half of the year, we see that in sell-through.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "546633fb4781ac92ef32d1671c28bf0f",
+    "text": "And in addition, we've had strong enterprise sell-through as we brought that forward. So to your question of how \nwe're planning for it to be a little bit less than seasonal, just given some of the uncertainties out there. \nBut the client business is performing extremely well for us. We believe we are gaining share in all the right \nplaces. So if you look at the numbers in the first quarter, and it'll show through in the second quarter as well, a lot\nof the uplift in revenue is in ASPs. And that is basically, we're selling up the stack on the strength of our portfolio. \nAnd I think we're still quite underrepresented in the enterprise portion of the business. That is where we have",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d1d479b3bbc04ad44deb664b778afece",
+    "text": "increased our go-to market resources and focus. And we're seeing nice traction there, especially with the \nportfolios that we have from HP and Lenovo in enterprise PCs. And now we're adding Dell as well as it's ramping \nhere, started in the second quarter. We'll ramp more in the second half of the year. \nSo I think all of those are tailwinds for our client business, beyond the second half of '25, but really, into the next \nnumber of quarters, as we think about the portfolio and the opportunities for us. \nTHOMAS \nO'MALLEY: \nSuper helpful. And then secondly, I was hopeful you could provide us a little more color on China. So the guide",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "c7d047dd082bcfd0d936dd3b577926d3",
+    "text": "doesn't include MI308. But perhaps you could comment on when you get approval if the supply chain is ready, \nwhat's currently in inventory, and maybe compare what you think the contribution will look like versus the $700 \nmillion in Q2 and the $800 million for the second half you spoke about in April. \nLISA SU: \nSure, Tom. So, yeah, let me answer some of the questions on China. I'm sure that there are some questions. \nLook, we're very pleased with the progress that's been made with the administration over the last couple of \nmonths. We've been working very closely with the administration. I think the focus here on ensuring that US",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "0b46be3cdf3ee447dcd74cc56760d771",
+    "text": "technology gets utilized throughout the world is something that we certainly support and very much want to \ncontribute to. \nChina's an important market for us. Given the timing of licenses, we have a number of licenses that are under \nreview now. We are working with the Department of Commerce to get those reviewed. We do expect that once \nthose licenses are approved, we will start MI308 shipments. \nIn terms of the supply chain, most of our inventory was not in finished goods, so it was work in process, and it will \ntake us a couple of quarters to run through that. The exact timing of revenue and contribution will depend a bit \non when the licenses are actually granted.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "10b12c5c7fc1c4acd25fa2112ec723e8",
+    "text": "on when the licenses are actually granted. \nBut overall, I think this is a better position than we were 90 days ago. And we certainly view China as a market \nthat we would like to service with MI308. And we're working closely with the administration to do that. \nMODERATOR: \nAnd the next question comes from the line of Vivek Arya with Bank of America Securities. Please proceed with \nyour question. \nVIVEK ARYA: \nThank you for taking my question. If we look into 2026, that's when I think the Sovereign opportunity could get \nquite meaningful for AMD. What is the right way to size that? What does this JV structure mean with some of the \nsome ways to think about Sovereign for AMD next year.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "3e8e25d1e3934356fc740484a4060793",
+    "text": "some ways to think about Sovereign for AMD next year. \nLISA SU: \nYeah, absolutely, Vivek. Thanks for the question. So look, we're really excited about the overall AI opportunity for \nus with MI355 and the MI400 series as we go through the back half of this year and into 2026. I think, there's a \nvery large opportunity with, let's call it hyperscalers, some of the leading AI companies, as well as Sovereign. I \nthink Sovereign is additive to that, for sure. \nFrom the standpoint of what to expect, there are also some regulatory things that need to be worked through on \nthe Sovereign side. But again, we're working closely with the administration as they go through the various",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "cb2992ddb73f917577ec35de2d04ff54",
+    "text": "regulatory decisions that need to be made. \nBut from my perspective, I think the fact that countries want their own Sovereign computing capability is very, \nvery clear. I think we see that all over the world. The humane opportunity that you're referring to that we \nannounced with the Kingdom of Saudi Arabia, I think is a great example of where together with their ambitions, \nour technology--\nI think you heard from Tareq he was at our event-- saying that would start with MI355, that we would expect that \nthat would continue on. I think what's attractive about our offering is our open ecosystem. And I think that really",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "8dbfc1c828d4ac4cbae150fbac7e5e33",
+    "text": "resonates with the Sovereign community. But to your original question, I think it's an additive opportunity, and \nit's one that we believe will continue to be very important for us going forward with both MI355 as well as the \nMI400 series. \nVIVEK ARYA: \nGot it. And for my follow-up, I wanted to ask about gross margins for your MI product. So I understand in the early \ndays, right, it has been dilutive. What kind of sales level is required for it to start becoming additive to margins? \nAnd let's say if I fast-forward to Q4 and assume that your Q4 sales are growing year-over-year roughly the same",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "86e84c1d58e7946524740df62f753b69",
+    "text": "rate as Q3 sales, should we expect gross margins to stay at these Q3 levels, or are there other plus/minus drivers \nwe should think about in terms of gross margins as you go into Q4? Thank you. \nJEAN HU: \nYeah, Vivek, thank you for the question. The gross margin of our MI product, we said it's a little bit below \ncorporate average. I think at this point, our priority is really to address the large, fast-growing revenue \nopportunities we have and provide customers a better TCO to really expand our presence in the marketplace. \nI think the way to think about our gross margin, there are different dynamics, different customers, different",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "64db01ac87b76ea5c7c59b6b863bb4df",
+    "text": "generations. But also, our operations team has been continuing to really drive operational efficiency to improve \nMI family's gross margin. That has been ongoing. \nSo it's not necessarily really tied to, OK, the revenue level each quarter, but you should think about it as a trend \nin the longer term. It should improve continually going forward. Overall, the way I think about it is gross margin \ndollars. This is one of the fastest-growing market opportunities. For any financial metrics, gross margin dollars is \nwhat we try to grab as much as we can. Hopefully, that helped your question.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "b9816432796d8655c2729092baca06fa",
+    "text": "Thanks a lot. So my question is on data center GPU. You did say that June is up year-over-year. So it sounds like \nit's maybe a little more than $1 billion. And you use words like \"strong ramp\" into the back half of the year. Can \nyou give us just any color on what that means? Can you get to, say, $7 billion for the year? And can you give us \nsome maybe milepost on what you're assuming for Q3? That would be great. \nLISA SU: \nYeah, thanks, Tim, for the question. I think what we said in the prepared remarks is that we are seeing a strong \nramp from Q2 into Q3. MI355, we actually started production in June, so we had some shipments in the month of",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "6b1627ff84fd7c7223bd69ca2e4367a4",
+    "text": "June, but it really is ramping as we go through this quarter in the third quarter. \nSo in terms of guideposts, we said it would grow year-over-year from last year. And that I think is a strong ramp. \nAnd then we would expect it to grow into the fourth quarter as well. The demand, I should say, what we're seeing \nfrom customers is, I think really positive around MI355. The way I would contrast it with maybe the MI300 ramp. \nI think MI300 started with perhaps some smaller deployments. I think what we're seeing with MI355 is very \ncompetitive versus the B200, GB200 family of products. I think there's a strong desire to really use us at scale.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "0d6c5034e2f81b430967bddc6b352869",
+    "text": "MI355 is very strong for inferencing. We're also working with a number of customers on training. \nAnd this is also an opportunity for us to build into the MI400 series as we go into 2026. So we're bullish on MI355 \nand where the AI opportunity is for us. And I think we're right on track to what we expected to be as we were \ngoing through the development of the roadmap. \nTIMOTHY \nARCURI: \nThanks a lot. And then, Lisa, just on that point, also, you did talk about a new Developer Cloud. So obviously, \nyou're beginning to lease back some of the capacity that you're selling into the clouds and the NIO clouds.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "b14ccc624f2abe9558f506afabad2a27",
+    "text": "Is that going to be a material portion of the revenue you're going to recognize for MI355 in the back half of the \nyear? Can you just talk about that and maybe how to think about how much demand that's going to stimulate \nand what the ultimate goal is for that cloud? Thanks. \nLISA SU: \nYeah. So there are a couple of things in that question. So let me answer. So the Developer Cloud is simply we \nwant to make it super easy for developers to get on AMD Instinct GPUs. One could say-- again, if we look back at \nthe MI300 family, we were very focused on the largest hyperscalers and the largest customers.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "c19a601fe3e67f64b85cd9643f0d1af7",
+    "text": "But there's a lot of interest in our GPUs across a number of customers who just wanted easier access. So by \nensuring that Developer Cloud is there, that it has, ready-to-deploy containers, you can run training and \ninference easily, you don't necessarily have to make longer-term commitments, I think that's the purpose of the \nDeveloper Cloud. \nI don't think it adds meaningfully to revenue in the second half of the year, but it certainly adds to customers \ngetting experience with AMD. I think the larger revenue opportunities for us are really with large customer \nadoption as they ramp to larger deployments. And we're very actively trying to get those deployments up and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d3f039bab4e5ff9d7a28d89403805048",
+    "text": "running as soon as possible. \nOne of the things, just as a reminder, that the MI355 is-- given that it's a similar infrastructure to MI300, we \nquestion. \nROSS \nSEYMORE: \nHi. Thanks for letting me ask a question. Lisa, I want to go back to the Instinct side of things, and the MI355 \nramp. Looks like the second half is going to ramp really significantly. You said it's going to be up year-over-year in\nthe third quarter. \nI believe a quarter ago, you said roughly the same thing in the MI308 is out of both numbers. So that shouldn't \nreally matter. And I guess it would be upside. But I just wondered how have things changed from a quarter ago as",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "73dfe52d3dd4de1471c61257a3552228",
+    "text": "far as the MI350 family adoption, especially because you launched a little bit early? Is the growth a little bit more \nthan you would have expected a quarter ago, about the same, or a little worse? Just any sort of color on that \nwould be helpful. \nLISA SU: \nYeah Ross, thanks for the question. I think the main thing I would say is I think the adoption is a bit faster than \nwe might have expected. Again, whenever you launch a product, we want to make sure that we go through the \nfull validation and all of that with our customers. I think there's a lot of interest, broad-based interest in MI355.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "3dfa73b3541b891ef8054efe18c71cbc",
+    "text": "So I feel like over the last 90 days, I think we've had significant sort of new customer interest. And that's \ncertainly positive. I will say--\nROSS \nSEYMORE: \nI guess--\nLISA SU: \nOh, I'm sorry, Ross, I was just going to add, our engagements are-- I think the other piece is I think there's also a \nlot of excitement around MI400 and what we can do with the Helios rack. So there are a number of customers \nwho, based on the strong roadmap that we're showing, want to get familiar and really work with us earlier in the \nlife cycle, which, I think, again, positive. \nROSS \nSEYMORE: \nGreat. Thank you for that. I guess is my follow-up, an earlier question you talked about a little bit below",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "ada30b91aabfd50def975fe5c6bd6b30",
+    "text": "seasonality in the second half of the year for your client business. It seems like there's just-- I don't even know if \nseasonality is a framework that matters. \nBut how are you thinking about that for the second half as a whole for client and then gaming? It was just up a \nhuge amount sequentially. In the second quarter, you described a little bit of what you're expecting there. But \nhow do you think about seasonality for the second half in its entirety in the gaming side as well? \nLISA SU: \nYeah. Let me try, and then Jean might add if you want a little bit more color. So the way to think about it is, we",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "6d5b091f891a22e42e6ff0bca117d856",
+    "text": "do expect some sequential growth in client as we go into the third quarter. I would say single digit-type growth. \nWe continue to see good traction for our products in that portfolio. \nOn the gaming side, I would call it flattish to Q2. And we're coming off of such a strong Q2 that I think flattish is \nactually to be expected. As we go into the fourth quarter, the dynamics that we would see is, we would see that \nthe console business would actually be down substantially. So think about it as down strong double digits. \nThe customers usually build for the holiday season, sort of before that. And then that will be completed by the \nMODERATOR:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "3d1f35eb7e899741ea4da502c1799133",
+    "text": "MODERATOR: \nAnd the next question comes from the line of Joshua Buckhalter with TD Cowen. Please proceed with your \nquestion. \nJOSHUA \nBUCHALTER: \nHey, guys, thank you for taking my question. I wanted to ask about lead times on the Instinct family, both for the \nMI350 family and MI400. As you move into larger cluster sizes, which it sounds like you're doing at least with \nOracle on 350, and then endeavor to do more so on 400, how much visibility and lead time do you need from \nyour customers? \nBecause I would imagine the lead time for your parts is measured in months. But on the infrastructure side, in",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "0886f7a741d2ebd931e3ef4544c14ea1",
+    "text": "particular for the larger-scale deployments, those things are measured in years at this point. So maybe you could \nspeak to the visibility specifically on the 400. Thank you. \nLISA SU: \nYes, sure, Josh. So, yes, our lead times are long, given all of the processing steps that we have to go through. \nThink about it as somewhere between 8/9 months, that type of thing. We have a very, very strong supply chain. \nWe've been preparing for these ramps of both MI350 series and MI400 series. And that preparation is ongoing. So \nwe feel like we have a very strong supply chain there. \nIn terms of visibility with customers, we're absolutely working with customers very closely on near term MI350",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "b99a6eb49b4c61b71604f57f176487ba",
+    "text": "series deployments, getting those deployments up as quickly as possible. Again, one of the things about the \nMI350 series that is good is that it can go into existing data centers, just given the platform that is that it is in. So \nwe have been certainly working with our customers there. \nAnd then for the MI400 series, there are lots and lots of details in of full rack scale design implementation. And \nwe're actively working with the largest customers right now on just ensuring that our Helios rack is fully \ncompatible with their data center build out as we go into 2026. \nSo that visibility is important. I think that co-development, co-engineering is important as we get into the rack",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "e44076c2e6d2d0d40a66f8672d97e220",
+    "text": "scale architecture. And the team that we've brought in has been extremely, extremely helpful in terms of both \ninternal platform build out, as well as ensuring that we're working closely with our customers on their data center \nneeds. \nJOSHUA \nBUCHALTER: \nThank you for that, Lisa. And maybe for Jean, I wanted to follow up on Vivek's question earlier on gross margins. \nSo if we add back the charges in 2Q and then your gross margin implied in the guidance is roughly flat \nsequentially, and that's despite what's implied to be data center GPUs up meaningfully, sequentially. \nIt doesn't seem like consoles falling off in the third quarter. Can you maybe talk to the underlying drivers of how",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "62083cc1a1ee15c6b3edd4c7cb7d1db6",
+    "text": "you're able to keep the flat gross margins despite what sounds like still margin-dilutive data center GPUs up \nsignificantly within the mix? Thank you. \nJEAN HU: \nYeah, Josh, thanks for the question. Yeah, we are guiding our Q3 gross margin around 54% and Q2 , you're right, \nbusiness. That really helps us to drive the gross margin up. \nIn addition, we do have a really strong operational team. They are driving the gross margin improvement just \nfrom an operational efficiency perspective across the board. So overall, our objective is to continue to improve \ngross margin. Despite MI350 very strong ramp in Q3, we are able to continue to drive the margin up. \nMODERATOR:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d613f3624bf9d8764fbbcf1d9a591da7",
+    "text": "MODERATOR: \nAnd the next question comes from the line of Joe Moore with Morgan Stanley. Please proceed with your question. \nJOE MOORE: \nGreat. Thank you. You used this language before of the kind of 10's of billions opportunity around MI400. Can you \ntalk about the time frame when that might occur, and not to pin you down too much, and what would help you \nget to that level sooner rather than later? Should we think of that 2027 realistic outcome that you could be \nlooking at $20 billion-plus? Just a little bit more color on that 10's of billions comment. \nLISA SU: \nYeah. Maybe without being specific, Joe, I can give you the way I look at it and back to this notion of, are we",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "4de53fd7cc134ce8c0b79dcb6af4eac1",
+    "text": "incrementally more confident? I think we're seeing a lot of positive signs in our AI customer adoption. I think the \nstrength of the MI350 series, the very positive feedback that we're getting on MI400 from customers, the work \nthat we're doing in terms of ensuring that we are fully ready for large-scale deployments of not just inference but \ntraining. \nI think when we get to 10's of billions of dollars, we're talking about significant gigawatt-scale type deployments. \nAnd those would be important for us to get there. And we're certainly, I think, engaged with all the right \ncustomers that can enable that type of ramp. But I won't necessarily speculate on the exact time other than to",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d324af594b94549325ea0ad8469ff24a",
+    "text": "say certainly, that would be our set of aspirations. \nJOE MOORE: \nGreat that's helpful. Thank you. And then, as these workloads evolve-- you've talked about inference and training \nas different opportunities for AMD. Are you seeing those start to come together? It seems like with inference, the \nreasoning models are requiring much higher complexity. Is rack scale more important to the inference market \nthan you thought it might be? Just any color around how that complexity of inference is impacting you guys. \nLISA SU: \nYeah, I think that's absolutely true, Joe. With the proliferation of models, I think what we're seeing is GPUs",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "3057f8214ce34afd635811a0c14407d7",
+    "text": "continue to be the computing of choice as you think about all the models that are out there. And then as you go \ninto distributed inference and some of the newer techniques, we are seeing the importance of the scale-up and \nscale-out architecture, which we are, investing in. \nBut I think the overarching thing is, I think we have a very competitive roadmap across the next couple of \ngenerations. I think that has now gotten strong customer validation. We're getting a lot of feedback from \ncustomers on where they would like to see us continue to add more resources and add more focus. So that is",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "d25415ed0ca48afa5c15faf56e0f87b4",
+    "text": "very helpful. And the key is to be a full-scale solution provider for these large customer deployments. And that's \nwhat we're working on. \nYeah, thanks for taking the question. I do have a follow-up as well. I guess the first question is, when we look at \nthe data center guide, Jean, you alluded to double-digit sequential growth. Obviously, the MI355 series kind of \nramping. I'm curious, how could we conceptualize what you're expecting in the server side, and where do you \nthink your market share is today in traditional enterprise servers outside of cloud? \nJEAN HU: \nYeah, I think when you look at our data center business, we do have a strong double-digit growth. Both server",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "a24036c4d4daa3d02e70954ffa41c4b8",
+    "text": "and the MI, both sides are growing sequentially. Of course, MI ramp is the most significant one. As far as server \nmarket share, we do think we continue to drive the market share up compared to Q1. Third party has not \npublished report yet, but we feel really good about the Q2 market share increase versus Q1. \nLISA SU: \nAnd Aaron, if I just add to that, one of the things that-- it's important for people to understand is, in some of the \ncloud CapEx numbers that have come out that have been quite positive, that is not only a GPU statement, but \nthere's actually significant CPU CapEx in there as well.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "2b9673c4cba29c876d6fcef512aaf568",
+    "text": "there's actually significant CPU CapEx in there as well. \nWe've started to see more robust forecasts going out a number of quarters on the server CPU side, because all of \nthat AI content really requires traditional CPUs as well. So we're very bullish on the opportunity in servers. I think \nthe team has really executed extremely well. \nIf you look at our portfolio now, Turin Genoa, our very well-adopted broadening workloads. Enterprise adoption is \nalso increasing. So I think all of those are positive for the server opportunity in the second half of '25, as well as \ngoing into '26 and beyond. \nAARON \nRAKERS:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "16613bb7ad81c8c4c91c4cfc06298633",
+    "text": "going into '26 and beyond. \nAARON \nRAKERS: \nYeah. And then as a follow-up, I'm thinking about the China, the MI308 opportunity. When we do see a license-- I \nthink you alluded to this earlier-- it's going to take a little bit of time to ramp and get the supply chain to satisfy \nthe demand. But I'm curious, the $800 million writedown that you had taken, is there no kind of finished \ninventory there? Does that come back? Do you have any reversal aspects of that once a license gets approved? \nJEAN HU: \nLet me start first, then Lisa can add. The first on the $800 million. Majority of them are WIPs We really don't have",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "e8fbad2c4627060dae6ddc10a3264bc6",
+    "text": "on the shelf finished good we can ship immediately. So we do need to take time if we get a license. \nAARON \nRAKERS: \nThank you. \nMODERATOR: \nAnd the next question comes from the line of CJ Muse with Cantor Fitzgerald. Please proceed with your question. \nCJ MUSE: \nYeah, good afternoon. Thank you for taking the question. I guess, Lisa, I was hoping you could level-set us on the \nInstinct ramp into 2026. How are you thinking about the timing of the handoff 350 to 400? How are you thinking \nabout Helios contributions. And I guess very importantly, from a customer contribution perspective, how you",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "9b6e7a5e85c55389a91296f163ac7956",
+    "text": "might see that evolve from traditional hyperscalers to perhaps more sovereign and NIO cloud within the mix? \nLISA SU: \nSure, CJ. So certainly, as second half this year, it's all about MI355 ramp into first half of next year, I think the \nhyperscalers and let's call it NIO clouds that would be working for other large AI natives, maybe significant pieces \nof the initial ramp. And then Sovereign may come a little bit later in time, just given the timing of when different \nbuild-outs would happen. So hopefully, that gives you some color. \nCJ MUSE: \nVery helpful. And then, Jean, I guess a question for you, with the sale of ZT for $3 million in cash and stock, and",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "7b069baf20d9268cda6df9dde0a331c0",
+    "text": "you only have $3 billion of debt outstanding, how are you thinking about the use of proceeds? Is there saving for \na rainy day or bolt on acquisitions, perhaps more aggressive share buyback? How are you thinking about it \ntoday? \nJEAN HU: \nYeah, thanks for the question. Our business model actually generates a lot of free cash flow. As you see in Q2, \nfree cash flow generation was $1.2 billion. So if we close the ZT sale, and we'll get more cash. Overall, our capital \nallocation principle continues to be the first phase investing, especially with the tremendous opportunities ahead \nof us.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "18169f7c9338dc176d5a6a0394c62163",
+    "text": "of us. \nAnd then we will continue to return cash to shareholders. We did a $1.2 billion repurchase in the first half of the \nyear. We are committed to continue to return cash to shareholders through share repurchase. \nMATTHEW \nRAMSAY: \nOperator, I think we have time for one more caller, please. \nMODERATOR: \nThe final question comes from the line of Ben Reitzes with Melius Research. Please proceed with your question. \nBEN REITZES: \nHey, thanks for squeezing me in here. I wanted to clarify a little bit on the $1 billion increase in sequential sales. \nIt would seem like it's coming from GPUs, primarily. I was wondering if you could back that. And that's with \nnothing in China.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "ed893f1d4d9cf93bfad94eff8bace6ec",
+    "text": "nothing in China. \nAnd if the answer to the prior question that GPUs are over a billion, that kind of puts you at a $2 billion run rate. \nAnd I was just wondering if that was accurate in terms of thinking. And then I have just a very quick follow-up. \nThanks. \nJEAN HU: \nHi, Ben, thanks for the question. If you look at the sequential revenue increase, as I mentioned during the \nprepared remarks, we see data center strong double-digit increase, which includes both GPU and CPU. But GPU \ndefinitely drives the largest incremental amount increase. We also mentioned the client actually is going to \nincrease sequentially.",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "2b7ae448a59e695e392121d55fd95d92",
+    "text": "increase sequentially. \nIn addition, the embedded business will return to sequential growth. So multiple businesses contributed to \nsequential increase, but the majority of increase really driven by MI355's strong ramp. \nBEN REITZES: \nGreat. And then if indeed that gets you pretty close to a couple billion dollars, if the MI300 comes in, do you see it\nat the same run rate that you exited and then you have the ability to get at that $800 mill run rate right away? \nOr do you think it'll take several quarters to ramp when you get the license? Thanks. \nLISA SU: \nYeah, Ben, it will take some time to ramp, just given-- particularly, today, we're sitting already in early August so",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  },
+  {
+    "chunk_id": "1bfd210222ec62967038d5eca3341e47",
+    "text": "All right, operator. Thank you very much. We appreciate everybody that joined the call today. And we just like to \nend the call now. Thank you. \nMODERATOR:",
+    "ticker": "AMD.US",
+    "pub_date": "1783911473",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/amd2q2025.pdf"
+  }
+]
