@@ -124,8 +124,25 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
 
     # extract pub_date from filename prefix like 20260701-
     import re as _re
+    from datetime import date as _date
+
+    def _valid_yyyymmdd(s: str) -> bool:
+        try:
+            _date(int(s[:4]), int(s[4:6]), int(s[6:8]))
+            return True
+        except ValueError:
+            return False
+
     m = _re.match(r"(\d{8})", path.stem)
-    pub_date = m.group(1) if m else str(int(path.stat().st_mtime))
+    if m and _valid_yyyymmdd(m.group(1)):
+        pub_date = m.group(1)
+    else:
+        # ponytail: no valid date in filename (e.g. SEC accession-number PDFs like
+        # "0000050863-25-000052.pdf" — the leading 8 digits parse as \d{8} but aren't
+        # a real date) — fall back to file mtime formatted as YYYYMMDD, not a raw
+        # epoch string. Still not the true publish date, but at least a valid/
+        # sortable/comparable date string instead of a garbage number.
+        pub_date = _date.fromtimestamp(path.stat().st_mtime).strftime("%Y%m%d")
 
     try:
         source_file = str(path.relative_to(ROOT))

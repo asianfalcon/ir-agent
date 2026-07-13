@@ -19,6 +19,7 @@ AceCamp safety policy:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sqlite3
@@ -352,7 +353,48 @@ def _fetch_news_eastmoney_direct(code: str, limit: int) -> list[dict]:
 
 
 def report_files(company: Company) -> list[Path]:
-    return sorted((ROOT / f"data/inputs/reports/{company.name}").rglob("*.pdf"))
+    paths = sorted((ROOT / f"data/inputs/reports/{company.name}").rglob("*.pdf"))
+    # ponytail: same-content PDFs re-uploaded under a different filename (e.g. "(1)"
+    # suffix) previously got ingested twice — dedupe by file content hash, keep first.
+    seen: dict[str, Path] = {}
+    unique = []
+    for p in paths:
+        h = hashlib.md5(p.read_bytes()).hexdigest()
+        if h in seen:
+            print(f"[refresh] skip duplicate-content report: {p} (same as {seen[h]})")
+            continue
+        seen[h] = p
+        unique.append(p)
+    return unique
+
+
+def gc_stale_report_rows(ticker: str, current_files: list[Path]) -> int:
+    """删除LanceDB里source_file已不在当前report_files()清单中的broker_report行。
+
+    文件被移动/改名/重组目录后，旧路径下的行永远不会被process_file()里的
+    delete_by_source_file()自然清理（它只按当前computed source_file精确匹配删除），
+    这里做一次基于"当前磁盘上实际存在的文件集合"的补充清理。
+    """
+    import lancedb
+
+    current = {str(p.relative_to(ROOT)) for p in current_files}
+    db = lancedb.connect(str(ROOT / "data/storage/lancedb_root"))
+    if "chunks" not in db.table_names():
+        return 0
+    tbl = db.open_table("chunks")
+    safe_ticker = ticker.replace("'", "''")
+    rows = (
+        tbl.search()
+        .where(f"ticker = '{safe_ticker}' AND data_source = 'broker_report'")
+        .select(["source_file"])
+        .to_list()
+    )
+    stale = {r["source_file"] for r in rows} - current
+    for sf in stale:
+        tbl.delete(f"source_file = '{sf.replace(chr(39), chr(39) * 2)}'")
+    if stale:
+        print(f"[refresh] gc stale report rows: removed {len(stale)} orphaned source_file group(s)")
+    return len(stale)
 
 
 def process_local_files(paths: list[Path], ticker: str | None = None) -> int:
@@ -434,6 +476,7 @@ def refresh_company(company: Company, args) -> dict:
     if not args.skip_reports:
         reports = report_files(company)
         summary["report_files"] = len(reports)
+        summary["gc_stale_report_rows"] = gc_stale_report_rows(company.ticker, reports)
     else:
         reports = []
 

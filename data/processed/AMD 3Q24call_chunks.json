@@ -3,7 +3,7 @@
     "chunk_id": "8c936307fc2cd65cb9b99b52d20c8e9c",
     "text": "Greetings. And welcome to the AMD third quarter 2024 conference call. At this time, all participants are in a \nlisten-only mode. A question and answer session will follow the formal presentation. If anyone should require \noperator assistance, please press star 0 on your telephone keypad. And as a reminder, this conference is being \nrecorded. It is now my pleasure to introduce to you Mitch Haws, vice president of investor relations. Thank you, \nMitch. You may begin. \nMITCH HAWS: \nThank you, and welcome to AMD's third quarter 2024 financial results conference call. By now, you should have",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -12,7 +12,7 @@
     "chunk_id": "647372692663270398e75fe2e7ff6b8f",
     "text": "had the opportunity to review a copy of our earnings press release and the accompanying slides. If you have not \nhad the chance to review these materials, they can be found on the Investor Relations page of amd.com. \nWe will refer primarily to non-GAAP financial measures during today's call. The full non-GAAP to GAAP \nreconciliations are available in today's press release, and the slides posted on our website. Participants on \ntoday's conference call are Dr. Lisa Su, our chair and chief executive officer, and Jean Hu, our executive vice \npresident, chief financial officer, and treasurer. This is a live call and will be replayed via webcast on our website.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -21,7 +21,7 @@
     "chunk_id": "3dcbe56df16835df09330af22dcef869",
     "text": "Before we begin, I would like to note that Forrest Norrod, executive vice president and general manager, data \ncenter business solutions, will attend the UBS Annual Technology Conference on Tuesday, December 3, and Jean \nHu will attend the Barclays Global TMT Conference on Thursday, December 12. \nToday's discussion contains forward-looking statements based on current beliefs, assumptions, and expectations, \nspeak only as of today, and, as such, involve risks and uncertainties that could cause actual results to differ \nmaterially from our current expectations. Please refer to the cautionary statement in our press release for more",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -30,7 +30,7 @@
     "chunk_id": "bc418da0595d83d3dd3bb70546d04ef6",
     "text": "information on factors that could cause actual results to differ materially. With that, I'll hand the call over to Lisa. \nLISA SU: \nThank you, Mitch. And good afternoon to all those listening today. We delivered strong top and bottom-line \ngrowth in the third quarter, with revenue coming in above expectations, driven by record Instinct and EPYC \nproduct sales and robust demand for our Ryzen PC processors. \nThird quarter revenue increased 18% year over year to a record $6.8 billion as significantly higher data center \nand client processor sales more than offset declines in gaming and embedded product sales. We expanded gross",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -39,7 +39,7 @@
     "chunk_id": "9dcb80e239003c7f84269bce67913534",
     "text": "margin by 2 and 1/2 percentage points and increased earnings per share by 31% year over year as data center \nsegment revenue more than doubled. \nTurning to the segments, data center segment revenue increased 122% to a record $3.5 billion. We believe we \ngained server CPU share in the quarter as enterprise wins accelerated, cloud providers expanded their use of \nEPYC CPUs across their infrastructure, and we began the initial ramp of 5th Gen EPYC processors. EPYC has \nbecome the CPU of choice for the modern data center. And our multigeneration product portfolio delivers \nleadership performance and significant advantages across virtually every enterprise and cloud workload.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -48,7 +48,7 @@
     "chunk_id": "1bbbbb56fb034f7c36b1b05066ced308",
     "text": "In cloud, EPYC CPUs are deployed at scale to power many of the most important services, including Office 365, \nper Watt versus their prior generation. Public cloud instances increased 20% year over year to more than 950 as \nMicrosoft, AWS, and others launched or expanded their EPYC processor-powered offerings in the quarter. EPYC \ninstance adoption with enterprise customers also grew in the quarter, highlighted by wins with Adobe, Boeing, \nMicron, Nestle, Slack, Synopsys, Tata, and others. \nIn the enterprise, sales grew by a strong double-digit percentage year over year for the fifth straight quarter as",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -57,7 +57,7 @@
     "chunk_id": "6c6cae46fcc184a53e5aec0d370c471a",
     "text": "EPYC CPU adoption accelerated and sell-through momentum grew. Dell, HPE, Lenovo, and others have expanded \nthe number of 4th Gen EPYC platforms they offer by 50% in the last year. There are now more than 200 different \nEPYC solutions available that are optimized for a broad range of enterprise and edge workloads. \nWe are building strong momentum with large enterprise customers highlighted in the third quarter by wins with \nlarge technology, energy, financial services, and automotive companies in the quarter, including Airbus, Daimler \nTruck, FedEx, HSBC, Siemens, Walgreens, and others.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -66,7 +66,7 @@
     "chunk_id": "e9e1d38cb68f33da9261e85c75381247",
     "text": "Truck, FedEx, HSBC, Siemens, Walgreens, and others. \nWe launched our next generation Turin family earlier this month that delivers absolute performance and TCO \nleadership across both enterprise scale-up and cloud native scale-out workloads. Turin has already set more than \n130 performance records for virtualization, database, AI, business applications, and energy efficiency, with the \nfull EPYC portfolio accounting for more than 500 performance world records. \nMore than 130 5th Gen EPYC enterprise platforms are in development from all the leading server OEMs and \nODMs. These new servers complement existing 4th Gen EPYC platforms, providing a top to bottom stack of",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -75,7 +75,7 @@
     "chunk_id": "47db06515aa6e6b8edbf60985c46108d",
     "text": "platforms optimized for broad range of business applications. \nIn cloud, Google and OCI announced plans to launch 5th Gen EPYC instances early next year, and we expect \nbroad adoption with our largest cloud customers based on the significant performance and efficiency advantages \nof Turin. As an example, Oracle's Turin instances delivered 35% higher performance per core, 33% faster \nmemory speeds, and double the networking bandwidth, delivering a level of compute performance and capability \nthat is only possible with EPYC CPUs. \nLooking ahead, we are very well-positioned for continued growth and share gains based on the strength of our",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -84,7 +84,7 @@
     "chunk_id": "7d7e38b7b72f806994e20801f383bc41",
     "text": "broad EPYC portfolio and the momentum we have built with cloud and enterprise customers. We also took a \nmajor step in the quarter to advance the x86 architecture, forming an ecosystem advisory group with Intel, \nseveral industry luminaries, and the largest cloud PC and enterprise leaders to accelerate innovation by driving \nconsistency and compatibility across both the x86 instruction set and architectural interfaces, and ensuring we \nevolve x86 as a compute platform of choice for developers and customers. \nTurning to our data center AI business, data center GPU revenue ramped as MI300X adoption expanded with",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -93,7 +93,7 @@
     "chunk_id": "0f43d5ebf4c30e9e781f542840785bcc",
     "text": "cloud, OEM, and AI customers. Microsoft and Meta expanded their use of MI300X accelerators to power their \nmodel. We are also working closely with Meta to expand their Instinct deployments to other workloads where \nMI300X offers TCO advantages, including training. \nMI300X public cloud instance availability expanded in the quarter, with Microsoft, Oracle Cloud, and multiple AI-\nspecialized cloud providers now offering Instinct instances with leadership performance and TCO for many of the \nmost widely used models. Instinct cloud instance adoption is strong, with multiple startups and industry leaders",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -102,7 +102,7 @@
     "chunk_id": "d63dcbad4fd3df1da2bce65d39112dce",
     "text": "adopting MI300 instances to power their models and services, including Essential AI, fireworks AI, Luma AI, and \nDatabricks. \nOn the AI software front, since launching MI300 10 months ago, we have expanded functionality at every layer of \nthe ROCm stack and increased the number of models that run out of the box on Instinct accelerators to more \nthan one million, enabling customers to get up and running as fast as possible with maximum out-of-the-box \nperformance. \nWith the release of ROCm 6.2 last quarter, MI300X inferencing performance has improved 2.4 times since launch \nand training performance has increased 80%. We are working closely with the growing number of marquee,",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -111,7 +111,7 @@
     "chunk_id": "17e5cb95f606da536ddf3de721d75cf5",
     "text": "cloud, and enterprise customers to fine-tune their specific inferencing workloads for MI300, with many customers \nseeing 30% higher performance compared to competitive offerings. And we continue to expand our work with the\nopen source community, broadening support for key frameworks like JAX, libraries like vLLM, and hardware-\nagnostic compilers like Triton. \nAt our Advancing AI event earlier this month, we were excited to be joined by the creators and leaders of some of \nthe most important AI software technologies who have added foundational support for ROCm into Triton, the \nLlama stack, SGLang, vLLM, and TensorFlow, and are working to enable broader open source community work",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -120,7 +120,7 @@
     "chunk_id": "00dba96f8ec594753614b346f6261ac3",
     "text": "with Instinct platforms. With this growing support from the broader AI software ecosystem and the significant \nadvances we have made in our software stack, ROCm now provides AI developers with a truly open software \nalternative that has been deployed and validated at scale. \nTo expand our AI systems capabilities, we announced a definitive agreement to acquire ZT Systems, one of the \nleading providers of AI infrastructure to the world's largest hyperscale computing companies. The ZT team \ncomplements our silicon and software capabilities with critical systems expertise needed to deliver rack and",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -129,7 +129,7 @@
     "chunk_id": "a9fbabee34b1951452a2655e96687832",
     "text": "cluster-level solutions. With ZT, we will be able to design and validate our next-gen AI silicon and systems in \nparallel, greatly accelerating time to deploy Instinct accelerators at data center scale. \nCustomer feedback has been very positive as the ZT acquisition enabled hyperscale customers to rapidly deploy \nAMD AI infrastructure at scale and provides OEMs and ODMs with optimized board and module designs for a wide \nrange of differentiated enterprise solutions. \nOn the regulatory front, we made good progress as we recently passed the HSR waiting period required for US \napproval. We remain on track to close the acquisition in the first half of 2025. As a reminder, we plan to divest",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -138,7 +138,7 @@
     "chunk_id": "b42143030659ceaa25039cfea00739ed",
     "text": "competitive training performance. Customer and partner interest for MI325X is high. Production shipments are \nplanned to start this quarter, with widespread system availability from Dell, HPE, Lenovo, Supermicro, and others,\nstarting in the first quarter of 2025. \nLonger term, we have successfully accelerated our product development pace to deliver an annual cadence of \nnew Instinct products. Our next-gen MI350 series silicon is looking very good and is on track to launch in the \nsecond half of 2025, with the largest generational increase in AI performance we have ever delivered. \nDevelopment on our MI400 series based on the CDNA Next architecture is also progressing very well towards a",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -147,7 +147,7 @@
     "chunk_id": "17a1f708692fad35be6e0a66c4405c9b",
     "text": "2026 launch. We have built significant momentum across our data center AI business, with deployments \nincreasing across an expanding set of cloud, enterprise, and AI customers. As a result, we now expect data \ncenter GPU revenue to exceed $5 billion in 2024, up from $4 and 1/2 billion we guided in July and our expectation \nof $2 billion when we started the year. \nTurning to our client segment, revenue was $1.9 billion, an increase of 29% year over year, driven by strong \ndemand for our latest generation Zen 5 notebook and desktop processors. Desktop channel sales grew by a \nsignificant double-digit percentage, led by the launch of our Ryzen 9000 Series processors that deliver leadership",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -156,7 +156,7 @@
     "chunk_id": "ee83507e3ccce4a9345e05fffa3e770f",
     "text": "productivity, gaming, and content creation performance. We are seeing strength across our Ryzen desktop \nportfolio and are on track to launch our next-gen Ryzen 9000X3D processors in November with leadership \ngaming performance. \nIn mobile, Ryzen AI 300 series sales ramped significantly from the prior quarter as Acer, HP, Lenovo, ASUS, and \nothers announced new consumer and commercial notebooks with leadership compute and AI performance. We \nmade good progress expanding our presence in the commercial PC market in the quarter, closing multiple large \ndeals with AstraZeneca, Bayer, Mazda, Shell, Volkswagen, and other enterprise customers.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -165,7 +165,7 @@
     "chunk_id": "18cccebd4f00cf48b43c18cf2bfbd4b3",
     "text": "We also launched our Ryzen AI Pro 300 series family, the first CPUs with enterprise-class security, manageability, \nand AI capabilities for Copilot+ PCs. HP and Lenovo are on track to more than triple the number of Ryzen AI Pro \nplatforms they offer in 2024. And we expect to have more than 100 Ryzen AI Pro commercial platforms in market \nnext year, positioning us well for share gains as businesses refresh the hundreds of millions of Windows 10 PCs \nthat will no longer receive Microsoft technical support starting in 2025. \nNow, turning to our gaming segment. Revenue declined 69% year over year to $462 million. Semi-custom sales",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -174,7 +174,7 @@
     "chunk_id": "f4524148f7f738f3979eaadc9bbfe988",
     "text": "declined as Microsoft and Sony reduced channel inventory. Sony announced the PS5 Pro with significant \nincreases in graphics and ray-tracing performance and AI-driven upscaling, featuring a new AMD semi-custom \nSoC that extends our multigenerational partnership. \nIn gaming graphics, revenue declined year over year as we prepare for a transition to our next-gen Radeon GPUs \nbased on our RDNA 4 architecture. In addition to a strong increase in gaming performance, RDNA 4 delivers \nsoftness in the industrial market. \nMomentum continues building for our differentiated Versal family of adaptive SoCs, led by strong demand for our",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -183,7 +183,7 @@
     "chunk_id": "42325b62d6823c07a8203bda88c9e182",
     "text": "Versal Premium VP1902, which is the world's largest adaptive SoC and FPGA that is powering multiple platforms \nfor all three of the largest EDA vendors. \nOur Versal portfolio is also being adopted broadly across multiple aerospace customers. To build on this \nmomentum, we taped out Telluride last quarter, the first product in our 2nd Gen Versal family that delivers up to \n10x more compute and enables AI application acceleration on a single chip. \nDesign win momentum is very strong across our portfolio, tracking to grow more than 20% year over year in \n2024 and positioning us well to grow our embedded business faster than the overall market in the coming years.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -192,7 +192,7 @@
     "chunk_id": "5da314027e738374524e54fdac6f63e4",
     "text": "In summary, the business accelerated in the third quarter, and we expect strong demand for our Instinct, EPYC, \nand Ryzen processors to result in another quarter of significant year over year growth. \nTaking a step back, this month marks my 10th anniversary as AMD's CEO. In the last 10 years, we have \nsuccessfully completed multiple arcs, first by turning the company around and setting the solid financial and \noperational foundation required for sustained growth, and then by transforming AMD into the high performance \nand adaptive computing leader. \nWhile I'm incredibly proud of what we have accomplished, I'm even more excited about the unprecedented",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -201,7 +201,7 @@
     "chunk_id": "ce1048e83470567b8546576edc6fe171",
     "text": "growth opportunities in front of us. Looking out over the next several years, we see significant growth \nopportunities across our data center, client, and embedded businesses, driven by the nearly insatiable demand \nfor more compute. Each of these opportunities is amplified exponentially by the rapid adoption of AI, which is \nenabling new experiences that will make high performance computing an even more essential part of our daily \nlives. \nIn the data center alone, we expect the AI accelerator TAM will grow at more than 60% annually to $500 billion in \n2028. To put that in context, this is roughly equivalent to annual sales for the entire semiconductor industry in",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -210,7 +210,7 @@
     "chunk_id": "6eae994d4a5e509eab6662dd179c374d",
     "text": "2023. Beyond the data center, we are adding leadership AI capabilities across our product portfolio and \npartnering deeply with the broad ecosystem of partners to deliver differentiated AI solutions at scale. \nThis is an incredibly exciting time for AMD as the breadth of our technology and product portfolios, combined \nwith our deep customer relationships and diversity of markets we address, provide us with a unique opportunity \nas we execute our next arc and make AMD the end-to-end AI leader. Now, I'd like to turn the call over to Jean to \nprovide some additional color on our third quarter results. Jean? \nJEAN HU:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -219,7 +219,7 @@
     "chunk_id": "63886d7358c9961e38dbf242eae202ec",
     "text": "JEAN HU: \nThank you, Lisa. And good afternoon, everyone. I'll start with a review of our financial results and then provide \nour current outlook for the fourth quarter of fiscal 2024. We're very pleased with our strong third quarter financial\nresults. \nRevenue increased 17% sequentially, primarily driven by growth in our data center and client segment. Gross \nmargin was 54%, up 250 basis point year over year, primarily driven by higher data center segment revenue. \nOperating expenses were $1.96 billion, an increase of 15% year over year, as we continue to invest in R&D and \ngo-to-market activities. Operating income was $1.7 billion, representing a 25% operating margin. Taxes, interest",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -228,7 +228,7 @@
     "chunk_id": "94b41a393a281370e662b09f1b9b9812",
     "text": "expense, and other was $211 million. Diluted earnings per share was $0.92, an increase of 31% year over year \nand 33% sequentially. \nNow turning to our reportable segments, starting with the data center. Data center delivered record quarterly \nsegment revenue of $3.5 billion, up 122%, nearly a $2 billion increase year over year, an increase of 25% \nsequentially. Growth in revenue was led primarily by the strong ramp of AMD Instinct GPU shipment and growth \nin AMD EPYC CPU sales. The data center segment accounted for 52% of total revenue in the third quarter. \nData center segment operating income was $1 billion, or 29% of revenue, compared to $306 million, or 19%, a",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -237,7 +237,7 @@
     "chunk_id": "5045038e40d557b4e80e43203a68a719",
     "text": "year ago. Data center segment operating income more than tripled compared to the prior year, driven by higher \nrevenue and operating leverage. \nClient segment revenue was $1.9 billion, up 29% year over year and 26% sequentially, driven primarily by \nstrong demand for our Zen 5 AMD Ryzen processors. Client segment operating income was $276 million, or 15% \nof revenue, compared to our operating income of $140 million a year ago, or 10% of revenue, primarily driven by \nhigher revenue, partially offset by higher operating expenses. \nGaming segment revenue was $462 million, down 69% year over year and 29% sequentially, primarily due to a",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -246,7 +246,7 @@
     "chunk_id": "f290af8d34c78c0315af998fae33e481",
     "text": "decrease in semi-custom revenue. Gaming segment operating income was $12 million, or 2% of revenue, \ncompared to $208 million, or 14%, a year ago. \nEmbedded segment revenue was $927 million, down 25% year over year, as customers continue to normalize \ntheir inventory levels. Revenue increased 8% sequentially as demand improved in several end markets. \nEmbedded segment operating income was $372 million, or 40% of revenue, compared to $612 million, or 49%, a \nyear ago. \nTurning to the balance sheet and the cash flow. During the quarter, we generated $628 million in cash from \noperations. And the free cash flow was $496 million. Excluding certain nonrecurring payments related to",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -255,7 +255,7 @@
     "chunk_id": "a26781e15043f12e8807bed59de452a7",
     "text": "acquisitions from operating cash flows, our free cash flow was $619 million. \nInventory increases sequentially by $383 million to $5.4 billion, primarily to support the continued ramp of data \ncenter segment products. At the end of the quarter, cash, cash equivalents, and short-term investment was $4.5 \nbillion. In the third quarter, we returned $250 million of cash to shareholders, repurchasing 1.8 million shares. \nAnd we have 4.9 billion of authorization remaining. \nNow, turning to our fourth quarter of 2024 outlook. We expect revenue to be approximately $7.5 billion, plus or \n54%, non-GAAP operating expenses to be approximately $2.05 billion, non-GAAP other net income to be $17",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -264,7 +264,7 @@
     "chunk_id": "0c298be9bf560cdebed1f1d98ef4114c",
     "text": "million, non-GAAP effective tax rate to be 13%. And the diluted share count is expected to be approximately 1.64 \nbillion shares. \nIn closing, we're pleased with our strong execution in the third quarter. We delivered record revenue along with \nstrong year-over-year expansion in gross margin and earnings per share growth. Looking ahead, we are very \nwell-positioned to deliver another record quarter of revenue in the fourth quarter, driven by continued \nmomentum in our data center and client segments. \nImportantly, we are making the strategic investment and position AMD as the end-to-end AI infrastructure leader",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -273,7 +273,7 @@
     "chunk_id": "e6f3560de27b9fdbd03395342d4b226a",
     "text": "and to drive long-term profitable growth. With that, I'll turn it back to Mitch for the Q&A session. \nMITCH HAWS: \nThank you, Jean. John, let's pull the audience for questions. \nJOHN: \nThank you, Mitch. We will now be conducting a question and answer session. If you would like to ask a question, \nplease press star 1 on your telephone keypad. A confirmation tone will indicate that your line is in the question \nqueue. You may press star 2 to remove yourself from the queue. For participants using speaker equipment, it \nmay be necessary to pick up your handset before pressing the star keys. One moment, please, while we poll for \nquestions.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -282,7 +282,7 @@
     "chunk_id": "7fde65ea1477806832fb80811cd0bbed",
     "text": "questions. \nAnd the first question comes from the line of Toshiya Hari with Goldman Sachs. Please proceed with your \nquestion. \nTOSHIYA HARI: Hi. Good afternoon. Thank you so much for taking the question. My first one is on the data center GPU business. \nLisa, you took up your '24 outlook by $500 million. Curious what drove the change there. \nAnd more importantly, as you look forward into calendar '25, I doubt you're going to give us quantitative \nguidance on this call, but, conceptually, how are you thinking about growth in your Instinct business between \nyour large cloud customers and your enterprise customers? And if you can speak to the possibility of adding new",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -291,7 +291,7 @@
     "chunk_id": "d62b7309a17ba660b8d1397280aff9a6",
     "text": "customers within cloud, again, specific to Instinct, that would be really helpful. \nLISA SU: \nSure, Toshiya. Thank you for the question. So first of all, we had a very strong quarter for the data center overall \nin Q3, and especially for the Instinct product portfolio. We actually completed some important customer \nmilestones, and we were able to ramp a bit above our initial expectations. \nSo data center GPU was very strong in the third quarter, and we raised overall guidance for the year from \nexceeding $4.5 billion to exceeding $5 billion based on the completion of some of those customer milestones. So \nwe feel good about the trajectory as we go through the end of this year.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -300,7 +300,7 @@
     "chunk_id": "482aec18955f1ee9c53020959b836f9b",
     "text": "And then to your overall question about 2025, at a high level, look, we feel very good about the market. From \neverything that we see, talking to customers, there's still significant investment in trying to build out the \nthat they're running on AMD Instinct. And we're also very engaged with a number of large cloud and enterprise \ncustomers that are actively working with us on optimizing their workloads. And we would expect those would be \ngood opportunities for us over the next couple of quarters as well. \nTOSHIYA HARI: Great. And then a quick follow up, maybe one for Jean, on gross margin. You're guiding Q4 gross margin",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -309,7 +309,7 @@
     "chunk_id": "77db809564675b25b9f1c08ac736db91",
     "text": "essentially flat sequentially. If you can walk through the puts and takes there, that would be really helpful. \nAnd then again, as you look forward into '25, you're kind of speaking to continued data center growth. One would \nthink the embedded business hopefully begins to recover. And then within some of your businesses, like server \nCPU, I would expect enterprise to grow perhaps faster off a low base. So I do think you have a lot going for you \nfrom a gross margin standpoint. But are those points valid? And what should we be thinking about in terms of \npotential headwinds as well? Thank you. \nJEAN HU:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -318,7 +318,7 @@
     "chunk_id": "20bb6c7cba6e540a46b394237b264bd3",
     "text": "potential headwinds as well? Thank you. \nJEAN HU: \nYeah. Yeah. Thank you for that question. First, we are very pleased with our Q3 gross margin performance. We \ndelivered 53.6%. And we are guiding approximately 54% in Q4. In general, when you look at 2024, our gross \nmargin improvement has been primarily driven by the mix, especially data center business continue to be the \nstrong growth driver of our business. It's accounting for more than 50% of our revenue mix. That helps us to \nimprove gross margin. \nGoing into 2025, we're not going to guide specifically. But as you mentioned, there are puts and takes that will",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -327,7 +327,7 @@
     "chunk_id": "efb39e57a860e416798e1f7c89659270",
     "text": "help us going forward. I will say first is, going forward, the largest growth driver is our data center business, both \nthe CPU side, the GPU side. And you are absolutely right, we see our enterprise server business continue to \nexpand. That will be a tailwind on gross margin side. \nAnd secondly, embedded business is recovering, and gradually, but that will also help us with our gross margin. \nAt the same time, we are also seeing our client business expansion nicely. Client business today is more focused \non consumer side, which tend to be below corporate average. That's something headwind will deal with.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -336,7 +336,7 @@
     "chunk_id": "185448369c77db36e2d37f60958f8465",
     "text": "And lastly, I will say, our team has done a great job to continue to improve operational efficiency. When we scale \nthe company next year, you can see we're going to benefit from economies of scale to continue to drive \noperational efficiency to improve gross margin. \nJOHN: \nAnd the next question comes from the line of Aaron Rakers with Wells Fargo. Please proceed with your question. \nAARON \nRAKERS: \nYeah. Thanks for taking the question. I'll do two as well. I guess maybe building on the latter point that you just \nmade, I'm curious of how you would characterize your supply chain. Having evolved-- now talking about $5-plus",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -345,7 +345,7 @@
     "chunk_id": "0c099d8f4b1039cf2277f2b068523e8a",
     "text": "billion, how do we think about what you've been doing on the supply side given the lead times, the production \ncycles of these MI300 and 325 GPUs as we look out into 2025? And I have another quick one. \nLISA SU: \nYeah. Sure, Aaron. So, look, I've been very happy with how our supply chain has ramped over the last number of \nquarters. Clearly, it's a tight supply environment. But we've done a great job getting-- ensuring that we have \nchain capability. \nAARON \nRAKERS: \nYeah. And then as a quick follow-up, when I look at the sequential guidance and revenue at the midpoint-- let's \ncall it about $680 million up sequentially-- could you help us frame how much of that is driven by client versus",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -354,7 +354,7 @@
     "chunk_id": "e7794bb7f6d9c561862a5083a1c6f477",
     "text": "the data center piece of the business? Thank you. \nLISA SU: \nSure, Aaron. So certainly, if you look at the sequential guide, the largest contributor is the data center business. \nAnd that is now such a large piece of our business. It's over 50% of our business in Q3, and it will continue to \ngrow in Q4. \nClient segment, we also expect to perform well. I think we've done very well with our launches this year, both on \nthe desktop Zen 5 launches as well as the notebook AI PC launches. So we expect growth there. And then the \nother segments, on a sequential basis, gaming and embedded would be more modest. \nJOHN:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -363,7 +363,7 @@
     "chunk_id": "151a720f770a1466b586df01aecabc33",
     "text": "JOHN: \nAnd the next question comes from the line of Ross Seymore with Deutsche Bank. Please proceed with your \nquestion. \nROSS \nSEYMORE: \nHey, guys. Thanks for letting me ask a question. And Lisa, congrats on the 10-year anniversary. Jean, when you \ngave the segment guidance, kind of playing off the last question, you didn't mention embedded as being up. And \nthen, Lisa, you just talked about it being up less. Just curious. I know it's a kind of a muted recovery, but what's \nhappening in embedded business implied in your fourth quarter guidance? And how are you thinking about 2025 \njust directionally? \nLISA SU:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -372,7 +372,7 @@
     "chunk_id": "562b9970ec308ea1bf19e3e1f918a49c",
     "text": "just directionally? \nLISA SU: \nSure, Ross. Let me start, and then maybe Jean can add. Look, we've seen some improvement in the embedded \nbusiness. You saw some improvement in the sequential in Q3. We expect some modest improvement in Q4. \nWhat we're seeing is really a mix across the different subsegments in embedded. There are some segments that \nare stronger. So our test and emulation business actually did very well. We're ramping our new Versal platform \nthere. Aerospace and defense did well, also continues to be relatively strong. Communications has not seen \nmuch recovery. So I would say that that's still fairly muted. And industrial is also a little bit on the softer side.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -381,7 +381,7 @@
     "chunk_id": "5ef00204eff090ac3e31075db1568cfd",
     "text": "So between all of those, we expect a little bit of growth into Q4 and, let's call it, modest growth in 2025. But \nwe're planning for it to be a little bit mixed amongst the segments. Maybe, Jean, if you want to add. \nJEAN HU: \nNo, I think you covered. \nLISA SU: \nOK. \nROSS \nSEYMORE: \nGreat. And I guess for my follow up, just on the EPYC business, you've done incredibly well there, Lisa. Have you \nseen any loosening up of the crowding out effect with the-- well, in your case, the Instinct side taking demand \naway from the EPYC side? Doesn't seem to have slowed you down much this year. You're still up, by my math,",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -390,7 +390,7 @@
     "chunk_id": "e2ebd5f5b74ccb617707e2e4d10e446e",
     "text": "the progress there. I think the market environment has certainly gotten better over the last couple of quarters. \nWe've seen some of the large cloud customers now adding to their data center capacity and refreshes. We've \nseen enterprises also start with some of their modernization activities. \nWithin that sort of market environment, our product portfolio has done extremely well. So here in the third \nquarter, the Zen 4 portfolio between Genoa and Bergamo was very strong. We saw the beginning ramp of our \nZen 5 Turin capabilities. And then we also actually saw pretty good demand even on Zen 3 or our Milan family,",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -399,7 +399,7 @@
     "chunk_id": "ad34b2fcef2e22a078b287b849b9d9d6",
     "text": "just given the performance price ratios there. So overall, we have a very strong top-to-bottom stack, and we do \nsee some strength in the overall server market, which adds to some of the AI opportunity that we have. \nJOHN: \nAnd the next question comes from the line of Ben Reitzes with Melius Research. Please proceed with your \nquestion. \nBEN REITZES: \nYeah. If I could stick to the pattern of two, I want to follow up a little bit on servers, and thanks for the question. \nGoing into next year, it seems like you're poised for more share gains. And I was just wondering. There is a \nperception that GPUs are cannibalizing the servers, but what are you seeing specifically in Turin?",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -408,7 +408,7 @@
     "chunk_id": "144d23b24ec18f3a4d56dbefae96793f",
     "text": "With this momentum that you're talking about, is it the right CPU for a GPU? Are hyperscalers in particular liking \nthe fact you can consolidate and create more room for AI gear? What is the particular catalyst that you're seeing \nout there with this upgrade? Thanks. \nLISA SU: \nSure, Ben. So I think when I look at Turin and the environment going into 2025, yeah, Turin is actually very well-\noptimized for the broad set of server workloads or traditional CPU workloads, including both scale-up and scale-\nout workloads. So I think that is very positive. We believe that there will be strong AI content on CPUs, and that",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -417,7 +417,7 @@
     "chunk_id": "b7b569f75aae721c2bbbcee7f85f760a",
     "text": "helps Turin as well. It's also an important piece of the head node of any GPU configuration. \nSo overall, I think those are all good catalysts for us. And primarily, we're at this point where we're expanding the \nworkloads in general as we are working with our largest cloud customers. And we're making strong progress in \nenterprise, which has been very important for us. \nThe enterprise sale takes longer. There's a significant amount of POC work and just making sure that CIOs are \nfamiliar with our offerings. But I think between our Zen 4, Zen 5 offerings now, we really have a very broad \nportfolio that satisfies the vast majority of the traditional CPU workloads. \nBEN REITZES:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -426,7 +426,7 @@
     "chunk_id": "35f92973c4b3e948a3549258713b03c3",
     "text": "BEN REITZES: \nOK. Thanks. And I just want to follow up on the PC market. You guys keep outperforming, but there's just general \nconcerns of consumer weakness. And I was just wondering what you're seeing in the 4Q. And is there a risk of \nmore than seasonal decline in the 1Q, or do you feel like things will keep going unabated in the PC market for \nyou guys particularly? \nLISA SU: \nWell, we see a few things in the PC market. So our business tends to be more consumer-weighted. So the second \nhalf of the year is usually stronger than the first half of the year. And this year, that's added to the fact that we",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -435,7 +435,7 @@
     "chunk_id": "e78925a6d28efe7d6dad2e15d0b0598a",
     "text": "main point is, this is the strongest PC portfolio we've had in our history, I think, across desktop and notebook. \nAnd as we go into 2025, I think there's generally some optimism about the PC market, let's call it maybe growing \nmid-single digits. And within that, we have the AI PC catalyst as well as some of the Windows 10 end of support \ncoming in 2025 as catalysts. So I think we feel good about the PC market in 2025, but we would expect some \nlevel of seasonality going into the first half of the year. \nJOHN: \nAnd the next question comes from the line of Joshua Buchalter with TD Cowen and Company. Please proceed \nwith your question. \nJOSHUA \nBUCHALTER:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -444,7 +444,7 @@
     "chunk_id": "9018ce4e9c0967e0872c0431d80fd01e",
     "text": "with your question. \nJOSHUA \nBUCHALTER: \nHey, guys. Thanks for taking my question. I'll keep it to one since I'm new here. On the data center GPU side, I \nrealize everyone wants new customer announcements in 2025 guidance, but we're not going to get that, \ncertainly not today. \nThat said, maybe you could speak to how much of a runway you think exists at existing customers and how much\nof a catalyst MI325X on CDNA3 and then MI355 on the new architecture can be to growing revenue and workload \nbreadth internally and externally at these existing customers as we think about growth into next year at the data \ncenter GPU side. Thank you. \nLISA SU:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -453,7 +453,7 @@
     "chunk_id": "50f2485f8ee73dbd844127c27c3fd80d",
     "text": "center GPU side. Thank you. \nLISA SU: \nYeah. Sure, Joshua. Thanks for the question. So look, maybe let me start again with this notion of we're very \npleased with the progress that we've made in the data center GPU business. I mean, if you think about when we \nstarted the year, we were just launching MI300. We had talked about perhaps $2 billion of revenue in 2024. \nAnd as we've gone through the last few quarters, what we've done is we've successfully completed a number of \ncustomer milestones. And those customer milestones include things like ensuring that we are at scale in data",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -462,7 +462,7 @@
     "chunk_id": "c6a94ec3ca035506db29343a204f80c9",
     "text": "centers, meeting all of the reliability requirements, and so on, and so forth, as well as optimizing on specific \nworkloads and ensuring that we have very, very performant out-of-the-box performance. \nSo I think we have gained a lot of confidence over the last couple of quarters just seeing how the customers have \nramped. I know everyone would like it to go faster. We think it's actually going really well. And being able to talk \nabout exceeding $5 billion of revenue in 2024, I think we feel really good about that. \nGoing into 2025, we feel great about the market. The market continues to be the place where there's significant",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -471,7 +471,7 @@
     "chunk_id": "ac6555155a8440b57edca9beb2579a27",
     "text": "CapEx investments. We feel great about our product portfolio. It is getting stronger with everything that we've \nlearned off of the MI300 ramp. \nAnd then in particular on the software side, we have greatly increased our customer support, customer \nengagements, out-of-box performance, open-source ecosystem, all of those components that are necessary to \nensure that customers can run at scale, at performance, at a great TCO. \nSo all of those together, I think we have a good opportunity to grow at our current customers with the number of \nopportunities in front of us. \nJOSHUA \nBUCHALTER: \nThank you. And congrats on an amazing decade at AMD. \nLISA SU: \nThank you. \nJOHN:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -480,7 +480,7 @@
     "chunk_id": "69e9cee9a045a54b4af767e4eb0ca272",
     "text": "LISA SU: \nThank you. \nJOHN: \nAnd the next question comes from the line of Timothy Arcuri with UBS. Please proceed with your question. \nTIMOTHY \nARCURI: \nHi. Thanks. I had a quick one and then a more extensive question. So the first one is I wanted to ask about the \nSeptember actuals for data center GPU. It seems like it was in the $1.5 billion range, and that would put \nDecember in the $2 billion range. Is that about right? \nLISA SU: \nSo that's a pretty granular question, Timothy. But maybe let me help you with this. We actually did better in the \ndata center GPU business relative to our initial expectations. So you would imagine that the business was",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -489,7 +489,7 @@
     "chunk_id": "e4924e79eed3acfcd4572c94bde08389",
     "text": "actually greater than $1.5 billion. I mean, we're actually seeing now our GPU business really approaching the \nscale of our CPU business. \nTIMOTHY \nARCURI: \nGreat. And then just more broadly on the shape of next year, I mean, you see the market with these big \ncustomers. How do you see the shape of revenue off of that C Q4 number? Can you continue to grow off that \nlevel? Or do you see some risk maybe of a pause next year? \nAnd I ask because MI355 is dropping into the existing infrastructure. And I think you did say you'll have a liquid-\ncooled option. But you do hear about some customers wanting rack scale. So I wonder if you worry a bit about",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -498,7 +498,7 @@
     "chunk_id": "386cb40e098b77064ec87829217767cb",
     "text": "there could be a pause before you get to rack scale in 2026. Thanks. \nLISA SU: \nYeah. I guess I would put it like this. I mean, look, this business is-- there's a lot of activity going on, and we're \nspending time with customers as they're building out their data centers. Some preferred air-cooled \nenvironments, liquid-cooled environments. Some want rack scale. Some are perfectly happy to go into their \nexisting data center infrastructure. So there are lots of different variants. \nWhat I would say about 2025 is we feel very good about the growth opportunities. I would say that it might be",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -507,7 +507,7 @@
     "chunk_id": "36faf844b0effd456361431293d7cf76",
     "text": "lumpy. In general, these are large customer acquisitions, and it's not always predictable exactly which quarters \nyou would expect the significant buildout. But I think, overall, we feel good about the trajectory into 2025. I don't \nknow if that's helpful. \nJOHN: \nAnd the next question comes from the line of Joe Moore with Morgan Stanley. Please proceed with your question. \nJOE MOORE: \nGreat. Thank you. I wonder if you could talk about the $5 billion of AI revenue, how that breaks down between \ntraining and inference, if you're able to assess that, and just-- I know you started off with most of the traction in",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -516,7 +516,7 @@
     "chunk_id": "1a6cdca320925263f6ecbaa8d6335796",
     "text": "inference. Just given the strength of the product portfolio, MI300 is very, very well optimized for inference, given \nthe memory capacity and memory bandwidth capabilities. But we have had some training adoption, and we \nexpect that that will continue to grow as we go through the next few quarters. And so as we, let's call it, fast-\nforward a year, I would say we would have a fairly balanced portfolio between training and inference. \nJOE MOORE: \nGreat. Thank you. \nJOHN: \nAnd the next question comes from the line of Vivek Arya with Bank of America Securities. Please proceed with \nyour question. \nVIVEK ARYA:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -525,7 +525,7 @@
     "chunk_id": "02e9658a17a0eb0d0cde57057cd054cc",
     "text": "your question. \nVIVEK ARYA: \nThanks for taking my questions. I had two. So, Lisa, for the first one, how do you address this investor argument \nthat MI is off to a great start, but spec-wise remains one year behind the industry leader? You're shipping \nsomething comparable to Hopper while they are starting to ship Blackwell next year. When you are at MI350, \nthey will be on Blackwell Ultra or Rubin. So how do you see AMD closing that gap? And can you really gain share \nuntil that gap is closed? \nLISA SU: \nYeah. Yeah. In fact, I actually don't see that. So maybe let me state it in another way. I think MI300, when we",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -534,7 +534,7 @@
     "chunk_id": "4462a83da97b71a715dcd7cc59e20bbd",
     "text": "launched it, was behind H100. H100 was in the market for a much longer time. And we have, with our \naccelerated roadmap, actually closed a good part of that gap. I think MI325 is a great product. It's going to \ncompete very well with H200, and the MI350 series will compete very well with Blackwell. \nIn the overarching view of the world, frankly, the market continues to be constrained, particularly in the newer \nproduct generations. It takes a long time to go from, let's call it, shipping your first samples to actually ramping \nin volume production workloads. And I think one of the advantages that we have with our portfolio is that from a",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -543,7 +543,7 @@
     "chunk_id": "24944555a9ab45aaec8b26fca84cb815",
     "text": "data center retrofit standpoint, it's actually a much easier ramp just given the infrastructure is the same. \nSo look, there are lots of opportunities across the set of AI workloads. We think this roadmap is actually \nstrengthening over time, and that's the feedback that we're getting from our customers. \nVIVEK ARYA: \nAnd for my follow up, Lisa, back to the question on the PC market. So it was up-- or the client was up 26% \nsequentially. I think you're guiding to some growth in Q4 as well. How do you see the state of the channel? And I \nask that just because sell-through in Q3 was not that great. And I think Intel had guided down their Q3 to be flat \nor down.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -552,7 +552,7 @@
     "chunk_id": "3691a871a4380a47b3b44f44ddee6f16",
     "text": "or down. \nSo just how much of the growth that you are seeing is because of ASPs? How much of this is units? And as you \nlook out to 2025, do you think the ASP strength that we have seen this year, can that mix benefit continue for \nyou in '25 also? \nLISA SU: \nYeah. In fact, the way I would say it is, our client business has a few factors that may be slightly different from \nthe overall market. So let me start with our desktop channel. I think our share is very high in the desktop \nactivation rates of our newest Ryzen AI 300 processors, and the activation rates are good. It's still very early in \nthe AI PC cycle, but we are seeing some good momentum there.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -561,7 +561,7 @@
     "chunk_id": "bded9c3ae14dcad1815875ab936bcc0e",
     "text": "the AI PC cycle, but we are seeing some good momentum there. \nSo I think we'll see both units up, and the ASPs will depend a little bit on the mix between consumer and \nenterprise, and desktop and notebooks. But my earlier comments about the client segment, I think it is an \nopportunity for us. We are underrepresented in the client segment. And we see an opportunity to grow both in \nconsumer as well as enterprise. \nJOHN: \nAnd the next question comes from the line of Harlan Sur with JP Morgan. Please proceed with your question. \nHARLAN SUR: \nGood afternoon. Thanks for taking my question. Lisa, on your core EPYC business, you did start to see recovery in",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -570,7 +570,7 @@
     "chunk_id": "363f7bba4521796dbc298b65aa0f26ff",
     "text": "enterprise last quarter. It was broad-based across many verticals. \nYou've also got a growing share dynamics as well, right? It sounds like that trend continued in the September \nquarter. Do you anticipate continued follow-through in terms of quarter on quarter growth this quarter for \nenterprise? And then maybe what sort of enterprise and general cloud demand trends are you seeing out of \nChina? \nLISA SU: \nSure. So, Harlan, thanks for the question. We did see positive growth momentum here in the third quarter in \nenterprise. We are getting broader adoption. And we're seeing that growth both in on-prem deployments, as well",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -579,7 +579,7 @@
     "chunk_id": "69128a581c621e55b1cc28f4215bc9fd",
     "text": "as cloud third-party deployments. And so we're very happy with the adoption of our cloud instances. \nWhen people are doing migrations, they're migrating from on-prem to cloud. They're migrating to AMD. Or \nthey're migrating from older cloud instances to newer cloud instances. We're seeing migrations to AMD. So I think\nthat helps us in both the enterprise segment as well as the cloud segment. \nAs we go forward into the fourth quarter, I think we are expecting another quarter of growth on a sequential basis\nfor our server business and strength in both enterprise and cloud. And I think as we think about our opportunities",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -588,7 +588,7 @@
     "chunk_id": "ea503a3fe65a8e830b8fafa3275e10e0",
     "text": "going forward, the enterprise business is a place where we have been underrepresented. \nI think our portfolio has strengthened. So the platforms that are being offered by the OEMs have broadened with \nnot just Zen 4, but also with the Zen 5 portfolio launch. And so I think those are opportunities for us in 2025. \nJEAN HU: \nYeah. On your China question, we are underrepresented in China market in the server CPU side. So as Lisa said, \nthat's another opportunity for us to continue to gain share. \nHARLAN SUR: \nPerfect Thank you. \nJOHN: \nAnd the next question comes from the line of Stacy Rasgon with Bernstein Research. Please proceed with your \nquestion. \nSTACY \nRASGON:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -597,7 +597,7 @@
     "chunk_id": "89f86fd6d478af48db347b181b58ff39",
     "text": "question. \nSTACY \nRASGON: \nHi, guys. Thanks for taking my question. For the first one, I wanted to go back to what you said about the size of \nto get growth. So I guess the question number one, is that the size of the business that you're talking about in \nQ3? And is that the kind of level of growth you're thinking into Q4? How should we be thinking about that? \nLISA SU: \nRight, Stacy. So first, a couple of things. You have to remember that in our data center segment, we have some \nother revenue that is not CPUs and GPUs. We have some FPGAs and other things. \nBut the question earlier was, was the revenue $1.5? And I said that it was greater than $1.5. So take that as a",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -606,7 +606,7 @@
     "chunk_id": "a6369364711a51a2dd885bf93ea2d687",
     "text": "fundamental. And then as we talked about, we didn't guide in exact number for the data center GPU. We said \nexceed $5 billion. And so you should assume that it exceeds $5 billion. \nSTACY \nRASGON: \nOK. Thanks. For my follow up, you talked a little bit about lumpiness next year. Is there any kind of seasonality or \nsomething that I ought to be thinking about specifically in the Q1 for data center GPU? I know you have the \nMI300, I guess, ramping into production at that point. But should I be thinking about a seasonal-- seasonality into \nQ1, given the general statement on lumpiness? \nLISA SU:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -615,7 +615,7 @@
     "chunk_id": "0c85751e4caf89f77c42477aa7d4ab4a",
     "text": "Q1, given the general statement on lumpiness? \nLISA SU: \nI wasn't implying something about seasonality of the data center GPU business. I was implying more that if you \nthink about the evolution of the business, it depends quite a bit on a specific number of customers. So these are \nlarge customers that drive deployments. \nFor example, the third quarter was a bit higher than we expected. That was driven by some additional customer \ndemand, and we may see that type of lumpiness. So that was what I was implying. And we'll have to see how \nthings evolve as we get into 2025. \nJOHN: \nWe have time for two more questions. The next question comes from the line of Harsh Kumar with Piper Sandler.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -624,7 +624,7 @@
     "chunk_id": "c593a4fad8460cb53f076a367f586d15",
     "text": "Please proceed with your question. \nHARSH KUMAR:Yeah. Hey, Lisa. First of all, congratulations on your 10-year anniversary. I just looked at the 10-year chart. The \nstock is around $3. So a heck of a job here. And also, congratulations on $5 billion in instant revenues. \nSo I wanted to ask the first question. This is one we get from investors all the time. In the coming year, let's say \n2025, your key competitor will take most of the TAM off the AI market, the GPU market. Rough count, they'll take \nin something like $50-$60 billion. You'll get another $5 to $10 billion, call it.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -633,7 +633,7 @@
     "chunk_id": "65f2908d61e42070803cca8c8a1ed705",
     "text": "So the question is, what do you think is the major hindrance? You've got chip-level compatibility. So does it boil \ndown to the fact that you're just earlier in the game, you've been doing this just 12 months in a serious manner, \nor is there still a rack-level disparity? If you could just help us think about what the hindrances are to you \nbecoming a major player here. \nLISA SU: \nYeah. Sure, Harsh. Thanks for the question and for the comment. Maybe let me say, I view them as opportunities. \nIf you remember, Harsh, and I think you do, our EPYC ramp from Zen 1, Zen 2, Zen 3, Zen 4, we had extremely \nrate. It's the fastest product ramp that I've seen overall.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -642,7 +642,7 @@
     "chunk_id": "202b37bd9c2fbace1ac33429196530c3",
     "text": "rate. It's the fastest product ramp that I've seen overall. \nAnd my view is, this is a multigenerational journey. We've always said that. We feel very good about the \nprogress. I think next year is going to be about expanding both customer set as well as workload. And as we get \ninto the MI400 series, we think it's an exceptional product. So all in all, the ramp is going well. And we will \ncontinue to earn the trust and the partnership of these large customers. \nWhat I will say is customers are very, very open to AMD. And we see that everywhere we go. Everyone is giving \nus a very fair shot at earning their business, and that's what we intend to do.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -651,7 +651,7 @@
     "chunk_id": "a126107ea062c3ad5071a2aca06e60eb",
     "text": "HARSH KUMAR:Very helpful. Lisa, for my follow up-- and maybe Jean can help out here-- it's kind of understood that your gross \nmargin for MI300, 325 will be below corporate margins. Could you help us maybe think of some framework on \nhow those gross margins for Instinct might get to parity with your corporate business? I know you probably won't \ngive us a revenue level or a time frame, but maybe you could help us frame in some manner that we could try \nand understand it. \nJEAN HU: \nYeah. We are very pleased with our overall revenue ramp of our data center GPU business. And our team not",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -660,7 +660,7 @@
     "chunk_id": "8beac211a7a8165a9aad191a2d42e188",
     "text": "only support the revenue ramp and continue to improve the gross margin. Overall, it's below corporate average. \nAnd when you think about it, going into next year, of course, our top priority right now is really focusing on to \naddress customer demand and to provide the TCO benefit, really increase significantly our market presence, and \ndrive substantial revenue growth. \nOn the gross margin side, once we continue to ramp the revenue, we do think we'll have the opportunity to \ncontinue to improve gross margin. When you think about it, this is a data center business. Over in the longer \nterm, it tends to be better than corporate average. We'll take some time to get there.",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -669,7 +669,7 @@
     "chunk_id": "6c34a03f6e34c344ad67b183933dd7b9",
     "text": "But when you look at our data center segment performance, we more than doubled the revenue year over year, \nbut we tripled the operating income year over year. So I think that's how we are thinking about it, is really to \ndrive the long-term growth and get market presence, at the same time drive a gross margin up. \nJOHN: \nAnd our final question comes from the line of Thomas O'Malley with Barclays. Please proceed with your question. \nTHOMAS \nO'MALLEY: \nHey, guys. Thanks for letting me on. I really appreciate it. Lisa, I just wanted to ask on mix in the MI300 platform \ninto Q4. Obviously, you're launching the 325 series. Should we expect a significant contribution of the new",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -678,7 +678,7 @@
     "chunk_id": "6df91a7c2326612d8688df7159595a71",
     "text": "product in Q4? Or is this a situation in which it's launching late in the year, and most of the impact is into Q1? I \nguess that's the first one. \nAnd then the second one is just, if you look into next year, could you talk about where the end markets are in \nembedded for Xilinx? You gave some color on comm and a little on industrial there. But just where we're at in \nterms of starting Q4 and into Q1, are there any that are outperforming, underperforming? Any color there would \nbe helpful. And thanks for sticking me in. \nLISA SU: \nYeah. Absolutely, Tom. So back to your first question. In terms of the mix in Q4, we would expect the majority of",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -687,7 +687,7 @@
     "chunk_id": "af65f37e3524ace24575b944da9c0c7b",
     "text": "that it'll be a gradual recovery. So we see that. \nAnd the strength that we see is in some of the test and emulation segment. We see some strength, certainly, in \naerospace and defense. There was a little bit of recovery in automotive that we started to see. We're still waiting \nfor comms and industrial. So we'll get more visibility on that as we go through the end of this year. But that's \nwhat we see currently. \nTHOMAS \nO'MALLEY: \nThanks, Lisa. \nJOHN: \nAnd at this time, we have reached the end of the question and answer session. And I would like to turn the floor \nback over to Mitch Haws for any closing comments. \nMITCH HAWS:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
@@ -696,7 +696,7 @@
     "chunk_id": "1717cae4013d75778ac93b0258467fcc",
     "text": "back over to Mitch Haws for any closing comments. \nMITCH HAWS: \nThat concludes today's call. Thanks to all of you for joining us today. \nJOHN:",
     "ticker": "AMD.US",
-    "pub_date": "1783911629",
+    "pub_date": "20260713",
     "period": "",
     "data_source": "broker_report",
     "source_file": "data/inputs/reports/AMD/AMD 3Q24call.pdf"
