@@ -3,11 +3,13 @@ Skill 5: Five focused analysis shortcuts.
 Each function returns a Markdown string grounded in local data.
 """
 
+import re
 from typing import Any
 from src.utils.prompts import load
 
 _GROUNDING_RULE = load("skill5_grounding_rule.md")
 RESEARCH_DATA_SOURCES = {"broker_report", "acecamp_expert_column"}
+_TEAM_RE = re.compile(r"^\d{8}-([^-]+)-")
 FORECAST_KEYWORDS = (
     "盈利预测",
     "业绩预测",
@@ -37,6 +39,40 @@ def _dedupe_chunks(chunks: list[dict]) -> list[dict]:
         if key in seen:
             continue
         seen.add(key)
+        result.append(chunk)
+    return result
+
+
+def _team_of(chunk: dict) -> str | None:
+    """从source_file文件名提取研报团队名（如"华泰证券"），提取不出来（文件名
+    不是"YYYYMMDD-团队-..."格式，如年报/财报电话会/SEC文件）时返回None——
+    团队不明的chunk不参与同团队去重，宁可留着不去重，也不误删。"""
+    source_file = chunk.get("source_file", "")
+    file_name = source_file.rsplit("/", 1)[-1]
+    m = _TEAM_RE.match(file_name)
+    return m.group(1) if m else None
+
+
+def _latest_version_per_team(chunks: list[dict]) -> list[dict]:
+    """同一团队（如华泰）对同一标的存在多份历史版本研报时，只保留 pub_date
+    最新的一份用于当前一致预期基准——原则9"同一研报标题/同一分析师团队对同一
+    科目存在多个历史版本时，只有pub_date最新的一份进入一致预期基准表"的机械
+    落地。旧版本不删除、不影响历史准确性回测，只是不进入本次consensus baseline
+    检索结果，避免1月/4月/6月三份华泰报告的预测数字被一起拿去做均值。"""
+    best_pub_date: dict[str, str] = {}
+    for chunk in chunks:
+        team = _team_of(chunk)
+        if not team:
+            continue
+        pub_date = chunk.get("pub_date", "") or ""
+        if pub_date > best_pub_date.get(team, ""):
+            best_pub_date[team] = pub_date
+
+    result = []
+    for chunk in chunks:
+        team = _team_of(chunk)
+        if team and chunk.get("pub_date", "") != best_pub_date.get(team):
+            continue
         result.append(chunk)
     return result
 
@@ -94,7 +130,7 @@ def _forecast_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) 
 
     scored = [
         (chunk, _forecast_score(chunk, company_name))
-        for chunk in _dedupe_chunks(_research_chunks(chunks))
+        for chunk in _latest_version_per_team(_dedupe_chunks(_research_chunks(chunks)))
     ]
     scored = [item for item in scored if item[1] > 0]
     scored.sort(key=lambda item: item[1], reverse=True)

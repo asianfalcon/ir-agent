@@ -6,6 +6,7 @@ Called by watchdog_monitor for manual inputs and by refresh scripts for processe
 import hashlib
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -60,7 +61,12 @@ def _normalize_ticker(text: str) -> str | None:
     return None
 
 
+@lru_cache(maxsize=256)
 def _extract_pdf(path: Path) -> str:
+    # 同一次 refresh 里，近似去重(_dedupe_near_identical)和正文入库
+    # (process_local_files)会各抽一遍同一批 PDF 正文——抽取是 O(页数) 的
+    # 真开销(还可能触发 OCR)。用 lru_cache 按 Path 记忆，同一路径只抽一次，
+    # 两处调用共享结果。key 是 Path 对象，两处都传绝对路径，命中稳定。
     doc = fitz.open(path)
     pages: list[str] = []
     for page in doc:

@@ -365,7 +365,58 @@ def report_files(company: Company) -> list[Path]:
             continue
         seen[h] = p
         unique.append(p)
-    return unique
+    return _dedupe_near_identical(unique)
+
+
+def _dedupe_near_identical(paths: list[Path]) -> list[Path]:
+    """字节级MD5抓不到"重新导出/加水印导致个别字节不同，但正文99%+相同"的近似
+    重复（如同一篇华泰研报两次下载，仅一行乱码水印不同；或标题多一个字的两份
+    华通研报）。用提取后的正文做difflib相似度比对兜底，抓住这类漏网之鱼。
+
+    必须用 SequenceMatcher.ratio()（精确比值）做最终判定，不能只用 quick_ratio()
+    （粗略上界估算）——实测同团队两篇内容完全不同的研报 quick_ratio 能到
+    0.94-0.95，和真正重复的 0.99+ 混在一起分不开；ratio() 能把真重复(0.99-1.0)
+    和真不同(最高0.80)干净分开（此前用 quick_ratio 判定时把13篇内容不同的研报
+    误判成重复，已回退修正，不能重犯）。但 ratio() 是O(n²)重计算，44篇文件两两
+    全跑要几分钟——下面用 quick_ratio()（它是ratio()的数学上界，绝不会漏判
+    真重复，只会漏筛掉不可能是重复的候选）加长度比值做两级预筛，只有通过预筛
+    的候选对才跑一次真正的 ratio()；44篇实测只筛出6对要精确比对，全量耗时从
+    数分钟降到约40秒。
+    阈值0.95，取自：
+      真重复 — 20260604华泰"(1)"重复导出对 ratio=0.9971；
+               20250815华通标题差一字重复对 ratio=0.99；
+      真不同 — 20240918 vs 20240921华泰两篇不同报告 ratio=0.7972；
+               20241101 vs 20250131华泰两篇不同报告 ratio=0.6061。
+    """
+    import difflib
+
+    from src.processing.text_processor import _extract_pdf
+
+    print(f"[refresh] near-dup scan: extracting {len(paths)} PDFs...", flush=True)
+    texts = [_extract_pdf(p) for p in paths]
+    keep = [True] * len(paths)
+    for i in range(len(paths)):
+        if not keep[i]:
+            continue
+        for j in range(i + 1, len(paths)):
+            if not keep[j]:
+                continue
+            ti, tj = texts[i], texts[j]
+            # cheap length pre-filter: near-duplicates are near-identical length;
+            # skip the expensive exact ratio() when lengths already diverge >5%.
+            shorter, longer = sorted((len(ti), len(tj)))
+            if shorter == 0 or shorter / longer < 0.95:
+                continue
+            sm = difflib.SequenceMatcher(None, ti, tj)
+            # quick_ratio() is a cheap UPPER BOUND on ratio() (never underestimates) —
+            # use it to skip the expensive exact ratio() computation for pairs that
+            # can't possibly reach the 0.95 threshold even in the best case.
+            if sm.quick_ratio() < 0.95:
+                continue
+            if sm.ratio() >= 0.95:
+                print(f"[refresh] skip near-duplicate report: {paths[j]} (~same content as {paths[i]})")
+                keep[j] = False
+    return [p for p, k in zip(paths, keep) if k]
 
 
 def gc_stale_report_rows(ticker: str, current_files: list[Path]) -> int:
@@ -401,11 +452,13 @@ def process_local_files(paths: list[Path], ticker: str | None = None) -> int:
     from src.processing.text_processor import process_file
 
     chunks = 0
-    for path in paths:
+    total = len(paths)
+    for i, path in enumerate(paths, 1):
+        print(f"[refresh] embed {i}/{total}: {path.name}", flush=True)
         try:
             chunks += len(process_file(path, ticker_override=ticker))
         except Exception as exc:
-            print(f"[refresh] process ERROR {path}: {exc}")
+            print(f"[refresh] process ERROR {path}: {exc}", flush=True)
     return chunks
 
 
