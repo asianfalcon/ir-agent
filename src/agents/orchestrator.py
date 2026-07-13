@@ -55,7 +55,19 @@ def run(
 
     chunks.sort(key=chunk_score, reverse=True)
 
-    shared_data = {"dashboard": dashboard, "chunks": chunks, "chain": chain}
+    # 四层证据物理隔离：历史实际值在 dashboard；官方指引、卖方预测、专家补充
+    # 分开传递，避免下游 Agent 把公司自述当成卖方共识。
+    official_chunks = [c for c in chunks if c.get("data_source") in {"company_filing", "announcement"}]
+    sellside_chunks = [c for c in chunks if c.get("data_source") == "broker_report"]
+    supplemental_chunks = [c for c in chunks if c.get("data_source") == "acecamp_expert_column"]
+    shared_data = {
+        "dashboard": dashboard,
+        "chunks": chunks,
+        "official_chunks": official_chunks,
+        "sellside_chunks": sellside_chunks,
+        "supplemental_chunks": supplemental_chunks,
+        "chain": chain,
+    }
 
     # ── Agent 调用链 ──────────────────────────────────────────────────────
     researcher_out = researcher.run(ticker, company_name, shared_data, llm_caller)

@@ -8,7 +8,9 @@ from src.utils.prompts import load
 
 SYSTEM_PROMPT = load("skill4_system.md")
 REPORT_TEMPLATE = load("skill4_report_template.md")
-RESEARCH_DATA_SOURCES = {"broker_report", "acecamp_expert_column"}
+RESEARCH_DATA_SOURCES = {"broker_report"}
+SUPPLEMENTAL_DATA_SOURCES = {"acecamp_expert_column"}
+OFFICIAL_DATA_SOURCES = {"company_filing", "announcement"}
 
 
 def run(
@@ -25,12 +27,22 @@ def run(
     Returns a fully rendered Markdown report string.
     """
     fin = financial_dashboard.get("metrics", {})
-    gm = fin.get("gross_margin", {})
     period = financial_dashboard.get("period", "")
 
-    official_data = (
-        f"毛利率: {gm.get('value')}  YoY: {gm.get('yoy_pct')}%  QoQ: {gm.get('qoq_pct')}%"
-    )
+    actual_lines = []
+    for metric, values in fin.items():
+        actual_lines.append(
+            f"{metric}: {values.get('value')}  YoY: {values.get('yoy_pct')}%  QoQ: {values.get('qoq_pct')}%"
+        )
+    actual_data = "\n".join(actual_lines) or "无SQLite历史实际值"
+
+    official_snippets = [
+        f"[{c.get('data_source')} · {c.get('pub_date','?')} · {c.get('source_file','')} · chunk={c.get('chunk_id','')}] {c.get('text','')[:500]}"
+        for c in vector_chunks
+        if c.get("data_source") in OFFICIAL_DATA_SOURCES
+        and any(k in c.get("text", "") for k in ("指引", "Outlook", "outlook", "Guidance", "guidance", "Revenue", "毛利率", "EPS"))
+    ][:8]
+    official_data = "\n".join(official_snippets) or "无公司官方指引切片"
 
     # LanceDB returns flat rows; metadata fields are top-level
     sellside_snippets = [
@@ -38,7 +50,14 @@ def run(
         for c in vector_chunks
         if c.get("data_source") in RESEARCH_DATA_SOURCES
     ][:3]
-    sellside_data = " | ".join(sellside_snippets) or "无研报/专家专栏切片"
+    sellside_data = " | ".join(sellside_snippets) or "无券商研报切片"
+
+    supplemental_snippets = [
+        c["text"][:180]
+        for c in vector_chunks
+        if c.get("data_source") in SUPPLEMENTAL_DATA_SOURCES
+    ][:3]
+    supplemental_data = " | ".join(supplemental_snippets) or "无专家补充观点"
 
     market_data = " | ".join(market_snippets[:3]) or "无爬虫数据"
 
@@ -56,11 +75,17 @@ def run(
     user_prompt = f"""
 公司: {company_name} ({ticker})  周期: {period}
 
-【官方财务数据】(来源: SQLite financial_reports 表)
+【公司历史实际值】(来源: SQLite financial_reports 表；不进入卖方一致预期)
+{actual_data}
+
+【公司官方指引】(来源: company_filing + announcement；单列锚点，不进入卖方一致预期)
 {official_data}
 
-【卖方研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column 向量切片)
+【卖方一致预期候选】(来源: LanceDB broker_report；仅券商研报)
 {sellside_data}
+
+【专家补充观点】(来源: acecamp_expert_column；只作修正证据，不进入卖方均值)
+{supplemental_data}
 
 【市场实时数据】(来源: 爬虫)
 {market_data}

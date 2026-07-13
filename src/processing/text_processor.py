@@ -117,6 +117,46 @@ def _extract_html(path: Path) -> str:
     return "\n".join(parts)
 
 
+def _classify_report(file_name: str) -> str:
+    """区分 reports/ 目录里的"券商研报" vs "公司官方财报/SEC文件"。
+    返回 'broker_report'（券商卖方研报，进一致预期）或 'company_filing'（公司官方
+    披露，不进一致预期，仅作事实证据）。
+
+    判别以"正向券商信号"为主判据：本项目券商研报遵循严格命名约定
+    `YYYYMMDD-机构名-公司-ticker-标题.pdf`（如 20260604-华泰证券-英特尔-INTC.US-...），
+    官方财报从不用这个格式。因此：文件名匹配该标准券商命名 → broker_report；
+    否则命中官方财报特征（Earnings/annual/10-K/SEC 流水号/proxy/公司电话会等）
+    → company_filing。两者都不命中时，保守留在 broker_report（宁可漏分类也不
+    误把真研报踢出一致预期）。辅以"证券/研究所"等券商标记兜底非标准命名的券商研报。"""
+    import re as _re
+    # 主判据：标准券商研报命名 YYYYMMDD-机构名-...（官方财报绝不用此格式）
+    if _re.match(r"^\d{8}-[^-]+-", file_name):
+        return "broker_report"
+    # 券商团队正向信号兜底：非标准命名但含券商机构标记
+    _BROKER_MARK = ("证券", "研究所", "研报", "国际", "第一上海", "中金", "海通")
+    if any(m in file_name for m in _BROKER_MARK):
+        return "broker_report"
+    # 公司官方财报/SEC 披露特征
+    _FILING_MARK = (
+        "Earnings", "earnings", "EarningsRelease", "Earnings Release",
+        "annual report", "Annual Report", "10-K", "10-Q", "8-K",
+        "Prepared Remarks", "Earnings Call", "Earnings Deck", "Financial Results",
+        "PXY", "proxy", "Proxy", "Fiscal", "Financial", "Gaap", "GAAP", "gaap",
+    )
+    # SEC EDGAR accession-number 文件名，如 0000050863-25-000052
+    if _re.match(r"^\d{10}-\d{2}-\d{6}", file_name):
+        return "company_filing"
+    # 公司官方新闻稿/电话会常见短命名：AMD 官方 "..._Reports_..._Financial_..."、
+    # "AMD 1Q24call.pdf"、"amd2q2025.pdf" 这类无券商标记的公司自有材料。
+    if _re.search(r"_Reports_.*(Quarter|Full_Year)", file_name):
+        return "company_filing"
+    if _re.search(r"\d[qQ]\d.*call|^amd\s*\d[qQ]", file_name, _re.IGNORECASE):
+        return "company_filing"
+    if any(m in file_name for m in _FILING_MARK):
+        return "company_filing"
+    return "broker_report"
+
+
 def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -> dict[str, Any]:
     ticker = ticker_override or _normalize_ticker(text) or _normalize_ticker(path.stem)
 
@@ -127,6 +167,17 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         if parent.name in source_map:
             data_source = source_map[parent.name]
             break
+
+    # reports/ 目录里同时混着"券商研报"和"公司官方财报"（Earnings Release/Deck、
+    # 10-K/10-Q、annual report、proxy、财报电话会、SEC 流水号文件）。目录约定会把两者
+    # 一律标成 broker_report，导致 Intel 自家 deck 被当成卖方研报算进一致预期、污染
+    # "最新研报"排序。这里按文件名把官方财报重分类为 company_filing（见 _classify_report），
+    # 该来源不进 skill5 的 RESEARCH_DATA_SOURCES，不参与卖方一致预期。每次重分类打审计日志。
+    if data_source == "broker_report":
+        refined = _classify_report(path.name)
+        if refined != "broker_report":
+            print(f"[metadata] 官方财报重分类 broker_report→{refined}: {path.name}", flush=True)
+        data_source = refined
 
     # extract pub_date from filename prefix like 20260701-
     import re as _re
@@ -139,16 +190,76 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         except ValueError:
             return False
 
-    m = _re.match(r"(\d{8})", path.stem)
-    if m and _valid_yyyymmdd(m.group(1)):
-        pub_date = m.group(1)
+    def _date_from_name(stem: str) -> tuple[str, str] | None:
+        """按可信度从高到低，从文件名里抠出真实发布日期，返回 (yyyymmdd, 来源标签)。
+        全抠不到返回 None（由调用方退回 mtime）。三级：
+          1) 标准前缀  20240918-...            —— 最高优先级，本项目命名约定
+          2) ISO 日期  ..._2026-02-03_...       —— AMD 官方新闻稿命名
+          3) -/_ 分隔的 6 位 YYMMDD  ...-240803  —— 券商研报把日期放尾部时（补 20 世纪前缀）
+        每级都过 _valid_yyyymmdd 校验，挡掉 SEC 流水号(0000050863-25-000052)、
+        "Q4 2025" 这类假日期，让它们正确退回 mtime。"""
+        m = _re.match(r"(\d{8})", stem)
+        if m and _valid_yyyymmdd(m.group(1)):
+            return m.group(1), "prefix"
+        m = _re.search(r"(\d{4})-(\d{2})-(\d{2})", stem)
+        if m:
+            cand = m.group(1) + m.group(2) + m.group(3)
+            if _valid_yyyymmdd(cand):
+                return cand, "iso"
+        m = _re.search(r"[-_](\d{2})(\d{2})(\d{2})(?:\D|$)", stem)
+        if m:
+            cand = "20" + m.group(1) + m.group(2) + m.group(3)
+            if _valid_yyyymmdd(cand):
+                return cand, "yymmdd-suffix"
+        return None
+
+    def _date_from_official_text(body: str) -> tuple[str, str] | None:
+        """从官方材料正文头部提取真实披露日，避免把重新下载日当发布日期。
+
+        只使用高置信度发布语境或 SEC filed date；不匹配普通报表期末日，避免把
+        `Mar 28, 2026` 误当成新闻稿发布日期。
+        """
+        head = body[:12000]
+        sec = _re.search(r"FILED AS OF DATE\s*[:：]\s*(\d{8})", head, _re.IGNORECASE)
+        if sec and _valid_yyyymmdd(sec.group(1)):
+            return sec.group(1), "sec-filed-date"
+
+        months = {
+            "january": 1, "february": 2, "march": 3, "april": 4,
+            "may": 5, "june": 6, "july": 7, "august": 8,
+            "september": 9, "october": 10, "november": 11, "december": 12,
+        }
+        month_pattern = "|".join(m.title() for m in months)
+        # 公司新闻稿通常以“城市, 州, Month d, yyyy – 公司今日宣布”开头。
+        release = _re.search(
+            rf"(?:SANTA CLARA|AUSTIN|SAN JOSE|NEW YORK|CALIF\.|CALIFORNIA)[^\n]{{0,160}}?"
+            rf"({month_pattern})\s+(\d{{1,2}}),\s+(\d{{4}})",
+            head,
+            _re.IGNORECASE,
+        )
+        if release:
+            month = months[release.group(1).lower()]
+            cand = f"{int(release.group(3)):04d}{month:02d}{int(release.group(2)):02d}"
+            if _valid_yyyymmdd(cand):
+                return cand, "official-release-text"
+        return None
+
+    hit = _date_from_name(path.stem)
+    if not hit and data_source == "company_filing":
+        hit = _date_from_official_text(text)
+    if hit:
+        pub_date, _date_src = hit
+        if _date_src != "prefix":
+            print(f"[metadata] pub_date {pub_date} from {_date_src} (非标准前缀): {path.name}", flush=True)
     else:
-        # ponytail: no valid date in filename (e.g. SEC accession-number PDFs like
-        # "0000050863-25-000052.pdf" — the leading 8 digits parse as \d{8} but aren't
-        # a real date) — fall back to file mtime formatted as YYYYMMDD, not a raw
-        # epoch string. Still not the true publish date, but at least a valid/
-        # sortable/comparable date string instead of a garbage number.
+        # ponytail: no valid date anywhere in filename (e.g. SEC accession-number PDFs
+        # like "0000050863-25-000052.pdf", or "Q4 2025 Earnings Deck.pdf") — fall back
+        # to file mtime formatted as YYYYMMDD, not a raw epoch string. Still not the true
+        # publish date, but at least a valid/sortable/comparable date string. mtime can be
+        # wildly wrong (re-download stamps a future date) — log it so it's auditable, and
+        # for 券商研报 the right fix is to rename to the 20240803- convention, not trust this.
         pub_date = _date.fromtimestamp(path.stat().st_mtime).strftime("%Y%m%d")
+        print(f"[metadata] pub_date {pub_date} from FILE MTIME (文件名无有效日期，可能不准): {path.name}", flush=True)
 
     try:
         source_file = str(path.relative_to(ROOT))

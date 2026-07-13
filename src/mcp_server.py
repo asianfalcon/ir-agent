@@ -110,7 +110,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="earnings_forecast",
-            description="【预测业绩】基于历史财务趋势 + 本地券商研报共识，预测未来2季度营收/净利润区间。",
+            description="【预测业绩】分层使用历史实际值、公司官方指引、卖方一致预期与专家增量修正，预测未来2季度营收/净利润区间。",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -199,8 +199,52 @@ async def list_tools() -> list[Tool]:
     ]
 
 
+_VOCAB_CACHE: list[dict] | None = None
+
+
+def _load_vocab_entries() -> list[dict]:
+    global _VOCAB_CACHE
+    if _VOCAB_CACHE is None:
+        vpath = Path(__file__).parent.parent / "config" / "vocab_dictionary.json"
+        _VOCAB_CACHE = json.loads(vpath.read_text()) if vpath.exists() else []
+    return _VOCAB_CACHE
+
+
+def _normalize_ticker_arg(ticker: str) -> str:
+    """把调用方传入的 ticker 归一化成 vocab 里的标准代码（带市场后缀）。
+    命中规则（按可信度）：
+      1) 已带 . 后缀且能在 vocab 精确匹配 → 原样返回（如 INTC.US、688141.SH）
+      2) 裸代码/别名 → 用 vocab 的 ticker 前缀、standard_name、aliases 反查补全后缀
+         （INTC→INTC.US、Intel→INTC.US、英特尔→INTC.US）
+    查不到任何映射 → 原样返回（不猜、不改，让下游照常"无数据"，避免误映射到错标的）。"""
+    if not ticker:
+        return ticker
+    t = ticker.strip()
+    entries = [e for e in _load_vocab_entries() if e.get("entity_type") == "Company" and e.get("ticker")]
+    # 1) 精确匹配已带后缀的标准代码
+    for e in entries:
+        if e["ticker"].upper() == t.upper():
+            return e["ticker"]
+    # 2) 裸代码：匹配 ticker 的 "." 前缀部分（INTC == INTC.US 的 INTC）
+    for e in entries:
+        if e["ticker"].split(".")[0].upper() == t.upper():
+            return e["ticker"]
+    # 3) 公司名/别名反查
+    for e in entries:
+        names = [e.get("standard_name", "")] + e.get("aliases", [])
+        if any(t.upper() == n.upper() for n in names if n):
+            return e["ticker"]
+    return ticker
+
+
 @app.call_tool()
 async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+    # 清洗后数据库标准代码带市场后缀（INTC.US / AMD.US / 688141.SH）。用户/调用方常
+    # 只传裸代码 INTC，直接查库会命中不到、错误返回"无数据"。这里在入口统一把 ticker
+    # 归一化成 vocab 里的标准代码（INTC→INTC.US），所有下游 skill 自动受益。
+    if isinstance(arguments, dict) and arguments.get("ticker"):
+        arguments = {**arguments, "ticker": _normalize_ticker_arg(arguments["ticker"])}
+
     if name == "text2sql":
         result = skill1_text2sql.run(arguments["query"], _llm)
         return [TextContent(type="text", text=json.dumps(result, ensure_ascii=False, indent=2))]
@@ -229,13 +273,27 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         _product = _ticker_entry.get("product", "") if _ticker_entry else ""
         chain = skill3_graph_propagator.query(_product) if _product else []
 
-        # vector search for sell-side chunks
+        # 分层检索：卖方预测与公司官方指引使用不同查询，再合并交给 verifier；
+        # verifier 会按 data_source 物理隔离，官方材料绝不进入卖方一致预期。
         from src.db.vector_store import search as vector_search
-        vector_chunks = vector_search(
+        sellside_chunks = vector_search(
             query=f"{company_name} 财务 业绩",
             ticker=ticker,
-            top_k=8,
+            top_k=15,
         )
+        official_chunks = vector_search(
+            query=f"{company_name} 公司官方 下一季度 收入指引 毛利率 EPS outlook guidance",
+            ticker=ticker,
+            top_k=15,
+        )
+        vector_chunks = []
+        seen_ids = set()
+        for chunk in sellside_chunks + official_chunks:
+            key = chunk.get("chunk_id")
+            if key in seen_ids:
+                continue
+            seen_ids.add(key)
+            vector_chunks.append(chunk)
 
         report = skill4_verifier.run(
             ticker=ticker,

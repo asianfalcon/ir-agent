@@ -8,7 +8,12 @@ from typing import Any
 from src.utils.prompts import load
 
 _GROUNDING_RULE = load("skill5_grounding_rule.md")
-RESEARCH_DATA_SOURCES = {"broker_report", "acecamp_expert_column"}
+# 严格的卖方一致预期只由券商研报构成。专家专栏是第三方补充观点，但未必是有
+# 完整财务模型的独立卖方预测，因此只能进入修正证据层，不能混入 consensus 均值。
+# 公司官方财报/公告则是公司自述事实与管理层指引，必须单列为官方锚点。
+RESEARCH_DATA_SOURCES = {"broker_report"}
+SUPPLEMENTAL_DATA_SOURCES = {"acecamp_expert_column"}
+OFFICIAL_DATA_SOURCES = {"company_filing", "announcement"}
 _TEAM_RE = re.compile(r"^\d{8}-([^-]+)-")
 FORECAST_KEYWORDS = (
     "盈利预测",
@@ -28,7 +33,30 @@ FORECAST_KEYWORDS = (
 
 
 def _research_chunks(vector_chunks: list[dict]) -> list[dict]:
+    """严格的"卖方一致预期"检索：只含第三方卖方研报与专家专栏。
+    专供 _forecast_chunks()/一致预期基准表——公司官方财报绝不进卖方共识。"""
     return [c for c in vector_chunks if c.get("data_source") in RESEARCH_DATA_SOURCES]
+
+
+# 事实证据检索：在卖方研报之外，额外纳入专家观点与公司官方财报/公告。供非预测类
+# 函数（目标价、边际变化、关系图谱、机会风险）取用管理层指引/公司自述边际变化作为
+# "事实证据"，但绝不进 earnings_forecast 的卖方一致预期基准表——官方财报是公司自我
+# 披露，可作事实锚点，不可充当卖方共识。见 instructions.md 原则9 company_filing 段。
+_EVIDENCE_DATA_SOURCES = RESEARCH_DATA_SOURCES | SUPPLEMENTAL_DATA_SOURCES | OFFICIAL_DATA_SOURCES
+
+
+def _evidence_chunks(vector_chunks: list[dict]) -> list[dict]:
+    return [c for c in vector_chunks if c.get("data_source") in _EVIDENCE_DATA_SOURCES]
+
+
+def _official_chunks(vector_chunks: list[dict]) -> list[dict]:
+    """公司官方财报/公告：只作实际值与管理层指引锚点，不进入卖方一致预期。"""
+    return [c for c in vector_chunks if c.get("data_source") in OFFICIAL_DATA_SOURCES]
+
+
+def _supplemental_chunks(vector_chunks: list[dict]) -> list[dict]:
+    """专家专栏等补充证据：可用于修正，但不进入严格卖方共识。"""
+    return [c for c in vector_chunks if c.get("data_source") in SUPPLEMENTAL_DATA_SOURCES]
 
 
 def _dedupe_chunks(chunks: list[dict]) -> list[dict]:
@@ -54,26 +82,43 @@ def _team_of(chunk: dict) -> str | None:
 
 
 def _latest_version_per_team(chunks: list[dict]) -> list[dict]:
-    """同一团队（如华泰）对同一标的存在多份历史版本研报时，只保留 pub_date
-    最新的一份用于当前一致预期基准——原则9"同一研报标题/同一分析师团队对同一
-    科目存在多个历史版本时，只有pub_date最新的一份进入一致预期基准表"的机械
-    落地。旧版本不删除、不影响历史准确性回测，只是不进入本次consensus baseline
-    检索结果，避免1月/4月/6月三份华泰报告的预测数字被一起拿去做均值。"""
-    best_pub_date: dict[str, str] = {}
+    """同团队只保留最新的“含预测科目”报告。
+
+    不能简单保留团队发布日期最新的任意报告：最新文件可能只是事件点评且没有完整
+    财务预测，若用它淘汰稍早的盈利预测表，会让该团队从 consensus 中错误消失。
+    """
+    by_file: dict[str, list[dict]] = {}
     for chunk in chunks:
-        team = _team_of(chunk)
-        if not team:
+        source_file = chunk.get("source_file", "") or chunk.get("chunk_id", "")
+        by_file.setdefault(source_file, []).append(chunk)
+
+    report_meta: dict[str, tuple[str | None, str, bool]] = {}
+    for source_file, report_chunks in by_file.items():
+        team = _team_of(report_chunks[0])
+        pub_date = max((c.get("pub_date", "") or "") for c in report_chunks)
+        combined = "\n".join(c.get("text", "") for c in report_chunks)
+        has_forecast = (
+            any(k in combined for k in FORECAST_KEYWORDS)
+            and any(y in combined for y in ("2026", "2027", "2028"))
+        )
+        report_meta[source_file] = (team, pub_date, has_forecast)
+
+    selected_file_by_team: dict[str, str] = {}
+    for source_file, (team, pub_date, has_forecast) in report_meta.items():
+        if not team or not has_forecast:
             continue
-        pub_date = chunk.get("pub_date", "") or ""
-        if pub_date > best_pub_date.get(team, ""):
-            best_pub_date[team] = pub_date
+        current = selected_file_by_team.get(team)
+        if current is None or pub_date > report_meta[current][1]:
+            selected_file_by_team[team] = source_file
 
     result = []
-    for chunk in chunks:
-        team = _team_of(chunk)
-        if team and chunk.get("pub_date", "") != best_pub_date.get(team):
+    for source_file, report_chunks in by_file.items():
+        team, _, has_forecast = report_meta[source_file]
+        if not has_forecast:
             continue
-        result.append(chunk)
+        if team and selected_file_by_team.get(team) != source_file:
+            continue
+        result.extend(report_chunks)
     return result
 
 
@@ -137,12 +182,73 @@ def _forecast_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) 
     return [chunk for chunk, _ in scored]
 
 
+GUIDANCE_KEYWORDS = (
+    "指引", "业绩展望", "Outlook", "outlook", "Guidance", "guidance",
+    "revenue range", "gross margin", "毛利率", "Earnings Per Share", "EPS",
+)
+
+
+def _guidance_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) -> list[dict]:
+    """检索公司下一期指引；结果必须与卖方预测保持物理隔离。"""
+    chunks = list(vector_chunks)
+    try:
+        from src.db.vector_store import search as vector_search
+
+        queries = [
+            f"{company_name} 公司官方 下一季度 收入指引 毛利率 EPS outlook guidance",
+            f"{company_name} Earnings Release business outlook revenue range gross margin EPS",
+            f"{company_name} 业绩预告 业绩快报 公司公告 下一期指引",
+        ]
+        for query in queries:
+            chunks.extend(vector_search(query=query, ticker=ticker, top_k=20))
+    except Exception as exc:
+        print(f"[skill5] guidance vector enrichment skipped: {exc}")
+
+    official = _dedupe_chunks(_official_chunks(chunks))
+    scored = []
+    for chunk in official:
+        text = chunk.get("text", "")
+        score = sum(3 for keyword in GUIDANCE_KEYWORDS if keyword in text)
+        if any(term in text for term in ("下一季度", "Q1", "Q2", "Q3", "Q4", "quarter")):
+            score += 3
+        if any(term in text for term in ("收入", "Revenue", "revenue")):
+            score += 2
+        if score > 0:
+            scored.append((chunk, score))
+    scored.sort(key=lambda item: (item[1], item[0].get("pub_date", "")), reverse=True)
+    return [chunk for chunk, _ in scored]
+
+
+def _one_snippet_per_report(chunks: list[dict], max_reports: int = 20) -> list[str]:
+    """每份研报只输出一行，避免一份报告的多个chunk伪装成多个独立样本。"""
+    by_file: dict[str, list[dict]] = {}
+    for chunk in chunks:
+        source_file = chunk.get("source_file", "") or chunk.get("chunk_id", "")
+        by_file.setdefault(source_file, []).append(chunk)
+
+    reports = []
+    for source_file, report_chunks in by_file.items():
+        report_chunks.sort(key=lambda c: _forecast_score(c, ""), reverse=True)
+        best_text = " ".join(c.get("text", "")[:700] for c in report_chunks[:2])
+        pub_date = max((c.get("pub_date", "") or "") for c in report_chunks)
+        reports.append((pub_date, source_file, report_chunks[0], best_text))
+    reports.sort(key=lambda item: item[0], reverse=True)
+    return [
+        f"[{_source_meta(chunk)} · {pub_date} · {source_file}] {text}"
+        for pub_date, source_file, chunk, text in reports[:max_reports]
+    ]
+
+
 def _source_label(chunk: dict) -> str:
     source = chunk.get("data_source", "")
     if source == "acecamp_expert_column":
         return "AceCamp专家专栏"
     if source == "broker_report":
         return "券商研报"
+    if source == "company_filing":
+        return "公司官方财报"
+    if source == "announcement":
+        return "公司公告"
     return source or "未知来源"
 
 
@@ -162,7 +268,7 @@ def earnings_forecast(
     vector_chunks: list[dict],
     llm_caller,
 ) -> str:
-    """预测业绩：历史趋势 + 券商预测共识 → 未来2季度区间预测"""
+    """预测业绩：历史实际值 + 公司指引 + 卖方共识 + 增量修正。"""
     fin = dashboard.get("metrics", {})
     rev = fin.get("revenue", {})
     np_ = fin.get("net_profit", {})
@@ -173,33 +279,65 @@ def earnings_forecast(
         f"净利润: {np_.get('value')} YoY {np_.get('yoy_pct')}% QoQ {np_.get('qoq_pct')}%"
     )
 
-    sell_snips = [
-        (
-            f"[{_source_meta(c)} · {c.get('pub_date', '?')} · {c.get('source_file', '')}] "
-            f"{c['text'][:700]}"
-        )
-        for c in _forecast_chunks(ticker, company_name, vector_chunks)
-    ][:8]
+    sell_snips = _one_snippet_per_report(
+        _forecast_chunks(ticker, company_name, vector_chunks), max_reports=20
+    )
     sell_text = "\n".join(f"- {s}" for s in sell_snips) or "暂无本地研报预测数据"
+
+    guidance_snips = [
+        f"[{c.get('data_source')} · {c.get('pub_date', '?')} · {c.get('source_file', '')} · chunk={c.get('chunk_id','')}] {c.get('text','')[:900]}"
+        for c in _guidance_chunks(ticker, company_name, vector_chunks)[:8]
+    ]
+    guidance_text = "\n".join(f"- {s}" for s in guidance_snips) or "暂无本地公司官方指引"
+
+    supplemental_snips = [
+        f"[{_source_meta(c)} · {c.get('pub_date', '?')} · {c.get('source_file', '')}] {c.get('text','')[:500]}"
+        for c in _dedupe_chunks(_supplemental_chunks(vector_chunks))[:6]
+    ]
+    supplemental_text = "\n".join(f"- {s}" for s in supplemental_snips) or "暂无专家补充观点"
 
     prompt = f"""你是卖方分析师。请基于以下本地数据预测 {company_name}({ticker}) 未来2个季度业绩区间。
 
 【历史财务数据 · 周期: {period}】(来源: SQLite financial_reports)
 {fin_text}
 
-【券商研报/专家专栏预测摘要】(来源: LanceDB broker_report + acecamp_expert_column)
+【公司官方指引｜独立锚点，不得计入卖方一致预期】(来源: LanceDB company_filing + announcement)
+{guidance_text}
+
+【卖方一致预期候选｜仅券商研报】(来源: LanceDB broker_report；每份报告仅一条)
 {sell_text}
 
+【专家/纪要补充｜仅用于增量修正，不得计入卖方一致预期】(来源: LanceDB acecamp_expert_column)
+{supplemental_text}
+
 {_GROUNDING_RULE}
+
+强制计算顺序：
+1. 历史实际值只作基数校验；
+2. 公司官方指引单列，作为预测边界与管理层锚点，绝不参与卖方均值；
+3. 仅用口径可比的券商研报形成卖方一致预期；只有一个有效样本时必须写“单一卖方基准”，不得称为多家共识；
+4. 专家/纪要只有在未被官方指引和卖方模型吸收时才能修正；
+5. 给出 IRA 最终预测，并同时计算相对官方指引中值、相对卖方一致预期的差值。
 
 请输出：
 ## 📈 业绩预测 · {company_name}
 
-### 基准情景（中性）
-| 季度 | 营收预测 | YoY | 净利润预测 | YoY |
-|:---|:---|:---|:---|:---|
-| 下一季度 | ... | ... | ... | ... |
-| 再下季度 | ... | ... | ... | ... |
+### 预测校验
+（字段口径、历史基数、GAAP/Non-GAAP、样本覆盖度）
+
+### 公司官方指引
+| 期间 | 收入区间/中值 | 毛利率 | EPS | 口径 | 来源 |
+|:---|:---|:---|:---|:---|:---|
+
+### 卖方一致预期
+| 券商 | 日期 | 收入预测 | 净利润/EPS预测 | 口径 | 权重/说明 |
+|:---|:---|:---|:---|:---|:---|
+
+### IRA修正后预测
+| 期间 | 公司官方指引 | 卖方一致预期 | IRA预测 | IRA vs 指引中值 | IRA vs一致预期 |
+|:---|:---|:---|:---|:---|:---|
+
+差值必须用绝对值+百分比表示；上调用 **🔼**，下调用 **🔽**，无修正写 **0（维持）**。
 
 ### 预测依据（附来源标注）
 （逐条列出，每条带 [来源: ...]）
@@ -229,7 +367,7 @@ def price_target(
     # 找含目标价的切片
     target_snips = [
         f"[{_source_meta(c)}] {c['text'][:200]}"
-        for c in _research_chunks(vector_chunks)
+        for c in _evidence_chunks(vector_chunks)
         if any(kw in c["text"] for kw in ["目标价", "目标市值", "PE", "PS", "估值", "合理价值"])
     ][:4]
     target_text = "\n".join(f"- {s}" for s in target_snips) or "暂无本地目标价数据"
@@ -239,7 +377,7 @@ def price_target(
 【财务指标 · 周期: {period}】(来源: SQLite financial_reports)
 {fin_text}
 
-【券商目标价/估值参考】(来源: LanceDB broker_report + acecamp_expert_column)
+【券商目标价/估值参考】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据，不得当成卖方目标价/共识)
 {target_text}
 
 {_GROUNDING_RULE}
@@ -283,7 +421,7 @@ def marginal_change(
 
     # 按 pub_date 排序取最新研报
     recent = sorted(
-        _research_chunks(vector_chunks),
+        _evidence_chunks(vector_chunks),
         key=lambda c: (c.get("release_time") or 0, c.get("pub_date", "")),
         reverse=True,
     )
@@ -296,7 +434,7 @@ def marginal_change(
 【环比/同比变化 · 周期: {period}】(来源: SQLite financial_reports)
 {delta_text}
 
-【最新研报/专家专栏摘要（按时间排序）】(来源: LanceDB broker_report + acecamp_expert_column)
+【最新研报/专家专栏摘要（按时间排序）】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
 {recent_text}
 
 {_GROUNDING_RULE}
@@ -334,7 +472,7 @@ def relationship_graph(
 
     compete_snips = [
         f"[{_source_meta(c)}] {c['text'][:150]}"
-        for c in _research_chunks(vector_chunks)
+        for c in _evidence_chunks(vector_chunks)
         if any(kw in c["text"] for kw in ["竞争", "市占率", "份额", "对手", "替代"])
     ][:3]
     compete_text = "\n".join(f"- {s}" for s in compete_snips) or "暂无本地竞争数据"
@@ -353,7 +491,7 @@ def relationship_graph(
 {chain_text}
 核心产品：{product}
 
-【竞争格局研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
+【竞争格局研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据，不得当成卖方观点)
 {compete_text}
 
 {_GROUNDING_RULE}
@@ -394,12 +532,12 @@ def opportunity_risk(
 
     bull_snips = [
         f"[{_source_meta(c)}] {c['text'][:150]}"
-        for c in _research_chunks(vector_chunks)
+        for c in _evidence_chunks(vector_chunks)
         if any(kw in c["text"] for kw in ["买入", "增持", "催化", "机会", "上行", "超预期"])
     ][:3]
     bear_snips = [
         f"[{_source_meta(c)}] {c['text'][:150]}"
-        for c in _research_chunks(vector_chunks)
+        for c in _evidence_chunks(vector_chunks)
         if any(kw in c["text"] for kw in ["风险", "减持", "不确定", "下行", "低于预期", "竞争加剧"])
     ][:3]
 
@@ -413,10 +551,10 @@ def opportunity_risk(
 【财务数据 · {period}】(来源: SQLite)
 {fin_text}
 
-【看多研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
+【看多研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
 {bull_text}
 
-【看空/风险研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column)
+【看空/风险研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
 {bear_text}
 
 【产业链相关公司】(来源: Kùzu)
