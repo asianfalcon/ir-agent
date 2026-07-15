@@ -85,6 +85,7 @@ Claude Desktop / Codex
 11. **短中长三维度分级** — 修正后预测按 0–6 月/6 月–1 年/1–2 年对比一致预期，短中长全超 → 大牛股；仅长期超 → 潜力股
 12. **数据质量四要求** — 准确性（逐字核对）、时效性（标原始时间戳，越新权重越高，超 6 月提示过时）、连贯性（能与前后期衔接）、多样性（覆盖多种独立信源）
 13. **完整研报骨架** — 固定为“业绩预测、估值、机会与风险”三大模块；业绩预测内固定为“券商业绩预测表、纪要修正因子表、修正后业绩表”
+14. **预测硬护栏** — 本地有官方指引必抽取（否则 `GUIDANCE_EXTRACTION_FAILED`，禁止静默降级）；禁止机械拆季（全年÷4／固定比例）；IRA 越界指引区间必须举证，缺证据才缩回
 
 ### 财务预测三步校验
 
@@ -95,6 +96,14 @@ Claude Desktop / Codex
 3. **预测倍率 sanity check**：预测中枢必须和历史全年收入、最近季度收入年化、卖方预测区间比较；若预测中枢相对历史基数跃升超过 2 倍，必须列出订单、产能、价格、客户四类证据中的至少两类，否则只能放入乐观情景，不得作为基准预测。
 
 输出研报时必须单列“口径校验”或“预测校验”，并区分“已验证事实”“外推假设”“情景预测”。
+
+### 预测硬护栏
+
+`earnings_forecast`（skill5）与研报生成必须遵守，防止漏读指引和机械外推：
+
+1. **有指引必抽取**：本地存在 `company_filing`/`announcement` 时，必须成功抽取目标期指引进上下文；抽取为空则抛 `GUIDANCE_EXTRACTION_FAILED`，**禁止静默降级为全年拆季**。本地本就无官方文件时正常放行。
+2. **禁止机械拆季**：严禁全年÷4、剩余收入×固定比例、仅凭“季节性”套 30/33/37%。拆季必须有公司季度指引／明确季度一致预期／券商季度预测表／已披露季度订单出货其一，否则输出“季度数据不足，无法可靠拆分”。
+3. **越界举证不撤回**：IRA 点预测可落在指引区间外（修正值来源），但必须挂显式理由＋证据来源(source_id)＋Δ；缺可量化证据才降回区间内或标为 Bull/Bear case。
 
 ### 研报格式骨架
 
@@ -148,12 +157,26 @@ PDF 生成规则已固化在脚本中：
 ### SQLite 财务库
 
 - 主库路径：`databases/ira.db`
-- 表：`financial_reports`、`historical_prices`、`companies`、`spider_crawl_log`
+- 表：`financial_reports`、`historical_prices`、`companies`、`spider_crawl_log`、`forecast_events`
 - 初始化只创建 schema，不会自动补财务数据：
 
 ```bash
 python -m src.db.db_initializer
 ```
+
+#### forecast_events — 预测事件表（反馈回路）
+
+append-only，让四层方法的每次修正都能被实际业绩证伪。同一张表存 `consensus`/`guidance`/`forecast`(=IRA)/`actual` 四类事件；历史永不覆盖，同 `as_of_date` 重复插入视为修订新增。`score` 按 `metric×accounting_basis` 隔离比对（GAAP 不与 Non-GAAP 混），裁决 IRA 修正相对一致预期加分/减分，`as_of_date` 晚于 actual 则标可能穿越。
+
+```bash
+# 记一条预测（财报后补 actual，再 score）
+python -m scripts.forecast_snapshot record --ticker AMD --as-of-date 2026-07-15 \
+  --target-period 2026Q2 --event-type forecast --metric revenue --mid 11300000000 \
+  --basis Non-GAAP --source-type ira --source-id amd_report_20260714
+python -m scripts.forecast_snapshot score --ticker AMD
+```
+
+> 口径：`value_*` 用绝对值（对齐 `financial_reports.revenue`，如 13,577,000,000），不要填“亿美元”，否则误差全废。
 
 ### LanceDB 研报/专家专栏库
 
