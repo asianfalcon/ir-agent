@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_id": "2681cd3c4a93d783f0c26fa3b0342a4b",
+    "text": "Financial Results\nTotal Intel Q1’24 Revenue \n$12.7B\n  9% YoY\nQ1’24 Segment Revenue\nIntel Products Total\t\n$11.9B\t\n  17% YoY\nClient Computing (CCG) \t\n$7.5B\t\n  31% YoY\nData Center and AI (DCAI)\t\n$3.0B\t\n  5% YoY\nNetwork and Edge (NEX) \t\n$1.4B\t\n  8% YoY\nIntel Foundry\t\n\t\n$4.4B\t\n  10% YoY\nAltera\t \t\t\n$342M\t\n  58% YoY\nMobileye\n$239M\t\n  48% YoY\nQ1’24 Non-GAAP EPS\n$0.18\n  $0.22 YoY\nQ2’24 Outlook \nRevenue\n$12.5B – $13.5B\nGross Margin (non-GAAP)  \n43.5%\nEPS (non-GAAP) \t\n$0.10\n“We are making steady progress against our priorities and delivered a solid  \n quarter. Strong innovation across our client, edge and data center portfolios",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "81612a9b5c856d55b91af346919a9422",
+    "text": "drove double-digit revenue growth in Intel Products. With Intel 3 in high-volume \nproduction, leading-edge semiconductors are being manufactured in the U.S. \nfor the first time in almost a decade and we are on track to regain process \nleadership next year as we grow Intel Foundry. We are confident in our plans to \ndrive sequential growth throughout the year as we accelerate our AI solutions \nand maintain our relentless focus on execution, operational discipline and \nshareholder value creation in a dynamic market.”\nPat Gelsinger, Intel CEO\n“Q1 revenue was in-line with our expectations and we delivered \nnon-GAAP EPS above our guidance, driven by better-than-expected",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "6dfaa17eba5d2b5c633cda1891e9c094",
+    "text": "non-GAAP EPS above our guidance, driven by better-than-expected \ngross margins and strong expense discipline. Our new foundry \noperating model, which provides greater transparency and \naccountability, is already driving better decision-making across \nthe business. Looking ahead, we expect to deliver year-over-year \nrevenue and non-GAAP EPS growth in fiscal year 2024, including \nroughly 200 basis points of full-year gross margin improvement.”\nDavid Zinsner, Intel CFO\nBusiness Highlights\nProcess Leadership\nLine of sight to completing \n5 nodes in 4 years; unveiled \nprocess roadmap beyond 5N4Y\n•\t Intel 7, Intel 4 and Intel 3: In high-volume manufacturing",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "005d91a83b4afe0e60ac20b735710157",
+    "text": "•\t Intel 7, Intel 4 and Intel 3: In high-volume manufacturing \n•\t Intel 20A: Begins production ramp in 2H’24 with \nArrow Lake\n•\t Intel 18A: Expect to release 1.0 PDK in Q2’24, with \nproduction ramp of lead products, Clearwater Forest \nand Panther Lake in 1H’25\n•\t Unveiled process technology roadmap beyond five-\nnodes-in-four-years, adding Intel 14A to leading-edge \nnode lineup following Intel 18A\n•\t Announced several specialized node evolutions \nfor Intel 3, Intel 18A, and Intel 14A to enable \ncustomers to develop and deliver products \ntailored to their specific needs\n•\t Engaged with nearly every foundry customer in \nthe industry on advanced packaging, including \n5 design awards",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "a1e5383743a92bf66a6e016563d5f3b9",
+    "text": "the industry on advanced packaging, including \n5 design awards\nExecution Milestones\nEstablished a world-class fab \nand fabless leader within Intel \nby standing up Intel Foundry\nand Intel Products \n•\t Launched Intel Foundry, the world’s first systems \nfoundry for the AI era, offering full-stack optimization \nfrom the factory network to software \n•\t At Intel Vision, the company introduced the \nIntel® Gaudi® 3 AI accelerator, projected to deliver \non-average 50% faster inference and 40% greater \ninference power efficiency than Nvidia H1001  on \nleading GenAI models. \n•\t Shipped more than 5 million AI PCs since the December \n2023 launch of Intel® Core™ Ultra processors",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "d4bd48069a7d8d3223eca6240fd1d8f1",
+    "text": "2023 launch of Intel® Core™ Ultra processors \n•\t Announced the Ultra Ethernet Consortium (UEC), \nthe Intel-led open Ethernet networking for AI fabric \n•\t Announced the Open Platform for Enterprise AI, \nwhich emphasizes enterprise data and Xeon plus \nGaudi use cases like RAG \n•\t Unveiled Intel Xeon 6, the new brand for Intel’s next-\ngeneration processors for data centers, cloud and edge\nCustomer and\nPartner Wins\nMicrosoft and a major U.S. \naerospace and defense company \ncommitted to Intel 18A, bringing \nIntel Foundry’s external customer \ncommitments on the node to six \n•\t Amazon Web Services, Lenovo, Red Hat, SAP, and \nWipro supported the Intel Edge Platform launch at",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "6f6e52831fd28079676a74db139d76c7",
+    "text": "Wipro supported the Intel Edge Platform launch at \nMobile World Congress 2024 \n•\t Dell Technologies plans to integrate Gaudi 3 chips into \nits purpose-built AI system, the PowerEdge XE9680. \nThe Gaudi 3 version of Dell’s server will be accessible \nwithin Intel Developer Cloud prior to launch \n•\t NAVER, Dell Technologies, Bosch and Supermicro, \namong many others committed to the Intel® Gaudi® 3 \nAI accelerator as customers and partners\n•\t Seekr runs production workloads on Intel Gaudi 2, \nIntel® Data Center GPU Max Series and Intel® Xeon® \nprocessors in the Intel® Tiber™ Developer Cloud for LLM \ndevelopment and production deployment support \n•\t Google Cloud announced its new general purpose",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "f629166fe411f1bf601e0dd5625d7083",
+    "text": "•\t Google Cloud announced its new general purpose \nvirtual machine instances, C4 and N4, the first cloud \nvirtual machines in the market to be powered by Intel \n5th Gen Xeon processors \n•\t Synopsys, Cadence, Siemens, Ansys, Lorentz and \nKeysight disclosed tool qualification and/or IP readiness \nto enable foundry customers to accelerate advanced \nchip designs on Intel 18A \n•\t The U.S. Department of Defense awarded Intel Foundry \nphase three of its Rapid Assured Microelectronics \nPrototypes – Commercial (RAMP-C) program\nFinancial and\nOperational\nAchievements\n•\t Announced single largest grant award to date from the \nU.S. CHIPS and Science Act, with up to $8.5B in direct",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "70aa0a8a17f69bf9d98249eb151b4a14",
+    "text": "U.S. CHIPS and Science Act, with up to $8.5B in direct \nfunding and $11B in federal loan eligibility, in addition to \nmore than $25B in advanced manufacturing tax credits\n•\t Implemented the foundry operating model, designed \nto drive greater transparency, accountability and\nfocus on costs \n•\t Hosted industry’s first Sustainability Summit, \nunderscoring our commitment to providing a \ngeographically diverse, resilient, secure and sustainable \nsupply of semiconductors \n•\t Introduced the rebranded Altera, an Intel Company, \nformerly Intel’s Programmable Solutions Group",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "799e924d2777fc57b1151ac8ebd3a370",
+    "text": "formerly Intel’s Programmable Solutions Group \nAbbreviations: Q1 (first quarter); YoY (year over year); GAAP (general accepted accounting principles); EPS (earnings per share).\n1 NV H100 comparison based on NVIDIA-published data as of March 28, 2024. Reported numbers are per GPU. Vs Intel® Gaudi® 3 projections for LLAMA2-7B, LLAMA2-70B & Falcon 180B. Power efficiency for both Nvidia and Gaudi 3 based on internal estimates. Results may vary.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "f7f65005513552bf8074d927fde7b727",
+    "text": "Q1’24 non-GAAP EPS attributable to Intel ($0.18) is Q1’24 GAAP EPS attributable to Intel ($-0.09) after adjustment for acquisition-related adjustments ($+0.06), share-based compensation ($+0.28), restructuring and other charges ($+0.08), (gains) losses on equity investments, \nnet ($-0.05), (gains) losses from divestiture ($-0.01), adjustments attributable to non-controlling interest ($0.00) and income tax effects ($-0.09).\nQ2’24 non-GAAP Outlook EPS attributable to Intel ($0.10) is Q2’24 GAAP Outlook EPS attributable to Intel ($-0.05) after adjustment for acquisition-related adjustments ($+0.06), share-based compensation ($+0.22), (gains) losses from divestiture ($-0.01), adjustments",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  },
+  {
+    "chunk_id": "f203e4918f349250b7248a03134bed33",
+    "text": "attributable to non-controlling interest ($0.00) and income tax effects ($-0.12).\nQ2’24 non-GAAP Outlook Gross Margin (43.5%) is Q2’24 GAAP Outlook Gross Margin (40.2%) after adjustment for acquisition-related adjustments (1.7%) and share-based compensation (1.6%).\nFor a full explanation of these non-GAAP measures, see Intel’s Q1’24 earnings release at intc.com.\nGross margin and EPS outlooks are based on the mid-point of the revenue range. Our Q1’24 and FY’24 outlooks and other statements about future plans, expectations, and opportunities, including with respect to future products and technologies, are forward-looking statements.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Intel Q1 2024 Financial Report.pdf"
+  }
+]

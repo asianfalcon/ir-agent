@@ -158,7 +158,19 @@ def _classify_report(file_name: str) -> str:
 
 
 def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -> dict[str, Any]:
-    ticker = ticker_override or _normalize_ticker(text) or _normalize_ticker(path.stem)
+    # ticker 优先级：显式 override > 所在公司目录 > 正文 > 文件名。
+    # 目录权威：reports/AMD/、reports/英特尔/ 等以公司命名的目录，其下文件的归属由
+    # 目录决定，绝不让正文里对竞品的提及把 AMD 财报推成 INTC（曾导致 AMD 2023 文件
+    # 混入 Intel 召回池）。目录名映射不出 ticker（如"美股""TMT"）时才回落到正文推断。
+    dir_ticker = None
+    for parent in path.parents:
+        if parent.name in ("reports", "announcements", "news", "expert_minutes"):
+            break
+        cand = _normalize_ticker(parent.name)
+        if cand:
+            dir_ticker = cand
+            break
+    ticker = ticker_override or dir_ticker or _normalize_ticker(text) or _normalize_ticker(path.stem)
 
     # walk up to find the evidence category dir (reports / announcements / news)
     source_map = {"reports": "broker_report", "announcements": "announcement", "news": "web_news"}
@@ -198,6 +210,10 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
           3) -/_ 分隔的 6 位 YYMMDD  ...-240803  —— 券商研报把日期放尾部时（补 20 世纪前缀）
         每级都过 _valid_yyyymmdd 校验，挡掉 SEC 流水号(0000050863-25-000052)、
         "Q4 2025" 这类假日期，让它们正确退回 mtime。"""
+        # SEC EDGAR 流水号文件名(0000050863-25-000109)绝无真实日期：其尾部 -25-000109
+        # 会被下面的 yymmdd 规则误读成 20000109。直接放弃文件名日期，交给正文/财季兜底。
+        if _re.match(r"^\d{10}-\d{2}-\d{6}", stem):
+            return None
         m = _re.match(r"(\d{8})", stem)
         if m and _valid_yyyymmdd(m.group(1)):
             return m.group(1), "prefix"
@@ -244,22 +260,44 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
                 return cand, "official-release-text"
         return None
 
+    def _date_from_fiscal_period(stem: str) -> tuple[str, str] | None:
+        """末位兜底：从文件名的财季/财年推一个用于排序的代理日期（季度末/年末）。
+        只求跨季度单调可比、能让真正近期的官方文件排在前，不追求真实披露日。
+        命中返回 (yyyymmdd, 'fiscal-proxy')。覆盖本语料常见写法：
+          Q1'26 / Q1'2026 / Q1 2024 / 1Q24 / 3Q25 / 4Q23 / 2Q2025 / FY2023 / Full Year 2023。"""
+        qend = {1: "0331", 2: "0630", 3: "0930", 4: "1231"}
+
+        def _yr(yy: str) -> int:
+            return int(yy) if len(yy) == 4 else 2000 + int(yy)
+
+        m = (_re.search(r"[Qq]([1-4])['\s\-_]*((?:20)?\d{2})(?!\d)", stem)
+             or _re.search(r"([1-4])[Qq]['\s\-_]*((?:20)?\d{2})(?!\d)", stem))
+        if m:
+            cand = f"{_yr(m.group(2)):04d}{qend[int(m.group(1))]}"
+            if _valid_yyyymmdd(cand):
+                return cand, "fiscal-proxy"
+        m = _re.search(r"(?:FY|Full[\s_]*Year[\s_]*)((?:20)?\d{2})(?!\d)", stem, _re.IGNORECASE)
+        if m:
+            cand = f"{_yr(m.group(1)):04d}1231"
+            if _valid_yyyymmdd(cand):
+                return cand, "fiscal-proxy"
+        return None
+
     hit = _date_from_name(path.stem)
     if not hit and data_source == "company_filing":
         hit = _date_from_official_text(text)
+    if not hit:
+        hit = _date_from_fiscal_period(path.stem)
     if hit:
         pub_date, _date_src = hit
         if _date_src != "prefix":
             print(f"[metadata] pub_date {pub_date} from {_date_src} (非标准前缀): {path.name}", flush=True)
     else:
-        # ponytail: no valid date anywhere in filename (e.g. SEC accession-number PDFs
-        # like "0000050863-25-000052.pdf", or "Q4 2025 Earnings Deck.pdf") — fall back
-        # to file mtime formatted as YYYYMMDD, not a raw epoch string. Still not the true
-        # publish date, but at least a valid/sortable/comparable date string. mtime can be
-        # wildly wrong (re-download stamps a future date) — log it so it's auditable, and
-        # for 券商研报 the right fix is to rename to the 20240803- convention, not trust this.
-        pub_date = _date.fromtimestamp(path.stat().st_mtime).strftime("%Y%m%d")
-        print(f"[metadata] pub_date {pub_date} from FILE MTIME (文件名无有效日期，可能不准): {path.name}", flush=True)
+        # 绝不退回 mtime：mtime=入库/下载日是纯噪声，会让历史文件以假的"今天"抢占
+        # "越新越可信"权重（曾让 2023 年 AMD 电话会成为 INTC 的"最新官方指引"）。
+        # 留空更安全：空日期在排序中视为最旧，不会劫持"最新"，只是不加分。
+        pub_date = ""
+        print(f"[metadata] pub_date 留空（文件名/正文/财季均无可靠日期，不退回mtime）: {path.name}", flush=True)
 
     try:
         source_file = str(path.relative_to(ROOT))
@@ -292,6 +330,11 @@ def chunk_text(text: str, metadata: dict) -> list[dict]:
 
 def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
     suffix = path.suffix.lower()
+    # 只处理可抽文本的格式。.zip(XBRL)/.xlsx/.DS_Store 等二进制若走 read_text 兜底会被
+    # 当乱码切片污染向量库（rescan glob '*' 会把它们也排进来）。无解析器直接跳过。
+    if suffix not in (".pdf", ".html", ".htm", ".md", ".txt"):
+        print(f"[processor] skip 非文本文件（无解析器）: {path.name}")
+        return []
     if suffix == ".pdf":
         text = _extract_pdf(path)
     elif suffix in (".html", ".htm"):

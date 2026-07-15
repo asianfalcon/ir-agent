@@ -1,0 +1,299 @@
+[
+  {
+    "chunk_id": "577d9afb9701d2896c6c6557e2c402bd",
+    "text": "RESULTS \n \nCAUTIONARY STATEMENT \nThis presentation contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD), such as the features, functionality, performance, availability, timing and expected benefits of AMD products; \nAMD’s expected second quarter 2024 financial outlook, including revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; \nAMD’s ability to expand Data Center and AI leadership; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "5a218d5c1ab0086927cb5b23cd72e292",
+    "text": "1995. Forward-looking statements are commonly identified by words such as \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. Investors are cautioned that the \nforward-looking statements in this presentation are based on current beliefs, assumptions and expectations, speak only as of the date of this presentation and involve risks and uncertainties that could cause actual \nresults to differ materially from current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and generally beyond AMD's control, that",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "738094265780ee3b97360c7b9056fc2f",
+    "text": "could cause actual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could cause actual results \nto differ materially from current expectations include, without limitation, the following: Intel Corporation’s dominance of the microprocessor market and its aggressive business practices; economic and market uncertainty; \ncyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; loss of a significant customer; public health crises, such as pandemics and epidemics; competitive",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "27a096f824fc03dcc2930aa004005677",
+    "text": "markets in which AMD’s products are sold; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; unfavorable currency exchange rate fluctuations; ability \nof third party manufacturers to manufacture AMD's products on a timely basis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, substrates or manufacturing \nprocesses; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to introduce products on a timely basis with expected features and performance levels; AMD's ability to generate revenue",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "9f779d67d771e2a14ecc3c08ae65f374",
+    "text": "from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; potential difficulties in operating AMD’s newly upgraded \nenterprise resource planning system; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products in a timely manner; \nAMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors'",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "296631e854204c81ef4307664653bb78",
+    "text": "support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of modification or interruption of AMD’s internal business processes and \ninformation systems; compatibility of AMD’s products with some or all industry-standard software and hardware; costs related to defective products; efficiency of AMD's supply chain; AMD's ability to rely on third party \nsupply-chain logistics functions; AMD’s ability to effectively control sales of its products on the gray market; long-term impact of climate change on AMD’s business; impact of government actions and regulations such as",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "c1ec142db56affcb3650ef66d7ad7050",
+    "text": "export regulations, tariffs and trade protection measures; AMD’s ability to realize its deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals-\nrelated provisions and other laws or regulations; evolving expectations from governments, investors, customers and other stakeholders regarding corporate responsibility matters; issues related to the responsible use of \nAI; impact of acquisitions, joint ventures and/or investments on AMD’s business and AMD’s ability to integrate acquired businesses; impact of any impairment of the combined company’s assets; restrictions imposed by",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "34d65b17bb74a0ca0c69557b83a50a6c",
+    "text": "agreements governing AMD’s notes, the guarantees of Xilinx’s notes and the revolving credit facility; AMD's indebtedness; AMD's ability to generate sufficient cash to meet its working capital requirements or generate \nsufficient revenue and operating cash flow to make all of its planned R&D or strategic investments; political, legal and economic risks and natural disasters; future impairments of technology license purchases; AMD’s \nability to attract and retain qualified personnel; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "ecf39766ae75c679700df4955cd19169",
+    "text": "limited to AMD’s most recent reports on Forms 10-K and 10-Q. \nNON-GAAP FINANCIAL MEASURE \nIn this presentation, in addition to GAAP financial results, AMD has provided non-GAAP financial measures including non-GAAP gross profit and margin, non-GAAP operating expenses, non-GAAP operating income, \nnon-GAAP net income and non-GAAP diluted earnings per share. AMD uses a normalized tax rate in its computation of the non-GAAP income tax provision to provide better consistency across the reporting periods.",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "acd28ab3be39bc99e844792629c567b5",
+    "text": "For fiscal 2024, AMD uses a projected non-GAAP tax rate of 13%, which excludes the tax impact of pre-tax non-GAAP adjustments. AMD is providing these financial measures because it believes this non-GAAP \npresentation makes it easier for investors to compare its operating results for current and historical periods and also because AMD believes it assists investors in comparing AMD’s performance across reporting periods \non a consistent basis by excluding items that it does not believe are indicative of its core operating performance. The non-GAAP financial measures disclosed in this presentation should be viewed in addition to and not",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "8978aee62effc1f7b287e5ea7a0e92a3",
+    "text": "as a substitute for or superior to AMD’s reported results prepared in accordance with GAAP and should be read only in conjunction with AMD’s Consolidated Financial Statements prepared in accordance with GAAP. \nThese non-GAAP financial measures referenced are reconciled to their most directly comparable GAAP financial measures in the Appendices at the end of this presentation. This presentation also contains forward-\nlooking non-GAAP measures concerning AMD’s financial outlook such as gross margin, operating expenses and tax rate. These forward-looking non-GAAP measures are based on current expectations as of April 30, \nExpanding Customer \n& Partner Ecosystem \nData Center \nand AI Growth",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "48fc66261693821f6c6241cf54e66ac5",
+    "text": "Expanding Customer \n& Partner Ecosystem \nData Center \nand AI Growth \nStrong \nFinancial Foundation \nLeadership \nProduct Portfolio \nOUR LEADERSHIP TECHNOLOGY \n \nSoftware Enablement \nOpen-source software \noptimized for performance \nacross heterogenous solutions \nData Center Leadership \nDelivering innovation in \nAI, cloud, enterprise and \naccelerated computing \nAdvanced Technology \nDriving leadership \nprocess technology and \n3D chiplet packaging \n \nBroad IP Portfolio \nExecuting leadership CPU, \nGPU, DPU, FPGA, Adaptive \nSoC and AI products \n \nOUR LEADERSHIP PRODUCTS \nEmbedded \nLeadership FPGAs, \nAdaptive SoCs and SoMs, and \nembedded CPUs and GPUs \nfor a broad set of markets \nGaming",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "f4efb8fe9e5fe4cac4c269495b0a5e78",
+    "text": "embedded CPUs and GPUs \nfor a broad set of markets \nGaming \n   \nTop-to-bottom desktop and \nnotebook GPUs, game console \nand semi-custom SoCs \nClient \nPowerful and efficient CPUs \nand APUs for notebook and \ndesktop PCs and commercial \nworkstations \nData Center \nBroad portfolio of data center \nand AI solutions with server \nCPUs, GPUs, FPGAs, DPUs \nand Adaptive SoCs \n \n \n \n \n   \n \n \n \n \nAMD Instinct TM \nMI300X \nAccelerators \nLeadership accelerator \nfor generative AI, \nLLMs and inferencing \nAMD Instinct MI300 \nAccelerators \n4th Gen AMD EPYCTM \nProcessors \nBroad ecosystem of OEM \nand solution partners \nCloud \nEnterprise \nAMD VersalTM AI \nEdge Adaptive SoCs \nSingle Chip Intelligence",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "faa2ca958a0be045c6feb7aad846b957",
+    "text": "AMD VersalTM AI \nEdge Adaptive SoCs \nSingle Chip Intelligence \nat the Edge for all \nEmbedded Markets \nEmbedded \nAMD Instinct \nMI300A \nAccelerators \nWorld’s first data center \nAPU for HPC and AI \nHPC \nAMD RyzenTM 8040 \nMobile Processors \nwith Ryzen AI \nTechnology leadership with \nupgraded on-die AI neural \nprocessing unit (NPU) \nPC \nQ1 2024 FINANCIAL RESULTS – APRIL 30, 2024 \n \n \n  \nREVENUE Q1 2024 \n▪Revenue of $5.5 billion increased 2% y/y  \n▪Revenue growth in Data Center and \nClient segments was partially offset by \nlower revenue in Gaming and Embedded \nGROSS MARGIN Q1 2024 \n1. See Appendices for GAAP to Non-GAAP reconciliation \n▪\nIncrease driven by higher revenue contribution from",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "97c8d1768e4d4c42639ff7c9db9cf43f",
+    "text": "▪\nIncrease driven by higher revenue contribution from \nData Center and Client segments, partially offset by \nlower Embedded and Gaming segments revenue \nNon-GAAP\n \nGAAP \n▪\nIncrease driven by higher revenue contribution from \nData Center and Client segments, lower amortization of \nacquisition-related intangible assets, partially offset by \n \nOPERATING INCOME (LOSS) Q1 2024 \n1. See Appendices for GAAP to Non-GAAP reconciliation \nGAAP \nNon-GAAP\n \n▪\nIncrease driven by higher gross margin and lower \namortization of acquisition-related intangible assets, \npartially offset by increased operating expenses \n▪\n \n \nEARNINGS (LOSS) PER SHARE Q1 2024 \n1.",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "ad2b9ab8c9c3a4657d1beb6dfb71e672",
+    "text": "▪\n \n \nEARNINGS (LOSS) PER SHARE Q1 2024 \n1. \nSee Appendices for GAAP to Non-GAAP reconciliation \nGAAP \nNon-GAAP \n▪\nGAAP net income of $123 million \n▪\nGAAP EPS of $0.07 primarily driven by higher gross \nmargin and lower amortization of acquisition-related \nintangible assets, partially offset by increased \noperating expenses \n \n \n \n▪\nNon-GAAP net income of $1.0 billion \n▪\nNon-GAAP EPS of $0.62, up 3%, primarily driven by \n$ in millions, except per share data and % \nQ1’24 \nQ1’23 \nY/Y \nQ4’23 \nQ/Q \nRevenue \n$5,473 \n$5,353 \nUp 2% \n$6,168 \nDown 11% \nGross Profit \n$2,560 \n$2,359 \nUp 9% \n$2,911 \nDown 12% \nGross Margin \n47% \n44% \nUp 3 ppts \n47% \nFlat \nOperating Expenses \n$2,537 \n$2,514 \nFlat \n$2,575",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "0876304dde2d7effcd47b2e8a9f36bcb",
+    "text": "47% \nFlat \nOperating Expenses \n$2,537 \n$2,514 \nFlat \n$2,575 \nFlat \nOperating Expense/Revenue % \n46% \n47% \nDown 1 ppt \n42% \nUp 4 ppts \nOperating Income (Loss) \n$36 \n$(145) \nUp 125% \n$342 \nDown 89% \nOperating Margin \n1% \n(3)% \nUp 4 ppts \n6% \nDown 5 ppts \nNet Income (Loss) \n$123 \n$(139) \nUp 188% \n$667 \nDown 82% \nEarnings (Loss) Per Share \n$0.07 \n$(0.09) \nUp 178% \n$0.41 \n$ in millions, except per share data and % \nQ1’24 \nQ1’23 \nY/Y \nQ4’23 \nQ/Q \nRevenue \n$5,473 \n$5,353 \nUp 2% \n$6,168 \nDown 11% \nGross Profit \n$2,861 \n$2,675 \nUp 7% \n$3,133 \nDown 9% \nGross Margin \n52% \n50% \nUp 2 ppts \n51% \nUp 1 ppt \nOperating Expenses \n$1,741 \n$1,587 \nUp 10% \n$1,727 \nFlat \nOperating Expense/Revenue % \n32% \n30%",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "5d076250166bf6c099134fba4785a88e",
+    "text": "$1,587 \nUp 10% \n$1,727 \nFlat \nOperating Expense/Revenue % \n32% \n30% \nUp 2 ppts \n28% \nUp 4 ppts \nOperating Income \n$1,133 \n$1,098 \nUp 3% \n$1,412 \nDown 20% \nOperating Margin \n21% \n21% \nFlat \n23% \nDown 2 ppts \nNet Income \n$1,013 \n$970 \nUp 4% \n$1,249 \nDown 19% \nEarnings Per Share \n$0.62 \n$0.60 \nUp 3% \n$0.77 \nDown 19% \nQ1 2024 SUMMARY P&L | NON-GAAP \nQ1 2024 SUMMARY BALANCE SHEET ITEMS \n($ in millions) \nQ1’24 \nQ4’23 \nQ/Q \nCash, Cash Equivalents and \nShort-term Investments \n$6,035 \n$5,773 \nUp 5% \nAccounts Receivable, Net \n$5,038 \n$5,376 \nDown 6% \nInventories \n$4,652 \n$4,351 \nUp 7% \nTotal Debt \n$2,468 \nQ1 2024 SEGMENT RESULTS \n($ in millions) \nQ1’24 \nQ1’23 \nY/Y \nQ4’23 \nQ/Q \nData Center",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "220bb72a5b1256f7a025c577b79f47e2",
+    "text": "($ in millions) \nQ1’24 \nQ1’23 \nY/Y \nQ4’23 \nQ/Q \nData Center \nNet Revenue \n$2,337 \n$1,295 \nUp 80% \n$2,282 \nUp 2% \nOperating Income \n$541 \n$148 \nUp 266% \n$666 \nDown 19% \nClient \nNet Revenue \n$1,368 \n$739 \nUp 85% \n$1,461 \nDown 6% \nOperating Income (Loss) \n$86 \n$(172) \nUp 150% \n$55 \nUp 56% \nGaming \nNet Revenue \n$922 \n$1,757 \nDown 48% \n$1,368 \nDown 33% \nOperating Income \n$151 \n$314 \nDown 52% \n$224 \nDown 33% \nEmbedded \nNet Revenue \n$846 \n$1,562 \nDown 46% \n$1,057 \nDown 20% \nOperating Income \n$342 \n$798 \nDown 57% \nDATA CENTER SEGMENT Q1 2024 \n▪Record data center GPU sales with MI300 \nsurpassing $1B in cumulative sales since Q4’23 \nlaunch \n▪Nearly 900 public cloud instances powered by AMD",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "3aa97c987a681f237b629c361bce1f75",
+    "text": "launch \n▪Nearly 900 public cloud instances powered by AMD \nEPYC processors now available from AWS, \nGoogle, Oracle Cloud, Microsoft Azure and others \n▪Enterprise adoption of EPYC CPUs accelerating \nwith key deployments at American Airlines, DBS, \nEmirates Bank, Shell and ST Micro \n▪Released ROCm 6.1 with expanded open-source \nlibraries and frameworks and significantly \nincreasing generative AI performance \n▪Next-gen “Turin” EPYC processors, based on “Zen \n5” core, on track to launch later this year \nStrategic Highlights \n \n \n \n \n \n \nRevenue \nOperating Margin \nRevenue \n$2.3 Billion \nUp 80% y/y \nOperating Income \n$541 Million \nvs. $148 Million a year ago \nPrimarily due to operating leverage",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "c391bcb4d6ff10f47858a73aa3855f08",
+    "text": "vs. $148 Million a year ago \nPrimarily due to operating leverage \ndriven by higher revenue \nStrong growth in both AMD Instinct GPUs \nCLIENT SEGMENT Q1 2024 \n▪HP and Lenovo announced new high-performance \nlaptops powered by the latest Ryzen PRO 8040 \nSeries CPUs \n▪Launched Ryzen PRO 8000 Series desktop CPUs, \nthe first processors with dedicated, on-chip AI \naccelerators for commercial desktop PCs \n▪150 ISVs on track to be developing for AMD AI PCs \nby the end of 2024 \n▪Next-gen “Strix Point” processors on track to \nlaunch second half 2024 \nStrategic Highlights \n \n \n \n  \n \nRevenue \nOperating Margin \nRevenue \n$1.4 Billion \nUp 85% y/y \nPrimarily driven by AMD Ryzen \n8000 Series processor sales",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "f0e5441a9081db7b19a6825f3274ecf5",
+    "text": "Primarily driven by AMD Ryzen \n8000 Series processor sales \nOperating Income \n$86 Million \nvs. $172 Million Loss \na year ago \n \n \n \nGAMING SEGMENT Q1 2024 \n▪Global availability of the RadeonTM RX 7900 \nGRE graphics card providing 1440p/4K \nperformance \n▪Released FidelityFX  \nSuper Resolution 3.1 \noffering significant image quality improvements \nfor gamers \n▪Launched AMD Fluid Motion Frames enabling \nframe generation and increased performance on \nRadeon RX 6000 and Radeon RX 7000 Series \ngraphics cards \nStrategic Highlights \n \n \n \nRevenue \nOperating Margin \nRevenue \n$922 Million \nDown 48% y/y \nOperating Income \n$151 Million \nvs. $314 Million a year ago \nPrimarily due to lower revenue",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "d91b694e88f520b773ec2d66c3052cbd",
+    "text": "vs. $314 Million a year ago \nPrimarily due to lower revenue\nDue to lower semi-custom \nEMBEDDED SEGMENT Q1 2024 \n▪Launched Versal AI Edge Series Gen 2 SoCs that \ncombine multiple compute engines on a single chip \nfor AI-driven embedded systems \n▪Subaru adopted Versal AI Edge Series Gen 2 \ndevices to power their next-gen EyeSight ADAS \nvision system \n▪Sony Semiconductor Solutions selected Artix  \n-7 \nFPGA and ZynqTM UltraScale+TM MPSoC for its \nLiDAR automotive reference designs \nStrategic Highlights \n \n \n \n \nRevenue \nOperating Margin \nRevenue \n$846 Million \nDown 46% y/y \nPrimarily due to customers continuing \nto manage their inventory levels \nOperating Income \n$342 Million",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "6b8d3f2efa1fe0b8fa3f01aa036aef80",
+    "text": "to manage their inventory levels \nOperating Income \n$342 Million \nvs. $798 Million a year ago \n \nPrimarily due to lower revenue \n \n($ in millions) \nQ2’24 \nRevenue \n~$5.7 Billion, \n+/- $300 Million \nGross Margin \n~53% \nOperating Expenses \n~$1.8 Billion \nEffective Tax Rate \n~13% of pre-tax income \nDiluted Share Count² \n~1.64 Billion shares \nFINANCIAL OUTLOOK – NON-GAAP\n1. \n1.  See Cautionary Statement on Slide 2. These forward-looking outlook statements and non-GAAP measures are based on current expectations as of April 30, 2024, and assumptions and beliefs that",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "045216ff151b784f234d01b72484bd62",
+    "text": "involve numerous risks and uncertainties. AMD undertakes no intent or obligation to publicly update or revise its outlook statements as a result of new information, future events or otherwise, except as \nmay be required by law. All items, except revenue, are on a non-GAAP basis. Adjustments to arrive at the GAAP financial outlook typically include stock-based compensation, amortization of acquired \nintangible assets, income tax provision, and other non-recurring items such as impairment charges and acquisition-related costs. The timing and impact of such adjustments are dependent on future",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "66fb615c4b603eacb0e51c771f2773e7",
+    "text": "events that are typically uncertain or outside of AMD's control, therefore, a reconciliation to equivalent GAAP measures is not practicable at this time. \nData Center Segment \nRevenue $2.3B \nUp 80% y/y \nGross Margin 47% \nNon-GAAP \nGross Margin 52% \nEPS $0.07 \nNon-GAAP EPS $0.62 \nRevenue \n$5.5B \nUp 2% y/y \nQ1 2024 SUMMARY\nRECORD DATA CENTER SEGMENT REVENUE \nDRIVEN BY STRONG AMD INSTINCT GPU RAMP \nCORPORATE RESPONSIBILITY AT AMD \nGovernance \nIntegrating corporate responsibility and \ngovernance across product design, supply \nchain, operations and external engagement \nSocial \nFostering a culture of diversity, belonging \nand inclusion, partnering with suppliers and",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "70e7c5065dc03dbd8e26338f0c255277",
+    "text": "and inclusion, partnering with suppliers and \npositively impacting our communities \nEnvironmental \nAdvancing environmental solutions in our \nproducts, supply chain and operations, while \naccelerating energy efficiency for IT users \n \n \n \n \n \n \nLarge and \nCompelling \nTAM \nWorld-Class \nExecution \nand Focus \nTechnology \nLeadership \nExpanding \nData Center and \nAI Leadership \nStrong \nBalance Sheet \nRECONCILIATION OF GAAP TO NON-GAAP GROSS PROFIT AND GROSS MARGIN \n($ in millions, except %) (Unaudited) \nQ1’24 \nQ1’23 \nQ4’23 \nGAAP gross profit \n$2,560 \n$   2,359 \n$   2,911 \nGAAP gross margin \n47% \n44% \n47% \nStock-based compensation \nAmortization of acquisition-related intangibles",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "e93deabdef39ade523734cc123c59f95",
+    "text": "Amortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \n-\nInventory loss at contract manufacturer (2) \n-\n-\nNon-GAAP gross profit \n$2,861 \n$   2,675 \n$   3,133 \nNon-GAAP gross margin \n52% \n50% \n51% \nRECONCILIATION OF GAAP TO NON-GAAP OPERATING EXPENSES \n($ in millions, except %) (Unaudited) \nQ1’24 \nQ1’23 \nQ4’23 \nGAAP operating expenses \n$2,537 \n$ 2,514  \n$ 2,575  \nGAAP operating expenses/revenue % \n46% \n47% \n42% \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \nNon-GAAP operating expenses \n$1,741 \n$ 1,587  \n$ 1,727  \nNon-GAAP operating expenses/revenue % \n32% \n30% \n28% \nAPPENDICES",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "82f8da066f0b15dadcfd31aeaa596058",
+    "text": "Non-GAAP operating expenses/revenue % \n32% \n30% \n28% \nAPPENDICES \n(1) Acquisition-related and other costs primarily comprised of transaction costs, purchase price adjustments for inventory, certain compensation charges, contract termination and \nAPPENDICES \nRECONCILIATION OF GAAP OPERATING INCOME (LOSS) TO NON-GAAP OPERATING INCOME \n($ in millions, except %) (Unaudited) \nQ1’24 \nQ1’23 \nQ4’23 \nGAAP operating income (loss) \n$   36 \n$   (145) \n$   342 \nGAAP operating margin \n1% \n(3%) \n6% \nStock-based compensation \nAmortization of acquisition-related intangibles \nAcquisition-related and other costs (1) \nInventory loss at contract manufacturer (2) \n-\n-\nNon-GAAP operating income \n$   1,133",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "55d257bbdd863aa2d6e78d1c7e7d7550",
+    "text": "-\n-\nNon-GAAP operating income \n$   1,133  \n$   1,098  \n$   1,412  \nNon-GAAP operating margin \n21% \n21% \n23% \n(1) Acquisition-related and other costs primarily comprised of transaction costs, purchase price adjustments for inventory, certain compensation charges, contract termination and \nRECONCILIATION OF GAAP TO NON-GAAP NET INCOME (LOSS) / EARNINGS (LOSS) PER SHARE \n(1) Acquisition-related and other costs primarily comprised of transaction costs, purchase price adjustments for inventory, certain compensation charges, contract termination and \nworkforce rebalancing charges.",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "e60b392c92bec9d65c8011d6f797527a",
+    "text": "workforce rebalancing charges. \n(2) Inventory loss at contract manufacturer is related to an incident at a third-party contract manufacturing facility. \nAPPENDICES \n(Millions, except per share data) (Unaudited) \nQ1’24 \nQ1’23 \nQ4’23 \nGAAP net income (loss) / earnings (loss) per share \n$ 123 $ 0.07 $ (139) $ (0.09) \n$ 667 $ 0.41 \n(Gains) losses on equity investments, net \n– \n(1)  \n– \n– \nStock-based compensation \n0.23  \n0.19  \n0.23  \nEquity income in investee \n(7)  \n– \n(1)  \n– \n(6)  \n– \nAmortization of acquisition-related intangibles \n0.38 \n0.51 \n0.39 \nAcquisition-related and other costs (1) \n0.02 \n0.07 \n0.04 \nInventory loss at contract manufacturer (2) \n0.04 \n– \n– \n– \n– \nIncome tax provision",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "e0551c4530ff03e1c1acb0ad97eac5b4",
+    "text": "0.04 \n– \n– \n– \n– \nIncome tax provision \n(203) \n(0.12) \n(132) \n(0.08) \n(483) \n(0.30) \nNon-GAAP net income / earnings per share \n$1,013 $ 0.62 \n$970 $ 0.60 $1,249 $ 0.77 \nShares used in earnings per share calculation \nShares used in per share calculation (GAAP) \n1,639 \n1,611 \n1,628 \nShares used in per share calculation (Non-GAAP) \n1,639 \nShares (millions) \n(1) \nQ1’24 \nQ2’24 \nActual \nEstimate \nBasic shares \n1,617 \n1,619 \nDilutive impact from employee equity grants (2) \nDiluted shares \n1,639 \n1,641 \nAPPENDICES \nSHARE COUNT OVERVIEW",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  },
+  {
+    "chunk_id": "14fc49513674c69e682b0bd94e349ba1",
+    "text": "Diluted shares \n1,639 \n1,641 \nAPPENDICES \nSHARE COUNT OVERVIEW \nThe table above provides actual share count for Q1’24 and an estimate of share count to use when calculating GAAP and non-GAAP diluted earnings per share for Q2’24. \n(1) Share counts are weighted average shares.",
+    "ticker": "INTC.US",
+    "pub_date": "20260713",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/AMD Q1'24 Earnings Slides.pdf"
+  }
+]

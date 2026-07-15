@@ -1,0 +1,326 @@
+[
+  {
+    "chunk_id": "8fe410340250b5e78a7d32951660e585",
+    "text": "(Millions except per share amounts and percentages) (Unaudited)\nQuarter Group\nQuarter End Date\nSeptember 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022\nSeptember 30, \n2023\nSeptember 24, \n2022\nNet revenue\n5,800\n$                 \n5,359\n$                 \n5,565\n$                 \n16,512\n$               \n18,002\n$               \nCost of sales\n2,843\n                   \n2,704\n                   \n2,799\n                   \n8,236\n                   \n8,797\n                   \nAmortization of acquisition-related intangibles\n                      \n                      \n                      \n                      \n1,005\n                   \nTotal cost of sales\n3,053\n                   \n2,916",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "88642406b1bfd4dbae26f3c4ad908937",
+    "text": "Total cost of sales\n3,053\n                   \n2,916\n                   \n3,211\n                   \n8,963\n                   \n9,802\n                   \nGross profit\n2,747\n                   \n2,443\n                   \n2,354\n                   \n7,549\n                   \n8,200\n                   \nGross margin\n47%\n46%\n42%\n46%\n46%\nResearch and development\n1,507\n                   \n1,443\n                   \n1,279\n                   \n4,361\n                   \n3,639\n                   \nMarketing, general and administrative\n                      \n                      \n                      \n1,708\n                   \n1,746\n                   \nAmortization of acquisition-related intangibles",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "06d729efb80f0f07bb49a9e8ae0ac7bb",
+    "text": "Amortization of acquisition-related intangibles\n                      \n                      \n                      \n1,449\n                   \n1,499\n                   \nLicensing gain\n(10)\n                      \n(8)\n                        \n(8)\n                        \n(28)\n                      \n(97)\n                      \nOperating income (loss)\n                      \n(20)\n                      \n(64)\n                      \n                        \n1,413\n                   \nInterest expense\n(26)\n                      \n(28)\n                      \n(31)\n                      \n(79)\n                      \n(69)\n                      \nOther income (expense), net",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "b58444a579d05bf5d01f12d062aafd02",
+    "text": "(69)\n                      \nOther income (expense), net\n                        \n                        \n                        \n                      \n(24)\n                      \nIncome (loss) before income taxes and equity income\n                      \n(2)\n                        \n(73)\n                      \n                      \n1,320\n                   \nIncome tax provision (benefit)\n(39)\n                      \n(23)\n                      \n(135)\n                    \n(49)\n                      \n                        \nEquity income in investee\n                          \n                          \n                          \n                        \n                        \nNet income",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "11edba4e8a4fd7093092f36023fd184b",
+    "text": "Net income\n$                    \n$                      \n$                      \n$                    \n1,299\n$                 \nEarnings per share\nBasic\n0.18\n$                   \n0.02\n$                   \n0.04\n$                   \n0.12\n$                   \n0.84\n$                   \nDiluted\n0.18\n$                   \n0.02\n$                   \n0.04\n$                   \n0.11\n$                   \n0.84\n$                   \nShares used in per share calculation\nBasic\n1,616\n                   \n1,612\n                   \n1,615\n                   \n1,613\n                   \n1,542\n                   \nDiluted\n1,629\n                   \n1,627",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "e7d41dd836385a53cffbe48708b9029a",
+    "text": "1,542\n                   \nDiluted\n1,629\n                   \n1,627\n                   \n1,625\n                   \n1,625\n                   \n1,555\n                   \n(Millions)\nSeptember 30, \n2023\nDecember 31, \n2022\n(Unaudited)\n—\nASSETS\nCurrent assets:\n—\nCash and cash equivalents\n3,561\n$                      \n4,835\n$                     \nShort-term investments\n2,224\n                        \n1,020\n                       \nAccounts receivable, net\n5,054\n                        \n4,126\n                       \nInventories\n4,445\n                        \n3,771\n                       \nReceivables from related parties",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "4bbff8b203df4e83e44ee6d5f67cac7e",
+    "text": "Prepaid expenses and other current assets\n1,403\n                        \n1,265\n                       \nTotal current assets\n16,688\n                      \n15,019\n                     \nProperty and equipment, net\n1,566\n                        \n1,513\n                       \nOperating lease right-of-use assets\n                           \n                          \nGoodwill\n24,186\n                      \n24,177\n                     \nAcquisition-related intangibles, net\n21,950\n                      \n24,118\n                     \nInvestment: equity method\n                             \n                            \nDeferred tax assets",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "f7030b9621fd372850011cf5759a9de9",
+    "text": "Deferred tax assets\n                             \n                            \nOther non-current assets\n2,560\n                        \n2,152\n                       \nTotal Assets\n67,626\n$                    \n67,580\n$                   \nLIABILITIES AND STOCKHOLDERS' EQUITY\nCurrent liabilities:\nAccounts payable\n2,245\n$                      \n2,493\n $                      \nPayables to related parties\n                           \nAccrued liabilities\n3,376\n                        \n3,077\nCurrent portion of long-term debt, net\n                           \n–\nOther current liabilities\n                           \nTotal current liabilities\n7,627\n6,369",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "9213f808ba9dee664e19c9386de02409",
+    "text": "Total current liabilities\n7,627\n6,369\nLong-term debt, net of current portion\n1,715\n2,467\nLong-term operating lease liabilities\nDeferred tax liabilities\n1,152\n1,934\nOther long-term liabilities\n1,767\n1,664\nStockholders' equity:\nCapital stock:\nCommon stock, par value\nAdditional paid-in capital\n59,182\n58,005\nTreasury stock, at cost\n(4,235)\n                       \n(3,099)\n                     \nRetained earnings (Accumulated deficit)\n                             \n(131)\n                        \nAccumulated other comprehensive loss\n(50)\n                            \n(41)\n                          \nTotal stockholders' equity\n54,970\n                      \n54,750",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "22a32f006d95fe25209ed204162987c8",
+    "text": "Total stockholders' equity\n54,970\n                      \n54,750\n                     \nTotal Liabilities and Stockholders' Equity\n67,626\n$                    \n(Millions) (Unaudited)\nQuarter Group\nQuarter End Date\nSeptember 30, \n2023\nSeptember 24, \n2022\nSeptember 30, \n2023\nSeptember 24, \n2022\nCash flows from operating activities:\nNet income\n$                \n$                  \n$                \n1,299\n$             \nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation and amortization\n                  \n1,165\n               \n2,654\n               \n2,954\n               \nStock-based compensation\n                  \n                  \n1,010",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "3910eceae8ddc449d846c540697f1836",
+    "text": "1,010\n               \n                  \nAmortization of operating lease right-of-use assets\n                    \n                    \n                    \n                    \nAmortization of inventory fair value adjustment\n-\n                   \n                      \n                      \n                  \nLoss on sale or disposal of property and equipment\n                      \n-\n                   \n                    \n                    \nDeferred income taxes\n(218)\n                 \n(710)\n                 \n(800)\n                 \n(1,328)\n              \n(Gains) losses on equity investments, net\n(3)\n                     \n                      \n(1)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "c2ade7f7d561c79e5a95b8f827478d76",
+    "text": "(3)\n                     \n                      \n(1)\n                     \n                    \nOther\n(23)\n                   \n(5)\n                     \n(43)\n                   \n(9)\n                     \nChanges in operating assets and liabilities\nAccounts receivable, net\n(743)\n                 \n(285)\n                 \n(929)\n                 \n(1,301)\n              \nInventories\n                  \n(723)\n                 \n(674)\n                 \n(997)\n                 \nReceivables from related parties\n                      \n-\n                   \n                      \n(1)\n                     \nPrepaid expenses and other assets\n(143)\n                 \n(588)\n                 \n(380)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "49245fcb8bcae83a05436df05ae41545",
+    "text": "(143)\n                 \n(588)\n                 \n(380)\n                 \n(825)\n                 \nPayables to related parties\n                    \n                    \n(137)\n                 \n                  \nAccounts payable\n(547)\n                 \n                  \n(238)\n                 \n                  \nAccrued and other liabilities\n                  \n                  \n                  \n                  \nNet cash provided by operating activities\n                  \n                  \n1,286\n               \n2,998\n               \nCash flows from investing activities:\nPurchases of property and equipment\n(124)\n                 \n(123)\n                 \n(407)\n                 \n(326)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "6e3183acbb786ffce84b1cf7764f04b5",
+    "text": "(123)\n                 \n(407)\n                 \n(326)\n                 \nPurchases of short-term investments\n(496)\n                 \n(1,779)\n              \n(3,312)\n              \n(2,399)\n              \nProceeds from maturity of short-term investments\n                  \n                  \n1,917\n               \n2,864\n               \nProceeds from sale of short-term investments\n-\n                   \n-\n                   \n                  \n-\n                   \nCash received from acquisition of Xilinx\n-\n                   \n-\n                   \n-\n                   \n2,366\n               \nAcquisitions, net of cash acquired\n(14)\n                   \n-\n                   \n(14)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "e2e1b294d10df04de08f2768878cdfff",
+    "text": "-\n                   \n(14)\n                   \n(1,558)\n              \nOther\n(10)\n                   \n(11)\n                   \n(5)\n                     \n(15)\n                   \nNet cash provided by (used in) investing activities\n                  \n(1,298)\n              \n(1,573)\n              \n                  \nCash flows from financing activities:\nProceeds from debt, net of issuance costs\n-\n                   \n-\n                   \n-\n                   \n                  \nRepayment of debt\n-\n                   \n(312)\n                 \n-\n                   \n(312)\n                 \nProceeds from sales of common stock through employee equity plans",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "0fd9d20c020904e3e664e51703f68b40",
+    "text": "Repurchases of common stock\n(511)\n                 \n(617)\n                 \n(752)\n                 \n(3,452)\n              \nCommon stock repurchases for tax withholding on employee equity plans\n(295)\n                 \n(305)\n                 \n(382)\n                 \n(371)\n                 \nOther\n(1)\n                     \n-\n                   \n(1)\n                     \n(2)\n                     \nNet cash used in financing activities\n(803)\n                 \n(1,233)\n              \n(987)\n                 \n(3,067)\n              \nNet increase (decrease) in cash and cash equivalents\n(280)\n                 \n(1,566)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "f3595b194e79fcbc27584e092aae8a64",
+    "text": "(280)\n                 \n(1,566)\n              \n(1,274)\n              \n                  \nCash and cash equivalents at beginning of period\n3,841\n               \n4,964\n               \n4,835\n               \n2,535\n               \nCash and cash equivalents at end of period\n3,561\n$             \n3,398\n$             \n3,561\n$             \n3,398\n$             \n(Millions) (Unaudited)\nQuarter Group\nSegment and Category Information(1)\nSeptember 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022\nSeptember 30, \n2023\nSeptember 24, \n2022\nData Center\nNet revenue\n1,598\n$                 \n1,321\n$                 \n1,609\n$                 \n4,214\n$                 \n4,388\n$                 \nOperating income",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "8b5b34a82b079f7e46e18e84612e5632",
+    "text": "4,214\n$                 \n4,388\n$                 \nOperating income\n$                    \n$                    \n$                    \n$                    \n1,404\n$                 \nClient \nNet revenue\n1,453\n$                 \n$                    \n1,022\n$                 \n3,190\n$                 \n5,298\n$                 \nOperating income (loss)\n$                    \n(69)\n$                    \n(26)\n$                    \n(101)\n$                  \n1,342\n$                 \nGaming\nNet revenue\n1,506\n$                 \n1,581\n$                 \n1,631\n$                 \n4,844\n$                 \n5,161\n$                 \nOperating income\n$                    \n$                    \n$",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "6e3b099f0753928de64dab5796a11405",
+    "text": "$                    \n$                    \n$                    \n$                    \n$                    \nEmbedded\nNet revenue\n1,243\n$                 \n1,459\n$                 \n1,303\n$                 \n4,264\n$                 \n3,155\n$                 \nOperating income\n$                    \n$                    \n$                    \n2,167\n$                 \n1,553\n$                 \nAll Other\nNet revenue\n-\n$                    \n-\n$                    \n-\n$                    \n-\n$                    \n-\n$                    \nOperating loss\n(1,042)\n$               \n(1,080)\n$               \n(1,320)\n$               \n(3,355)\n$               \n(3,573)\n$               \nTotal\nNet revenue\n5,800",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "6ffa4ba18c0dae1478e9640f16fbbb01",
+    "text": "$               \n(3,573)\n$               \nTotal\nNet revenue\n5,800\n$                 \n5,359\n$                 \n5,565\n$                 \n16,512\n$               \n18,002\n$               \nOperating income (loss)\n$                    \n(20)\n$                    \n(64)\n$                    \n$                      \n1,413\n$                 \n(Blank)\nOther Data\nCapital expenditures\n$                    \n$                    \n$                    \n$                    \n$                    \nAdjusted EBITDA (2)\n1,439\n$                 \n1,224\n$                 \n1,427\n$                 \n3,920\n$                 \n5,533\n$                 \nCash, cash equivalents and short-term investments\n5,785",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "26d24c879ab8b02cb347bbdc21d47900",
+    "text": "Cash, cash equivalents and short-term investments\n5,785\n$                 \n6,285\n$                 \n5,591\n$                 \n5,785\n$                 \n5,591\n$                 \nFree cash flow (3)\n$                    \n$                    \n$                    \n$                    \n2,672\n$                 \nTotal assets\n67,626\n$               \n67,967\n$               \n67,811\n$               \n67,626\n$               \n67,811\n$               \nTotal debt\n2,467\n$                 \n2,467\n$                 \n2,466\n$                 \n2,467\n$                 \n2,466\n$                 \nSee footnotes on the next page\nQuarter Group\nQuarter End Date\nSeptember 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "d411fc6e5168d3d3b50f4d720af6dc90",
+    "text": "September 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022\nSeptember 30, \n2023\nSeptember 24, \n2022\nGAAP net income\n$                   \n$                     \n$                     \n$                   \n1,299\n$                \nInterest expense\n                       \n                       \n                       \n                       \n                       \nOther (income) expense, net\n(59)\n                     \n(46)\n                     \n(22)\n                     \n(148)\n                   \n                       \nIncome tax provision (benefit)\n(39)\n                     \n(23)\n                     \n(135)\n                   \n(49)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "f489104d129aaf5922dbddb6793f9918",
+    "text": "(49)\n                     \n                       \nEquity income in investee\n(3)\n                       \n(6)\n                       \n(4)\n                       \n(10)\n                     \n(11)\n                     \nStock-based compensation\n                     \n                     \n                     \n1,006\n                  \n                     \nDepreciation and amortization\n                     \n                     \n                     \n                     \n                     \nAmortization of acquisition-related intangibles\n                     \n                     \n1,002\n                  \n2,176\n                  \n2,504\n                  \nAcquisition-related and other costs",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "c3d7eb208c5030dcf93ce71f21ddd5a1",
+    "text": "2,504\n                  \nAcquisition-related and other costs\n                       \n                       \n                       \n                     \n                     \nAdjusted EBITDA\n1,439\n$                \n1,224\n$                \n1,427\n$                \n3,920\n$                \n5,533\n$                \n  (3)\nQuarter Group\nQuarter End Date\nSeptember 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022\nSeptember 30, \n2023\nSeptember 24, \n2022\nGAAP net cash provided by operating activities\n$                   \n$                   \n$                   \n1,286\n$                \n2,998\n$                \nOperating cash flow margin %\n7%\n7%\n17%\n8%\n17%\nPurchases of property and equipment\n(124)",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "4cc9e5fef324f2ae11cfae7078f8793f",
+    "text": "7%\n7%\n17%\n8%\n17%\nPurchases of property and equipment\n(124)\n                   \n(125)\n                   \n(123)\n                   \n(407)\n                   \n(326)\n                   \nFree cash flow\n$                   \n$                   \n$                   \n$                   \n2,672\n$                \nFree cash flow margin %\n5%\n5%\n15%\n5%\n15%\nThe Data Center segment primarily includes server microprocessors (CPUs) and graphics processing units (GPUs), data processing units (DPUs), Field \nProgrammable Gate Arrays (FPGAs) and Adaptive System-on-Chip (SoC) products for data centers.",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "3b4890e704cc23d72926a8409d0f4ea2",
+    "text": "The Client segment primarily includes CPUs, accelerated processing units that integrate microprocessors and GPUs (APUs), and chipsets for desktop and \nnotebook personal computers.\nThe Gaming segment primarily includes discrete GPUs, semi-custom SoC products and development services.\nThe Embedded segment primarily includes embedded CPUs and GPUs, APUs, FPGAs, and Adaptive SoC products.\nFrom time to time, the Company may also sell or license portions of its IP portfolio.   \nAll Other category primarily includes certain expenses and credits that are not allocated to any of the operating segments, such as amortization of acquisition-",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "ee5f585ddcdc5c2ffe9e82eadd75d1ca",
+    "text": "related intangible asset, employee stock-based compensation expense, acquisition-related and other costs, and licensing gain.\nNine Months Ended\nNine Months Ended\nThe Company also presents free cash flow as a supplemental Non-GAAP measure of its performance. Free cash flow is determined by adjusting GAAP net \ncash provided by operating activities for capital expenditures, and free cash flow margin % is free cash flow expressed as a percentage of the Company's net \nrevenue. The Company calculates and communicates free cash flow in the financial earnings press release because management believes it is of importance",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "4f52c008400c988dc574a34a73136154",
+    "text": "to investors to understand the nature of these cash flows. The Company’s calculation of free cash flow may or may not be consistent with the calculation of this \nmeasure by other companies in the same industry. Investors should not view free cash flow as an alternative to GAAP liquidity measures of cash flows from \noperating activities.\nThe Company has provided reconciliations within the earnings press release of these Non-GAAP financial measures to the most directly comparable GAAP \nfinancial measures.\nThe Company presents “Adjusted EBITDA” as a supplemental measure of its performance. Adjusted EBITDA for the Company is determined by adjusting",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "c9db490819b6c2f9c904a89e8d5eab0c",
+    "text": "GAAP net income for interest expense, other income (expense), net, income tax provision (benefit), equity income in investee, stock-based compensation, \ndepreciation and amortization expense (including amortization of acquisition-related intangibles), acquisition-related and other costs. The Company calculates \nand presents Adjusted EBITDA because management believes it is of importance to investors and lenders in relation to its overall capital structure and its \nability to borrow additional funds. In addition, the Company presents Adjusted EBITDA because it believes this measure assists investors in comparing its",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "49074469f3de1b1b22c5247bf07e3fda",
+    "text": "performance across reporting periods on a consistent basis by excluding items that the Company does not believe are indicative of its core operating \nperformance. The Company’s calculation of Adjusted EBITDA may or may not be consistent with the calculation of this measure by other companies in the \nsame industry. Investors should not view Adjusted EBITDA as an alternative to the GAAP operating measure of income or GAAP liquidity measures of cash \nflows from operating, investing and financing activities. In addition, Adjusted EBITDA does not take into account changes in certain assets and liabilities that \ncan affect cash flows.\nThree Months Ended\nThree Months Ended\nQuarter Group",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "c3386ca4a38f8be3ad340a6518de2dc8",
+    "text": "Three Months Ended\nThree Months Ended\nQuarter Group\nQuarter End Date\nSeptember 30, \n2023\nJuly 1, \n2023\nSeptember 24, \n2022\nGAAP gross profit\n2,747\n$               \n2,443\n$               \n2,354\n$               \nGAAP gross margin\n47%\n46%\n42%\nStock-based compensation\n                        \n                      \n                        \nAmortization of acquisition-related intangibles\n                    \n                    \n                    \nAcquisition-related and other costs (1)\n-\n                     \n-\n                     \n                        \nNon-GAAP gross profit\n2,963\n$               \n2,665\n$               \n2,776\n$               \nNon-GAAP gross margin\n51%\n50%\n50%",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "d3947f5a6bfd9f4eae3fb2b927620f22",
+    "text": "2,776\n$               \nNon-GAAP gross margin\n51%\n50%\n50%\nGAAP operating expenses\n2,533\n$               \n2,471\n$               \n2,426\n$               \nGAAP operating expenses/revenue %\n44%\n46%\n44%\nStock-based compensation\n                    \n                    \n                    \nAmortization of acquisition-related intangibles\n                    \n                    \n                    \nAcquisition-related and other costs (1)\n                      \n                      \n                      \nNon-GAAP operating expenses\n1,697\n$               \n1,605\n$               \n1,520\n$               \nNon-GAAP operating expenses/revenue %\n29%\n30%\n27%\nGAAP operating income (loss)\n$",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "2620fd925a9868cb8bdb5df7e375460f",
+    "text": "29%\n30%\n27%\nGAAP operating income (loss)\n$                  \n(20)\n$                   \n(64)\n$                   \nGAAP operating margin\n4%\n0%\n (1%)\nStock-based compensation\n                    \n                    \n                    \nAmortization of acquisition-related intangibles\n                    \n                    \n1,002\n                 \nAcquisition-related and other costs (1)\n                      \n                      \n                      \nNon-GAAP operating income\n1,276\n$               \n1,068\n$               \n1,264\n$               \nNon-GAAP operating margin\n22%\n20%\n23%\nQuarter Group\nQuarter End Date\nGAAP net income / diluted earnings per share\n$                  \n0.18",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "58599eb2896e4d7d2c4bdb56d869cdbb",
+    "text": "GAAP net income / diluted earnings per share\n$                  \n0.18\n$                 \n$                    \n0.02\n$                 \n$                    \n0.04\n$                 \n(Gains) losses on equity investments, net\n(4)\n                       \n-\n                     \n                        \n-\n                     \n                        \n-\n                     \nStock-based compensation\n                    \n0.22\n                   \n                    \n0.21\n                   \n                    \n0.16\n                   \nEquity income in investee\n(3)\n                       \n-\n                     \n(6)\n                       \n-\n                     \n(4)\n                       \n-",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "579ce82e4196065986db50e418bd4f6f",
+    "text": "-\n                     \n(4)\n                       \n-\n                     \nAmortization of acquisition-related intangibles\n                    \n0.41\n                   \n                    \n0.42\n                   \n1,002\n                 \n0.62\n                   \nAcquisition-related and other costs (1)\n                      \n0.02\n                   \n                      \n0.03\n                   \n                      \n0.04\n                   \nIncome tax provision\n(209)\n                   \n(0.13)\n                  \n(164)\n                   \n(0.10)\n                  \n(298)\n                   \n(0.19)\n                  \nNon-GAAP net income / diluted earnings per share\n1,135\n$",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  },
+  {
+    "chunk_id": "3eff05197e7ea06d93202bb8a7b1b0aa",
+    "text": "1,135\n$               \n0.70\n$                 \n$                  \n0.58\n$                 \n1,095\n$                 \n0.67\n$                 \n \n \n \n \n \n \n      (1)\nSeptember 30, \n2023\nAcquisition-related and other costs primarily comprised of transaction costs, purchase price adjustments for inventory, certain compensation charges, contract termination and \nworkforce rebalancing charges.\nThree Months Ended\nThree Months Ended\nJuly 1, \n2023",
+    "ticker": "UNKNOWN",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q3_2023_GAAP_and_Non-GAAP_Earnings_Tables.pdf"
+  }
+]

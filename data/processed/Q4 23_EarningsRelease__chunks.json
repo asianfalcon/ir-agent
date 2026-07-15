@@ -1,0 +1,569 @@
+[
+  {
+    "chunk_id": "475d24c10a3564cc99bc00fd98292ccc",
+    "text": "Santa Clara, CA 95054-1549\n  \n                                                       \nNews Release\n  Intel Reports Fourth-Quarter and Full-Year 2023 Financial Results\nNews Summary\n▪\nFourth-quarter revenue was $15.4 billion, up 10 percent year-over-year (YoY). Full-year revenue was $54.2 \nbillion, down 14 percent YoY. \n▪\nFourth-quarter earnings per share (EPS) attributable to Intel was $0.63; non-GAAP EPS attributable to Intel was \n$0.54. Full-year EPS attributable to Intel was $0.40; non-GAAP EPS attributable to Intel was $1.05.\n▪\nForecasting first-quarter 2024 revenue of $12.2 billion to $13.2 billion; expecting first-quarter EPS attributable to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "53d9dd4781afff03d523587c3312faa3",
+    "text": "Intel of $(0.25) (non-GAAP EPS attributable to Intel of $0.13).\nSANTA CLARA, Calif., Jan. 25, 2024 – Intel Corporation today reported fourth-quarter and full-year 2023 financial \nresults. \n“We delivered strong Q4 results, surpassing expectations for the fourth consecutive quarter with revenue at the \nhigher end of our guidance,” said Pat Gelsinger, Intel CEO. “The quarter capped a year of tremendous progress on \nIntel's transformation, where we consistently drove execution and accelerated innovation, resulting in strong \ncustomer momentum for our products. In 2024, we remain relentlessly focused on achieving process and product",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ff328b4182aaef5f658c67c0f4bf85ea",
+    "text": "leadership, continuing to build our external foundry business and at-scale global manufacturing, and executing our \nmission to bring AI everywhere as we drive long-term value for stakeholders.”  \nDavid Zinsner, Intel CFO, said, “We continued to drive operational efficiencies in the fourth quarter, and comfortably \nachieved our commitment to deliver $3 billion in cost savings in 2023. We expect to unlock further efficiencies in \n2024 and beyond as we implement our new internal foundry model, which is designed to drive greater transparency \nand accountability and higher returns on our owners’ capital.”  \nQ4 2023 Financial Results\nGAAP\nNon-GAAP\n \nQ4 2023\nQ4 2022\nvs. Q4 2022\nQ4 2023\nQ4 2022",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ab15ed067c8c1a7d46be295c6b9349c7",
+    "text": "GAAP\nNon-GAAP\n \nQ4 2023\nQ4 2022\nvs. Q4 2022\nQ4 2023\nQ4 2022\nvs. Q4 2022\nRevenue ($B)\n$15.4\n$14.0\nup 10%\nGross margin\n45.7%\n39.2%\nup 6.5 ppts\n48.8%\n43.8%\nup 5 ppts\nR&D and MG&A ($B)\n$5.6\n$6.2\ndown 9%\n$4.9\n$5.5\ndown 11%\nOperating margin (loss)\n16.8%\n(8.1)%\nup 24.9 ppts\n16.7%\n4.3%\nup 12.4 ppts\nTax rate\n4.6%\n17.0%\ndown 12.4 ppts\n13.0%\n13.0%\n—\nNet income (loss) \nattributable to Intel ($B)\n$2.7\n$(0.7)\nn/m*\n$2.3\n$0.6\nup 263%\nEarnings (loss) per share \nattributable to Intel—\ndiluted\n$0.63\n$(0.16)\nn/m*\n$0.54\n$0.15\nup 260%\nIn the fourth quarter, the company generated $4.6 billion in cash from operations and paid dividends of $0.5 billion. \n*Not meaningful\nNon-GAAP\n \n2023\n2022\nvs. 2022\n2023\n2022",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "e234941790e92839772dd48d0e165315",
+    "text": "*Not meaningful\nNon-GAAP\n \n2023\n2022\nvs. 2022\n2023\n2022\nvs. 2022\nRevenue ($B)\n$54.2\n$63.1\ndown 14%\nGross margin\n40.0%\n42.6%\ndown 2.6 ppts\n43.6%\n47.3%\ndown 3.7 ppts\nR&D and MG&A ($B)\n$21.7\n$24.5\ndown 12%\n$19.0\n$21.9\ndown 13%\nOperating margin\n0.2%\n3.7%\ndown 3.5 ppts\n8.6%\n12.6%\ndown 4 ppts\nTax rate\n(119.8)%\n(3.2)%\ndown 116.6 ppts\n13.0%\n13.0%\n—\nNet income attributable to \nIntel ($B)\n$1.7\n$8.0\ndown 79%\n$4.4\n$6.9\ndown 36%\nEarnings per share \nattributable to Intel—\ndiluted\n$0.40\n$1.94\ndown 79%\n$1.05\n$1.67\ndown 37%\nFor the full year, the company generated $11.5 billion in cash from operations and paid dividends of $3.1 billion. \nBusiness Unit Summary",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "145e907020c7d4bada74a33cc53aca49",
+    "text": "Business Unit Summary\nIntel previously announced the organizational change to integrate its Accelerated Computing Systems and Graphics \nGroup into its Client Computing Group and Data Center and AI Group. This change is intended to drive a more \neffective go-to-market capability and to accelerate the scale of these businesses, while also reducing costs. As a \nresult, the company modified its segment reporting in the first quarter of 2023 to align to this and certain other \nbusiness reorganizations. All prior-period segment data has been retrospectively adjusted to reflect the way the \ncompany internally receives information and manages and monitors operating segment performance starting in",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "467d808e74f8fb200fcf4652685e34e7",
+    "text": "fiscal year 2023.\nBusiness Unit Revenue and \nTrends\nQ4 2023\nvs. Q4 2022\n2023\nvs. 2022\nClient Computing Group (CCG)\n$8.8 billion\nup 33%\n$29.3 billion\ndown 8%\nData Center and AI (DCAI)\n$4.0 billion\ndown 10%\n$15.5 billion\ndown 20%\nNetwork and Edge (NEX)\n$1.5 billion\ndown 24%\n$5.8 billion\ndown 31%\nMobileye\n$637 million\nup 13%\n$2.1 billion\nup 11%\nIntel Foundry Services (IFS)\n$291 million\nup 63%\n$952 million\nup 103%\nBusiness Highlights\n▪\nIntel remains on track to meet its goal of achieving five nodes in four years and regain transistor \nperformance and power performance leadership by 2025. Intel 3 became Intel's first advanced node offered",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "e401e0f6d7e5ee5b3dd6811366695b7b",
+    "text": "to IFS customers, with solid performance and yield progression. Aimed at addressing challenges beyond \nIntel 18A, Intel began installation of the industry’s first on-site High-NA EUV tool in Oregon, one of the \nworld’s leading semiconductor innovation and productization centers.\n▪\nIFS won a key design award with a new high-performance computing customer, its fourth external Intel 18A \ncustomer win in 2023. IFS has taped out more than 75 ecosystem and customers test chips and has more \nthan 50 test chips in the pipeline across 2024 and 2025, 75% of which are on Intel 18A. Intel also won three",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "3bfef5d09dabf6c11c01033eb9b94444",
+    "text": "additional advanced packaging design wins during the fourth quarter. Intel and UMC also announced a \ncollaboration on the development of a 12-nanometer process platform to address high-growth markets, \n2.5 million units shipped since its introduction in January 2023. In the fourth quarter, DCAI launched its 5th \nGen Intel® Xeon® processor, which is optimized for AI workloads and provides up to 42% higher AI \ninference performance compared to the industry-leading 4th Gen Intel Xeon processor. 5th Gen Intel Xeon \nhas reached general availability at Alibaba Cloud, is entering public and private preview with several cloud \nservice providers, and is on track to ship with OEMs early next month.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "497f78a8f9b1a6976b55551aadddaefb",
+    "text": "▪\nIn client computing, Intel ushered in the age of the AI PC with Intel® Core™ Ultra processors. Built on Intel \n4, the Intel Core Ultra processor is Intel’s most AI-capable and power-efficient client processor with \ndedicated acceleration capabilities across the CPU, GPU and NPU. Intel announced at CES 2024 the full \nIntel® Core™ 14th Gen mobile and desktop processor lineup, as well as the new Intel® Core™ mobile \nprocessor Series 1 family for performant mainstream thin-and-light mobile systems.\n▪\nIn network and edge, OpenVINO™ adoption grew by 60% sequentially in the fourth quarter as it became a",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "f9a269c394638fc81f2fde504eff8989",
+    "text": "core software layer for AI inference on the edge, on the PC and in the data center. Additionally, AT&T and \nEricsson announced plans to lead the U.S. in commercial scale Open RAN deployment in collaboration with \nIntel and others as it plans for 70% of its wireless network traffic to flow across open-capable platforms by \nlate 2026. Cisco is working with Intel and others to create solutions including Ethernet technologies, GPU-\nenabled infrastructure, and jointly tested and validated reference architectures with a commitment to \nadvancing AI networking. \n▪\nMobileye announced that it was awarded a series of production design wins by a major western automaker",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "216bc7d7996d6a725ca82d73b8b41639",
+    "text": "across the company’s three key platforms: Mobileye SuperVision™, Mobileye Chauffeur™ and Mobileye \nDrive™. In addition, Intel Automotive announced the launch of AI-enhanced software-defined vehicle SoCs, \nwith Geely’s Zeekr brand as its first OEM partner, and Intel’s agreement to acquire Silicon Mobility, a fabless \nsilicon and software company specializing in power management SoCs focused on EVs, subject to \nnecessary approvals. These announcements build on shared IP across client and data center and on Intel’s \nexisting SoC footprint of more than 50 million vehicles worldwide. \nIFS Direct Connect Event",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ad9b026962daa89273491c745046e480",
+    "text": "IFS Direct Connect Event\nOn Feb. 21, Intel will host its annual flagship foundry event, IFS Direct Connect, in San Jose, California. CEO Pat \nGelsinger, Stuart Pann, senior vice president and general manager of Intel Foundry Services, and other leaders will \ndeliver keynotes and news that showcase the breadth of Intel’s foundry ecosystem and define the next era of silicon \ndesign, development and manufacturing. For information about the event, please visit the event page at \nwww.intel.com/content/www/us/en/events/ifs-direct-connect.html.\nQ1 2024 Dividend\nThe company announced that its board of directors has declared a quarterly dividend of $0.125 per share on the",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "561a3456a3189ba449edaa8f01b8eb1d",
+    "text": "company’s common stock, which will be payable March 1, 2024, to shareholders of record as of Feb. 7, 2024.\nBusiness Outlook\nIntel's guidance for the first quarter of 2024 includes both GAAP and non-GAAP estimates. Reconciliations between \nGAAP and non-GAAP financial measures are included below.\nQ1 2024\nGAAP\nNon-GAAP\nRevenue\n$12.2-13.2 billion\n$12.2-13.2 billion^\nGross Margin\n40.7%\n44.5%\nTax Rate\n(43)%\n13%\nEarnings (Loss) Per Share Attributable to Intel—Diluted\n$(0.25)\n$0.13\n^ No adjustment on a non-GAAP basis.\nActual results may differ materially from Intel’s Business Outlook as a result of, among other things, the factors",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "5a4c82acf65c9435665d9346c7bf2f39",
+    "text": "described under “Forward-Looking Statements” below. The gross margin and EPS outlook are based on the mid-\nThe live public webcast can be accessed on Intel's Investor Relations website at www.intc.com. The corresponding \nearnings presentation and webcast replay will also be available on the site.\nForward-Looking Statements\nThis release contains forward-looking statements that involve a number of risks and uncertainties. Words such as \n\"accelerate\", \"achieve\", \"aim\", \"ambitions\", \"anticipate\", \"believe\", \"committed\", \"continue\", \"could\", \"designed\", \n\"estimate\", \"expect\", \"forecast\", \"future\", \"goals\", \"grow\", \"guidance\", \"intend\", \"likely\", \"may\", \"might\", \"milestones\",",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "468165bb8de86c14c701bbb43c1c0960",
+    "text": "\"next generation\", \"objective\", \"on track\", \"opportunity\", \"outlook\", \"pending\", \"plan\", \"position\", \"possible\", \"potential\", \n\"predict\", \"progress\", \"ramp\", \"roadmap\", \"seek\", \"should\", \"strive\", \"targets\", \"to be\", \"upcoming\", \"will\", \"would\", and \nvariations of such words and similar expressions are intended to identify such forward-looking statements, which \nmay include statements regarding:\n•\nour business plans and strategy and anticipated benefits therefrom, including with respect to our IDM 2.0 \nstrategy, our Smart Capital strategy, our partnership with Brookfield, the transition to an internal foundry model, \nupdates to our reporting structure, and our AI strategy;\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "1c6d32d748c8a2cf87e2978eb7947451",
+    "text": "updates to our reporting structure, and our AI strategy;\n•\nprojections of our future financial performance, including future revenue, gross margins, capital expenditures, \nand cash flows;\n•\nprojected costs and yield trends;\n•\nfuture cash requirements, the availability, uses, sufficiency, and cost of capital resources, and sources of \nfunding, including for future capital and R&D investments and for returns to stockholders, such as stock \nrepurchases and dividends, and credit ratings expectations;\n•\nfuture products, services, and technologies, and the expected goals, timeline, ramps, progress, availability,",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "f96fc93d4bd1632f6f427af523a7e934",
+    "text": "production, regulation, and benefits of such products, services, and technologies, including future process \nnodes and packaging technology, product roadmaps, schedules, future product architectures, expectations \nregarding process performance, per-watt parity, and metrics, and expectations regarding product and process \nleadership;\n•\ninvestment plans and impacts of investment plans, including in the US and abroad; \n•\ninternal and external manufacturing plans, including future internal manufacturing volumes, manufacturing \nexpansion plans and the financing therefor, and external foundry usage;\n•\nfuture production capacity and product supply;\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "09bfd271e7c665946a4876415d6a4884",
+    "text": "•\nfuture production capacity and product supply;\n•\nsupply expectations, including regarding constraints, limitations, pricing, and industry shortages;\n•\nplans and goals related to Intel's foundry business, including with respect to anticipated customers, future \nmanufacturing capacity and service, technology, and IP offerings; \n•\nexpected timing and impact of acquisitions, divestitures, and other significant transactions, including the sale of \nour NAND memory business;\n•\nexpected completion and impacts of restructuring activities and cost-saving or efficiency initiatives\n•\nfuture social and environmental performance goals, measures, strategies, and results;\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "c54a83df9918b62283091959f16fabb4",
+    "text": "•\nour anticipated growth, future market share, and trends in our businesses and operations;\n•\nprojected growth and trends in markets relevant to our businesses;\n•\nanticipated trends and impacts related to industry component, substrate, and foundry capacity utilization, \nshortages, and constraints; \n•\nexpectations regarding government incentives; \n•\nfuture technology trends and developments, such as AI;\n•\nfuture macro environmental and economic conditions;\n•\ngeopolitical tensions and conflicts and their potential impact on our business;\n•\ntax- and accounting-related expectations;\n•\nexpectations regarding our relationships with certain sanctioned parties; and\n•\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "0302e568cb6d0373be2606bb2cac152f",
+    "text": "•\n•\nthe high level of competition and rapid technological change in our industry;\n•\nthe significant long-term and inherently risky investments we are making in R&D and manufacturing facilities \nthat may not realize a favorable return; \n•\nthe complexities and uncertainties in developing and implementing new semiconductor products and \nmanufacturing process technologies;\n•\nour ability to time and scale our capital investments appropriately and successfully secure favorable alternative \nfinancing arrangements and government grants;\n•\nimplementing new business strategies and investing in new businesses and technologies;\n•\nchanges in demand for our products;\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ae3786883e29933df878046582221e62",
+    "text": "•\nchanges in demand for our products;\n•\nmacroeconomic conditions and geopolitical tensions and conflicts, including geopolitical and trade tensions \nbetween the US and China, the impacts of Russia's war on Ukraine, tensions and conflict affecting Israel, and \nrising tensions between the US and Taiwan;\n•\nthe evolving market for products with AI capabilities;\n•\nour complex global supply chain, including from disruptions, delays, trade tensions and conflicts, or shortages;\n•\nproduct defects, errata and other product issues, particularly as we develop next-generation products and \nimplement next-generation manufacturing process technologies;\n•\npotential security vulnerabilities in our products;",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ba1f668f27b7328bf791220071609363",
+    "text": "•\npotential security vulnerabilities in our products;\n•\nincreasing and evolving cybersecurity threats and privacy risks;\n•\nIP risks including related litigation and regulatory proceedings;\n•\nthe need to attract, retain, and motivate key talent;\n•\nstrategic transactions and investments;\n•\nsales-related risks, including customer concentration and the use of distributors and other third parties;\n•\nour significantly reduced return of capital in recent years;\n•\nour debt obligations and our ability to access sources of capital;\n•\ncomplex and evolving laws and regulations across many jurisdictions;\n•\nfluctuations in currency exchange rates;\n•\nchanges in our effective tax rate;\n•",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "0328352aa9a372a4d92a2941f8ce4b1f",
+    "text": "•\nchanges in our effective tax rate;\n•\ncatastrophic events;\n•\nenvironmental, health, safety, and product regulations;\n•\nour initiatives and new legal requirements with respect to corporate responsibility matters; and\n•\nother risks and uncertainties described in this release, our most recent Annual Report on Form 10-K and our \nother filings with the U.S. Securities and Exchange Commission (SEC).\nGiven these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking \nstatements. Readers are urged to carefully review and consider the various disclosures made in this  release and in",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "883cdc1e7057fc5607eea3430cabdded",
+    "text": "other documents we file from time to time with the SEC that disclose risks and uncertainties that may affect our \nbusiness. \nUnless specifically indicated otherwise, the forward-looking statements in this release do not reflect the potential \nimpact of any divestitures, mergers, acquisitions, or other business combinations that have not been completed as \nof the date of this filing. In addition, the forward-looking statements in this release are based on management's \nexpectations as of the date of this release, unless an earlier date is specified, including expectations based on third-",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "0aaf02a89c606ecf0b33887da8bea20e",
+    "text": "party information and projections that management believes to be reputable. We do not undertake, and expressly \ndisclaim any duty, to update such statements, whether as a result of new information, new developments, or \nenriches lives. Inspired by Moore’s Law, we continuously work to advance the design and manufacturing of \nsemiconductors to help address our customers’ greatest challenges. By embedding intelligence in the cloud, \nnetwork, edge and every kind of computing device, we unleash the potential of data to transform business and \nsociety for the better. To learn more about Intel’s innovations, go to newsroom.intel.com and intel.com.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "48116f56f80377b4662de1ad7c671f0d",
+    "text": "© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. \nThree Months Ended\nTwelve Months Ended\n(In Millions, Except Per Share Amounts)\nDec 30, 2023\nDec 31, 2022\nDec 30, 2023\nDec 31, 2022\nNet revenue\n$ \n15,406 $ \n14,042 $ \n54,228 $ \n63,054 \nCost of sales\n \n8,359  \n8,542  \n32,517  \n36,188 \nGross margin\n \n7,047  \n5,500  \n21,711  \n26,866 \nResearch and development\n \n3,987  \n4,464  \n16,046  \n17,528 \nMarketing, general, and administrative\n \n1,617  \n1,706  \n5,634  \n7,002 \nRestructuring and other charges\n \n(1,142)  \n(62)  \nOperating expenses\n \n4,462  \n6,632  \n21,618  \n24,532 \nOperating income (loss)\n \n2,585  \n(1,132)  \n2,334",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "890a8b726db6dd493995c327bb1ccbef",
+    "text": "21,618  \n24,532 \nOperating income (loss)\n \n2,585  \n(1,132)  \n2,334 \nGains (losses) on equity investments, net\n \n4,268 \nInterest and other, net\n \n1,166 \nIncome (loss) before taxes\n \n2,788  \n(796)  \n7,768 \nProvision for (benefit from) taxes\n \n(135)  \n(913)  \n(249) \nNet income (loss)\n \n2,660  \n(661)  \n1,675  \n8,017 \nLess: Net income (loss) attributable to non-controlling interests\n \n(9)  \n(14)  \nNet income (loss) attributable to Intel\n$ \n2,669 $ \n(664) $ \n1,689 $ \n8,014 \nEarnings (loss) per share attributable to Intel—basic\n$ \n0.63 $ \n(0.16) $ \n0.40 $ \n1.95 \nEarnings (loss) per share attributable to Intel—diluted\n$ \n0.63 $ \n(0.16) $ \n0.40 $ \n1.94",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "a297f17f598fb5ac8d4be28e104c0cb3",
+    "text": "$ \n0.63 $ \n(0.16) $ \n0.40 $ \n1.94 \nWeighted average shares of common stock outstanding:\nBasic\n \n4,222  \n4,133  \n4,190  \n4,108 \nDiluted\n \n4,260  \n4,133  \n4,212  \n4,123 \nThree Months Ended\n(In Millions)\nDec 30, 2023\nDec 31, 2022\nEarnings per share of common stock information:\nWeighted average shares of common stock outstanding—basic\n \n4,222  \n4,133 \nDilutive effect of employee equity incentive plans\n \n— \nWeighted average shares of common stock outstanding—\ndiluted\n \n4,260  \n4,133 \nOther information:\nEmployees (in thousands)\n \n124.8  \n131.9 \nEffective January 2023, Intel increased the estimated useful life of certain production machinery and equipment from five years to eight years. When",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "fce3a9bae297fd6df6b4d41c108fe272",
+    "text": "compared to the estimated useful life in place as of the end of 2022, Intel estimates total depreciation expense in 2023 was reduced by $4.2 billion. Intel \nestimates this change resulted in an approximately $2.5 billion increase to gross margin, a $400 million decrease in R&D expenses and a $1.3 billion \n(In Millions, Except Par Value)\nDec 30, 2023\nDec 31, 2022\nAssets\nCurrent assets:\nCash and cash equivalents\n$ \n7,079 \n$ \n11,144 \nShort-term investments\n \n17,955 \n \n17,194 \nAccounts receivable, net\n \n3,402 \n \n4,133 \nInventories\nRaw materials\n \n1,166 \n \n1,517 \nWork in process\n \n6,203 \n \n7,565 \nFinished goods\n \n3,758 \n \n4,142 \n \n11,127 \n \n13,224 \nOther current assets\n \n3,706 \n \n4,712",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "562db2e10ae20de07ee839c2deea2230",
+    "text": "4,142 \n \n11,127 \n \n13,224 \nOther current assets\n \n3,706 \n \n4,712 \nTotal current assets\n \n43,269 \n \n50,407 \nProperty, plant, and equipment, net\n \n96,647 \n \n80,860 \nEquity investments\n \n5,829 \n \n5,912 \nGoodwill\n \n27,591 \n \n27,591 \nIdentified intangible assets, net\n \n4,589 \n \n6,018 \nOther long-term assets\n \n13,647 \n \n11,315 \nTotal assets\n$ \n191,572 \n$ \n182,103 \nLiabilities and stockholders’ equity\nCurrent liabilities:\nShort-term debt\n$ \n2,288 \n$ \n4,367 \nAccounts payable\n \n8,578 \n \n9,595 \nAccrued compensation and benefits\n \n3,655 \n \n4,084 \nIncome taxes payable\n \n1,107 \n \n2,251 \nOther accrued liabilities\n \n12,425 \n \n11,858 \nTotal current liabilities\n \n28,053 \n \n32,155 \nDebt\n \n46,978 \n \n37,684",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "06d01cd306773d62299a3a9e8d123fea",
+    "text": "28,053 \n \n32,155 \nDebt\n \n46,978 \n \n37,684 \nOther long-term liabilities\n \n6,576 \n \n8,978 \nStockholders’ equity:\nPreferred stock, $0.001 par value, 50 shares authorized; none issued\n \n— \n \n— \nCommon stock, $0.001 par value, 10,000 shares authorized; 4,228 shares issued and \noutstanding (4,137 issued and outstanding in 2022) and capital in excess of par value\n \n36,649 \n \n31,580 \nAccumulated other comprehensive income (loss)\n \n(215)  \n(562) \nRetained earnings\n \n69,156 \n \n70,405 \nTotal Intel stockholders' equity\n \n105,590 \n \n101,423 \nNon-controlling interests\n \n4,375 \n \n1,863 \nTotal stockholders' equity\n \n109,965 \n \n103,286 \nTotal liabilities and stockholders’ equity\n$ \n191,572 \n$",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "f690add37e4bed5ed647215b0a2613bc",
+    "text": "103,286 \nTotal liabilities and stockholders’ equity\n$ \n191,572 \n$ \nTwelve Months Ended\n(In Millions)\nDec 30, 2023\nDec 31, 2022\nCash and cash equivalents, beginning of period\n$ \n11,144 \n$ \n4,827 \nCash flows provided by (used for) operating activities:\nNet income (loss)\n \n1,675 \n \n8,017 \nAdjustments to reconcile net income (loss) to net cash provided by operating activities:\nDepreciation\n \n7,847 \n \n11,128 \nShare-based compensation\n \n3,229 \n \n3,128 \nRestructuring and other charges\n \n(424)  \n1,074 \nAmortization of intangibles\n \n1,755 \n \n1,907 \n(Gains) losses on equity investments, net\n \n(42)  \n(4,254) \n(Gains) losses on divestitures\n \n— \n \n(1,059) \nChanges in assets and liabilities:",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "7abad5577a24633cb3b46c5ae0235e52",
+    "text": "— \n \n(1,059) \nChanges in assets and liabilities:\nAccounts receivable\n \n \n5,327 \nInventories\n \n2,097 \n \n(2,436) \nAccounts payable\n \n(801)  \n(29) \nAccrued compensation and benefits\n \n(614)  \n(1,533) \nPrepaid customer supply agreements\n \n— \n \n(24) \nIncome taxes\n \n(3,531)  \n(4,535) \nOther assets and liabilities\n \n(451)  \n(1,278) \nTotal adjustments\n \n9,796 \n \n7,416 \nNet cash provided by (used for) operating activities\n \n11,471 \n \n15,433 \nCash flows provided by (used for) investing activities:\nAdditions to property, plant, and equipment\n \n(25,750)  \n(24,844) \nAdditions to held for sale NAND property, plant, and equipment\n \n— \n \n(206) \nProceeds from capital-related government incentives\n \n1,011",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "a1b0bd8738f96535c8bf7c5e8d8165ed",
+    "text": "(206) \nProceeds from capital-related government incentives\n \n1,011 \n \nPurchases of short-term investments\n \n(44,414)  \n(43,647) \nMaturities and sales of short-term investments\n \n44,077 \n \n48,730 \nPurchases of equity investments\n \n(399)  \n(510) \nSales of equity investments\n \n \n4,961 \nProceeds from divestitures\n \n— \n \n6,579 \nOther investing\n \n \n(1,540) \nNet cash used for investing activities\n \n(24,041)  \n(10,231) \nCash flows provided by (used for) financing activities:\nIssuance of commercial paper, net of issuance costs\n \n— \n \n3,945 \nRepayment of commercial paper\n \n(3,944)  \n— \nPayments on finance leases\n \n(96)  \n(345) \nPartner contributions\n \n1,511",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "2b031278b798cba53f003239105c38c5",
+    "text": "(96)  \n(345) \nPartner contributions\n \n1,511 \n \nProceeds from sales of subsidiary shares\n \n2,959 \n \n1,032 \nIssuance of long-term debt, net of issuance costs\n \n11,391 \n \n6,548 \nRepayment of debt\n \n(423)  \n(4,984) \nProceeds from sales of common stock through employee equity incentive plans\n \n1,042 \n \nPayment of dividends to stockholders\n \n(3,088)  \n(5,997) \nOther financing\n \n(847)  \n(935) \nNet cash provided by (used for) financing activities\n \n8,505 \n \n1,115 \nNet increase (decrease) in cash and cash equivalents\n \n(4,065)  \n6,317 \nCash and cash equivalents, end of period\n$ \n7,079 \n$ \nThree Months Ended\nTwelve Months Ended\n(In Millions)\nDec 30, 2023\nDec 31, 2022\nDec 30, 2023\nDec 31, 2022",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "cefe9ca878a0a21d7c9fbf503cf9e2be",
+    "text": "(In Millions)\nDec 30, 2023\nDec 31, 2022\nDec 30, 2023\nDec 31, 2022\nNet revenue:\nClient Computing\nDesktop\n$ \n3,164 \n$ \n2,509 \n$ \n10,166 \n$ \n10,661 \nNotebook\n \n5,185 \n \n3,663 \n \n16,990 \n \n18,781 \nOther\n \n \n \n2,102 \n \n2,331 \n \n8,844 \n \n6,645 \n \n29,258 \n \n31,773 \nData Center and AI\n \n3,985 \n \n4,421 \n \n15,521 \n \n19,445 \nNetwork and Edge\n \n1,471 \n \n1,926 \n \n5,774 \n \n8,409 \nMobileye\n \n \n \n2,079 \n \n1,869 \nIntel Foundry Services\n \n \n \n \nAll other\n \n \n \n \n1,089 \nTotal net revenue\n$ \n15,406 \n$ \n14,042 \n$ \n54,228 \n$ \n63,054 \nOperating income (loss):\nClient Computing\n$ \n2,888 \n$ \n$ \n6,520 \n$ \n5,569 \nData Center and AI\n \n \n \n(530)  \n1,300 \nNetwork and Edge\n \n(12)  \n \n(482)  \n1,033 \nMobileye",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "91b88694fccf1cb62967d1e628b5bd63",
+    "text": "1,300 \nNetwork and Edge\n \n(12)  \n \n(482)  \n1,033 \nMobileye\n \n \n \n \nIntel Foundry Services\n \n(113)  \n(34)  \n(482)  \n(281) \nAll other\n \n(498)  \n(2,084)  \n(5,597)  \n(5,977) \nTotal operating income (loss)\n$ \n2,585 \n$ \n(1,132) $ \n$ \nwhich are based on Intel architecture. \nRevenue for our reportable and non-reportable operating segments is primarily related to the following product lines:\n▪\nCCG includes products designed for end-user form factors, focusing on higher growth segments of 2 in 1, thin-\nand-light, commercial and gaming, and growing other products such as connectivity and graphics.\n▪\nDCAI includes a broad portfolio of central processing units, domain-specific accelerators and field",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "6eeee894fd0697440ecaeaf45c85607d",
+    "text": "programmable gate arrays, designed to empower data center and hyperscale solutions for diverse computing \nneeds.\n▪\nNEX includes programmable platforms and high-performance connectivity and compute solutions designed for \nmarket segments such as cloud networking, telecommunications networks, on-premises edge, software and \nplatforms. \n▪\nMobileye includes the development and deployment of advanced driver-assistance systems (ADAS) and \nautonomous driving technologies and solutions.\n▪\nIFS provides differentiated full-stack solutions, including wafer fabrication, packaging, chiplet standard and \nsoftware.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "da1b21e3666866dac4a6905c54728ca8",
+    "text": "software.\nWe have sales and marketing, manufacturing, engineering, finance and administration groups. Expenses for these \ngroups are generally allocated to the operating segments.\nWe have an \"all other\" category that includes revenue, expenses and charges such as:\n▪\nresults of operations from non-reportable segments not otherwise presented, and from start-up businesses that \nsupport our initiatives;\n▪\nhistorical results of operations from divested businesses; \n▪\namounts included within restructuring and other charges; \n▪\nemployee benefits, compensation, impairment charges, and other expenses not allocated to the operating \nsegments; and \n▪",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "f8e60a7ab4cd878ee03a755d2bee57a2",
+    "text": "segments; and \n▪\nacquisition-related costs, including amortization and any impairment of acquisition-related intangibles and \nIn addition to disclosing financial results in accordance with US GAAP, this document contains references to the \nnon-GAAP financial measures below. We believe these non-GAAP financial measures provide investors with useful \nsupplemental information about our operating performance, enable comparison of financial trends and results \nbetween periods where certain items may vary independent of business performance, and allow for greater \ntransparency with respect to key metrics used by management in operating our business and measuring our",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "35a4f6351d1f5ae5e7d06198066d4562",
+    "text": "performance. These non-GAAP financial measures are used in our performance-based RSUs and our cash bonus \nplans. \nOur non-GAAP financial measures reflect adjustments based on one or more of the following items, as well as the \nrelated income tax effects. Beginning in 2023, income tax effects are calculated using a fixed long-term projected \ntax rate of 13% across all adjustments. We project this long-term non-GAAP tax rate on an annual basis using a \nfive-year non-GAAP financial projection that excludes the income tax effects of each adjustment. The projected non-\nGAAP tax rate also considers factors such as our tax structure, our tax positions in various jurisdictions, and key",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "b2220f13ac98e25a92e6330515d191f8",
+    "text": "legislation in significant jurisdictions where we operate. This long-term non-GAAP tax rate may be subject to change \nfor a variety of reasons, including the rapidly evolving global tax environment, significant changes in our geographic \nearnings mix, or changes to our strategy or business operations. Management uses this non-GAAP tax rate in \nmanaging internal short- and long-term operating plans and in evaluating our performance; we believe this \napproach facilitates comparison of our operating results and provides useful evaluation of our current operating \nperformance. Prior-period non-GAAP financial measures have been retroactively adjusted to reflect this updated \napproach.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "52a76cde3f74295aa737f60b523fa411",
+    "text": "approach.\nOur non-GAAP financial measures should not be considered a substitute for, or superior to, financial measures \ncalculated in accordance with US GAAP, and the financial results calculated in accordance with US GAAP and \nreconciliations from these results should be carefully evaluated.\nAcquisition-related \nadjustments\nAmortization of acquisition-related intangible assets \nconsists of amortization of intangible assets such \nas developed technology, brands, and customer \nrelationships acquired in connection with business \ncombinations. Charges related to the amortization \nof these intangibles are recorded within both cost of \nsales and MG&A in our US GAAP financial",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "d2d38c27ae8282c9fe89b50b9bd46cfe",
+    "text": "sales and MG&A in our US GAAP financial \nstatements. Amortization charges are recorded \nover the estimated useful life of the related \nacquired intangible asset, and thus are generally \nrecorded over multiple years.\nWe exclude amortization charges for our acquisition-\nrelated intangible assets for purposes of calculating \ncertain non-GAAP measures because these charges \nare inconsistent in size and are significantly impacted \nby the timing and valuation of our acquisitions. These \nadjustments facilitate a useful evaluation of our \ncurrent operating performance and comparison to our \npast operating performance and provide investors with \nadditional means to evaluate cost and expense \ntrends.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "dfa0962b3b8ec7d1b1470cf535af22f6",
+    "text": "additional means to evaluate cost and expense \ntrends.\nShare-based \ncompensation\nShare-based compensation consists of charges \nrelated to our employee equity incentive plans.\nWe exclude charges related to share-based \ncompensation for purposes of calculating certain non-\nGAAP measures because we believe these \nadjustments provide better comparability to peer \ncompany results and because these charges are not \nviewed by management as part of our core operating \nperformance. We believe these adjustments provide \ninvestors with a useful view, through the eyes of \nmanagement, of our core business model, how \nmanagement currently evaluates core operational",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "28090a1b6a7e0c3ede47110eeea98e78",
+    "text": "management currently evaluates core operational \nperformance, and additional means to evaluate \nexpense trends, including in comparison to other peer \ncompanies.\nNon-GAAP \nadjustment or \nmeasure\nDefinition \nrepresents a catch-up of cumulative amortization \nthat would have been incurred for the right to use \nthe related patents in prior periods. This charge \nrelated to prior periods is excluded from our non-\nGAAP results; amortization related to the right to \nuse the patents in the current and ongoing periods \nis included.\nWe exclude the catch-up charge related to prior \nperiods for purposes of calculating certain non-GAAP \nmeasures because this adjustment facilitates",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "b188761a14fe9956571e83eb71aa7b19",
+    "text": "measures because this adjustment facilitates \ncomparison to past operating results and provides a \nuseful evaluation of our current operating \nperformance.\nOptane inventory \nimpairment\nA charge in 2022 as we initiated the wind-down of \nour Intel Optane memory business.\nWe exclude these impairments for purposes of \ncalculating certain non-GAAP measures because \nthese charges do not reflect our current operating \nperformance. This adjustment facilitates a useful \nevaluation of our current operating performance and \ncomparisons to past operating results.\nRestructuring and \nother charges\nRestructuring charges are costs associated with a \nformal restructuring plan and are primarily related",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "c1f4eb5eac770c480ccecae650dcf9e3",
+    "text": "formal restructuring plan and are primarily related \nto employee severance and benefit arrangements. \nOther charges may include periodic goodwill and \nasset impairments, certain pension charges, and \ncosts associated with restructuring activity. 2023 \nincludes a benefit as a result of developments in \nthe VLSI litigation in Q4 2023, an EC-imposed fine, \nand a fee related to the termination of our \nagreement to acquire Tower. 2022 includes a \nbenefit related to the annulled EC fine and 2021 \nincludes a charge related to the VLSI litigation. \nWe exclude restructuring and other charges, including \nany adjustments to charges recorded in prior periods,",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "a78ee89224a53a54245bcee10173440e",
+    "text": "any adjustments to charges recorded in prior periods, \nfor purposes of calculating certain non-GAAP \nmeasures because these costs do not reflect our core \noperating performance. These adjustments facilitate a \nuseful evaluation of our core operating performance \nand comparisons to past operating results and provide \ninvestors with additional means to evaluate expense \ntrends.\n(Gains) losses on \nequity \ninvestments, net\n(Gains) losses on equity investments, net consists \nof ongoing mark-to-market adjustments on \nmarketable equity securities, observable price \nadjustments on non-marketable equity securities, \nrelated impairment charges, and the sale of equity \ninvestments and other.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "b4856ea45c5cf08c035a9f6904aa9e58",
+    "text": "investments and other.\nWe exclude these non-operating gains and losses for \npurposes of calculating certain non-GAAP measures \nbecause it provides better comparability between \nperiods. The exclusion reflects how management \nevaluates the core operations of the business.\n(Gains) losses \nfrom divestiture\n(Gains) losses are recognized at the close of a \ndivestiture, or over a specified deferral period when \ndeferred consideration is received at the time of \nclosing. Based on our ongoing obligation under the \nNAND wafer manufacturing and sale agreement \nentered into in connection with the first closing of \nthe sale of our NAND memory business on",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "2c3047b6dbc607bad45353146146f8ff",
+    "text": "the sale of our NAND memory business on \nDecember 29, 2021, a portion of the initial closing \nconsideration was deferred and will be recognized \nbetween first and second closing.\nWe exclude gains or losses resulting from divestitures \nfor purposes of calculating certain non-GAAP \nmeasures because they do not reflect our current \noperating performance. These adjustments facilitate a \nuseful evaluation of our current operating performance \nand comparisons to past operating results.\nAdjusted free cash \nflow\nWe reference a non-GAAP financial measure of \nadjusted free cash flow, which is used by \nmanagement when assessing our sources of \nliquidity, capital resources, and quality of earnings.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "d420225aa9450e2ae2ac66a270bec4e0",
+    "text": "liquidity, capital resources, and quality of earnings. \nAdjusted free cash flow is operating cash flow \nadjusted for 1) additions to property, plant and \nequipment, net of proceeds from capital grants and \npartner contributions, 2) payments on finance \nleases, and 3) proceeds from the McAfee equity \nsale.\nThis non-GAAP financial measure is helpful in \nunderstanding our capital requirements and sources \nof liquidity by providing an additional means to \nevaluate the cash flow trends of our business. Since \nthe 2017 divestiture, McAfee equity distributions and \nsales contributed to prior operating and free cash flow, \nand while the McAfee equity sale in Q1 2022 would",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "ab155662c8df3dbf52af6746ff21c4da",
+    "text": "and while the McAfee equity sale in Q1 2022 would \nhave typically been excluded from adjusted free cash \nflow as an equity sale, we believe including the sale \nproceeds in adjusted free cash flow facilitate a better, \nmore consistent comparison to current and past \npresentations of liquidity.\nNon-GAAP \nadjustment or \nmeasure\nDefinition \nSet forth below are reconciliations of the non-GAAP financial measure to the most directly comparable US GAAP \nfinancial measure. These non-GAAP financial measures should not be considered a substitute for, or superior to, \nfinancial measures calculated in accordance with US GAAP, and the reconciliations from US GAAP to Non-GAAP",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "7bd7250265db116157008c0b4851c797",
+    "text": "actuals should be carefully evaluated. Please refer to \"Explanation of Non-GAAP Measures\" in this document for a \ndetailed explanation of the adjustments made to the comparable US GAAP measures, the ways management uses \nthe non-GAAP measures, and the reasons why management believes the non-GAAP measures provide useful \ninformation for investors.\n(In Millions, Except Per Share Amounts)\nDec 30, 2023\nDec 31, 2022\nDec 30, 2023\nDec 31, 2022\nGAAP gross margin\n$ \n7,047 \n$ \n5,500 \n$ \n21,711 \n$ \n26,866 \nAcquisition-related adjustments\n \n \n \n1,235 \n \n1,341 \nShare-based compensation\n \n \n \n \nPatent settlement\n \n— \n \n— \n \n— \n \nOptane inventory impairment\n \n— \n \n \n— \n \nNon-GAAP gross margin\n$ \n7,519 \n$",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "0fe69b57d49649aa05e85d26ea8a726e",
+    "text": "— \n \n \n— \n \nNon-GAAP gross margin\n$ \n7,519 \n$ \n6,145 \n$ \n23,651 \n$ \n29,797 \nGAAP gross margin percentage\n 45.7 %\n 39.2 %\n 40.0 %\n 42.6 %\nAcquisition-related adjustments\n 1.9 %\n 2.3 %\n 2.3 %\n 2.1 %\nShare-based compensation\n 1.1 %\n 1.1 %\n 1.3 %\n 1.0 %\nPatent settlement\n — %\n — %\n — %\n 0.3 %\nOptane inventory impairment\n — %\n 1.2 %\n — %\n 1.1 %\nNon-GAAP gross margin percentage\n 48.8 %\n 43.8 %\n 43.6 %\n 47.3 %\nGAAP R&D and MG&A\n$ \n5,604 \n$ \n6,170 \n$ \n21,680 \n$ \n24,530 \nAcquisition-related adjustments\n \n(42) \n \n(43) \n \n(172) \n \n(185) \nShare-based compensation\n \n(623) \n \n(584) \n \n(2,524) \n \n(2,465) \nNon-GAAP R&D and MG&A\n$ \n4,939 \n$ \n5,543 \n$ \n18,984 \n$ \n21,880 \nGAAP operating income (loss)\n$",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "26f3b0b57512d2f226a3d4bf6add7427",
+    "text": "$ \n5,543 \n$ \n18,984 \n$ \n21,880 \nGAAP operating income (loss)\n$ \n2,585 \n$ \n(1,132) \n$ \n$ \n2,334 \nAcquisition-related adjustments\n \n \n \n1,407 \n \n1,526 \nShare-based compensation\n \n \n \n3,229 \n \n3,128 \nPatent settlement\n \n— \n \n— \n \n— \n \nOptane inventory impairment\n \n— \n \n \n— \n \nRestructuring and other charges\n \n(1,142) \n \n \n(62) \n \nNon-GAAP operating income\n$ \n2,580 \n$ \n$ \n4,667 \n$ \n7,917 \nGAAP operating margin (loss)\n 16.8 %\n (8.1) %\n 0.2 %\n 3.7 %\nAcquisition-related adjustments\n 2.2 %\n 2.6 %\n 2.6 %\n 2.4 %\nShare-based compensation\n 5.2 %\n 5.2 %\n 6.0 %\n 5.0 %\nPatent settlement\n — %\n — %\n — %\n 0.3 %\nOptane inventory impairment\n — %\n 1.2 %\n — %\n 1.1 %\nRestructuring and other charges\n (7.4) %",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "04bb2f0c9ea11edaa4d0e9344bacad37",
+    "text": "— %\n 1.2 %\n — %\n 1.1 %\nRestructuring and other charges\n (7.4) %\n 3.3 %\n (0.1) %\n — %\nNon-GAAP operating margin\n 16.7 %\n 4.3 %\n 8.6 %\n 12.6 %\nGAAP tax rate\n 4.6 %\n 17.0 %\n (119.8) %\n (3.2) %\nIncome tax effects\n 8.4 %\n (4.0) %\n 132.8 %\n 16.2 %\nNon-GAAP tax rate\n 13.0 %\n 13.0 %\n 13.0 %\n 13.0 %\nThree Months Ended\nDec 31, 2022\nDec 30, 2023\nDec 31, 2022\nGAAP net income (loss) attributable to Intel\n$ \n2,669 \n$ \n(664) \n$ \n1,689 \n$ \n8,014 \nAcquisition-related adjustments\n \n \n \n1,407 \n \n1,526 \nShare-based compensation\n \n \n \n3,229 \n \n3,128 \nPatent settlement\n \n— \n \n— \n \n— \n \nOptane inventory impairment\n \n— \n \n \n— \n \nRestructuring and other charges\n \n(1,142) \n \n \n(62)",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "a338e1a6ad50c83a243332066e29f696",
+    "text": "— \n \n \n— \n \nRestructuring and other charges\n \n(1,142) \n \n \n(62) \n \n(Gains) losses on equity investments, net\n \n(86) \n \n(186) \n \n(40) \n \n(4,268) \n(Gains) losses from divestiture\n \n(39) \n \n(26) \n \n(153) \n \n(1,166) \nAdjustments attributable to non-controlling interest\n \n(18) \n \n \n(66) \n \nIncome tax effects\n \n(218) \n \n(229) \n \n(1,581) \n \n(1,278) \nNon-GAAP net income attributable to Intel\n$ \n2,303 \n$ \n$ \n4,423 \n$ \n6,891 \nGAAP earnings (loss) per share attributable to Intel—\ndiluted\n$ \n0.63 \n$ \n(0.16) \n$ \n0.40 \n$ \n1.94 \nAcquisition-related adjustments\n \n0.08 \n \n0.09 \n \n0.33 \n \n0.37 \nShare-based compensation\n \n0.18 \n \n0.18 \n \n0.77 \n \n0.76 \nPatent settlement\n \n— \n \n— \n \n— \n \n0.05",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "28f071bec6b192c366c7c089b73a0b7f",
+    "text": "0.18 \n \n0.77 \n \n0.76 \nPatent settlement\n \n— \n \n— \n \n— \n \n0.05 \nOptane inventory impairment\n \n— \n \n0.04 \n \n— \n \n0.18 \nRestructuring and other charges\n \n(0.27) \n \n0.11 \n \n(0.01) \n \n— \n(Gains) losses on equity investments, net\n \n(0.02) \n \n(0.04) \n \n(0.01) \n \n(1.04) \n(Gains) losses from divestiture\n \n(0.01) \n \n(0.01) \n \n(0.04) \n \n(0.28) \nAdjustments attributable to non-controlling interest\n \n— \n \n— \n \n(0.02) \n \n— \nIncome tax effects\n \n(0.05) \n \n(0.06) \n \n(0.37) \n \n(0.31) \nNon-GAAP earnings per share attributable to Intel—\ndiluted\n$ \n0.54 \n$ \n0.15 \n$ \n1.05 \n$ \n1.67 \nGAAP net cash provided by operating activities\n$ \n4,624 \n$ \n7,703 \n$ \n11,471 \n$ \n15,433",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "aa1b9d3ce13a5879795752589939b709",
+    "text": "$ \n4,624 \n$ \n7,703 \n$ \n11,471 \n$ \n15,433 \nNet additions to property, plant, and equipment\n \n(5,929) \n \n(4,635) \n \n(23,228) \n \n(23,724) \nPayments on finance leases\n \n— \n \n(4) \n \n(96) \n \n(345) \nSale of equity investment\n \n— \n \n— \n \n— \n \n4,561 \nAdjusted free cash flow\n$ \n(1,305) \n$ \n3,064 \n$ \n(11,853) \n$ \n(4,075) \nGAAP net cash used for investing activities\n$ \n(5,318) \n$ \n(3,241) \n$ \n(24,041) \n$ \n(10,231) \nGAAP net cash provided by financing activities\n$ \n$ \n2,153 \n$ \n8,505 \n$ \n1,115 \nThree Months Ended\nSet forth below are reconciliations of the non-GAAP financial measure to the most directly comparable US GAAP",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "f3638ebb77fd7953f506b0ab8e8b4d91",
+    "text": "financial measure. These non-GAAP financial measures should not be considered a substitute for, or superior to, \nfinancial measures calculated in accordance with US GAAP, and the financial outlook prepared in accordance with \nUS GAAP and the reconciliations from this Business Outlook should be carefully evaluated. \nPlease refer to \"Explanation of Non-GAAP Measures\" in this document for a detailed explanation of the adjustments \nmade to the comparable US GAAP measures, the ways management uses the non-GAAP measures, and the \nreasons why management believes the non-GAAP measures provide useful information for investors.\nQ1 2024 Outlook1\nApproximately\nGAAP gross margin percentage\n 40.7 %",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  },
+  {
+    "chunk_id": "e5daa7919231f4d5ab945d6a6ee400ab",
+    "text": "Q1 2024 Outlook1\nApproximately\nGAAP gross margin percentage\n 40.7 %\nAcquisition-related adjustments\n 1.8 %\nShare-based compensation\n 2.0 %\nNon-GAAP gross margin percentage\n 44.5 %\nGAAP tax rate\n (43) %\nIncome tax effects\n 56 %\nNon-GAAP tax rate\n 13 %\nGAAP earnings (loss) per share attributable to Intel—diluted\n$ \n(0.25) \nAcquisition-related adjustments\n \n0.06 \nShare-based compensation\n \n0.28 \n(Gains) losses on equity investments, net\n \n(0.01) \n(Gains) losses from divestiture\n \n(0.01) \nAdjustments attributable to non-controlling interest\n \n— \nIncome tax effects\n \n0.06 \nNon-GAAP earnings per share attributable to Intel—diluted\n$ \n0.13",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Q4 23_EarningsRelease_.pdf"
+  }
+]

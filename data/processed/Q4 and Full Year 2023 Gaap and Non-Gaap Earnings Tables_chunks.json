@@ -1,0 +1,200 @@
+[
+  {
+    "chunk_id": "763ffe82135f677efd2abee8e09df448",
+    "text": "(Millions except per share amounts and percentages) (Unaudited) \nQuarter Group\nQuarter End Date\nDecember 30, \n2023 \nSeptember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nNet revenue \n6,168 \n$ \n5,800 \n$ \n5,599 \n$ \n22,680 \n$ \n23,601 \n$ \nCost of sales \n3,042 \n2,843 \n2,753 \n11,278 \n11,550 \nAmortization of acquisition-related intangibles \n1,448 \nTotal cost of sales \n3,257 \n3,053 \n3,196 \n12,220 \n12,998 \nGross profit \n2,911 \n2,747 \n2,403 \n10,460 \n10,603 \nGross margin \n47% \n47% \n43% \n46% \n45% \nResearch and development \n1,511 \n1,507 \n1,366 \n5,872 \n5,005 \nMarketing, general and administrative \n2,352 \n2,336 \nAmortization of acquisition-related intangibles \n1,869 \n2,100",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "0c4cf1698b4f60c904bd0a1d77560de8",
+    "text": "2,336 \nAmortization of acquisition-related intangibles \n1,869 \n2,100 \nLicensing gain \n(6) \n(10) \n(5) \n(34) \n(102) \nOperating income (loss) \n(149) \n1,264 \nInterest expense \n(27) \n(26) \n(19) \n(106) \n(88) \nOther income (expense), net \nIncome (loss) before income taxes and equity income \n(136) \n1,184 \nIncome tax benefit \n(297) \n(39) \n(154) \n(346) \n(122) \nEquity income in investee \nNet income \n$ \n$ \n$ \n$ \n1,320 \n$ \nEarnings per share \nBasic \n0.41 \n$ \n0.18 \n$ \n0.01 \n$ \n0.53 \n$ \n0.85 \n$ \nDiluted \n0.41 \n$ \n0.18 \n$ \n0.01 \n$ \n0.53 \n$ \n0.84 \n$ \nShares used in per share calculation \nBasic \n1,616 \n1,616 \n1,613 \n1,614 \n1,561 \nDiluted \n1,628 \n1,629 \n1,618 \n1,625 \n1,571 \n(Millions) \nDecember 30, \n2023",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "1f5f35efd674bc6cd02a243de579cb43",
+    "text": "1,628 \n1,629 \n1,618 \n1,625 \n1,571 \n(Millions) \nDecember 30, \n2023 \nDecember 31, \n2022 \n(Unaudited) \n—\nASSETS \nCurrent assets: \n—\nCash and cash equivalents \n3,933 \n$ \n \n4,835 \n$ \n \nShort-term investments \n1,840 \n1,020 \n \nAccounts receivable, net \n5,376 \n4,126 \n \nInventories \n4,351 \n3,771 \n \nReceivables from related parties \nPrepaid expenses and other current assets \n1,259 \n1,265 \n \nTotal current assets \n16,768 \n15,019 \n \nProperty and equipment, net \n1,589 \n1,513 \n \nOperating lease right-of-use assets \n \nGoodwill \n24,262 \n24,177 \n \nAcquisition-related intangibles, net \n21,363 \n24,118 \n \nInvestment: equity method \n \nDeferred tax assets \n \nOther non-current assets \n2,805 \n2,152 \n \nTotal Assets",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "b1df373225e1031d4809cf7bcc7d8888",
+    "text": "Other non-current assets \n2,805 \n2,152 \n \nTotal Assets \n67,885 \n$ \n \n67,580 \n$ \n \nLIABILITIES AND STOCKHOLDERS' EQUITY \nCurrent liabilities: \nAccounts payable \n2,055 \n$ \n \n2,493 \n $ \n \nPayables to related parties \nAccrued liabilities \n3,082 \n3,077 \nCurrent portion of long-term debt, net \n – \nOther current liabilities \nTotal current liabilities \n6,689 \n6,369 \nLong-term debt, net of current portion \n1,717 \n2,467 \nLong-term operating lease liabilities \nDeferred tax liabilities \n1,202 \n1,934 \nOther long-term liabilities \n1,850 \n1,664 \nStockholders' equity: \nCapital stock: \nCommon stock, par value \nAdditional paid-in capital \n59,676 \n58,005 \nTreasury stock, at cost \n(4,514) \n(3,099)",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "80c24dbb4286ca1f660185db558252a5",
+    "text": "59,676 \n58,005 \nTreasury stock, at cost \n(4,514) \n(3,099) \n \nRetained earnings (Accumulated deficit) \n(131) \n \nAccumulated other comprehensive loss \n(10) \n(41) \n \nTotal stockholders' equity \n55,892 \n54,750 \n \nTotal Liabilities and Stockholders' Equity \n67,885 \n$ \n \n67,580 \n(Millions) (Unaudited) \nQuarter Group\nQuarter End Date\nDecember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nCash flows from operating activities: \nNet income \n$ \n$ \n$ \n1,320 \n$            \nAdjustments to reconcile net income to net cash provided by operating activities: \nDepreciation and amortization \n1,220 \n3,453 \n4,174 \nStock-based compensation \n1,384 \n1,081",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "467bc1e05d3f8f52ff0b863f6cfde921",
+    "text": "1,220 \n3,453 \n4,174 \nStock-based compensation \n1,384 \n1,081 \nAmortization of operating lease right-of-use assets \nAmortization of inventory fair value adjustment \n- \nLoss on sale or disposal of property and equipment \nDeferred income taxes \n(219) \n(177) \n(1,019) \n(1,505) \n(Gains) losses on equity investments, net \n- \n(1) \nOther \n(24) \n(5) \n(67) \n(14) \nChanges in operating assets and liabilities \nAccounts receivable, net \n(321) \n(1,250) \n(1,091) \nInventories \n(404) \n(580) \n(1,401) \nReceivables from related parties \n(8) \n(12) \n(7) \n(13) \nPrepaid expenses and other assets \n(92) \n(372) \n(472) \n(1,197) \nPayables to related parties \n(100) \nAccounts payable \n(181) \n(419)",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "1bdcbd928ef46b5b502fc5fd60c0520e",
+    "text": "Payables to related parties \n(100) \nAccounts payable \n(181) \n(419) \nAccrued and other liabilities \n(771) \n(448) \n(221) \nNet cash provided by operating activities \n1,667 \n3,565 \nCash flows from investing activities: \nPurchases of property and equipment \n(139) \n(124) \n(546) \n(450) \nPurchases of short-term investments \n(410) \n(268) \n(3,722) \n(2,667) \nProceeds from maturity of short-term investments \n1,446 \n2,687 \n4,310 \nProceeds from sale of short-term investments \n- \n- \nCash received from acquisition of Xilinx \n- \n- \n- \n2,366 \nAcquisitions, net of cash acquired \n(117) \n(131) \n(1,544) \nOther \n(6) \n(1) \n(11) \n(16) \nNet cash provided by (used in) investing activities \n1,067 \n(1,423) \n1,999",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "8c20da1b1d5231a8e7d8c5ed8e46f1d1",
+    "text": "1,067 \n(1,423) \n1,999 \nCash flows from financing activities: \nProceeds from debt, net of issuance costs \n- \n- \n- \nRepayment of debt \n- \n- \n- \n(312) \nProceeds from sales of common stock through employee equity plans \nRepurchases of common stock \n(233) \n(250) \n(985) \n(3,702) \nCommon stock repurchases for tax withholding on employee equity plans \n(45) \n(35) \n(427) \n(406) \nOther \n(1) \n- \n(2) \n(2) \nNet cash used in financing activities \n(159) \n(197) \n(1,146) \n(3,264) \nNet increase (decrease) in cash and cash equivalents \n1,437 \n(902) \n2,300 \nCash and cash equivalents at beginning of period \n3,561 \n3,398 \n4,835 \n2,535 \nCash and cash equivalents at end of period \n3,933 \n$            \n4,835",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "f8c3b91c23efd58fef71c38abf66b15e",
+    "text": "3,933 \n$            \n4,835 \n$            \n3,933 \n$            \n4,835 \n$            \nSELECTED CORPORATE DATA \n(Millions) (Unaudited) \nQuarter Group\nSegment and Category Information(1) \nDecember 30, \n2023 \nSeptember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nData Center \nNet revenue \n2,282 \n$ \n1,598 \n$ \n1,655 \n$ \n6,496 \n$ \n6,043 \n$ \nOperating income \n$ \n$ \n$ \n1,267 \n$ \n1,848 \n$ \nClient \nNet revenue \n1,461 \n$ \n1,453 \n$ \n$ \n4,651 \n$ \n6,201 \n$ \nOperating income (loss) \n$ \n$ \n(152) \n$ \n(46) \n$ \n1,190 \n$ \nGaming \nNet revenue \n1,368 \n$ \n1,506 \n$ \n1,644 \n$ \n6,212 \n$ \n6,805 \n$ \nOperating income \n$ \n$ \n$ \n$ \n$ \nEmbedded \nNet revenue \n1,057 \n$ \n1,243 \n$ \n1,397 \n$ \n5,321 \n$",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "c04af348681b093d3042d5a78055654f",
+    "text": "$ \n$ \nEmbedded \nNet revenue \n1,057 \n$ \n1,243 \n$ \n1,397 \n$ \n5,321 \n$ \n4,552 \n$ \nOperating income \n$ \n$ \n$ \n2,628 \n$ \n2,252 \n$ \nAll Other \nNet revenue \n-\n$ \n-\n$ \n-\n$ \n-\n$ \n-\n$ \nOperating loss \n(1,064) \n$ \n(1,042) \n$ \n(1,406) \n$ \n(4,419) \n$ \n(4,979) \n$ \nTotal \nNet revenue \n6,168 \n$ \n5,800 \n$ \n5,599 \n$ \n22,680 \n$              \n23,601 \n$              \nOperating income (loss) \n$ \n$ \n(149) \n$ \n$ \n1,264 \n$ \n(Blank)\nOther Data \nCapital expenditures \n$ \n$ \n$ \n$ \n$ \nAdjusted EBITDA (2) \n1,576 \n$ \n1,439 \n$ \n1,438 \n$ \n5,496 \n$ \n6,971 \n$ \nCash, cash equivalents and short-term investments \n5,773 \n$ \n5,785 \n$ \n5,855 \n$ \n5,773 \n$ \n5,855 \n$ \nFree cash flow (3) \n$ \n$ \n$ \n1,121 \n$ \n3,115 \n$ \nTotal assets",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "a3ce06061ecb4f7dd56a31a2f44c44da",
+    "text": "$ \nFree cash flow (3) \n$ \n$ \n$ \n1,121 \n$ \n3,115 \n$ \nTotal assets \n67,885 \n$ \n67,626 \n$ \n67,580 \n$ \n67,885 \n$ \n67,580 \n$ \nTotal debt \n2,468 \n$ \n2,467 \n$ \n2,467 \n$ \n2,468 \n$ \n2,467 \n$ \nSee footnotes on the next page \nQuarter Group\nQuarter End Date\nDecember 30, \n2023 \nSeptember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nGAAP net income \n$ \n$ \n$ \n$ \n1,320 \n$ \nInterest expense \nOther (income) expense, net \n(49) \n(59) \n(32) \n(197) \n(8) \nIncome tax benefit \n(297) \n(39) \n(154) \n(346) \n(122) \nEquity income in investee \n(6) \n(3) \n(3) \n(16) \n(14) \nStock-based compensation \n1,380 \n1,012 \nDepreciation and amortization \nAmortization of acquisition-related intangibles \n1,044",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "099ee671eb44a97e6276bddaba465d35",
+    "text": "Amortization of acquisition-related intangibles \n1,044 \n2,811 \n3,548 \nAcquisition-related and other costs \nAdjusted EBITDA \n1,576 \n$ \n1,439 \n$ \n1,438 \n$ \n5,496 \n$ \n6,971 \n$ \n  (3) \nQuarter Group\nQuarter End Date\nDecember 30, \n2023 \nSeptember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nGAAP net cash provided by operating activities \n$ \n$ \n$ \n1,667 \n$ \n3,565 \n$ \nOperating cash flow margin % \n6% \n7% \n10% \n7% \n15% \nPurchases of property and equipment \n(139) \n(124) \n(124) \n(546) \n(450) \nFree cash flow \n$ \n$ \n$ \n1,121 \n$ \n3,115 \n$ \nFree cash flow margin % \n4% \n5% \n8% \n5% \n13%",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "b5c9d138fbcc367768462ad9e6f076ca",
+    "text": "$ \n1,121 \n$ \n3,115 \n$ \nFree cash flow margin % \n4% \n5% \n8% \n5% \n13% \nAll Other category primarily includes certain expenses and credits that are not allocated to any of the operating segments, such as amortization of acquisition-\nrelated intangible asset, employee stock-based compensation expense, acquisition-related and other costs, and licensing gain. \nYear Ended \nYear Ended \nThe Company also presents free cash flow as a supplemental Non-GAAP measure of its performance. Free cash flow is determined by adjusting GAAP net \ncash provided by operating activities for capital expenditures, and free cash flow margin % is free cash flow expressed as a percentage of the Company's net",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "0be9cc3829a4b691683bacebc86b1d2b",
+    "text": "revenue. The Company calculates and communicates free cash flow in the financial earnings press release because management believes it is of importance \nto investors to understand the nature of these cash flows. The Company’s calculation of free cash flow may or may not be consistent with the calculation of this \nmeasure by other companies in the same industry. Investors should not view free cash flow as an alternative to GAAP liquidity measures of cash flows from \noperating activities. \nThe Company has provided reconciliations within the earnings press release of these Non-GAAP financial measures to the most directly comparable GAAP \nfinancial measures.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "33dfbcc633f66e221152a721ae5a5dc5",
+    "text": "financial measures. \nThe Company presents “Adjusted EBITDA” as a supplemental measure of its performance. Adjusted EBITDA for the Company is determined by adjusting \nGAAP net income for interest expense, other income (expense), net, income tax benefit, equity income in investee, stock-based compensation, depreciation \nand amortization expense (including amortization of acquisition-related intangibles), acquisition-related and other costs. The Company calculates and presents \nAdjusted EBITDA because management believes it is of importance to investors and lenders in relation to its overall capital structure and its ability to borrow",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "5d29a72f3be9dc8946730fb17ddaa65e",
+    "text": "additional funds. In addition, the Company presents Adjusted EBITDA because it believes this measure assists investors in comparing its performance across \nreporting periods on a consistent basis by excluding items that the Company does not believe are indicative of its core operating performance. The Company’s \ncalculation of Adjusted EBITDA may or may not be consistent with the calculation of this measure by other companies in the same industry. Investors should \nnot view Adjusted EBITDA as an alternative to the GAAP operating measure of income or GAAP liquidity measures of cash flows from operating, investing and",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "78ba7b6f45d36f44c7bfffd1b3ad56d0",
+    "text": "financing activities. In addition, Adjusted EBITDA does not take into account changes in certain assets and liabilities that can affect cash flows. \nThree Months Ended \nThree Months Ended \nReconciliation of GAAP Net Cash Provided by Operating Activities to Free Cash Flow \nReconciliation of GAAP Net Income to Adjusted EBITDA \nThe Data Center segment primarily includes server microprocessors (CPUs), graphics processing units (GPUs), accelerated processing units (APUs), data \nprocessing units (DPUs), Field Programmable Gate Arrays (FPGAs), Smart Network Interface Cards (SmartNICs), Artificial Intelligence (AI) accelerators and \nAdaptive System-on-Chip (SoC) products for data centers.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "ef5818612dd8f8577928c69e2da0ce8c",
+    "text": "Adaptive System-on-Chip (SoC) products for data centers. \nThe Client segment primarily includes CPUs, APUs, and chipsets for desktop, notebook and handheld personal computers. \nThe Gaming segment primarily includes discrete GPUs, and semi-custom SoC products and development services. \nQuarter Group\nQuarter End Date\nDecember 30, \n2023 \nSeptember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nDecember 31, \n2022 \nGAAP gross profit \n2,911 \n$              \n2,747 \n$              \n2,403 \n$              \n10,460 \n$            \n10,603 \n$            \nGAAP gross margin \n47% \n47% \n43% \n46% \n45% \nStock-based compensation \nAmortization of acquisition-related intangibles \n1,448",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "3ae530794192a63be117dadc3f21b067",
+    "text": "Amortization of acquisition-related intangibles \n1,448 \nAcquisition-related and other costs (1) \n- \nNon-GAAP gross profit \n3,133 \n$              \n2,963 \n$              \n2,859 \n$              \n11,436 \n$            \n12,273 \n$            \nNon-GAAP gross margin \n51% \n51% \n51% \n50% \n52% \nGAAP operating expenses \n2,575 \n$              \n2,533 \n$              \n2,557 \n$              \n10,093 \n$            \n9,441 \n$              \nGAAP operating expenses/revenue % \n42% \n44% \n46% \n45% \n40% \nStock-based compensation \n1,350 \nAmortization of acquisition-related intangibles \n1,869 \n2,100 \nAcquisition-related and other costs (1) \nNon-GAAP operating expenses \n1,727 \n$              \n1,697 \n$",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "3d5481d1ecdfe8861b2f1975dc2535f4",
+    "text": "1,727 \n$              \n1,697 \n$              \n1,602 \n$              \n6,616 \n$              \n6,030 \n$              \nNon-GAAP operating expenses/revenue % \n28% \n29% \n29% \n29% \n26% \nGAAP operating income (loss) \n$ \n$ \n(149) \n$ \n$ \n1,264 \n$              \nGAAP operating margin \n6% \n4% \n (3%) \n2% \n5% \nStock-based compensation \n1,380 \n1,012 \nAmortization of acquisition-related intangibles \n1,044 \n2,811 \n3,548 \nAcquisition-related and other costs (1) \nNon-GAAP operating income \n1,412 \n$              \n1,276 \n$              \n1,262 \n$              \n4,854 \n$              \n6,345 \n$              \nNon-GAAP operating margin \n23% \n22% \n23% \n21% \n27% \nQuarter Group\nQuarter End Date",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "a498142cfb6289baf0157c5efb48b170",
+    "text": "23% \n22% \n23% \n21% \n27% \nQuarter Group\nQuarter End Date\nGAAP net income / earnings per share \n$ \n0.41 \n$ \n$ \n0.18 \n$ \n$ \n0.01 \n$ \n$ \n0.53 \n$ \n1,320 \n$              \n0.84 \n$ \n(Gains) losses on equity investments, net \n- \n(4) \n- \n- \n(1) \n- \n0.04 \nStock-based compensation \n0.23 \n0.22 \n0.19 \n1,380 \n0.85 \n1,012 \n0.64 \nEquity income in investee \n(6) \n- \n(3) \n- \n(3) \n- \n(16) \n(0.01) \n(14) \n(0.01) \nAmortization of acquisition-related intangibles \n0.39 \n0.41 \n1,044 \n0.65 \n2,811 \n1.73 \n3,548 \n2.26 \nAcquisition-related and other costs (1) \n0.04 \n0.02 \n0.04 \n0.16 \n0.33 \nIncome tax provision \n(483) \n(0.30) \n(209) \n(0.13) \n(321) \n(0.20) \n(988) \n(0.61) \n(945) \n(0.60)",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  },
+  {
+    "chunk_id": "60c6932722567f549dac49720fff9c5f",
+    "text": "(0.30) \n(209) \n(0.13) \n(321) \n(0.20) \n(988) \n(0.61) \n(945) \n(0.60) \nNon-GAAP net income / earnings per share \n1,249 \n$              \n0.77 \n$ \n1,135 \n$              \n0.70 \n$ \n1,113 \n$ \n0.69 \n$ \n4,302 \n$              \n2.65 \n$ \n5,504 \n$ \n3.50 \n$ \n  (1) \nYear Ended \nDecember 30, \n2023 \nDecember 31, \n2022 \nDecember 30, \n2023 \nAcquisition-related and other costs primarily comprised of transaction costs, purchase price adjustments for inventory, certain compensation charges, contract termination and \nworkforce rebalancing charges. \nThree Months Ended \nThree Months Ended \nSeptember 30, \n2023 \nDecember 31,",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/Q4 and Full Year 2023 Gaap and Non-Gaap Earnings Tables.pdf"
+  }
+]

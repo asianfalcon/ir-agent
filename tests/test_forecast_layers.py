@@ -125,6 +125,9 @@ class ForecastLayerTests(unittest.TestCase):
         self.assertIn("华泰证券", sellside_section)
         self.assertNotIn("expert.json", sellside_section)
         self.assertIn("expert.json", supplemental_section)
+        self.assertIn("【经营驱动证据", prompt)
+        self.assertIn("核心业务判断与业绩拆解", prompt)
+        self.assertIn("分部/产品→合并收入→毛利→营业利润→税后利润→EPS", prompt)
 
 
 if __name__ == "__main__":

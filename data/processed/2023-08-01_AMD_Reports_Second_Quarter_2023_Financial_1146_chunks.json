@@ -1,0 +1,461 @@
+[
+  {
+    "chunk_id": "c82cbd6e88492be266f4038681b8ef30",
+    "text": "NEWS RELEASE  \nMedia Contact: \nDrew Prairie \nAMD Communications \n512-602-4425 \ndrew.prairie@amd.com \n \n \nInvestor Contact: \nMitch Haws \nAMD Investor Relations \n408-749-3124 \nmitch.haws@amd.com \n \nAMD Reports Second Quarter 2023 Financial Results \n \nSANTA CLARA, Calif. ― Aug. 1, 2023 ― AMD (NASDAQ:AMD) today announced revenue for \nthe second quarter of 2023 of $5.4 billion, gross margin of 46%, operating loss of $20 million, net \nincome of $27 million and diluted earnings per share of $0.02. On a non-GAAP(*) basis, gross margin \nwas 50%, operating income was $1.1 billion, net income was $948 million and diluted earnings per \nshare was $0.58.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "81187005c5ba798ac80745d9ad7f504b",
+    "text": "share was $0.58. \n“We delivered strong results in the second quarter as 4th Gen EPYC and Ryzen 7000 processors \nramped significantly,” said AMD Chair and CEO Dr. Lisa Su. “Our AI engagements increased by more \nthan seven times in the quarter as multiple customers initiated or expanded programs supporting \nfuture deployments of Instinct accelerators at scale. We made strong progress meeting key hardware \nand software milestones to address the growing customer pull for our data center AI solutions and are \non-track to launch and ramp production of MI300 accelerators in the fourth quarter.” \n“We are pleased with our second quarter execution,” said AMD EVP, CFO and Treasurer Jean Hu.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "54f34b4e093caef55ada37c1dbfda4dd",
+    "text": "“Looking to the third quarter, we expect our Data Center and Client segment revenues to each grow by \na double-digit percentage sequentially driven by increasing demand for our EPYC and Ryzen \nprocessors, partially offset by Gaming and Embedded segment declines.” \n \nGAAP Quarterly Financial Results \n \nQ2 2023 \nQ2 2022 \nY/Y \nQ1 2023 \nQ/Q \nRevenue ($M) \n$5,359 \n$6,550 \nDown 18% \n$5,353 \nFlat \nGross profit ($M) \n$2,443 \n$3,028 \nDown 19% \n$2,359 \nUp 4% \nGross margin \n46% \n46% \nFlat \n44% \nUp 2ppts \nOperating expenses ($M) \n$2,471 \n$2,508 \nDown 1% \n$2,514 \nDown 2% \nOperating income (loss) ($M) \n$(20) \n$526 \nDown 104% \n$(145) \nUp 86% \nOperating margin \n0% \n8% \nDown 8 ppts \n(3)% \nUp 3ppts",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "a13102368680e56887171160e5e0d484",
+    "text": "Up 86% \nOperating margin \n0% \n8% \nDown 8 ppts \n(3)% \nUp 3ppts \nNet income (loss) ($M) \n$27 \n$447 \nDown 94% \n$(139) \nUp 119% \nEarnings (loss) per share \n$0.02 \n$0.27 \nDown 93% \n$(0.09) \nUp 122% \nNon-GAAP(*) Quarterly Financial Results \n \nQ2 2023 \nQ2 2022 \nY/Y \nQ1 2023 \nQ/Q \nRevenue ($M) \n$5,359 \n$6,550 \nDown 18% \n$5,353 \nFlat \nGross profit ($M) \n$2,665 \n$3,538 \nDown 25% \n$2,675 \nFlat \nGross margin \n50% \n54% \nDown 4 ppts \n50% \nFlat \nOperating expenses ($M) \n$1,605 \n$1,562 \nUp 3% \n$1,587 \nUp 1% \nOperating income ($M) \n$1,068 \n$1,982 \nDown 46% \n$1,098 \nDown 3% \nOperating margin \n20% \n30% \nDown 10 ppts \n21% \nDown 1ppt \nNet income ($M) \n$948 \n$1,707 \nDown 44% \n$970 \nDown 2% \nEarnings per share",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "ab7bdd631f2afb9c70894133e13771cf",
+    "text": "$948 \n$1,707 \nDown 44% \n$970 \nDown 2% \nEarnings per share \n$0.58 \n$1.05 \nDown 45% \n$0.60 \nDown 3% \n \nQuarterly Segment Summary \n \nData Center segment revenue was $1.3 billion, down 11% year-over-year primarily due to \nlower 3rd Gen EPYC processor sales as Enterprise demand was soft and Cloud inventory \nlevels were elevated at some customers. \no Revenue increased 2% sequentially, as 4th Gen AMD EPYC™ CPU revenue nearly \ndoubled and EPYC CPU Enterprise sales increased, partially offset by a decline in \nadaptive System-on-Chip (SoC) data center products. \no There are now more than 670 AMD-powered cloud instances publicly available.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "803a95e9701a02f9069475e24c43cd8f",
+    "text": "o AMD Instinct™ MI300A and MI300X GPUs are sampling to leading HPC, Cloud and AI \ncustomers. \n \nClient segment revenue was $998 million, down 54% year-over-year due to reduced processor \nshipments resulting from a weaker PC market and a significant inventory correction across the \nPC supply chain. \no Revenue increased 35% sequentially as AMD Ryzen™ 7000 Series CPU sales grew \nsignificantly, and PC market conditions improved. \no More than 100 AMD-powered commercial PC platforms are set to launch this year. \n \nGaming segment revenue was $1.6 billion, down 4% year-over-year. Semi-custom revenue \ngrew year-over-year, which was more than offset by lower gaming graphics revenue.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "d578cb87f2fe6e246d271fa0cc87dd00",
+    "text": "o Revenue declined 10% sequentially primarily due to lower gaming graphics sales.  \n \nEmbedded segment revenue was $1.5 billion, up 16% year-over-year primarily driven by \nstrength in the Industrial, Vision and Healthcare, Automotive and Test and Emulation markets.  \no Revenue decreased 7% sequentially primarily driven by softness in the \nCommunications market. \no The new AMD Versal™ Premium VP1902 adaptive SoC, Spartan™ Ultrascale+™ \nFPGAs and enhanced versions of the Vivado™ and Vitis™ software platforms are \nRecent PR Highlights \n \nAt the Data Center and AI Technology Premier event, AMD announced the expansion of its",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "3156764b76f8b93129f8a7d6920bb571",
+    "text": "leadership data center portfolio and shared details on its next generation AMD Instinct \naccelerator and software enablement for generative AI: \no AMD unveiled two new, workload optimized 4th Gen AMD EPYC processors: AMD \nEPYC 97X4 CPUs, codenamed “Bergamo,” deliver leadership cloud native computing, \nwhile 4th Gen AMD EPYC processors with AMD 3D V-Cache™ technology, codenamed \n“Genoa-X,” provide leadership performance for highly demanding technical computing \nworkloads. \no AMD highlighted its partnership with industry leaders Hugging Face and PyTorch to \nenable an extensive array of AI models that are optimized and ready to use “out of the \nbox” on AMD accelerators.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "b63168679ed61f69561484197afb3c96",
+    "text": "box” on AMD accelerators. \no AMD showcased a robust networking portfolio, including the next generation AMD \nPensando™ DPU, which aims to deliver enhanced performance and power efficiency. \n \nAMD continues to deliver high-performance and accelerated computing for the data center, \ncloud and supercomputing: \no  AWS, Alibaba, Microsoft Azure and OCI announced new instances powered by 4th Gen \nAMD EPYC processors. OCI also announced MySQL Heatwave based on 4th Gen AMD \nEPYC processors, enabling one service for transaction processing, real-time data \nanalytics and machine learning across cloud services. \no SAP selected AMD EPYC processors to power Rise with SAP applications hosted on",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "417319e3c6763e3d3d9d29907f6f1ab3",
+    "text": "Google Cloud. \no AMD EPYC processors and AMD Instinct accelerators continue to be the solutions of \nchoice behind the most innovative, energy efficient and powerful supercomputers in the \nworld, powering 121 supercomputers on the latest Top500 list and seven of the top 10 \nsupercomputers on the Green500 list. \no Cerebras unveiled the Condor Galaxy 1 cloud-based AI supercomputer, enabled by \nmore than 70,000 AMD EPYC CPU cores. Initial applications for the system include \nLLM training, healthcare and climate research. \nadd-ons for large language and other models, performance optimizations across the \nROCm portfolio of libraries and additional support for the AI community. \n",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "d86a12348b29e047e6ebd7247460c9c9",
+    "text": " \nAMD embedded products are delivering optimized performance across a diverse set of \nmarkets: \no Adoption of AMD embedded products is expanding in enterprise storage, as Hewlett \nPackard Enterprise announced that AMD EPYC Embedded Series processors are \npowering its new modular storage solution, HPE Alletra Storage MP. \no AMD introduced two additions to the automotive-grade XA Artix™ UltraScale+ family: \nXA AU10P and XA AU15P FPGAs, which are optimized for use in ADAS sensor \napplications. \n \nAMD announced new Ryzen™ PRO 7040 Series Mobile processors, the most advanced x86 \nprocessors for premium Windows 11 business laptops and mobile workstations. AMD also",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "2718ce02328bb2bbe076cff95a4446a2",
+    "text": "announced the Ryzen PRO 7000 Series processors for desktop, bringing the power of “Zen 4” \nand AMD RDNA™ 2 integrated graphics to professional desktop users. \n \nNew AMD gaming products deliver incredible experiences on the desktop or on the go: \no \nAMD introduced the AMD Ryzen Z1 Series processors, the ultimate high-performance \nprocessor for handheld PC gaming consoles, which power the new Asus ROG Ally. \no AMD launched the Radeon™ RX 7600 graphics card for next-generation, high-\nperformance 1080p gaming, streaming and content creation with stunning visual fidelity. \n \nAMD announced plans to invest $135 million to expand adaptive computing research,",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "f1cc17f38f8e4d386f30b77dcece6bf6",
+    "text": "development and engineering operations in Ireland to fund strategic R&D projects for next \ngeneration AI, data center, networking and 6G communications infrastructure. \n \nAMD announced the appointment of Phil Guido to chief commercial officer, with responsibility \nfor the AMD worldwide sales organization. Guido joins from IBM where he most recently \nserved as general manager, global managing partner of Strategic Sales at IBM Consulting. He \nspent the last 30 years at IBM in a variety of sales and business leadership roles and brings \nextensive experience driving deep strategic relationships with data center, embedded and \ncommercial customers. \n \nCurrent Outlook",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "d706bb28e5a9ca1aaefa9ec71fb63215",
+    "text": "commercial customers. \n \nCurrent Outlook \nAMD’s outlook statements are based on current expectations. The following statements are \nforward-looking and actual results could differ materially depending on market conditions and the \nfactors set forth under “Cautionary Statement” below.  \n \nFor the third quarter of 2023, AMD expects revenue to be approximately $5.7 billion, plus or minus \n$300 million, and expects non-GAAP gross margin to be approximately 51%. \n \nAMD Teleconference \nAMD will hold a conference call for the financial community at 2:00 p.m. PT (5:00 p.m. ET) today to \nRECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES \n(in millions, except per share data) (Unaudited)",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "ea2b943a381d61faaffd5a8c9421fd46",
+    "text": "(in millions, except per share data) (Unaudited) \n  \n \n \nThree Months Ended \n \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nGAAP gross profit \n $ \n2,443  $ \n2,359  $ \n3,028  \nGAAP gross margin \n \n 46 % \n 44 % \n 46 % \nStock-based compensation \n  \nAmortization of acquisition-related intangibles \n  \nAcquisition-related and other costs (1) \n  \n—   \nNon-GAAP gross profit \n $ \n2,665  $ \n2,675  $ \n3,538  \nNon-GAAP gross margin \n \n 50 %  \n 50 %  \n 54 %  \n \n \n  \n   \n \nGAAP operating expenses \n $ \n2,471  $ \n2,514  $ \n2,508  \nGAAP operating expenses/revenue % \n \n 46 % \n 47 % \n 38 % \nStock-based compensation \n  \nAmortization of acquisition-related intangibles",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "ac9f6db3e3d28ce582369afb020a9100",
+    "text": "Amortization of acquisition-related intangibles \n  \nAcquisition-related and other costs (1) \n  \nNon-GAAP operating expenses \n $ \n1,605  $ \n1,587  $ \n1,562  \nNon-GAAP operating expenses/revenue % \n \n 30 %  \n 30 %  \n 24 %  \n \n \n  \n  \n  \nGAAP operating income (loss) \n $ \n(20)  \n$ \n(145)  $ \nGAAP operating margin \n \n 0 % \n (3) % \n 8 % \nStock-based compensation \n  \nAmortization of acquisition-related intangibles \n  \n1,023  \nAcquisition-related and other costs (1) \n  \nNon-GAAP operating income \n $ \n1,068  $ \n1,098  $ \n1,982  \nNon-GAAP operating margin \n \n 20 %  \n 21 %  \n 30 %  \n \n \n   \n \n  \n \n \n \nThree Months Ended \n \n \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "b85e7933eaaf8d1541d17d854c2e77a9",
+    "text": "July 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nGAAP net income (loss) / earnings (loss) per share  $ \n27   $ \n0.02   $ \n(139)  $ \n(0.09)  $ \n447   $ \n0.27   \n(Gains) losses on equity investments, net \n  \n—    \n(1)   \n—    \n—   \nStock-based compensation \n  \n0.21    \n0.19    \n0.16   \nEquity income in investee \n  \n(6)   \n—    \n(1)   \n—    \n(4)   \n—   \nAmortization of acquisition-related intangibles \n  \n0.42    \n0.51    \n1,023    \n0.63   \nAcquisition-related and other costs (1) \n  \n0.03    \n0.07    \n0.11   \nIncome tax provision \n  \n(164)   \n(0.10)   \n(132)   \n(0.08)   \n(202)   \n(0.12)  \nNon-GAAP net income / earnings per share \n $ \n948   $ \n0.58   $ \n970   $ \n0.60   $ \n1,707   $",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "0b89118a3d4d0ecf118903225368c7f9",
+    "text": "$ \n948   $ \n0.58   $ \n970   $ \n0.60   $ \n1,707   $ \n1.05   \n \n(1) \n \n \nAbout AMD \nFor more than 50 years AMD has driven innovation in high-performance computing, graphics and \nvisualization technologies. AMD employees are focused on building leadership high-performance and \nadaptive products that push the boundaries of what is possible. Billions of people, leading Fortune 500 \nbusinesses and cutting-edge scientific research institutions around the world rely on AMD technology \ndaily to improve how they live, work and play. For more information about how AMD is enabling today \nand inspiring tomorrow, visit the AMD (NASDAQ: AMD) website, blog, Facebook and Twitter pages.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "2430fbc9fdcaeb8301fdcf431d260588",
+    "text": "Cautionary Statement  \n \nThis press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the expected launch and \nproduction ramp of AMD Instinct™ MI300 accelerators in the fourth quarter 2023; expected double digit revenue growth in AMD’s Data Center \nand Client segments on a sequential basis driven by increasing demand for AMD’s EPYC™ and Ryzen™ processors, partially offset by Gaming \nand Embedded segment declines; the features, functionality, performance, availability, timing and expected benefits of AMD products, and",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "e97693ce3e2955cb2d6df5a9a114eef8",
+    "text": "AMD’s expected third quarter 2023 financial outlook, including revenue and non-GAAP gross margin, which are made pursuant to the Safe \nHarbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such \nas \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. Investors are cautioned that the \nforward-looking statements in this press release are based on current beliefs, assumptions and expectations, speak only as of the date of this",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "176f0ca541ce196fcd51bf8a7e0b1ade",
+    "text": "press release and involve risks and uncertainties that could cause actual results to differ materially from current expectations. Such statements \nare subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and generally beyond AMD's control, \nthat could cause actual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-\nlooking information and statements. Material factors that could cause actual results to differ materially from current expectations include, without",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "330e587c96cb187f7366407684f11672",
+    "text": "limitation, the following: Intel Corporation’s dominance of the microprocessor market and its aggressive business practices; global economic \nuncertainty; cyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; loss of a \nsignificant customer; impact of the COVID-19 pandemic on AMD’s business, financial condition and results of operations; competitive markets \nin which AMD’s products are sold; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "24fc556b62833be9f15ffeb8970622b9",
+    "text": "property; unfavorable currency exchange rate fluctuations; ability of third party manufacturers to manufacture AMD's products on a timely basis \nin sufficient quantities and using competitive technologies; availability of essential equipment, materials, substrates or manufacturing \nprocesses; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to introduce products on a timely basis with \nexpected features and performance levels; AMD's ability to generate revenue from its semi-custom SoC products; potential security",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "4a1b2ae9f1766d3ff86cddae740cb396",
+    "text": "vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyber-attacks; potential difficulties in upgrading \nand operating AMD’s new enterprise resource planning system; uncertainties involving the ordering and shipment of AMD’s products; AMD’s \nreliance on third-party intellectual property to design and introduce new products in a timely manner; AMD's reliance on third-party companies \nfor design, manufacture and supply of motherboards, software and other computer platform components; AMD's reliance on Microsoft and",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "1cdd27ee49fe6eaa7effdeed206b7280",
+    "text": "other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-\nin-board partners; impact of modification or interruption of AMD’s internal business processes and information systems; compatibility of AMD’s \nproducts with some or all industry-standard software and hardware; costs related to defective products; efficiency of AMD's supply chain; AMD's \nability to rely on third party supply-chain logistics functions; AMD’s ability to effectively control sales of its products on the gray market; impact",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "99dfcd5778956c43f40450e5bb1d8034",
+    "text": "of government actions and regulations such as export administration regulations, tariffs and trade protection measures; AMD’s ability to realize \nits deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals-related \nprovisions and other laws or regulations; impact of acquisitions, joint ventures and/or investments on AMD’s business and AMD’s ability to \nintegrate acquired businesses; impact of any impairment of AMD’s tangible, definite-lived or indefinite-lived intangible assets, including goodwill,",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "149addf8aeca6cf61bd7e17d48375c19",
+    "text": "on AMD’s financial position and results of operation; restrictions imposed by agreements governing AMD’s notes, the guarantees of Xilinx’s \nnotes and the revolving credit facility; AMD's indebtedness; AMD's ability to generate sufficient cash to meet its working capital requirements \nor generate sufficient revenue and operating cash flow to make all of its planned R&D or strategic investments, as well as the impact of financial \ninstitution failure on AMD’s cash and cash equivalents; political, legal, economic risks and natural disasters; future impairments of technology",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "d42967950b45914a740a8854c679156c",
+    "text": "license purchases; AMD’s ability to attract and retain qualified personnel; AMD’s stock price volatility; and worldwide political conditions. \nInvestors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not \n(*) \n \nIn this earnings press release, in addition to GAAP financial results, AMD has provided non-GAAP financial measures including non-GAAP \ngross profit, non-GAAP operating expenses, non-GAAP operating income, non-GAAP net income and non-GAAP diluted earnings per share. \nAMD uses a normalized tax rate in its computation of the non-GAAP income tax provision to provide better consistency across the reporting",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "eef5e9ca482033a36e747743101e19e9",
+    "text": "periods. For fiscal 2023, AMD uses a projected non-GAAP tax rate of 13%, which excludes the tax impact of pre-tax non-GAAP adjustments, \nreflecting currently available information. AMD also provided adjusted EBITDA and free cash flow as supplemental non-GAAP measures of \nits performance. These items are defined in the footnotes to the selected corporate data tables provided at the end of this earnings press \nrelease. AMD is providing these financial measures because it believes this non-GAAP presentation makes it easier for investors to compare \nits operating results for current and historical periods and also because AMD believes it assists investors in comparing AMD’s performance",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "a0743b6fb35671aa5e22703c8a687248",
+    "text": "across reporting periods on a consistent basis by excluding items that it does not believe are indicative of its core operating performance and \nfor the other reasons described in the footnotes to the selected data tables. The non-GAAP financial measures disclosed in this earnings \npress release should be viewed in addition to and not as a substitute for or superior to AMD’s reported results prepared in accordance with \nGAAP and should be read only in conjunction with AMD’s Consolidated Financial Statements prepared in accordance with GAAP. These non \nGAAP financial measures referenced are reconciled to their most directly comparable GAAP financial measures in the data tables in this",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "4728a4a6c59d7267ff2a5d6e3febc4cf",
+    "text": "earnings press release. This earnings press release also contains forward-looking non-GAAP gross margin concerning AMD’s financial \noutlook, which is based on current expectations as of August 1, 2023 and assumptions and beliefs that involve numerous risks and \nuncertainties. Adjustments to arrive at the GAAP gross margin outlook typically include stock-based compensation, amortization of acquired \nintangible assets and acquisition-related and other costs. The timing and impact of such adjustments are dependent on future events that \nare typically uncertain or outside of AMD's control, therefore, a reconciliation to equivalent GAAP measures is not practicable at this time.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "5062f65d422e975b82a682c2d096c9b0",
+    "text": "AMD undertakes no intent or obligation to publicly update or revise its outlook statements as a result of new information, future events or \notherwise, except as may be required by law. \n-30- \n \n \nAMD, the AMD Arrow logo, EPYC, Radeon, Ryzen, Instinct, Versal, Artix, Spartan, Ultrascale+ and combinations thereof, are trademarks of Advanced \nMicro Devices, Inc.  \nADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS \n(Millions except per share amounts and percentages) (Unaudited) \n \n \nThree Months Ended \n \nSix Months Ended \n \n  \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \n \nNet revenue \n $ \n5,359   $ \n5,353   $ \n6,550   $",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "01d7f6f5514962f20ae4ca4b0dad8dd6",
+    "text": "June 25, \n2022 \n \nNet revenue \n $ \n5,359   $ \n5,353   $ \n6,550   $ \n10,712   $ \n12,437   \nCost of sales \n  \n2,704    \n2,689    \n3,115    \n5,393    \n5,998   \nAmortization of acquisition-related intangibles \n  \nTotal cost of sales \n  \n2,916    \n2,994    \n3,522    \n5,910    \n6,591   \nGross profit \n  \n2,443    \n2,359    \n3,028    \n4,802    \n5,846   \nGross margin \n \n 46 %  \n 44 %  \n 46 %  \n 45 %  \n 47 %  \nResearch and development \n  \n1,443    \n1,411    \n1,300    \n2,854    \n2,360   \nMarketing, general and administrative \n  \n1,132    \n1,189   \nAmortization of acquisition-related intangibles \n  \nLicensing gain \n  \n(8)    \n(10)    \n(6)    \n(18)    \n(89)   \nOperating income (loss) \n  \n(20)",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "60547742546ebd58f19df3f1019941e8",
+    "text": "(6)    \n(18)    \n(89)   \nOperating income (loss) \n  \n(20)    \n(145)    \n(165)    \n1,477   \nInterest expense \n  \n(28)    \n(25)    \n(25)    \n(53)    \n(38)   \nOther income (expense), net \n  \n(4)    \n(46)   \nIncome (loss) before income taxes and equity income   \n(2)    \n(127)    \n(129)    \n1,393   \nIncome tax provision (benefit) \n  \n(23)    \n(10)    \nEquity income in investee \n  \nNet income (loss) \n $ \n27   $ \n(139)   $ \n447   $ \n(112)   $ \n1,233   \nEarnings (loss) per share \n  \n  \n  \n  \n  \n \nBasic \n $ \n0.02   $ \n(0.09)   $ \n0.28   $ \n(0.07)   $ \n0.82   \nDiluted \n $ \n0.02   $ \n(0.09)   $ \n0.27   $ \n(0.07)   $ \n0.81   \nShares used in per share calculation \n  \n \n  \n \n \n \nBasic \n  \n1,612",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "2abaa985338cf1d422f2e87a08a13be8",
+    "text": "Basic \n  \n1,612    \n1,611    \n1,618    \n1,612    \n1,506   \nDiluted \n  \n1,627    \n1,611    \n1,632    \nADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED BALANCE SHEETS \n(Millions) \n \n \nJuly 1, \n2023 \n \nDecember 31, \n2022 \n \n \n(Unaudited)   \nASSETS \n  \n  \nCurrent assets: \n  \n  \nCash and cash equivalents \n $ \n3,841   $ \n4,835  \nShort-term investments \n  \n2,444    \n1,020  \nAccounts receivable, net \n  \n4,312    \n4,126  \nInventories \n  \n4,567    \n3,771  \nReceivables from related parties \n  \nPrepaid expenses and other current assets \n  \n1,339    \n1,265  \nTotal current assets \n  \n16,505    \n15,019  \nProperty and equipment, net \n  \n1,541    \n1,513",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "a03316131cd6b6d30f768375fd281dd2",
+    "text": "16,505    \n15,019  \nProperty and equipment, net \n  \n1,541    \n1,513  \nOperating lease right-of-use assets \n  \nGoodwill \n  \n24,177    \n24,177  \nAcquisition-related intangibles, net \n  \n22,598    \n24,118  \nInvestment: equity method \n  \nDeferred tax assets \n  \nOther non-current assets \n  \n2,527    \n2,152  \nTotal Assets \n $ \n67,967   $ \n67,580  \n \n  \n  \nLIABILITIES AND STOCKHOLDERS' EQUITY \n  \n  \nCurrent liabilities: \n  \n  \nAccounts payable \n $ \n2,779   $ \n2,493  \nPayables to related parties \n  \nAccrued liabilities \n  \n2,971    \n3,077  \nCurrent portion of long-term debt, net \n  \n—  \nOther current liabilities \n  \nTotal current liabilities \n  \n7,572    \n6,369",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "4dc62d64a61a13eb3b398d9d4d90d76b",
+    "text": "Total current liabilities \n  \n7,572    \n6,369  \nLong-term debt, net of current portion \n  \n1,714    \n2,467  \nLong-term operating lease liabilities \n  \nDeferred tax liabilities \n  \n1,365    \n1,934  \nOther long-term liabilities \n  \n1,787    \n1,664  \n \n  \n  \nStockholders' equity: \n  \n  \nCapital stock: \n  \n  \nCommon stock, par value \n  \nAdditional paid-in capital \n  \n58,825    \n58,005  \nTreasury stock, at cost \n  \n(3,430)   \n(3,099) \nAccumulated deficit \n  \n(243)   \n(131) \nAccumulated other comprehensive loss \n  \n(32)   \n(41) \nTotal stockholders' equity \n $ \n55,136   $ \n54,750  \nTotal Liabilities and Stockholders' Equity \n $ \n67,967   $ \n67,580  \n \nADVANCED MICRO DEVICES, INC.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "0ad1a601e407943829e79b8d12611124",
+    "text": "$ \n67,967   $ \n67,580  \n \nADVANCED MICRO DEVICES, INC. \nCONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS \n(Millions) (Unaudited) \n \n \nThree Months Ended \n \nSix Months Ended \n \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \nCash flows from operating activities: \n  \n  \n  \n  \nNet income (loss) \n  \n(112)   \n1,233  \nAdjustments to reconcile net income (loss) to net cash provided by \noperating activities: \n  \n  \n  \n  \nDepreciation and amortization \n  \n1,180    \n1,831    \n1,789  \nStock-based compensation \n  \nAmortization of operating lease right-of-use assets \n  \nAmortization of inventory fair value adjustment \n  \nLoss on sale or disposal of property and equipment \n  \n—",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "aed113ae0fdf2b4e1ce92c549f48716a",
+    "text": "Loss on sale or disposal of property and equipment \n  \n—    \nDeferred income taxes \n  \n(274)   \n(276)   \n(582)   \n(618) \n(Gains) losses on equity investments, net \n  \nOther \n  \n(18)   \n(2)   \n(20)   \n(4) \nChanges in operating assets and liabilities \n  \n  \n  \n  \nAccounts receivable, net \n  \n(272)   \n(344)   \n(186)   \n(1,016) \nInventories \n  \n(332)   \n(248)   \n(796)   \n(274) \nReceivables from related parties \n  \n—    \n—    \n—    \n(1) \nPrepaid expenses and other assets \n  \n(46)   \n(237)   \n(237) \nPayables to related parties \n  \n(41)   \n(150)   \nAccounts payable \n  \nAccrued and other liabilities \n  \n(127)   \n(341)   \nNet cash provided by operating activities \n  \n1,038    \n2,033",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "faefabde747c1d42ba26ff2402b2c1e9",
+    "text": "Net cash provided by operating activities \n  \n1,038    \n2,033  \nCash flows from investing activities: \n  \n  \n  \n  \nPurchases of property and equipment \n  \n(125)   \n(132)   \n(283)   \n(203) \nPurchases of short-term investments \n  \n(1,113)   \n(520)   \n(2,816)   \n(620) \nProceeds from maturity of short-term investments \n  \n1,285    \n1,171    \n2,248  \nProceeds from sale of short-term investments \n  \n—    \nCash received from acquisition of Xilinx \n  \n—    \n—    \n—    \n2,366  \nAcquisition of Pensando, net of cash acquired \n  \n—    \n(1,558)   \n—    \n(1,558) \nOther \n  \n(1)   \n(3)   \n(4) \nNet cash provided by (used in) investing activities \n  \n(438)   \n(928)   \n(1,675)   \n2,230",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "fa55d051244be77c825560be4c2d9ba0",
+    "text": "(438)   \n(928)   \n(1,675)   \n2,230  \nCash flows from financing activities: \n  \n  \n  \n  \nProceeds from debt, net of issuance costs \n  \n—    \n—    \nProceeds from sales of common stock through employee equity plans \n  \nRepurchases of common stock \n  \n—    \n(921)   \n(241)   \n(2,835) \nCommon stock repurchases for tax withholding on employee equity plans   \n(66)   \n(31)   \n(87)   \n(66) \nOther \n  \n—    \n(1)   \n—    \n(2) \nNet cash provided by (used in) financing activities \n  \n(184)   \n(1,834) \nNet increase (decrease) in cash and cash equivalents \n  \n(994)   \n2,429  \nCash and cash equivalents at beginning of period \n  \n3,825    \n4,740    \n4,835    \n2,535",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "8361bbd85852e636f430ba8118434634",
+    "text": "3,825    \n4,740    \n4,835    \n2,535  \nCash and cash equivalents at end of period \n  \n3,841    \n4,964    \nSELECTED CORPORATE DATA \n(Millions) (Unaudited) \n  \n \nThree Months Ended \n \nSix Months Ended \n  \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \nSegment and Category Information(1) \n  \n  \n  \n  \n  \nData Center \n  \n  \n  \n  \n  \nNet revenue \n $ \n1,321  $ \n1,295  $ \n1,486  $ \n2,616  $ \n2,779  \nOperating income \n $ \n147  $ \n148  $ \n472  $ \n295  $ \nClient  \n  \n  \n  \n  \n  \nNet revenue \n $ \n998  $ \n739  $ \n2,152  $ \n1,737  $ \n4,276  \nOperating income (loss) \n $ \n(69) $ \n(172) $ \n$ \n(241) $ \n1,368  \nGaming \n  \n  \n  \n  \n  \nNet revenue \n $ \n1,581  $",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "a6d14fc06e4b6e23b66529b31cdba12b",
+    "text": "$ \n(241) $ \n1,368  \nGaming \n  \n  \n  \n  \n  \nNet revenue \n $ \n1,581  $ \n1,757  $ \n1,655  $ \n3,338  $ \n3,530  \nOperating income \n $ \n225  $ \n314  $ \n187  $ \n539  $ \nEmbedded \n  \n  \n  \n  \n  \nNet revenue \n $ \n1,459  $ \n1,562  $ \n1,257  $ \n3,021  $ \n1,852  \nOperating income \n $ \n757  $ \n798  $ \n641  $ \n1,555  $ \nAll Other \n  \n  \n  \n  \n  \nNet revenue \n $ \n—  $ \n—  $ \n—  $ \n—  $ \n—  \nOperating loss \n $ \n(1,080) $ \n(1,233) $ \n(1,450) \n$ \n(2,313) $ \n(2,253) \nTotal \n  \n \n   \n \n  \n \nNet revenue \n $ \n5,359  $ \n5,353  $ \n6,550  $ \n10,712  $ \n12,437  \nOperating income (loss) \n $ \n(20) $ \n(145) $ \n$ \n(165) $ \n1,477  \n(Blank) \n \n \n  \n \n \nOther Data \n \n  \n   \n \n  \n \nCapital expenditures \n $ \n125  $ \n158  $",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "fefb00d7272724d403d2575e0b266016",
+    "text": "Other Data \n \n  \n   \n \n  \n \nCapital expenditures \n $ \n125  $ \n158  $ \n132  $ \n283  $ \nAdjusted EBITDA (2) \n $ \n1,224  $ \n1,257  $ \n2,139  $ \n2,481  $ \n4,106  \nCash, cash equivalents and short-term investments  $ \n6,285  $ \n5,939  $ \n5,992  $ \n6,285  $ \n5,992  \nFree cash flow (3) \n $ \n254  $ \n328  $ \n906  $ \n582  $ \n1,830  \nTotal assets \n $ \n67,967  $ \n67,634  $ \n67,502  $ \n67,967  $ \n67,502  \nTotal debt \n $ \n2,467  $ \n2,467  $ \n2,777  $ \n2,467  $ \n2,777  \n \n(1)  \nThe Data Center segment primarily includes server microprocessors (CPUs) and graphics processing units (GPUs), data processing",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "9d297d646f3a997b1928d0425d67c6e4",
+    "text": "units (DPUs), Field Programmable Gate Arrays (FPGAs) and Adaptive System-on-Chip (SoC) products for data centers. \n \n \nThe Client segment primarily includes CPUs, accelerated processing units that integrate microprocessors and GPUs (APUs), and \nchipsets for desktop and notebook personal computers. \n \n The Gaming segment primarily includes discrete GPUs, semi-custom SoC products and development services. \n \n The Embedded segment primarily includes embedded CPUs and GPUs, FPGAs, and Adaptive SoC products. \n \n From time to time, the Company may also sell or license portions of its IP portfolio.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "8fe5e8fde4d3effb140d0c196d7a0b47",
+    "text": "All Other category primarily includes certain expenses and credits that are not allocated to any of the operating segments, such as \namortization of acquisition-related intangible asset, employee stock-based compensation expense, acquisition-related and other costs, \nand licensing gain. \n \n \n(2)  Reconciliation of GAAP Net Income (Loss) to Adjusted EBITDA \n \n  \n \nThree Months Ended \n \nSix Months Ended \n \n  \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \n \nGAAP net income (loss) \n $ \n27   $ \n(139)  $ \n447   $ \n(112)  $ \n1,233   \nInterest expense \n  \nOther (income) expense, net \n  \n(46)   \n(43)   \n(89)   \nIncome tax provision (benefit) \n  \n(23)",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "6b0beb467d8a9a8043283274f4f17369",
+    "text": "(46)   \n(43)   \n(89)   \nIncome tax provision (benefit) \n  \n(23)   \n(10)   \nEquity income in investee \n  \n(6)   \n(1)   \n(4)   \n(7)   \n(7)  \nStock-based compensation \n  \nDepreciation and amortization \n  \nAmortization of acquisition-related intangibles   \n1,023    \n1,516    \n1,502   \nAcquisition-related and other costs \n  \nAdjusted EBITDA \n $ \n1,224  $ \n1,257  $ \n2,139  $ \n2,481  $ \n4,106  \n \nThe Company presents “Adjusted EBITDA” as a supplemental measure of its performance. Adjusted EBITDA for the Company is determined by \nadjusting GAAP net income (loss) for interest expense, other income (expense), net, income tax provision (benefit), equity income in investee,",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "6c6801afc2a00d78ca0eae67b0168099",
+    "text": "stock-based compensation, depreciation and amortization expense (including amortization of acquisition-related intangibles), acquisition-related \nand other costs. The Company calculates and presents Adjusted EBITDA because management believes it is of importance to investors and \nlenders in relation to its overall capital structure and its ability to borrow additional funds. In addition, the Company presents Adjusted EBITDA \nbecause it believes this measure assists investors in comparing its performance across reporting periods on a consistent basis by excluding items",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "650541b57e547a592833afc8052335ea",
+    "text": "that the Company does not believe are indicative of its core operating performance. The Company’s calculation of Adjusted EBITDA may or may \nnot be consistent with the calculation of this measure by other companies in the same industry. Investors should not view Adjusted EBITDA as an \nalternative to the GAAP operating measure of income or GAAP liquidity measures of cash flows from operating, investing and financing activities. \nIn addition, Adjusted EBITDA does not take into account changes in certain assets and liabilities that can affect cash flows. \n \n(3)  Reconciliation of GAAP Net Cash Provided by Operating Activities to Free Cash Flow \n \n  \n \nThree Months Ended \n \nSix Months Ended",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "e53f86973a8a40622af986e8585f6958",
+    "text": "Three Months Ended \n \nSix Months Ended \n \n  \n \nJuly 1, \n2023 \n \nApril 1, \n2023 \n \nJune 25, \n2022 \n \nJuly 1, \n2023 \n \nJune 25, \n2022 \n \nGAAP net cash provided by operating activities \n $ \n379  $ \n486  $ \n1,038  $ \n865  $ \n2,033  \nOperating cash flow margin % \n \n 7 % \n 9 % \n 16 % \n 8 % \n 16 % \nPurchases of property and equipment \n $ \n(125)   $ \n(158)   $ \n(132)   $ \n(283)   $ \n(203)   \nFree cash flow \n $ \n254  $ \n328  $ \n906  $ \n582  $ \n1,830  \nFree cash flow margin % \n \n 5 %  \n 6 %  \n 14 %  \n 5 %  \n 15 %  \n \nThe Company also presents free cash flow as a supplemental Non-GAAP measure of its performance. Free cash flow is determined by",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  },
+  {
+    "chunk_id": "671a651eb30d2dfe5d250820aee16528",
+    "text": "adjusting GAAP net cash provided by operating activities for capital expenditures, and free cash flow margin % is free cash flow expressed as a \npercentage of the Company's net revenue. The Company calculates and communicates free cash flow in the financial earnings press release \nbecause management believes it is of importance to investors to understand the nature of these cash flows. The Company’s calculation of free \ncash flow may or may not be consistent with the calculation of this measure by other companies in the same industry. Investors should not view \nfree cash flow as an alternative to GAAP liquidity measures of cash flows from operating activities.",
+    "ticker": "INTC.US",
+    "pub_date": "20230801",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/AMD/2023-08-01_AMD_Reports_Second_Quarter_2023_Financial_1146.pdf"
+  }
+]

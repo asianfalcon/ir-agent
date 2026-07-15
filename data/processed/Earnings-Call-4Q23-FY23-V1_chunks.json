@@ -1,0 +1,407 @@
+[
+  {
+    "chunk_id": "e593968cd6b2f330121639ffb8f65e42",
+    "text": "Comments from CEO Pat Gelsinger  \nand CFO Dave Zinsner \nIntel’s chief executive officer and chief financial officer offer comments after \nthe company released its fourth-quarter and full-year 2023 earnings. \n \nThe following are the prepared remarks provided on Intel’s fourth-quarter and full-year 2023 earnings conference call held \nat 2 p.m. PST on Jan. 25, 2024. These remarks include forward-looking statements that are based on the environment as \nseen by the company as of the time of the call and, as such, are subject to various risks and uncertainties. They also contain \nreferences to non-GAAP financial measures that the company believes provide useful information to investors. Refer to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "4f18776bd764b8683910199be0358687",
+    "text": "the company’s earnings release for the fourth-quarter and full-year 2023, most recent annual report on Form 10-K and \nother filings with the SEC for more information on the risk factors that could cause actual results to differ materially from \nthe company’s expectations and additional information on non-GAAP financial measures, including reconciliations where \nappropriate to the corresponding GAAP financial measures. \n \nJan. 25, 2024 – Pat Gelsinger, Intel chief executive officer (bio): \n \nQ4 was the culmination of a year of tremendous progress towards our IDM 2.0 transformation. \nWe consistently executed on our plan to re-establish process leadership, further built out our",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "f6ae015d63bdbdfb6e5fb2f50bca80b3",
+    "text": "capacity and foundry plans, greatly improved product execution and began to execute on our \nmission to bring “AI everywhere” across our product segments. \n \nWe delivered solid Q4 results, exceeding expectations for the fourth quarter in a row. Revenue \nwas at the higher end of our guidance, and we had strong earnings per share (EPS) upside as a \nresult of our ongoing relentless focus on driving operating leverage and expense management, \nincluding comfortably meeting our $3 billion cost savings commitment for fiscal year 2023. 2023 \nwas definitely a year when we did what we said we would do and more. We intend to make 2024",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "255f7bcd6cad7cb64dee92938de900d2",
+    "text": "another such year. And when we look out over the next 12 months, we are confident that we can \ncontinue to drive considerable progress on our IDM 2.0 journey.  \n \nAs we look into Q1, our core business including client, server and edge products continues to \nperform well and is tracking to the lower end of seasonal. However, discreet headwinds including \nMobileye (MBLY), PSG (Programmable Solutions Group) and business exits, among others, are \nimpacting overall revenue, leading to a lower Q1 guide. Importantly, we see this as temporary, and \nwe expect sequential and year-on-year (YoY) growth in both revenue and EPS for each quarter of",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "4791bcab6263dfcf13bda644209f01bc",
+    "text": "fiscal year (FY) 2024. Momentum and excitement around new products and businesses remains \nstrong as we head into the year and will grow stronger as the year progresses.  \n \nWe could not be prouder of the execution across our process technology roadmap in 2023. We \nbecame the world’s first high-volume manufacturer of logic devices using EUV (extreme \nultraviolet technology) in both the U.S. and Europe as we aggressively ramp Core® Ultra™ on Intel \n4 in both Oregon and Ireland. Intel 3 achieved manufacturing readiness in Q4, as committed, with \nsolid performance and yield progression. Our two lead vehicles on Intel 3 are on-track and we look",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "b2dd93f1c7f418de779790cfc889a2c9",
+    "text": "forward to launching Sierra Forest in the first half of 2024, followed shortly thereafter by Granite \nRapids. Sierra Forest has final samples at customers and the production stepping of Granite \nRapids is running ahead of schedule, well into power-on validation and very healthy.  \n \nWe are even more excited about breaking into the Angstrom era with Intel 20A and Intel 18A. We \nlead Intel 20A vehicle, will launch this year. Intel 18A is expected to achieve manufacturing \nreadiness in the second half of 2024, completing our five-nodes-in-four-years journey and \nbringing us back to process leadership. I am pleased to say that Clearwater Forest, our first Intel",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "931acc744ed37912e51950a4f75fff21",
+    "text": "18A part for servers, has already gone into fab and Panther Lake for clients will be heading into fab \nshortly.  \n \nAs we complete our goal of five nodes in four years, we are not satisfied nor are we finished. We \nhave begun installation of the industry’s first High-NA EUV tool in our most advanced technology \ndevelopment site in Oregon, aimed at addressing challenges beyond 18A. We remain focused on \nbeing good stewards of Moore’s Law and ensuring a continuous node migration path over the next \ndecade and beyond.  \n \nThird-party engagements with IFS (Intel Foundry Services) continue to validate our progress on",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "fac7edba9e6d2f698c2a6ffbc114cf66",
+    "text": "process technology. We launched IFS with a long-term view of delivering the world’s first system \nfoundry that brings together a secure and sustainable supply chain with the best of Intel and our \necosystem. While our ambitions will not materialize overnight, we made tremendous progress in \nboth Q4 and fiscal year '23 towards our goal of becoming the second-largest external foundry by \n2030. The rapid adoption of AI by all industries is proving to be a significant tailwind for IFS as \nhigh-performance compute, an area where we have considerable wafer and packaging know-how \nand IP (intellectual property), is now one of the largest and fastest growing segments of the \nsemiconductor market.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "f652428195d768e5992b507cc0ad5acc",
+    "text": "semiconductor market. \n \nWe made major strides in building our foundry ecosystem in 2023, with now over 40 strategic \nagreements across EDA (electronic design automation), design services, IP, cloud, and U.S. \nmilitary aerospace and government. Critical agreements with Arm and Synopsys continue to gain \nmomentum. We delivered the Intel 18A 0.9 PDK (platform development kit) and broadened its \navailability in Q4. We expanded the RAMP-C program significantly and just this quarter signed a \nmajor foundry contract with the U.S. government and Department of Defense.  \n \nWe are also very pleased to have completed a major agreement with United Micro Electronics, or",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "095d786af680060e21da48831101b95f",
+    "text": "UMC, to develop a 12-nanometer process platform targeting high-growth markets including \nmobile, communication infrastructure and networking. This expands both Intel’s and UMC’s \nfoundry process portfolios and customer access to a broader and more resilient supply leveraging \nour Arizona site. This agreement builds upon and furthers our long and deep relationships with the \nvibrant Taiwan ecosystem. This also meaningfully extends the production life of our installed \ncapacity and improves our returns on investments, similar to the announcement last quarter of our \nTower Semiconductor partnership at the 65 nm node with our New Mexico site.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "dbb59c0d52b237fafda7c5c497270f1f",
+    "text": "Our success with IFS will be measured by customer commitments and revenue. We have taped \nout more than 75 ecosystem and customer test chips. IFS already has more than 50 test chips in \nthe pipeline across 2024 and 2025, 75% of which are on Intel 18A. During CES we welcomed \nValens Semiconductor to the growing list of foundry customers as they announced they would \nuse IFS to fabricate their MIPI A-PHY chipsets using our advanced technology. In addition to the \nthree Intel 18A customers we disclosed in Q3, we won a key design win with a significant high-\nperformance computing customer. This customer was particularly motivated by our unique",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "cba6ae29e1bc4e3d70b6f5f8965e575b",
+    "text": "leading-edge manufacturing capabilities and U.S. capacity. We came into 2023 committing to \none 18A foundry customer, we executed on four, inclusive of a meaningful prepay – and our \nmomentum continues to grow.  \n \nOur advanced packaging business is proving to be yet another important advantage for IFS; a \nstarting in 2025. To support our growing demand, just yesterday we opened Fab 9 in New Mexico, \nmarking a milestone for high-volume 3D advanced packaging manufacturing. The momentum in \nadvanced packaging is very strong and is another facet of our foundry strategy, which is clearly \nbenefitting from the surge of interest in AI (artificial intelligence). With leadership technology and",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "b78fbba82ac3db5ef4a5e923fbc2842c",
+    "text": "available capacity, our opportunity set continues to grow. \n \nIn total, across wafer and advanced packaging, our lifetime-deal value for IFS is now over $10 \nbillion, a more than doubling from the $4 billion we provided in our last update.  \n \nSupporting our growing momentum in IFS is our global manufacturing footprint. We are the only \nsemiconductor company with at-scale and sustainable manufacturing in every major region of the \nworld, providing ourselves and our foundry customers resilient access to the right capacity in the \nright regions at the right time. All of our expansion projects in the U.S., EU and Asia are",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "fab82291ef3bdb9155c6c43a5881e4c1",
+    "text": "progressing on schedule and our CHIPS applications in the U.S. and EU are progressing well. \n \nFinally, we are thrilled to be hosting our first foundry day, IFS Direct Connect, on February 21st in \nSan Jose, where we will have the opportunity to showcase the breadth of our ecosystem as well as \nbegin to talk about our process roadmap beyond Intel 18A, next generation packaging and our full \nfoundry vision. We hope to see many of you there.  \n \nIntel continues its mission to bring AI everywhere. We see the AI workload as a key driver of the $1 \ntrillion semiconductor TAM (total addressable market) by 2030. And given our foundry and",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "6520a1eb82e58d0f424f17adbacd51b5",
+    "text": "product offerings, we are the only company able to participate in 100% of the TAM for AI silicon \nlogic. We have already discussed how our 50-year heritage in HPC (high performance computing) \ntransistors and our advanced packaging positions IFS to benefit from the accelerating move to AI. \nWithin our product portfolio, we are the only company with the products, IP and ecosystem reach \nto empower customers to seamlessly integrate and effectively run AI in all their applications from \nthe cloud, through the network, into the enterprise, client and edge.  \n \nFor the developer working with multitrillion-parameter frontier models in the cloud, Gaudi® and",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "57469530fce8e49101821ad60b612071",
+    "text": "our suite of AI accelerators provides a powerful combination of performance, competitive MLPerf \nbenchmarks and leadership TCO (total cost of ownership). As AI proliferates and the world \nmoves towards more AI-integrated applications, there’s a marked shift towards local inferencing \nand smaller, more nimble models. It's a nod to both the necessity of data privacy and an answer to \ncloud-based inferencing costs and round-trip latency. With AI accelerated Xeon® for enterprise, \nCore Ultra ushering in the AI PC era and OpenVINO™ enableing developers seamless and \nversatile support for a range of client and edge silicon, we are bringing AI to where the data is",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "f0189ef66ccd4f41583e0f548444d5a6",
+    "text": "being generated and used, rather than requiring it in the cloud. Our expansive footprint spanning \ncloud and enterprise servers to volume clients and ubiquitous edge devices positions us well to \nenable the AI continuum across all our market segments.  \n \nIn Q4, our server business experienced solid sequential growth, consistent with market share, \nwhich we believe was flat with Q3 levels. Since launching 4th Gen Xeon® in early 2023, we have \nshipped more than 2.5 million units with approximately one-third of all 4th Gen demand driven by \nAI. With our 5th Gen Xeon® launch, we enable up to 42% higher AI inference performance",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "2c8ede5b0a6c4ba775e170612ba1a3b3",
+    "text": "compared to the industry leading 4th Gen Xeon. 5th Gen Xeon has reached general availability at \nAlibaba, is entering public and private preview with several CSPs, and is on track to ship with \nOEMs (original equipment manufacturers) next month. \n \nalready going into the fab. Momentum is building and positioning us well to win back share in the \ndata center.  \n \nOur Gaudi®2 AI accelerators continue to demonstrate price-performance leadership compared \nto the most popular GPUs. In a recent blog published by Databricks, Gaudi2 was shown to clearly \ndeliver the best training and inference performance-per-dollar based on public cloud",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "4aae264c2d1bbdf68683c458b6dffabe",
+    "text": "pricing. We’re building on this momentum with Gaudi®3, which is on track to launch this year and \nis expected to deliver performance leadership with 4x the processing power and double the \nnetworking bandwidth for greater scale-out performance. Gaudi3 is now in the lab, powered-on \nand showing great health and performance, and Falcon Shores is also well underway. Our \naccelerator pipeline for 2024 grew double digits sequentially in Q4 and is now well above $2 \nbillion and growing. We recently increased our supply for both Gaudi2 and Guadi3 to support the \ngrowing customer demand and we expect meaningful revenue acceleration throughout the year.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "10f7b1f773fb90c80177b9581bf88d2f",
+    "text": "As we announced last quarter, we are now operating PSG as a standalone business beginning on \nJanuary 1st. Our intent is to bring in private capital this year to create an eventual path to an IPO \nover the coming years. As we outlined on our Q3 call, PSG is in the midst of an industrywide \ncyclical correction for FPGAs, which we expect to last thru the first half of 2024. Despite the \nfinancial correction, operational momentum is strong, and PSG executed its most ambitious \nFPGA roadmap, delivering 21 new product releases in 2023 and executing supply assurance \nagreements valued by our customers.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "16a172dc78aa323d05e597ff512a8638",
+    "text": "agreements valued by our customers.  \n \nFinally, even as we congratulate Sandra Rivera, the new CEO of PSG, I am extremely pleased to \nwelcome Justin Hotard as executive vice president and general manager of DCAI (Data Center \nand AI Group). Justin joined us from Hewlett Packard Enterprise, where he was executive vice \npresident and general manager of High-Performance Computing, AI and Labs. He will play a key \nrole in helping customers accelerate their businesses with our Xeon processor family, delivering \non our commitments to customers and partners by increasing our GPU and accelerator footprint, \nand supporting our mission to bring AI everywhere.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "1b602fce834971e23e8c1db78a3e55e5",
+    "text": "and supporting our mission to bring AI everywhere. \n \nMoving to client: CCG (Client Computing Group) performed very well in Q4, posting the third \nconsecutive quarter of double-digit sequential growth. Demand reflected a normalized inventory \nenvironment with sustained strength in gaming and commercial, with our highest-end SKUs \nexceeding Q3 records by 20%. The 2023 consumption TAM was roughly 270 mm (million) units, \nconsistent with our view entering the year, and we expect the PC TAM up low single digits YoY in \n2024, in-line with third-party estimates. Our share position is strong, and our product portfolio for",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "8aaedcd02989b984a1ac04d2d95da20b",
+    "text": "2024 and beyond and ecosystem work will continue to drive industry leading performance and \nexperiences.  \n \nIn Q4, we ushered in the age of the AI PC with the launch of Intel Core Ultra. Representing our \nlargest architectural shift in decades, the Core Ultra is the most AI-capable and power-efficient \nclient processor with dedicated acceleration capabilities across the CPU, GPU and neural \nprocessing unit, or NPU. Ultra is the centerpiece of the AI PC, systems that are capable of natively \nrunning popular 10 billion parameter models and drive superior performance on key AI-enhanced \napplications like Zoom, Adobe and Microsoft. We expect to ship approximately 40 million AI PCs",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "a54f3ea203455b58d8fb48c44116db36",
+    "text": "in 2024 alone, with more than 230 designs – from ultra-thin PCs to handheld gaming devices – to \nbe delivered this year from OEM partners Acer, ASUS, Dell, HP, Lenovo, LG, MSI, Samsung \nElectronics and others. The Core Ultra platform delivers leadership AI performance today with \nour next-generation platforms launching later this year – Lunar Lake and Arrow Lake – tripling our \nNEX (Network and Edge Group) is well-positioned to benefit from the proliferation of AI \nworkloads on the edge, where our market-leading hardware and software assets provide \nimproved latency, reliability and costs. OpenVINO adoption grew by 60% sequentially in Q4 and",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "389558e3a8acc755a7bc8b9f77ac9c24",
+    "text": "today is a core software layer for AI inference on the edge, on the PC and in the data center. NEX is \nalso driving the shift of AI networking in the cloud from proprietary technologies to open, \nEthernet-based approaches in partnership with the broader industry ecosystem. NEX Q4 results \nbeat our internal forecasts, and the division is poised for solid growth in 2024 across edge, \nnetwork and FNIC (fiber channel network interface controller) products more skewed towards \nthe second half of the year.  \n \nYet another growing market opportunity for us is automotive. While MBLY is experiencing a sharp",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "92aa3a4ee18df517be314341e6235270",
+    "text": "inventory correction in Q1, we are encouraged by their improving forecast throughout 2024 and \nmore importantly their recent announcement at CES that they were awarded a series of \nproduction design wins by a major western automaker across the company’s three key platforms: \nSuperVision, Chauffeur and Drive.  \n \nIn addition to MBLY’s strength in AV, at CES, we announced the launch of AI-enhanced software-\ndefined vehicles SoCs, with Geely’s Zeekr brand as our first OEM partner, and our agreement to \nacquire Silicon Mobility, a fabless silicon and software company specializing in power \nmanagement SoCs focused on EVs (electric vehicles). These announcements build on shared IP",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "60aa6f795a327d9ecb6d078b418d30b7",
+    "text": "across client and data center and our existing Intel SoC footprint of more than 50 million vehicles \nworldwide. Our strategy will continue to broaden our exposure to the growing auto market on both \nthe product and the foundry sides of our business.  \n \nFinally, underpinning our across-the-board progress in 2023 is our operational and financial \ndiscipline. As our new internal foundry model, which is designed to drive greater transparency, \naccountability and focus on costs, begins to take root, we expect to unlock further cost savings \nand efficiencies in 2024 and beyond. We have officially transitioned to this new operating model",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "57499aefa520299f7198144a8a455be4",
+    "text": "on January 1st and will report the new segmentation format as part of our Q1 earnings. We see \nincremental efficiencies as we drive to our long-term model of 60% gross and 40% operating \nmargins. \n \nAs I reflect on our progress in 2023, I am incredibly proud of our employees, whose commitment \nand perseverance were instrumental to the execution of our ambitious strategy. Together, we \nexited the year accomplishing exactly what we set out to do. We improved our execution engine, \nconsistently being on track or ahead on our process and product roadmap. And as I said at the \nbeginning of my remarks, we are confident in our performance and financial trajectory for the year",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "63f470551add0d8fecd7f31942f91364",
+    "text": "ahead. We know we have much work in front of us as we work to regain and build on our leadership \nposition in every category in which we participate. We will maintain our relentless focus on our \nmission and commitment to driving long-term value for our shareholders.  \n \nDave Zinsner, Intel chief financial officer (bio): \n \nWe delivered strong financial results in the quarter on top of continued execution of our products \nand process roadmap commitments.  We again beat our guidance across revenue, gross margin \nand EPS.   \n \nWe have taken proactive steps to prioritize our investments, aggressively managed near-term",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "b52b5c371866f8d99c40757dd5b386c3",
+    "text": "expenses and made meaningful progress on reducing our structural cost gaps. We exit 2023 a \nhealthier and leaner company, but there is much more work to do in 2024 and beyond to deliver on \nFourth-quarter revenue was $15.4 billion, up 9% sequentially, 10% year-over-year and $300 million \nabove the midpoint of our guidance, with solid execution across reported segments.  Gross \nmargin was 48.8%, 230 basis points better than our guidance driven by favorable product mix and \nASPs (average selling prices), improved unit costs and higher revenue.   \n \nEPS for the quarter was 54 cents, beating guidance by 10 cents, on improved gross margins,",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "a94e2801fd6ee7b28280a05c10fce2be",
+    "text": "stronger revenue and disciplined OpEx (operating expenses) management. \n \nQ4 operating cash flow was $4.6 billion. Net inventory was down more than $300 million and nine \ndays in the quarter, and DSO (days sales outstanding) remains under 20. Net CapEx (capital \nexpenditures) was $5.9 billion, resulting in an adjusted free cash flow of negative $1.3 billion, and \nwe paid dividends of a half-billion dollars in the quarter.   \n \nMoving to fourth quarter business unit results:  CCG delivered revenue of $8.8 billion, up 12% \nsequentially, 33% year-over-year and ahead of internal expectations for the fourth consecutive",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "e32981cadb47db77db33752a7c249a33",
+    "text": "quarter. We saw sustained strength in gaming and commercial segments, along with record \n“performance-notebook” shipments in the quarter. Customer inventory levels have normalized, \nand 2023 PC consumption was in line with our 270 million unit forecast. Operating profit was $2.9 \nbillion, up more than $800 million sequentially and nearly $2.4 billion year-over-year on improved \nTAM and market share and sell-through of reserved inventory.   \n \nDCAI revenue was $4 billion, up 4% sequentially. The server business delivered double-digit \ngrowth sequentially, partially offset by the FPGA inventory correction. Revenue was driven by",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "64861bc6ddee93245e289a5f4033cdb8",
+    "text": "improved unit TAM, stable share and rising average core density contributing to record Xeon \nASPs.  Operating profit was $78 million, roughly flat sequentially, as advanced node development \ncosts continue to weigh on profitability.   \n \nNEX revenue was $1.5 billion, up 1% sequentially and ahead of internal expectations on strength \nfrom network and Ethernet segments. The business saw an operating loss of $12 million, down \nmodestly quarter-over-quarter.    \n \nIntel Foundry Services contributed revenue of $291 million, down modestly on a sequential basis \nand up 63% year-over-year on increased traditional packaging revenue. IFS operating loss was",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "1c36c69f4a7c2b77204ca3ebd8690f5b",
+    "text": "$113 million, driven by continued investment to develop and grow a world-class system foundry.  \n \nMobileye delivered record revenue of $637 million, up 20% sequentially and 13% year-over-year, \nalong with record operating profit of $242 million, up 42% sequentially and 15% year-over-year. \nRecently disclosed design wins are expected to contribute more than $7 billion of future revenue, \nor more than 3.5 times Mobileye’s record FY23 revenue.   \n \nAs Pat summarized, the company made significant progress toward our IDM2.0 strategy, \nincluding strong execution against our 2023 financial commitments, despite macro headwinds",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "6275a93fd9f5adbd26e9c05926f95d68",
+    "text": "throughout the year. As committed at our first-quarter 2023 earnings call, we delivered revenue, \ngross margin, operating margin and EPS growth each quarter. Despite significant investments in \nfuture growth and continued progression through 5N4Y (five nodes in four years), we achieved \nour 2023 commitment of $3 billion of spending reductions. Through a strong focus on cash and \ncost controls, we achieved excellent DSO and DPO (days payable outstanding) in second-half \n2023 and delivered net inventory reductions of nearly $2 billion and 35 days from our peak in first-\nquarter 2023. Working capital initiatives yielded roughly $2 billion of cash in 2023, helping us to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "6e441ea5366616747a9d42d6cb4bd12f",
+    "text": "meet our commitment for roughly break-even adjusted free cash flow in the second half of the \nand Israel.  In Q4, we also recognized $845 million of Advanced Manufacturing Investment \nCredits, or AMIC, as defined in the CHIPS Act. While our continued IDM 2.0 capital investments \nwill result in increased gross capex in ‘24 as compared to ‘23, we are on track to our aggregate \n2023 through 2024 guidance of net CapEx spending in the mid-30s as a percent of revenue, with \noffsets toward the high end of the 20 to 30% range.   \n \nNow turning to Q1 guidance: We expect Q1 revenue of $12.2 billion to $13.2 billion.  At the Q1",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "5457cd1d2375c5a60a7a686ba4d3ef72",
+    "text": "revenue midpoint of $12.7 billion, we expect gross margin of approximately 44.5%, with a tax rate \nof 13% and EPS of 13 cents.   \n \nWhile we expect a slightly sub-seasonal first quarter from our core product businesses, we see \nmaterial inventory corrections in Mobileye and PSG.  Additionally, we expect a significant drop in \nIFS revenue after seeing accelerated purchasing in our traditional packaging business and cyclical \nweakness in wafer equipment buying in the first half of the year, impacting the IMS business. \nWhen combined with businesses we exited in 2023, we expect a roughly $1 billion sequential \nrevenue impact from businesses outside of our core products.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "fc619320e035fa16c0435e79d99468c3",
+    "text": "revenue impact from businesses outside of our core products.   \n \nWith market signals remaining positive for PC demand and usage rates, we expect TAM to grow in \nthe low single digits in 2024, consistent with third-party views. Our recent results show the PC \nremains essential, and we remain confident in our longer-term TAM forecast as the age of the AI \nPC further enhances the value of device refresh.   \n \nWe expect Q1 data center revenue to decline double-digit percent sequentially before improving \nthrough the year. While the data center has seen some wallet-share shift between CPU and \naccelerators over the last several quarters, we expect growth in CPU compute cores to return to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "b1dda8f94884207fe50b8708718fbf9e",
+    "text": "more normal historical rates and our discrete accelerator portfolio, with well over $2 billion in \npipeline, to gain traction as we move through 2024. Within NEX, telco markets are likely to remain \nweak through the year, though we expect solid growth from our network, FNIC and edge \nproducts. These signals give us confidence that consolidated revenue will grow beyond typical \nseasonality after a soft Q1 and that we can deliver sequential and year-over-year growth in both \nrevenue and EPS each quarter of 2024.   \n \nWe are confident we can grow earnings faster than revenue this year and maintain roughly break-",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "e730416e1fdb6eafcbc3951b58e21ce1",
+    "text": "even adjusted free cash flow, though I will remind you that the rapid pace of delivering five nodes \nin four years and capacity expansion in support of external foundry commitments remain \nheadwinds on the pace of our margin expansion. We expect depreciation to grow by \napproximately $2 billion in 2024, in addition to a significant increase in variable factory startup \ncosts.  60% gross margin flow-through as a percent of revenue growth remains a rule of thumb in \naggregate in the intermediate term, though we may see volatility in our quarterly gross margin \nresults.   \n \nWe are excited to mark the first month fully operating under our new internal foundry reporting",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "93f2b0c01ba1ed4504adf9918830d13e",
+    "text": "structure, with improved accountability, transparency around cost and value drivers, and \nincreased focus on driving higher rates of return for our owners’ capital. We intend to provide you \nwith recast historical financials this quarter in the form of an 8-K. We will unpack the details at that \ntime, but you will see not only the first view of our manufacturing P&L (profit and loss), but a view \nof our product groups more in line with external peers. While it will come as no surprise our \nmanufacturing P&L is under significant pressure as we get back to process leadership and build \nthe infrastructure to meet both internal and external demand – we see abundant opportunity to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "85341d3b9179e891c84531fc07ff5204",
+    "text": "drive improvement. Finally, standing up a separate legal entity for manufacturing, technology \n \nAs we look back at 2023, we have a lot to be proud of. We entered the year with a challenging \nmacro backdrop. I’m pleased with our team’s efforts controlling spending, ramping new products, \nmanaging share, executing product and process roadmaps and delivering for our customers. We \ncontinued to focus our portfolio by exiting five businesses in 2023 – for a total of 10 since Pat’s \nreturn – while also identifying profitable adjacent markets we can serve with our existing IP, as we \nhave done with Intel Auto.  We executed within our Smart Capital framework and are beginning to",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "bf48101f4b3434dcb6881c6c0842e688",
+    "text": "see meaningful capital offsets.  We unlocked value for our shareholders through MBLY and IMS \nand announced our intention to pursue external investment in PSG.   \n \nI’d like to thank the entire Intel team for the hard work and execution which drove our improved \n2023 results.  While we aren’t yet where we want to be from a financial perspective, we are \nparticipating in a large and growing semiconductor TAM, our foundry and AI assets are showing \ngreat momentum in the market, and with the strong foundation of financial discipline we set in \n2023, we are confident and committed to our long-term financial objectives.   \n \nClosing – Pat Gelsinger, Intel chief executive officer:",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "e26cd0ce087d42272170f409c024652e",
+    "text": "Closing – Pat Gelsinger, Intel chief executive officer:  \n \nLet me say thank you for joining us on the call.  We appreciate the opportunity to update you on \nour strong Q4 results and to recap our incredible progress made in 2023. We are excited by the \nmomentum we are seeing in the business, in our execution, in the progress of our manufacturing \ntechnology and foundry design wins and in our mission to bring AI everywhere.  We will be hosting \nour first Intel Foundry Direct Connect in San Jose on February 21 and hope to see many of you \nthere in person. \n \nAbout Intel",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  },
+  {
+    "chunk_id": "0817656f8ee9f7baa2082965963ad792",
+    "text": "there in person. \n \nAbout Intel \nIntel (Nasdaq: INTC) is an industry leader, creating world-changing technology that enables global progress and enriches \nlives. Inspired by Moore’s Law, we continuously work to advance the design and manufacturing of semiconductors to help \naddress our customers’ greatest challenges. By embedding intelligence in the cloud, network, edge and every kind of \ncomputing device, we unleash the potential of data to transform business and society for the better. To learn more about \nIntel’s innovations, go to newsroom.intel.com and intel.com.",
+    "ticker": "INTC.US",
+    "pub_date": "20260715",
+    "period": "",
+    "data_source": "company_filing",
+    "source_file": "data/inputs/reports/英特尔/Earnings-Call-4Q23-FY23-V1.pdf"
+  }
+]

@@ -2,61 +2,125 @@
   {
     "standard_name": "钛白粉",
     "entity_type": "Product",
-    "aliases": ["二氧化钛", "TiO2", "金红石型钛白粉", "锐钛型钛白粉"]
+    "aliases": [
+      "二氧化钛",
+      "TiO2",
+      "金红石型钛白粉",
+      "锐钛型钛白粉"
+    ]
   },
   {
     "standard_name": "光模块",
     "entity_type": "Product",
-    "aliases": ["光收发模块", "transceiver", "400G光模块", "800G光模块", "1.6T光模块"]
+    "aliases": [
+      "光收发模块",
+      "transceiver",
+      "400G光模块",
+      "800G光模块",
+      "1.6T光模块"
+    ]
   },
   {
     "standard_name": "AI芯片",
     "entity_type": "Product",
-    "aliases": ["MLU芯片", "AI加速芯片", "推理芯片", "训练芯片", "NPU"]
+    "aliases": [
+      "MLU芯片",
+      "AI加速芯片",
+      "推理芯片",
+      "训练芯片",
+      "NPU"
+    ]
   },
   {
     "standard_name": "安纳达",
     "entity_type": "Company",
     "ticker": "002136.SZ",
     "product": "钛白粉",
-    "aliases": ["安纳达钛业", "安纳达（002136）"]
+    "aliases": [
+      "安纳达钛业",
+      "安纳达（002136）"
+    ]
   },
   {
     "standard_name": "中际旭创",
     "entity_type": "Company",
     "ticker": "300308.SZ",
     "product": "光模块",
-    "aliases": ["旭创科技", "中际旭创（300308）"]
+    "aliases": [
+      "旭创科技",
+      "中际旭创（300308）"
+    ]
   },
   {
     "standard_name": "模拟芯片",
     "entity_type": "Product",
-    "aliases": ["DrMOS", "电源管理IC", "模拟IC", "PMIC", "电源芯片", "DC-DC转换器"]
+    "aliases": [
+      "DrMOS",
+      "电源管理IC",
+      "模拟IC",
+      "PMIC",
+      "电源芯片",
+      "DC-DC转换器"
+    ]
   },
   {
     "standard_name": "杰华特",
     "entity_type": "Company",
     "ticker": "688141.SH",
     "product": "模拟芯片",
-    "aliases": ["杰华特微电子", "Joulwatt", "杰华特（688141）", "688141"]
+    "aliases": [
+      "杰华特微电子",
+      "Joulwatt",
+      "杰华特（688141）",
+      "688141"
+    ]
   },
   {
     "standard_name": "CPU",
     "entity_type": "Product",
-    "aliases": ["处理器", "x86处理器", "服务器CPU"]
+    "aliases": [
+      "处理器",
+      "x86处理器",
+      "服务器CPU"
+    ]
   },
   {
     "standard_name": "英特尔",
     "entity_type": "Company",
     "ticker": "INTC.US",
     "product": "CPU",
-    "aliases": ["Intel", "Intel Corporation", "英特尔公司", "INTC", "英特尔（INTC）"]
+    "aliases": [
+      "Intel",
+      "Intel Corporation",
+      "英特尔公司",
+      "INTC",
+      "英特尔（INTC）"
+    ]
   },
   {
     "standard_name": "AMD",
     "entity_type": "Company",
     "ticker": "AMD.US",
     "product": "CPU",
-    "aliases": ["超威半导体", "Advanced Micro Devices", "AMD（AMD）", "美国超微"]
+    "aliases": [
+      "超威半导体",
+      "Advanced Micro Devices",
+      "AMD（AMD）",
+      "美国超微"
+    ]
+  },
+  {
+    "standard_name": "寒武纪",
+    "entity_type": "Company",
+    "ticker": "688256.SH",
+    "product": "AI芯片",
+    "aliases": [
+      "Cambricon",
+      "寒武纪-U",
+      "寒武纪科技",
+      "中科寒武纪",
+      "寒武纪（688256）",
+      "688256"
+    ]
   }
 ]

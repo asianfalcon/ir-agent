@@ -306,6 +306,25 @@ def earnings_forecast(
     ]
     supplemental_text = "\n".join(f"- {s}" for s in supplemental_snips) or "暂无专家补充观点"
 
+    # 业绩不能只从合并财务表外推。补充召回能解释分部/产品收入和利润形成过程的
+    # 经营证据；这些证据可以来自官方、卖方或专家，但仍按各自身份使用，不能混成共识。
+    operating_keywords = (
+        "分部", "业务", "产品", "客户", "出货", "订单", "销量", "单价", "ASP",
+        "产能", "供应", "供给", "需求", "良率", "封装", "晶圆", "库存", "份额",
+        "竞争", "毛利", "费用", "segment", "product", "customer", "shipment", "unit",
+        "capacity", "supply", "demand", "yield", "wafer", "inventory", "market share",
+        "gross margin", "operating expense",
+    )
+    operating_chunks = [
+        c for c in _dedupe_chunks(_evidence_chunks(vector_chunks))
+        if any(keyword.lower() in c.get("text", "").lower() for keyword in operating_keywords)
+    ][:16]
+    operating_snips = [
+        f"[{_source_meta(c)} · {c.get('pub_date', '?')} · {c.get('source_file', '')} · chunk={c.get('chunk_id','')}] {c.get('text','')[:700]}"
+        for c in operating_chunks
+    ]
+    operating_text = "\n".join(f"- {s}" for s in operating_snips) or "暂无可用经营驱动证据"
+
     prompt = f"""你是卖方分析师。请基于以下本地数据预测 {company_name}({ticker}) 未来2个季度业绩区间。
 
 【历史财务数据 · 周期: {period}】(来源: SQLite financial_reports)
@@ -320,14 +339,24 @@ def earnings_forecast(
 【专家/纪要补充｜仅用于增量修正，不得计入卖方一致预期】(来源: LanceDB acecamp_expert_column)
 {supplemental_text}
 
+【经营驱动证据｜用于拆分部/产品收入与利润桥，不改变来源身份】
+{operating_text}
+
 {_GROUNDING_RULE}
 
 强制计算顺序：
-1. 历史实际值只作基数校验；
-2. 公司官方指引单列，作为预测边界与管理层锚点，绝不参与卖方均值；
-3. 仅用口径可比的券商研报形成卖方一致预期；只有一个有效样本时必须写“单一卖方基准”，不得称为多家共识；
-4. 专家/纪要只有在未被官方指引和卖方模型吸收时才能修正；
-5. 给出 IRA 最终预测，并同时计算相对官方指引中值、相对卖方一致预期的差值。
+1. 先找出真正决定本期业绩的2—5项业务/产品驱动，解释数量、价格、结构和供给如何形成收入；不要求指标齐全；
+2. 从收入与产品结构推导毛利率，再经运营费用、其他损益、税率和股本形成可审计EPS桥；
+3. 历史实际值作基数校验；
+4. 公司官方指引单列，作为预测边界与管理层锚点，绝不参与卖方均值；
+5. 仅用口径可比的券商研报形成卖方一致预期；只有一个有效样本时必须写“单一卖方基准”，不得称为多家共识；
+6. 专家/纪要只有在未被官方指引和卖方模型吸收时才能修正；
+7. 给出 IRA 最终预测，并同时计算相对官方指引中值、相对卖方一致预期的差值。
+
+【硬护栏 · 业绩拆解不是机械分摊】
+只选择对该公司预测有解释力的分部、产品、客户或供给变量。没有分部数量证据时写“方向验证/待量化”，
+不得按历史占比机械拆分合并收入。供给约束行业必须识别真正限制交付的环节，名义产能不能直接等同收入。
+弱证据只调整Bull/Bear概率，不改变Base金额。
 
 【硬护栏 · 禁止机械拆季度】
 严禁用以下方法从全年数拆出季度：全年 ÷ 4、剩余收入 × 固定比例、仅凭"季节性"套 30%/33%/37%。
@@ -342,6 +371,16 @@ IRA 点预测可以落在公司指引区间之外——这正是修正值的来�
 
 请输出：
 ## 📈 业绩预测 · {company_name}
+
+### 核心业务判断与业绩拆解
+| 业务/产品 | 最近实际表现 | 本期核心驱动 | 对收入的作用 | 对利润率的作用 | 证据与置信度 |
+|:---|:---|:---|:---|:---|:---|
+
+### 利润桥
+| 环节 | 假设/计算 | 结果 | 变化原因 | 不确定性 |
+|:---|:---|:---|:---|:---|
+
+必须形成“分部/产品→合并收入→毛利→营业利润→税后利润→EPS”的完整链；缺数据处明确标待量化。
 
 ### 预测校验
 （字段口径、历史基数、GAAP/Non-GAAP、样本覆盖度）
