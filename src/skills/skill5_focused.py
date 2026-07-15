@@ -290,6 +290,16 @@ def earnings_forecast(
     ]
     guidance_text = "\n".join(f"- {s}" for s in guidance_snips) or "暂无本地公司官方指引"
 
+    # P0 护栏：本地存在官方文件（company_filing/announcement）却一条指引都没抽到 →
+    # 抽取失败，绝不静默降级为"暂无指引"往下跑（AMD 本地有 109-115 亿指引却被漏读，
+    # 生成了违反指引的结果）。区分"抽取失败" vs "本地本就无官方文件"（后者放行）。
+    if not guidance_snips and _official_chunks(vector_chunks):
+        raise RuntimeError(
+            f"GUIDANCE_EXTRACTION_FAILED: {ticker} 本地存在官方财报/公告，但未能抽取到"
+            f"目标期指引。禁止在缺指引的情况下生成预测（防止违反指引或机械拆季）。"
+            f"请检查 _guidance_chunks 检索或指引关键词覆盖。"
+        )
+
     supplemental_snips = [
         f"[{_source_meta(c)} · {c.get('pub_date', '?')} · {c.get('source_file', '')}] {c.get('text','')[:500]}"
         for c in _dedupe_chunks(_supplemental_chunks(vector_chunks))[:6]
@@ -318,6 +328,17 @@ def earnings_forecast(
 3. 仅用口径可比的券商研报形成卖方一致预期；只有一个有效样本时必须写“单一卖方基准”，不得称为多家共识；
 4. 专家/纪要只有在未被官方指引和卖方模型吸收时才能修正；
 5. 给出 IRA 最终预测，并同时计算相对官方指引中值、相对卖方一致预期的差值。
+
+【硬护栏 · 禁止机械拆季度】
+严禁用以下方法从全年数拆出季度：全年 ÷ 4、剩余收入 × 固定比例、仅凭"季节性"套 30%/33%/37%。
+拆季必须至少有一种依据：公司季度指引 / 明确的季度一致预期 / 券商季度预测表 / 已披露的季度订单或出货计划。
+若以上依据都缺失，该季度只输出"季度数据不足，无法从全年预测可靠拆分"，不得强行给数。
+（极少数情况可用固定比例作为"明确标注的情景假设"，但必须显式标注为情景、不得当作基准点预测。）
+
+【硬护栏 · 越界必须举证，不缩回】
+IRA 点预测可以落在公司指引区间之外——这正是修正值的来源，不要为了贴合指引而缩回区间内。
+但越界时必须同时满足：(a) 挂一条显式理由；(b) 指向具体证据来源(source_file/chunk)；(c) 标出 Δ=IRA预测−指引中值。
+若越界却拿不出未被吸收的、可量化的证据 Δ → 判为无依据，此时才降回区间内或明确标注为 Bull/Bear case。
 
 请输出：
 ## 📈 业绩预测 · {company_name}
