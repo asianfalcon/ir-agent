@@ -15,6 +15,43 @@ def _rec(db, **kw):
     fs.record(argparse.Namespace(**{**d, **kw}), db_path=db)
 
 
+def test_guardrails():
+    import tempfile as _tf
+    with _tf.TemporaryDirectory() as tmp:
+        db = Path(tmp) / "g.db"
+        # 利润类无 basis → 拒写
+        try:
+            _rec(db, metric="net_income", mid=1e9); assert False, "应拒写"
+        except ValueError as e:
+            assert "BASIS_REQUIRED" in str(e)
+        # Non-GAAP actual 无 source_id → 拒写
+        try:
+            _rec(db, event_type="actual", metric="eps", basis="Non-GAAP", mid=1.4)
+            assert False, "应拒写"
+        except ValueError as e:
+            assert "NONGAAP_ACTUAL_NEEDS_SOURCE" in str(e)
+        # revenue 无 basis → 允许（不强制复制成两行）
+        _rec(db, metric="revenue", as_of_date="2026-04-01", mid=13577e6)
+
+
+def test_same_day_revision_deterministic():
+    """同日多修订：必须确定性取最后写入的一条，不随机。"""
+    import tempfile as _tf, sqlite3 as _sq
+    with _tf.TemporaryDirectory() as tmp:
+        db = Path(tmp) / "r.db"
+        _rec(db, event_type="actual", metric="revenue", as_of_date="2026-04-23", mid=14000e6, source_id="a1")
+        _rec(db, metric="revenue", basis="", as_of_date="2026-04-10", mid=13000e6)
+        # 同一天两条 forecast 修订：13900 先，13950 后 → 应取 13950
+        _rec(db, metric="revenue", as_of_date="2026-04-15", mid=13900e6)
+        _rec(db, metric="revenue", as_of_date="2026-04-15", mid=13950e6)
+        conn = _sq.connect(db); conn.executescript(fs.DDL); conn.row_factory = _sq.Row
+        latest = fs._latest(conn, None, "forecast")
+        conn.close()
+        rev = [r for r in latest if r["metric"] == "revenue"]
+        assert len(rev) == 1, f"每组应唯一一条，得 {len(rev)}"
+        assert rev[0]["value_mid"] == 13950e6, rev[0]["value_mid"]
+
+
 def _score_capture(db):
     import io, contextlib
     buf = io.StringIO()
@@ -50,7 +87,7 @@ def test_flow():
 
         # 口径隔离：Non-GAAP eps 不与 GAAP eps 混比
         _rec(db, event_type="forecast", metric="eps", basis="Non-GAAP", as_of_date="2026-04-10", mid=1.37)
-        _rec(db, event_type="actual", metric="eps", basis="Non-GAAP", as_of_date="2026-04-23", mid=1.40)
+        _rec(db, event_type="actual", metric="eps", basis="Non-GAAP", as_of_date="2026-04-23", mid=1.40, source_id="rel")
         _rec(db, event_type="consensus", metric="eps", basis="Non-GAAP", as_of_date="2026-04-01", mid=1.30)
         out = _score_capture(db)
         assert "Non-GAAP" in out and "eps" in out, out
@@ -65,4 +102,7 @@ def test_flow():
 
 
 if __name__ == "__main__":
+    test_guardrails()
+    test_same_day_revision_deterministic()
     test_flow()
+    print("all ok")

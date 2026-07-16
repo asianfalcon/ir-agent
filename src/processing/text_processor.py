@@ -154,6 +154,14 @@ def _classify_report(file_name: str) -> str:
         return "company_filing"
     if any(m in file_name for m in _FILING_MARK):
         return "company_filing"
+    # 兜底：小写官方特征词 + 年报缩写 AR（券商 YYYYMMDD- 命名已在前面 return，不会误伤）。
+    # 修 2023-Intel-AR.pdf / intel-q3-2023-financial-and-business-report 等被误判 broker。
+    fn_low = file_name.lower()
+    if any(t in fn_low for t in ("annual report", "10-k", "10-q", "financial-and-business",
+                                 "financial report", "financial-report", "annual-report")):
+        return "company_filing"
+    if _re.search(r"[-_ ]ar([-_. ]|$)", fn_low):  # "2023-Intel-AR"、"Intel AR_WR"
+        return "company_filing"
     return "broker_report"
 
 

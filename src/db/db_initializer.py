@@ -49,6 +49,32 @@ def init_schema() -> None:
                 PRIMARY KEY (item_code, price_date)
             );
 
+            -- 预测事件表（反馈回路）：append-only，同存 consensus/guidance/forecast/actual
+            -- 四类事件，让四层方法每次修正都能被实际业绩证伪。详见 scripts/forecast_snapshot.py。
+            -- accounting_basis 隔离 GAAP/Non-GAAP，绝不混比；历史永不覆盖，同 as_of_date 重复=修订新增。
+            CREATE TABLE IF NOT EXISTS forecast_events (
+                event_id         INTEGER PRIMARY KEY,
+                run_id           TEXT,
+                ticker           TEXT NOT NULL,
+                as_of_date       TEXT NOT NULL,   -- YYYY-MM-DD 事件/预测做出日（无穿越基准）
+                target_period    TEXT NOT NULL,   -- YYYYQ1..Q4，对齐 financial_reports.period
+                event_type       TEXT NOT NULL,   -- consensus|guidance|forecast|actual
+                metric           TEXT NOT NULL,   -- revenue|gross_margin|eps|net_income
+                accounting_basis TEXT DEFAULT '', -- GAAP|Non-GAAP|Reported|''
+                value_low        REAL,
+                value_mid        REAL,
+                value_high       REAL,
+                unit             TEXT DEFAULT '',
+                source_type      TEXT DEFAULT '',
+                source_id        TEXT DEFAULT '',
+                model_version    TEXT DEFAULT '',
+                information_cutoff TEXT DEFAULT '',
+                note             TEXT DEFAULT '',
+                created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            CREATE INDEX IF NOT EXISTS ix_fe_lookup
+                ON forecast_events(ticker, target_period, metric, event_type);
+
             -- ── System / lineage tables ───────────────────────────────────
 
             CREATE TABLE IF NOT EXISTS sys_data_lineage (

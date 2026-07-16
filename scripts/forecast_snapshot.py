@@ -18,7 +18,10 @@ from pathlib import Path
 DB_PATH = Path(__file__).resolve().parent.parent / "databases" / "ira.db"
 EVENT_TYPES = ("consensus", "guidance", "forecast", "actual")
 METRICS = ("revenue", "gross_margin", "eps", "net_income")
-BASES = ("GAAP", "Non-GAAP", "")
+BASES = ("GAAP", "Non-GAAP", "Reported", "")
+# 口径护栏：这些指标存在 GAAP/Non-GAAP 两套口径，写入时必须显式标 basis，否则无法比对。
+# revenue 通常只有一套(Reported)，不强制——不为匹配而复制成 GAAP/Non-GAAP 两行造重复。
+BASIS_REQUIRED_METRICS = ("net_income", "eps", "gross_margin")
 
 DDL = """
 CREATE TABLE IF NOT EXISTS forecast_events (
@@ -29,7 +32,7 @@ CREATE TABLE IF NOT EXISTS forecast_events (
     target_period    TEXT NOT NULL,              -- YYYYQ1..Q4，对齐 financial_reports.period
     event_type       TEXT NOT NULL,              -- consensus|guidance|forecast|actual
     metric           TEXT NOT NULL,              -- revenue|gross_margin|eps|net_income
-    accounting_basis TEXT DEFAULT '',            -- GAAP|Non-GAAP|''
+    accounting_basis TEXT DEFAULT '',            -- GAAP|Non-GAAP|Reported|'' （与 db_initializer 同步）
     value_low        REAL,
     value_mid        REAL,
     value_high       REAL,
@@ -52,6 +55,18 @@ def _conn(db_path=DB_PATH):
 
 
 def record(a, db_path=DB_PATH):
+    # 口径硬护栏：利润类指标不带 basis 就拒写——GAAP/Non-GAAP 混比是最隐蔽的错。
+    if a.metric in BASIS_REQUIRED_METRICS and a.basis not in ("GAAP", "Non-GAAP"):
+        raise ValueError(
+            f"BASIS_REQUIRED: metric={a.metric} 必须显式指定 --basis GAAP 或 Non-GAAP，"
+            f"当前为 {a.basis!r}。（利润/EPS/毛利率禁止无口径写入，防混比）"
+        )
+    # Non-GAAP actual 只能来自公司官方对账表，必须留证；禁止券商计算值伪装成 Non-GAAP 实际。
+    if a.event_type == "actual" and a.basis == "Non-GAAP" and not a.source_id:
+        raise ValueError(
+            "NONGAAP_ACTUAL_NEEDS_SOURCE: Non-GAAP 实际值必须带 --source-id（公司官方"
+            "Earnings Release/对账表），缺对账来源时应保持缺失，不得从 GAAP 自行估算或采信券商计算值。"
+        )
     conn = _conn(db_path)
     conn.execute(
         "INSERT INTO forecast_events "
@@ -75,17 +90,22 @@ def _err(pred, actual):
 
 
 def _latest(conn, ticker, event_type):
-    """每个 (target_period,metric,basis) 取 as_of_date 最新的一条该类型事件。"""
+    """每组 (target_period,metric,basis) 只取一条最新事件。
+
+    同一天可能插入多个修订版本（append-only），仅按 MAX(as_of_date) 会返回多行、
+    再由字典构造随机覆盖。用确定性三级排序取唯一：as_of_date > created_at > event_id，
+    保证"同日最后写入的修订"稳定胜出，无随机性。"""
     tk = "AND ticker = :tk" if ticker else ""
     params = {"et": event_type, "tk": ticker}
     return conn.execute(f"""
-        SELECT fe.* FROM forecast_events fe
-        JOIN (SELECT target_period,metric,accounting_basis,MAX(as_of_date) md
-              FROM forecast_events WHERE event_type=:et {tk}
-              GROUP BY target_period,metric,accounting_basis) last
-          ON last.target_period=fe.target_period AND last.metric=fe.metric
-         AND last.accounting_basis=fe.accounting_basis AND last.md=fe.as_of_date
-        WHERE fe.event_type=:et {tk}
+        SELECT * FROM (
+            SELECT fe.*, ROW_NUMBER() OVER (
+                PARTITION BY target_period, metric, accounting_basis
+                ORDER BY as_of_date DESC, created_at DESC, event_id DESC
+            ) AS rn
+            FROM forecast_events fe
+            WHERE event_type=:et {tk}
+        ) WHERE rn = 1
     """, params).fetchall()
 
 

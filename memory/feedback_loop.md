@@ -5,6 +5,10 @@
 - 四类事件：`consensus`（卖方共识）/`guidance`（公司指引）/`forecast`（IRA修正）/`actual`（财报实际）。
 - 历史永不覆盖；同 as_of_date 重复插入=修订新增。
 - 打分按 `metric×accounting_basis` 隔离；`as_of_date` 晚于 actual 标可能穿越（无穿越回测）。
+- 同日多修订：`_latest` 用 `ROW_NUMBER() OVER (ORDER BY as_of_date DESC, created_at DESC, event_id DESC)` 确定性取一条，不靠字典随机覆盖。
+- 口径护栏：net_income/eps/gross_margin 无 basis 拒写；Non-GAAP actual 必须带 source_id（只能来自官方对账表，禁券商计算值伪装）；revenue 用 Reported 单行、不复制成两口径。
+
+**落地状态（2026-07 A+）**：表已进 `db_initializer`（正式建表+索引，不再靠首跑脚本临时建）。此前一度只有脚本 DDL、ira.db 里无表——"代码已写"≠"系统已落地"，勿再误判为已存在。历史 actual 导入待做：先抽 1 家 1 季验证口径，再扩全量。
 
 **为什么**：先建能证伪自己的反馈回路，再决定哪些模型值得建。7 家公司+有限季度下，券商细粒度评分/自动调权/分部模型都易把噪声拟合成规律——暂缓，等 8+ 季度真实"预测→实际"配对且 score 证明修正稳定加分再上。
 
