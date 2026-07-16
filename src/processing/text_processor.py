@@ -225,6 +225,11 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         m = _re.match(r"(\d{8})", stem)
         if m and _valid_yyyymmdd(m.group(1)):
             return m.group(1), "prefix"
+        # 尾部 8 位日期：新闻/分析命名 "标题-YYYYMMDD"（如 ...-20260716）。日期是新闻
+        # 时效性与"越新越可信"的关键，不能因放尾部而漏掉退回空值。
+        m = _re.search(r"[-_](\d{8})(?:\D|$)", stem)
+        if m and _valid_yyyymmdd(m.group(1)):
+            return m.group(1), "suffix8"
         m = _re.search(r"(\d{4})-(\d{2})-(\d{2})", stem)
         if m:
             cand = m.group(1) + m.group(2) + m.group(3)
@@ -268,6 +273,15 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
                 return cand, "official-release-text"
         return None
 
+    def _date_from_news_text(body: str) -> tuple[str, str] | None:
+        """从新闻正文头部提取中文发布日期，只在文件名无可靠日期时启用。"""
+        head = body[:3000]
+        match = _re.search(r"(20\d{2})年(\d{1,2})月(\d{1,2})日", head)
+        if not match:
+            return None
+        cand = f"{int(match.group(1)):04d}{int(match.group(2)):02d}{int(match.group(3)):02d}"
+        return (cand, "news-text") if _valid_yyyymmdd(cand) else None
+
     def _date_from_fiscal_period(stem: str) -> tuple[str, str] | None:
         """末位兜底：从文件名的财季/财年推一个用于排序的代理日期（季度末/年末）。
         只求跨季度单调可比、能让真正近期的官方文件排在前，不追求真实披露日。
@@ -294,6 +308,8 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
     hit = _date_from_name(path.stem)
     if not hit and data_source == "company_filing":
         hit = _date_from_official_text(text)
+    if not hit and data_source == "web_news":
+        hit = _date_from_news_text(text)
     if not hit:
         hit = _date_from_fiscal_period(path.stem)
     if hit:
@@ -312,12 +328,24 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
     except ValueError:
         source_file = str(path)
 
+    badges: list[str] = []
+    source_weight = 1.0
+    if data_source == "web_news":
+        # 新闻可作事件/经营证据，但不能与公司官方文件同权。标题明确含传闻措辞时
+        # 再降一级，供 Skill 层执行“只调情景概率、不改 Base 金额”的纪律。
+        source_weight = 0.7
+        if any(marker in path.stem for marker in ("据传", "传闻", "网传")):
+            source_weight = 0.5
+            badges.append("传闻待确认")
+
     return {
         "ticker": ticker or "UNKNOWN",
         "pub_date": pub_date,
         "period": "",
         "data_source": data_source,
         "source_file": source_file,
+        "badges": badges,
+        "source_weight": source_weight,
     }
 
 
@@ -338,9 +366,11 @@ def chunk_text(text: str, metadata: dict) -> list[dict]:
 
 def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
     suffix = path.suffix.lower()
+    extensionless_news = suffix == "" and "news" in path.parts
     # 只处理可抽文本的格式。.zip(XBRL)/.xlsx/.DS_Store 等二进制若走 read_text 兜底会被
     # 当乱码切片污染向量库（rescan glob '*' 会把它们也排进来）。无解析器直接跳过。
-    if suffix not in (".pdf", ".html", ".htm", ".md", ".txt"):
+    # news/ 下偶有导出的无扩展名纯文本；只对该目录开放兜底，避免放宽到任意二进制。
+    if suffix not in (".pdf", ".html", ".htm", ".md", ".txt") and not extensionless_news:
         print(f"[processor] skip 非文本文件（无解析器）: {path.name}")
         return []
     if suffix == ".pdf":
@@ -365,6 +395,8 @@ def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
             "period":      c["metadata"]["period"],
             "data_source": c["metadata"]["data_source"],
             "source_file": source_file,
+            "badges":      c["metadata"].get("badges", []),
+            "source_weight": c["metadata"].get("source_weight", 1.0),
         }
         flat_chunks.append(flat)
 

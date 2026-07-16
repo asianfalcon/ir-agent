@@ -14,6 +14,7 @@ _GROUNDING_RULE = load("skill5_grounding_rule.md")
 RESEARCH_DATA_SOURCES = {"broker_report"}
 SUPPLEMENTAL_DATA_SOURCES = {"acecamp_expert_column"}
 OFFICIAL_DATA_SOURCES = {"company_filing", "announcement"}
+NEWS_DATA_SOURCES = {"web_news"}
 _TEAM_RE = re.compile(r"^\d{8}-([^-]+)-")
 FORECAST_KEYWORDS = (
     "盈利预测",
@@ -38,11 +39,15 @@ def _research_chunks(vector_chunks: list[dict]) -> list[dict]:
     return [c for c in vector_chunks if c.get("data_source") in RESEARCH_DATA_SOURCES]
 
 
-# 事实证据检索：在卖方研报之外，额外纳入专家观点与公司官方财报/公告。供非预测类
-# 函数（目标价、边际变化、关系图谱、机会风险）取用管理层指引/公司自述边际变化作为
-# "事实证据"，但绝不进 earnings_forecast 的卖方一致预期基准表——官方财报是公司自我
-# 披露，可作事实锚点，不可充当卖方共识。见 instructions.md 原则9 company_filing 段。
-_EVIDENCE_DATA_SOURCES = RESEARCH_DATA_SOURCES | SUPPLEMENTAL_DATA_SOURCES | OFFICIAL_DATA_SOURCES
+# 事实证据检索：在卖方研报之外，额外纳入专家观点、公司官方财报/公告和新闻。
+# web_news 可进入经营驱动、边际变化、关系图谱与机会风险，但绝不进入卖方一致预期；
+# 未经交叉确认的新闻默认是弱证据，只调整情景概率，不修改 Base 金额。
+_EVIDENCE_DATA_SOURCES = (
+    RESEARCH_DATA_SOURCES
+    | SUPPLEMENTAL_DATA_SOURCES
+    | OFFICIAL_DATA_SOURCES
+    | NEWS_DATA_SOURCES
+)
 
 
 def _evidence_chunks(vector_chunks: list[dict]) -> list[dict]:
@@ -68,6 +73,26 @@ def _dedupe_chunks(chunks: list[dict]) -> list[dict]:
             continue
         seen.add(key)
         result.append(chunk)
+    return result
+
+
+def _latest_one_per_source(chunks: list[dict], limit: int) -> list[dict]:
+    """Newest evidence with at most one snippet from each document/article."""
+    ordered = sorted(
+        chunks,
+        key=lambda c: (c.get("release_time") or 0, c.get("pub_date", "")),
+        reverse=True,
+    )
+    result = []
+    seen_sources = set()
+    for chunk in ordered:
+        source = chunk.get("source_file") or chunk.get("chunk_id")
+        if source in seen_sources:
+            continue
+        seen_sources.add(source)
+        result.append(chunk)
+        if len(result) >= limit:
+            break
     return result
 
 
@@ -249,6 +274,8 @@ def _source_label(chunk: dict) -> str:
         return "公司官方财报"
     if source == "announcement":
         return "公司公告"
+    if source == "web_news":
+        return "新闻报道"
     return source or "未知来源"
 
 
@@ -339,7 +366,7 @@ def earnings_forecast(
 【专家/纪要补充｜仅用于增量修正，不得计入卖方一致预期】(来源: LanceDB acecamp_expert_column)
 {supplemental_text}
 
-【经营驱动证据｜用于拆分部/产品收入与利润桥，不改变来源身份】
+【经营驱动证据｜用于拆分部/产品收入与利润桥，不改变来源身份；可含 web_news】
 {operating_text}
 
 {_GROUNDING_RULE}
@@ -357,6 +384,8 @@ def earnings_forecast(
 只选择对该公司预测有解释力的分部、产品、客户或供给变量。没有分部数量证据时写“方向验证/待量化”，
 不得按历史占比机械拆分合并收入。供给约束行业必须识别真正限制交付的环节，名义产能不能直接等同收入。
 弱证据只调整Bull/Bear概率，不改变Base金额。
+新闻报道（web_news）默认属于弱证据：单一媒体、券商转述或渠道传闻不得修改Base金额；
+只有与公司公告/官方财报或另一独立高可信来源交叉确认后，才可作为已验证事实参与Base推导。
 
 【硬护栏 · 禁止机械拆季度】
 严禁用以下方法从全年数拆出季度：全年 ÷ 4、剩余收入 × 固定比例、仅凭"季节性"套 30%/33%/37%。
@@ -437,7 +466,7 @@ def price_target(
 【财务指标 · 周期: {period}】(来源: SQLite financial_reports)
 {fin_text}
 
-【券商目标价/估值参考】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据，不得当成卖方目标价/共识)
+【目标价/估值参考】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement + web_news；只有券商研报可进入券商目标价共识，新闻转述不得重复计数)
 {target_text}
 
 {_GROUNDING_RULE}
@@ -480,21 +509,16 @@ def marginal_change(
     delta_text = "\n".join(deltas) or "暂无环比数据"
 
     # 按 pub_date 排序取最新研报
-    recent = sorted(
-        _evidence_chunks(vector_chunks),
-        key=lambda c: (c.get("release_time") or 0, c.get("pub_date", "")),
-        reverse=True,
-    )
-    recent_snips = [c["text"][:150] for c in recent[:5]]
+    recent = _latest_one_per_source(_evidence_chunks(vector_chunks), limit=5)
     recent_text = "\n".join(f"- [{c.get('pub_date','?')}] [{_source_meta(c)}] {c['text'][:120]}"
-                            for c in recent[:5]) or "暂无近期研报"
+                            for c in recent) or "暂无近期事实证据"
 
     prompt = f"""你是行业跟踪分析师。请聚焦于 {company_name}({ticker}) 的边际变化，输出增量信息。
 
 【环比/同比变化 · 周期: {period}】(来源: SQLite financial_reports)
 {delta_text}
 
-【最新研报/专家专栏摘要（按时间排序）】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
+【最新事实证据（按时间排序）】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement + web_news；新闻不进入卖方一致预期，未交叉确认时只作弱证据)
 {recent_text}
 
 {_GROUNDING_RULE}
@@ -551,7 +575,7 @@ def relationship_graph(
 {chain_text}
 核心产品：{product}
 
-【竞争格局研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据，不得当成卖方观点)
+【竞争格局证据摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement + web_news；新闻不进入卖方一致预期，未交叉确认时只作弱证据)
 {compete_text}
 
 {_GROUNDING_RULE}
@@ -611,10 +635,10 @@ def opportunity_risk(
 【财务数据 · {period}】(来源: SQLite)
 {fin_text}
 
-【看多研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
+【看多证据摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement + web_news；新闻不进入卖方一致预期，未交叉确认时只作弱证据)
 {bull_text}
 
-【看空/风险研报/专家专栏摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement官方信息；官方信息仅作公司自述事实证据/管理层指引，不得当成卖方观点)
+【看空/风险证据摘要】(来源: LanceDB broker_report + acecamp_expert_column + company_filing/announcement + web_news；新闻不进入卖方一致预期，未交叉确认时只作弱证据)
 {bear_text}
 
 【产业链相关公司】(来源: Kùzu)

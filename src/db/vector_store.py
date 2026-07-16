@@ -112,3 +112,38 @@ def search(
         q = q.where(f"period = '{period}'")
 
     return q.to_list()
+
+
+def latest_by_source(
+    ticker: str,
+    data_source: str,
+    limit: int = 10,
+) -> list[dict[str, Any]]:
+    """Return the newest chunks for one source without relying on semantic rank.
+
+    Event/news retrieval must not depend only on a generic embedding query: a new,
+    company-specific item can otherwise be buried by many older filings.  Dates are
+    sorted in Python because the current LanceDB query API does not provide a stable
+    metadata-only order-by path across the versions used by this project.
+    """
+    tbl = _get_table()
+    if tbl is None or limit <= 0:
+        return []
+
+    safe_ticker = ticker.replace("'", "''")
+    safe_source = data_source.replace("'", "''")
+    rows = (
+        tbl.search()
+        .where(f"ticker = '{safe_ticker}' AND data_source = '{safe_source}'")
+        .select([
+            "chunk_id", "text", "ticker", "pub_date", "period", "data_source",
+            "source_file", "release_time", "badges", "is_hot", "source_weight",
+        ])
+        .limit(1000)
+        .to_list()
+    )
+    rows.sort(
+        key=lambda row: (row.get("release_time") or 0, row.get("pub_date") or ""),
+        reverse=True,
+    )
+    return rows[:limit]

@@ -51,15 +51,28 @@ class ForecastLayerTests(unittest.TestCase):
         self.assertEqual(metadata["data_source"], "company_filing")
         self.assertEqual(metadata["pub_date"], "20260423")
 
+    def test_news_date_and_rumor_weight_come_from_local_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            news = Path(tmp) / "news"
+            news.mkdir()
+            path = news / "据传公司扩产.md"
+            path.write_text("2026年7月13日，公司宣布扩产。", encoding="utf-8")
+            metadata = _infer_metadata(path, path.read_text(), "INTC.US")
+        self.assertEqual(metadata["data_source"], "web_news")
+        self.assertEqual(metadata["pub_date"], "20260713")
+        self.assertEqual(metadata["source_weight"], 0.5)
+        self.assertEqual(metadata["badges"], ["传闻待确认"])
+
     def test_consensus_and_evidence_sources_are_separate(self):
         rows = [
             chunk("broker.pdf", "20260601", "broker_report", "2026E 营业收入", "b"),
             chunk("filing.pdf", "20260423", "company_filing", "Q2 Outlook", "f"),
             chunk("announcement.pdf", "20260424", "announcement", "业绩指引", "a"),
             chunk("expert.json", "20260602", "acecamp_expert_column", "专家观点", "e"),
+            chunk("news.md", "20260716", "web_news", "渠道新闻", "n"),
         ]
         self.assertEqual([r["chunk_id"] for r in _research_chunks(rows)], ["b"])
-        self.assertEqual({r["chunk_id"] for r in _evidence_chunks(rows)}, {"a", "b", "e", "f"})
+        self.assertEqual({r["chunk_id"] for r in _evidence_chunks(rows)}, {"a", "b", "e", "f", "n"})
 
     def test_latest_forecast_does_not_get_replaced_by_newer_thematic_note(self):
         old_forecast = chunk(

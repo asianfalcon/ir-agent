@@ -275,7 +275,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
 
         # 分层检索：卖方预测与公司官方指引使用不同查询，再合并交给 verifier；
         # verifier 会按 data_source 物理隔离，官方材料绝不进入卖方一致预期。
-        from src.db.vector_store import search as vector_search
+        from src.db.vector_store import latest_by_source, search as vector_search
         sellside_chunks = vector_search(
             query=f"{company_name} 财务 业绩",
             ticker=ticker,
@@ -333,7 +333,14 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         else:
             chunk_query = f"{company_name} 业绩 研报 专家纪要 边际变化"
             top_k = 15
-        chunks  = vector_search(query=chunk_query, ticker=ticker, top_k=top_k)
+        chunks = vector_search(query=chunk_query, ticker=ticker, top_k=top_k)
+
+        # 泛化语义查询容易被数量庞大的旧财报淹没，导致刚入库的公司新闻完全不可见。
+        # 单独按日期补召回最新 web_news，再按 chunk_id 去重。新闻仍由 skill5 的来源
+        # 隔离与弱证据护栏约束：不进入卖方一致预期，未交叉确认时不修改 Base 金额。
+        latest_news = latest_by_source(ticker, "web_news", limit=12)
+        seen_chunk_ids = {c.get("chunk_id") for c in chunks}
+        chunks.extend(c for c in latest_news if c.get("chunk_id") not in seen_chunk_ids)
 
         if name == "earnings_forecast":
             result = skill5_focused.earnings_forecast(ticker, company_name, dashboard, chunks, _llm)
