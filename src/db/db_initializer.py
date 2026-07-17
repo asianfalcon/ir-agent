@@ -75,6 +75,38 @@ def init_schema() -> None:
             CREATE INDEX IF NOT EXISTS ix_fe_lookup
                 ON forecast_events(ticker, target_period, metric, event_type);
 
+            -- 修正因子表：把"纪要挖掘→一致预期修正"从艺术变科学，让修正质量可回测。
+            -- 核心：判断纪要是否产生 alpha 必须比较"纪要发布前一刻的一致预期快照"；判断
+            -- 今天还能否修正要比较"今天的一致预期"。这两个问题不能混（时间穿越陷阱）。
+            CREATE TABLE IF NOT EXISTS revision_factors (
+                factor_id          INTEGER PRIMARY KEY,
+                ticker             TEXT NOT NULL,
+                event_date         TEXT NOT NULL,   -- YYYY-MM-DD 纪要/信息披露日
+                source_id          TEXT,            -- chunk_id / source_file，可追溯原文
+                information_cutoff TEXT,            -- 该信息基于哪天的知识
+                factor_text        TEXT NOT NULL,   -- 一句话描述该因子（"18A良率85%"）
+                evidence_type      TEXT,            -- quantified|timeline|sentiment|valuation
+                affected_metric    TEXT,            -- revenue|gross_margin|eps|net_income|...
+                affected_period    TEXT,            -- YYYYQ1 或 YYYY 或 range(2027-2028)
+                baseline_snapshot_id TEXT,          -- 修正的是哪天的一致预期快照
+                narrative_absorbed BOOLEAN DEFAULT 0, -- 研报文字提到该因素
+                estimate_absorbed  BOOLEAN DEFAULT 0, -- 相关预测数值已随之修订
+                price_absorbed     BOOLEAN DEFAULT 0, -- 股价/估值已反映
+                overlap_evidence   TEXT,            -- 同一信息的其他来源（防重复计算）
+                direction          TEXT,            -- bull|bear|neutral
+                point_delta        REAL,            -- 对点预测的修正（收入亿美元、EPS美元）
+                range_delta_low    REAL,
+                range_delta_high   REAL,
+                probability_delta  REAL,            -- 对 Bull/Bear 概率的调整（-0.1~+0.1）
+                calculation_basis  TEXT,            -- 推导逻辑（"良率85%×产能×ASP"）
+                invalidation_condition TEXT,        -- 何时失效（"10月0.9 PDK未交付"）
+                verification_date  TEXT,            -- 验证日期（里程碑/财报日）
+                verification_result TEXT,           -- confirmed|failed|pending
+                realized_contribution REAL,         -- 财报后该因子实际贡献的准确率
+                created_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            CREATE INDEX IF NOT EXISTS ix_rf_ticker ON revision_factors(ticker, event_date);
+
             -- ── System / lineage tables ───────────────────────────────────
 
             CREATE TABLE IF NOT EXISTS sys_data_lineage (

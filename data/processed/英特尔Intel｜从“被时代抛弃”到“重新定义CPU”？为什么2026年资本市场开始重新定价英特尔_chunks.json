@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_id": "2448a86f14f15027dc898cdbaebada33",
+    "text": "英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔\n当市场还把英特尔当成一家传统CPU公司时，它正在试图成为AI时代最重要的底层基础设施公司。\n开篇｜一家公司，为什么突然重新获得资本市场关注？\n如果把时间拨回到2025年，市场对Intel（NASDAQ: INTC）的评价几乎高度一致。 AI，输给NVIDIA；CPU，输给AMD；先进制程，输给TSMC；移动生态，输给ARM。 很多投资者甚至认为，Intel已经成为半导体行业的“诺基亚”。一家曾经定义PC时代的公司，正在被AI时代淘汰。因此，过去几年，资本市场几乎不愿给予Intel成长型公司的估值，而是把它视为一家缓慢衰退的传统制造企业。\n然而进入2026年以来，情况开始发生变化。Intel股价明显走强，越来越多机构开始重新研究这家公司。很多投资者开始提出一个问题： Intel，到底发生了什么？ 答案可能并不是很多人认为的“AI利好”。真正的变化是：\nIntel正在重新定义CPU。\n而这一变化，也正在改变整个市场对Intel未来价值的判断。\n一、Intel过去十年的最大错误：仍然活在旧CPU时代",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "0f19bc621edf6fe26b536e0b80a5666d",
+    "text": "而这一变化，也正在改变整个市场对Intel未来价值的判断。\n一、Intel过去十年的最大错误：仍然活在旧CPU时代\n过去二十年，CPU竞争逻辑非常简单。谁频率更高？谁核心更多？谁跑分更快？Intel长期依靠这一套规则统治PC市场。因此，无论是Core i7还是Xeon，本质都是围绕着一个目标：提升CPU自身计算性能。但是AI时代到来以后，整个计算架构发生了根本变化。AI训练主要依赖GPU；AI推理越来越依赖GPU；大型数据中心资源也越来越向GPU倾斜。于是资本市场开始形成一种观点： CPU越来越不重要了。 NVIDIA一路成长为数万亿美元市值公司，而Intel却持续被边缘化。很多投资者甚至认为：\nGPU正在取代CPU。\n但Intel后来意识到：市场其实看错了问题。\n二、CPU没有消失，而是换了一个角色\n真正的问题不是： CPU还有没有价值？ 而是： CPU未来到底负责什么？ 答案已经发生改变。未来CPU不再只是负责计算。它更像整个AI系统的大脑。如果说过去CPU像一位司机，那么未来CPU更像机场的塔台。机场真正完成运输的是飞机。但真正负责整个机场运行秩序的是塔台。未来CPU也是一样。它需要协调： GPU、NPU、内存、网络、存储、AI加速器、电源管理 整个系统的资源调度，都离不开CPU。因此，未来CPU竞争的核心，已经不是算力。而是：\n系统级调度能力（System Orchestration）。\nIntel正是围绕这一点，重新设计自己的产品。\n三、Panther Lake：Intel真正的新起点",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "aeace6e801fd0ee0da309367bb1bf98e",
+    "text": "Intel正是围绕这一点，重新设计自己的产品。\n三、Panther Lake：Intel真正的新起点\n2026年，Intel最重要的新产品，并不是传统意义上的CPU。而是：Panther Lake（Core Ultra 300系列），这是Intel第一款全面采用18A先进制程打造的新平台。需要注意的是：Intel自己对Panther Lake的定位，并不是CPU。而是：\nAI PC Platform（AI PC平台）。\n为什么叫平台？因为里面第一次真正完成了三大计算单元融合。包括：CPU，负责传统计算任务。GPU，负责图形处理与并行计算。NPU，负责本地AI推理。最终形成：\nCPU + GPU + NPU 三位一体。\n如果说，Apple M系列重新定义了SoC时代，那么Intel希望Panther Lake重新定义：AI PC时代。未来AI PC真正竞争的，已经不是CPU性能。而是谁能够最好地协调整个AI系统。\n四、真正决定Intel未来的，不是Panther Lake，而是18A\n很多投资者把 Panther Lake 看成Intel翻身的关键。其实， Panther Lake 只是结果。真正决定未来的是： Intel 18A制程。 18A被普遍认为是Intel近十年来最重要的一次技术升级。因为它首次同时采用两项关键技术： RibbonFET，全环绕栅极晶体管（Gate-All-Around，GAA）。 相比传统FinFET，可以进一步提升晶体管性能，并降低漏电。这是整个行业未来的发展方向。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "cdae3b2c6607697f524ae94cf61d08a5",
+    "text": "PowerVia， 背面供电（Backside Power Delivery） 。 传统芯片：信号线和供电线都位于芯片正面。PowerVia则把供电线路放到晶圆背面。这样能够：减少布线拥堵、提高供电效率、改善频率、降低功耗，这是Intel领先推出的重要创新之一。\n为什么资本市场开始重新看好Intel？ 因为过去几年最大的担忧一直不是 ： Intel有没有技术。而是：能不能量产。2026年，Panther Lake正式进入量产阶段。意味着：18A已经开始真正进入商业生产。市场最大的风险开始下降。\n五、Intel真正的想象空间：Foundry\n相比CPU，资本市场真正期待的是另一件事情。Intel正在尝试复制TSMC的商业模式。过去Intel模式非常简单。设计CPU。制造CPU。销售CPU。全部自己完成。而未来Intel希望拆成两个业务：\nIntel Products 负责芯片设计。包括：CPU、GPU、AI PC、服务器芯片等。\nIntel Foundry 负责晶圆代工。未来不仅制造Intel自己的芯片，也希望帮助其他公司制造芯片。\n如果成功，Intel估值体系将发生巨大变化。因为Foundry属于平台型业务。资本市场通常给予更高估值。目前市场重点关注的潜在客户包括： Microsoft、AWS、AI ASIC公司、美国国防相关项目。 此外，Intel还持续强化先进封装（Advanced Packaging）能力，希望提供从晶圆制造到封装测试的一站式服务。如果未来能够形成规模，Intel就不仅仅是一家CPU公司。而是： 美国唯一拥有先进逻辑制造能力的平台型企业。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "052871b536a10264e4e93a4e65dab615",
+    "text": "六、为什么Apple的传闻能够点燃市场？\n近期市场还有一个讨论非常多的话题。Apple可能测试Intel先进制程。 截至目前，双方并没有正式确认。因此，这仍属于市场传闻，而不是已经落地的商业合作。\n那么，为什么市场如此兴奋？原因并不是订单规模。而是：Apple是全球最严格的芯片客户之一。如果Apple愿意评估Intel先进制程。意味着：Intel Foundry开始进入全球最高端客户的候选名单。它代表的是：市场信任。远比订单金额更加重要。对于一家Foundry企业来说，信誉，比订单更加值钱。\n目前市场研究AI，大多数人都会想到：\n但真正值得关注的，还有另一条路线。那就是：AI ASIC（定制AI芯片）越来越多云计算公司开始发现：购买通用GPU，并不是唯一选择。于是：Google推出TPU；Amazon推出Trainium和Inferentia；Microsoft持续推进Maia；Meta也在加速开发自研AI芯片。未来，大型云厂商很可能越来越倾向于： 自己设计AI芯片。 而这些芯片，都需要先进制程代工。这正是Intel Foundry最大的潜在机会。如果Intel能够获得更多AI ASIC订单，它参与AI产业链的方式将不再依赖自家CPU或GPU，而是成为整个生态的制造者。\n八、Intel最大的风险，依然不能忽视\n任何一轮重估，都不会只有机会。Intel目前仍然面临三大核心风险。第一，18A量产良率,18A已经进入量产阶段。但真正的大规模稳定生产，仍然需要时间验证。先进制程，最终决定竞争力的，不是实验室数据。而是：良率。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "bfab5b30d103c907fd44b5abd11d2398",
+    "text": "第二，Foundry持续亏损,Intel近年来持续投入Foundry建设。短期仍然承受较大资本开支和运营压力。如果未来外部订单增长不及预期，盈利改善速度可能低于市场期待。\n第三，竞争不会停止，Intel面对的竞争者，几乎全部都是行业最强公司。NVIDIA持续扩张AI生态。AMD不断提升服务器CPU市场份额。TSMC继续保持先进制造领先。Broadcom在AI网络和定制芯片领域持续扩大优势。Intel不仅需要追赶，还需要证明自己能够长期保持竞争力。\n投资逻辑总结：市场究竟在重估什么？很多投资者仍然把Intel理解成一家CPU公司。事实上，资本市场正在重新评估的是三个层次：\n第一层：产品 Panther Lake能否推动AI PC真正普及？\n第二层：制造 18A能否实现高良率、大规模量产？\n第三层：平台 Intel Foundry能否获得更多外部客户，成为全球先进制程的重要代工平台？\n如果这三件事能够逐步兑现，那么Intel的估值逻辑将发生根本变化。它将不再只是传统CPU厂商。而可能成为：\n一家集设计、制造、先进封装于一体的AI基础设施平台。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "2408ef7baf99c556b92a48291345d3c8",
+    "text": "结语｜Intel，会成为美国版TSMC吗？\n资本市场往往容易在一家企业最辉煌的时候高估它，也容易在最低谷的时候低估它。2016年的AMD如此，2018年的NVIDIA如此，2023年的Meta也是如此。而2026年的Intel，正站在一个重要的十字路口。它是否一定能够成功？答案仍然未知。18A量产、Foundry客户拓展、AI PC生态建设，每一步都存在执行风险。但市场开始重新定价Intel，并不是因为它已经完成了转型，而是因为投资者看到了转型成功的可能性，并认为其概率正在提高。因此，未来真正值得关注的问题已经不是 ：\nIntel还能不能重新成为CPU之王？ 而是：\nIntel能不能借助18A、Foundry和AI平台战略，成为美国先进半导体制造体系中不可替代的一环？\n如果答案最终是肯定的，那么今天市场看到的，或许只是这家曾经的芯片巨头重新估值的开始。\n过去十年，Intel一直在回答一个问题：怎样造出更快的CPU？未来十年，它真正要回答的问题则变成： 怎样成为AI时代最重要的计算平台。 CPU只是其中一个组成部分。真正决定Intel未来估值的，不再是一颗CPU，而是它能否同时掌握 芯片设计、先进制造、先进封装和AI生态 四大能力。对于投资者而言，这也意味着分析Intel时，不应再只盯着CPU市场份额，而应关注三个关键指标：\n这三项指标，才是未来几年决定Intel能否完成估值重塑的核心变量。\n参考文献\nIntel Foundry：Intel 18A 官方介绍（RibbonFET、PowerVia、18A技术细节）\n\n\n\n搜索「」网络结果",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "9c35525b34433b9fe74ec6e2cbae094b",
+    "text": "搜索「」网络结果\n\n暂无留言\n微信扫一扫 关注该公众号\n当前内容可能存在未经审核的第三方商业营销信息，请确认是否继续访问。\n微信扫一扫可打开此内容， 使用完整服务\n\n暂无留言\n确认提交投诉\n你可以补充投诉原因（选填）\n确定",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/英特尔Intel｜从“被时代抛弃”到“重新定义CPU”？为什么2026年资本市场开始重新定价英特尔.html",
+    "badges": [],
+    "source_weight": 0.7
+  }
+]

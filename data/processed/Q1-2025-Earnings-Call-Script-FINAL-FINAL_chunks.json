@@ -1,263 +1,321 @@
 [
   {
-    "chunk_id": "d4d2d120957ea0308b7f668b54e845b2",
+    "chunk_id": "d5073c26c3ed421a7497be53e2a36ac1",
     "text": "Comments from CEO Lip-Bu Tan and CFO \nDave Zinsner \nIntel’s chief executive officer and chief financial officer offer comments after \nthe company released its first-quarter 2025 earnings. \n \nThe following are the prepared remarks provided on Intel’s first-quarter 2025 earnings conference call held at 2 p.m. \nPDT on April 24, 2025. These remarks include forward-looking statements that are based on the environment as seen \nby the company as of the time of the call and, as such, are subject to various risks and uncertainties. They also contain \nreferences to non-GAAP financial measures that the company believes provide useful information to investors. Refer",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "d4ed5ccdfc42263cb39d52e07acf1c80",
+    "chunk_id": "788608844564415522f069ce58ec3fa6",
     "text": "to the company’s earnings release for the first-quarter 2025, most recent annual report on Form 10-K and other filings \nwith the SEC for more information on the risk factors that could cause actual results to differ materially from the \ncompany’s expectations and additional information on non-GAAP financial measures, including reconciliations where \nappropriate to the corresponding GAAP financial measures. \n \nApril 24, 2025 – Lip-Bu Tan, chief executive officer of Intel (bio): \n \nI joined Intel five weeks ago. The reason I am here is simple: I love our company. I saw the \nchallenges we were facing. And I could not sit on the sidelines knowing I had an opportunity to turn",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "b31eaf8f741a74fa131570a12cd734c9",
+    "chunk_id": "216ba21874fdea5fc4b8e5772f40a128",
     "text": "things around and put us back on a path to gain market share and drive sustainable growth.  \n \nQ1 was a step in the right direction. Driven by Dave’s and Michelle’s (CFO Dave Zinsner and \nMichelle Johnston Holthaus, CEO of Intel Products) leadership, we delivered revenue, gross \nmargins and EPS (earnings per share) above our guidance. I want to thank them both, as well as \nour teams, for the good execution, especially with the ongoing macroeconomic uncertainty.  \n \nOur goal now is to build on this progress, but it won’t be easy. There are many areas we need to \nimprove, and there are no quick fixes. We must remain laser-focused on execution. One of my",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "36b64d71bcfe7cf2b4e39f4a7388594f",
+    "chunk_id": "9a9f7e71bb97a045a2669d0d80eb98d0",
     "text": "biggest learnings so far is that we need to fundamentally transform our culture and the way in \nwhich we operate. Organizational complexity and bureaucracy have been suffocating the \ninnovation and agility we need to win. It takes too long for decisions to get made. New ideas and \nthe people who generate them have not been given the room or resources to incubate and grow. \nAnd unnecessary silos have led to bad execution.  \n \nI’m here to fix this. We are taking swift actions to simplify the way we do business and drive \ntransparency and accountability across the company. We will empower smaller teams to move",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "5d1f2d0816a8c25df8b1333f4e51e477",
+    "chunk_id": "fe88cf00c73d9b387c4fa3607500c790",
     "text": "faster and make better decisions. And we will significantly reduce the number of layers that get in \ntheir way.  \n \nAs a first step, I have flattened the structure of my leadership team. All critical product, \nmanufacturing and G&A (general and administrative) functions, which were spread over two or \nthree layers, are now directly reporting to me. This will allow me to get closer to our product and \nengineering groups and work directly with them to close gaps with competition more quickly.  \n \nI will apply the same streamlining approach across the company with a focus on empowering our \nengineering talent to create great products and make it easier for customers to do business with",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "b42452bfe4344a7d5fbb6de432f4eb39",
+    "chunk_id": "82bdebf747b133dc0d0214c12246c873",
     "text": "us. To accelerate this simplification, we are taking more costs out of the business and lowering our \nCY25 (complete year 2025) and CY26 OpEx (operating expenses) targets. We now expect OpEx \nadditional $2 billion of savings in our gross CapEx (capital expenditures). Taking our target for this \nyear to $18 billion. We will continue to take a closer look at our existing factory footprint to ensure \nthat we are making the most efficient use of our installed capacity before committing to any \nadditional spending.  \n \nI will continue to make the needed investments to re-ignite innovation, even as we reduce our",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "c1362b4a0d5fd8fc58f55ffc45bbaa63",
+    "chunk_id": "75e6cca424208369b465d369172346e8",
     "text": "overall expenses, by minimizing projects and programs that have been taking attention away from \nour core client and server businesses. This will include revitalizing our engineering core. I am \nrebuilding our engineering talent pool with urgency, by promoting strong leaders internally, \nbringing back critical lost talent and recruiting new people.  \n \nIn addition, we are mandating a four-day-per-week return to office policy, effective Q3 2025. I \nknow firsthand the power of teamwork and this action is necessary to re-instill a more \ncollaborative work environment, improve efficiency and boost innovation. By eliminating",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "4f058f1ac0654ddd1dc448cdef947a03",
+    "chunk_id": "982bcfa8b3a237790673fa58375c2158",
     "text": "inefficiencies and transforming how we do business, I strongly believe we can reduce our costs \nwhile securing our future.  \n \nMany of you have asked about my longer-term strategic plan. It is an appropriate question. It’s a \nlittle too soon for me to provide all the details, but let me share with you my priorities.  \n \nFirst, the best products always win. And it is very important that we refocus on our core franchise \nto start building best-in-class products again. We have a good foundation. Our ecosystem in client \nand data center computing is valuable and durable, and we still maintain a large market share in",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "4e1939f82a3daa5164a42e1cc8b69019",
+    "chunk_id": "c76c8f45bca1877170d0ba070f987496",
     "text": "both. My focus will be on ensuring that our teams build products that are highly competitive and \nmeet the needs of our customers as we enter a new era of computing, defined by AI agents and \nreasoning models.  \n \nTo achieve this, we are taking a holistic approach and redefining our portfolio to optimize our \nproducts for new and emerging AI workloads. We are making necessary adjustments to our \nproduct roadmap so that we are positioned to make best-in-class products, while staying laser-\nfocused on execution and ensuring on-time delivery. However, I want to emphasize that there is \nno quick fix here – these changes will take time. Our goal is to become the platform of choice for",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "c7f8ca7fa8351c06974efc6ebbc87ec4",
+    "chunk_id": "2020758bb8b0c0766126010191ac8cef",
     "text": "our customers. This requires us to radically evolve our design and engineering mindset and \nanticipate the needs of our customers well in advance. I have received direct feedback from many \nof our largest customers who are also close personal friends. I am taking this feedback to heart and \nusing it to inform and change our approach to product and platform design.  \n \nSecond, we need to refine our AI strategy, with a focus on emerging areas of interest. My \nexperience helping successfully fund and incubate many startups in this space provides unique \ninsights that we will leverage in these efforts. Our goal will be to take an integrated system and",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "8704ed63815bfb1f32cb690ef7209ad2",
+    "chunk_id": "cf902d3cf1f261e34a082220e8cc0ac7",
     "text": "platform view and to develop full-stack AI solutions that enable more accuracy, power-efficiency \nand security for our enterprise customers. Our goal will be to enable the next wave of computing \ndefined by reasoning models, agentic AI and physical AI.  \n \nThird, we need to build trust with foundry customers. We have a lot of important building blocks in \nplace, including the ramp of Intel 18A in the second half of 2025 to support the launch of our first \nPanther Lake SKU by year-end, with additional SKUs coming in the first half of 2026. However, I \nknow from my years at Cadence Design that success in the foundry business requires more than",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "411401c6da81060abdf475929e3bdedd",
+    "chunk_id": "a5fe0478c1440bd9c8b60f63a8b3a3da",
     "text": "process technology and manufacturing capabilities alone.  It is first and foremost, a customer-\nservice business built on the foundational principle of trust. And we need to instill a customer-\nSuccess in foundry relies on recognizing that each customer uses different design tools, \nmethodologies and styles. As a foundry we need to ensure that our process technologies can be \neasily used by a variety of customers, each with a unique way of building their products. To do this, \nwe are more rapidly embracing industry standard EDA (electronic design automation) tools and \nbest design practices.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "c31d2303c221b5b2038d4fa0c990282f",
+    "chunk_id": "05da0af3a100b6a9fccb87389c229835",
     "text": "best design practices.  \n \nHere again, there is no quick fix, but we will make the necessary changes to our roadmap to deliver \non the commitments made to our foundry customers. We must learn to delight our customers by \nbuilding wafers that meet all their needs for power, performance, area and cost; quality; yield; \nreliability; and on-time schedule. While we are currently focused on delivering Intel 18A, we are \nalso working closely with customers to define the critical KPIs (key performance indicators) to \nensure on-time delivery of Intel 14A.  \n \nLastly, we need to strengthen our balance sheet. Our business is capital intensive, and we have",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "991c25eff306d38ca608745afd5a9ba7",
+    "chunk_id": "15f46f7bad540c54b7aa4efc6977f1b7",
     "text": "important investments to make at a time when our financial performance is not where it needs to \nbe. This means we need to be prudent with capital.  \n \nIn addition to the new targets for OpEx and CapEx, we will also look to further monetize non-core \nassets. I’m very pleased to have Silver Lake as an investor in Altera, and to welcome onboard \nRaghib (CEO Raghib Hussain) to help drive the business to its potential. In addition, I have made \nthe decision not to spin-out Intel Capital, but to work with the team to monetize our existing \nportfolio while being more selective on new investments that support the strategy. We need to",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "9e0aa45ad51f5c06e45494d2b188cc34",
+    "chunk_id": "53797bafd5c637d142f9acd92984470c",
     "text": "get our balance sheet healthy and start the process of deleveraging this year.  \n \nAs we are building a new Intel, you can expect us to work hard, stay humble and drive the \nnecessary changes to delight our customers. My motto has always been to underpromise and \noverdeliver – and I will not be satisfied until we regain the trust of our customers, put the company \non a sustainable path of gaining share and growing revenue, and deliver consistent returns for our \nshareholders. \n \nDave Zinsner, chief financial officer of Intel (bio): \n \nOur Q1 results mostly reflected our view entering the year that our two biggest markets were",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "63c73b988b996d72ae7033b91f4f783f",
+    "chunk_id": "867b1dc749a9c104159ebecae181a15f",
     "text": "poised for growth. On the client side, the end of service for Windows 10, the expected growing \nadoption of AI PCs and an aging installed base following the COVID-era refresh pointed to a PC \nTAM (total addressable market) growing 3-5%. Similarly, on the traditional server side, delayed \ninfrastructure upgrades driven by the rapid adoption of AI servers in 2024 supported double-digit \nCPU core growth this year on roughly flat units.   \n \nMore recently, the economic landscape has become increasingly uncertain driven by shifting \ntrading policies, persistent inflation and increased regulatory risk. While we have yet to see a",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "f191aad641c911c64d78629d15e2e2dc",
+    "chunk_id": "d17b1c21345b6a2800d81c3c0c1f2b16",
     "text": "meaningful change in customer buying patterns, we think it prudent to manage the business with \na level of conservatism going into the second half of the year. \n \nFirst quarter revenue was $12.7 billion, coming in at the high end of our guidance range, driven by \nbetter-than-expected Xeon sales. Similar to Q4 2024, we believe Q1 revenue benefited from \ncustomer purchasing behavior in anticipation of potential tariffs, though it is difficult to quantify \nthe magnitude.  \n \nLake. While we continue to see the mix of AI PCs growing throughout the year, the rate of growth \noff a lower-than-expected Q1 will be lower.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "90b79f7ac53babbd4d52da82d8b94b8f",
+    "chunk_id": "8040a4815885d7576634bdcf1d628f2c",
     "text": "off a lower-than-expected Q1 will be lower.  \n \nWe delivered first-quarter earnings per share of 13 cents versus our guidance of break-even EPS \ndriven by higher revenue, stronger gross margin and lower operating expenses. I was particularly \npleased to see our spending down $400 million sequentially and $700 million year over year as we \ncontinue to focus on optimizing our cost structure. \n \nQ1 operating cash flow was $800 million. We had gross CapEx of $6.2 billion with offsets of $1.7 \nbillion in the quarter, resulting in adjusted free cash flow of negative $3.7 billion.  We ended the \nquarter with a cash balance of $21 billion and received $1.1 billion from CHIPs grants and $1.9",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "8199d62e9b0ab6a7b0231d97c4bbdcd9",
+    "chunk_id": "1f244d098554d4fd8ae2bea6c84b161f",
     "text": "billion for the final close of our NAND business sale to SK hynix.  \n \nMoving to segment results for Q1. As previewed on our Q4 2024 earnings, we updated our \nsegment reporting for Q1 2025. Details can be found in the appendix to our earnings deck and in \nour Q1 2025 10-Q. The following commentary reflects the updated segmentation and \naccompanying re-casted 2024 financials.  \n \nIntel Products revenue was $11.8 billion, down 10% sequentially but above our expectations. CCG \nrevenue was down 13% quarter over quarter below typical seasonality and in-line with our \nexpectation with higher-than-expected volumes offset by product mix and competitive pressure.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "59246e26e9a31f5d1422de022f5f9048",
+    "chunk_id": "5d2fc1091b0ef21b5b7c49f82531ee7a",
     "text": "DCAI revenue was down 5% sequentially and above expectations driven by hyperscaler demand \nfor host CPUs for AI servers and storage compute. \n \nOperating profit for Intel Products was $2.9 billion, 25% of revenue and down $632 million quarter \nover quarter on lower revenue partially offset by reduced operating expenses. \n \nIntel Foundry delivered revenue of $4.7 billion, up 8% sequentially on pull-ins of Intel 7 wafers and \nincreased advanced packaging services.  \n \nIntel Foundry operating loss in Q1 was $2.3 billion, roughly flat quarter over quarter and in-line with \nexpectations. Structural cost improvements were offset by startup costs associated with the",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "0eae9dcbc1dc4ef9cb58cda531a00284",
+    "chunk_id": "705ee727041eb1eea07d429ab6793bef",
     "text": "ramp of products on Intel 18A.  \n \nTurning to “All Other”: Revenue came in at $943 million and was down 15% sequentially, slightly \nabove expectations. The three primary components of All Other are Mobileye, Altera and IMS. \nCollectively the category delivered $103 million of operating profit. \n \nAs Lip-Bu stated, we announced on April 14 our intention to sell 51% of Altera to Silver Lake \nPartners for an almost $9 billion valuation with Intel receiving net cash proceeds of $4.4 billion. \nWe believe the value of our remaining 49% stake in Altera will grow over time through our \npartnership with Silver Lake and with the addition of Raghib Hussain as the CEO. We expect this",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "fef6a0680f5922bd67a97c98fb4ab151",
+    "chunk_id": "32a1cbe6fbb91c0195b369e7d6d883c0",
     "text": "deal to close in the second half of 2025, at which point we expect to deconsolidate Altera from our \nfinancial results.   \n \nNow turning to guidance: Historically, average sequential growth in Q2 has been roughly flat with \nQ1. However, the very fluid trade policies in the U.S. and beyond, as well as regulatory risks have \nincreased the chances of an economic slowdown, with the probability of a recession growing. This \nmakes it more difficult to forecast how we will perform for the quarter and for the year, even as the \nWhile we have offsets including a global, highly diversified manufacturing footprint to help",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "ffa86b476fd6aa7731d5f82010a8a8b7",
+    "chunk_id": "595735ef110daf8549f7b9519c81bf47",
     "text": "mitigate tariffs, we will certainly see costs increase, and we feel it prudent to anticipate a TAM \ncontraction. The biggest risk we see is the impact of a potential pullback in investment and \nspending as businesses and consumers react to higher costs and the uncertain economic \nbackdrop.  \n \nAs a result, we are forecasting a wider-than-normal Q2 revenue range of $11.2 to $12.4 billion, \ndown 2-12% sequentially. Within Intel Products, we expect DCAI to decline at a faster rate than \nCCG. We expect Intel Foundry revenue down quarter over quarter due to pull-ins to Q1, lower \nwafer and advanced packaging volume, and capacity constraints in Intel 7, which we expect to",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "cf596cdbd8f6bfe56d0deeb444e23c49",
+    "chunk_id": "74dbc274777d78a7b59cf3bb73c7697b",
     "text": "persist for the foreseeable future. For All Other, we expect revenue for the sum of those parts to \nbe roughly flat sequentially.  \n \nAt the midpoint of $11.8 billion, we expect a gross margin of approximately 36.5% on lower \nrevenue and mix to our outsourced and lower margin client products, with a tax rate of 12% and \nbreak-even EPS, all on a non-GAAP basis.  \n \nAs you think about the full year, we recommend you start by using the last 10 years’ seasonality to \nmodel sequential changes in revenue, but be mindful of the significant uncertainty in markets \ntoday especially due to the potential for meaningful tariffs and tight supply on our older nodes. We",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "c91c6d2979a9c0bbac751aa7a28f2e84",
+    "chunk_id": "3d95a7874c24c4741208ef40d8841f0e",
     "text": "expect non-controlled income, or NCI, to net to zero in Q2 and for the full year to be approximately \n$500 million on a GAAP basis. NCI is still expected to grow in fiscal year 2026 to an updated \nrange of $1.3 billion to $1.5 billion on a GAAP basis and meaningfully increase further in future \nyears. \n \nAs Lip-Bu discussed earlier, we are simplifying our organizational structure and the way we work \nacross Intel so that we innovate faster and adapt more quickly where needed to better serve our \ncustomers. As a result, we now expect 2025 OpEx of $17 billion, $500 million lower than prior \nexpectations with a 2026 OpEx target of $16 billion. We are likely to have restructuring charges",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "28439bc503e3f56fc0e7919368d1cd99",
+    "chunk_id": "3aba63d1c92850f526952a5bcdaa59b5",
     "text": "associated with these actions, some of which may be included in our non-GAAP results. Since we \nhave not yet estimated these charges, they are not included in our guidance.  \n \nThese spending reductions will be driven by numerous broad-based transformation activities. Key \n2025 focus areas will be refocusing our portfolio, eliminating organizational complexity, \ntransforming our engineering functions and continuing to drive to leading SG&A (selling, general \nand administrative) efficiency. As Lip-Bu stated, we anticipate our 2025 gross capital investment \nwill now be approximately $18 billion, which is below our previous guide of $20 billion, reflecting",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "7a0488208f400035d762c5a24d792f3e",
+    "chunk_id": "8ec3288f8f63f5d850440a8380bd0e75",
     "text": "further operational efficiencies and better utilization of our construction-in-progress. While gross \nCapEx is down, we maintain our range for 2025 net CapEx to be approximately $8 billion to $11 \nbillion due to uncertainty regarding timing of the U.S. government fulfilling their obligations in our \nCHIPs agreement. \n \nBeginning the process of delevering our balance sheet in 2025 remains a top priority for us as \nevidenced by our lowered OpEx and CapEx targets, and the value unlock across our non-core \nassets.  \n \nI’ll wrap up by saying that Q1 was a solid quarter to start, even as the rest of the year is more",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "18e6da965714b4679c4d779ad0fc4fb5",
+    "chunk_id": "b763b885d75d51718c5f69932a327cf6",
     "text": "uncertain. We will closely manage what’s in our control and react quickly as the environment \nevolves. I’m encouraged by Lip-Bu’s leadership and focus on enhancing our competitive position, \nimproving our balance sheet and setting us on a path to deliver consistent returns to our \nClosing – Lip-Bu Tan, chief executive officer:  \n \nThank you for joining us today.  \n \nWe have clear opportunities to strengthen our business in both products and foundry. We have \nclear priorities to better serve our customers and create value for our shareholders. And I look \nforward to the work ahead as we build a new Intel.  \n \nThank you.  \nAbout Intel",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "c489676d1329dd14195106cfdcebd002",
+    "chunk_id": "b4f4915c44fef83a308cd58b141001ca",
     "text": "Thank you.  \nAbout Intel \nIntel (Nasdaq: INTC) is an industry leader, creating world-changing technology that enables global progress and enriches \nlives. Inspired by Moore’s Law, we continuously work to advance the design and manufacturing of semiconductors to help \naddress our customers’ greatest challenges. By embedding intelligence in the cloud, network, edge and every kind of \ncomputing device, we unleash the potential of data to transform business and society for the better. To learn more about \nIntel’s innovations, go to newsroom.intel.com and intel.com.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20250331",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q1-2025-Earnings-Call-Script-FINAL-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   }
 ]

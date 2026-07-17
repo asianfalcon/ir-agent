@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_id": "9111dd0bf6804fffff8eb8617ddd921c",
+    "text": "发布机构：瑞银证券（UBS Securities LLC）\n英文标题：US Semiconductors: Revisiting AMD and ARM Estimates Amid Agentic AI Acceleration\n发布日期：2026年6月24日\n原文页数：35 页\nUBS 同时上调 AMD 和 ARM 目标价，AMD 从 455 美元到 670 美元，ARM 从 260 美元到 470 美\n元，核心逻辑是 agentic AI 把 CPU 需求往上推，且 CPU 市场正分裂成两块：延迟敏感的 head\nnode（头节点）偏 ARM，吞吐量驱动的 standalone agentic 机架（独立 CPU 机架）偏 x86，\nAMD 在后者有结构性优势。UBS 维持 C2030 年 CPU TAM（潜在市场总规模）1700 亿美元判\n断，并明确反驳市场上 3000 亿美元的更激进版本，理由是 DRAM（内存）供给约束才是真正的瓶\n颈。最刺眼的数字是 ARM 的估值倍数：目标 PEG 从 1.6 倍提到 2.4 倍，对应 108 倍 P/E（原 61\n倍），逼近 INTC 的 107 倍。\n市场分裂：CPU 市场分化为 head node（偏 ARM）与 standalone agentic 机架（偏 x86/\nAMD），这是整份研报的底层框架\nAMD 上修：standalone 段 x86/ARM 切成 60%/40%，AMD 拿下增量主份额，C2030 服务器 CPU\n收入从 410 亿上修到 500 亿美元",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "bcfafc7f51269dbf2f1f5ee66d8c0441",
+    "text": "收入从 410 亿上修到 500 亿美元\nARM 上修：head node 市场 ARM 维持约 70% 份额，AGI（ARM 自研 standalone CPU）和版税\n率（royalty rate）双轮驱动，但 standalone 真正放量要等 Gen2/Gen3\n关键风险：DRAM 供给是 TAM 上限的硬约束；ARM 估值倍数大幅扩张后，对长期版税率假设的容\n错空间收窄\n一、底层框架：CPU 市场一分为二\nUBS 这份研报所有结论都挂在一个框架上，agentic AI 时代的 CPU 市场分裂成两类用途，对应两种架\n构赢家。\nhead node（头节点）：延迟敏感，偏 ARM。UBS 认为 NVDA 的 Grace/Vera 正获得 traction\n（市场牵引力），原因是低延迟加多线程，加上 NVDA 把内存作为系统一部分打包供应；此外还有\nGoogle Axion、AWS Graviton。UBS 维持 ARM 在 C2030 约 2000 万颗 head node TAM 里拿约\n70% 份额的判断\n• \n《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。\nINTC（英特尔）的位置：UBS 认为 x86 给了 INTC optionality（可选性），但中期上行取决于它\n能否改进高核数路线图。INTC 新发的 288 e-core Clearwater Forest，UBS 判断性能大致等同",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "0d93940ae9ef3e67e83e3ad1db2107f3",
+    "text": "能否改进高核数路线图。INTC 新发的 288 e-core Clearwater Forest，UBS 判断性能大致等同\nAMD Venice 平台低端（约 165 核，而 Venice 可扩到 256 核），份额会继续显著向 AMD 倾斜\n二、AMD：standalone 份额预期上修是估值上调主因\nUBS 对 AMD 转向更建设性，理由是 standalone 机架放量，AMD 在核数、多线程、x86 传统软件生态\n上占优，而这些传统软件负载现在越来越多被纳入 agentic AI 工作流。\n份额假设：standalone 段 x86/ARM 设为 60%/40%；考虑 INTC 的路线图和供给挑战，AMD 拿下\n增量需求的超额份额\n收入上修：服务器 CPU 收入 C26/C27/C28 从 160/210/270 亿美元改为 160/230/290 亿美元；C2030\n达 500 亿美元（原 410 亿）\n分部全景（C2028）：数据中心 847 亿、客户端 114 亿、游戏 32 亿、嵌入式 47 亿美元，总收入\n1040 亿美元，非 GAAP EPS 18.85 美元\n总市场份额微调：UBS 把 ARM 在整体 CPU 市场的单位份额设约 40%、收入份额约 50%（传统市场\n偏 x86 且 ASP 更低，所以收入份额高于单位份额）\n三、ARM：head node 吃版税，standalone 看后续世代\nARM 的故事 UBS 拆成两条腿，IP 版税（确定性强）和 AGI 自研 CPU（争议所在）。",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "351d1ac8e6fcbf8b2003b794b4358d0f",
+    "text": "ARM 的故事 UBS 拆成两条腿，IP 版税（确定性强）和 AGI 自研 CPU（争议所在）。\n版税这条腿（确定）：ARM 在 head node 应用上版税杠杆很强。UBS 估算每核版税率从 C2026 约\n0.50 美元升到约 1.72 美元，对应 C2030 约 64 亿美元版税收入。bull case（乐观情形）下混合每核\n版税率可到 1.70 美元水平，意味着对所有客户（含 AWS、NVDA）的每核版税都上涨\nAGI 这条腿（争议）：UBS 略微调高 ARM 自研 CPU（AGI）C2030 收入，从约 130 亿到约 140 亿\n美元，对应 1700 亿 TAM 的约 8% 份额。但 UBS 明确指出，Gen1 AGI 受核数、吞吐限制，难以打\nstandalone AI 机架；要进入更广用途，路线图（200–500 核）大概要等 Gen2/Gen3\nNVDA 是关键变量：NVDA 今年约 200 亿美元 CPU 芯片收入，UBS 判断约 60% head node、40%\nstandalone。同时 NVDA 和 AWS 早期客户版税率明显低于 1 美元/核的 CSS 定价\n客户侧：ARM 点名 META、OAI、字节跳动等超大规模客户，但 META 仍重度依赖 AMD、NVDA\n甚至 Google Axion；OAI 走向部分取决于软银的资金和基建角色；字节跳动占全球部署约 4%，贡\n献相对小\n四、为什么不是 3000 亿 TAM：DRAM 是硬约束",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "9b9fe41e4a6a3fa52fd6b94f277fc3a9",
+    "text": "献相对小\n四、为什么不是 3000 亿 TAM：DRAM 是硬约束\n这是 UBS 主动设的预期管理。市场把近端强需求外推到 C2030 约 3000 亿美元 TAM，UBS 明确反驳，\n把这种过度乐观引导到 MU（美光）的多头逻辑上，因为内存才是真正的 gating factor（限速环节）。\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。\n五、估值与机构评级\n以下评级、目标价、估值方法、情景假设均为 UBS 给出的观点。\n标的\n评级\n新目标\n价\n旧目标\n价\n现价\n（6/23）\n估值方法\nAMD\n买入 Buy\n（CBE）\n670 美\n元\n455 美\n元\n519.85 美元\n35 倍 P/E × C2028E EPS 18.85 美元\nARM\n买入 Buy\n（UR）\n470 美\n元\n260 美\n元\n366.39 美元\n2.4 倍目标 PEG → 108 倍 P/E × C2028E EPS\n4.33 美元\nINTC\n中性 Neutral\n—\n—\n132.28 美元\nSOTP 分部加总\n数据来源：UBS 全球研究，现价为 2026年6月23日收盘\nAMD 三情景（UBS 给出）\n情景\n估值\nC2028 收入\n数据中心增速\n倍数 × EPS\n上行 Upside\n820 美元\n约 1100 亿\n+39%\n38 倍 × 21.34 美元\n基准 Base\n670 美元\n约 1040 亿\n+36%\n35 倍 × 18.85 美元",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "9c194a9dc7f11fc0c9b32b1c3b9db135",
+    "text": "+39%\n38 倍 × 21.34 美元\n基准 Base\n670 美元\n约 1040 亿\n+36%\n35 倍 × 18.85 美元\n下行 Downside\n380 美元\n约 800 亿\n+21%\n29 倍 × 13.30 美元\nARM 三情景（UBS 给出）\n情景\n估值\nC28 收入增速\n营业利润率\n倍数 × EPS\n上行 Upside\n580 美元\n约 44%\n52%\n119 倍 × 4.90 美元\n基准 Base\n470 美元\n约 40%\n50%\n108 倍 × 4.33 美元\n下行 Downside\n265 美元\n约 39%\n49%\n64 倍 × 4.16 美元\n数据来源：UBS 全球研究 Upside/Downside Spectrum\n说明：以上情景及对应假设均来自 UBS 原文，研报未给出各情景的概率权重，故以平铺方式呈现，不作概率化处理。\nUBS 对 ARM 的关键说法：108 倍 P/E 处于半导体同业高端，接近 INTC 的 107 倍 NTM P/E；但用\n2030E EPS power 9.95 美元（约 10% COE 折现）算，对应 45 倍（不折现 37 倍），与大盘半导体覆盖\n大致可比。UBS 认为版税率假设还有上行，ARM 的 CPU IP 版税目前不到 CPU ASP 的 2%，在强需求\n下可能升向 5%。\n《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "b73bcaf8e628ce77ded623df66b2eb38",
+    "text": "《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。\n35 倍这个「同业中位」的倍数上，倍数没动，全靠 EPS 上修和估值锚后移一年到 C2028 撑起来；\nARM 的 470 美元一半涨幅来自 PEG 从 1.6 到 2.4 的倍数扩张本身。前者是盈利驱动，后者是估值\n驱动，脆弱性不在同一层。\n第二，整份研报把 ARM 的故事押在「版税率从 0.50 涨到 1.72」这条假设上。值得盯的是，UBS\n自己也承认 NVDA 和 AWS 早期版税率明显低于 1 美元/核的 CSS 定价，也就是说放量最快的两个\n大客户，恰恰是版税率最低的。份额结构和版税率结构如果背离，混合版税率的爬升路径未必像线\n性外推那么顺。\n第三，UBS 一边反驳 3000 亿 TAM、把 DRAM 立为硬约束，一边又在 AMD/ARM 的收入模型里\n假设 standalone 放量。这两件事有内在张力：standalone 核数越高越吃内存，而内存正是被点\n名的限速环节。这个框架的自洽点在于 DRAM 供给的释放节奏，这恰恰是研报没有给出明确量\n化、却决定一切的变量。\n风险提示\nUBS 的全部上调建立在三个前提上：一是 agentic AI 的 CPU attach rate（CPU 对 GPU 的配比）持续\n上行，而 UBS 自己承认现在估算最终配比为时尚早；二是 DRAM 供给能跟上 standalone 的内存需",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  },
+  {
+    "chunk_id": "999e75dfa885294067c7214b93b3ccfe",
+    "text": "上行，而 UBS 自己承认现在估算最终配比为时尚早；二是 DRAM 供给能跟上 standalone 的内存需\n求，这是被点名的限速环节；三是 ARM 版税率能按假设从 0.50 爬到 1.72 美元/核。任一前提松动，对\n应标的的估值逻辑就会受冲击，ARM 因倍数更高、容错更小，受冲击更直接。\n《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。\n《左兜进右兜》· 研报解读\nright-pocket.com\n本文为第三方研报的整理与解读，不构成投资建议。投资有风险，决策需独立判断。",
+    "ticker": "AMD.US",
+    "pub_date": "20260624",
+    "period": "",
+    "data_source": "broker_report",
+    "source_file": "data/inputs/reports/AMD/左兜进右兜_研报解读_瑞银_AMD与ARM估值上修_20260624.pdf",
+    "badges": [],
+    "source_weight": 1.0
+  }
+]

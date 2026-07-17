@@ -165,8 +165,26 @@ def _classify_report(file_name: str) -> str:
     return "broker_report"
 
 
+def _ticker_from_broker_name(file_name: str) -> str | None:
+    """从券商研报命名 "YYYYMMDD-机构-公司-<TICKER>-标题" 抽显式标的代码。
+    只认强信号：A股 6 位数字(688141) 或 XXX.US；且必须匹配 vocab 里存在的 ticker，
+    避免把标题里的随机数字/代码误当 ticker。抽不到返回 None（回落目录/正文）。"""
+    import re as _re
+    known = {e.get("ticker") for e in _load_vocab() if e.get("entity_type") == "Company"}
+    # A股 6 位：-688141- → 688141.SH / .SZ（用 vocab 里已知的带后缀形式匹配）
+    for m in _re.findall(r"(?<!\d)(\d{6})(?!\d)", file_name):
+        for suf in (".SH", ".SZ"):
+            if m + suf in known:
+                return m + suf
+    # 美股：-AMD.US- / -INTC.US-
+    for m in _re.findall(r"\b([A-Z]{1,5}\.US)\b", file_name):
+        if m in known:
+            return m
+    return None
+
+
 def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -> dict[str, Any]:
-    # ticker 优先级：显式 override > 所在公司目录 > 正文 > 文件名。
+    # ticker 优先级：显式 override > 文件名显式代码 > 所在公司目录 > 正文 > 文件名词典。
     # 目录权威：reports/AMD/、reports/英特尔/ 等以公司命名的目录，其下文件的归属由
     # 目录决定，绝不让正文里对竞品的提及把 AMD 财报推成 INTC（曾导致 AMD 2023 文件
     # 混入 Intel 召回池）。目录名映射不出 ticker（如"美股""TMT"）时才回落到正文推断。
@@ -178,7 +196,11 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         if cand:
             dir_ticker = cand
             break
-    ticker = ticker_override or dir_ticker or _normalize_ticker(text) or _normalize_ticker(path.stem)
+    # 文件名里的显式 ticker 优先于目录权威：券商研报命名 "YYYYMMDD-机构-公司-<TICKER>-标题"
+    # 会直接写明标的代码（-杰华特-688141-、-AMD.US-）。混装目录（如 reports/寒武纪/ 同时
+    # 放了杰华特和寒武纪研报）只靠目录名会把两家都标成寒武纪，此时文件名的显式代码才是真相。
+    name_ticker = _ticker_from_broker_name(path.name)
+    ticker = ticker_override or name_ticker or dir_ticker or _normalize_ticker(text) or _normalize_ticker(path.stem)
 
     # walk up to find the evidence category dir (reports / announcements / news)
     source_map = {"reports": "broker_report", "announcements": "announcement", "news": "web_news"}

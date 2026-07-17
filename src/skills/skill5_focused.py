@@ -180,24 +180,8 @@ def _forecast_score(chunk: dict, company_name: str) -> int:
 
 
 def _forecast_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) -> list[dict]:
-    """Return broker/expert chunks most likely to contain sell-side forecasts."""
+    """从预检索池筛选最可能含卖方预测的 broker/expert chunk(不再独立调 vector_search)."""
     chunks = list(vector_chunks)
-    try:
-        from src.db.vector_store import search as vector_search
-
-        queries = [
-            f"{company_name} 盈利预测 2026E 2027E 2028E 营业收入 归母净利润 EPS",
-            f"{company_name} 财务预测与估值 营业收入 归属于母公司净利润 2026E 2027E 2028E",
-            f"{company_name} 投资建议 盈利预测 每股收益 PE PS",
-            f"{company_name} 2026E 2027E 2028E PE PS",
-            f"东吴证券 {company_name} 2026E 2027E 2028E",
-            f"国信证券 {company_name} 2026E 2027E 2028E",
-        ]
-        for query in queries:
-            chunks.extend(vector_search(query=query, ticker=ticker, top_k=20))
-    except Exception as exc:
-        print(f"[skill5] forecast vector enrichment skipped: {exc}")
-
     scored = [
         (chunk, _forecast_score(chunk, company_name))
         for chunk in _latest_version_per_team(_dedupe_chunks(_research_chunks(chunks)))
@@ -214,22 +198,8 @@ GUIDANCE_KEYWORDS = (
 
 
 def _guidance_chunks(ticker: str, company_name: str, vector_chunks: list[dict]) -> list[dict]:
-    """检索公司下一期指引；结果必须与卖方预测保持物理隔离。"""
-    chunks = list(vector_chunks)
-    try:
-        from src.db.vector_store import search as vector_search
-
-        queries = [
-            f"{company_name} 公司官方 下一季度 收入指引 毛利率 EPS outlook guidance",
-            f"{company_name} Earnings Release business outlook revenue range gross margin EPS",
-            f"{company_name} 业绩预告 业绩快报 公司公告 下一期指引",
-        ]
-        for query in queries:
-            chunks.extend(vector_search(query=query, ticker=ticker, top_k=20))
-    except Exception as exc:
-        print(f"[skill5] guidance vector enrichment skipped: {exc}")
-
-    official = _dedupe_chunks(_official_chunks(chunks))
+    """从预检索池筛选公司下一期指引(不再独立调 vector_search);结果与卖方预测保持物理隔离."""
+    official = _dedupe_chunks(_official_chunks(vector_chunks))
     scored = []
     for chunk in official:
         text = chunk.get("text", "")

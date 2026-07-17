@@ -1,0 +1,35 @@
+[
+  {
+    "chunk_id": "4b675c4ee948b9d44136c51ae9faf43a",
+    "text": "AMD也下单英特尔？\n市场传出，随着先进制程18A良率提升至85%，英特尔(Intel Corp.)已夺得超微(AMD)、英伟达(Nvidia Corp.)、OpenAI等科技巨擘的晶圆代工订单。\n\nWccftech 14日报导，根据网友John Intel、Alex提供的研究报告，知名投资银行KeyBanc Capital Markets指出，英特尔旗下最关键的「Intel 18A」制程良率已从65%稳健提升至85%。这一数字虽仍落后台积电「N2」制程90%的良率水准，但已明显超越三星晶圆代工(Samsung Foundry)「SF2」制程50%~60%的良率表现。\n\n据了解，英特尔14A制程的研发进度仍如期进行，且在缺陷密度控制上的表现优于18A，预计将于2028年下半年如期进入量产阶段。\n\n受惠于18A制程良率改善，加上台积电报价上扬，KeyBanc预估英特尔将把80%~90%的新一代桌上型电脑CPU「Nova Lake」晶粒(tiles)订单，改回由英特尔晶圆代工服务(IFS)自行生产。先前由于18A制程在效能优化上存在问题，英特尔原本计画将Nova Lake约60%~70%的晶粒订单，外包给台积电以N2制程生产。\n\nKeyBanc相信，英特尔决策也受到以下因素影响：第一，英特尔晶圆代工服务对台积电的竞争威胁日增，导致台积电给予英特尔的N2制程报价条件，没有其他客户那么优惠；第二，在竞争日趋激烈的情况下，KeyBanc认为英特尔在以N2制程优化Nova Lake晶粒方面，能获得的支援也相对有限。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/AMD也下单英特尔？.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "89e8c2a131894bfe87cb8cb03d8fca42",
+    "text": "随着新客户陆续加入、加上代理式AI需求激增，英特尔计画大幅扩充18A与Intel 3 (用于Granite Rapids芯片)制程的代工产能。\n\nKeyBanc指出，除了已成功争取到苹果(Apple Inc.)将18A与14A两项制程用于低阶M系列处理器外，英特尔也已赢得AMD、英伟达、迈威尔(Marvell)、微软(Microsoft)、美光(Micron)以及OpenAI等客户的晶圆代工设计订单(foundry design win)。\n\n另外，据了解，英特尔已上调部分晶圆代工设备订单，调升幅度达30%~40%。\n\nKeyBanc并指出，继谷歌(Google)的TPU v9 (Humufish)处理器后，英特尔在EMIB-T封装技术上再度拿下重大设计订单，这次是亚马逊云端运算服务「Amazon Web Services」(AWS)的Trainium 3芯片。\n\n市场近日才谣传，华盛顿当局极希望将更多芯片制造转移至美国本土，而非留在台湾、南韩、日本及中国，正在推动英特尔扩大先进封装产能，盼能与台积电一较高下。\n\n华尔街日报7月10日引述未具名官员报导，川普政府正在推动英特尔扩大新墨西哥州厂的产能，该厂主要负责「先进封装」(advanced packaging)制程。英特尔与美国政府皆认为，先进封装是英特尔与台积电一较高下的最佳机会。\n\n报导还引述英特尔与美国政府高层指出，英特尔执行长陈立武(Lip-Bu Tan、见图)大约每个月都会前往华盛顿一次，与商务部官员会面。此外，陈立武也定期跟商务部长卢特尼克(Howard Lutnick)通电话，向他回报客户关系与业务近况。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/AMD也下单英特尔？.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "54848c97f0c5e71b33cc4c202342fe8e",
+    "text": "点这里👆加关注，锁定更多原创内容\n\n*免责声明：文章内容系作者个人观点，半导体芯闻转载仅为了传达一种不同的观点，不代表半导体芯闻对该观点赞同或支持，如果有任何异议，欢迎联系我们。\n\n推荐阅读\n10万亿，投向半导体\n芯片巨头，市值大跌\n黄仁勋：HBM是个技术奇迹\nJim Keller：RISC-V一定会胜出\n全球市值最高的10家芯片公司\n喜欢我们的内容就点 “在看 ” 分享给小伙伴哦~\n\n\n\n搜索「」网络结果\n\n暂无留言\n微信扫一扫 关注该公众号\n当前内容可能存在未经审核的第三方商业营销信息，请确认是否继续访问。\n微信扫一扫可打开此内容， 使用完整服务\n该账号因违规无法跳转\n\n暂无留言\n确认提交投诉\n你可以补充投诉原因（选填）\n确定",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/AMD也下单英特尔？.html",
+    "badges": [],
+    "source_weight": 0.7
+  }
+]

@@ -1,65 +1,79 @@
 [
   {
-    "chunk_id": "933f4771194091698cea3b7a632b9365",
+    "chunk_id": "6a6356b96ce882e8ef9d9d67307a017a",
     "text": "先进封装技术全解读 | 英特尔\n以下文章来源于SiP与先进封装技术 ，作者Suny Li\nSiP/先进封装/3D IC/微系统，原创观点分享，设计仿真交流，发展前景预期~~\n导 读",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "0c0c044af7bedb05dbc26d50b85310c9",
+    "chunk_id": "cfc130377246f0ca1be16e8888f9cd09",
     "text": "在芯片发展史上，英特尔无疑是一家了不起的公司， 英特尔的创立和发展记录着芯片发展的历史，英特尔的每一步都堪称芯片技术史上的重要节点。\n1947年，晶体管发明， 这无疑是人类历史上最伟大的发明。\n信息承载量 是 文明先进程度的重要标志，一个文明其信息的承载量越大，文明程度就越高。\n记录和传递信息的基本单位称为功能单元， 晶体管是目前唯一可以不断缩小而功能保持不变的功能单元， 是信息的载体，也 是文明先进程度的重要标志。\n1958年，集成电路发明，晶体管的微缩之路正式踏上征程。\n1965年，摩尔定律提出，指明了 晶体管的尺寸微缩和数量增长是以指数方式进行。\n1968年， 英特尔由 诺伊斯和摩尔联合 创立，迄今 已有56年。\n今天，人们常说摩尔定律已经终结，难道摩尔亲手创立的公司也要因此而终结了吗？或者， 英特尔辉煌时代的结束也预示着 摩尔定律的最终结束？\n在前面的文章中，我曾写到： 摩尔定律所预示的单位空间内的晶体管数量的增加并未结束，只是不再以指数方式增长。在系统空间内，功能单元的数量会持续增加，并且会一直持续下去，即系统空间内的功能密度会持续增加，谓之 功能密度定律。\n后摩尔定律时代，功能密度持续增加的原动力正是来源于先进封装技术。\n在先进封装领域，Intel依然是技术的领导者，创造性地推出了EMIB，Foveros，Co-EMIB，ODI等先进封装和互联技术，继续驱动着技术不断向前。\n英特尔的先进封装技术主要分为两大类：EMIB和Foveros，此基础上又扩展出Co-EMIB，Foveros Direct, ODI等。可参考下图。",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "4545012a442deacb84d1d8be61408913",
+    "chunk_id": "633e899a556414d50ec5b2d18b8eff12",
     "text": "1 EMIB\nEMIB , Embedded Multi-Die Interconnect Bridge，嵌入式多芯片互联桥，是一种聪明且灵活的先进封装技术，在需要高密度互连的芯片部位通过将硅片嵌入基板，形成高密度互连桥。其他区域则通过基板进行互连。\n如下所示为EMIB的示意图和剖面图，可以看出，在密度高的互连区域，芯片上采用了小而密的凸点，采用EMIB互连，其它区域使用常规凸点，采用基板互连。\n\n\n例如，常规凸点的间距 100um，在EMIB区域则变为55-36um，支持更高密度的互连。\n\nEMIB刚推出的时候，被业界嘲笑为“胶水”，认为其将小芯片粘结在了一起。现在却的得到了越来越多的认可，业界也认识到了EMIB的独特价值，台积电的CoWoS-L就是取经 EMIB技术。\n严格来说， EMIB不属于2.5D封装技术，因为它既无中介层，也无硅通孔，但是 EMIB确实比2D封装要复杂，在某种程度上达到了2.5D中介层的效果，所以英特尔将其称为2.5D封装。在我对封装类型的定义中， EMIB此 类封装我称之为2D+，和InFO PoP是划归一类的。\n下面我们解读一下 Foveros。\n从EMIB 到 Foveros，芯片开始堆叠在一起，进行横向和纵向之间的互连，凸点间距进一步降低到25um。",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "c173cb3f45e865cd318140fd43ea8652",
+    "chunk_id": "ff913ded9c62950d93743e6155d70539",
     "text": "Foveros Direct是在 Foveros的基础上 使用铜与铜的混合键合取代Bump，把凸点间距缩小到10微米以下，从而大幅提高芯片互连密度和带宽。其核心技术就是混合键合Hybrid Bonding技术。\n混合键合是一种在相互堆叠的芯片之间获得更密集互连的方法，并可实现更小的外形尺寸。下图左边的技术，被称为Bumping，凸点间距是 50 微米，每平方毫米有大约 400 个凸点。右侧为混合键合技术，可支持到小于10微米的凸点间距，并达到每平方毫米 10,000 个凸点。\n\nHybrid Bonding 技术 可以 在芯片之间实现更多的互连，并带来更低的电容，降低每个通道的功率，使得产品性能朝着更好的方向发展。\n下图是传统凸点Bumping技术和Hybrid Bonding 混合键合技术加工流程的比较，混合键合技术需要新的制造、操作、清洁和测试方法。混合键合技术的优势包括：有更高的电流负载能力，可扩展的间距小于1微米，并且具有更好的热性能。",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "c450b97ca9ab882218d800d449575b62",
+    "chunk_id": "0851f0838f148a1ef9592f2a69e8cecc",
     "text": "Hybrid Bonding 混合键合技术 与传统的凸点焊接技术不同， 混合键合 技术没有突出的凸点，特别制造的电介质表面非常光滑，实际上还会有一个略微的凹陷。在室温将两个芯片附着在一起，再升高温度并对它们进行退火，铜这时会膨胀，并牢固地键合在一起，从而形成电气连接。\n混合键合技术 可以将互联间距缩小到10 微米以下，可获得更高的载流能力，更 紧密的铜互联密度，并 获得比底部填充胶更好的热性能。当然， 混合键合技术 需要新的制造、清洁和测试方法。\n未来先进封装中，互联的密度会更大，界面间连接的凸点间距会缩小到10um 以下，每平方毫米的凸点数量会超过10,000个。\n混合键合 Hybrid Bonding 技术在高密度先进封装中的普遍应用，在混合键合中，凸点已经不存在，除了金属键合在一起，硅体也会键合在一起，硅片间没有了空隙，无需填充 导热 胶，并具有更好的散热性能，因为硅本身就是良好的导热材料。\nHybrid Bonding已经是高端先进封装的必备技术，TSMC-SoIC就采用了 Hybrid Bonding 技术，混合键合对目前热度很高的3.5D先进封装也同样必不可少。\n\n\nODI (Omni-Directional Interconnect) 全方位互连技术，这是先进封装的一个新维度。",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "8a21719c4a2c0ecab5be1b243711056e",
+    "chunk_id": "33311ffd1ffb9275dd2084516719cf64",
     "text": "ODI (Omni-Directional Interconnect) 全方位互连技术，这是先进封装的一个新维度。\n\nODI可以有两种不同型态，除了打通不同层的电梯型态外，也有连通不同立体结构的天桥，以及每层之间的夹层，通过这个设计，让不同芯片的组合可以有极高的弹性。\n通过这些全新的3D封装方式，芯片设计思维也从过去的平面拼图，变成堆积木。在芯片内就能完成的异构计算，要远比通过外部总线连接的不同计算单元更为高效，且更有利于推升算力。\nEMIB、CO-EMIB、Foveros、Hybrid bonding和ODI等技术 都有助于构成系统级封装的一部分，系统级封装更强调系统在封装内的实现，是先进封装的重要代表。\n在 《基于SiP技术的微系统》一书中，我提出了功能密度定律（Function Density Law）的概念，以单位体积内的功能单位（Function UNITs）的数量来评价电子系统的发展，将评判标准从摩尔定律的晶圆平面变成了电子系统空间，即 从三维空间的角度来评判电子系统的集成度 。\n\n某大厂白手套被台積電禁止的完整始末，\n博通ASIC究竟是不是未來趨勢大好，\n中芯合并某大厂Fab的真实情况，\nTechInsights的M70拆解报告说明的国产先进制程真实现况分析，\n国产28nm大降价传闻到底真假？\n国产DRAM大厂的良率到底是多少？\n上述行业热点以及行业小作文真假分析，笔者每一篇都有上万字的详细阐述与分析，当然这些客观真实的行业声音，很不幸均被平台删除，无法在公开平台发表，有兴趣的可以移驾至作者知识星球了解。",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   },
   {
-    "chunk_id": "bf9afc1b594fff68824987c2a1ba77b3",
+    "chunk_id": "765ef5785dd2145a2a901e7ff12f0da4",
     "text": "本篇文章烦请旧雨新知多多帮忙转发！非常感谢！\n更多真实客观的半导体行业讯息在作者的知识星球中发布 , 有兴趣的可以加入知识星球(半导体大佬的会议室) , 扫描以下二维码即可\n\n\n\n搜索「」网络结果\n\n暂无留言\n微信扫一扫 关注该公众号\n当前内容可能存在未经审核的第三方商业营销信息，请确认是否继续访问。\n微信扫一扫可打开此内容， 使用完整服务\n\n暂无留言\n确认提交投诉\n你可以补充投诉原因（选填）\n确定",
     "ticker": "INTC.US",
     "pub_date": "20250105",
     "period": "",
     "data_source": "web_news",
-    "source_file": "data/inputs/news/先进封装技术全解读 _ 英特尔-20250105.html"
+    "source_file": "data/inputs/news/INTEL/先进封装技术全解读 _ 英特尔-20250105.html",
+    "badges": [],
+    "source_weight": 0.7
   }
 ]

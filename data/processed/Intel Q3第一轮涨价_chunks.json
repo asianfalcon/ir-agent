@@ -1,0 +1,79 @@
+[
+  {
+    "chunk_id": "1774350c22fbae43df3663429f4d5a5c",
+    "text": "Intel Q3第一轮涨价\n1、Intel再次上调CPU价格，高性能、热门SKU涨幅突出\n1）7月初Intel正式开始对热门服务器CPU型号进行调价（Tom's Hardware向Intel求证），调价型号主要集中在Xeon 6 Granite Rapids以及Xeon 5 Emerald Rapids，覆盖了60核至128核区间，调价幅度为12%，部分型号价格已高于出厂价，调价型号预计在Intel服务器CPU收入占比三成以上；\n2）此次调价Intel调整的是官网标签价（RCP），而非渠道折扣或大客户合同折扣率。考虑到此前折扣率已经有所上调，此次将RCP作为整个价格体系的锚点直接上调，带动全链价格同步提高，执行效率远高于逐个客户重新谈判折扣。且此次涨价，更多来自于供需关系，而非成本传导；\n3）Q3扩展SKU可能性很高，全产品线普涨概率有限。Intel选择了市场需求最旺盛、客户价格敏感度最低的型号率先试水，未来存在较大概率将涨价范围扩展至Xeon 6中端的6700P系列甚至6500P入门系列，同时Intel后续能否在中端产品线复制此次涨价，很大程度上取决于AMD 的价格锚定策略。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "56cd3223147783abf51b0feaa9a03aef",
+    "text": "2、Intel这次涨价则是供需矛盾的具象化体现\n1）Agent带动CPU的需求大幅提升这个逻辑市场都知道，且考虑到行业扩产的难度较大（Intel自己产能有限+AMD从TSMC获得的产能也有天花板），所以供需产生矛盾只是一个时间问题， Intel这次涨价则是供需矛盾的具象化体现。 从这次涨价的范围看就很明显，服务器这块涨的是6代至强的多个型号&5代至强的8000系列，首先不是普涨，其次涨的都是高端产品线，说明与供应链成本关系不大、更多是需求旺盛的体现。\n2）Intel率先选择涨价的原因也很容易理解，目前市场对于服务器CPU规模的判断是4年4倍（2030年1200亿美元），而Intel的IDM模式会受限于自身产能的爬坡节奏，使得无论如何一部分市场份额都会被AMD拿走，后者因Fabless模式，产能弹性相对较大。所以对Intel而言，最合理的选择便是，在存在产能硬约束的背景下、主动涨价兑现存量定价权。\n3）考虑到大模型和Agent目前正快速打开Coding以外的新场景，对于CPU的需求还看不到尽头，我们大概率可以做出两个判断：1）AMD后续大概率会跟进Intel的提价；2）下半年两个CPU玩家可能提价不止一次。落实到投资上，要重视CPU这一已经建立起提价趋势的方向。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "1b7d98b7177408d07e0db8a951b5cd3d",
+    "text": "3、AI推理时代CPU价值持续重估，CPU/GPU配比提升趋势不断兑现\n1）需求来看，Multi-Agent调度、KV Cache Offload以及RAG、工具调用等高并发推理场景持续增加CPU负载。\n2）TAM来看，AMD指引1200亿美元、ARM指引1000亿美元，相比之前翻倍提升，CAGR 35%+。\n3）配比来看，不同于AI训练阶段典型的1:8或1:4，推理端CPU搭载比重将显著提升，异构推理节点（如2:4或4:4）以及基于高密度纯CPU集群的推理方案正在快速放量。\n4）架构来看，ARM架构的核心优势在于：其极致的能耗比与高核心密度完美契合了Agent时代高并发推理的物理诉求，同时其开放的授权生态使得各大CSP能够通过自研定制芯片，我们认为ARM架构中期变化更显著。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "82767645df74e755897bb0cc7ec9b503",
+    "text": "4、算力CPU供需缺口行情全面引爆\n1）AI算力需求高增重塑定价体系。Intel连续多季度至强处理器供不应求，本轮涨价核心驱动为热门型号需求远超产能，供应链成本抬升为辅；桌面Plus版Arrow Lake由台积电代工、货源紧张同步提价，标准版酷睿未调价；自产至强芯片涨价无法归因外部代工成本，核心是算力市场稀缺带来议价权提升，行业进入量价齐升周期。\n2）服务器CPU涨价传导全产业链。 高端数据中心CPU涨幅远超桌面处理器，此前2025年降价的至强6系列当前报价大幅反弹，部分型号现价接近2025年价格两倍；云厂商、IDC整机采购成本上行，利好具备稳定供货渠道的上游分销、服务器整机厂商；AI算力建设持续加码，CPU短缺周期具备持续性，算力硬件细分龙头业绩弹性有望持续释放。\n3）过去半年，两家巨头库存持续趋紧并启动多轮提价，验证了我们报告中“CPU再涨价趋势确立”的预判。国内方面，国产CPU逐步突破CSP供应链壁垒，自主可控进程与需求周期形成共振。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "b9870e9b79a36a3948211c705e2eda79",
+    "text": "5、7月下旬的CSP Capex将成为下一轮行情的关键节点\n1）近期AI硬件及光通信板块出现明显调整，主要还是因为上周Meta被曝出计划对外提供部分AI算力，这在某种程度上打破了人们心中AI算力长期短缺的叙事，引发了市场对于北美CSP资本开支是否过度、2027年Capex增速能否持续的担忧。前期我们详细论述过 Meta 出租算力的底层逻辑和影响，这里不再赘述。核心观点：Meta 此举是在尝试将阶段性、结构性闲置算力转化为可出租、可融资的基础设施资产，不能理解为Ai算力过剩。\n2）对于光通信板块的回调，我们更倾向于将本轮调整定义为筹码拥挤和交易结构的恶化，而非产业基本面的反转。回顾2025年DeepSeek事件，市场信心真正修复来自于Meta、Microsoft、Google和Amazon通过资本开支和实际投资行为证明AI基础设施建设不仅没有放缓反而大幅提升，从而带来市场新一轮的上涨。当前市场可能也需要相关的基本面证据，短期来看7月下旬北美主要CSP新一轮财报窗口可能会成为判断本轮调整性质的重要时间点。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "06338e77e00b27d85c8b0cf003ecec1b",
+    "text": "3）AI算力仍然紧缺，不存在产能过剩。 我们认为CSP厂商投资AI算力主要是满足两项需求：①军备竞赛，通过获得大量且先进的算力芯片训练更先进的AI大模型并在大模型竞争中取得优势；②满足AI推理需求，AI大模型性能加速迭代，可应用于愈加复杂的应用场景，比如coding、多模态等。其驱动用户推理需求数量级增长，进而带动算力需求提高。针对Meta考虑布局云业务，我们认为其是Meta在大模型性能竞争落后现状下选择的退路，但不代表AI算力过剩，市场忽视AI推理对于算力的旺盛需求。目前由于Meta算力需求超出谷歌现有承载能力，谷歌已开始限制Meta对其Gemini大模型的使用，以及Antropic高峰期限流、DeepSeek V4宣布正式版高峰期价格将是当前价格的2倍，均表明算力仍然处于非常紧缺的状态，产能过剩并不存在。",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "46924e2adf4de79b571eceac99bb3294",
+    "text": "搜索「」网络结果\n\n暂无留言\n微信扫一扫 关注该公众号\n当前内容可能存在未经审核的第三方商业营销信息，请确认是否继续访问。\n微信扫一扫可打开此内容， 使用完整服务\n\n暂无留言\n确认提交投诉\n你可以补充投诉原因（选填）\n确定",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/Intel Q3第一轮涨价.html",
+    "badges": [],
+    "source_weight": 0.7
+  }
+]

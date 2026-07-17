@@ -1,182 +1,222 @@
 [
   {
-    "chunk_id": "ca8168a1253b395b54cba81e91538a5a",
+    "chunk_id": "a4a1d51cf0f771aeac84edf21c639adc",
     "text": "‘ Std Quarter\n\nEarnings Presentation\n\nPat Gelsinger David Zinsner\nChief Executive Officer Executive Vice President and\nChief Financial Officer\n\nNon-GAAP Fir ing Statements",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "0e74ac56a15ba620e28624c5dda84193",
+    "chunk_id": "4b105a618dda42ac21f66fee23a5c950",
     "text": "* This presentation contains non-GAAP financial measures. Intel gross margin, and earnings per share, including year-over-year comparisons, are presented on anon-GAAP basis. This presentation\nalso includes a non-GAAP adjusted free cash flow (FCF) measure. The Appendix provides a reconciliation of these measures to the most directly comparable GAAP financial measure. The non-\nGAAP financial measures disclosed by Intel should not be considered a substitute for, or superior to, the financial measures prepared in accordance with GAAP. Please refer to “Explanation of Non-",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "23d3e580afc39df613ecec727a5066b5",
+    "chunk_id": "e06a3219f15ce765850006107d87e3d4",
     "text": "GAAP Measures” in our earnings released dated October 26, 2023 for a detailed explanation of the adjustments made to the comparable GAAP measures, the ways management uses the non-\nGAAP measures, and the reasons why management believes the non-GAAP measures provide investors with useful supplemental information.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "352edbc5cb64dd9224bd5549badcddb1",
+    "chunk_id": "4ea8040796e92dd6f36aef3a3313e31b",
     "text": "Statements in this presentation that refer to business outlook, plans, and expectations are forward-looking statements that involve risks and uncertainties. Words such as “accelerate”, “achieve”,\n“aim”, “ambitions”, “anticipate”, “believe”, “committed”, “continue”, “could”, “designed”, “estimate”, “expect”, “forecast”, “future”, “goals”, “grow”, “guidance”, “intend”, “likely”, “may”, “might”, “milestones”,\n“next generation”, “objective”, “on track”, “opportunity”, “outlook”, “pending”, “plan”, “position”, “potential”, “possible”, “predict”, “progress”, “ramp”, “roadmap”, “seeks”, “should”, “strive”, “targets”, “to",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "423b5887a7ce8e108089f4ea1e57d92c",
+    "chunk_id": "e493bb1518c00165fcd316df1dc6d219",
     "text": "be\", “upcoming”, “will”, “would”, and variations of such words and similar expressions are intended to identify such forward-looking statements, which may include statements regarding: our business\nplans and strategy and benefits therefrom; projections of our future financial performance, including future revenue, gross margins, capital expenditures, and cash flows; future cash requirements and\nthe availability and sufficiency of funding; expected returns to stockholders, such as stock repurchases and dividends; future products, services and technologies, and the expected goals, timeline,",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "f69c2e237333e200851533216947639f",
+    "chunk_id": "75b94a2b7928f96eae9ebca6a1812e85",
     "text": "ramps, progress, availability, production, regulation and benefits of such products, services and technologies, including future process nodes and packaging technology, product",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "2d49aa686954a83d6865a7cbf0f14655",
+    "chunk_id": "33100f2e020b6a6df25a418374b0e717",
     "text": "schedules, future product architectures, expectations regarding process performance, per-watt parity, and metrics and expectations regarding product and process leadership; investment plans,\nand impacts of investment plans; internal and external manufacturing plans; future production capacity and product supply; supply expectations; plans and goals related to Intel's foundry business,\nincluding with respect to anticipated customers, future manufacturing capacity and service, technology and IP offerings; expected timing and impact of acquisitions, divestitures, and other significant",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "1c9a9da6cb05cbf283aec6e0eae84488",
+    "chunk_id": "1a823d4cc62a6c212fe38592ce9eeb59",
     "text": "transactions; expected completion and impacts of restructuring activities and cost-saving or efficiency initiatives; future social, and environmental performance goals, measures, strategies and\nresults; our anticipated growth, future market share, and trends in our businesses and operations; projected market trends; anticipated trends and impacts related to industry component, substrate,\nand foundry capacity utilization, shortages and constraints; expectations regarding government incentives; technology trends; environmental and economic conditions; COVID-19; geopolitical",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "e0815c6525e63a0a7cc951983cd463c3",
+    "chunk_id": "e3f77cd5c78a5f5af7bcd87ae05bc122",
     "text": "conditions; tax- and accounting-related expectations; expectations regarding certain sanctioned parties; and other characterizations of future events or circumstances.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "266448244c3cdac11dc9b544db9f7e56",
+    "chunk_id": "5524efbcf0524f36e640ea2e07c71863",
     "text": "Such statements involve many risks and uncertainties that could cause our actual results to differ materially from those expressed or implied, including: changes in demand for our products; changes\nin product mix; the complexity and fixed cost nature of our manufacturing operations; the high level of competition and rapid technological change in our industry; the significant upfront investments\nin R&D and our business, products, technologies, and manufacturing capabilities; vulnerability to new product development and manufacturing-related risks, including product defects or errata; risks",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "79c7d9fa047a0c25f79a42d3d7c7afeb",
+    "chunk_id": "a2ff345f3c471918cf0105b9e6fb02ba",
     "text": "associated with a highly complex global supply chain; sales-related risks; potential security vulnerabilities in our products; cybersecurity and privacy risks; investment and transaction risk; IP risks and\nrisks associated with litigation and regulatory proceedings; evolving regulatory and legal requirernents across many jurisdictions; geopolitical and international trade conditions; our debt obligations;\nrisks of large scale global operations;. macroeconomic conditions; impacts of the COVID-19 or similar such pandemic; other risks and uncertainties described in this presentation, our earnings release",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "d0ce677309a08fafbe6e1714f808cc54",
+    "chunk_id": "9876fc9c9a5ce0ea58cfcd6dd17618d1",
     "text": "dated October 26, 2023, our 2022 Annual Report on Form 10-K and our other filings with the SEC.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "4a70f4b076f4ff7f7e34019fd653fcc5",
+    "chunk_id": "3bdb2121970af839819fa75153e4b78d",
     "text": "¢ Unless specifically indicated otherwise, the forward-looking statements in this presentation do not reflect the potential impact of any divestitures, mergers, acquisitions, or other business\ncombinations that have not been completed as of the date of this presentation. All information in this presentation reflects management's views as of October 26, 2023, unless an earlier date is\nspecified. We do not undertake, and expressly disclaim any duty, to update such statements, whether as a result of new information, new developments, or otherwise, except to the extent that\ndisclosure may be required by law.\n\nintel.\n\nExecutive Summary",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "316b08d9b02eb17c81eb67d7549c1b48",
+    "chunk_id": "a950086ab87bf750cd2c08d559d310aa",
     "text": "intel.\n\nExecutive Summary\n\nQ3 beat on Revenue, Gross Margin and EPS\nStrong sequential revenue growth in client, edge, foundry; server revenue up QoQ\nOperating leverage and expense discipline driving improved profitability\n\nRe-establishing technology leadership\nSNA4Y nearing completion; 0.9 PDK on Intel 18A; wafer & adv packaging customer wins\nEUV production in US/Europe; It High-NA EUV; glass substrate innovation\n\nOna mission to deliver Al everywhere\nEnabling Al across the continuum, propelling $1T semi-industry revenue by 2030\nUshering in the age of the Al PC; leadership TCO on Gaudi and Xeon\n\nintel. 3\n\nDriving Our Transformation\n\nee om\nHae <\nS| Fm LV\nbeeen\n\nSiam ye",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "a9802a65d285c830af755aadd35ef1f3",
+    "chunk_id": "9272058ec09610f36776fbd11eb025fc",
     "text": "Driving Our Transformation\n\nee om\nHae <\nS| Fm LV\nbeeen\n\nSiam ye\n\nValue Unlock\n| Mobileye, IMS, PSG\n\nintel. 4\n\n$14.2B\n\nRevenue\n\nDown 8% YoY\n$0.8B above July outlook!\n\n1 Comparisons are based on the mid-point of revenue outlook\n\nQO: Financial Highlights\n\n45.8%\n\nGross Margin\n\nFlat YoY\n2.8 ppt above July outlook!\n\nSO.41\nEPS\n\nUp 11% YoY\n$0.21 above July outlook!\n\nintel. 5\n\nClient Computing Group (CCG)\n\nRevenue down 3% Operating Income up 43% Revenue\n« Lower on overall TAM, partially offset by\nbilizing OEM inventory\n$8.1B $7.9B a\n\nOperating Income\n\n* Higher on reduced inventory reserves and\nspending discipline\n\nOperating\nOperating Margin 26%\npial $2.1B\n$1.4B — i\nQ3'22 Q3'23 Q3'22 Q3'23\n\nintel. 6",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "2e834b0cb549048846125a9075ebdc31",
+    "chunk_id": "ef22c6c1852b737bf09288cda09e8b94",
     "text": "intel. 6\n\nData Center and Al Group (DCAI)\n\nRevenue down 10%\n\n$4.3B\n\nQ3'22\n\n$3.8B\n\nQ3'23\n\nOperating Income up 151%\n\nOperating\nMargin (3%)\n\n($0.1B)\n\nQ3'22\n\nOperating\nMargin 2%\n\n$0.1B\n\nQ3'23\n\nRevenue\n\n« Lower on reduced CPU TAM and\ncompetitive pressure\n\nOperating Income\n\n* Higher on spending discipline and lower\nstart-up costs\n\nintel. 7\n\nRevenue down 32% Operating Income down 91% Revenue\n\n* Lower on TAM softness and elevated\ncustomer inventories\n\n$2.1B\n\nOperating Income\n\nS1.5B * Lower on reduced revenue, partially offset\nby expense discipline\n\nQ3'22\n\nintel. «\n\nIntel Foundry Services (IFS)\n\nRevenue Operating Income\n\n$31IM\n\n$78M Operating Operating\nMargin (115%) Margin (28%)\n— (90m) (G20",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "9edaf8e71264d7fde2f00a3d05687f7d",
+    "chunk_id": "9579154abba4cb57ae92b88579bccb41",
     "text": "$78M Operating Operating\nMargin (115%) Margin (28%)\n— (90m) (G20\n\nQ3'22 Q3'23 SE\n\n- Revenue up 299% YoY on higher packaging\nand IMS tool sales\n\n* Operating loss improved on higher revenue,\npartially offset by increased investment to\nsupport long-term growth\n\nMobileye\n\nRevenue Operating Income\n\nQ3'22 Q3'23 Q3'22 Q3'23\n\n» Revenue up 18% YoY on higher demand for\nEyeQ products\n\n* Operating income up 20% YoY on higher\nrevenue\n\nintel. 9°\n\nOutlook\n\nO4 2023 Outlook\n\nS14.6-15.6B 46.5% SO.44.\n\nRevenue Gross Margin! EPS!\nUp 8% YoY! Up 2.7 ppt YoY Up 193% YoY\n\n1 Revenue growth comparison, gross margin outlook and EPS outlook based on the mid-point of the revenue range\n\nintel. 1\n\nAppendix",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "58c776d3773db5cf3e230aba6b100b69",
+    "chunk_id": "524e1a61aa3a6c30fc4d5f8d3904da18",
     "text": "intel. 1\n\nAppendix\n\nReconciliation of Non-GAAP Actuals\n\nGAAP gross margin percentage\nAcquisition-related adjustments\nShare-based compensation\n\nNon-GAAP gross margin percentage\n\nGAAP eamings (loss) per share attributable to Intel—diluted\nAcquisition-related adjustments\nShare-based compensation\nRestructuring and other charges\n(Gains) losses on equity investments, net\n(Gains) losses from divestiture\nAdjustments attributable to non-controlling interest\nIncome tax effects!\nNon-GAAP eamings (loss) per share attributable to Intel—diluted\n\n1 Contemplates a fixed long-term projected non-GAAP tax rate\n\n0.05\ni(oXe)))\n\n(0.15)\n\nOct, 2022\n\n2.2%\n1.1%\n\n0.09\n0.19\n0.16\n\n0.03\n\n(0.01)\n\n(0.34)\n\nintel. 1s",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "b8a69fa0909fd0693ad4d18069780991",
+    "chunk_id": "d773974fc3676e5ef3c6fc4b8f0e36fb",
     "text": "2.2%\n1.1%\n\n0.09\n0.19\n0.16\n\n0.03\n\n(0.01)\n\n(0.34)\n\nintel. 1s\n\nReconciliation of Non-GAAP O04 Outlook\n\nOutlook?\nApproximately\nGAAP gross margin percentage 433%\nAcquisition-related adjustments 2.0%\nShare-based compensation 12%\nOptane inventory impairment -\nNon-GAAP gross margin percentage 46.5%\nGAAP eamings (loss) per share attributable to Intel—diluted $0.23\nAcquisition-related adjustments 0.08\nShare-based compensation 0.19\nOptane inventory impairment -\nRestructuring and other charges 0.01\n(Gains) losses on equity investments, net -\n(Gains) losses from divestiture (0.01)\nAdjustments attributable to non-controlling interest ((one)))\nIncome tax effects? ((oXe)s))",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "09b144af923fbea35fcef2e203e08d25",
+    "chunk_id": "45fc9cfff3d38e5be16544684e5fbd54",
     "text": "Non-GAAP eamings (loss) per share attributable to Intel—diluted\n\n1 Non-GAAP gross margin percentage and non-GAAP earnings (loss) per share outlook based on the mid-point of the revenue range\n2 Contemplate a fixed long-term projected non-GAAP tax rate\n\nQ4 2022 Actuals\n\n392%\n2.3%\n11%\n12%\n\n$(0.K)\n0.09\n0.18\n0.04\nol\n(0.04)\n(oye)\n\n(0.06)\n\nintel. «4",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "20230930",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Q3'2023 Earnings Deck.pdf"
+    "source_file": "data/inputs/reports/INTEL/Q3'2023 Earnings Deck.pdf",
+    "badges": [],
+    "source_weight": 1.0
   }
 ]

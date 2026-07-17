@@ -1,353 +1,431 @@
 [
   {
-    "chunk_id": "e8d7b0bc782655df2a14b33e52534a5c",
+    "chunk_id": "933e7eac2138d7b3a67ee960302ae925",
     "text": "Comments from CEO Pat Gelsinger  \nand CFO Dave Zinsner \nIntel’s chief executive officer and chief financial officer offer comments after \nthe company released its first-quarter 2024 earnings. \n \nThe following are the prepared remarks provided on Intel’s first-quarter 2024 earnings conference call held at 2 p.m. PDT \non April 25, 2024. These remarks include forward-looking statements that are based on the environment as seen by the \ncompany as of the time of the call and, as such, are subject to various risks and uncertainties. They also contain references \nto non-GAAP financial measures that the company believes provide useful information to investors. Refer to the",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "1316502ef4a1fb379951141041370542",
+    "chunk_id": "e40ce4977e4f61c06fff54e087343daa",
     "text": "company’s earnings release for the first-quarter 2024, most recent annual report on Form 10-K and other filings with the \nSEC for more information on the risk factors that could cause actual results to differ materially from the company’s \nexpectations and additional information on non-GAAP financial measures, including reconciliations where appropriate to \nthe corresponding GAAP financial measures. \n \nApril 25, 2024 – Pat Gelsinger, Intel chief executive officer (bio): \n \nWe reported solid Q1 results, delivering revenue in line and EPS (earnings per share) above our \nguidance as we continue to focus on operating leverage and expense management. Our results",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "bae8d9a6e5b13d138520aa5851473bc8",
+    "chunk_id": "4b91cade758aa59541770b598ddb7d42",
     "text": "reflect our disciplined approach on reducing costs as well as the steady progress we are making \nagainst our long-term priorities.  \n \nWhile 1H (first-half 2024) trends are modestly weaker than we originally anticipated, they are \nconsistent with what others have said and also reflect some of our own near-term supply \nconstraints. We continue to see Q1 as the bottom, and we expect sequential revenue growth to \nstrengthen throughout the year and into 2025, underpinned by (1) the beginnings of an enterprise \nrefresh cycle and growing momentum for AI PCs, (2) a data center recovery with a return to more",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "95b1182256a560951ddc65a882136f95",
+    "chunk_id": "c1004505246fded9d69a528b8dc864b7",
     "text": "normal CPU (central processing unit) buying patterns and ramping of our accelerator offerings, \nand, (3) cyclical recoveries in NEX (Network and Edge Group), MBLY (Mobileye) and Altera.  \n \nWe had an extremely productive Q1 and achieved several important milestones along our journey \nto reposition the company for improved execution, competitiveness and, perhaps most \nimportantly, financial results.  \n \n• \nWe hosted our first-ever Intel Foundry Direct Connect, which drew nearly 300 partners, \ncustomers and potential customers to hear about the momentum we are building with our \nfoundry offerings. We were pleased to announce Microsoft as our fifth Intel 18A customer.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "15a2aa0eaf96d53fd3d52cd28cd4bb54",
+    "chunk_id": "68b4b407dc2da7d52d0b6d758c7c76cc",
     "text": "We also updated our lifetime deal value to greater than $15 billion and extended our \nroadmap with Intel 14A, the first process node in the industry to use High NA (High \nNumerical Aperture) EUV (Extreme Ultraviolet) technology.  \n \n• \nShortly following Direct Connect, we were thrilled to join with President Biden and \nCommerce Secretary Raimondo to announce our position as the national semiconductor \nchampion along with the single-largest award from the CHIPS and Science Act of more \nthan $45 billion of proposed grants, tax incentives and loans. \n \n• \nDuring the second week of April, we brought together more than 1,000 of our top",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "de06e50b967ff6ac0646d90bba1b89ad",
+    "chunk_id": "efd4dd0423f192f84c5643d9141de304",
     "text": "customers and partners at Intel Vision 2024, where we introduced our next-generation \n \n• \nVision led straight into Open Source Summit, where we led the launch of the Open \nPlatform for Enterprise AI project. This industry initiative aims to accelerate Gen AI \ndeployments in what will be the largest market for AI applications starting with retrieval-\naugmented generation, or RAG. Our Xeon® plus Gaudi use cases, along with our \nestablished enterprise ecosystem have a big role to play here.  \n \n• \nLastly, we hosted the industry’s first Sustainability Summit, underscoring our deep \ncommitment to building a more geographically diverse, resilient, trusted and, of course,",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "2d9d096ad009218fe2155d64282831a3",
+    "chunk_id": "720c3a723f2a5dc832e6627967385b4d",
     "text": "sustainable supply-chain for semiconductors. We are proud of our leadership position in \nchemical conservation, renewable energy and water reclamation. \n \nOur accomplishments YTD (year to date) build on all the work we have done to execute on the \nstrategy I laid out when I rejoined the company three years ago. Job No. 1 was to accelerate our \nefforts to close the technology gap that was created by over a decade of underinvestment. The \nheart of phase one was five nodes in four years (5N4Y), the rallying cry was torrid. It combined \naccelerating our node transitions with improving our product execution and cadence to regain \ncustomer trust.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "d59d4bb3d8575b232060c67123eb5d10",
+    "chunk_id": "408fd09893b0b977eec417d82b33f782",
     "text": "customer trust.  \n \nWe have rebuilt our Grovian culture and execution engine and are on-track to completing our \n5N4Y goal, which many of our stakeholders thought impossible at inception. In so doing, we are in \na unique position with at-scale EUV technology, Western-based capacity and, at the very least, a \nlevel-playing field with the market leader.  \n \nIntel 20A, which helps pave the way for Intel 18A, begins production ramp in the second half of this \nyear with Arrow Lake. We expect to release the 1.0 PDK (process design kit) for Intel 18A this \nquarter. Furthermore, our lead products – Clearwater Forest and Panther Lake – are already in fab,",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "19b8d22ec6dd9b815c71b7fa4a264444",
+    "chunk_id": "6d78790f9cd4e4c24a937002262ae7bf",
     "text": "and we expect to begin production ramp of Intel 18A and these products in the 1H of ’25 for \nproduct releases in the middle of next year. Given this progress, now is the time to turn our focus \nto matching technology leadership with a competitive cost structure.   \n \nEstablishing a foundry relationship between our products group and our manufacturing group \nwas a critical step to achieving better structural cost. This quarter, we officially transitioned to our \nnew operating model and introduced Intel Products and Intel Foundry. Today, for the first time, \nwe are reporting our results to reflect the new way in which we are running the company.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "5800f477f4a50ac744320eda2559f912",
+    "chunk_id": "ab37b0c5f88b84d684c89bc1272466fa",
     "text": "Separating the internal financial reporting between Intel Foundry and Intel Products was a critical \nstep needed to provide transparency, accountability and the proper incentives to allow both \ngroups to make better decisions to optimize their own cost structures. \n \nThis change also provided the added benefit of giving more transparency to our outside owners. \nWe knew that the “Day One” P&L (profit-and-loss statement) for Intel Foundry was going to spark \ndebate, but we also knew it was important to establish a baseline and provide a target model \nbased on reasonable-to-conservative revenue and cost assumptions that we have a high degree \nof confidence we will achieve.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "db12aff7b4b799bc507d3a8207094d7e",
+    "chunk_id": "af7963a5f8a6f25ada408c88b3e7cf04",
     "text": "of confidence we will achieve.  \n \nI want to reiterate that point so it is heard and understood: Our target model is reasonable, \nconservative and reflects a high degree of confidence in our ability to deliver – and you can rest \nassured that we will be working hard to beat these targets. If we can move faster and do better, we \nwill, and our new operating model is already catalyzing change and driving efficiencies across the \nLet me highlight three important aspects of our business and our strategy that is underscored by \nthe new model.  \n \nFirst, with Intel Products, we have exposed a solid fabless franchise with established, powerful and",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "5fcf3fc62baa01f1505e0a835e8b8bb2",
+    "chunk_id": "1493d482ca2e5fa0679c35f1fbdd3c5a",
     "text": "hard-to-displace installed base and ecosystems across enterprise, consumer and edge that \nprovide meaningful benefits to our customers and partners. Intel Products is a solidly profitable \nbusiness today, despite just recently emerging from a semiconductor downturn and still \ncompeting with legacy process technology. That is changing rapidly as we ramp Intel 3 in 2024 \nand Intel 18A in 2025.  \n \nWithin client, we are defining and leading the AI PC category. IDC indicates the overall PC market \nis now expanding, and, as stated earlier, as standards emerge and applications begin to take \nadvantage of new AI-embedded capabilities, we see demand signals improving, especially in 2H",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "265290bcf716624cdbfdd245a2f9efc7",
+    "chunk_id": "152e890eebd2ce4216cc5ff3959a0c42",
     "text": "of the year helped by a likely corporate refresh. Our Core® Ultra™ ramp, led by Meteor Lake, \ncontinues to accelerate beyond our original expectation, with units expected to double \nsequentially in Q2, limited only by our supply of wafer level assembly. Improving 2H MTL supply \nand the addition of Lunar Lake and Arrow Lake later this year will allow us to ship in excess of our \noriginal 40 million AI PC CPU target in 2024. Next year, with Panther Lake, we will extend our lead \nwith Intel 18A and further product enhancements. Our share position is strong and continues to \nstrengthen as we execute on our product roadmap.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "b1439931d374b90f564a44b13c472379",
+    "chunk_id": "b51f7b9e3014cd692bfab34384a98f8f",
     "text": "strengthen as we execute on our product roadmap.  \n \nWithin DCAI (Data Center and AI Group), as committed, we have achieved product release on our \nfirst Intel 3 server product, the first-generation E-core Xeon® 6, code-named Sierra Forest.  The \nnext-generation P-core Xeon 6 product, Granite Rapids, will be released in Q3. At Vision we \ndemonstrated a 70B parameter model running natively on Xeon 6 with good performance. We \ncontinue to expect share trends to stabilize this year before improving in 2025. While budgets are \nstill being prioritized to generative AI build-out, where we have a very strong position in the head-",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "b392a764eb5b6f4425da34e819c7ecc0",
+    "chunk_id": "dd63927135c06f5aa3b891570dc79070",
     "text": "node, customer conversations continue to show improving signs for traditional server CPU \nrefresh starting in late Q2 and into the 2H. Our first Intel 18A product, Clearwater Forest, is slated \nto launch next year and will allow us to accelerate share gains.  \n \nOur Gaudi 3 launch gives us a strong offering to improve our position in accelerated computing \nfor the data center and cloud. We now expect over $500 million in accelerator revenue in 2H of \n2024, with increasing momentum into 2025 based on Gaudi 3’s vastly superior TCO (total cost of \nownership) as well as our own expanding supply. In addition, we are finding good traction with the",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "41171b2117d8008f0de795038dd675c3",
+    "chunk_id": "7b1334d00e04710a3d4ad967a5c95e8b",
     "text": "Intel Developer Cloud, with customers onboarding with this platform including Dell and Seekr, our \nlargest IDC win to date. We are encouraged by our progress, but far from satisfied.  \n \nLastly within NEX, the business has stabilized and beat our Q1 targets with channel inventories \napproaching normal levels and business acceleration expected thru the year as a result. We also \nrecently announced our plans for scale-up and scale-out Ethernet-based AI networking delivered \nas discrete NIC’s and chiplets for AI foundry customers with numerous key providers in the \nindustry and market standardization thru the Ultra Ethernet Consortium.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "efdf2ce0911a999cd072d95344456f71",
+    "chunk_id": "f5a4b043578d231b9f39339a22b4d865",
     "text": "So, that is Intel Products; good momentum and a lot for us to build on. Let me turn to Intel \nFoundry.  \n \nWe are executing on our strategy to drive meaningful improvement in profitability over time. We \nare obviously not there yet, given the large upfront investment needed to build out this business, \nbut we always said this was going to be a multiyear plan, and we are right on track with where we \nAs we discussed during our webinar at the beginning of the month, the transition from pre-EUV \nwafers to post-EUV wafers is a powerful tailwind for us. We expect our blended average wafer \npricing to grow 3x faster than costs over the decade, driving significant margin expansion. In",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "d997b7faef636da6a6b75b08146536a5",
+    "chunk_id": "52b184943381811be54e960b686bf1cf",
     "text": "addition, more competitive wafers will allow us to bring home many of the tiles that today are \nbeing manufactured at external foundries. Both dynamics are in our control and not dependent on \nrevenue growth and are key elements to drive the business to break-even, more than doubling our \ncurrent earnings power at the Intel consolidated level.  \n \nOf course, more competitive wafers, combined with our position as the only company \nmanufacturing with leading-edge wafers outside of Asia is drawing strong interest from potential \nexternal customers. It is important to note that our leadership in advanced packaging creates",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "bf40754d86d0b15a8d25c35d8a0b710b",
+    "chunk_id": "29107cf73e9b9318e1b23035aba9bb59",
     "text": "more value in our wafer technologies, and wafer-level assembly and base die opportunities further \nfill our factories and extend the useful life of our tools for increased financial returns. \n \nI am pleased to announce that this quarter we signed another meaningful customer on Intel 18A \nbringing our total to six. A leader in the aerospace and defense industry, this customer chose Intel \nFoundry based not only on the process technology benefits of Intel 18A but also because of their \ndesire to have a secure, U.S.-only supply base. Just this week, we were very pleased to announce \nthat the DoD (U.S. Department of Defense) awarded Intel Foundry Phase 3 of the Ramp-C",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "3d7c6d7001f82165f8cb6d777891fb6a",
+    "chunk_id": "89d36fabb76670122738121e3123e8d8",
     "text": "program, which we are confident will lead to additional federal, aerospace and defense customers.  \n \nMore broadly, we are seeing growing interest in Intel 18A, and we continue to have a strong \npipeline of nearly 50 test chips. The near-term interest in Intel Foundry continues to be strongest \nwith advanced packaging, which now includes engagements with nearly every foundry customer \nin the industry, including five design awards.  \n \nWhile we are highly focused on improving the near-term profitability of Intel Foundry, it is also \nimportant that we keep sight of the long-term opportunity here. The foundry market is expected",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "ab80c04ad5a590e92107cb51c98a8b75",
+    "chunk_id": "721e6e439044a0267f15d00d493215ab",
     "text": "to grow from $110 billion today to $240 billion by 2030, with almost 90% of the growth coming \nfrom EUV nodes and advanced packaging. Given this backdrop, we have clear line of sight to \nbecoming the largest system foundry for the AI era and the second largest overall by 2030, \nbuilding on our EUV/High NA process technology, leadership in advanced packaging, \nmanufacturing capacity, our systems expertise and the surge in AI demand.  \n \nPut another way, our $15 billion of external revenue embedded in our Intel Foundry target model \nwould represent less than 15% of the leading-edge foundry market. It is not a question of if, but",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "bd8775cbc87385fa14c1228a812da201",
+    "chunk_id": "432add880323ee2e01b066909015f729",
     "text": "when, Intel Foundry achieves escape velocity, and every day we are proving to the market that \nIntel Foundry is a resilient, sustainable and trusted alternative to serve a semi market on a path to \ntop $1 trillion by the end of the decade. \n \nLet me wrap up by speaking to our “All Other” category – where our No. 1 priority is to unlock \nshareholder value. This quarter, we formally rebranded our Programmable Solutions Group, \n“Altera, an Intel Company.” We look forward to bringing in a private equity partner this year to help \nprepare the company for an IPO in the coming years. This puts Altera on a similar path as",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "42b4f91462549b4fe0f6c77857749ee1",
+    "chunk_id": "e87b8293d7e34d61413c131a0c14a026",
     "text": "Mobileye. We are excited about the future of both companies. By providing them with separation \nand autonomy, we believe we enhance their ability to capitalize on their growth opportunities in \ntheir respective markets and accelerate their paths to create value.  \n \nCombined with IMS, our mask-writing equipment business, we believe these three assets \nrepresent more than a quarter of our overall market value today. Along with a solid Intel Products \ncommitments, stand up Intel Foundry and drive it to profitability, and further leverage our \nopportunity in AI.  \n \nSo overall, I’ll say that there is a lot for us to build on coming out of Q1. We are systematically",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "5a360626980d3d9a8f922110d711cf48",
+    "chunk_id": "6975d38ab0e7c479e2cbdf3986802378",
     "text": "executing to our strategy, and we are making steady progress. We are maniacally focused on \nexecutional excellence and fiscal discipline. And we are relentless in our drive to regain process \nleadership and bring next-generation solutions to solve our customers’ hardest problems. All of \nthis gives me confidence in where we are headed. Yes, we have a lot of hard work in front of us, but \nwe know what we need to do, and the payoff will be significant in the end.  \n \nSemiconductors are the currency that will drive the global economy for decades to come. We are \none of two, maybe three, companies in the world that can continue to enable next-generation chip",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "fcaad5ba920207dc9769de3c96f75942",
+    "chunk_id": "f99527df65ebedb4f5132961458f3ccd",
     "text": "technologies and the only one that has Western capacity and R&D, and we will participate in the \nentire AI market. Quarter by quarter, we are positioning ourselves well to capitalize on the \nimmense opportunities ahead.  \n \nDave Zinsner, Intel chief financial officer (bio): \n \nWe delivered solid results in the quarter, with revenue finishing in line and gross margin and EPS \nagain beating guidance. Forward-looking demand signals in our core markets improved at a \nmeasured pace through the first quarter, and we expect to deliver full-year revenue and EPS \ngrowth in 2024, with the pace of revenue growth accelerating in the second half.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "d11f5537b7f7ea3d7b0d33abcb0b0a2e",
+    "chunk_id": "f7309ed208de62b134c1f27958bc31f3",
     "text": "First-quarter revenue was $12.7 billion, up 9% YoY (year over year) and just above the midpoint of \nour guidance with product segments performing in line with expectations.  Intel Products \ndelivered 17% YoY growth, offset by inventory headwinds impacting Mobileye, Altera and our 5G \ncustomers, as well as the sunsetting of several non-core lines of business, including the traditional \npackaging business within Intel Foundry. These non-core revenue headwinds drove a sequential \ndecline of just over $1 billion, in line with our Q1 guidance. Gross margin was 45.1%, 60 basis points \nabove guidance, and EPS of $0.18 beat guidance by $0.05 on operating spending discipline and",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "e9a32cd801dfb07e9bde00836f6a9f1a",
+    "chunk_id": "4700dfd976525213249db217294e5975",
     "text": "strong sell-through of previously reserved inventory.   \n \nQ1 operating cash flow was negative $1.2 billion. Net CapEx was $5 billion, resulting in an adjusted \nfree cash flow of negative $6.2 billion, and we paid dividends of $0.5 billion in the quarter. We \nexpect Q1 to be the low point for adjusted free cash flow driven by seasonal factors, including \ntiming of annual bonus payments, along with upsides from larger capital offsets expected in the \nsecond half. \n \nAs Pat mentioned, this is our first quarter reporting in the new operating segments. The revised \nstructure creates a foundry relationship between manufacturing and our products groups, with",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "3ff552fadf6fe5b3646ae605688add87",
+    "chunk_id": "d9868bc557db2e523b8686486a1bc64f",
     "text": "Intel Products purchasing wafers and services from Intel Foundry at fair market prices. This \nquarter represents another important step in our transformation with increased transparency and \naccountability across all layers of the organization, which is already having a positive impact on \ndecision-making, efficiencies and financial discipline. As I talk about our results, I will categorize \nthem between Intel Products, Intel Foundry and All Other, with the All Other category including \nthe results of Mobileye and Altera. Additional detail can be found in our earnings release and SEC \nfilings.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "422d1d2bd50bfdc02d772f7354a0c430",
+    "chunk_id": "05ca3c5d9f883c3e919014cd29c7a793",
     "text": "filings.    \n \nIntel Products revenue was $11.9 billion, up 17% YoY. The client business grew by more than 30% \nYoY with a strong product portfolio and share position and significantly improved customer \nYoY. As discussed last quarter, we saw significant declines in the 5G market, partially offset by \napproximately 10% YoY growth in our network and edge markets, which we expect to continue to \nrecover through the year.    \n \nIntel Products operating profit expanded by more than $2.1 billion YoY, driven by higher revenue, \nbetter sell-through of reserved inventory and operating spending discipline, resulting in an \noperating margin of approximately 28% in the quarter.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "2dc393050cba8dc85e4cd4f59b8687d1",
+    "chunk_id": "e1394f507fe1ae2f198ad62512cf9d67",
     "text": "operating margin of approximately 28% in the quarter.   \n \nIntel Foundry revenue was $4.4 billion, down 10% YoY on lower backend services and samples \nrevenue along with lower IMS tool sales. In addition, wafer volume was modestly higher in the \nquarter with ASPs modestly down driven by pricing for mature nodes. Operating profit declined \nby approximately $100 million YoY with lower revenue being partially offset by improved factory \nutilization. Operating margin declined significantly QoQ (quarter over quarter) driven by higher \nstartup costs and the conclusion of the traditional packaging business impacting revenue.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "31020fea7cb996c9e612ad27f4ae77ce",
+    "chunk_id": "9e79f1eedbfe20971a548b67bddd7c48",
     "text": "The Foundry P&L will remain challenged through the year, and we expect operating margins to \ntrough in 2024 as startup costs associated with 5N4Y peak and the P&L absorbs an expected \nincrease of roughly $2 billion in depreciation. Beyond 2024, as volume begins to shift toward \nleadership manufacturing nodes with a competitive cost structure, scale improves, including the \nreturn of compute tiles to internal process nodes, and our efficiency actions begin to flow through \nthe P&L, we expect to see rapid profitability improvement.   \n \nMobileye revenue of $239 million and an operating loss of $68 million were both down",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "7e6769cb8fbc1fbbfec3511910d8329d",
+    "chunk_id": "d32072b536bed1e92e7d2776b1929564",
     "text": "meaningfully YoY due to a well-publicized drawdown of EyeQ customer inventory. Mobileye \nreiterated full-year guidance on their earnings call this morning. With the inventory digestion \nprocess on track, financial results are expected to recover quickly.  \n \nAltera revenue was $342 million, down significantly YoY, with results impacted by the \nindustrywide inventory digestion following supply constraints in 2022 and ‘23. Altera’s $39 \nmillion operating loss is a result of lower revenue and spending associated with standing up Altera \nas a standalone company. We continue to expect Altera to exit 2024 at a $2 billion revenue run-\nrate as inventory positions normalize.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "ecae279ce98311eeac5b0ea9e8e1a86e",
+    "chunk_id": "eaef6ead075165cd27e19ce59abf8b12",
     "text": "rate as inventory positions normalize.   \n \nI want to acknowledge the hard work and focused execution across the company to transition our \nsystems and processes to our new reporting structure. We are already seeing the results of the \nincreased transparency catalyzing change and driving efficiencies across the company.  \n \nNow turning to our Q2 guidance. We expect revenue of $12.5 billion to $13.5 billion in the second \nquarter, with the midpoint aligned to typical seasonal growth. At the midpoint of $13 billion, we \nexpect gross margin of approximately 43.5%, with a tax rate of 13% and EPS of $0.10, all on a non-\nGAAP basis.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "89934ead7d9234ddc3095ee820cea036",
+    "chunk_id": "11c5f1e5b5b9880e63c6f72ec3eec607",
     "text": "GAAP basis.   \n \nWe see the client and data center businesses roughly flat to Q1 results, at the low end of seasonal.  \nQ2 client revenue is constrained by wafer level assembly supply, which is impacting our ability to \nmeet demand for Core™ Ultra-based AI PCs. We do expect sequential growth from Mobileye, \nNEX and Foundry Services. As we look beyond Q2 guidance, we expect growth across all \nsegments in the second half of the year, led by improved demand for general-purpose servers \nfrom both cloud and enterprise customers, and increased Core Ultra assembly capacity to \nsupport a growing PC TAM (total addressable market) driven by enterprise refresh and the AI PC.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "2ad430367ddcc50a689ae1e5c284954f",
+    "chunk_id": "f6517ba8b1f332953158559a605a66b0",
     "text": "We should also see accelerating growth from our network and edge businesses, a return to growth \nDespite 2024 representing the peak for 5N4Y-driven factory startup costs, we expect roughly \n200 basis points of FY24 (fiscal year) gross margin improvement compared to FY23. Our net \ncapital intensity forecast of mid-30s as a percent of revenue across 2023 and 2024 in aggregate \nremains unchanged. With significant capital offsets expected to land in the second half of the \nyear, we continue to expect approximately neutral 2024 adjusted free cash flow.   \n \nWhile first half demand signals have been a bit weaker, Q1 played out largely in line with our",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "ee613cf9375ace82553d614410091682",
+    "chunk_id": "0069a1dccbb40d6b908362538005495a",
     "text": "expectations. We achieved several important milestones towards our IDM2.0 vision, and we are \nparticipating in a large and growing TAM with encouraging market signals for the 2H of the year \nand into 2025.  By capturing margin at both the foundry level and the fabless product level, we \nhave a margin stacking advantage unique in the industry.  We are three years into our \ntransformation, and 2024 represents the steepest part of the climb – with 5N4Y startup costs \npeaking and the majority of our volume on pre-EUV process nodes with uncompetitive \neconomics. However, as we crest the hill and look toward the next few years, we have strong winds",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "f1ce631d228692a1c8f4807089795e30",
+    "chunk_id": "a19e159eca89fbf2b3bbed02ce6c0d93",
     "text": "at our back and a clear path to achieving the mid- and long-term financial targets we laid out earlier \nthis month.   \n \nClosing – Pat Gelsinger, Intel chief executive officer:  \n \nLet me say thank you for the questions and for joining us on the call today. We appreciate the \nopportunity to update you on our solid Q1 results and to recap the numerous accomplishments \nwe’ve made since the start of the year. We continue to make steady progress driving product and \nAI innovation, executing our leadership process roadmap, and delivering new foundry customers \nas we transform the company for improved competitiveness and financial results.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "7cf4578da161a8d1c1bb5b2528a6cd73",
+    "chunk_id": "c15effa465ada1952020d70ea742da94",
     "text": "And if any of you will be attending Computex in Taiwan in a few months, I look forward to seeing \nyou there. We’ll be announcing a wide range of products and offerings all centered on AI \nmomentum and competitiveness. \n \nWe look forward to speaking with you again next quarter. \n \nAbout Intel \nIntel (Nasdaq: INTC) is an industry leader, creating world-changing technology that enables global progress and enriches \nlives. Inspired by Moore’s Law, we continuously work to advance the design and manufacturing of semiconductors to help \naddress our customers’ greatest challenges. By embedding intelligence in the cloud, network, edge and every kind of",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   },
   {
-    "chunk_id": "8ed1bbb694131b8e30ead975ed15b6e1",
+    "chunk_id": "12c07be2a83cdb1594ebae429387437a",
     "text": "computing device, we unleash the potential of data to transform business and society for the better. To learn more about \nIntel’s innovations, go to newsroom.intel.com and intel.com.",
     "ticker": "INTC.US",
-    "pub_date": "20260715",
+    "pub_date": "",
     "period": "",
     "data_source": "company_filing",
-    "source_file": "data/inputs/reports/英特尔/Intel-Earnings-Call-042524-FINAL.pdf"
+    "source_file": "data/inputs/reports/INTEL/Intel-Earnings-Call-042524-FINAL.pdf",
+    "badges": [],
+    "source_weight": 1.0
   }
 ]

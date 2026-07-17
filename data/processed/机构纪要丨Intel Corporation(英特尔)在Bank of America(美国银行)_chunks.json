@@ -1,0 +1,233 @@
+[
+  {
+    "chunk_id": "07115481a02a50a0a99889b6434b989c",
+    "text": "机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行)\n「机构眼 ·调研内参」机构投研资源平台\n加入社群 ·微信：Buddha_Research",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "bea0bf86c2bd5df6a983c8ba292a6627",
+    "text": "What are the key factors that have shaped Intel's strategy and position?\nThe key factors that have shaped Intel's strategy and position include its legacy in building CPUs overdecades and its expertise in practical manufacturing, both in terms of points and in developing the mainfactory in the US. Intel's focus has been on creating a resilient and secure supply chain for logic chips basedin the US.\nWhat market changes are impacting the semiconductor industry and Intel's position within it?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "68e09ebe9d11624559af86dfcd63f185",
+    "text": "The semiconductor market is changing with the increased relevance of AI, which is altering the growthtrajectory. This change benefits Intel as the market moves in its favor. However, Intel's success has beenhampered by execution issues, which stem from cultural problems within the company.\nHow is the restructuring of management and culture at Intel addressing the company's issues?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "2c16ee3122057da97095f07b075fc743",
+    "text": "The restructuring of management at Intel, which reduced the number of管理层 layers and streamlined theorganization, has significantly improved execution and transparency. This change in culture has allowedthe company to address issues early on and improve performance, exemplified by the results of the lastquarter and the company's guidance for this quarter.\nWhat financial discipline measures have been taken at Intel to improve its performance?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "2e08ac980387699f844772118e1ec83f",
+    "text": "To improve financial performance, Intel has worked on balance sheet strength, cost structure, and margins.This has involved a balanced approach and the strengthening of financials, as well as a focus on operatingexpenses. The result is that Intel is now a more locked and focused on driving relentless execution on theproduct portfolio and improving yields.\nHow has the new leadership influenced the company's culture and operations?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "f69a1317f86e866c63a025d4763a4df9",
+    "text": "The new leadership at Intel has focused on instilling a sense of pride and financial discipline within thecompany. They have identified and placed talented individuals in key roles to improve the company'seffectiveness. This has resulted in a culture that emphasizes product focus and relentless execution on theproduct portfolio.\nWhat are the expectations and potential future scenarios for the CPU market?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "f7b3b43d4f012d643df6ee90f97ca4b7",
+    "text": "Intel is optimistic about the CPU market's future, anticipating that it will continue to be a robust part ofthe industry, especially with the upgrades and technological advancements like the latest 2022 processors.Intel's scenario planning considers various possibilities for how the CPU space, particularly in the data centersector, may evolve.\nWhat is the expected growth in CPU requirements driven by?\nThe expected growth in CPU requirements is driven by the ratio of CPU to GPU increasing, training forinference to agents and multi-agent reinforcement learning, which is projected to significantly drive CPUdemand.\nWhat market segmentation is mentioned in the speech?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "527a3620226bda6f6559c3a93c71d88d",
+    "text": "What market segmentation is mentioned in the speech?\nThe market segmentation mentioned in the speech includes the traditional enterprise server CPU marketand a specific mention of the 'a' segment within it, along with standalone agency and niche segments.\nWhat is the speaker's approach towards the IT market segmentation?\nThe speaker's approach towards IT market segmentation is not to segment the market in a particular waybut to aim for participation across the market, focusing on performance aspects such as single credit andsingle core performance.\nWhat role does the GPU play in the growth of the CPU market?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "28f8f9609d96a75c77fb89f9b90eb724",
+    "text": "What role does the GPU play in the growth of the CPU market?\nThe GPU plays a significant role in the growth of the CPU market as it competes with CPU in the market foraccelerators. The speaker acknowledges the importance of having a competitive CPU to limit growth andmentions their partnership with Nvidia as a factor in the market.\nHow does the speaker describe the relationship between CPU and storage/ orchestration?\nThe speaker describes the relationship between CPU and storage/orchestration as critical, suggesting thatin most cases, CPU is the only efficient way to manage storage and orchestration in IT infrastructures.\nWhat is the current outlook for the CPU market over the next year?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "4e054ffc61bbc9d23e3b9a7a6bf1baf4",
+    "text": "What is the current outlook for the CPU market over the next year?\nThe current outlook for the CPU market over the next year is positive, with expectations of increased demandand a strengthening market. The speaker does not express concerns about ASP (Average Selling Price) andforesees a strong market performance over the multi-year period.\nWhat is the focus of the speaker's company regarding product performance and pricing?\nThe focus of the speaker's company is to deliver a product that performs at a level expected by customers,along with commensurate pricing. The company aims to provide value rather than just competing on pricealone.",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "9b81d84be8662e09c7adb5e938582106",
+    "text": "What actions are being taken to manage supply and demand in the CPU market?\nTo manage supply and demand in the CPU market, the company is locking in prices and volumes withcustomers through long-term agreements. This strategy helps the company plan capacity and ensure thatwhen the supply comes online, it is utilized effectively.\nHow does the speaker describe the impact of increased core pricing and unit sales?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "ec415c47843a69567de88bd501f247e9",
+    "text": "The speaker describes the impact of increased core pricing and unit sales as a positive trend, indicatingthat even if core-based pricing has generally been flat, there is an uptick in pricing for more cores. Thissuggests a shift towards customers valuing additional cores, which is anticipated to continue.\nWhat is the competitive landscape like for the speaker's company in the CPU market?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "3fb1e63408ee616b7311f43be2c14ae0",
+    "text": "The competitive landscape for the speaker's company in the CPU market is strong, with an expectation toincrease supply, particularly in the coming year. There is a mention of Intel's competitive position and thespeaker's company's current supply and production ramping up, anticipating to meet or exceed marketdemands.\nWhat are the strengths and weaknesses of the company's product portfolio?\nThe company has a very strong product in certain cases, particularly in a multisport context, but not asgood in others. The new product, sign rapid ds, which will come out and does not have multi to SM T, ismentioned as an improvement over prior products.\nHow is the company adapting to customer needs?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "69c90a8ee65c5636046d20d267d6a82a",
+    "text": "How is the company adapting to customer needs?\nThe company is adapting to customer needs by listening and then adjusting the product portfolio andproduct roadmap based on what it hears from customers.\nWhat improvements are expected in the new products compared to previous ones?\nThe company expects steady progress and improvement in new products. Core and diamond arementioned as products that will definitely be better than their predecessors, with grant being better thanprior products and SNT being an improvement as well.\nWhat is the new person from the outside doing to contribute to the company?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "c398d439e5914539b27dccde00a5b84c",
+    "text": "The new person from the outside has been working for six months and is doing a good job in tearing thingsdown and ensuring that the company is back to executing at a high level. This person has leveraged theirown knowledge and is contributing to performance enhancements.\nHow does the company view competition and what is their approach to product improvement?\nThe company takes all competition seriously and aims to always make the next product better than theprevious one. They strive to bring their own unique perspective to the market, similar to competitors, andare confident about the value and road map of their products.",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "69ee74b30e71870b3d97749bd6edbb58",
+    "text": "What is the client market focusing on, and what opportunities does it present?\nThe client market is focusing on server CPU, with significant growth opportunities presented by AI andprojections. There is an expectation for additional competition in this space, and the company is wellpositioned to leverage this growth opportunity.\nWhat cultural resistance was overcome and how did it affect performance?\nCultural resistance towards providing data to vendors was overcome, which surprisingly seemed like a oneoff issue. Fixing this resistance led to the teams focusing on performance stabilization and then makingindustry-standard improvements month over month.",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "56b98e6400c3a298b6c753a52cd4d7c9",
+    "text": "How does the current progress compare to past performance and future goals?\nBased on current progress, the company is likely to meet or pull in some milestones ahead of schedule.Compared to the same period in the past, the company is ahead in performance measures and is confidentthat it will continue to make progress towards its goals.\nWhat are the strategies to improve the profitability of the business?\nThe strategies to improve the profitability of the business include growing revenue faster than OPEC,keeping costs of sales relatively flat as revenue grows, and focusing on product performance to enhancemargins.\nWhat are the financial targets for the company by the end of 2027?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "296a714f45adfea6ded417ff58368d4a",
+    "text": "What are the financial targets for the company by the end of 2027?\nThe company's financial targets include breaking even as it exits 2027 and focusing on reducing start-upcosts to prevent impacts on profitability. They are also looking at achieving a 5% margin and solid leveldigit growth as part of their long-term plan.\nHow does the company plan to utilize the resurgence of the CPU?\nThe company plans to leverage the resurgence of the CPU and is preparing for future opportunities withadvanced会计 and having a solid level of digit growth as part of their strategy.\nWhat is the stance of the company on growth and capital intensity?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "c5d99f215d675aa2dbcbd55fed7669d9",
+    "text": "What is the stance of the company on growth and capital intensity?\nThe company's stance on growth and capital intensity is cautious; while they want to grow faster, they aimto manage this growth by keeping capex intensity in check and focusing on good cash flow generation.They also have to consider the capex implications of winning more customers on the foundry side.\nWhat is the status of the company's investment in the foundry and equipment space?",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "4b474b5d7deb2b21d39310db0ea3b3d8",
+    "text": "The company has made significant investments in the foundry and equipment space, with multiple roomsnearing completion that were not available a year ago. They have also provided suppliers with a range ofexpectations for equipment needs and are closely managing supplier relationships to ensure availability ofequipment for managing potential fluctuations in demand.",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  },
+  {
+    "chunk_id": "b60e7d03161266aba3cc1d5a1a5529fa",
+    "text": "搜索「」网络结果\n\n暂无留言\n微信扫一扫 关注该公众号\n当前内容可能存在未经审核的第三方商业营销信息，请确认是否继续访问。\n微信扫一扫可打开此内容， 使用完整服务\n\n暂无留言\n确认提交投诉\n你可以补充投诉原因（选填）\n确定",
+    "ticker": "INTC.US",
+    "pub_date": "",
+    "period": "",
+    "data_source": "web_news",
+    "source_file": "data/inputs/news/INTEL/机构纪要丨Intel Corporation(英特尔)在Bank of America(美国银行).html",
+    "badges": [],
+    "source_weight": 0.7
+  }
+]
