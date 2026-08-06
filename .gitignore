@@ -25,6 +25,20 @@ data/raw/
 data/tmp/
 data/storage/
 data/*.html
+data/inputs/
+data/processed/
+
+# Local WeChat article service credentials and runtime state
+deploy/wechat-download-api/wechat.env
+deploy/wechat-download-api/data/
+data/processed/wechat_sync_state.json
 
 # Logs
 *.log
+
+tmp/
+output/
+outputs/
+
+# Archived shadow files (audited empty/superseded)
+.archive/
