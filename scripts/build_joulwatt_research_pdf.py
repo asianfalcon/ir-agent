@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import os
+
 import re
 import subprocess
 from pathlib import Path
@@ -261,7 +263,7 @@ def build() -> None:
 
     subprocess.run(
         [
-            "/Users/zyb/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/soffice",
+            os.environ.get("SOFFICE_BIN", "/Users/zyb/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/soffice"),
             "--headless",
             "--convert-to",
             "pdf",
