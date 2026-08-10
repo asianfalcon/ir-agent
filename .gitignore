@@ -47,3 +47,9 @@ config/runtime.env
 
 # Archived shadow files (audited empty/superseded)
 .archive/
+
+# 前端依赖和临时文件
+node_modules/
+lib/
+/logs/
+/.codex_tmp*/
