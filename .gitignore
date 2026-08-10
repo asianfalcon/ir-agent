@@ -3,6 +3,7 @@
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -15,11 +16,12 @@ env/
 # Secrets and machine-local config
 .env
 .env.*
-src/ingestion/acecamp/config.json
+config/acecamp.json
 config/api_keys.json
 claude_desktop_config.json
 
 # Runtime data and generated artifacts
+.runtime/
 databases/
 data/raw/
 data/tmp/
@@ -39,6 +41,9 @@ data/processed/wechat_sync_state.json
 tmp/
 output/
 outputs/
+
+# Machine-local runtime configuration
+config/runtime.env
 
 # Archived shadow files (audited empty/superseded)
 .archive/

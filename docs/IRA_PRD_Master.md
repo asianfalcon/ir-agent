@@ -136,7 +136,7 @@
 
 配置文件严格以 JSON 格式持久化存储于 `config/` 目录下。
 
-* **实体词库 (`config/vocab_dictionary.json`)**
+* **实体词库 (`resources/dictionaries/vocab_dictionary.json`)**
 
 ```json
 [
@@ -149,7 +149,7 @@
 
 ```
 
-* **变量字典 (`config/variable_schema.json`)**
+* **变量字典 (`resources/schemas/variable_schema.json`)**
 
 ```json
 [

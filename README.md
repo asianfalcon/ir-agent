@@ -2,14 +2,16 @@
 
 基于 MCP 的私有买方投研系统。接入本地私有知识库（财务数据库 + 研报向量库 + 产业链图谱），通过多 Agent 协作给出有据可查、观点鲜明的投资判断。
 
+首次阅读项目请先看 [`docs/PROJECT_DESIGN.md`](docs/PROJECT_DESIGN.md)，文档索引见 [`docs/README.md`](docs/README.md)。
+
 ## 架构概览
 
 ```
 Claude Desktop / Codex
         ↕ MCP (stdio)
-   mcp_server.py          ← 10 个 MCP 工具
+   interfaces/mcp/server.py ← 11 个 MCP 工具
         ↕
-   Skills 1–5             ← 单工具查询层
+   Skills 1–6             ← 单工具查询层
    Agents (5 岗位)        ← 多 Agent 编排层
         ↕
    SQLite / LanceDB / Kùzu ← 本地数据层
@@ -19,11 +21,11 @@ Claude Desktop / Codex
 
 | 存储 | 内容 | 路径 |
 |---|---|---|
-| SQLite | 财务报表、历史股价 | `databases/ira.db` |
-| LanceDB | 研报/公告向量切片 | `data/storage/lancedb_root/` |
-| Kùzu | 产业链图谱（公司↔产品↔上下游） | `data/storage/kuzu_root.db` |
+| SQLite | 财务报表、历史股价 | `$IRA_RUNTIME_ROOT/stores/relational/ira.db` |
+| LanceDB | 研报/公告向量切片 | `$IRA_RUNTIME_ROOT/stores/vector/lancedb_root/` |
+| Kùzu | 产业链图谱（公司↔产品↔上下游） | `$IRA_RUNTIME_ROOT/stores/graph/kuzu_root.db` |
 
-> 注意：`databases/ira.db` 是唯一 SQLite 主库。不要使用 `data/financial.db` 作为财务库；若该文件存在且为 0 字节，它只是误建的影子文件，不代表财务数据丢失。
+> 旧目录仅用于迁移兼容；生产环境的路径一律由 `ira.settings` 和环境变量决定。
 
 ### Skills（单工具层）
 
@@ -52,7 +54,7 @@ Claude Desktop / Codex
 | 交易员 | 边际变化、催化剂、入场时机 |
 | PM | 综合四方报告，给出买/卖/持有结论和仓位建议 |
 
-### MCP 工具（10 个）
+### MCP 工具（11 个）
 
 | 工具 | 层级 | 说明 |
 |---|---|---|
@@ -70,7 +72,7 @@ Claude Desktop / Codex
 
 ## 系统原则
 
-定义在 `config/prompts/instructions.md`，运行时注入 MCP server：
+定义在 `resources/prompts/instructions.md`，运行时注入 MCP server：
 
 1. **符合第一性原则** — 从数据本身推断，不用训练记忆
 2. **对抗式审查** — 多源交叉验证，保留矛盾而非平滑
@@ -110,8 +112,8 @@ Claude Desktop / Codex
 完整研报骨架沉淀在：
 
 ```text
-config/prompts/report_skeleton.md
-config/prompts/instructions.md
+resources/prompts/report_skeleton.md
+resources/prompts/instructions.md
 ```
 
 固定顺序：
@@ -134,9 +136,9 @@ config/prompts/instructions.md
 通用脚本：
 
 ```bash
-/Users/zyb/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_markdown_report_pdf.py \
-  --src output/reports/<report>.md \
-  --out output/pdf/<report>.pdf
+/path/to/python scripts/ops/render_markdown_report_pdf.py \
+  --src "$IRA_RUNTIME_ROOT/artifacts/reports/<report>.md" \
+  --out "$IRA_RUNTIME_ROOT/artifacts/pdf/<report>.pdf"
 ```
 
 PDF 生成规则已固化在脚本中：
@@ -150,20 +152,22 @@ PDF 生成规则已固化在脚本中：
 
 ### 数据目录原则
 
-- `data/inputs/`：人工放入、手动下载、官方导出的原始文件。这里代表“我信任它是原始输入”，不要放程序自动生成的 markdown。
-- `data/raw/`：程序通过 API、公开接口或官方工具自动拉取的原始响应，尽量保持 JSON 原貌，便于追溯和重新加工。
-- `data/processed/`：清洗、转换、切片后的中间产物，例如公告/新闻转出的 markdown、调试用 chunks JSON。
+- `sources/manual/`：人工放入、手动下载、官方导出的原始文件。不要放程序自动生成的 Markdown。
+- `sources/external/`：程序通过 API、公开接口或官方工具自动拉取的原始响应，尽量保持原貌。
+- `derived/`：清洗、转换、切片后的可重建中间产物。
 
-分类顺序统一为“数据形态 → 来源平台/方式 → 标的”，例如 `data/raw/announcements/akshare/`、`data/processed/news/akshare/688141.SH/`、`data/inputs/expert_minutes/acecamp/export/`。这样查询时先按投研证据类型找，再区分来源质量和获取方式。
+分类顺序统一为“数据形态 → 来源平台/方式 → 标的”，例如
+`sources/external/announcements/akshare/`、`derived/news/akshare/688141.SH/`、
+`sources/manual/expert_minutes/acecamp/export/`。
 
 ### SQLite 财务库
 
-- 主库路径：`databases/ira.db`
+- 主库路径：`$IRA_RUNTIME_ROOT/stores/relational/ira.db`
 - 表：`financial_reports`、`historical_prices`、`companies`、`spider_crawl_log`、`forecast_events`
 - 初始化只创建 schema，不会自动补财务数据：
 
 ```bash
-python -m src.db.db_initializer
+python -m ira.storage.db_initializer
 ```
 
 #### forecast_events — 预测事件表（反馈回路）
@@ -182,7 +186,7 @@ python -m scripts.forecast_snapshot score --ticker AMD
 
 ### LanceDB 研报/专家专栏库
 
-- 主路径：`data/storage/lancedb_root/`
+- 主路径：`$IRA_RUNTIME_ROOT/stores/vector/lancedb_root/`
 - 表：`chunks`
 - 入库规则：按 `chunk_id` 先删后写，避免重复运行导致重复 chunks。
 - 证据链字段：AceCamp 专家专栏会写入 `source_file = acecamp://article/{id}`，用于报告引用和追溯。
@@ -192,13 +196,13 @@ python -m scripts.forecast_snapshot score --ticker AMD
 手动下载的 AceCamp 专家专栏导出 JSON 放入：
 
 ```text
-data/inputs/expert_minutes/acecamp/export/
+$IRA_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/
 ```
 
 然后运行：
 
 ```bash
-python -m src.ingestion.acecamp.expert_processor
+python -m ira.connectors.acecamp.expert_processor
 ```
 
 ### 研报 PDF 入库
@@ -206,58 +210,52 @@ python -m src.ingestion.acecamp.expert_processor
 券商研报 PDF 放入对应目录，例如：
 
 ```text
-data/inputs/reports/杰华特/
+$IRA_RUNTIME_ROOT/sources/manual/reports/杰华特/
 ```
 
 然后运行 PDF 解析与切片：
 
 ```bash
-python -m src.processing.text_processor
+python -m ira.pipelines.text_processor
 ```
 
 ## 目录结构
 
+```text
+ir-agent/                         # 只保存可版本化资产
+├── src/ira/
+│   ├── agents/                  # 多 Agent 编排
+│   ├── capabilities/            # 单项研究能力
+│   ├── connectors/              # 外部数据连接器
+│   ├── pipelines/               # 清洗、解析、切片
+│   ├── storage/                 # SQLite/LanceDB/Kùzu 适配
+│   ├── interfaces/mcp/          # MCP 入口
+│   └── settings.py              # 唯一运行路径配置入口
+├── resources/
+│   ├── prompts/                 # 提示词与报告骨架
+│   ├── policies/                # 研究规则、口径、反馈方法
+│   ├── schemas/                 # 字段定义
+│   └── dictionaries/            # 公司/产品词典
+├── config/                      # 非敏感运行配置与示例
+├── scripts/
+│   ├── ops/                     # 数据更新、迁移、预测复盘
+│   ├── dev/                     # 诊断与可视化
+│   └── oneoff/                  # 一次性交付脚本（逐步归档）
+├── deploy/                      # Docker/Compose及独立服务
+├── docs/                        # 架构和运维文档
+└── tests/
+
+$IRA_RUNTIME_ROOT/               # 不进入 Git，服务器挂持久卷
+├── sources/{manual,external}/
+├── derived/
+├── stores/{relational,vector,graph}/
+├── artifacts/
+└── cache/
 ```
-ir-agent/
-├── config/
-│   ├── prompts/              ← 所有 prompt 独立文件（改 prompt 不动代码）
-│   │   ├── instructions.md   ← MCP server 系统原则
-│   │   ├── agent_*.md        ← 5 个岗位 Agent 的 system prompt
-│   │   ├── skill4_*.md       ← Skill 4 审查 prompt + 报告模板
-│   │   └── skill5_grounding_rule.md
-│   ├── vocab_dictionary.json ← 公司/产品别名词典
-│   ├── variable_schema.json  ← SQLite 字段映射
-│   └── watchlist.json        ← 关注标的列表
-├── src/
-│   ├── agents/               ← 多 Agent 层
-│   │   ├── orchestrator.py   ← 编排入口
-│   │   ├── researcher.py / risk.py / strategy.py / trader.py / pm.py
-│   ├── skills/               ← 单工具层（Skills 1–5）
-│   ├── db/                   ← SQLite / LanceDB / Kùzu 封装
-│   ├── ingestion/            ← 官方接口/公共接口定时拉取
-│   ├── processing/           ← PDF 解析、OCR、分块
-│   ├── utils/prompts.py      ← prompt 文件 loader
-│   └── mcp_server.py         ← MCP 入口，注册 11 个工具
-├── databases/ira.db          ← SQLite 主库
-├── data/
-│   ├── inputs/                ← 手动上传/官方导出原件（不放自动生成文件）
-│   │   ├── reports/           ← 卖方研报 PDF
-│   │   ├── announcements/     ← 手动下载的公司公告
-│   │   ├── news/              ← 手动保存的重要新闻
-│   │   └── expert_minutes/    ← 专家访谈纪要（如 acecamp/export）
-│   ├── raw/                   ← 程序自动拉取的原始响应
-│   │   ├── financials/{tushare,akshare}/
-│   │   ├── announcements/{tushare,akshare}/
-│   │   ├── news/{tushare,akshare,yfinance}/
-│   │   ├── market/{tushare,akshare,yfinance}/
-│   │   └── acecamp_official/  ← AceCamp 官方 Personal API 原始响应（临时研究）
-│   ├── processed/             ← 程序清洗/转换/切片后的中间产物
-│   │   ├── announcements/{akshare}/<ticker>/
-│   │   ├── news/{akshare,web}/<ticker>/
-│   │   └── *_chunks.json
-│   └── storage/              ← LanceDB + Kùzu
-└── docs/                     ← 设计文档（PRD、架构图）
-```
+
+完整分层规则见 `docs/architecture/project-structure.md`，路径与迁移步骤见
+`docs/architecture/runtime-layout.md`。不设置
+`IRA_RUNTIME_ROOT` 时仍读取旧目录，只用于平滑迁移。
 
 ## 快速开始
 
@@ -265,7 +263,8 @@ ir-agent/
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install -e '.[dev]'
+export IRA_RUNTIME_ROOT="$HOME/ira-runtime"
 ```
 
 ### 2. 配置 Claude Desktop
@@ -276,8 +275,8 @@ pip install -r requirements.txt
 {
   "mcpServers": {
     "ira": {
-      "command": "/path/to/ir-agent/.venv/bin/python",
-      "args": ["/path/to/ir-agent/src/mcp_server.py"],
+      "command": "/path/to/ir-agent/.venv/bin/ira-mcp",
+      "args": [],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-..."
       }
@@ -291,23 +290,23 @@ pip install -r requirements.txt
 ### 3. 初始化数据库
 
 ```bash
-python -m src.db.db_initializer
+python -m ira.storage.db_initializer
 ```
 
 ### 4. 摄入研报 PDF
 
-手动下载的 PDF 放入 `data/inputs/reports/<公司或主题>/`，然后：
+手动下载的 PDF 放入 `$IRA_RUNTIME_ROOT/sources/manual/reports/<公司或主题>/`，然后：
 
 ```bash
-python -m src.processing.text_processor
+python -m ira.pipelines.text_processor
 ```
 
 ### 5. 摄入 AceCamp 专家专栏
 
-手动下载的专家专栏导出 JSON 放入 `data/inputs/expert_minutes/acecamp/export/`，然后：
+手动下载的专家专栏导出 JSON 放入 `$IRA_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/`，然后：
 
 ```bash
-python -m src.ingestion.acecamp.expert_processor
+python -m ira.connectors.acecamp.expert_processor
 ```
 
 AceCamp 在线查询只使用官方 skill：
@@ -317,27 +316,27 @@ python3 data/tmp/acecamp-research/scripts/acecamp_client.py ask "问题" --mode 
 python3 data/tmp/acecamp-research/scripts/acecamp_client.py search --query "关键词" --original_query "原始问题"
 ```
 
-`src.ingestion.acecamp.spider` 仅保留为官方 Personal API 的辅助封装，不进入自动调度；其 `ask_and_store` 默认不写入 LanceDB，显式入库时会标记为 `acecamp_ai_answer`，不能当作券商研报或专家纪要证据。
+`ira.connectors.acecamp.spider` 仅保留为官方 Personal API 的辅助封装，不进入自动调度；其 `ask_and_store` 默认不写入 LanceDB，显式入库时会标记为 `acecamp_ai_answer`，不能当作券商研报或专家纪要证据。
 
 ### 6. 一键更新单个股票
 
 推荐统一走总入口，避免漏掉财报、公告、新闻、研报、专家纪要中的某一类：
 
 ```bash
-python scripts/refresh_company_data.py --ticker 688141.SH --company 杰华特
+python scripts/ops/refresh_company_data.py --ticker 688141.SH --company 杰华特
 ```
 
 长期更新策略：
 
-- 财报/公告/新闻：自动拉取到 `data/raw/`，再转换到 `data/processed/` 并入 LanceDB/SQLite。
-- 研报 PDF：手动放入 `data/inputs/reports/<公司名>/`，总入口会统一处理。
-- 专家纪要：只处理 `data/inputs/expert_minutes/acecamp/export/` 下的官方/手动导出 JSON，保留 `release_time`、`badges`、`is_hot`、`source_weight`。
+- 财报/公告/新闻：自动拉取到 `sources/external/`，再转换到 `derived/` 并入 LanceDB/SQLite。
+- 研报 PDF：手动放入 `sources/manual/reports/<公司名>/`，总入口会统一处理。
+- 专家纪要：只处理 `sources/manual/expert_minutes/acecamp/export/` 下的官方/手动导出 JSON。
 - AceCamp 在线 ask/search：只作为临时研究辅助，不自动入证据库。
 
 ### 7. 拉取行情和研报（定时）
 
 ```bash
-python -m src.ingestion.api_scheduler
+python -m ira.connectors.api_scheduler
 ```
 
 ## 数据源

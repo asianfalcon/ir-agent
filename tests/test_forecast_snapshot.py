@@ -4,7 +4,7 @@ import sqlite3
 import tempfile
 from pathlib import Path
 
-from scripts import forecast_snapshot as fs
+from scripts.ops import forecast_snapshot as fs
 
 
 def _rec(db, **kw):

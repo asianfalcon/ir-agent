@@ -1,0 +1,14 @@
+services:
+  ira-mcp:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    environment:
+      IRA_RUNTIME_ROOT: /srv/ira
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_BASE_URL: ${ANTHROPIC_BASE_URL:-}
+      TUSHARE_TOKEN: ${TUSHARE_TOKEN:-}
+    volumes:
+      - ${IRA_HOST_RUNTIME_ROOT:-./.runtime}:/srv/ira
+    stdin_open: true
+    restart: unless-stopped

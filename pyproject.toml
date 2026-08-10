@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ira-agent"
+version = "0.1.0"
+description = "Private investment-research agent with MCP, structured financial data, vector search and graph analysis."
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "akshare>=1.18",
+  "anthropic>=0.70",
+  "apscheduler>=3.11,<4",
+  "beautifulsoup4>=4.13",
+  "curl-cffi>=0.13",
+  "kuzu>=0.11,<0.12",
+  "lancedb>=0.25",
+  "langchain-text-splitters>=1.0",
+  "lxml>=5",
+  "mcp>=1.20",
+  "numpy>=2",
+  "pymupdf>=1.26",
+  "sentence-transformers>=5",
+  "tushare>=1.4",
+  "watchdog>=6",
+  "yfinance>=1",
+]
+
+[project.optional-dependencies]
+reports = [
+  "pillow>=11",
+  "python-docx>=1.2",
+  "reportlab>=4.4",
+]
+ocr = [
+  "pdf2image>=1.17",
+  "pytesseract>=0.3.13",
+]
+dev = [
+  "pytest>=8",
+  "ruff>=0.12",
+]
+
+[project.scripts]
+ira-mcp = "ira.interfaces.mcp.server:run"
+ira-init-db = "ira.storage.db_initializer:init_schema"
+ira-watch = "ira.connectors.watchdog_monitor:start"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ira*"]
+namespaces = true
+
+[tool.setuptools.data-files]
+"share/ira-agent/prompts" = ["resources/prompts/*.md"]
+"share/ira-agent/policies" = ["resources/policies/*.md"]
+"share/ira-agent/schemas" = ["resources/schemas/*.json"]
+"share/ira-agent/dictionaries" = ["resources/dictionaries/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 110
