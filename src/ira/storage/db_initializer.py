@@ -124,9 +124,10 @@ def init_schema() -> None:
             );
 
             CREATE TABLE IF NOT EXISTS spider_crawl_log (
-                crawl_id     TEXT PRIMARY KEY,  -- MD5(url + date)
-                url          TEXT NOT NULL,
-                crawl_date   TEXT NOT NULL       -- YYYY-MM-DD
+                url_date_hash TEXT PRIMARY KEY,
+                url           TEXT,
+                title         TEXT,
+                crawled_at    TEXT
             );
         """)
     print(f"Schema initialised at {DB_PATH}")

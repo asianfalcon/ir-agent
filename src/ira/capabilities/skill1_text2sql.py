@@ -22,11 +22,11 @@ _TEMPLATES = [
     (["净利润", "利润", "profit", "net"],
      "SELECT period, net_profit FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
     (["毛利", "gross"],
-     "SELECT period, gross_profit, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
+     "SELECT period, gross_margin, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
     (["现金流", "cash"],
      "SELECT period, operating_cash_flow FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
     (["财务", "业绩", "全部", "所有", "overview", "all"],
-     "SELECT period, revenue, net_profit, gross_profit FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
+     "SELECT period, revenue, net_profit, gross_margin FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
     (["股价", "价格", "price"],
      "SELECT price_date, price_value FROM historical_prices WHERE item_code=? ORDER BY price_date DESC LIMIT 30"),
 ]
