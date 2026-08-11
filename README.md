@@ -2,7 +2,9 @@
 
 基于 MCP 的私有买方投研系统。接入本地私有知识库（财务数据库 + 研报向量库 + 产业链图谱），通过多 Agent 协作给出有据可查、观点鲜明的投资判断。
 
-> **Ping the market. Read the echoes. Capture the alpha.**
+> **Ping the market. Read the echoes. Track the signal. Capture the alpha.**
+>
+> 扫描市场，辨识回波，追踪信号，捕获 Alpha。
 
 **AlphaSonar** 是品牌名；对外命令统一使用短前缀 `alpha-`，Python 包和环境变量仍使用明确的 `alphasonar` / `ALPHASONAR_*`，避免与其他项目冲突。
 
