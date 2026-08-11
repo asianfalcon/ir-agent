@@ -17,10 +17,19 @@ for _d in (MARKET_DIR, FIN_DIR, NEWS_DIR):
 
 
 def _pro():
+    import os
     import tushare as ts
-    token = json.loads(_KEYS_PATH.read_text()).get("tushare_token", "")
+
+    # Priority: 1. env var (Docker), 2. config file (local dev)
+    token = os.environ.get("TUSHARE_TOKEN")
+    if not token and _KEYS_PATH.exists():
+        token = json.loads(_KEYS_PATH.read_text()).get("tushare_token", "")
+
     if not token:
-        raise RuntimeError("tushare_token 未配置，请在 config/api_keys.json 填入")
+        raise RuntimeError(
+            "tushare_token 未配置，请设置环境变量 TUSHARE_TOKEN 或在 config/api_keys.json 填入"
+        )
+
     ts.set_token(token)
     return ts.pro_api()
 
