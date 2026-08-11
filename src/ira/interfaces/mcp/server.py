@@ -3,17 +3,25 @@ MCP server entry point — exposes the 4 Skills as MCP tools for Claude Desktop.
 Run with: ira-mcp
 """
 
-import anthropic
 import json
 import os
+from pathlib import Path
 from urllib.parse import urlparse
 
+import anthropic
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
-from mcp.types import Tool, TextContent
+from mcp.types import TextContent, Tool
 
-from ira.capabilities import skill1_text2sql, skill2_calculator, skill3_graph_propagator, skill4_verifier, skill5_focused, skill6_event_catalyst
 from ira.agents import orchestrator
+from ira.capabilities import (
+    skill1_text2sql,
+    skill2_calculator,
+    skill3_graph_propagator,
+    skill4_verifier,
+    skill5_focused,
+    skill6_event_catalyst,
+)
 from ira.settings import get_settings
 from ira.utils.prompts import load
 
@@ -26,8 +34,16 @@ app = Server("ira-mcp", instructions=_INSTRUCTIONS)
 _client: anthropic.Anthropic | None = None
 
 
+def _secret_value(name: str) -> str:
+    value = os.environ.get(name, "")
+    secret_file = os.environ.get(f"{name}_FILE", "")
+    if not value and secret_file and Path(secret_file).is_file():
+        value = Path(secret_file).read_text().strip()
+    return value
+
+
 def _client_context() -> str:
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    key = _secret_value("ANTHROPIC_API_KEY")
     base = os.environ.get("ANTHROPIC_BASE_URL", "")
     host = urlparse(base).netloc if base else "api.anthropic.com(default)"
     return f"ANTHROPIC_API_KEY set={bool(key)} len={len(key)}; ANTHROPIC_BASE_URL host={host}"
@@ -36,8 +52,10 @@ def _client_context() -> str:
 def _get_client() -> anthropic.Anthropic:
     global _client
     if _client is None:
-        _client = anthropic.Anthropic()
+        key = _secret_value("ANTHROPIC_API_KEY")
+        _client = anthropic.Anthropic(api_key=key) if key else anthropic.Anthropic()
     return _client
+
 
 def _llm(system: str, user: str) -> str:
     try:
@@ -262,7 +280,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
 
         # resolve product from vocab for graph query
         import json as _json
-        from pathlib import Path as _Path
+
         _vocab_path = get_settings().vocab_path
         _vocab = _json.loads(_vocab_path.read_text()) if _vocab_path.exists() else []
         _ticker_entry = next((e for e in _vocab if e.get("ticker") == ticker), None)
@@ -271,7 +289,9 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
 
         # 分层检索：卖方预测与公司官方指引使用不同查询，再合并交给 verifier；
         # verifier 会按 data_source 物理隔离，官方材料绝不进入卖方一致预期。
-        from ira.storage.vector_store import latest_by_source, search as vector_search
+        from ira.storage.vector_store import latest_by_source
+        from ira.storage.vector_store import search as vector_search
+
         sellside_chunks = vector_search(
             query=f"{company_name} 财务 业绩",
             ticker=ticker,
@@ -303,23 +323,29 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         return [TextContent(type="text", text=report)]
 
     # ── Skill 5: focused analysis shortcuts ──────────────────────────────────
-    if name in ("earnings_forecast", "price_target", "marginal_change",
-                "relationship_graph", "opportunity_risk"):
-        ticker       = arguments["ticker"]
+    if name in (
+        "earnings_forecast",
+        "price_target",
+        "marginal_change",
+        "relationship_graph",
+        "opportunity_risk",
+    ):
+        ticker = arguments["ticker"]
         company_name = arguments["company_name"]
-        period       = arguments.get("period", "2026Q1")
+        period = arguments.get("period", "2026Q1")
 
         import json as _json
-        from pathlib import Path as _Path
-        from ira.storage.vector_store import latest_by_source, search as vector_search
+
+        from ira.storage.vector_store import latest_by_source
+        from ira.storage.vector_store import search as vector_search
 
         # shared data fetching
         dashboard = skill2_calculator.compute(ticker, period)
         _vocab_path = get_settings().vocab_path
         _vocab = _json.loads(_vocab_path.read_text()) if _vocab_path.exists() else []
-        _entry  = next((e for e in _vocab if e.get("ticker") == ticker), None)
+        _entry = next((e for e in _vocab if e.get("ticker") == ticker), None)
         product = _entry.get("product", "") if _entry else ""
-        chain   = skill3_graph_propagator.query(product) if product else []
+        chain = skill3_graph_propagator.query(product) if product else []
         if name == "earnings_forecast":
             # 预检索池:一次性覆盖卖方预测+官方指引+经营驱动的综合 query,避免 skill5 内部重复检索。
             # 之前 skill5 内部 _forecast/guidance/supplemental 各自独立做 6+3+2 次检索(88s+),
@@ -340,9 +366,11 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         # 泛化语义查询容易被数量庞大的旧财报淹没，导致刚入库的公司新闻完全不可见。
         # 单独按日期补召回最新 web_news，再按 chunk_id 去重。新闻仍由 skill5 的来源
         # 隔离与弱证据护栏约束：不进入卖方一致预期，未交叉确认时不修改 Base 金额。
-        latest_news = latest_by_source(ticker, "web_news", limit=12)
+        latest_evidence = []
+        for source, limit in (("web_news", 12), ("announcement", 12), ("company_filing", 12)):
+            latest_evidence.extend(latest_by_source(ticker, source, limit=limit))
         seen_chunk_ids = {c.get("chunk_id") for c in chunks}
-        chunks.extend(c for c in latest_news if c.get("chunk_id") not in seen_chunk_ids)
+        chunks.extend(c for c in latest_evidence if c.get("chunk_id") not in seen_chunk_ids)
 
         if name == "earnings_forecast":
             result = skill5_focused.earnings_forecast(ticker, company_name, dashboard, chunks, _llm)
@@ -380,6 +408,7 @@ async def main():
 def run() -> None:
     """Synchronous console entrypoint."""
     import asyncio
+
     asyncio.run(main())
 
 

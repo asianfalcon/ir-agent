@@ -10,7 +10,6 @@ import hashlib
 import json
 import sqlite3
 from datetime import date, datetime
-from pathlib import Path
 from typing import Any
 
 from ira.settings import get_settings
@@ -27,6 +26,7 @@ _CONFIG_PATH = get_settings().config_root / "acecamp.json"
 
 def _client():
     from ira.connectors.acecamp.acecamp_client import AceCampClient
+
     cfg = json.loads(_CONFIG_PATH.read_text())
     return AceCampClient(
         api_key=cfg["api_key"],
@@ -75,13 +75,12 @@ def _mark_crawled(url_date_hash: str, url: str, title: str):
 
 def _chunk_and_store(text: str, metadata: dict[str, Any]):
     from ira.pipelines.text_processor import chunk_text
-    from ira.storage.vector_store import upsert_chunks, delete_by_source_file
+    from ira.storage.vector_store import replace_source_chunks
+
     chunks = chunk_text(text, metadata=metadata)
     source_file = metadata.get("source_file")
-    if source_file:
-        delete_by_source_file(source_file)
-    if chunks:
-        upsert_chunks(chunks)
+    if source_file and chunks:
+        replace_source_chunks(source_file, chunks)
     return len(chunks)
 
 
@@ -127,17 +126,20 @@ def fetch_and_store(
         pub_date = (item.get("published_at") or today)[:10]
         source_id = hashlib.md5(str(article_id).encode()).hexdigest()
 
-        n = _chunk_and_store(content, metadata={
-            "ticker": ticker or "",
-            "pub_date": pub_date,
-            "period": "",
-            "associated_vars": [],
-            "data_source": data_source,
-            "source_id": source_id,
-            "source_uri": url,
-            "source_file": url,
-            "title": item.get("title", ""),
-        })
+        n = _chunk_and_store(
+            content,
+            metadata={
+                "ticker": ticker or "",
+                "pub_date": pub_date,
+                "period": "",
+                "associated_vars": [],
+                "data_source": data_source,
+                "source_id": source_id,
+                "source_uri": url,
+                "source_file": url,
+                "title": item.get("title", ""),
+            },
+        )
         total_chunks += n
 
         _mark_crawled(url_date_hash, url, item.get("title", ""))
@@ -185,17 +187,20 @@ def ask_and_store(
         return 0
 
     source_id = url_date_hash
-    return _chunk_and_store(answer, metadata={
-        "ticker": ticker or "",
-        "pub_date": today,
-        "period": "",
-        "associated_vars": [],
-        "data_source": ASK_DATA_SOURCE,
-        "source_id": source_id,
-        "source_uri": source_uri,
-        "source_file": source_uri,
-        "title": question,
-    })
+    return _chunk_and_store(
+        answer,
+        metadata={
+            "ticker": ticker or "",
+            "pub_date": today,
+            "period": "",
+            "associated_vars": [],
+            "data_source": ASK_DATA_SOURCE,
+            "source_id": source_id,
+            "source_uri": source_uri,
+            "source_file": source_uri,
+            "title": question,
+        },
+    )
 
 
 if __name__ == "__main__":

@@ -11,6 +11,7 @@
 口径由 accounting_basis(GAAP/Non-GAAP) 决定——对比只在同 metric+同 basis 内进行。
 只依赖 stdlib。
 """
+
 import argparse
 import sqlite3
 import sys
@@ -24,9 +25,10 @@ from ira.settings import get_settings
 DB_PATH = get_settings().sqlite_path
 EVENT_TYPES = ("consensus", "guidance", "forecast", "actual")
 METRICS = ("revenue", "gross_margin", "eps", "net_income")
+RECORD_METRICS = (*METRICS, "guidance_revenue")
 BASES = ("GAAP", "Non-GAAP", "Reported", "")
 # 口径护栏：这些指标存在 GAAP/Non-GAAP 两套口径，写入时必须显式标 basis，否则无法比对。
-# revenue 通常只有一套(Reported)，不强制——不为匹配而复制成 GAAP/Non-GAAP 两行造重复。
+# revenue 只有一套 Reported 口径；空值在写入时直接规范化为 Reported。
 BASIS_REQUIRED_METRICS = ("net_income", "eps", "gross_margin")
 
 DDL = """
@@ -61,17 +63,20 @@ def _conn(db_path=DB_PATH):
 
 
 def record(a, db_path=DB_PATH):
+    if a.metric == "revenue" and not a.basis:
+        a.basis = "Reported"
+    if a.metric == "guidance_revenue":
+        a.basis = "Reported"
     # 口径硬护栏：利润类指标不带 basis 就拒写——GAAP/Non-GAAP 混比是最隐蔽的错。
     if a.metric in BASIS_REQUIRED_METRICS and a.basis not in ("GAAP", "Non-GAAP"):
         raise ValueError(
             f"BASIS_REQUIRED: metric={a.metric} 必须显式指定 --basis GAAP 或 Non-GAAP，"
             f"当前为 {a.basis!r}。（利润/EPS/毛利率禁止无口径写入，防混比）"
         )
-    # Non-GAAP actual 只能来自公司官方对账表，必须留证；禁止券商计算值伪装成 Non-GAAP 实际。
-    if a.event_type == "actual" and a.basis == "Non-GAAP" and not a.source_id:
+    # 所有 actual 都必须能回溯到公司官方原文；Non-GAAP 更不能由券商值代替。
+    if a.event_type == "actual" and not a.source_id:
         raise ValueError(
-            "NONGAAP_ACTUAL_NEEDS_SOURCE: Non-GAAP 实际值必须带 --source-id（公司官方"
-            "Earnings Release/对账表），缺对账来源时应保持缺失，不得从 GAAP 自行估算或采信券商计算值。"
+            "ACTUAL_NEEDS_SOURCE: 实际值必须带 --source-id（公司官方 Earnings Release/对账表）。"
         )
     conn = _conn(db_path)
     conn.execute(
@@ -79,20 +84,47 @@ def record(a, db_path=DB_PATH):
         "(run_id,ticker,as_of_date,target_period,event_type,metric,accounting_basis,"
         " value_low,value_mid,value_high,unit,source_type,source_id,model_version,"
         " information_cutoff,note) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-        (a.run_id, a.ticker, a.as_of_date, a.target_period, a.event_type, a.metric,
-         a.basis, a.low, a.mid, a.high, a.unit, a.source_type, a.source_id,
-         a.model_version, a.information_cutoff or a.as_of_date, a.note),
+        (
+            a.run_id,
+            a.ticker,
+            a.as_of_date,
+            a.target_period,
+            a.event_type,
+            a.metric,
+            a.basis,
+            a.low,
+            a.mid,
+            a.high,
+            a.unit,
+            a.source_type,
+            a.source_id,
+            a.model_version,
+            a.information_cutoff or a.as_of_date,
+            a.note,
+        ),
     )
     conn.commit()
     conn.close()
-    print(f"recorded {a.ticker} {a.target_period} {a.event_type}:{a.metric}"
-          f"({a.basis or '-'}) mid={a.mid} @ {a.as_of_date}")
+    print(
+        f"recorded {a.ticker} {a.target_period} {a.event_type}:{a.metric}"
+        f"({a.basis or '-'}) mid={a.mid} @ {a.as_of_date}"
+    )
 
 
 def _err(pred, actual):
     if pred is None or actual in (None, 0):
         return None
     return abs(pred - actual) / abs(actual)
+
+
+def _comparable_value(row):
+    """Normalize currency amounts to millions; percentage/EPS values stay unchanged."""
+    if row is None or row["value_mid"] is None:
+        return None
+    value = row["value_mid"]
+    if row["metric"] in ("revenue", "guidance_revenue", "net_income"):
+        return value / 1_000_000 if abs(value) > 1e8 else value
+    return value
 
 
 def _latest(conn, ticker, event_type):
@@ -103,51 +135,61 @@ def _latest(conn, ticker, event_type):
     保证"同日最后写入的修订"稳定胜出，无随机性。"""
     tk = "AND ticker = :tk" if ticker else ""
     params = {"et": event_type, "tk": ticker}
-    return conn.execute(f"""
+    return conn.execute(
+        f"""
         SELECT * FROM (
             SELECT fe.*, ROW_NUMBER() OVER (
-                PARTITION BY target_period, metric, accounting_basis
+                PARTITION BY ticker, target_period, metric, accounting_basis
                 ORDER BY as_of_date DESC, created_at DESC, event_id DESC
             ) AS rn
             FROM forecast_events fe
             WHERE event_type=:et {tk}
         ) WHERE rn = 1
-    """, params).fetchall()
+    """,
+        params,
+    ).fetchall()
 
 
 def score(a, db_path=DB_PATH):
     conn = _conn(db_path)
     conn.row_factory = sqlite3.Row
-    key = lambda r: (r["target_period"], r["metric"], r["accounting_basis"])
-    actuals = {key(r): r for r in _latest(conn, a.ticker, "actual")}
-    fores = {key(r): r for r in _latest(conn, a.ticker, "forecast")}
-    cons = {key(r): r for r in _latest(conn, a.ticker, "consensus")}
+    key = lambda r: (r["ticker"], r["target_period"], r["metric"], r["accounting_basis"])
+    actuals = {key(r): r for r in _latest(conn, a.ticker, "actual") if r["metric"] in METRICS}
+    fores = {key(r): r for r in _latest(conn, a.ticker, "forecast") if r["metric"] in METRICS}
+    cons = {key(r): r for r in _latest(conn, a.ticker, "consensus") if r["metric"] in METRICS}
     conn.close()
 
-    print(f"{'period':7} {'metric':12} {'basis':9} {'actual':>12} {'cons_err':>9} {'ira_err':>9}  裁决")
-    print("-" * 78)
+    print(
+        f"{'ticker':10} {'period':7} {'metric':12} {'basis':9} {'actual':>12} {'cons_err':>9} {'ira_err':>9}  裁决"
+    )
+    print("-" * 90)
     wins = draws = losses = 0
     for k, act in sorted(actuals.items()):
-        av = act["value_mid"]
+        av = _comparable_value(act)
         fe = fores.get(k)
         ce_row = cons.get(k)
-        ie = _err(fe["value_mid"] if fe else None, av)
-        ce = _err(ce_row["value_mid"] if ce_row else None, av)
+        ie = _err(_comparable_value(fe), av)
+        ce = _err(_comparable_value(ce_row), av)
         if ce is None or ie is None:
             verdict = "—(缺consensus或forecast)"
         elif ce < 1e-12 or abs(ie - ce) / max(ce, 1e-12) < a.tol:
-            verdict = "持平"; draws += 1
+            verdict = "持平"
+            draws += 1
         elif ie < ce:
-            verdict = "✅修正加分"; wins += 1
+            verdict = "✅修正加分"
+            wins += 1
         else:
-            verdict = "❌修正减分"; losses += 1
+            verdict = "❌修正减分"
+            losses += 1
         # 穿越：forecast 的 as_of 晚于 actual 事件日
-        if fe and act and fe["as_of_date"] >= act["as_of_date"]:
+        if fe and act and fe["as_of_date"] > act["as_of_date"]:
             verdict += "  ⚠可能穿越"
+        elif fe and act and fe["as_of_date"] == act["as_of_date"]:
+            verdict += "  △同日需核对时点"
         cs = f"{ce:8.2%}" if ce is not None else "     n/a"
         is_ = f"{ie:8.2%}" if ie is not None else "     n/a"
-        print(f"{k[0]:7} {k[1]:12} {(k[2] or '-'):9} {av:12.2f} {cs:>9} {is_:>9}  {verdict}")
-    print("-" * 78)
+        print(f"{k[0]:10} {k[1]:7} {k[2]:12} {(k[3] or '-'):9} {av:12.2f} {cs:>9} {is_:>9}  {verdict}")
+    print("-" * 90)
     print(f"IRA修正 vs 一致预期： 加分 {wins} · 持平 {draws} · 减分 {losses}")
 
 
@@ -160,7 +202,7 @@ def main(argv=None):
     r.add_argument("--as-of-date", dest="as_of_date", required=True, help="事件/预测日 YYYY-MM-DD")
     r.add_argument("--target-period", dest="target_period", required=True, help="YYYYQ1..Q4")
     r.add_argument("--event-type", dest="event_type", required=True, choices=EVENT_TYPES)
-    r.add_argument("--metric", required=True, choices=METRICS)
+    r.add_argument("--metric", required=True, choices=RECORD_METRICS)
     r.add_argument("--basis", default="", choices=BASES, help="GAAP/Non-GAAP/空")
     r.add_argument("--low", type=float)
     r.add_argument("--mid", type=float, help="点值/中值；打分用它")
@@ -170,8 +212,9 @@ def main(argv=None):
     r.add_argument("--source-id", dest="source_id", default="")
     r.add_argument("--run-id", dest="run_id", default="")
     r.add_argument("--model-version", dest="model_version", default="")
-    r.add_argument("--information-cutoff", dest="information_cutoff", default="",
-                   help="所用信息最新日；缺省=as_of_date")
+    r.add_argument(
+        "--information-cutoff", dest="information_cutoff", default="", help="所用信息最新日；缺省=as_of_date"
+    )
     r.add_argument("--note", default="")
     r.set_defaults(func=record)
 

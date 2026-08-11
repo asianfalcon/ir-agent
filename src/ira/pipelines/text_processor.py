@@ -31,9 +31,7 @@ _HEADER_FOOTER_RE = re.compile(
 )
 _DISCLAIMER_RE = re.compile(r"(免责声明|投资评级说明)")
 
-_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP
-)
+_splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
 
 
 def _load_vocab() -> list[dict]:
@@ -98,6 +96,7 @@ def _ocr_pdf(path: Path) -> str:
     try:
         import pytesseract
         from pdf2image import convert_from_path
+
         pages = convert_from_path(str(path), dpi=200)
         texts = []
         for img in pages:
@@ -132,6 +131,7 @@ def _classify_report(file_name: str) -> str:
     → company_filing。两者都不命中时，保守留在 broker_report（宁可漏分类也不
     误把真研报踢出一致预期）。辅以"证券/研究所"等券商标记兜底非标准命名的券商研报。"""
     import re as _re
+
     # 主判据：标准券商研报命名 YYYYMMDD-机构名-...（官方财报绝不用此格式）
     if _re.match(r"^\d{8}-[^-]+-", file_name):
         return "broker_report"
@@ -141,10 +141,27 @@ def _classify_report(file_name: str) -> str:
         return "broker_report"
     # 公司官方财报/SEC 披露特征
     _FILING_MARK = (
-        "Earnings", "earnings", "EarningsRelease", "Earnings Release",
-        "annual report", "Annual Report", "10-K", "10-Q", "8-K",
-        "Prepared Remarks", "Earnings Call", "Earnings Deck", "Financial Results",
-        "PXY", "proxy", "Proxy", "Fiscal", "Financial", "Gaap", "GAAP", "gaap",
+        "Earnings",
+        "earnings",
+        "EarningsRelease",
+        "Earnings Release",
+        "annual report",
+        "Annual Report",
+        "10-K",
+        "10-Q",
+        "8-K",
+        "Prepared Remarks",
+        "Earnings Call",
+        "Earnings Deck",
+        "Financial Results",
+        "PXY",
+        "proxy",
+        "Proxy",
+        "Fiscal",
+        "Financial",
+        "Gaap",
+        "GAAP",
+        "gaap",
     )
     # SEC EDGAR accession-number 文件名，如 0000050863-25-000052
     if _re.match(r"^\d{10}-\d{2}-\d{6}", file_name):
@@ -160,8 +177,18 @@ def _classify_report(file_name: str) -> str:
     # 兜底：小写官方特征词 + 年报缩写 AR（券商 YYYYMMDD- 命名已在前面 return，不会误伤）。
     # 修 2023-Intel-AR.pdf / intel-q3-2023-financial-and-business-report 等被误判 broker。
     fn_low = file_name.lower()
-    if any(t in fn_low for t in ("annual report", "10-k", "10-q", "financial-and-business",
-                                 "financial report", "financial-report", "annual-report")):
+    if any(
+        t in fn_low
+        for t in (
+            "annual report",
+            "10-k",
+            "10-q",
+            "financial-and-business",
+            "financial report",
+            "financial-report",
+            "annual-report",
+        )
+    ):
         return "company_filing"
     if _re.search(r"[-_ ]ar([-_. ]|$)", fn_low):  # "2023-Intel-AR"、"Intel AR_WR"
         return "company_filing"
@@ -173,6 +200,7 @@ def _ticker_from_broker_name(file_name: str) -> str | None:
     只认强信号：A股 6 位数字(688141) 或 XXX.US；且必须匹配 vocab 里存在的 ticker，
     避免把标题里的随机数字/代码误当 ticker。抽不到返回 None（回落目录/正文）。"""
     import re as _re
+
     known = {e.get("ticker") for e in _load_vocab() if e.get("entity_type") == "Company"}
     # A股 6 位：-688141- → 688141.SH / .SZ（用 vocab 里已知的带后缀形式匹配）
     for m in _re.findall(r"(?<!\d)(\d{6})(?!\d)", file_name):
@@ -203,7 +231,13 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
     # 会直接写明标的代码（-杰华特-688141-、-AMD.US-）。混装目录（如 reports/寒武纪/ 同时
     # 放了杰华特和寒武纪研报）只靠目录名会把两家都标成寒武纪，此时文件名的显式代码才是真相。
     name_ticker = _ticker_from_broker_name(path.name)
-    ticker = ticker_override or name_ticker or dir_ticker or _normalize_ticker(text) or _normalize_ticker(path.stem)
+    ticker = (
+        ticker_override
+        or name_ticker
+        or dir_ticker
+        or _normalize_ticker(text)
+        or _normalize_ticker(path.stem)
+    )
 
     # walk up to find the evidence category dir (reports / announcements / news)
     source_map = {"reports": "broker_report", "announcements": "announcement", "news": "web_news"}
@@ -279,9 +313,18 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
             return sec.group(1), "sec-filed-date"
 
         months = {
-            "january": 1, "february": 2, "march": 3, "april": 4,
-            "may": 5, "june": 6, "july": 7, "august": 8,
-            "september": 9, "october": 10, "november": 11, "december": 12,
+            "january": 1,
+            "february": 2,
+            "march": 3,
+            "april": 4,
+            "may": 5,
+            "june": 6,
+            "july": 7,
+            "august": 8,
+            "september": 9,
+            "october": 10,
+            "november": 11,
+            "december": 12,
         }
         month_pattern = "|".join(m.title() for m in months)
         # 公司新闻稿通常以“城市, 州, Month d, yyyy – 公司今日宣布”开头。
@@ -317,8 +360,9 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         def _yr(yy: str) -> int:
             return int(yy) if len(yy) == 4 else 2000 + int(yy)
 
-        m = (_re.search(r"[Qq]([1-4])['\s\-_]*((?:20)?\d{2})(?!\d)", stem)
-             or _re.search(r"([1-4])[Qq]['\s\-_]*((?:20)?\d{2})(?!\d)", stem))
+        m = _re.search(r"[Qq]([1-4])['\s\-_]*((?:20)?\d{2})(?!\d)", stem) or _re.search(
+            r"([1-4])[Qq]['\s\-_]*((?:20)?\d{2})(?!\d)", stem
+        )
         if m:
             cand = f"{_yr(m.group(2)):04d}{qend[int(m.group(1))]}"
             if _valid_yyyymmdd(cand):
@@ -346,7 +390,9 @@ def _infer_metadata(path: Path, text: str, ticker_override: str | None = None) -
         # "越新越可信"权重（曾让 2023 年 AMD 电话会成为 INTC 的"最新官方指引"）。
         # 留空更安全：空日期在排序中视为最旧，不会劫持"最新"，只是不加分。
         pub_date = ""
-        print(f"[metadata] pub_date 留空（文件名/正文/财季均无可靠日期，不退回mtime）: {path.name}", flush=True)
+        print(
+            f"[metadata] pub_date 留空（文件名/正文/财季均无可靠日期，不退回mtime）: {path.name}", flush=True
+        )
 
     source_file = _SETTINGS.locator(path)
 
@@ -375,14 +421,16 @@ def chunk_text(text: str, metadata: dict) -> list[dict]:
     chunks = _splitter.split_text(text)
     result = []
     for c in chunks:
-        result.append({
-            "chunk_id": hashlib.md5(c.encode()).hexdigest(),
-            "text": c,
-            "metadata": {
-                **metadata,
-                "associated_vars": _associated_vars(c),
-            },
-        })
+        result.append(
+            {
+                "chunk_id": hashlib.md5(c.encode()).hexdigest(),
+                "text": c,
+                "metadata": {
+                    **metadata,
+                    "associated_vars": _associated_vars(c),
+                },
+            }
+        )
     return result
 
 
@@ -410,36 +458,24 @@ def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
     for c in chunks:
         source_file = c["metadata"].get("source_file", path.name)
         flat = {
-            "chunk_id":    hashlib.md5(f"{source_file}:{c['chunk_id']}".encode()).hexdigest(),
-            "text":        c["text"],
-            "ticker":      c["metadata"]["ticker"],
-            "pub_date":    c["metadata"]["pub_date"],
-            "period":      c["metadata"]["period"],
+            "chunk_id": hashlib.md5(f"{source_file}:{c['chunk_id']}".encode()).hexdigest(),
+            "text": c["text"],
+            "ticker": c["metadata"]["ticker"],
+            "pub_date": c["metadata"]["pub_date"],
+            "period": c["metadata"]["period"],
             "data_source": c["metadata"]["data_source"],
             "source_file": source_file,
-            "badges":      c["metadata"].get("badges", []),
+            "badges": c["metadata"].get("badges", []),
             "source_weight": c["metadata"].get("source_weight", 1.0),
         }
         flat_chunks.append(flat)
 
-    # write to LanceDB — two-phase commit to avoid data loss window:
-    # 1. compute embeddings and prepare new chunks (may fail)
-    # 2. only after success, atomically replace old chunks
-    from ira.storage.vector_store import upsert_chunks, delete_by_source_file
+    from ira.storage.vector_store import replace_source_chunks
 
     try:
-        # Phase 1: prepare new chunks (this validates data and computes embeddings)
-        upsert_chunks(flat_chunks)
-
-        # Phase 2: only after successful upsert, delete old chunks
-        # (LanceDB upsert by chunk_id means new versions replace old, but we still
-        #  need explicit delete to remove chunks that disappeared in this revision)
-        delete_by_source_file(metadata["source_file"])
-
-        # Re-insert to ensure clean state
-        upsert_chunks(flat_chunks)
+        replace_source_chunks(metadata["source_file"], flat_chunks)
     except Exception as e:
-        print(f"[processor] {path.name}: vector store update failed, old data preserved: {e}")
+        print(f"[processor] {path.name}: vector store replacement failed: {e}")
         raise
 
     # also save JSON for debugging / reproducible re-indexing

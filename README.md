@@ -17,6 +17,8 @@ Claude Desktop / Codex
    SQLite / LanceDB / Kùzu ← 本地数据层
 ```
 
+本地客户端使用`ira-mcp`（stdio）；服务器部署使用`ira-mcp-http`（Streamable HTTP）。Compose默认把`/mcp`只发布到宿主机`127.0.0.1:8000`，并要求`IRA_MCP_TOKEN`或`IRA_MCP_TOKEN_FILE`鉴权。
+
 ### 数据层
 
 | 存储 | 内容 | 路径 |

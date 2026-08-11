@@ -49,10 +49,12 @@ config/runtime.env
 .archive/
 
 # 前端依赖和临时文件
+/node_modules
 node_modules/
 lib/
 /logs/
 /.codex_tmp*/
+deploy/compose/.secrets/
 
 # 临时渲染和专家纪要
 /tmp/

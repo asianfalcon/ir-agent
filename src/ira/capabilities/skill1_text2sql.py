@@ -7,6 +7,7 @@ Falls back to SQL templates when LLM auth fails.
 import json
 import re
 import sqlite3
+import time
 
 from ira.settings import get_settings
 
@@ -17,19 +18,32 @@ VAR_SCHEMA_PATH = _SETTINGS.variable_schema_path
 
 # ── SQL templates for common financial queries (LLM-free fallback) ────────────
 _TEMPLATES = [
-    (["营收", "收入", "revenue"],
-     "SELECT period, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
-    (["净利润", "利润", "profit", "net"],
-     "SELECT period, net_profit FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
-    (["毛利", "gross"],
-     "SELECT period, gross_margin, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
-    (["现金流", "cash"],
-     "SELECT period, operating_cash_flow FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
-    (["财务", "业绩", "全部", "所有", "overview", "all"],
-     "SELECT period, revenue, net_profit, gross_margin FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8"),
-    (["股价", "价格", "price"],
-     "SELECT price_date, price_value FROM historical_prices WHERE item_code=? ORDER BY price_date DESC LIMIT 30"),
+    (
+        ["营收", "收入", "revenue"],
+        "SELECT period, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8",
+    ),
+    (
+        ["净利润", "利润", "profit", "net"],
+        "SELECT period, net_profit FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8",
+    ),
+    (
+        ["毛利", "gross"],
+        "SELECT period, gross_margin, revenue FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8",
+    ),
+    (
+        ["现金流", "cash"],
+        "SELECT period, operating_cash_flow FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8",
+    ),
+    (
+        ["财务", "业绩", "全部", "所有", "overview", "all"],
+        "SELECT period, revenue, net_profit, gross_margin FROM financial_reports WHERE ticker=? ORDER BY period DESC LIMIT 8",
+    ),
+    (
+        ["股价", "价格", "price"],
+        "SELECT price_date, price_value FROM historical_prices WHERE item_code=? ORDER BY price_date DESC LIMIT 30",
+    ),
 ]
+
 
 def _template_sql(query: str, ticker: str | None) -> str | None:
     q = query.lower()
@@ -70,10 +84,8 @@ def _schema_context() -> str:
 def _exec(sql: str, params: tuple = ()) -> list[dict]:
     # Read-only protection: reject any non-SELECT statement
     stmt = sql.strip().upper()
-    if not (stmt.startswith("SELECT") or stmt.startswith("WITH")):
-        raise sqlite3.OperationalError(
-            f"REJECTED: Only SELECT/WITH queries allowed. Got: {sql[:50]}"
-        )
+    if not stmt.startswith(("SELECT", "WITH")):
+        raise sqlite3.OperationalError(f"REJECTED: Only SELECT/WITH queries allowed. Got: {sql[:50]}")
 
     # Multiple statements or write keywords = reject
     if ";" in sql[:-1]:  # allow trailing semicolon
@@ -89,14 +101,14 @@ def _exec(sql: str, params: tuple = ()) -> list[dict]:
     conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA query_only = ON")
+    deadline = time.monotonic() + 5.0
+    conn.set_progress_handler(lambda: int(time.monotonic() > deadline), 10_000)
 
     try:
         cursor = conn.execute(sql, params)
         cursor.arraysize = 1000  # max rows
         rows = cursor.fetchmany(1000)
         return [dict(r) for r in rows]
-    except sqlite3.Error as e:
-        raise e
     finally:
         conn.close()
 
@@ -122,8 +134,13 @@ def run(natural_query: str, llm_caller) -> dict:
 
         rows = _exec(sql)
         if not rows:
-            return {"sql": sql, "rows": [], "ticker": ticker, "__mode": "llm",
-                    "__status": "NO_LOCAL_DATA — 本地SQLite无此查询结果，严禁补充推断，请如实告知用户"}
+            return {
+                "sql": sql,
+                "rows": [],
+                "ticker": ticker,
+                "__mode": "llm",
+                "__status": "NO_LOCAL_DATA — 本地SQLite无此查询结果，严禁补充推断，请如实告知用户",
+            }
         return {"sql": sql, "rows": rows, "ticker": ticker, "__mode": "llm"}
 
     except Exception as e:
@@ -144,7 +161,7 @@ def run(natural_query: str, llm_caller) -> dict:
                         "__mode": "template",
                         "__warning": "LLM_AUTH_ERROR — 已降级为SQL模板，仅支持常用财务查询",
                     }
-                except sqlite3.Error as db_err:
+                except sqlite3.Error:
                     pass
 
             return {

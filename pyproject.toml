@@ -18,11 +18,14 @@ dependencies = [
   "lancedb>=0.25",
   "langchain-text-splitters>=1.0",
   "lxml>=5",
-  "mcp>=1.20",
+  # server.py uses the MCP 1.x low-level decorator API.
+  "mcp>=1.20,<2",
   "numpy>=2",
   "pymupdf>=1.26",
   "sentence-transformers>=5",
+  "starlette>=0.50,<2",
   "tushare>=1.4",
+  "uvicorn>=0.38,<1",
   "watchdog>=6",
   "yfinance>=1",
 ]
@@ -44,6 +47,7 @@ dev = [
 
 [project.scripts]
 ira-mcp = "ira.interfaces.mcp.server:run"
+ira-mcp-http = "ira.interfaces.mcp.http_server:run"
 ira-init-db = "ira.storage.db_initializer:init_schema"
 ira-watch = "ira.connectors.watchdog_monitor:start"
 

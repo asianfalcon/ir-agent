@@ -427,8 +427,8 @@ def _dedupe_near_identical(paths: list[Path]) -> list[Path]:
 def gc_stale_report_rows(ticker: str, current_files: list[Path]) -> int:
     """删除LanceDB里source_file已不在当前report_files()清单中的broker_report行。
 
-    文件被移动/改名/重组目录后，旧路径下的行永远不会被process_file()里的
-    delete_by_source_file()自然清理（它只按当前computed source_file精确匹配删除），
+    文件被移动/改名/重组目录后，旧路径下的行不会被process_file()的
+    replace_source_chunks()清理（它只替换当前computed source_file），
     这里做一次基于"当前磁盘上实际存在的文件集合"的补充清理。
     """
     import lancedb

@@ -4,6 +4,7 @@
 用法：
     python -m ira.connectors.acecamp.expert_processor
 """
+
 import json
 import re
 from pathlib import Path
@@ -56,8 +57,8 @@ def _source_weight(article: dict) -> float:
 
 def strip_html(html: str) -> str:
     """移除 HTML 标签，保留纯文本。"""
-    text = re.sub(r'<[^>]+>', '', html)
-    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r"<[^>]+>", "", html)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
@@ -66,10 +67,12 @@ def process_article(json_path: Path, ticker: str = "") -> int:
     读取单个 article_info JSON 并入库。
     返回 chunk 数。
     """
-    from datetime import datetime
     import hashlib
+    from datetime import datetime
+
     from langchain_text_splitters import RecursiveCharacterTextSplitter
-    from ira.storage.vector_store import upsert_chunks, delete_by_source_file
+
+    from ira.storage.vector_store import replace_source_chunks
 
     _splitter = RecursiveCharacterTextSplitter(chunk_size=700, chunk_overlap=70)
 
@@ -101,9 +104,7 @@ def process_article(json_path: Path, ticker: str = "") -> int:
         print(f"[acecamp-expert] {article_id} '{title[:30]}': summary 和 content 均为空")
         return 0
 
-    # Now safe to delete old chunks — we've validated new data exists
     source_file = f"acecamp://article/{article_id}"
-    delete_by_source_file(source_file)
     is_hot = _is_hot_article(article)
     source_weight = _source_weight(article)
 
@@ -115,26 +116,28 @@ def process_article(json_path: Path, ticker: str = "") -> int:
     chunks = []
     for ticker_value in tickers:
         for c in raw_chunks:
-            chunks.append({
-                "chunk_id": hashlib.md5(f"{source_file}:{ticker_value}:{c}".encode()).hexdigest(),
-                "text": c,
-                "ticker": ticker_value,
-                "pub_date": pub_date,
-                "period": "",
-                "data_source": DATA_SOURCE,
-                "source_id": source_id,
-                "source_uri": source_file,
-                "source_file": source_file,
-                "release_time": int(ts or 0),
-                "badges": badges,
-                "is_hot": is_hot,
-                "source_weight": source_weight,
-                "title": title,
-                "associated_vars": [title],
-            })
+            chunks.append(
+                {
+                    "chunk_id": hashlib.md5(f"{source_file}:{ticker_value}:{c}".encode()).hexdigest(),
+                    "text": c,
+                    "ticker": ticker_value,
+                    "pub_date": pub_date,
+                    "period": "",
+                    "data_source": DATA_SOURCE,
+                    "source_id": source_id,
+                    "source_uri": source_file,
+                    "source_file": source_file,
+                    "release_time": int(ts or 0),
+                    "badges": badges,
+                    "is_hot": is_hot,
+                    "source_weight": source_weight,
+                    "title": title,
+                    "associated_vars": [title],
+                }
+            )
 
     if chunks:
-        upsert_chunks(chunks)
+        replace_source_chunks(source_file, chunks)
     print(f"[acecamp-expert] {article_id} '{title[:30]}': {len(chunks)} chunks")
     return len(chunks)
 
@@ -171,6 +174,7 @@ def batch_process(ticker: str = "") -> int:
 
 if __name__ == "__main__":
     import sys
+
     ticker = sys.argv[1] if len(sys.argv) > 1 else ""
     n = batch_process(ticker)
     print(f"\n完成：共存入 {n} chunks")

@@ -281,12 +281,13 @@ pytest -q
 
 ## 10. 部署设计
 
-`deploy/docker/Dockerfile`只构建代码和版本化资源；`deploy/compose/compose.yml`把宿主机运行目录挂载到容器`/srv/ira`。
+`deploy/docker/Dockerfile`按`uv.lock`构建代码和版本化资源；`deploy/compose/compose.yml`把宿主机运行目录挂载到容器`/srv/ira`，并启动带Bearer Token鉴权的Streamable HTTP MCP。默认只监听宿主机`127.0.0.1:8000`，端点为`/mcp`，公网部署必须再经HTTPS反向代理。密钥目录通过`IRA_SECRETS_DIR`挂到`/run/secrets`，其中使用`anthropic_api_key`、`tushare_token`和`ira_mcp_token`三个纯文本文件；Compose配置只显示文件路径，不展开密钥内容。
 
 服务器遵循以下规则：
 
 - 镜像升级不得覆盖运行数据；
 - 凭证由部署环境注入；
+- HTTP MCP必须配置`IRA_MCP_TOKEN`，不得裸露无鉴权端点；
 - SQLite、LanceDB和Kùzu使用持久卷；
 - 同一存储实例只保留一个写入Worker，查询进程以只读为主；
 - 并发和数据规模提高后，优先把SQLite替换成PostgreSQL，保持上层能力接口不变。
