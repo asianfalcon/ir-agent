@@ -1,4 +1,4 @@
-# WeChat Download API for IRA
+# WeChat Download API for AlphaSonar
 
 This local service fetches public WeChat Official Account articles. It is bound
 to `127.0.0.1` and keeps WeChat login credentials outside Git.
@@ -13,17 +13,17 @@ to `127.0.0.1` and keeps WeChat login credentials outside Git.
 4. Open <http://127.0.0.1:5000/rss.html>, search for accounts and subscribe.
 5. Trigger a poll in the UI or call `POST /api/rss/poll`.
 
-## Connect subscriptions to IRA
+## Connect subscriptions to AlphaSonar
 
 Add each subscribed account to `config/wechat_sources.json` using its `fakeid`,
-IRA ticker and destination folder. Then run:
+AlphaSonar ticker and destination folder. Then run:
 
 ```bash
 .venv/bin/python scripts/ops/sync_wechat_articles.py
 ```
 
 The script performs cursor-based incremental synchronization, writes the source
-Markdown to `data/inputs/news/<folder>/wechat/`, and invokes IRA's existing
+Markdown to `data/inputs/news/<folder>/wechat/`, and invokes AlphaSonar's existing
 LanceDB ingestion pipeline. Articles from unmapped accounts are not ingested.
 
 ## Optional MCP

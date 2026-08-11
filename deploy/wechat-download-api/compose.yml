@@ -1,7 +1,7 @@
 services:
   wechat-api:
     image: tmwgsicp/wechat-download-api:latest
-    container_name: ira-wechat-download-api
+    container_name: alphasonar-wechat-download-api
     restart: unless-stopped
     ports:
       # Keep the credential-bearing service local by default.
@@ -17,4 +17,3 @@ services:
       timeout: 10s
       retries: 3
       start_period: 15s
-

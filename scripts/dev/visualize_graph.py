@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import kuzu
 from pyvis.network import Network
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 SETTINGS = get_settings()
 KUZU_PATH = SETTINGS.kuzu_path

@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 # ponytail: L2距离阈值，未做大规模标注校准，只是"cosine相似度约0.6"的粗略换算
 # （embedder.py 输出归一化向量时 L2² = 2 - 2*cos_sim）。当作可调旋钮，见下方
@@ -63,7 +63,7 @@ def is_baseline_semantic(
     的命中（按距离升序）；命中即视为"语义已被吸收"，附distance供人工复核
     （距离越小越像同一件事，不能免去人工确认是否真对应同一事实）。
     """
-    from ira.storage.embedder import embed_one
+    from alphasonar.storage.embedder import embed_one
 
     db = lancedb.connect(str(get_settings().lance_path))
     tbl = db.open_table("chunks")

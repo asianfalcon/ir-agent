@@ -1,6 +1,23 @@
-# IRA — 投研智能体
+# AlphaSonar — 投研智能体
 
 基于 MCP 的私有买方投研系统。接入本地私有知识库（财务数据库 + 研报向量库 + 产业链图谱），通过多 Agent 协作给出有据可查、观点鲜明的投资判断。
+
+> **Ping the market. Read the echoes. Capture the alpha.**
+
+**AlphaSonar** 是品牌名；对外命令统一使用短前缀 `alpha-`，Python 包和环境变量仍使用明确的 `alphasonar` / `ALPHASONAR_*`，避免与其他项目冲突。
+
+产品语言沿用声呐从发射到回波判读的过程：
+
+| 术语 | 含义 | 当前系统映射 |
+|---|---|---|
+| **Ping** | 主动搜索公告、研报、纪要和新闻 | Connectors、定时采集、单公司更新 |
+| **Echo** | 汇集不同来源对同一事实的反馈 | 多源检索、对抗式互证 |
+| **Noise Filter** | 过滤重复、传闻和低质量信息 | 去重、来源分级、口径与时效校验 |
+| **Signal** | 提取可量化的业绩变化 | 财务计算、预测修正、边际变化 |
+| **Contact** | 发现值得研究的潜在 Alpha 目标 | 事件催化、产业链传播、机会筛选 |
+| **Track** | 持续跟踪预测与关键验证点 | 文件监控、watchlist、预测快照 |
+| **Depth** | 表示证据深度与可信度 | 来源层级、交叉验证、`source_id` 血缘 |
+| **AlphaLoop** | 用实际财报复盘并修正模型 | `forecast_events`、误差评分与反馈策略 |
 
 首次阅读项目请先看 [`docs/PROJECT_DESIGN.md`](docs/PROJECT_DESIGN.md)，文档索引见 [`docs/README.md`](docs/README.md)。
 
@@ -17,17 +34,18 @@ Claude Desktop / Codex
    SQLite / LanceDB / Kùzu ← 本地数据层
 ```
 
-本地客户端使用`ira-mcp`（stdio）；服务器部署使用`ira-mcp-http`（Streamable HTTP）。Compose默认把`/mcp`只发布到宿主机`127.0.0.1:8000`，并要求`IRA_MCP_TOKEN`或`IRA_MCP_TOKEN_FILE`鉴权。
+本地客户端使用 `alpha-mcp`（stdio）；服务器部署使用 `alpha-server`（Streamable HTTP）。Compose默认把`/mcp`只发布到宿主机`127.0.0.1:8000`，并要求`ALPHASONAR_MCP_TOKEN`或`ALPHASONAR_MCP_TOKEN_FILE`鉴权。
 
 ### 数据层
 
 | 存储 | 内容 | 路径 |
 |---|---|---|
-| SQLite | 财务报表、历史股价 | `$IRA_RUNTIME_ROOT/stores/relational/ira.db` |
-| LanceDB | 研报/公告向量切片 | `$IRA_RUNTIME_ROOT/stores/vector/lancedb_root/` |
-| Kùzu | 产业链图谱（公司↔产品↔上下游） | `$IRA_RUNTIME_ROOT/stores/graph/kuzu_root.db` |
+| SQLite | 财务报表、历史股价 | `$ALPHASONAR_RUNTIME_ROOT/stores/relational/alphasonar.db` |
+| LanceDB | 研报/公告向量切片 | `$ALPHASONAR_RUNTIME_ROOT/stores/vector/lancedb_root/` |
+| Kùzu | 产业链图谱（公司↔产品↔上下游） | `$ALPHASONAR_RUNTIME_ROOT/stores/graph/kuzu_root.db` |
 
-> 旧目录仅用于迁移兼容；生产环境的路径一律由 `ira.settings` 和环境变量决定。
+> 旧目录仅用于迁移兼容；生产环境的路径一律由 `alphasonar.settings` 和环境变量决定。
+> 若本机仍只有 `databases/ira.db`，AlphaSonar会原地兼容读取；运行目录迁移脚本会把它复制为新布局中的`alphasonar.db`，不会删除旧库。
 
 ### Skills（单工具层）
 
@@ -89,7 +107,7 @@ Claude Desktop / Codex
 11. **短中长三维度分级** — 修正后预测按 0–6 月/6 月–1 年/1–2 年对比一致预期，短中长全超 → 大牛股；仅长期超 → 潜力股
 12. **数据质量四要求** — 准确性（逐字核对）、时效性（标原始时间戳，越新权重越高，超 6 月提示过时）、连贯性（能与前后期衔接）、多样性（覆盖多种独立信源）
 13. **完整研报骨架** — 固定为“业绩预测、估值、机会与风险”三大模块；业绩预测先做核心业务与业绩拆解，再依次展示官方锚点、券商基准、纪要修正和最终预测
-14. **预测硬护栏** — 本地有官方指引必抽取（否则 `GUIDANCE_EXTRACTION_FAILED`，禁止静默降级）；禁止机械拆季（全年÷4／固定比例）；IRA 越界指引区间必须举证，缺证据才缩回
+14. **预测硬护栏** — 本地有官方指引必抽取（否则 `GUIDANCE_EXTRACTION_FAILED`，禁止静默降级）；禁止机械拆季（全年÷4／固定比例）；AlphaSonar 越界指引区间必须举证，缺证据才缩回
 
 ### 财务预测三步校验
 
@@ -107,7 +125,7 @@ Claude Desktop / Codex
 
 1. **有指引必抽取**：本地存在 `company_filing`/`announcement` 时，必须成功抽取目标期指引进上下文；抽取为空则抛 `GUIDANCE_EXTRACTION_FAILED`，**禁止静默降级为全年拆季**。本地本就无官方文件时正常放行。
 2. **禁止机械拆季**：严禁全年÷4、剩余收入×固定比例、仅凭“季节性”套 30/33/37%。拆季必须有公司季度指引／明确季度一致预期／券商季度预测表／已披露季度订单出货其一，否则输出“季度数据不足，无法可靠拆分”。
-3. **越界举证不撤回**：IRA 点预测可落在指引区间外（修正值来源），但必须挂显式理由＋证据来源(source_id)＋Δ；缺可量化证据才降回区间内或标为 Bull/Bear case。
+3. **越界举证不撤回**：AlphaSonar 点预测可落在指引区间外（修正值来源），但必须挂显式理由＋证据来源(source_id)＋Δ；缺可量化证据才降回区间内或标为 Bull/Bear case。
 
 ### 研报格式骨架
 
@@ -139,8 +157,8 @@ resources/prompts/instructions.md
 
 ```bash
 /path/to/python scripts/ops/render_markdown_report_pdf.py \
-  --src "$IRA_RUNTIME_ROOT/artifacts/reports/<report>.md" \
-  --out "$IRA_RUNTIME_ROOT/artifacts/pdf/<report>.pdf"
+  --src "$ALPHASONAR_RUNTIME_ROOT/artifacts/reports/<report>.md" \
+  --out "$ALPHASONAR_RUNTIME_ROOT/artifacts/pdf/<report>.pdf"
 ```
 
 PDF 生成规则已固化在脚本中：
@@ -164,33 +182,33 @@ PDF 生成规则已固化在脚本中：
 
 ### SQLite 财务库
 
-- 主库路径：`$IRA_RUNTIME_ROOT/stores/relational/ira.db`
+- 主库路径：`$ALPHASONAR_RUNTIME_ROOT/stores/relational/alphasonar.db`
 - 表：`financial_reports`、`historical_prices`、`companies`、`spider_crawl_log`、`forecast_events`
 - 初始化只创建 schema，不会自动补财务数据：
 
 ```bash
-python -m ira.storage.db_initializer
+python -m alphasonar.storage.db_initializer
 ```
 
 #### forecast_events — 预测事件表（反馈回路）
 
-append-only，让四层方法的每次修正都能被实际业绩证伪。同一张表存 `consensus`/`guidance`/`forecast`(=IRA)/`actual` 四类事件；历史永不覆盖，同 `as_of_date` 重复插入视为修订新增。`score` 按 `metric×accounting_basis` 隔离比对（GAAP 不与 Non-GAAP 混），裁决 IRA 修正相对一致预期加分/减分，`as_of_date` 晚于 actual 则标可能穿越。
+append-only，让四层方法的每次修正都能被实际业绩证伪。同一张表存 `consensus`/`guidance`/`forecast`(=AlphaSonar)/`actual` 四类事件；历史永不覆盖，同 `as_of_date` 重复插入视为修订新增。`score` 按 `metric×accounting_basis` 隔离比对（GAAP 不与 Non-GAAP 混），裁决 AlphaSonar 修正相对一致预期加分/减分，`as_of_date` 晚于 actual 则标可能穿越。
 
 ```bash
 # 记一条预测（财报后补 actual，再 score）
-python -m scripts.forecast_snapshot record --ticker AMD --as-of-date 2026-07-15 \
+python -m scripts.ops.forecast_snapshot record --ticker AMD --as-of-date 2026-07-15 \
   --target-period 2026Q2 --event-type forecast --metric revenue --mid 11300000000 \
-  --basis Non-GAAP --source-type ira --source-id amd_report_20260714
-python -m scripts.forecast_snapshot score --ticker AMD
+  --basis Non-GAAP --source-type alphasonar --source-id amd_report_20260714
+python -m scripts.ops.forecast_snapshot score --ticker AMD
 ```
 
 > 口径：`value_*` 用绝对值（对齐 `financial_reports.revenue`，如 13,577,000,000），不要填“亿美元”，否则误差全废。
 
 ### LanceDB 研报/专家专栏库
 
-- 主路径：`$IRA_RUNTIME_ROOT/stores/vector/lancedb_root/`
+- 主路径：`$ALPHASONAR_RUNTIME_ROOT/stores/vector/lancedb_root/`
 - 表：`chunks`
-- 入库规则：按 `chunk_id` 先删后写，避免重复运行导致重复 chunks。
+- 入库规则：先完整生成并合并新切片，成功后才清理同来源陈旧切片，避免重建失败导致数据丢失。
 - 证据链字段：AceCamp 专家专栏会写入 `source_file = acecamp://article/{id}`，用于报告引用和追溯。
 - 数据源字段：AceCamp 专家专栏写入 `data_source = acecamp_expert_column`，券商研报仍为 `broker_report`。
 - 专家专栏权重字段：`release_time` 记录原始访谈发布时间，`badges` 保留 AceCamp 标签，`is_hot` 标记热度纪要，`source_weight` 用于后续排序/引用权重。
@@ -198,13 +216,13 @@ python -m scripts.forecast_snapshot score --ticker AMD
 手动下载的 AceCamp 专家专栏导出 JSON 放入：
 
 ```text
-$IRA_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/
+$ALPHASONAR_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/
 ```
 
 然后运行：
 
 ```bash
-python -m ira.connectors.acecamp.expert_processor
+python -m alphasonar.connectors.acecamp.expert_processor
 ```
 
 ### 研报 PDF 入库
@@ -212,20 +230,20 @@ python -m ira.connectors.acecamp.expert_processor
 券商研报 PDF 放入对应目录，例如：
 
 ```text
-$IRA_RUNTIME_ROOT/sources/manual/reports/杰华特/
+$ALPHASONAR_RUNTIME_ROOT/sources/manual/reports/杰华特/
 ```
 
 然后运行 PDF 解析与切片：
 
 ```bash
-python -m ira.pipelines.text_processor
+python -m alphasonar.pipelines.text_processor
 ```
 
 ## 目录结构
 
 ```text
-ir-agent/                         # 只保存可版本化资产
-├── src/ira/
+alphasonar/                       # 只保存可版本化资产
+├── src/alphasonar/
 │   ├── agents/                  # 多 Agent 编排
 │   ├── capabilities/            # 单项研究能力
 │   ├── connectors/              # 外部数据连接器
@@ -247,7 +265,7 @@ ir-agent/                         # 只保存可版本化资产
 ├── docs/                        # 架构和运维文档
 └── tests/
 
-$IRA_RUNTIME_ROOT/               # 不进入 Git，服务器挂持久卷
+$ALPHASONAR_RUNTIME_ROOT/               # 不进入 Git，服务器挂持久卷
 ├── sources/{manual,external}/
 ├── derived/
 ├── stores/{relational,vector,graph}/
@@ -257,7 +275,7 @@ $IRA_RUNTIME_ROOT/               # 不进入 Git，服务器挂持久卷
 
 完整分层规则见 `docs/architecture/project-structure.md`，路径与迁移步骤见
 `docs/architecture/runtime-layout.md`。不设置
-`IRA_RUNTIME_ROOT` 时仍读取旧目录，只用于平滑迁移。
+`ALPHASONAR_RUNTIME_ROOT` 时仍读取旧目录，只用于平滑迁移。
 
 ## 快速开始
 
@@ -266,7 +284,7 @@ $IRA_RUNTIME_ROOT/               # 不进入 Git，服务器挂持久卷
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e '.[dev]'
-export IRA_RUNTIME_ROOT="$HOME/ira-runtime"
+export ALPHASONAR_RUNTIME_ROOT="$HOME/alphasonar-runtime"
 ```
 
 ### 2. 配置 Claude Desktop
@@ -276,8 +294,8 @@ export IRA_RUNTIME_ROOT="$HOME/ira-runtime"
 ```json
 {
   "mcpServers": {
-    "ira": {
-      "command": "/path/to/ir-agent/.venv/bin/ira-mcp",
+    "alpha": {
+      "command": "/path/to/alphasonar/.venv/bin/alpha-mcp",
       "args": [],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-..."
@@ -292,23 +310,23 @@ export IRA_RUNTIME_ROOT="$HOME/ira-runtime"
 ### 3. 初始化数据库
 
 ```bash
-python -m ira.storage.db_initializer
+python -m alphasonar.storage.db_initializer
 ```
 
 ### 4. 摄入研报 PDF
 
-手动下载的 PDF 放入 `$IRA_RUNTIME_ROOT/sources/manual/reports/<公司或主题>/`，然后：
+手动下载的 PDF 放入 `$ALPHASONAR_RUNTIME_ROOT/sources/manual/reports/<公司或主题>/`，然后：
 
 ```bash
-python -m ira.pipelines.text_processor
+python -m alphasonar.pipelines.text_processor
 ```
 
 ### 5. 摄入 AceCamp 专家专栏
 
-手动下载的专家专栏导出 JSON 放入 `$IRA_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/`，然后：
+手动下载的专家专栏导出 JSON 放入 `$ALPHASONAR_RUNTIME_ROOT/sources/manual/expert_minutes/acecamp/export/`，然后：
 
 ```bash
-python -m ira.connectors.acecamp.expert_processor
+python -m alphasonar.connectors.acecamp.expert_processor
 ```
 
 AceCamp 在线查询只使用官方 skill：
@@ -318,7 +336,7 @@ python3 data/tmp/acecamp-research/scripts/acecamp_client.py ask "问题" --mode 
 python3 data/tmp/acecamp-research/scripts/acecamp_client.py search --query "关键词" --original_query "原始问题"
 ```
 
-`ira.connectors.acecamp.spider` 仅保留为官方 Personal API 的辅助封装，不进入自动调度；其 `ask_and_store` 默认不写入 LanceDB，显式入库时会标记为 `acecamp_ai_answer`，不能当作券商研报或专家纪要证据。
+`alphasonar.connectors.acecamp.spider` 仅保留为官方 Personal API 的辅助封装，不进入自动调度；其 `ask_and_store` 默认不写入 LanceDB，显式入库时会标记为 `acecamp_ai_answer`，不能当作券商研报或专家纪要证据。
 
 ### 6. 一键更新单个股票
 
@@ -327,6 +345,8 @@ python3 data/tmp/acecamp-research/scripts/acecamp_client.py search --query "关�
 ```bash
 python scripts/ops/refresh_company_data.py --ticker 688141.SH --company 杰华特
 ```
+
+持续追踪手工证据目录可运行 `alpha-track`。原 `alpha-hound`、`alphasonar-watch` 仍作为兼容别名，但新文档和部署不再使用。
 
 长期更新策略：
 
@@ -338,7 +358,7 @@ python scripts/ops/refresh_company_data.py --ticker 688141.SH --company 杰华�
 ### 7. 拉取行情和研报（定时）
 
 ```bash
-python -m ira.connectors.api_scheduler
+python -m alphasonar.connectors.api_scheduler
 ```
 
 ## 数据源

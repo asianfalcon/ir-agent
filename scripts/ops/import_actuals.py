@@ -17,7 +17,7 @@ import sqlite3
 from datetime import date
 from pathlib import Path
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 _SETTINGS = get_settings()
 DB_PATH = _SETTINGS.sqlite_path

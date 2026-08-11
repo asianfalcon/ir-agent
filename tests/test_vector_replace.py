@@ -1,4 +1,4 @@
-from ira.storage import vector_store
+from alphasonar.storage import vector_store
 
 
 def _chunk(chunk_id, text="text", source="source.md"):
@@ -16,7 +16,7 @@ def _chunk(chunk_id, text="text", source="source.md"):
 def test_replace_source_keeps_new_and_removes_only_stale(tmp_path, monkeypatch):
     monkeypatch.setattr(vector_store, "LANCE_PATH", tmp_path / "lance")
     monkeypatch.setattr(
-        "ira.storage.embedder.embed", lambda texts: [[float(i), 0.0] for i, _ in enumerate(texts)]
+        "alphasonar.storage.embedder.embed", lambda texts: [[float(i), 0.0] for i, _ in enumerate(texts)]
     )
 
     vector_store.replace_source_chunks("source.md", [_chunk("old-a"), _chunk("old-b")])
@@ -30,13 +30,13 @@ def test_replace_source_keeps_new_and_removes_only_stale(tmp_path, monkeypatch):
 
 def test_embedding_failure_does_not_touch_old_rows(tmp_path, monkeypatch):
     monkeypatch.setattr(vector_store, "LANCE_PATH", tmp_path / "lance")
-    monkeypatch.setattr("ira.storage.embedder.embed", lambda texts: [[0.0, 0.0] for _ in texts])
+    monkeypatch.setattr("alphasonar.storage.embedder.embed", lambda texts: [[0.0, 0.0] for _ in texts])
     vector_store.replace_source_chunks("source.md", [_chunk("old")])
 
     def fail(_texts):
         raise RuntimeError("embedding unavailable")
 
-    monkeypatch.setattr("ira.storage.embedder.embed", fail)
+    monkeypatch.setattr("alphasonar.storage.embedder.embed", fail)
     try:
         vector_store.replace_source_chunks("source.md", [_chunk("new")])
         assert False, "replacement should fail"

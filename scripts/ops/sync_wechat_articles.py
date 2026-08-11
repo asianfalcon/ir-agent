@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Synchronize locally fetched WeChat articles into IRA's evidence store.
+"""Synchronize locally fetched WeChat articles into AlphaSonar's evidence store.
 
 The companion service owns WeChat login, subscriptions and rate limiting. This
 script only reads its local feed API, persists source Markdown under
-``data/inputs/news/<folder>/wechat/`` and optionally invokes IRA's existing
+``data/inputs/news/<folder>/wechat/`` and optionally invokes AlphaSonar's existing
 text processor. No WeChat cookie or token is accepted by this script.
 """
 
@@ -24,7 +24,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 DEFAULT_CONFIG = ROOT / "config" / "wechat_sources.json"
 DEFAULT_STATE = get_settings().derived_root / "wechat_sync_state.json"
@@ -70,7 +70,7 @@ def _request_json(base_url: str, path: str, params: dict[str, Any] | None = None
     url = base_url.rstrip("/") + path
     if params:
         url += "?" + urlencode(params)
-    request = Request(url, headers={"Accept": "application/json", "User-Agent": "IRA-WeChat-Sync/1.0"})
+    request = Request(url, headers={"Accept": "application/json", "User-Agent": "AlphaSonar-WeChat-Sync/1.0"})
     try:
         with urlopen(request, timeout=30) as response:
             return json.loads(response.read().decode("utf-8"))
@@ -80,7 +80,7 @@ def _request_json(base_url: str, path: str, params: dict[str, Any] | None = None
 
 def _request_text(base_url: str, path: str) -> str:
     url = base_url.rstrip("/") + path
-    request = Request(url, headers={"Accept": "text/markdown", "User-Agent": "IRA-WeChat-Sync/1.0"})
+    request = Request(url, headers={"Accept": "text/markdown", "User-Agent": "AlphaSonar-WeChat-Sync/1.0"})
     try:
         with urlopen(request, timeout=45) as response:
             return response.read().decode("utf-8")
@@ -116,7 +116,7 @@ def _source_for_article(sources: list[Source], article: dict[str, Any]) -> Sourc
 
 
 def _ingest(path: Path, ticker: str) -> int:
-    from ira.pipelines.text_processor import process_file
+    from alphasonar.pipelines.text_processor import process_file
 
     return len(process_file(path, ticker_override=ticker))
 
@@ -188,7 +188,7 @@ def sync(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sync wechat-download-api articles into IRA")
+    parser = argparse.ArgumentParser(description="Sync wechat-download-api articles into AlphaSonar")
     parser.add_argument("--base-url", default="http://127.0.0.1:5000")
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--state", type=Path, default=DEFAULT_STATE)

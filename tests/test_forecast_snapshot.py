@@ -94,7 +94,7 @@ def test_flow():
         assert fs._err(13300, 14000) > fs._err(13900, 14000)
         assert fs._err(None, 14000) is None and fs._err(13900, 0) is None
 
-        # ira(13900) 比 consensus(13300) 更接近实际 14000 → 加分
+        # AlphaSonar(13900) 比 consensus(13300) 更接近实际 14000 → 加分
         _rec(db, event_type="consensus", as_of_date="2026-04-01", mid=13300)
         _rec(db, event_type="forecast", as_of_date="2026-04-10", mid=13900)
         _rec(db, event_type="actual", as_of_date="2026-04-23", mid=14000, source_id="release")

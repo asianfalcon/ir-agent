@@ -36,10 +36,10 @@ from curl_cffi import requests
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ira.connectors import yfinance_fetcher
-from ira.connectors.edgar_fetcher import fetch_announcements_us
-from ira.connectors.akshare_hk_fetcher import fetch_financials_hk
-from ira.settings import get_settings
+from alphasonar.connectors import yfinance_fetcher
+from alphasonar.connectors.edgar_fetcher import fetch_announcements_us
+from alphasonar.connectors.akshare_hk_fetcher import fetch_financials_hk
+from alphasonar.settings import get_settings
 
 SETTINGS = get_settings()
 
@@ -395,7 +395,7 @@ def _dedupe_near_identical(paths: list[Path]) -> list[Path]:
     """
     import difflib
 
-    from ira.pipelines.text_processor import _extract_pdf
+    from alphasonar.pipelines.text_processor import _extract_pdf
 
     print(f"[refresh] near-dup scan: extracting {len(paths)} PDFs...", flush=True)
     texts = [_extract_pdf(p) for p in paths]
@@ -454,7 +454,7 @@ def gc_stale_report_rows(ticker: str, current_files: list[Path]) -> int:
 
 
 def process_local_files(paths: list[Path], ticker: str | None = None) -> int:
-    from ira.pipelines.text_processor import process_file
+    from alphasonar.pipelines.text_processor import process_file
 
     chunks = 0
     total = len(paths)
@@ -480,12 +480,12 @@ def clear_lancedb_rows(ticker: str, data_source: str) -> None:
 
 
 def process_expert_minutes(skip_graph: bool) -> dict:
-    from ira.connectors.acecamp.expert_processor import batch_process
+    from alphasonar.connectors.acecamp.expert_processor import batch_process
 
     chunks = batch_process("")
     result = {"chunks": chunks}
     if not skip_graph:
-        from ira.connectors.acecamp.graph_extractor import batch_process as graph_batch_process
+        from alphasonar.connectors.acecamp.graph_extractor import batch_process as graph_batch_process
 
         result["graph_relations"] = graph_batch_process()
     return result
@@ -546,7 +546,7 @@ def refresh_company(company: Company, args) -> dict:
             ann_chunks = 0
             for i, path in enumerate(announcements["files"], 1):
                 print(f"[refresh] embed announcement {i}/{len(announcements['files'])}: {path.name}", flush=True)
-                from ira.pipelines.text_processor import process_file
+                from alphasonar.pipelines.text_processor import process_file
                 ann_chunks += len(process_file(path, ticker_override=company.ticker))
 
             # All succeeded, now safe to clear old data

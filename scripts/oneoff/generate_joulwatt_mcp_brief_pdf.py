@@ -144,7 +144,7 @@ def build():
 
     story = [
         para("杰华特（688141.SH）MCP 简明研报", s["title"]),
-        para("日期：2026-07-03 | 数据底座：ir-agent MCP / SQLite financial_reports / 本地研报切片", s["subtitle"]),
+        para("日期：2026-07-03 | 数据底座：AlphaSonar MCP / SQLite financial_reports / 本地研报切片", s["subtitle"]),
     ]
 
     thesis = [

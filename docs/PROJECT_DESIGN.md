@@ -1,10 +1,25 @@
-# IRA项目设计总览
+# AlphaSonar项目设计总览
 
 > 本文是项目的快速入口。目标是在10分钟内理解系统边界、目录结构、数据如何流动，以及修改某类功能应该去哪里。
 
 ## 1. 项目定位
 
-IRA是一个面向买方研究的私有投研系统。它把本地财务数据、公司公告、券商研报、专家纪要、新闻和产业链关系组织成可追溯证据，再通过MCP向Claude Desktop、Codex等客户端提供研究工具。
+AlphaSonar是一个面向买方研究的私有投研系统。它把本地财务数据、公司公告、券商研报、专家纪要、新闻和产业链关系组织成可追溯证据，再通过MCP向Claude Desktop、Codex等客户端提供研究工具。
+
+统一命名体系：品牌使用 **AlphaSonar**，用户命令使用 `alpha-` 前缀，代码命名空间和环境变量使用 `alphasonar` / `ALPHASONAR_*`。产品语言按研究链路定义：
+
+| 阶段 | 定义 | 工程落点 |
+|---|---|---|
+| **Ping** | 主动搜索公告、研报、纪要和新闻 | Connectors、Scheduler、公司数据更新入口 |
+| **Echo** | 接收并对齐不同来源的反馈 | LanceDB检索、多源互证 |
+| **Noise Filter** | 过滤重复、传闻、过期和低质量信息 | Pipeline去重、来源分类、时效与口径护栏 |
+| **Signal** | 提取可量化的业绩变化 | Calculator、Forecast、Marginal Change |
+| **Contact** | 发现潜在Alpha目标 | Event Catalyst、产业链传播、机会筛选 |
+| **Track** | 持续跟踪预测和关键验证点 | Watchlist、文件监控、预测快照 |
+| **Depth** | 描述证据深度与可信度 | 来源层级、交叉验证、血缘和`source_id` |
+| **AlphaLoop** | 用财报验证、复盘误差并修正模型 | `forecast_events`、评分与反馈策略 |
+
+这八个词是产品语义，不要求机械拆成八个Python包；模块仍按接口、能力、连接器、流水线和存储分层。
 
 系统当前重点解决四类问题：
 
@@ -20,6 +35,15 @@ IRA是一个面向买方研究的私有投研系统。它把本地财务数据�
 ```mermaid
 flowchart LR
     U["Claude Desktop / Codex"] --> MCP["MCP接口\n11个研究工具"]
+    PING["Ping\n主动搜索"] --> ECHO["Echo\n多源反馈"]
+    ECHO --> NF["Noise Filter\n去重与质检"]
+    NF --> SIG["Signal\n量化变化"]
+    SIG --> CON["Contact\n发现目标"]
+    CON --> TRK["Track\n持续验证"]
+    TRK --> LOOP["AlphaLoop\n实际→误差→修正"]
+    DEP["Depth\n证据深度"] -. 贯穿 .-> ECHO
+    DEP -. 贯穿 .-> SIG
+    DEP -. 贯穿 .-> TRK
     MCP --> A["Agents\n研究员/风控/策略/交易/PM"]
     MCP --> C["Capabilities\n查询/计算/预测/审查/事件"]
     A --> C
@@ -37,14 +61,14 @@ flowchart LR
 最重要的边界是：
 
 - 代码和研究方法放在Git仓库；
-- 原始数据、派生数据、数据库和报告输出放在`IRA_RUNTIME_ROOT`；
-- 所有路径统一经过`ira.settings`，业务模块不自行拼本机路径。
+- 原始数据、派生数据、数据库和报告输出放在`ALPHASONAR_RUNTIME_ROOT`；
+- 所有路径统一经过`alphasonar.settings`，业务模块不自行拼本机路径。
 
 ## 3. 仓库目录
 
 ```text
-ir-agent/
-├── src/ira/                    # 可安装Python核心包
+alphasonar/
+├── src/alphasonar/                    # 可安装Python核心包
 │   ├── interfaces/mcp/         # MCP协议入口和工具注册
 │   ├── agents/                 # 多Agent岗位编排
 │   ├── capabilities/           # 可独立调用的研究能力
@@ -74,12 +98,12 @@ ir-agent/
 
 | 需求 | 首选位置 |
 |---|---|
-| 新增一个MCP工具 | `src/ira/interfaces/mcp/server.py` |
-| 新增一项可复用研究能力 | `src/ira/capabilities/` |
-| 调整多Agent分工或顺序 | `src/ira/agents/` |
-| 接入新的数据平台 | `src/ira/connectors/` |
-| 修改PDF/Markdown解析和元数据分类 | `src/ira/pipelines/` |
-| 更换数据库或索引实现 | `src/ira/storage/` |
+| 新增一个MCP工具 | `src/alphasonar/interfaces/mcp/server.py` |
+| 新增一项可复用研究能力 | `src/alphasonar/capabilities/` |
+| 调整多Agent分工或顺序 | `src/alphasonar/agents/` |
+| 接入新的数据平台 | `src/alphasonar/connectors/` |
+| 修改PDF/Markdown解析和元数据分类 | `src/alphasonar/pipelines/` |
+| 更换数据库或索引实现 | `src/alphasonar/storage/` |
 | 修改研究规则、报告骨架 | `resources/prompts/`、`resources/policies/` |
 | 修改字段或公司别名 | `resources/schemas/`、`resources/dictionaries/` |
 | 新增定时/迁移/复盘任务 | `scripts/ops/` |
@@ -89,7 +113,7 @@ ir-agent/
 
 ### 4.1 Interfaces：对外接口
 
-`src/ira/interfaces/mcp/server.py`是当前主入口，对外注册11个MCP工具：
+`src/alphasonar/interfaces/mcp/server.py`是当前主入口，对外注册11个MCP工具：
 
 | 工具 | 主要实现 | 作用 |
 |---|---|---|
@@ -152,33 +176,33 @@ Connectors负责“取得原始数据”，包括EDGAR、AkShare、Tushare、YFi
 | LanceDB | 公告、研报、纪要、新闻的文本切片和向量 | `chunks` |
 | Kùzu | 公司、产品、上下游关系 | `Company`、`Product`、`PRODUCES`、`UPSTREAM_OF` |
 
-SQLite中的`forecast_events`采用append-only设计，同时保存`consensus`、`guidance`、`forecast`和`actual`。这样财报发布后可以比较IRA预测与一致预期谁更准确，并识别时间穿越。
+SQLite中的`forecast_events`采用append-only设计，同时保存`consensus`、`guidance`、`forecast`和`actual`。这样财报发布后可以比较AlphaSonar预测与一致预期谁更准确，并识别时间穿越。
 
 ## 5. 运行数据目录
 
 推荐开发机和服务器都设置：
 
 ```bash
-export IRA_RUNTIME_ROOT=/path/to/ira-runtime
+export ALPHASONAR_RUNTIME_ROOT=/path/to/alphasonar-runtime
 ```
 
 目录由`Settings.from_env()`推导：
 
 ```text
-$IRA_RUNTIME_ROOT/
+$ALPHASONAR_RUNTIME_ROOT/
 ├── sources/
 │   ├── manual/                 # 手工文件、官方导出；尽量只追加
 │   └── external/               # API原始响应；尽量保持原貌
 ├── derived/                    # 清洗、转换、切片等可重建数据
 ├── stores/
-│   ├── relational/ira.db       # SQLite主库
+│   ├── relational/alphasonar.db       # SQLite主库
 │   ├── vector/lancedb_root/    # LanceDB
 │   └── graph/kuzu_root.db      # Kùzu
 ├── artifacts/                  # Markdown、PDF、Excel、图谱HTML
 └── cache/                      # 可清理临时文件
 ```
 
-未设置`IRA_RUNTIME_ROOT`时，系统仍读取旧的仓库内目录。这只是迁移兼容模式，不是服务器推荐配置。
+未设置`ALPHASONAR_RUNTIME_ROOT`时，系统仍读取旧的仓库内目录。这只是迁移兼容模式，不是服务器推荐配置。
 
 ## 6. 端到端数据流
 
@@ -229,21 +253,21 @@ flowchart TD
 
 ## 8. 配置与密钥
 
-配置优先级为：具体路径环境变量 > `IRA_RUNTIME_ROOT`推导值 > 旧目录兼容值。
+配置优先级为：`ALPHASONAR_*`具体路径变量 > `ALPHASONAR_RUNTIME_ROOT`推导值 > 原`IRA_*`兼容变量 > 旧目录兼容值。
 
 常用变量：
 
 | 变量 | 用途 |
 |---|---|
-| `IRA_RUNTIME_ROOT` | 整体运行数据根目录 |
-| `IRA_MANUAL_SOURCE_ROOT` | 覆盖手工来源目录 |
-| `IRA_EXTERNAL_SOURCE_ROOT` | 覆盖外部原始响应目录 |
-| `IRA_DERIVED_ROOT` | 覆盖派生数据目录 |
-| `IRA_ARTIFACT_ROOT` | 覆盖输出目录 |
-| `IRA_SQLITE_PATH` | 覆盖SQLite主库 |
-| `IRA_LANCE_PATH` | 覆盖LanceDB路径 |
-| `IRA_KUZU_PATH` | 覆盖Kùzu路径 |
-| `IRA_RESOURCE_ROOT` | 覆盖版本化资源目录 |
+| `ALPHASONAR_RUNTIME_ROOT` | 整体运行数据根目录 |
+| `ALPHASONAR_MANUAL_SOURCE_ROOT` | 覆盖手工来源目录 |
+| `ALPHASONAR_EXTERNAL_SOURCE_ROOT` | 覆盖外部原始响应目录 |
+| `ALPHASONAR_DERIVED_ROOT` | 覆盖派生数据目录 |
+| `ALPHASONAR_ARTIFACT_ROOT` | 覆盖输出目录 |
+| `ALPHASONAR_SQLITE_PATH` | 覆盖SQLite主库 |
+| `ALPHASONAR_LANCE_PATH` | 覆盖LanceDB路径 |
+| `ALPHASONAR_KUZU_PATH` | 覆盖Kùzu路径 |
+| `ALPHASONAR_RESOURCE_ROOT` | 覆盖版本化资源目录 |
 | `ANTHROPIC_API_KEY` | LLM调用凭证 |
 | `TUSHARE_TOKEN` | Tushare凭证 |
 
@@ -256,13 +280,13 @@ flowchart TD
 pip install -e '.[dev]'
 
 # 初始化SQLite Schema
-ira-init-db
+alpha-init
 
 # 启动MCP stdio服务
-ira-mcp
+alpha-mcp
 
 # 监控手工输入目录
-ira-watch
+alpha-track
 
 # 更新一个公司的多类证据
 python scripts/ops/refresh_company_data.py --ticker AMD.US --company AMD
@@ -272,8 +296,8 @@ python -m scripts.ops.forecast_snapshot record --help
 python -m scripts.ops.forecast_snapshot score --ticker AMD
 
 # 旧运行目录迁移：先预演，再复制
-python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/ira
-python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/ira --execute
+python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/alphasonar
+python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/alphasonar --execute
 
 # 测试
 pytest -q
@@ -281,22 +305,22 @@ pytest -q
 
 ## 10. 部署设计
 
-`deploy/docker/Dockerfile`按`uv.lock`构建代码和版本化资源；`deploy/compose/compose.yml`把宿主机运行目录挂载到容器`/srv/ira`，并启动带Bearer Token鉴权的Streamable HTTP MCP。默认只监听宿主机`127.0.0.1:8000`，端点为`/mcp`，公网部署必须再经HTTPS反向代理。密钥目录通过`IRA_SECRETS_DIR`挂到`/run/secrets`，其中使用`anthropic_api_key`、`tushare_token`和`ira_mcp_token`三个纯文本文件；Compose配置只显示文件路径，不展开密钥内容。
+`deploy/docker/Dockerfile`按`uv.lock`构建代码和版本化资源；`deploy/compose/compose.yml`把宿主机运行目录挂载到容器`/srv/alphasonar`，并启动带Bearer Token鉴权的Streamable HTTP MCP。默认只监听宿主机`127.0.0.1:8000`，端点为`/mcp`，公网部署必须再经HTTPS反向代理。密钥目录通过`ALPHASONAR_SECRETS_DIR`挂到`/run/secrets`，其中使用`anthropic_api_key`、`tushare_token`和`alphasonar_mcp_token`三个纯文本文件；Compose配置只显示文件路径，不展开密钥内容。
 
 服务器遵循以下规则：
 
 - 镜像升级不得覆盖运行数据；
 - 凭证由部署环境注入；
-- HTTP MCP必须配置`IRA_MCP_TOKEN`，不得裸露无鉴权端点；
+- HTTP MCP必须配置`ALPHASONAR_MCP_TOKEN`，不得裸露无鉴权端点；
 - SQLite、LanceDB和Kùzu使用持久卷；
 - 同一存储实例只保留一个写入Worker，查询进程以只读为主；
 - 并发和数据规模提高后，优先把SQLite替换成PostgreSQL，保持上层能力接口不变。
 
-微信文章下载服务位于`deploy/wechat-download-api/`，它独立管理登录态和抓取节奏；IRA只通过同步脚本读取其本地Feed，不接收微信Cookie。
+微信文章下载服务位于`deploy/wechat-download-api/`，它独立管理登录态和抓取节奏；AlphaSonar只通过同步脚本读取其本地Feed，不接收微信Cookie。
 
 ## 11. 开发约束
 
-1. 新代码统一使用`ira.*`导入，不再使用旧的`src.*`路径；
+1. 新代码统一使用`alphasonar.*`导入，不再使用旧的`src.*`路径；
 2. 不在业务代码里硬编码`data/`、`databases/`、`output/`绝对或相对路径；
 3. Connector只负责获取，Pipeline只负责转换，Storage只负责持久化；
 4. 确定性计算优先使用Python/SQL，LLM不参与基础算术；
@@ -309,7 +333,7 @@ pytest -q
 
 项目已经完成代码目录和运行数据的逻辑解耦，并保留旧目录兼容读取。下一阶段重点不是继续拆仓库，而是：
 
-1. 确定开发机和服务器正式的`IRA_RUNTIME_ROOT`并完成物理数据迁移；
+1. 确定开发机和服务器正式的`ALPHASONAR_RUNTIME_ROOT`并完成物理数据迁移；
 2. 为Connector和Storage定义更明确的接口，减少上层直接依赖具体数据库；
 3. 把剩余一次性业务逻辑逐步提炼为可测试的Capabilities；
 4. 增加数据库Schema迁移版本、备份和恢复验证；
@@ -320,6 +344,6 @@ pytest -q
 - `README.md`：使用方式与研究规则；
 - `docs/architecture/project-structure.md`：分层和依赖边界；
 - `docs/architecture/runtime-layout.md`：运行目录与迁移流程；
-- `docs/IRA_PRD_Master.md`：原始产品需求；
+- `docs/ALPHASONAR_PRD_Master.md`：原始产品需求；
 - `resources/policies/`：方法论事实源；
 - `resources/prompts/report_skeleton.md`：完整研报输出骨架。

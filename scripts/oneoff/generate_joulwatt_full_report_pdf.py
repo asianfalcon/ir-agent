@@ -84,7 +84,7 @@ def footer(canvas, doc):
 def add_summary(story, s):
     story += [
         p("杰华特（688141.SH）完整预测研报", s["title"]),
-        p("日期：2026-07-03 | 数据底座：ir-agent MCP / SQLite financial_reports / 本地研报切片", s["subtitle"]),
+        p("日期：2026-07-03 | 数据底座：AlphaSonar MCP / SQLite financial_reports / 本地研报切片", s["subtitle"]),
     ]
     rows = [
         [p("评级", s["tag"]), p("中性偏多。2026 年仍处亏损修复期，2027 年看扭亏，2028 年看 AI 服务器电源利润弹性。", s["callout"])],

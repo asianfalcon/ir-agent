@@ -1,7 +1,7 @@
 """锁住数据血缘修复：目录ticker权威、SEC流水号不产垃圾日期、财季代理、绝不退mtime。"""
 from pathlib import Path
 
-from ira.pipelines.text_processor import _infer_metadata
+from alphasonar.pipelines.text_processor import _infer_metadata
 
 
 def _m(rel, text=""):

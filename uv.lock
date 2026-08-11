@@ -50,6 +50,77 @@ wheels = [
 ]
 
 [[package]]
+name = "alphasonar"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "akshare" },
+    { name = "anthropic" },
+    { name = "apscheduler" },
+    { name = "beautifulsoup4" },
+    { name = "curl-cffi" },
+    { name = "kuzu" },
+    { name = "lancedb" },
+    { name = "langchain-text-splitters" },
+    { name = "lxml" },
+    { name = "mcp" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "pymupdf" },
+    { name = "sentence-transformers" },
+    { name = "starlette" },
+    { name = "tushare" },
+    { name = "uvicorn" },
+    { name = "watchdog" },
+    { name = "yfinance" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "ruff" },
+]
+ocr = [
+    { name = "pdf2image" },
+    { name = "pytesseract" },
+]
+reports = [
+    { name = "pillow" },
+    { name = "python-docx" },
+    { name = "reportlab" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "akshare", specifier = ">=1.18" },
+    { name = "anthropic", specifier = ">=0.70" },
+    { name = "apscheduler", specifier = ">=3.11,<4" },
+    { name = "beautifulsoup4", specifier = ">=4.13" },
+    { name = "curl-cffi", specifier = ">=0.13" },
+    { name = "kuzu", specifier = ">=0.11,<0.12" },
+    { name = "lancedb", specifier = ">=0.25" },
+    { name = "langchain-text-splitters", specifier = ">=1.0" },
+    { name = "lxml", specifier = ">=5" },
+    { name = "mcp", specifier = ">=1.20,<2" },
+    { name = "numpy", specifier = ">=2" },
+    { name = "pdf2image", marker = "extra == 'ocr'", specifier = ">=1.17" },
+    { name = "pillow", marker = "extra == 'reports'", specifier = ">=11" },
+    { name = "pymupdf", specifier = ">=1.26" },
+    { name = "pytesseract", marker = "extra == 'ocr'", specifier = ">=0.3.13" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8" },
+    { name = "python-docx", marker = "extra == 'reports'", specifier = ">=1.2" },
+    { name = "reportlab", marker = "extra == 'reports'", specifier = ">=4.4" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12" },
+    { name = "sentence-transformers", specifier = ">=5" },
+    { name = "starlette", specifier = ">=0.50,<2" },
+    { name = "tushare", specifier = ">=1.4" },
+    { name = "uvicorn", specifier = ">=0.38,<1" },
+    { name = "watchdog", specifier = ">=6" },
+    { name = "yfinance", specifier = ">=1" },
+]
+provides-extras = ["reports", "ocr", "dev"]
+
+[[package]]
 name = "annotated-doc"
 version = "0.0.5"
 source = { registry = "https://pypi.org/simple" }
@@ -674,77 +745,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/72/34/14ca021ce8e5dfedc
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/b1/3846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8/iniconfig-2.3.0-py3-none-any.whl", hash = "sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12", size = 7484, upload-time = "2025-10-18T21:55:41.639Z" },
 ]
-
-[[package]]
-name = "ira-agent"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "akshare" },
-    { name = "anthropic" },
-    { name = "apscheduler" },
-    { name = "beautifulsoup4" },
-    { name = "curl-cffi" },
-    { name = "kuzu" },
-    { name = "lancedb" },
-    { name = "langchain-text-splitters" },
-    { name = "lxml" },
-    { name = "mcp" },
-    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
-    { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
-    { name = "pymupdf" },
-    { name = "sentence-transformers" },
-    { name = "starlette" },
-    { name = "tushare" },
-    { name = "uvicorn" },
-    { name = "watchdog" },
-    { name = "yfinance" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "pytest" },
-    { name = "ruff" },
-]
-ocr = [
-    { name = "pdf2image" },
-    { name = "pytesseract" },
-]
-reports = [
-    { name = "pillow" },
-    { name = "python-docx" },
-    { name = "reportlab" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "akshare", specifier = ">=1.18" },
-    { name = "anthropic", specifier = ">=0.70" },
-    { name = "apscheduler", specifier = ">=3.11,<4" },
-    { name = "beautifulsoup4", specifier = ">=4.13" },
-    { name = "curl-cffi", specifier = ">=0.13" },
-    { name = "kuzu", specifier = ">=0.11,<0.12" },
-    { name = "lancedb", specifier = ">=0.25" },
-    { name = "langchain-text-splitters", specifier = ">=1.0" },
-    { name = "lxml", specifier = ">=5" },
-    { name = "mcp", specifier = ">=1.20,<2" },
-    { name = "numpy", specifier = ">=2" },
-    { name = "pdf2image", marker = "extra == 'ocr'", specifier = ">=1.17" },
-    { name = "pillow", marker = "extra == 'reports'", specifier = ">=11" },
-    { name = "pymupdf", specifier = ">=1.26" },
-    { name = "pytesseract", marker = "extra == 'ocr'", specifier = ">=0.3.13" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8" },
-    { name = "python-docx", marker = "extra == 'reports'", specifier = ">=1.2" },
-    { name = "reportlab", marker = "extra == 'reports'", specifier = ">=4.4" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12" },
-    { name = "sentence-transformers", specifier = ">=5" },
-    { name = "starlette", specifier = ">=0.50,<2" },
-    { name = "tushare", specifier = ">=1.4" },
-    { name = "uvicorn", specifier = ">=0.38,<1" },
-    { name = "watchdog", specifier = ">=6" },
-    { name = "yfinance", specifier = ">=1" },
-]
-provides-extras = ["reports", "ocr", "dev"]
 
 [[package]]
 name = "jinja2"

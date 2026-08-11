@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Copy the legacy mutable state into the external IRA runtime layout.
+"""Copy the legacy mutable state into the external AlphaSonar runtime layout.
 
 The command is dry-run by default. It never removes legacy files and refuses to
 overwrite a different destination file. Re-running it is therefore safe.
@@ -37,13 +37,22 @@ def _copy_file(source: Path, target: Path, execute: bool) -> str:
 
 
 def migrate(runtime_root: Path, execute: bool = False) -> dict[str, int]:
+    current_db = PROJECT_ROOT / "databases" / "alphasonar.db"
+    former_db = PROJECT_ROOT / "databases" / "ira.db"
+    source_db = former_db if former_db.exists() and not current_db.exists() else current_db
     mappings = (
         (PROJECT_ROOT / "data" / "inputs", runtime_root / "sources" / "manual"),
         (PROJECT_ROOT / "data" / "raw", runtime_root / "sources" / "external"),
         (PROJECT_ROOT / "data" / "processed", runtime_root / "derived"),
-        (PROJECT_ROOT / "data" / "storage" / "lancedb_root", runtime_root / "stores" / "vector" / "lancedb_root"),
-        (PROJECT_ROOT / "data" / "storage" / "kuzu_root.db", runtime_root / "stores" / "graph" / "kuzu_root.db"),
-        (PROJECT_ROOT / "databases" / "ira.db", runtime_root / "stores" / "relational" / "ira.db"),
+        (
+            PROJECT_ROOT / "data" / "storage" / "lancedb_root",
+            runtime_root / "stores" / "vector" / "lancedb_root",
+        ),
+        (
+            PROJECT_ROOT / "data" / "storage" / "kuzu_root.db",
+            runtime_root / "stores" / "graph" / "kuzu_root.db",
+        ),
+        (source_db, runtime_root / "stores" / "relational" / "alphasonar.db"),
         (PROJECT_ROOT / "output", runtime_root / "artifacts"),
         (PROJECT_ROOT / "outputs", runtime_root / "artifacts" / "legacy-outputs"),
     )
@@ -62,12 +71,13 @@ def migrate(runtime_root: Path, execute: bool = False) -> dict[str, int]:
 
 
 def main() -> None:
+    configured_root = os.environ.get("ALPHASONAR_RUNTIME_ROOT") or os.environ.get("IRA_RUNTIME_ROOT")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--runtime-root",
         type=Path,
-        default=os.environ.get("IRA_RUNTIME_ROOT"),
-        required="IRA_RUNTIME_ROOT" not in os.environ,
+        default=configured_root,
+        required=not configured_root,
     )
     parser.add_argument("--execute", action="store_true", help="perform copies; otherwise only preview")
     args = parser.parse_args()

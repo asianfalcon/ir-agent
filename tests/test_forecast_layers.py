@@ -3,9 +3,9 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from ira.interfaces.mcp.server import _normalize_ticker_arg
-from ira.pipelines.text_processor import _classify_report, _infer_metadata
-from ira.capabilities.skill5_focused import (
+from alphasonar.interfaces.mcp.server import _normalize_ticker_arg
+from alphasonar.pipelines.text_processor import _classify_report, _infer_metadata
+from alphasonar.capabilities.skill5_focused import (
     _evidence_chunks,
     _latest_version_per_team,
     _research_chunks,
@@ -121,7 +121,7 @@ class ForecastLayerTests(unittest.TestCase):
                 "net_profit": {"value": -3728000000, "yoy_pct": None, "qoq_pct": -530.8},
             },
         }
-        with patch("ira.storage.vector_store.search", return_value=[]):
+        with patch("alphasonar.storage.vector_store.search", return_value=[]):
             prompt = earnings_forecast(
                 "INTC.US",
                 "英特尔",

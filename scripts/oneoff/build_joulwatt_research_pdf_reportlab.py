@@ -108,7 +108,7 @@ def build():
 
     story.append(p("2. 口径校验", s["h1"]))
     story.append(p("financial_reports 中 2025Q4 更接近全年/年报累计口径，而不是单四季度口径。2025Q4 收入 26.55 亿元、SQLite 净利润 -7.52 亿元；国信证券披露 2025 年收入 26.55 亿元、归母净利润 -7.17 亿元，收入一致，利润存在“净利润 vs 归母净利润”口径差异 [来源: SQLite financial_reports；broker_report/464a34af07da · 2026-04-02]。", s["body"]))
-    story.append(p("2026Q1 财务看板显示收入 7.65 亿元，同比增长 44.8%；净利润 -2.93 亿元；毛利率 25.32%，同比下降 14.7pct [来源: mcp__ira.financial_dashboard · 2026Q1]。<b>口径结论：历史锚点使用 SQLite 财务库；未来预测统一采用券商归母净利润口径。</b>", s["body"]))
+    story.append(p("2026Q1 财务看板显示收入 7.65 亿元，同比增长 44.8%；净利润 -2.93 亿元；毛利率 25.32%，同比下降 14.7pct [来源: mcp__alphasonar.financial_dashboard · 2026Q1]。<b>口径结论：历史锚点使用 SQLite 财务库；未来预测统一采用券商归母净利润口径。</b>", s["body"]))
 
     story.append(p("3. 业绩总表", s["h1"]))
     red = '<font color="#B91C1C"><b>{}</b></font>'
@@ -116,7 +116,7 @@ def build():
     perf = [
         ["期间", "一致预期或实际锚点（营收/净利润）", "纪要修正后预测（营收/净利润）", "修正值（Δ营收/Δ净利润）", "判断"],
         ["2025A 实际", "26.55 亿 / -7.52 亿", "实际锚点，不修正", "-", "收入高增但亏损扩大，利润未兑现 [来源: SQLite financial_reports]"],
-        ["2026Q1 实际", "7.65 亿 / -2.93 亿", "实际锚点，不修正", "-", "收入同比 +44.8%，毛利率 25.32%，仍是验证期 [来源: mcp__ira.financial_dashboard]"],
+        ["2026Q1 实际", "7.65 亿 / -2.93 亿", "实际锚点，不修正", "-", "收入同比 +44.8%，毛利率 25.32%，仍是验证期 [来源: mcp__alphasonar.financial_dashboard]"],
         ["2026E 短期", "40.56 亿 / -3.82 亿", "43.00 亿 / -3.90 亿", green.format("+2.44 亿 ▲6.0%") + " / " + red.format("-0.08 亿 ▼2.1%"), "收入小幅上修，利润略谨慎"],
         ["2027E 中期", "62.26 亿 / 3.41 亿", "71.50 亿 / 6.00 亿", green.format("+9.24 亿 ▲14.8%") + " / " + green.format("+2.59 亿 ▲76.0%"), "非华为客户和产能释放带来上修"],
         ["2028E 长期", "92.47 亿 / 11.94 亿", "100.00 亿 / 12.50 亿", green.format("+7.53 亿 ▲8.1%") + " / " + green.format("+0.56 亿 ▲4.7%"), "维持中间偏乐观，但不直接采用东吴上沿"],
@@ -148,8 +148,8 @@ def build():
 
     story.append(PageBreak())
     story.append(p("6. 推理链", s["h1"]))
-    story.append(p("已验证事实：2025 年收入 26.55 亿元，2026Q1 收入 7.65 亿元且同比 +44.8%，说明需求和客户导入不是空转 [来源: SQLite financial_reports；mcp__ira.financial_dashboard]。", s["body"]))
-    story.append(p("直接推论：收入端具备继续接近卖方上沿的条件，但 2026Q1 毛利率仅 25.32%、净利润仍亏 2.93 亿元，说明利润释放还没有被财报验证 [来源: mcp__ira.financial_dashboard]。", s["body"]))
+    story.append(p("已验证事实：2025 年收入 26.55 亿元，2026Q1 收入 7.65 亿元且同比 +44.8%，说明需求和客户导入不是空转 [来源: SQLite financial_reports；mcp__alphasonar.financial_dashboard]。", s["body"]))
+    story.append(p("直接推论：收入端具备继续接近卖方上沿的条件，但 2026Q1 毛利率仅 25.32%、净利润仍亏 2.93 亿元，说明利润释放还没有被财报验证 [来源: mcp__alphasonar.financial_dashboard]。", s["body"]))
     story.append(p("纪要修正：华为放量支撑 2026 收入；华为低价和非华为客户滞后压制 2026 利润；产能扩张和新客户 2026Q4 起放量支撑 2027-2028 弹性 [来源: acecamp_expert_column/f15f36da8b0e；279aee744bbf；be1d1ebe905d]。", s["body"]))
     story.append(p("<b>更高层结论：杰华特不是 2026 年利润股，而是 2027 年扭亏、2028 年利润弹性的潜力股。</b>", s["body"]))
 

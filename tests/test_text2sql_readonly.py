@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from ira.capabilities import skill1_text2sql
+from alphasonar.capabilities import skill1_text2sql
 
 
 def test_rejects_insert():

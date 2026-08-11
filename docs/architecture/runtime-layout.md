@@ -1,4 +1,4 @@
-# IRA代码与运行数据解耦
+# AlphaSonar代码与运行数据解耦
 
 ## 目标
 
@@ -9,13 +9,13 @@
 设置：
 
 ```bash
-export IRA_RUNTIME_ROOT=/srv/ira
+export ALPHASONAR_RUNTIME_ROOT=/srv/alphasonar
 ```
 
 系统自动使用：
 
 ```text
-/srv/ira/
+/srv/alphasonar/
 ├── sources/
 │   ├── manual/          # 手工上传及官方导出
 │   └── external/        # 外部接口原始响应
@@ -28,27 +28,27 @@ export IRA_RUNTIME_ROOT=/srv/ira
 └── cache/               # 临时缓存
 ```
 
-未设置`IRA_RUNTIME_ROOT`时，系统保持现有目录行为，不移动数据：
+未设置`ALPHASONAR_RUNTIME_ROOT`时，系统保持现有目录行为，不移动数据。迁移期仍接受原`IRA_*`变量，但新配置一律使用`ALPHASONAR_*`：
 
 - `data/inputs/`
 - `data/raw/`
 - `data/processed/`
 - `data/storage/`
-- `databases/ira.db`
+- `databases/alphasonar.db`（新命名）或 `databases/ira.db`（旧库兼容读取）
 - `output/`
 
 这只是迁移兼容模式，不建议服务器继续使用。
 
 ## 配置优先级
 
-单项环境变量高于`IRA_RUNTIME_ROOT`派生值：
+单项环境变量高于`ALPHASONAR_RUNTIME_ROOT`派生值：
 
-1. `IRA_SQLITE_PATH`等具体路径；
-2. `IRA_RUNTIME_ROOT`派生路径；
+1. `ALPHASONAR_SQLITE_PATH`等具体路径；
+2. `ALPHASONAR_RUNTIME_ROOT`派生路径；
 3. 旧项目内目录。
 
 运行配置从`config/`读取；提示词、政策、Schema和字典从`resources/`读取。
-可分别用`IRA_CONFIG_ROOT`、`IRA_RESOURCE_ROOT`和`IRA_PROMPT_ROOT`覆盖。
+可分别用`ALPHASONAR_CONFIG_ROOT`、`ALPHASONAR_RESOURCE_ROOT`和`ALPHASONAR_PROMPT_ROOT`覆盖。
 
 ## 数据规则
 
@@ -64,8 +64,8 @@ export IRA_RUNTIME_ROOT=/srv/ira
 
 1. 停止本地采集任务；
 2. 备份现有原始数据和数据库；
-3. 先预演：`python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/ira`；
+3. 先预演：`python scripts/ops/migrate_runtime_layout.py --runtime-root /srv/alphasonar`；
 4. 确认目标后复制：在同一命令后添加`--execute`；该工具不删除旧文件，也不覆盖冲突文件；
-5. 设置`IRA_RUNTIME_ROOT`；
+5. 设置`ALPHASONAR_RUNTIME_ROOT`；
 6. 对SQLite行数、LanceDB chunks数和Kùzu节点数做迁移前后核对；
 7. 验证后再将旧运行文件退出Git索引。Git历史清理和密钥轮换必须单独执行。

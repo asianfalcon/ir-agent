@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 _settings = get_settings()
 SRC = _settings.kuzu_path

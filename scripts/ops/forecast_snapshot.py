@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """预测事件表 forecast_events —— 让四层方法的每次修正都能被实际业绩证伪。
 
-一张 append-only 表同时存：consensus / guidance / forecast(=IRA) / actual。
+一张 append-only 表同时存：consensus / guidance / forecast(=AlphaSonar) / actual。
 - record: 记一条事件（历史永不覆盖；同 as_of_date 重复插入视为修订新增，不删旧）。
 - score : 对每个 target_period，把最新 forecast 与实际(actual) 比误差，同时对照
-          consensus，裁决"IRA修正 vs 一致预期"谁更准；as_of_date 晚于 actual 入库
+          consensus，裁决"AlphaSonar修正 vs 一致预期"谁更准；as_of_date 晚于 actual 入库
           则标可能穿越(look-ahead)。
 
-事件类型(event_type)：consensus=卖方一致预期 | guidance=公司指引 | forecast=IRA修正 | actual=财报实际。
+事件类型(event_type)：consensus=卖方一致预期 | guidance=公司指引 | forecast=AlphaSonar修正 | actual=财报实际。
 口径由 accounting_basis(GAAP/Non-GAAP) 决定——对比只在同 metric+同 basis 内进行。
 只依赖 stdlib。
 """
@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ira.settings import get_settings
+from alphasonar.settings import get_settings
 
 DB_PATH = get_settings().sqlite_path
 EVENT_TYPES = ("consensus", "guidance", "forecast", "actual")
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS forecast_events (
     value_mid        REAL,
     value_high       REAL,
     unit             TEXT DEFAULT '',
-    source_type      TEXT DEFAULT '',            -- company_filing|broker_report|acecamp|ira...
+    source_type      TEXT DEFAULT '',            -- company_filing|broker_report|acecamp|alphasonar...
     source_id        TEXT DEFAULT '',            -- source_file / chunk_id，可追溯
     model_version    TEXT DEFAULT '',
     information_cutoff TEXT DEFAULT '',           -- 所用信息最新日；多数=as_of_date，回填历史时才分叉
@@ -160,7 +160,7 @@ def score(a, db_path=DB_PATH):
     conn.close()
 
     print(
-        f"{'ticker':10} {'period':7} {'metric':12} {'basis':9} {'actual':>12} {'cons_err':>9} {'ira_err':>9}  裁决"
+        f"{'ticker':10} {'period':7} {'metric':12} {'basis':9} {'actual':>12} {'cons_err':>9} {'alpha_err':>9}  裁决"
     )
     print("-" * 90)
     wins = draws = losses = 0
@@ -190,7 +190,7 @@ def score(a, db_path=DB_PATH):
         is_ = f"{ie:8.2%}" if ie is not None else "     n/a"
         print(f"{k[0]:10} {k[1]:7} {k[2]:12} {(k[3] or '-'):9} {av:12.2f} {cs:>9} {is_:>9}  {verdict}")
     print("-" * 90)
-    print(f"IRA修正 vs 一致预期： 加分 {wins} · 持平 {draws} · 减分 {losses}")
+    print(f"AlphaSonar修正 vs 一致预期： 加分 {wins} · 持平 {draws} · 减分 {losses}")
 
 
 def main(argv=None):

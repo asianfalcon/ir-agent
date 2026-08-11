@@ -1,7 +1,7 @@
-# 🎯 IRA 系统：表现生成层 (Presentation Layer) 研发说明书
+# 🎯 AlphaSonar 系统：表现生成层 (Presentation Layer) 研发说明书
 
 ## 1. 模块定位与工程目标
-本模块负责整个 IRA 系统的“最后一公里”。要求编写 Python 后端脚本（如 `report_generator.py`），将底层多模态数据库（SQLite、LanceDB、Kùzu）中清洗并对齐后的数据，注入到标准化的 Markdown 模板中，生成最终的【IRA 辩证投研报告】。
+本模块负责整个 AlphaSonar 系统的“最后一公里”。要求编写 Python 后端脚本（如 `report_generator.py`），将底层多模态数据库（SQLite、LanceDB、Kùzu）中清洗并对齐后的数据，注入到标准化的 Markdown 模板中，生成最终的【AlphaSonar 辩证投研报告】。
 
 **⚠️ 核心红线约束：**
 * 绝对禁止 LLM 进行任何数值计算。
@@ -14,7 +14,7 @@
 系统最终输出的 Markdown 报告必须严格遵循以下模板结构（`$...` 为需要动态注入的变量）：
 
 ```markdown
-# 📊 【IRA 辩证投研报告】$COMPANY_NAME ($TICKER) 基本面深度穿透
+# 📊 【AlphaSonar 辩证投研报告】$COMPANY_NAME ($TICKER) 基本面深度穿透
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## ⚖️ 多源对抗互证天平 (Multi-Source Verification)
 
-| 维度 | 数据源提供方 | 核心立场/关键数据 | 冲突与矛盾捕捉 (IRA 警告) |
+| 维度 | 数据源提供方 | 核心立场/关键数据 | 冲突与矛盾捕捉 (AlphaSonar 警告) |
 | :--- | :--- | :--- | :--- |
 | **官方自述** | 公司财报 & 最新公告 | $OFFICIAL_STANCE_TEXT | $CONFLICT_WARNING_HTML |
 | **卖方评价** | 券商研究所研报切片 | $ANALYST_CONSENSUS_TEXT |
@@ -47,4 +47,4 @@
 ## 🌐 产业链传导因果链条 (图拓扑推演)
 根据本地 Kùzu 图数据库产业链推演路径：
 `$GRAPH_PATH_VISUALIZATION`
-* **IRA 链式逻辑提示：** $GRAPH_LOGICAL_DEDUCTION
+* **AlphaSonar 链式逻辑提示：** $GRAPH_LOGICAL_DEDUCTION
