@@ -29,8 +29,9 @@ def to_yi(v):
 
 
 def final_forecast(rows):
-    """一个 (ticker,period) 可能有多版预测,取 as_of_date 最新的一条=最终定稿。"""
-    return max(rows, key=lambda r: (r["as_of_date"] or ""))
+    """一个 (ticker,period,metric,basis) 可能有多版预测,取 as_of_date 最新的一条=最终定稿。
+    同日多条时,取 event_id 最大(最后写入)的一条。"""
+    return max(rows, key=lambda r: (r["as_of_date"] or "", r["event_id"] if "event_id" in r.keys() else 0))
 
 
 def main():
@@ -45,7 +46,7 @@ def main():
     con.row_factory = sqlite3.Row
 
     ph = ",".join("?" * len(metrics))
-    q = f"""SELECT ticker,target_period,metric,event_type,value_mid,as_of_date,model_version
+    q = f"""SELECT event_id,ticker,target_period,metric,accounting_basis,event_type,value_mid,as_of_date,model_version
             FROM forecast_events WHERE metric IN ({ph}) AND value_mid IS NOT NULL"""
     params = list(metrics)
     if args.ticker:
@@ -53,19 +54,19 @@ def main():
         params.append(args.ticker)
     all_rows = con.execute(q, params).fetchall()
 
-    # 按 (ticker,period) 分组,分出 forecast / actual
+    # 按 (ticker,period,metric,accounting_basis) 分组,分出 forecast / actual
     from collections import defaultdict
     fc = defaultdict(list)
     act = {}
     for r in all_rows:
-        key = (r["ticker"], r["target_period"], r["metric"])
+        key = (r["ticker"], r["target_period"], r["metric"], r["accounting_basis"])
         if r["event_type"] == "forecast":
             fc[key].append(r)
         elif r["event_type"] == "actual":
             act[key] = to_yi(r["value_mid"])
 
     errs = []
-    print(f"{'标的期':<20} {'我(定稿)':>9} {'实际':>8} {'误差%':>8} {'符号':>4}  版本")
+    print(f"{'标的期':<20} {'口径':<10} {'我(定稿)':>9} {'实际':>8} {'误差%':>8} {'符号':>4}  版本")
     for key in sorted(fc):
         if key not in act or act[key] is None:
             continue
@@ -78,7 +79,8 @@ def main():
         errs.append(e)
         tag = 'guid' if key[2] == 'guidance_revenue' else 'rev'
         label = f"{key[0]} {key[1]} {tag}"
-        print(f"{label:<24} {mine:>9.1f} {a:>8.1f} {e:>7.1f}% "
+        basis = key[3] or "-"
+        print(f"{label:<24} {basis:<10} {mine:>9.1f} {a:>8.1f} {e:>7.1f}% "
               f"{'低' if e < 0 else '高':>4}  {f['model_version'] or '-'}")
 
     if not errs:
@@ -98,9 +100,14 @@ def _selfcheck():
     assert abs(to_yi(11536000000.0) - 115.36) < 1e-6, "美元原值→亿"
     assert abs(to_yi(11536.0) - 115.36) < 1e-6, "百万→亿"
     assert to_yi(None) is None
-    # 最新定稿选取
-    rows = [{"as_of_date": "2026-08-02"}, {"as_of_date": "2026-08-04"}]
-    assert final_forecast(rows)["as_of_date"] == "2026-08-04"
+    # 最新定稿选取 (同日按 event_id 排序)
+    rows = [
+        {"as_of_date": "2026-08-02", "event_id": 1},
+        {"as_of_date": "2026-08-04", "event_id": 2},
+        {"as_of_date": "2026-08-04", "event_id": 3}
+    ]
+    final = final_forecast(rows)
+    assert final["as_of_date"] == "2026-08-04" and final["event_id"] == 3, "同日取最大event_id"
     print("selfcheck ok")
 
 
