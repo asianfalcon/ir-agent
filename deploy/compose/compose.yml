@@ -1,0 +1,25 @@
+services:
+  ira-mcp:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    environment:
+      IRA_RUNTIME_ROOT: /srv/ira
+      IRA_MCP_HOST: 0.0.0.0
+      IRA_MCP_PORT: 8000
+      ANTHROPIC_BASE_URL: ${ANTHROPIC_BASE_URL:-}
+      ANTHROPIC_API_KEY_FILE: /run/secrets/anthropic_api_key
+      TUSHARE_TOKEN_FILE: /run/secrets/tushare_token
+      IRA_MCP_TOKEN_FILE: /run/secrets/ira_mcp_token
+    command: ira-mcp-http
+    ports:
+      - "127.0.0.1:${IRA_MCP_PORT:-8000}:8000"
+    volumes:
+      - ${IRA_HOST_RUNTIME_ROOT:-./.runtime}:/srv/ira
+      - ${IRA_SECRETS_DIR:-./.secrets}:/run/secrets:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
