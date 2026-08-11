@@ -81,9 +81,7 @@ def process_article(json_path: Path, ticker: str = "") -> int:
         print(f"[acecamp-expert] {json_path.name}: 无 id 字段，跳过")
         return 0
 
-    source_file = f"acecamp://article/{article_id}"
-    delete_by_source_file(source_file)
-
+    # Check paywall and empty content BEFORE deleting old data
     if article.get("masked_state") == "all_masked" and article.get("need_to_pay"):
         print(f"[acecamp-expert] {article_id}: 付费墙，跳过")
         return 0
@@ -92,10 +90,8 @@ def process_article(json_path: Path, ticker: str = "") -> int:
     ts = article.get("release_time", 0)
     pub_date = datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d") if ts else ""
     badges = _article_badges(article)
-    is_hot = _is_hot_article(article)
-    source_weight = _source_weight(article)
 
-    # 优先用 summary（干净）+ content（完整）组合
+    # Validate content exists BEFORE deleting old chunks
     summary = article.get("summary", "").strip()
     content_html = article.get("content", "")
     content = strip_html(content_html) if content_html else ""
@@ -104,6 +100,12 @@ def process_article(json_path: Path, ticker: str = "") -> int:
     if not text:
         print(f"[acecamp-expert] {article_id} '{title[:30]}': summary 和 content 均为空")
         return 0
+
+    # Now safe to delete old chunks — we've validated new data exists
+    source_file = f"acecamp://article/{article_id}"
+    delete_by_source_file(source_file)
+    is_hot = _is_hot_article(article)
+    source_weight = _source_weight(article)
 
     source_id = hashlib.md5(f"acecamp_{article_id}".encode()).hexdigest()
     tickers = [ticker] if ticker else _article_tickers(article) or [""]

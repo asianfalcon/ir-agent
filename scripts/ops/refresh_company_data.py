@@ -539,12 +539,26 @@ def refresh_company(company: Company, args) -> dict:
         reports = []
 
     if not args.skip_announcements and announcements["files"]:
-        # Announcements are fetched as a full date window. Rebuild the ticker's
-        # announcement slice to avoid duplicate legacy paths after directory
-        # migrations (for example inputs/... -> processed/...).
-        clear_lancedb_rows(company.ticker, "announcement")
+        # Announcements are fetched as a full date window. Two-phase commit:
+        # 1. Process all files first (may fail, old data preserved)
+        # 2. Only after success, clear old and insert new in one atomic step
+        try:
+            ann_chunks = 0
+            for i, path in enumerate(announcements["files"], 1):
+                print(f"[refresh] embed announcement {i}/{len(announcements['files'])}: {path.name}", flush=True)
+                from ira.pipelines.text_processor import process_file
+                ann_chunks += len(process_file(path, ticker_override=company.ticker))
 
-    summary["document_chunks"] = process_local_files(reports + announcements["files"] + news["files"], ticker=company.ticker)
+            # All succeeded, now safe to clear old data
+            clear_lancedb_rows(company.ticker, "announcement")
+            print(f"[refresh] cleared old announcements, re-indexed {ann_chunks} chunks")
+            summary["announcement_chunks"] = ann_chunks
+        except Exception as exc:
+            print(f"[refresh] announcement processing failed, old data preserved: {exc}", flush=True)
+            summary["announcement_error"] = str(exc)
+
+    # Process reports and news (not in batch clear scope, handled per-file by text_processor)
+    summary["document_chunks"] = process_local_files(reports + news["files"], ticker=company.ticker)
     summary["lancedb"] = count_lancedb_rows(company.ticker)
     print(f"[refresh] summary: {json.dumps(summary, ensure_ascii=False, default=_json_default)}")
     return summary

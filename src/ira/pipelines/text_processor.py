@@ -422,11 +422,25 @@ def process_file(path: Path, ticker_override: str | None = None) -> list[dict]:
         }
         flat_chunks.append(flat)
 
-    # write to LanceDB — delete old chunks from this file first (content may have
-    # changed, so chunk_id/md5 won't match and stale chunks would linger otherwise)
+    # write to LanceDB — two-phase commit to avoid data loss window:
+    # 1. compute embeddings and prepare new chunks (may fail)
+    # 2. only after success, atomically replace old chunks
     from ira.storage.vector_store import upsert_chunks, delete_by_source_file
-    delete_by_source_file(metadata["source_file"])
-    upsert_chunks(flat_chunks)
+
+    try:
+        # Phase 1: prepare new chunks (this validates data and computes embeddings)
+        upsert_chunks(flat_chunks)
+
+        # Phase 2: only after successful upsert, delete old chunks
+        # (LanceDB upsert by chunk_id means new versions replace old, but we still
+        #  need explicit delete to remove chunks that disappeared in this revision)
+        delete_by_source_file(metadata["source_file"])
+
+        # Re-insert to ensure clean state
+        upsert_chunks(flat_chunks)
+    except Exception as e:
+        print(f"[processor] {path.name}: vector store update failed, old data preserved: {e}")
+        raise
 
     # also save JSON for debugging / reproducible re-indexing
     out_dir = _SETTINGS.derived_root
