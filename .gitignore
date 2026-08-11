@@ -53,3 +53,7 @@ node_modules/
 lib/
 /logs/
 /.codex_tmp*/
+
+# 临时渲染和专家纪要
+/tmp/
+docs/notes/
