@@ -68,10 +68,33 @@ def _schema_context() -> str:
 
 
 def _exec(sql: str, params: tuple = ()) -> list[dict]:
-    conn = sqlite3.connect(DB_PATH)
+    # Read-only protection: reject any non-SELECT statement
+    stmt = sql.strip().upper()
+    if not (stmt.startswith("SELECT") or stmt.startswith("WITH")):
+        raise sqlite3.OperationalError(
+            f"REJECTED: Only SELECT/WITH queries allowed. Got: {sql[:50]}"
+        )
+
+    # Multiple statements or write keywords = reject
+    if ";" in sql[:-1]:  # allow trailing semicolon
+        raise sqlite3.OperationalError("REJECTED: Multiple statements not allowed")
+
+    write_keywords = ["INSERT", "UPDATE", "DELETE", "DROP", "CREATE", "ALTER", "REPLACE", "ATTACH"]
+    if any(kw in stmt for kw in write_keywords):
+        raise sqlite3.OperationalError(
+            f"REJECTED: Write operations not allowed. Statement contains: {[k for k in write_keywords if k in stmt]}"
+        )
+
+    # Open as read-only URI with query_only pragma
+    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA query_only = ON")
+
     try:
-        return [dict(r) for r in conn.execute(sql, params).fetchall()]
+        cursor = conn.execute(sql, params)
+        cursor.arraysize = 1000  # max rows
+        rows = cursor.fetchmany(1000)
+        return [dict(r) for r in rows]
     except sqlite3.Error as e:
         raise e
     finally:
